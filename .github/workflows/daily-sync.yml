@@ -2,12 +2,14 @@ name: Daily Data Sync & Purge
 
 on:
   schedule:
-    - cron: '0 3 * * *' # Her gece 03:00 (UTC) - Türkiye saatiyle sabah 06:00
-  workflow_dispatch: # Elle tetiklemek için buton
+    - cron: '0 3 * * *' # Her gece 03:00 (UTC)
+  workflow_dispatch: # Elle tetiklemek için
 
 jobs:
   update-and-purge:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Yazma izni şart
     
     steps:
     - name: Depoyu Çek (Checkout)
@@ -21,7 +23,22 @@ jobs:
     - name: Kütüphaneleri Yükle
       run: npm install
 
-    - name: Supabase'den Veri Çek ve JSON Yap
+    # --- YENİ EKLENEN KISIM: BOTLAR ---
+    - name: 📅 Akademik Takvimi Tara ve Güncelle
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      run: node calendar_scraper.js
+
+    - name: 📝 Sınav Programını Tara ve Güncelle (Uzun Sürebilir)
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      run: node scraper.js
+      timeout-minutes: 60 # Sınav botu uzun süreceği için zaman tanıdık
+    # -----------------------------------
+
+    - name: Verileri Çek ve Dosyala (Supabase -> JSON)
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
@@ -32,22 +49,17 @@ jobs:
         git config --global user.name 'Enginar Bot'
         git config --global user.email 'bot@enginar.app'
         git add .
-        # Eğer değişiklik varsa commit at, yoksa hata verme
         git diff --quiet && git diff --staged --quiet || (git commit -m "Otomatik Veri Güncellemesi" && git push)
 
-    - name: 🔥 Cache Temizle ve Isıt (Purge & Warm-up)
+    - name: 🔥 Cache Temizle (Purge & Warm-up)
       run: |
-        # Hangi dosyalar güncellendiyse buraya yaz
-        FILES=("routes.json" "stops.json" "pins.json" "polygons.json" "food_menu.json" "widgets.json")
-        
-        # Senin Repo Adın (Otomatik alır)
+        FILES=("routes.json" "stops.json" "pins.json" "polygons.json" "food_menu.json" "widgets.json" "exams.json" "academic_calendar.json")
         REPO="${{ github.repository }}"
         
         for file in "${FILES[@]}"; do
           echo "🧹 Temizleniyor: $file..."
           curl -s -I "https://purge.jsdelivr.net/gh/$REPO/data/$file"
-          
           echo "🔥 Isıtılıyor: $file..."
           curl -s -o /dev/null "https://cdn.jsdelivr.net/gh/$REPO/data/$file"
         done
-        echo "✅ Tüm işlemler tamamlandı!"
+        echo "✅ Tüm işlemler bitti!"
