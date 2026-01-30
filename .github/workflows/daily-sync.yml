@@ -1,0 +1,53 @@
+name: Daily Data Sync & Purge
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # Her gece 03:00 (UTC) - Türkiye saatiyle sabah 06:00
+  workflow_dispatch: # Elle tetiklemek için buton
+
+jobs:
+  update-and-purge:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Depoyu Çek (Checkout)
+      uses: actions/checkout@v3
+
+    - name: Node.js Kur
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Kütüphaneleri Yükle
+      run: npm install
+
+    - name: Supabase'den Veri Çek ve JSON Yap
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      run: node sync_supabase.js
+
+    - name: Değişiklikleri Kaydet (Commit & Push)
+      run: |
+        git config --global user.name 'Enginar Bot'
+        git config --global user.email 'bot@enginar.app'
+        git add .
+        # Eğer değişiklik varsa commit at, yoksa hata verme
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Otomatik Veri Güncellemesi" && git push)
+
+    - name: 🔥 Cache Temizle ve Isıt (Purge & Warm-up)
+      run: |
+        # Hangi dosyalar güncellendiyse buraya yaz
+        FILES=("routes.json" "stops.json" "pins.json" "polygons.json" "food_menu.json" "widgets.json")
+        
+        # Senin Repo Adın (Otomatik alır)
+        REPO="${{ github.repository }}"
+        
+        for file in "${FILES[@]}"; do
+          echo "🧹 Temizleniyor: $file..."
+          curl -s -I "https://purge.jsdelivr.net/gh/$REPO/data/$file"
+          
+          echo "🔥 Isıtılıyor: $file..."
+          curl -s -o /dev/null "https://cdn.jsdelivr.net/gh/$REPO/data/$file"
+        done
+        echo "✅ Tüm işlemler tamamlandı!"
