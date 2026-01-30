@@ -9,6 +9,7 @@ require('dotenv').config();
 // --- AYARLAR ---
 const DEPT_LIST_URL = 'https://www.cankaya.edu.tr/ogrenci_isleri/sinav.php';
 const EXAM_TABLE_URL = 'https://www.cankaya.edu.tr/ogrenci_isleri/sinavderskod.php';
+<<<<<<< Updated upstream
 const SLEEP_TIME = 5000; // 5 Saniye bekleme (Saldırı algılanmaması için)
 
 // GitHub Secrets'tan veya .env'den al
@@ -16,6 +17,19 @@ const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+=======
+
+// 🔥 GARANTİ MODU: 10 Saniye (10000 ms)
+// 60 Bölüm x 10 sn = 600 sn = 10 Dakika sürer.
+// GitHub Actions sınırı 6 SAAT. Yani hiçbir sıkıntı olmaz, kafamız rahat olur.
+const SLEEP_TIME = 10000; 
+
+// GitHub Secrets'tan veya .env'den al
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+>>>>>>> Stashed changes
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 let globalCookie = null;
@@ -56,7 +70,7 @@ async function getDepartmentsAndCookie() {
 }
 
 async function scrapeAndUpload() {
-    console.log("🚀 BAŞLIYORUZ (Canlı Kayıt Modu)...");
+    console.log(`🚀 BAŞLIYORUZ (Garanti Mod: Her bölüm arası ${SLEEP_TIME/1000} saniye)...`);
     
     // Temiz başlangıç: Önce eski tabloyu boşaltalım
     console.log("🧹 Tablo temizleniyor...");
@@ -96,6 +110,7 @@ async function scrapeAndUpload() {
                     if (code && code !== 'Ders Kod' && date.length > 5) {
                         const formattedId = `Exam-${String(globalCounter).padStart(5, '0')}`;
                         
+<<<<<<< Updated upstream
                         // DÜZELTME BURADA YAPILDI:
                         // Tablo: 0:Kod, 1:Grup, 2:Sınav, 3:Tarih, 4:Saat, 5:Süre, 6:Derslik
                         
@@ -104,6 +119,15 @@ async function scrapeAndUpload() {
                         
                         if (cols.length > 6) {
                              hallData = $(cols[6]).text().replace(/\s+/g, ' ').trim(); // DERSLİK (Col 6)
+=======
+                        // DÜZELTME: Sütunlar kaydırıldı
+                        // 5. Sütun: Süre, 6. Sütun: Derslik
+                        let durationData = $(cols[5]).text().trim();
+                        let hallData = "";
+                        
+                        if (cols.length > 6) {
+                             hallData = $(cols[6]).text().replace(/\s+/g, ' ').trim();
+>>>>>>> Stashed changes
                         }
 
                         deptExams.push({
@@ -113,8 +137,13 @@ async function scrapeAndUpload() {
                             exam: $(cols[2]).text().trim(),
                             date: date,
                             starting: $(cols[4]).text().trim(),
+<<<<<<< Updated upstream
                             duration: durationData, // Artık doğru sütun
                             hall: hallData          // Artık doğru sütun
+=======
+                            duration: durationData, 
+                            hall: hallData          
+>>>>>>> Stashed changes
                         });
                         globalCounter++;
                     }
@@ -134,7 +163,11 @@ async function scrapeAndUpload() {
                 console.log(`⚠️ [${dept}] -> 0 sınav.`);
             }
 
+<<<<<<< Updated upstream
             // Bekleme Süresi (5 Saniye)
+=======
+            // Bekleme Süresi
+>>>>>>> Stashed changes
             await sleep(SLEEP_TIME);
 
         } catch (error) {
