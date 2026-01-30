@@ -15,10 +15,10 @@ jobs:
     - name: Depoyu Çek
       uses: actions/checkout@v3
 
-    - name: Node.js Kur
+    - name: Node.js Kur (v20 Güncellendi)
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: '20' # BURASI DEĞİŞTİ (18 -> 20)
 
     - name: Kütüphaneleri Yükle
       run: npm install
@@ -35,7 +35,7 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       run: node scraper.js
-      timeout-minutes: 360 # 6 Saat sınır (rahat rahat çalışsın)
+      timeout-minutes: 360 # 6 Saat sınır
     # ---------------------
 
     - name: Verileri Çek ve JSON Yap
