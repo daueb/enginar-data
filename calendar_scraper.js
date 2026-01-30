@@ -8,10 +8,22 @@ require('dotenv').config();
 
 // --- AYARLAR ---
 const CALENDAR_URL = 'https://www.cankaya.edu.tr/akademik_takvim/index.php';
-const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
+
+// DÜZELTME: Hem SUPABASE_KEY hem de SERVICE_KEY kabul etsin
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+    console.error("❌ Hata: Supabase URL veya Key eksik!");
+    // GitHub Actions'da hata fırlatmaması için (sessizce bitsin istersen) veya process.exit(1) diyebilirsin.
+    // Şimdilik process.exit(1) diyelim ki logda görelim.
+    process.exit(1);
+}
+
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function scrapeCalendar() {
-    console.log("📅 Akademik Takvim Taraması (Sadeleştirilmiş Mod)...");
+    console.log("📅 Akademik Takvim Taraması...");
     
     // Tabloyu temizle
     await supabase.from('academic_calendar').delete().neq('id', '0');
@@ -44,7 +56,7 @@ async function scrapeCalendar() {
                 console.log(`📌 Okul Türü: ${currentSchoolType}`);
             }
 
-            // 2. DÖNEM KONTROLÜ (50 karakterden kısaysa başlıktır)
+            // 2. DÖNEM KONTROLÜ
             else if ((upperText.includes("YARIYILI") || upperText.includes("YAZ ÖĞRETİMİ")) && rawText.length < 50) {
                 currentTerm = rawText; 
                 console.log(`   👉 Dönem: ${currentTerm}`);
@@ -55,7 +67,6 @@ async function scrapeCalendar() {
                 const rawDate = $(cols[0]).text().trim();
                 const description = $(cols[1]).text().trim();
 
-                // Filtreler: Boş olmasın, başlık olmasın, çok kısa olmasın
                 if (rawDate && description && rawDate !== "TARİH" && rawDate.length > 3) {
                     
                     const formattedId = `calendar-${String(globalCounter).padStart(4, '0')}`;
@@ -64,7 +75,7 @@ async function scrapeCalendar() {
                         id: formattedId,
                         school_type: currentSchoolType,
                         term: currentTerm,
-                        date: rawDate,         // DİREKT SİTEDEKİ HALİ
+                        date: rawDate,
                         description: description
                     });
                     globalCounter++;
@@ -81,13 +92,14 @@ async function scrapeCalendar() {
                 const { error } = await supabase.from('academic_calendar').insert(chunk);
                 if (error) console.error("Hata:", error);
             }
-            console.log("🎉 TAKVİM GÜNCELLENDİ (date_text kaldırıldı).");
+            console.log("🎉 TAKVİM GÜNCELLENDİ.");
         } else {
             console.log("⚠️ Veri bulunamadı.");
         }
 
     } catch (error) {
         console.error("❌ Hata:", error.message);
+        process.exit(1);
     }
 }
 
