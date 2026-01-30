@@ -1,0 +1,1280 @@
+[
+  {
+    "id": "class-0001",
+    "title": "103 Mimarlık Sınıf",
+    "floor": "1",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0002",
+    "title": "105 Hukuk Sınıf",
+    "floor": "1",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0003",
+    "title": "106 Hukuk Sınıf",
+    "floor": "1",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0004",
+    "title": "107 Hukuk Sınıf",
+    "floor": "1",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0005",
+    "title": "108 Mimarlık Stüdyo",
+    "floor": "1",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0006",
+    "title": "109 (Hukuk Seminer Odası)",
+    "floor": "1",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0007",
+    "title": "110 (Hukuk Seminer Odası)",
+    "floor": "1",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0008",
+    "title": "118 Mimarlık Stüdyo",
+    "floor": "1",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0009",
+    "title": "205 Hukuk Amfi",
+    "floor": "2",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0010",
+    "title": "206 Hukuk Amfi",
+    "floor": "2",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0011",
+    "title": "208 (Hukuk Seminer Odası)",
+    "floor": "2",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0012",
+    "title": "210 (Hukuk Seminer Odası)",
+    "floor": "2",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0013",
+    "title": "212 Mimarlık Sınıf",
+    "floor": "2",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0014",
+    "title": "216 Mimarlık Stüdyo",
+    "floor": "2",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0015",
+    "title": "217 Mimarlık Stüdyo",
+    "floor": "2",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0016",
+    "title": "218 Mimarlık Stüdyo",
+    "floor": "2",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0017",
+    "title": "304 Mimarlık Stüdyo",
+    "floor": "3",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0018",
+    "title": "323 Mimarlık Stüdyo",
+    "floor": "3",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0019",
+    "title": "404 Mimarlık Stüdyo",
+    "floor": "4",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0020",
+    "title": "405 Mimarlık Stüdyo",
+    "floor": "4",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0021",
+    "title": "406 Mimarlık Stüdyo",
+    "floor": "4",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0022",
+    "title": "Amfi-2 (Ortak Alan)",
+    "floor": "1",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0023",
+    "title": "Amfi-3 (Ortak Alan)",
+    "floor": "1",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0024",
+    "title": "Amfi-4 (Ortak Alan)",
+    "floor": "1",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0025",
+    "title": "Amfi-5 (Ortak Alan)",
+    "floor": "1",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0026",
+    "title": "Amfi-6 (Ortak Alan)",
+    "floor": "1",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0027",
+    "title": "B 03 Mimarlık Fakültesi Toplantı Salonu",
+    "floor": "B",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0028",
+    "title": "B 07 Mimarlık Fakültesi Öğrenci Toplulukları Odası",
+    "floor": "B",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0029",
+    "title": "B 13 Mimarlık Fakültesi Sanatsal Üretim Atölyesi",
+    "floor": "B",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0030",
+    "title": "B 14 Mimarlık Fakültesi Yapı Fiziği Lab.",
+    "floor": "B",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0031",
+    "title": "B 15 Ahşap ve Sayısal Üretim Atölyesi",
+    "floor": "",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0032",
+    "title": "B 15 Mimarlık Fakültesi Ahşap ve Sayısal Üretim Odası",
+    "floor": "B",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0033",
+    "title": "B 16 Mimarlık Malzeme Lab.",
+    "floor": "B",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0034",
+    "title": "B-08 Hukuk-Mimarlık Amfi",
+    "floor": "B",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0035",
+    "title": "B-09 Hukuk-Mimarlık Amfi",
+    "floor": "B",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0036",
+    "title": "B-10 Hukuk-Mimarlık Amfi",
+    "floor": "B",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0037",
+    "title": "B-11 Hukuk-Mimarlık Amfi",
+    "floor": "B",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0038",
+    "title": "B-12 Hukuk-Mimarlık Amfi",
+    "floor": "B",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0039",
+    "title": "H102 (Kırmızı Salon) (Ortak Alan)",
+    "floor": "1",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0040",
+    "title": "H125 (Mavi Salon) (Ortak Alan)",
+    "floor": "1",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0041",
+    "title": "H302 Microprocessor Lab. (Ortak Alan)",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0042",
+    "title": "H304 Fizik Lab. 1 (Ortak Alan)",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0043",
+    "title": "H307 Control Systems Lab. (Ortak Alan)",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0044",
+    "title": "H308 Solid Modelling and Pro. Lab.",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0045",
+    "title": "H309 Computerized Lecture Hall-1",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0046",
+    "title": "H312 Computerized Lecture Hall-2",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0047",
+    "title": "H313 Computerized Lecture Hall-3",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0048",
+    "title": "H314 Computerized Lecture Hall-4",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0049",
+    "title": "H315 Computerized Lecture Hall-5",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0050",
+    "title": "H324 Finans Lab.",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0051",
+    "title": "H327 Microwave Lab.",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0052",
+    "title": "H329 Fiberoptik Lab.",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0053",
+    "title": "H331 Digital Lab.",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0054",
+    "title": "H332 Communication Lab.",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0055",
+    "title": "H334 Electronics Lab.",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0056",
+    "title": "H335 Computer Aided Design (CAD) lab.-2",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0057",
+    "title": "H337 Computer Aided Design (CAD) lab.-1",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0058",
+    "title": "H338 Modelling and Simulation Lab.",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0059",
+    "title": "H340 Fizik Lab. 2",
+    "floor": "3",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0060",
+    "title": "HA01",
+    "floor": "A",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0061",
+    "title": "HA02",
+    "floor": "A",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0062",
+    "title": "HA03",
+    "floor": "A",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0063",
+    "title": "HA04",
+    "floor": "A",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0064",
+    "title": "HA05",
+    "floor": "A",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0065",
+    "title": "Haz. Ek Bina Z 15",
+    "floor": "Z",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0066",
+    "title": "Haz. Ek Bina 114",
+    "floor": "1",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0067",
+    "title": "Haz. Ek Bina 115",
+    "floor": "1",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0068",
+    "title": "Haz. Ek Bina 116",
+    "floor": "1",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0069",
+    "title": "Haz. Ek Bina 117",
+    "floor": "1",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0070",
+    "title": "Haz. Ek Bina 210",
+    "floor": "2",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0071",
+    "title": "Haz. Ek Bina 211",
+    "floor": "2",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0072",
+    "title": "Haz. Ek Bina 212",
+    "floor": "2",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0073",
+    "title": "Haz. Ek Bina 213",
+    "floor": "2",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0074",
+    "title": "Haz. Ek Bina 214",
+    "floor": "2",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0075",
+    "title": "Haz. Ek Bina 215",
+    "floor": "2",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0076",
+    "title": "Haz. Ek Bina 303",
+    "floor": "3",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0077",
+    "title": "Haz. Ek Bina 304",
+    "floor": "3",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0078",
+    "title": "Haz. Ek Bina 305",
+    "floor": "3",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0079",
+    "title": "Haz. Ek Bina 306",
+    "floor": "3",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0080",
+    "title": "Haz. Ek Bina 307",
+    "floor": "3",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0081",
+    "title": "Haz. Ek Bina 309",
+    "floor": "3",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0082",
+    "title": "Haz. Ek Bina Z 14",
+    "floor": "Z",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0083",
+    "title": "Haz. Ek Bina Z 16",
+    "floor": "Z",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0084",
+    "title": "Haz. Ek Bina Z 17",
+    "floor": "Z",
+    "pin_id": "pin-0073"
+  },
+  {
+    "id": "class-0085",
+    "title": "Hazırlık Okulu 101",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0086",
+    "title": "Hazırlık Okulu 102",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0087",
+    "title": "Hazırlık Okulu 103",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0088",
+    "title": "Hazırlık Okulu 104",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0089",
+    "title": "Hazırlık Okulu 105",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0090",
+    "title": "Hazırlık Okulu 106",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0091",
+    "title": "Hazırlık Okulu 107",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0092",
+    "title": "Hazırlık Okulu 108",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0093",
+    "title": "Hazırlık Okulu 109",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0094",
+    "title": "Hazırlık Okulu 110",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0095",
+    "title": "Hazırlık Okulu 111",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0096",
+    "title": "Hazırlık Okulu 112",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0097",
+    "title": "Hazırlık Okulu 113",
+    "floor": "1",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0098",
+    "title": "Hazırlık Okulu Z 01",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0099",
+    "title": "Hazırlık Okulu Z 02",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0100",
+    "title": "Hazırlık Okulu Z 03",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0101",
+    "title": "Hazırlık Okulu Z 04",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0102",
+    "title": "Hazırlık Okulu Z 05",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0103",
+    "title": "Hazırlık Okulu Z 06",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0104",
+    "title": "Hazırlık Okulu Z 07",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0105",
+    "title": "Hazırlık Okulu Z 08",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0106",
+    "title": "Hazırlık Okulu Z 09",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0107",
+    "title": "Hazırlık Okulu Z 10",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0108",
+    "title": "Hazırlık Okulu Z 11",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0109",
+    "title": "Hazırlık Okulu Z 12",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0110",
+    "title": "Hazırlık Okulu Z 13",
+    "floor": "Z",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "class-0111",
+    "title": "HC-1 Mechanical Engineering Lab. 1",
+    "floor": "C",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0112",
+    "title": "HC-2 Mechanical Engineering Lab. 2",
+    "floor": "C",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0113",
+    "title": "HC-3 Welding Lab.",
+    "floor": "C",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0114",
+    "title": "HC-4 Makine Mühendisliği Tasarım Lab.",
+    "floor": "C",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0115",
+    "title": "HİRA Reklam Atölyesi",
+    "floor": "B",
+    "pin_id": "pin-0010"
+  },
+  {
+    "id": "class-0116",
+    "title": "K101",
+    "floor": "1",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0117",
+    "title": "K102",
+    "floor": "1",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0118",
+    "title": "K103",
+    "floor": "1",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0119",
+    "title": "K104",
+    "floor": "1",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0120",
+    "title": "K105",
+    "floor": "1",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0121",
+    "title": "K106",
+    "floor": "1",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0122",
+    "title": "K107",
+    "floor": "1",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0123",
+    "title": "KA01",
+    "floor": "A",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0124",
+    "title": "KA02",
+    "floor": "A",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0125",
+    "title": "KA03",
+    "floor": "A",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0126",
+    "title": "KA04",
+    "floor": "A",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0127",
+    "title": "KA05",
+    "floor": "A",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0128",
+    "title": "KA06",
+    "floor": "A",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "class-0129",
+    "title": "L111",
+    "floor": "1",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0130",
+    "title": "L112",
+    "floor": "1",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0131",
+    "title": "L113",
+    "floor": "1",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0132",
+    "title": "LA14",
+    "floor": "A",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0133",
+    "title": "LA15",
+    "floor": "A",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0134",
+    "title": "LA16",
+    "floor": "A",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0135",
+    "title": "LB01 Makine Lab.",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0136",
+    "title": "LB02 Enerji ve Mekanik Lab.",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0137",
+    "title": "LB03 Metalografi Lab.",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0138",
+    "title": "LB04 Robot ve Elektrik Lab.",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0139",
+    "title": "LB05",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0140",
+    "title": "LB06",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0141",
+    "title": "LB07",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0142",
+    "title": "LB09 Optik ve Foto. Arş. Lab.",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0143",
+    "title": "LB11 Mekanik Lab.",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0144",
+    "title": "LB12 Sensör Lab.",
+    "floor": "B",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "class-0145",
+    "title": "M101",
+    "floor": "1",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0146",
+    "title": "M102",
+    "floor": "1",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0147",
+    "title": "MA01",
+    "floor": "A",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0148",
+    "title": "MA02",
+    "floor": "A",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0149",
+    "title": "MA06",
+    "floor": "A",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0150",
+    "title": "MA07",
+    "floor": "A",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0151",
+    "title": "MA08",
+    "floor": "A",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0152",
+    "title": "MA09",
+    "floor": "A",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0153",
+    "title": "MA10 Electromechanical Energy Con. Lab.",
+    "floor": "A",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0154",
+    "title": "MB01",
+    "floor": "B",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0155",
+    "title": "MB02",
+    "floor": "B",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0156",
+    "title": "MB03",
+    "floor": "B",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0157",
+    "title": "MB04",
+    "floor": "B",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0158",
+    "title": "MB06",
+    "floor": "B",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0159",
+    "title": "MB07",
+    "floor": "B",
+    "pin_id": "pin-0006"
+  },
+  {
+    "id": "class-0160",
+    "title": "Mimarlık Fakültesi 102 PC Lab",
+    "floor": "1",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0161",
+    "title": "Mimarlık Fakültesi 202 PC Lab",
+    "floor": "2",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0162",
+    "title": "Mimarlık Fakültesi Ahşap ve Sayısal Üretim Odası",
+    "floor": "",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0163",
+    "title": "Mimarlık Fakültesi Toplantı Salonu 205",
+    "floor": "2",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0164",
+    "title": "MÜZİK ODASI",
+    "floor": "1",
+    "pin_id": "pin-0008"
+  },
+  {
+    "id": "class-0165",
+    "title": "NA01",
+    "floor": "A",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0166",
+    "title": "NA02",
+    "floor": "A",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0167",
+    "title": "NA06",
+    "floor": "A",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0168",
+    "title": "NA07  Seminer Odası",
+    "floor": "A",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0169",
+    "title": "NB01-A Malzeme Lab. 1",
+    "floor": "B",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0170",
+    "title": "NB01-B Ergonomi Lab.",
+    "floor": "B",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0171",
+    "title": "NB02",
+    "floor": "B",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0172",
+    "title": "NB06",
+    "floor": "B",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0173",
+    "title": "NB07 Seminer Salonu",
+    "floor": "B",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0174",
+    "title": "NC Nano Teknoloji Lab.",
+    "floor": "C",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0175",
+    "title": "NC02 Geoteknik ve Ulaşım Müh. Lab.",
+    "floor": "C",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0176",
+    "title": "NC03 Mekanik ve Hidrolik Lab.",
+    "floor": "C",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0177",
+    "title": "NC04 Kimya Lab.",
+    "floor": "C",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0178",
+    "title": "NC05 Metal Yap. ve Fonk. Mal. Lab.",
+    "floor": "C",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "class-0179",
+    "title": "P101",
+    "floor": "1",
+    "pin_id": "pin-0010"
+  },
+  {
+    "id": "class-0180",
+    "title": "PA01",
+    "floor": "A",
+    "pin_id": "pin-0010"
+  },
+  {
+    "id": "class-0181",
+    "title": "PB01 Akademik Çalışma Merkezi",
+    "floor": "B",
+    "pin_id": "pin-0010"
+  },
+  {
+    "id": "class-0182",
+    "title": "R112 Çeviri Lab.",
+    "floor": "1",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0183",
+    "title": "R213 Matematik Seminer odası",
+    "floor": "2",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0184",
+    "title": "RA01",
+    "floor": "A",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0185",
+    "title": "RA02",
+    "floor": "A",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0186",
+    "title": "RA03",
+    "floor": "A",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0187",
+    "title": "RA04",
+    "floor": "A",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0188",
+    "title": "RA05",
+    "floor": "A",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0189",
+    "title": "RA06",
+    "floor": "A",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0190",
+    "title": "RA07 (Dil Sınıfı)",
+    "floor": "A",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0191",
+    "title": "RB01",
+    "floor": "B",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0192",
+    "title": "RB02 Psikoloji lab.",
+    "floor": "B",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0193",
+    "title": "RB03",
+    "floor": "B",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0194",
+    "title": "RB04",
+    "floor": "B",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0195",
+    "title": "RB05 Seminer odası",
+    "floor": "B",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "class-0196",
+    "title": "RESİM ATÖLYESİ",
+    "floor": "Z",
+    "pin_id": "pin-0067"
+  },
+  {
+    "id": "class-0197",
+    "title": "SERAMİK ATÖLYESİ",
+    "floor": "Z",
+    "pin_id": "pin-0067"
+  },
+  {
+    "id": "class-0198",
+    "title": "VİTRAY ATÖLYESİ",
+    "floor": "Z",
+    "pin_id": "pin-0067"
+  },
+  {
+    "id": "class-0199",
+    "title": "Z-03 Mimarlık Fakültesi PC Lab.",
+    "floor": "Z",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0200",
+    "title": "Z-14 Mimarlık Fakültesi",
+    "floor": "Z",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0201",
+    "title": "Z-01 PC Lab",
+    "floor": "Z",
+    "pin_id": null
+  },
+  {
+    "id": "class-0202",
+    "title": "Z-06 Mimarlık Sınıf",
+    "floor": "Z",
+    "pin_id": null
+  },
+  {
+    "id": "class-0203",
+    "title": "Z-11 PC Lab",
+    "floor": "Z",
+    "pin_id": null
+  },
+  {
+    "id": "class-0204",
+    "title": "Z-12 Hukuk Amfi",
+    "floor": "Z",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0205",
+    "title": "Z-13 Hukuk Amfi",
+    "floor": "Z",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0206",
+    "title": "Z-13 Mimarlık Amfi",
+    "floor": "Z",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0207",
+    "title": "Z-14 Hukuk Amfi",
+    "floor": "Z",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0208",
+    "title": "Z-14 Mimarlık Stüdyo",
+    "floor": "Z",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0209",
+    "title": "Z-15 Hukuk Amfi",
+    "floor": "Z",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0210",
+    "title": "Z-15 Mimarlık Stüdyo",
+    "floor": "Z",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "class-0211",
+    "title": "Z-16 Hukuk Amfi",
+    "floor": "Z",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0212",
+    "title": "Z-17 Hukuk Amfi",
+    "floor": "Z",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "class-0213",
+    "title": "Z-18 Hukuk Amfi",
+    "floor": "Z",
+    "pin_id": "pin-0011"
+  }
+]

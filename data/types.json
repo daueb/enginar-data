@@ -1,0 +1,233 @@
+[
+  {
+    "id": "type-0001",
+    "key": "mescit",
+    "title": "Mescit",
+    "color": "#2e7d32",
+    "size": 9,
+    "show_icon": true,
+    "show_label": false,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-star-and-crescent\"></i>"
+  },
+  {
+    "id": "type-0002",
+    "key": "fakulte",
+    "title": "Fakülte",
+    "color": "#283593",
+    "size": 11,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-sharp fa-solid fa-graduation-cap\"></i>"
+  },
+  {
+    "id": "type-0003",
+    "key": "ortak_alan",
+    "title": "Ortak Alan",
+    "color": "#009688",
+    "size": 12,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-arrows-to-circle\"></i>"
+  },
+  {
+    "id": "type-0004",
+    "key": "kutuphane",
+    "title": "Kütüphane",
+    "color": "#1565c0",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-book\"></i>"
+  },
+  {
+    "id": "type-0005",
+    "key": "ogrenci_isleri",
+    "title": "Öğrenci İşleri",
+    "color": "#2f3e46",
+    "size": 8,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<span class=\"material-symbols-outlined\"> id_card </span>"
+  },
+  {
+    "id": "type-0006",
+    "key": "spor",
+    "title": "Spor Merkezi",
+    "color": "#b71c1c",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-dumbbell\"></i>"
+  },
+  {
+    "id": "type-0007",
+    "key": "ogrenci_yurdu",
+    "title": "Öğrenci Yurdu",
+    "color": "#ff7043",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-bed\"></i>"
+  },
+  {
+    "id": "type-0008",
+    "key": "park_yeri",
+    "title": "Park Yeri",
+    "color": "#0d47a1",
+    "size": 8,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-car\"></i>"
+  },
+  {
+    "id": "type-0009",
+    "key": "guvenlik",
+    "title": "Güvenlik",
+    "color": "#1e40af",
+    "size": 7,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-shield-halved\"></i>"
+  },
+  {
+    "id": "type-0010",
+    "key": "kongre_ve_kultur",
+    "title": "Kongre ve Kültür",
+    "color": "#b3541e",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": ""
+  },
+  {
+    "id": "type-0011",
+    "key": "isi_merkezi",
+    "title": "Isı Merkezi",
+    "color": "#2f3e46",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<span class=\"material-symbols-outlined\"> heat </span>"
+  },
+  {
+    "id": "type-0012",
+    "key": "yemek",
+    "title": "Yemekhane / Kafe",
+    "color": "#f97316",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-utensils\"></i>"
+  },
+  {
+    "id": "type-0013",
+    "key": "resmi",
+    "title": "Resmi Daire",
+    "color": "#2f3e46",
+    "size": 8,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-briefcase\"></i>"
+  },
+  {
+    "id": "type-0014",
+    "key": "saglik",
+    "title": "Sağlık Merkezi",
+    "color": "#e60000",
+    "size": 9,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<span class=\"material-symbols-outlined\"> bedtime </span>"
+  },
+  {
+    "id": "type-0015",
+    "key": "kirmizi_amfi",
+    "title": "Kırmızı Amfi",
+    "color": "#9d0830",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": ""
+  },
+  {
+    "id": "type-0016",
+    "key": "mavi_amfi",
+    "title": "Mavi Amfi",
+    "color": "#2b57ab",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": ""
+  },
+  {
+    "id": "type-0017",
+    "key": "ring_servisi",
+    "title": "Ring Servisi",
+    "color": "#ff8c00",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-bus-simple\"></i>"
+  },
+  {
+    "id": "type-0018",
+    "key": "semt_servisi",
+    "title": "Semt Servisi",
+    "color": "#9b59b6",
+    "size": 12,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-bus-simple\"></i>"
+  },
+  {
+    "id": "type-0019",
+    "key": "atolye",
+    "title": "Atölye",
+    "color": "#d97706",
+    "size": 10,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-screwdriver-wrench\"></i>"
+  },
+  {
+    "id": "type-0020",
+    "key": "atm",
+    "title": "ATM",
+    "color": "#0078d7",
+    "size": 7,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-money-bills\"></i>"
+  },
+  {
+    "id": "type-0021",
+    "key": "kirtasiye",
+    "title": "Kırtasiye",
+    "color": "#8a2be2",
+    "size": 9,
+    "show_icon": true,
+    "show_label": true,
+    "zoom_level": 6,
+    "icon": "<i class=\"fa-solid fa-pen-ruler\"></i>"
+  }
+]
