@@ -1,3 +1,5 @@
+//scraper.js
+
 const axios = require('axios');
 const cheerio = require('cheerio');
 const iconv = require('iconv-lite');
@@ -7,9 +9,13 @@ require('dotenv').config();
 // --- AYARLAR ---
 const DEPT_LIST_URL = 'https://www.cankaya.edu.tr/ogrenci_isleri/sinav.php';
 const EXAM_TABLE_URL = 'https://www.cankaya.edu.tr/ogrenci_isleri/sinavderskod.php';
-const SLEEP_TIME = 3000; 
+const SLEEP_TIME = 5000; // 5 Saniye bekleme (Saldırı algılanmaması için)
 
-const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
+// GitHub Secrets'tan veya .env'den al
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 let globalCookie = null;
@@ -81,7 +87,8 @@ async function scrapeAndUpload() {
 
             rows.each((index, element) => {
                 const cols = $(element).find('td');
-                if (cols.length >= 5) {
+                // Sütun sayısı kontrolü
+                if (cols.length >= 6) { 
                     const code = $(cols[0]).text().trim();
                     const date = $(cols[3]).text().trim();
 
@@ -89,40 +96,46 @@ async function scrapeAndUpload() {
                     if (code && code !== 'Ders Kod' && date.length > 5) {
                         const formattedId = `Exam-${String(globalCounter).padStart(5, '0')}`;
                         
-                        let hall = "";
-                        if (cols.length > 5) hall = $(cols[5]).text().replace(/\s+/g, ' ').trim();
+                        // DÜZELTME BURADA YAPILDI:
+                        // Tablo: 0:Kod, 1:Grup, 2:Sınav, 3:Tarih, 4:Saat, 5:Süre, 6:Derslik
+                        
+                        let durationData = $(cols[5]).text().trim(); // SÜRE (Col 5)
+                        let hallData = "";
+                        
+                        if (cols.length > 6) {
+                             hallData = $(cols[6]).text().replace(/\s+/g, ' ').trim(); // DERSLİK (Col 6)
+                        }
 
                         deptExams.push({
                             id: formattedId,
                             code: code,
                             section: $(cols[1]).text().trim(),
                             exam: $(cols[2]).text().trim(),
-                            duration: "",
                             date: date,
                             starting: $(cols[4]).text().trim(),
-                            hall: hall
+                            duration: durationData, // Artık doğru sütun
+                            hall: hallData          // Artık doğru sütun
                         });
                         globalCounter++;
                     }
                 }
             });
 
-            // --- KRİTİK NOKTA: BULDUĞUNU ANINDA YAZ ---
+            // Veritabanına Yaz
             if (deptExams.length > 0) {
                 const { error } = await supabase.from('exams').insert(deptExams);
                 
                 if (error) {
                     console.error(`❌ [${dept}] Veritabanı Hatası:`, error.message);
                 } else {
-                    console.log(`✅ [${dept}] -> ${deptExams.length} sınav bulundu ve YÜKLENDİ.`);
+                    console.log(`✅ [${dept}] -> ${deptExams.length} sınav YÜKLENDİ.`);
                 }
             } else {
-                // Sınav yoksa bile ekrana yaz ki çalıştığını görelim
                 console.log(`⚠️ [${dept}] -> 0 sınav.`);
             }
 
-            // Hızlıca diğer bölüme geç (Beklemeyi azalttım, istersen arttır)
-            await sleep(1000);
+            // Bekleme Süresi (5 Saniye)
+            await sleep(SLEEP_TIME);
 
         } catch (error) {
             console.error(`❌ [${dept}] Ağ Hatası:`, error.message);
