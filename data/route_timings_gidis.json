@@ -1,0 +1,2886 @@
+[
+  {
+    "id": "00272d80-a169-4973-9243-9d2f89f21d88",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "003f395f-dfba-440b-9c94-2d6ccd4c783f",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "008483ee-079c-4de7-bf51-4587f1c40a59",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "00a589ff-3de1-4738-9282-7a65781bffe3",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "00c2e9f6-7e85-489e-921f-ddcadb8e49e0",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "00cba7c9-86ab-4603-b196-7a46b337bb1c",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "028e40f5-d4e3-455c-975e-f18a9ec25916",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0597d3be-33ec-496a-b785-7ce63cabdc41",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "05bf3435-abe4-490b-9caf-77b0acadbadf",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "06608ac9-58b5-43a4-9884-fe705d2b301d",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "082f0c36-9832-4859-b0a2-5fea1f4b6c64",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "087c200e-5879-4961-a622-7a078bb85709",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0908a8a3-cdab-4dd1-b5d6-ad3e33b695e4",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "090ec3d3-b9c6-493d-9af2-620f4731a71f",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "09f5dfd3-eced-4acc-bc7c-8c9582a37c16",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0a6ed1b1-131c-4caa-895b-959e628d6849",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0a823f11-a041-4cf2-93bf-b71d957c0ace",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0b5d7120-3d09-462f-a1ce-9ec1ab573d4c",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0c40833f-696c-4a1e-b9ec-075da0d030cd",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0c7b76d8-d9c0-48a1-910a-38f3566f5552",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0dab0862-d0d4-42e5-a835-d21f53e949bd",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0de42bc9-1a98-4c2b-bbdc-da1809fa3e5e",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0df006b3-aff7-475c-a7dc-00ec7d678179",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0e197c0e-1fac-4732-870e-cb78a5838255",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0e879e1a-be51-4921-85f8-bfc8f370e4a2",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0f45ce2b-5a66-4f90-a41b-f2ebff6c2233",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0f6e03ea-3541-4add-b145-ff8764bf744b",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0fc02582-143c-4f76-a198-e2d1f53a16f2",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "104f7045-257f-4815-aa31-9da0f424abaf",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "10f7e26e-0245-431d-9450-15ad7507fb24",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "117b89e9-27ae-406b-b042-35ab405ed661",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1191dc2a-3c7f-48ac-b508-083ebfdea209",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "121f6365-f61c-4af1-9591-794fff5b5226",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "12c62bac-1f54-462c-a9af-96f928663970",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "13fe2edf-2116-4dc1-a324-50ac7159f842",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "148c724b-1e61-41ff-a454-02b39348c925",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "14bc554f-5d03-481a-9e40-9b0a74a49523",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "14c4e44d-178c-4c30-ae71-249a1288ca7e",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "14fba3f8-ac45-4301-8935-f801105600e2",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "155b17d5-0480-4e60-b9cc-d8dfb5845b49",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "160073c6-6175-4261-bca7-60fd5061bdbc",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1967c849-a23f-4991-b2aa-a282abf7a172",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1976fc33-d460-483c-b2a6-8d0aa7858f81",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "19bd9cce-c018-44ba-8a1d-51ee3e06c6ae",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1a914914-72b3-45ff-9159-1a12c27e8f0e",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1c2ef299-2784-44b8-a160-dce6818674aa",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1c87873a-fbf2-4d7f-be0c-a9581877d48d",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1c9ae4b0-9969-4bb8-8dfb-091c0bc60473",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1cba54c5-f029-4a03-a36b-108a7010591a",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1e4c143d-83be-4a92-83e7-30f3176309b4",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1e85b8af-60df-4185-bd2c-89b752dc6490",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1eee029b-8526-4589-b98d-07fb74d9b023",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1f2a66ba-6084-4e37-b3c7-fc6794a0a2ed",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1f3533e9-b984-45f0-a7b6-0ae99d760b13",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1f958ff6-fabe-4b89-bce3-ad68ba3cb269",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1fa7f1c2-f056-4a7a-af7d-c53702a342f2",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1fbfd215-0968-4cb1-ac23-86f0c9acb117",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "201449d0-b516-42b6-b8a4-832ce6a4ced4",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2053176c-0218-4cac-a789-575b87456cff",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "20c17262-fd6a-4ce7-9601-f9dc25b012ef",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "219d76fa-11f2-4274-afab-22458a3539d3",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "21d18da5-e4ca-4246-b558-e849bf6f6d20",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "22a02637-5737-4306-9f82-419654bae292",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "22ff6078-e784-4eb2-8e4b-cb23cc4cfb3d",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "23cd771d-adfa-4c63-922d-ef16140b06c2",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "23e89b07-fdd8-49be-8b2e-8488d6019dc6",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "24173810-7fa0-47b1-b78a-133fea9a6eda",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "241fc7d9-ae34-4b7c-b2ae-a996eb88e3f1",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "24c589c2-2b1a-455c-87d3-8659049dab4d",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "24edac98-7712-45b8-988c-e7e86a89f849",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "27537489-0045-4c0c-b67c-5d81078bc7f2",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "27806a0f-b4cb-4d00-a187-31cee2bf4884",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "28ca7b85-ecc9-45bd-9ae7-a86ea0d5c5e2",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2ac25b24-7df8-4bdd-a731-e56ac15c6016",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2aecbe2b-b591-4293-b94d-a26da167036a",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2b04c1fd-c32b-49d7-903f-4c59dbc4b2ff",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2b41e1d4-7477-4286-a9a8-840aae672320",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2b7dca21-27b2-4189-8f9a-d9e069940db6",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2e286ed3-42ea-49ab-b4d2-9ea030f76b2a",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2e76420e-c1df-4f20-9224-87b84d964b84",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2e84cd2a-ee83-48d0-8d1d-1409c0736ffd",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2f5fc4a0-09db-434b-8e11-a70690771665",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2ffb128c-90cc-4e17-8340-4d0eb1899eaf",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "329d6ad3-5137-4fd7-a701-667cf124e248",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "334b6d90-17fe-4d42-bbf2-d958f3bd2147",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "34d0fc2e-1d95-4fc1-9c9a-943e53bea1a2",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3599170b-08bc-4d84-89ab-e3546b8b4630",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "35c3bf0c-e0aa-47b5-a099-6bfccee3829e",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "36462ffb-68ed-43d9-ace8-8849f649ab06",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "36e6900d-44cf-43c8-badf-61bd06075262",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3714fedb-8bc5-4c58-a704-953ec564ec02",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-09\n",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "371b6f2a-2e3e-483d-9ea6-a134ebc0438f",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "375d5e63-6b74-4b4c-9cb0-f34861823db6",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3886a13a-69df-439f-a143-10791a68968c",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "38960989-231d-413a-ae4b-ad6fde87a4e2",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "38b592f1-4402-45bf-9733-9093d918a07f",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "38fd5ca5-8b41-45e3-b0b0-1c38c24e961f",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "393d7276-cf66-4301-ac0c-cad01e3e79e3",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "39496e83-50bc-48c7-85ea-b7f7942e9c44",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "39bc1cb4-09fe-42e6-b935-8cf25c96190d",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "39bd5af1-bb19-434b-9e3a-c122b4b4edc5",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3a684fba-4923-45f7-8db9-95f5a8546655",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3bc3db85-b93d-453e-9962-1e5e96321093",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3bdd5ac0-de62-413a-8367-c12243047ac3",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3becbf97-b3c9-46ac-9af9-1079648aa517",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3c1f0d79-ae88-4fec-b3ad-3e156af0f0be",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3d7f62a8-56e1-4270-b4dc-1e71fcf70a45",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3dcf569f-33af-422f-aac1-69d026ee547f",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3ed30811-5abe-4315-995b-d458905983e3",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3fd3f549-16ff-4014-8b69-c9a0f5e569df",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4036384d-1418-418b-8983-c55ba1bc5e17",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "408efffe-50b6-4de4-9aa8-ab2e11ea9420",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "40e532f2-8bf7-49b9-87ae-79f04df7834f",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "41a62f13-ed3b-4a9a-beae-dc148bbfbc78",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "41c482a4-69f3-4abd-8b40-f49c3e54e771",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "41d07595-9f64-4681-8646-ed00f31a8053",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "42b33c70-e513-4f54-b623-2944f0a08b84",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4321c413-580a-4e47-819b-aa368f82e34d",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "43f69a63-1eb5-4890-abc5-65105b892726",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4489bc26-9072-41aa-a1d6-9a3b5e54a886",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4565df0f-86c3-4602-8a8e-593afe84f208",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "46db35c1-e2d2-4417-936e-ed6cce1f5481",
+    "route_id": "route-mamak-gidis-01",
+    "stop_id": "stop-mamak-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4703d762-6033-4fd0-b488-34a84b202387",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "47425535-a31d-4832-a23a-747a9e3efa63",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "47ed3319-02b4-456c-a378-e1ee7398621d",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "48fc3fd6-7ab9-4ac4-a839-f70dd7e1f778",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "49d8c208-c001-42a3-835b-49bd1c0088ec",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4a6c803a-c5f1-4546-bf44-6124c0149351",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4a7b009d-dc23-424d-bfe2-f143f02d3826",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4b56179d-28a4-4f9a-9050-93d66e572bd0",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4b949517-05cc-476f-8bc2-cb4e2099cb08",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4c0f776f-dcd2-45c6-ae94-b97f2f16d8f2",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4caf5378-facb-4bee-aca6-217f865e3299",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4d65e222-e5d1-45ad-bce3-dab5d96361bd",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4d701c50-e3f5-44de-b816-eea61ab57025",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4d71878a-ef7e-4a32-bc47-8a9fc5b1240b",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4d730273-abb9-4d2c-992d-9aef1fb3f7e7",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4dae684c-4866-492d-beda-cc41c4753333",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4ded38cf-8cee-446d-8f8f-b0d135bf83f5",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4f87d77f-dbe4-4156-8a89-b638fa5777fb",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "508397c7-7c14-45cb-a8f1-78409ac9309b",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "51de3a8e-7230-47cb-b217-a561f20f2116",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5212e6a1-83d2-41c6-9d3e-b7d7a95b9ddc",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5617db07-278a-4484-b569-556157e62972",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5645a902-d45a-4888-a61f-0cc04e73bfe2",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-04\n",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "564ebbf1-bd14-41ac-ba29-a7180c8f21d8",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "569c47cd-a27a-4d37-8f1f-a7e8e72ec12e",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "56d80a0c-bd0e-4326-a043-4e328368cfd2",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "574fe5e0-da99-4515-93e9-5f6c8da992f1",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "57e2059b-e15c-4ef3-9ec9-43a6ee78efa7",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "58573393-f9fa-4932-bd72-da505f528936",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "589aae21-a336-4bd2-a156-de468a88cdb6",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5af90d32-9bc5-4606-8c98-bc6304454f21",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5ba266be-1158-4634-b329-9a14f255a6ab",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5c291dff-bb01-4f5d-837f-e921ec0768ac",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5c966f40-87c3-4c4c-8194-8c9f22ea6077",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5cc4934b-0949-4feb-823e-4c0911b47831",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5d1138fe-0903-4027-891b-34cb99468501",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5f3f928e-913b-488a-9eb2-4f7d3695a56e",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5fd38083-0836-4f19-8e99-9d69d1f1849c",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "60249386-14db-4248-ab53-344b626fdd53",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6053b93a-5540-422d-ab55-ef1c16d0df8d",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "60db2936-4992-4c50-948b-8cfeda83e46d",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "60f1056b-90f5-437b-89c5-5d017ad58967",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "618633e3-0b39-434c-804f-991fbf4c1084",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "61cd7bbb-e020-4917-9917-e9b1a51721f5",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "635b0a47-f3e8-4baf-b3df-40f6ffdb61c5",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "647a4d03-a5e1-4e5c-a7bb-ac9fd2739bf7",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "666e18ba-ec6e-4caf-b97f-0fd19b7686e2",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6712e534-0ac7-4f3a-84a1-9c5329b76a4a",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "67277123-5df4-4648-ab5a-4030db04a877",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "678cf9a1-ac81-4c05-8b4b-8e18a63f8e8c",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "68ad6499-395d-4f27-bb59-40ff5a4dfd9e",
+    "route_id": "route-mamak-gidis-01",
+    "stop_id": "stop-mamak-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6a4fea1d-5d1b-4121-9ccd-8a9592872443",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6b698c71-8ce4-4edb-9074-d00d3ab1cede",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6bcdb5fb-a059-448d-bda7-324727ef1a88",
+    "route_id": "route-mamak-gidis-01",
+    "stop_id": "stop-mamak-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6bd63eef-94ed-4a7b-aca7-1311a7602db1",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6cf0c351-cd8b-4730-9568-fc99174e9e7c",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6d6c5a6f-bc8a-484e-b110-3e042b53561e",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6db53856-b394-478d-92e7-a6a011043ebb",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6eb268a4-432f-4bae-a246-0f7f3a835de1",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6eec3199-c220-4ba2-b986-f3e7abf82cc9",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6f23e996-d098-4c09-b003-e57c5d479600",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6fce3a60-9073-4a46-9978-5d6c2be70ad9",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7010b313-19f8-4ce6-8f30-007dd5690f07",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "70a1b4e2-0264-488b-b82d-acf639937023",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "720bb664-62f5-4232-b55f-0a73aa136cc2",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "72ffe992-9954-4155-9fbf-4201748810e1",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "733f8389-40b1-481a-aadd-e3b7ae348178",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "73c67680-96d2-4985-bf65-115f7ba29494",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "74a03498-4b17-4544-90b2-ca841dff3016",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "74aadf4d-a49c-4a40-b3a8-7109102ac45f",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "76313cbc-c9e2-4bc4-b38e-94fd930526e8",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "76ea3bc9-9427-4b42-929a-22d750ec20dd",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7771c867-121f-4396-a09a-76d30dbdb070",
+    "route_id": "route-mamak-gidis-01",
+    "stop_id": "stop-mamak-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "78a23b4e-3a29-4fa2-af0b-366eb4237205",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "78bade68-43fa-485e-84dc-c240f53c74dd",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7aa33abe-75e5-493e-ab72-3ffa78ccaee4",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7af08e05-38c5-4907-b554-791079c6ee13",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7e168671-669f-43fb-bfcb-741328b1a2d8",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7eda0937-8902-4c75-8420-a6ba3dfb555a",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8074aa32-53a9-4e25-a82d-fed4280b6bfe",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "80efc2a1-385b-4c5e-a477-ec007457e90b",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "815c8876-aa42-47b1-bb05-b2c1a6a1327a",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "82d0500c-563e-4639-a35f-ddca73b4aa72",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "830e679a-affd-4583-8ddc-a7839bee40b7",
+    "route_id": "route-mamak-gidis-01",
+    "stop_id": "stop-mamak-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "860ef7eb-ecf5-4f57-b813-c831f51c8177",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "868823e9-eefb-48eb-a47e-e70442d6cbec",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "871d5160-9115-4528-b7f7-f155f2fb36b6",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "876f7dec-6174-44cf-899a-900eba29641c",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "87783ac8-b1b2-433f-8645-c4cc8d70cc3c",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "87c4e37c-83fd-4d5a-89ed-52317a6a943e",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "87e3bcb4-089a-495b-8802-6e599e7144ae",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "88ac98ed-f2bb-42f6-b9d5-090ea19b626a",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "88b253e2-01f1-4d74-87c6-f54e70ab3228",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "897f339b-03e3-46bd-8a83-5fa8702d16ca",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8c2fbb56-208e-4383-af77-b71320658268",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8d0611dd-e2c1-46c3-8cb8-d7ac4d6dbe3f",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8eb86153-afdf-43d3-b74e-556ed690ef6e",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "907be0ca-5b0c-445f-8523-aa9b1fa2abd8",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "90aac6f3-c8f3-4f83-a3e3-c5bbe06ee142",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "915a1e30-9fbc-48ed-8c24-80c07816a673",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9265c995-1f98-49bb-a24d-94fa531f4259",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "93da83e3-ec9f-4cb3-9345-6eca9fa6d423",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "94404388-9f04-4279-91f5-6a0d2da0631e",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "944b7f31-63ea-463f-83a4-5eda239c6320",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "95703a27-61c0-468e-972c-8f6c50e66b20",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "95b4f05b-5c73-46bb-8869-024f59dde5cf",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "96937988-864d-4fe9-89da-882c1baa1d54",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9762ab7c-87bf-4fff-8e59-c52b202cbc3b",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "977333a1-d1ab-4685-8ceb-e49f84a5b0c5",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "97977c04-1965-4f52-8e29-81c7f8e94d44",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "981d0479-aa0e-445f-8772-15e375e6b02f",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9875b0eb-0722-431f-85a3-ec8896377eb0",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "98778452-0a90-4a35-aae2-ab5f2a1296d7",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "99275827-2aeb-4f83-ace8-2c6e5f805208",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "99f932ea-3b19-4f08-b5f6-06621b322319",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9acb3b5a-216e-4714-8bb5-5a2e79999782",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9aec63cc-3d6a-4e51-bf5f-c8f44eccb6d1",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9b49e182-1655-4dd3-be39-b22935b8a727",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9b5754e3-28f2-4e12-8ef0-bd4dd54a9ae0",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9b95caf5-e7fa-4722-a320-344bc5fa8f65",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9baaef6b-508c-43c9-ae47-8188a6d26804",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-19",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9c4f0bd0-36b7-4c19-a0ec-52a323293061",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9d38ef61-fae8-4b49-b3f7-d5d5bdbd0505",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9d5a49c6-b771-4e19-93c6-f919e4a50021",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9d7afe55-c1d1-46e8-a7e2-333a5ba77aa5",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9da8e29f-7e7d-4b91-86c8-6c494e28abb9",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9f5fbf3c-2ebe-4ecb-ba89-1970f9db3d89",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a0b8d18b-2a4c-4c8f-b1d4-cbb90f729840",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a0e3bed1-8dca-4110-9306-717f532815ca",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a12bf61f-a798-4997-87a1-c9b9daeee77f",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a22d5927-b98c-4829-a551-be1aa5e8e648",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a31fe9b3-3e46-43cb-8ff2-4e720e5e46cd",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a35eea7c-f474-4aed-8b1c-7d89557710d3",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a362c628-121c-45b7-9179-c9a6996a382a",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a39dd160-04d1-4e7e-b3a6-6066eb84c9d8",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a45a157f-a098-422e-9ae4-87e1ccf65c7c",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a4f6e3f3-dd6e-4d09-b7b2-8abec4a7111e",
+    "route_id": "route-mamak-gidis-01",
+    "stop_id": "stop-mamak-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a5c455b1-4f62-4c5c-82e3-2a3281428e1c",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a6166e10-080d-4172-b81f-a161980ee369",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a6872045-a4bb-4d58-b599-3a1b90f7bcc9",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a69b5600-2f1a-488c-8566-6665a749eb7b",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a73d9e7b-8148-4ae4-aa7e-9b605061b25e",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a77bd807-d187-4d47-8b8e-e94b6bdf93cb",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a7eb5d66-3868-4da7-ba1d-2ffdd6e5c4e4",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a8172907-9839-4afd-993f-13a08089fb1a",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a8b3ed08-1b89-4317-9e89-07675bf1be11",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a8c72f0f-3fef-4d41-8dc2-845b82f66b41",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a99f6ced-bd57-4cc7-b140-7665103152f0",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a9efe437-d427-4aed-8dd4-9154a6029088",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "aa90a726-bb0d-4fe1-8cd3-2189379cddd8",
+    "route_id": "route-mamak-gidis-01",
+    "stop_id": "stop-mamak-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "aa9d6438-5a5c-405f-a858-4e1fd51c0ce4",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ab6120d2-4d05-430a-9d6a-b168b14a3f12",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "acdefe0c-4ef0-4d15-aa7c-05a52d3dc36a",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ad3123bd-1c94-41d6-9874-0c10a347f0d7",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ad93931a-aa6d-4cb6-bcf2-1792eafd45f2",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ade8a5b6-6214-4bce-9799-4102213bf937",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ae921668-1055-43e9-bbdb-7f7a8dcd205a",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "af5335f4-1245-4cf6-94e8-ff41feaa49e3",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b4929d2c-b50e-4d12-98fa-41d751878482",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b6f14589-907a-45d9-86b1-617095b9f881",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b7606430-6009-4f1b-bc93-f2a0e6f8d5fa",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b8e80e15-804f-4b62-864b-f273d7a677fb",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b927fab5-d575-4416-8885-c1bd3d7841b3",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b998fb3e-9c4a-4ac2-8ce5-164ed66f67de",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b9991674-7253-48a6-a943-4b630b5eb405",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "baebdd4c-65fe-4b77-8543-9d4b101d116d",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bc116382-adb9-4129-bc26-9d34956ed533",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bccf1c3d-f2a0-4354-84fe-6995b03ab2e8",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "be819bea-c906-4380-ae11-4ba5c5daf395",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "be85b504-3993-4213-9c63-2176ef7f4722",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bf66e9c5-ed40-4722-96fa-0459b1df5516",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c029b451-61f6-4a86-915b-c19593f0ad50",
+    "route_id": "route-ümitköy-gidis-01",
+    "stop_id": "stop-ümitköy-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c052ba17-6564-4083-940d-b555423a4905",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c092bc74-521c-47ac-92a9-641922d41198",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c0d11a66-6c9c-4f7e-8f16-3feb82e3756c",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c0f25ae5-2069-423c-856c-2b9cc2c628d1",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c13d0766-b603-4c23-aa2d-c88731265bec",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c353db96-fb81-4c2c-9a52-0626e4d58764",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c37ccc94-7f19-4d39-b25d-bdeb8d94613a",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c3a66152-38df-4ec9-ab2d-1c7b6bbea98e",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c3dde740-d0c0-456f-88ed-bf4a330aa11e",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c4397223-760f-4254-b41e-1748016986b8",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c529e4be-d6a3-4cc1-9074-1faa713ad0f5",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c56f1a5d-0313-4b30-9317-0975a09f4dc1",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c580e941-4709-40dc-9559-f50eec632802",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c6c7758f-3ed4-4975-89f0-f4db3a886b85",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c71a2197-7b8f-41ab-ae49-eed56067b0fc",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c976b1d8-ad6f-4c22-a606-e9bc540c401f",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c98632e2-9eff-4c78-b156-9802aacdf0cc",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c9fae6fc-0cd2-40c7-b493-58f06c8f84ed",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ca1b05cb-bf72-4656-98f8-3984abe12ebf",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ca39bdc1-c7cb-4e03-ae54-f58940d32c2f",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ca7a258f-e2a1-4ea0-973e-2235d18498e3",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cb0dd061-6bfe-487c-857b-f04c9868cc02",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cbd0fbc7-dcc5-43fb-9647-66e98a86cf5a",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ccfa765a-4bdf-46ca-8185-42d7507d461c",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cdc8e7bf-ed74-469c-b98b-8805027d914c",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cdf1453d-25bb-429e-9094-033d8d19a273",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ce702208-6f13-479e-894b-d9fd3baa2e50",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cebe25e6-721c-4751-8340-5fc6e8bac13d",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cee6b146-7fa5-41bb-b6f2-b5504dc4da7a",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cfff94b1-7bcc-4663-92e9-25edf1d24e55",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d05d4fac-67b4-4577-9a9c-bf661c639c7d",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d09683cf-268a-49cf-bdd6-ecbf239caf88",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d0b3a244-5cd2-4226-9acc-57cd224a91fc",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d1d9ccf2-19e9-41fc-9c04-397bbf904568",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d300c395-2e9c-48ff-a567-e9ea019dc79c",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d30fde47-cd8e-4c5c-8a62-139b36a38f37",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d36adc86-9b02-45ad-94f9-2856de0d3575",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d41ef1db-fd2e-43d3-834f-dda6169fca37",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d534424a-472c-4e6c-a44a-3cd2c0e3cc5c",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d5bdbb2e-975c-4527-a070-67aa240c4f00",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d6615613-20a4-4a63-acb9-e19e0937ade8",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d767fdfa-bdc2-4728-bab9-cd17c73f635f",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d872a901-1861-4746-a03f-af240da753e8",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d9579cae-3b5f-4098-9535-efad526f79f9",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d9bec42b-a558-4f86-b14c-75c708014803",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d9c70244-6429-46b2-8f28-fe30fe2ed85e",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d9cc266e-3e83-45bf-94f8-339fa7670668",
+    "route_id": "route-sincan-gidis-01",
+    "stop_id": "stop-sincan-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "dac373d2-e4c1-4920-ac10-df9ea2dc62a4",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "db141bf0-f11c-47dc-856a-146b1b2c2e96",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "dbabe2ec-07f8-4902-bc3b-bfd756831622",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "dc86be7c-e18b-4272-ac13-c468216ae683",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ddc2206e-30b1-4603-87b0-42cae2aa9c46",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "de257b93-5084-42c5-8e86-a60aadad54a5",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "de361526-da47-4202-a604-0717cf60740a",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "de9630d2-2f17-4f94-8042-f3ddba97f6b6",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "dfdfb2e3-ad53-40c8-b1ad-94084cf0258a",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e056a4ba-e66e-4d0a-8088-34d84e16e965",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e0a0c9ed-8fe7-441d-b5b9-275abe0f2c62",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e0ae0212-ee89-4ca1-a86a-e4dc598a7133",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e1851db0-9ac9-42ee-9e96-69cbf9376b3d",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e1bce59e-5be0-4333-b90a-f6314115d148",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e2b93d2b-042d-4699-b886-3592d0c46171",
+    "route_id": "route-balgat-gidis-01",
+    "stop_id": "stop-balgat-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e34b50d3-79af-4aa9-9c92-64e2d7144609",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e34f7ec2-fa3e-4232-8d7e-dddf9f390515",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e36f879e-944f-4e8d-82fb-a794205ac58c",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e4b1c778-b86c-418a-8fca-af4e663a9191",
+    "route_id": "route-balgat-gidis-02",
+    "stop_id": "stop-balgat-gidis-02-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e586ee7e-4af2-4ad1-968a-a3bcbb2088d5",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e5fbdb12-baf4-4fd1-92a2-5d957166e0e6",
+    "route_id": "route-gop-gidis-01",
+    "stop_id": "stop-gop-gidis-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e612e632-ceb9-426e-99cf-e115307e4c49",
+    "route_id": "route-bilkent-gidis-01",
+    "stop_id": "stop-bilkent-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e6880ca5-d017-41f2-876c-d4b14c216afe",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e6d9b860-1d2d-46cb-bb99-bdbf4cb17780",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e8839df1-559c-417e-bf07-e4fa366bba9a",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e8d63685-67c3-4d0c-9b49-45af34143a1d",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e8ef2755-7a50-4457-8cb7-e57fcea840d6",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e947a6ae-7e11-4e1a-a313-872f5929fb00",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e951f771-35fc-4b1b-a4ad-2111f4b73abd",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e9c9bc02-bc57-4b1c-a2da-0552e361531c",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e9cc7a25-45b9-4a97-8e13-79e466a08fed",
+    "route_id": "route-sıhhiye-gidis-06",
+    "stop_id": "stop-sıhhiye-gidis-06-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e9cdf07e-e823-46a5-9f1e-40ce0c1aa3e7",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e9f9f403-749a-476b-9f31-9d69b8fb04ea",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "eb2d6431-0521-4e5e-bd93-35840690f290",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "eb5ce8bc-6b00-4d6b-8e4a-fea304eef25b",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ec7d9b98-f3a7-4118-b32c-b2d457d82a69",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ecd0e187-1553-4148-9a25-df09d21da4a7",
+    "route_id": "route-gölbaşı-gidis-01",
+    "stop_id": "stop-gölbaşı-gidis-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ecf8a041-bfaf-4f43-aef2-2e1d97b19761",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "edb81018-2548-44e8-95c8-0853a5d81fb5",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "edc29bc5-aa75-4035-96e2-83cd31b6df69",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "edde1c6b-e9e4-4363-ace9-c21b4e509374",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ee1fc55d-22f6-414c-808d-ecb6b8082fea",
+    "route_id": "route-sıhhiye-gidis-05",
+    "stop_id": "stop-sıhhiye-gidis-05-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ef77da66-8b37-4c00-a2ac-ede41c6dafe3",
+    "route_id": "route-sıhhiye-gidis-09",
+    "stop_id": "stop-sıhhiye-gidis-09-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f14982be-a1ba-4a20-9f1d-2f2f5c20ffdc",
+    "route_id": "route-sıhhiye-gidis-02",
+    "stop_id": "stop-sıhhiye-gidis-02-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f2186871-16df-4e77-b196-fedc588fc79d",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f29e4ed5-57b1-4f36-b8ae-129d853ddd4f",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f34e6938-38d0-4719-ad42-5f939ea8e92c",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f3bb2724-de5b-45dc-89ae-727bec48a05c",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f4ae514e-81cc-4314-8a53-2a315e6ea81c",
+    "route_id": "route-sıhhiye-gidis-03",
+    "stop_id": "stop-sıhhiye-gidis-03-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f4db45fb-11d5-461a-8a0e-b2a13bea9450",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f5317aa9-1266-46a9-b412-40955e01cd39",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f57a1d24-372b-4b68-96e2-b282ee0e695a",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f5d1f671-4e03-4991-bec5-ea1adf02e6c1",
+    "route_id": "route-abidinpaşa-gidis-01",
+    "stop_id": "stop-abidinpaşa-gidis-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f637b22a-c5f4-422d-9961-ba2a38da8fc5",
+    "route_id": "route-çakırlar-gidis-01",
+    "stop_id": "stop-çakırlar-gidis-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f73f4c5d-922c-4c92-a45b-50d9f9f42214",
+    "route_id": "route-sıhhiye-gidis-10",
+    "stop_id": "stop-sıhhiye-gidis-10-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f87469af-4c46-46f4-87b7-540bd98fbad5",
+    "route_id": "route-sıhhiye-gidis-08",
+    "stop_id": "stop-sıhhiye-gidis-08-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f876fcae-3357-4229-b998-26993bfa8da7",
+    "route_id": "route-sıhhiye-gidis-01",
+    "stop_id": "stop-sıhhiye-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f8a1cc79-526d-4629-abf8-6523657b4dd2",
+    "route_id": "route-tunus-gidis-01",
+    "stop_id": "stop-tunus-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f959ac2a-e816-4252-a96a-a3b9c1ca0ddf",
+    "route_id": "route-ayrancı-gidis-01",
+    "stop_id": "stop-ayrancı-gidis-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f9b2e91e-0be4-45c3-97b5-4e07608cfca0",
+    "route_id": "route-aydınlıkevler-gidis-01",
+    "stop_id": "stop-aydınlıkevler-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fb454fae-7b9e-48b0-937c-10110d945dc7",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fb71264e-9a6e-4fed-b89a-25550b447836",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fbb70788-5342-4572-90f0-125f2ebafa17",
+    "route_id": "route-sıhhiye-gidis-07",
+    "stop_id": "stop-sıhhiye-gidis-07-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fc3f0f07-d71a-45fd-9f31-288c9bbd46d4",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fc6c4c0d-1880-4551-8d44-d56d667d98dd",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fc911222-5d9f-4e35-9774-c7cae411c3dc",
+    "route_id": "route-etimesgut-gidis-01",
+    "stop_id": "stop-etimesgut-gidis-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fcdf3026-9f8c-4932-af5a-ef05df118b0d",
+    "route_id": "route-sıhhiye-gidis-04",
+    "stop_id": "stop-sıhhiye-gidis-04-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fcdfa0aa-d301-4a8c-85f9-08b2660b3a9b",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fe94e9dd-6cdd-440f-8ebd-c5ecb7925e12",
+    "route_id": "route-eryaman-gidis-01",
+    "stop_id": "stop-eryaman-gidis-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ff3d60e7-0dd7-45f9-b5b2-40efb4b7c3d1",
+    "route_id": "route-şentepe-gidis-01",
+    "stop_id": "stop-şentepe-gidis-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ff89e6fb-1419-469a-820f-b50a963a7122",
+    "route_id": "route-dikmen-gidis-01",
+    "stop_id": "stop-dikmen-gidis-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  }
+]

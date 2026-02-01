@@ -1,0 +1,2459 @@
+[
+  {
+    "id": "008135df-0803-4b1d-9519-5d59944dcb1c",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "00cde8f5-cfb3-4fc5-8731-1e606f292792",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "014d9ce1-2193-4cb7-b8e6-988ce1520263",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "01adb906-3c82-4f71-86bb-b2cf9554925b",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "01ee9ce6-5daf-42d8-9c63-2337c5d630b6",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "029a1413-6aea-421e-a4aa-d681b6f15859",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "02be366e-de0d-48d5-9e3a-38f4a840e0f3",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "02d3df3e-09cf-46ef-a9e2-356e89920eaa",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "02dd7cfd-b8f5-4514-8266-cb250c9011c3",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "03e5d570-10e1-4b8a-9fbc-0e7396b3c277",
+    "route_id": "route-şentepe-donus-01",
+    "stop_id": "stop-şentepe-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "04292cce-32ae-46a7-b536-9fd86fa260ad",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "08bf82e0-f721-43fc-bfbd-cb0976d8bd36",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "08ecfd5f-1cbe-4342-90ec-c9c077c30967",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "09113e9a-f050-4870-9bf4-83e34ec8bd9c",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "097abf61-6cea-4755-a3fd-723da0d0818c",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0a5fd616-e2b9-4526-b564-17b478d37eb7",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0b225585-b630-4f1f-a2c8-77b4f7cd2514",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0bfb69e6-c5a6-437a-9ee9-69f05cb1dff7",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0c0c75e1-69bc-460a-893b-c39f2a814da9",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0c93bddb-ed6a-4e5d-b80d-dc6e53d60cfa",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0ca0e7be-1153-4b54-b208-f777c63e5921",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0d0f9f43-d3a4-4457-855b-5ce026a325a0",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0d149811-5e11-4561-b9f3-da44a68fd940",
+    "route_id": "route-sincan-donus-01",
+    "stop_id": "stop-sincan-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0d6121c5-2946-48ac-adba-301927eed18a",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0d904acf-a4c3-4705-9d23-d5c6f95068a9",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0dda2b02-4354-428d-84eb-429ec91d79c2",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0ef052f8-8380-4f23-98f8-75c6e61ce2d6",
+    "route_id": "route-etimesgut-donus-01",
+    "stop_id": "stop-etimesgut-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0f25a758-a8a2-4bcd-817e-499426d80d11",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0f458728-7514-4f6e-a650-2488e0fc7f8f",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "0fbbdf77-2953-499c-b3de-85cd5144571f",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "116fface-7fab-4169-ab4e-beaabbc09fcd",
+    "route_id": "route-aydınlıkevler-donus-01",
+    "stop_id": "stop-aydınlıkevler-donus-03\n",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "11db6783-6a7c-4729-a4c5-b96b6f250a32",
+    "route_id": "route-gop-donus-01",
+    "stop_id": "stop-gop-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "129f10a2-2f13-4731-a99d-4b67b85751a8",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "12c8431a-f9cf-4f61-a64e-a5bcb823ac00",
+    "route_id": "route-aydınlıkevler-donus-01",
+    "stop_id": "stop-aydınlıkevler-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "14674325-1c1c-4efd-a645-aa6e5259a4b8",
+    "route_id": "route-sincan-donus-01",
+    "stop_id": "stop-sincan-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "14802fc6-ced4-48ce-b217-ed07bb592951",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "14967f61-dbb8-4f52-bd3e-a79eb0b9b71a",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "14abad1f-12b6-4d93-973f-eea482614458",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "14b88fd5-98be-4849-9d81-08275eb32caf",
+    "route_id": "route-şentepe-donus-01",
+    "stop_id": "stop-şentepe-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "15900f39-f348-4bad-98e4-a2a9ae0edcd8",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "159e3f95-0a09-4af8-8df3-bd513cfa7996",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "18c714f2-ee0c-43a8-95cc-65a79e109e33",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "18d90d0c-8845-4680-8ade-0a5fdb4d296d",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "19166b74-638b-4a30-8497-30233c97b0a2",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "19e23a0f-8f02-4411-bbef-87164b954071",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1a0bc05c-2ae4-4f15-b65f-0de1c0eea2c2",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1a5c3b8e-4703-4319-8051-e1e00e889280",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1a877862-525f-4072-b75d-720b382b91fb",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1b84a4e0-ae97-4b54-84f8-0c2303cc2619",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1df64d3d-faa7-43b5-bdae-4835860da232",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1eb36f18-d534-44fc-ba92-841e10ad5298",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1ebfbe4e-f000-4d90-932b-6297f716c374",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "1fed5865-1b82-4d92-9b42-9d19fea6905b",
+    "route_id": "route-mamak-donus-01",
+    "stop_id": "stop-mamak-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "201dc335-637d-4264-949f-a449f34d2e15",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "203bf594-47ec-4064-8625-dba18a9e548b",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "20f12e38-81a7-4b81-a4cc-c8c072856579",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "21dcd8c2-6191-4727-bbc7-a64ddcca8eec",
+    "route_id": "route-aydınlıkevler-donus-01",
+    "stop_id": "stop-aydınlıkevler-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "22640d61-54b6-425b-bb6f-3a1b4fd3f548",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "22ea7075-5d20-4fba-bcce-18fea6f9d04e",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "234c2c72-1e70-41c2-a197-0cb683edcf7e",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "23b526ab-e117-4213-82a7-dfe4d6da1623",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "25ac8a1b-bc70-4dcb-8139-807b4e7c19ec",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "25e7eeab-4b45-444e-8cf2-5a55c8343a32",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "261ba792-c571-4d6d-b284-818d30e8eb8d",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "275168a7-f53d-48a3-a9bd-5cb03ce1036f",
+    "route_id": "route-mamak-donus-01",
+    "stop_id": "stop-mamak-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "281618ed-9831-44e1-b354-f2c93338f85c",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "290de82f-1e70-4947-a409-60df6a794543",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "29436d68-244a-4d13-8a0d-e42215a63b5b",
+    "route_id": "route-etimesgut-donus-01",
+    "stop_id": "stop-etimesgut-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2b967b53-fb27-44d1-9fb5-90ac52bceeb2",
+    "route_id": "route-sincan-donus-01",
+    "stop_id": "stop-sincan-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2c154e77-7e32-4e68-8acf-ddc857a438fa",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2c285b37-d9a8-49d6-80e1-7ed69114384e",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2cc2477d-f288-4e48-98fa-60603cf94021",
+    "route_id": "route-dikmen-donus-01",
+    "stop_id": "stop-dikmen-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2eb1a6c8-1a49-4cca-8e1a-c1955855da00",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2f0a032d-1b37-4a0f-86a4-f8a1837aa0cb",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "2f1df271-4c26-4f62-82ed-19cc6c6b1f6a",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3125f303-9c61-48bc-9d11-4ee72c936d88",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3224473b-5773-4aaa-8def-377bfa93840c",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3272ca4c-70fd-464b-8d90-c9cf2501ceac",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "33525902-62a6-4f4d-8c9d-1d6f3670fb1d",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "33925af7-e460-4259-b41b-e1da250a7fdd",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3498532b-b8a7-477d-9c24-c321c252e211",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "354d7cde-b518-4080-8dc2-0cb5056b3de6",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "362bd446-8beb-44e6-a964-05f03fac77e5",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "36b3c43b-2be6-4878-ac8c-c69eefe8b897",
+    "route_id": "route-mamak-donus-01",
+    "stop_id": "stop-mamak-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "36fa3bb5-67d3-4c6a-b4e1-9f33e9560ffc",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "372ff289-b485-4c9d-8749-e3624c856f56",
+    "route_id": "route-mamak-donus-01",
+    "stop_id": "stop-mamak-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3736ef86-743c-4c02-a360-9d44b8cc6a37",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "384a3daa-7f6a-4494-b154-6c24911b3f32",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "384be09f-414f-44a1-a9cf-6a95ee4bcf6d",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "39b07120-0643-4741-ab43-eeef59f13e23",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3a297fc5-7af2-4b1a-8766-672cfd3545fc",
+    "route_id": "route-aydınlıkevler-donus-01",
+    "stop_id": "stop-aydınlıkevler-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3a925030-717e-4f25-b8b2-1f9eb292b692",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3b0cedb3-1c41-4d71-abe6-18cd13ece805",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3bcbdac0-0f9a-4fb0-bd5f-97b332100de2",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3c30182a-55ce-419d-a9c8-a8fc20ac3c46",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3c8f1cd4-a2e6-4c9e-b3d5-9899b53fc8f8",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3d262ceb-1e5f-432f-bd94-e5e5d40ae55e",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3d83e304-f92d-4783-89f9-788522ee9212",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3db9e6fa-5dc2-49b8-b16f-cc32b419352d",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3e8a7343-6192-4582-8488-67caad274efd",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3f5bbd50-1738-4d68-a244-14e1407e2484",
+    "route_id": "route-bilkent-donus-01",
+    "stop_id": "stop-bilkent-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "3fac7a01-71e6-4bca-91dd-6d208d2c7fad",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "401e606f-c8af-4374-bad0-b7d527833e18",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4105c3e0-ac39-49f3-b316-257e3b23dbd8",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4280778b-2dbe-4dfe-843a-1f338220b007",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "42af587e-ee3a-4e7b-82c8-9b2fbb552577",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "42ed3d5a-989c-4d54-b3ea-2e96ed6fa704",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4530903e-97fc-439a-a623-f217577f0942",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "457ea9b3-9439-421e-b3b9-ad643e962716",
+    "route_id": "route-gop-donus-01",
+    "stop_id": "stop-gop-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "45ad7cfd-17d3-43e2-9242-d90f50954567",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "46e89140-2ad5-448b-b01e-9f6fe96c4268",
+    "route_id": "route-şentepe-donus-01",
+    "stop_id": "stop-şentepe-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4799b006-72cf-47db-9413-ab33d650d08d",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "47e5d8c4-58f8-4b8d-90bd-0b0f2d717469",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "486f0539-3325-4110-8e29-c418fd1ae633",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "48de567f-7b41-484e-9f01-afe0d898e215",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "49175982-574f-4f52-9564-26387b2cb17f",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "496aa5cf-86ee-4ac9-9966-565afb35c740",
+    "route_id": "route-gop-donus-01",
+    "stop_id": "stop-gop-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4a707d8d-4ac3-4b42-ac1c-07c089b8ef14",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4ad926a1-c78e-4ff5-8c38-2e3c9d5044fa",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4b99be3d-cec1-4312-b281-d7dd92665e92",
+    "route_id": "route-bilkent-donus-01",
+    "stop_id": "stop-bilkent-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4bd0cf4d-2d9e-4993-82c1-7b9e8d671e0d",
+    "route_id": "route-mamak-donus-01",
+    "stop_id": "stop-mamak-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4cf628f7-d698-4fc0-8860-698cc09662d7",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4da6e785-d077-482c-abe0-51e4dc38cba7",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4e1b7af1-c19e-44dd-acec-df36521aff46",
+    "route_id": "route-gölbaşı-donus-01",
+    "stop_id": "stop-gölbaşı-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4e3189ba-163f-496a-b272-3a5716ea4d6f",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "4fe60c0d-8a73-4095-b485-0a7b4f6b37b3",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5033ef8f-cb16-48ee-9188-d5400060c801",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "503dfdfe-4a23-4d77-9f1e-0471fe8ec5bc",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "50f7bb62-a0c3-496e-9888-8659f8dcc4f8",
+    "route_id": "route-sincan-donus-01",
+    "stop_id": "stop-sincan-donus-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "510b543f-b227-4104-b3f5-7c92f09e79c2",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5165b219-681d-45a2-a2ef-c142ea0340af",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "53c65613-2a93-4802-942b-a384f152f1f8",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5445ca50-1503-4948-85d2-7cae6628e9ad",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "54da8c3b-9b6b-4585-8d7d-43fe90fdf13f",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "55267168-8338-4cb4-86c6-c7211b0bf843",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "553a63e3-1f18-46ef-9d8a-cfbeae46f56c",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "55bdfbb1-6093-49d0-8b1c-c49eb67e942d",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "55e7fa58-d607-41e2-a3d9-be9e36a6109f",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "583e5dab-6331-4edd-950e-c369797c3e41",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5884a7bf-33e9-4b08-945b-8c12292c1d02",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5a34d809-ecdb-4760-8f79-0f916e8e354a",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5b47d45d-8be2-469f-b7ab-8f686762d294",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5bb44f06-59e7-4ee4-8bac-104151eb519b",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5eb77d63-371a-461c-9482-42b40c1fb380",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "5ef74a42-0486-4ed1-b527-fecb3bb8bcf5",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "61db6816-637b-44c9-9e5b-3037b98eb793",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "61fb2cb9-0c74-45c6-9cc1-9033e65fe474",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "61fc2f44-e07f-4e18-bec2-8f29d585a8a4",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "620d1196-d54c-4828-972c-10a296f0ba14",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "63e43b80-8c91-4e94-a563-b136d55d9d2d",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "654de0dd-b84c-4aa7-9071-ec9cddf1f9d1",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "666690a2-eb90-4689-a04f-4250b9c02d06",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "66d21549-0d5f-40cd-b81c-e59f48067bbd",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "672a366f-11de-4c0d-b03f-729fd855b00b",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "67359279-2d55-48ec-bfe7-91d746ec15b2",
+    "route_id": "route-ümitköy-donus-01",
+    "stop_id": "stop-ümitköy-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6761e85c-09af-47d3-911b-756335a8eaa6",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "686e50b1-da24-406f-baa0-82ce419eefda",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "699a127e-996e-4481-a4e8-9689ee9dfc2b",
+    "route_id": "route-ümitköy-donus-01",
+    "stop_id": "stop-ümitköy-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "69c744f2-fd24-4992-903e-5f3eaed70548",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6a3a47e5-00d0-4423-828d-a1966a1a7df5",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6b00ed49-09e3-4fee-b9f4-83e65a9ebccf",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6bd06933-b253-4c06-bf7e-ce0f78a4701e",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6c58a9ac-75f0-48b5-9a9a-ca86d8e0692e",
+    "route_id": "route-aydınlıkevler-donus-01",
+    "stop_id": "stop-aydınlıkevler-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6c83811f-74cb-40fb-8dcc-732a6f7fafb2",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6d5a940f-8cd2-4bdb-958e-16a09e2a11bb",
+    "route_id": "route-etimesgut-donus-01",
+    "stop_id": "stop-etimesgut-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6e8eeb93-8ba5-4642-833e-2d95c3f44cd2",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6f66de27-918b-41c1-bef3-133c8369bd8d",
+    "route_id": "route-gop-donus-01",
+    "stop_id": "stop-gop-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "6fc812aa-b97a-401a-9daa-8440ad487b4a",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "705e536e-68cf-42c6-8b65-440df7da904e",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "70a20515-97be-4212-a148-a51401527f28",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "72679ef7-be17-4c4d-986f-fd8d32059802",
+    "route_id": "route-gölbaşı-donus-01",
+    "stop_id": "stop-gölbaşı-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "72851106-0af6-43f5-b4de-3f04334fd8a8",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7577df46-17fc-4ec4-97a1-6f1dc3fe821e",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7673ee57-393f-4b63-b32d-01458da9762c",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "77175d7f-993d-4bb7-8729-45c25f6fc57b",
+    "route_id": "route-mamak-donus-01",
+    "stop_id": "stop-mamak-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7883832a-8fa0-42a4-8007-0ee7f328993a",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7bd10c0c-cd26-4bad-9c97-0eca5a907c77",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7cdc67fd-4186-47f7-9d5c-81e67bae5faa",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7dd6506d-8875-49bc-82b9-87861d241931",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "7f366e7f-6b6c-41aa-8f39-452929899065",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "801bfec9-61c1-4e80-97e6-f0692efe03f3",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8051f9fc-a978-4497-97d6-0d73d2988afe",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "806345f6-0428-4419-b1d3-db0b3f936b4a",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "81c296d5-90f7-41fc-b499-8b7d20d2feb3",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8208eedf-dd9e-4379-af02-5128279ea4ef",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "82ffd185-9e90-40e6-952a-8b84e659888c",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8329115e-c4a1-4c7b-a028-8aa6a2111a83",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "845a1b46-b39f-4ade-88a0-e90a442ad932",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "846c3f55-82f3-41e5-8091-a346c18a38e5",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "84c14f0f-63e1-4cc1-a299-59e984b1d23d",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "85305f04-3387-4f74-bdb8-68a94046067a",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "85511294-299d-43ee-9624-37e5607d2750",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "85a3d091-d499-4119-a8db-13474e877f98",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "85df2244-b5c1-4aa5-af87-e094a6a5568f",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "86994ecf-2dd0-4d51-a8e0-85607311e5b1",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "86ad9574-3cf7-40d7-b600-283939022aa2",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "87899808-6fe1-4583-87be-3949eeda8c4f",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "87a5a9f3-5cf6-4f4b-9d9a-34f939d74228",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "87f21372-13d9-47b9-b76a-0c7984c961f4",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "899ad53e-6d64-47dc-97b9-a62576a80272",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8b6cbe24-4e28-4a42-8eab-53aaca8ae37a",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8b729398-e0b3-4823-b437-f50b3a56279e",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8bbf46de-b35c-46f8-be6a-bbbac7126247",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8be1feb4-c3d4-4fc6-a732-cc874a6227ed",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8c474c1d-4a49-4ea4-a8ce-e7c5049837a2",
+    "route_id": "route-bilkent-donus-01",
+    "stop_id": "stop-bilkent-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8d10f47b-cab7-464c-aa1b-a725bb4893cc",
+    "route_id": "route-sincan-donus-01",
+    "stop_id": "stop-sincan-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8d90dc34-5b64-4dd7-be09-894966c8152c",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8e6b1a0f-2b99-44cf-9d0a-f12825eda82a",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8e7d1704-81b9-4bec-900c-7c436e6ac9a4",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8ea9e5c3-2966-422c-bc0e-552e10b2db31",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8ed0ae98-3054-473f-b6bf-42eb7acc32c8",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "8f4467e6-873a-421e-a9f8-7a8458a3de61",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "922bdc61-b479-469c-863f-0726b28053dc",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "928e064e-0fa1-4588-ad5b-e295cb1a45ba",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9464e9e5-69df-4d2f-92f2-98806168b233",
+    "route_id": "route-aydınlıkevler-donus-01",
+    "stop_id": "stop-aydınlıkevler-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "94853667-10ab-43d8-b0e4-c54eb8d8a58f",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "954e2449-c6d0-4729-84a5-d960d3d80922",
+    "route_id": "route-mamak-donus-01",
+    "stop_id": "stop-mamak-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "95f7b3ee-475b-4304-8dfd-90e0d41d4920",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9601b8d2-8c64-418b-a1bd-59a257762f7a",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "96a05008-0885-40c1-b115-287c8ee4bcd3",
+    "route_id": "route-sincan-donus-01",
+    "stop_id": "stop-sincan-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "96b7398d-38f6-4e31-a9cb-723fa7731b9f",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "97af7a0d-346f-47b8-9cc9-075661678458",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "97ec6c08-595d-4568-8d2a-4b9b7b090c59",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "98519611-396d-42dc-a564-84a714f316a8",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "98934501-44b5-49a7-b423-be924115d933",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "998834d4-db7c-442e-8f7c-6aa6694c710c",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9ad13283-cd97-46ff-b8ff-91ac8e55631e",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9b964c38-33f2-45e5-aa2c-17b096cd8012",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9ce07c06-2536-442a-8c95-fd235e9ec72c",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9d2d0710-d609-48f4-b626-5532f28e8ba6",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9d5399b5-36a1-40e2-b338-62b2891df6b2",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9e08d74d-2395-49ed-ad1e-b7ab74657c18",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9e8352a7-df59-4155-819f-77f1240d3715",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9fac6e7a-b66f-4dd0-a22e-9fcc1579206d",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "9fd02d27-2aa6-4cd2-82bf-5df4ee2aac46",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a10ed9c6-8c86-4960-abcf-38be1d031275",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a178582b-75da-4b3a-81df-1120231e0841",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a18b60e2-2d49-4be6-b9b1-6a5b0664c550",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a1dd2c48-4db3-4e9c-8ef0-3529210658c8",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a363b019-e1e5-498e-bf3b-7118ee1a8b0c",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a454b75c-7b62-4d55-b298-b002394eae6c",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a552955d-e200-42af-a6bc-12d9d12d2267",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a55f1fab-fed8-4cae-93ef-984441c351d6",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a5c3bbe6-c6c3-49fe-8d02-ac88909a9cc1",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a8889092-7313-4394-a453-50ada72471fb",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "a89c7e89-99b9-448a-a0f0-ff530d0637d7",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "aa5f76d2-c535-4bfa-8b35-8242a8aad816",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "abf76f87-776c-4d13-8b00-be7050654feb",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ac75eee2-89d7-441a-80a6-9f59baabd053",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ac7d3251-5624-4aeb-8bb2-44fbf49d6ade",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "acb919cc-eb6b-43e2-90a5-e11e9fad10cc",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ad05aa1d-3f75-4225-b6d8-778a525a5484",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ad59bd7e-e4af-45bc-b361-f6599e4c619d",
+    "route_id": "route-ümitköy-donus-01",
+    "stop_id": "stop-ümitköy-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ae9418f0-1d9c-42c6-b142-badaa33947c4",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "af97902a-d9b6-4d48-8b51-be0e2806e9e3",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "afc8bb13-4dbc-4ec4-87e5-dbdb9520e5cb",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b0071a1a-cf2b-451c-bc2b-be4ffce91010",
+    "route_id": "route-şentepe-donus-01",
+    "stop_id": "stop-şentepe-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b0547fef-ae10-47aa-9220-19092d11d4d4",
+    "route_id": "route-sincan-donus-01",
+    "stop_id": "stop-sincan-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b09679d5-6571-4873-806e-2018021d8f3c",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b0e13133-6d7e-4825-9b42-914bce6dff8c",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b143f965-ab88-41cc-8e71-0ce565904a2e",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b335c804-2187-4b2b-bcc6-ec5b4ae5f242",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b51201d4-12df-41e1-b4ac-afea3d172081",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b5d51023-d70b-4768-b221-5e1d96805179",
+    "route_id": "route-dikmen-donus-01",
+    "stop_id": "stop-dikmen-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b5f131d3-11ea-4508-b4cc-7a9f87500b41",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b6389b46-1abf-4155-ae13-2e8424433796",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b699e9c3-f94b-423c-8fc4-351c085b8ced",
+    "route_id": "route-gop-donus-01",
+    "stop_id": "stop-gop-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b7385e1e-5a9b-459c-89a0-ce8cbbfa3339",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b7f3d87f-05c1-4acf-99b3-f33068353aa5",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b82a17cc-1df1-4780-9698-e9f081919e0b",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b9cc1140-2769-434b-87ea-212ca613ba41",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b9d38e78-b36b-4056-8212-6d5fd07d8763",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "b9f3d996-9dcf-4559-98bb-0df2155aba7a",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bad1f207-0cbd-4089-bb1c-3106a196cf2d",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bbbd269d-c160-4b3e-8158-dbc889d1eb4d",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bce3801e-2dbb-455c-84f6-1b775f753397",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bce7ad81-88de-49ce-8309-1280a029f1da",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bd133377-afd0-4233-b75d-14b78e3a53a8",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bd13d28b-d15c-4aca-8ab9-8fc121caa9ef",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "be184b41-5c67-4ef8-8964-b67f1e2751f5",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bf0c23a4-6fbd-473e-a056-ed789a1e9036",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "bf4b156e-8bd5-45d4-b98d-a3b48ac0d96c",
+    "route_id": "route-balgat-donus-09",
+    "stop_id": "stop-balgat-donus-09-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c068a1f4-4c88-43fc-b593-71356e0392f3",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c1733dfc-0768-4a6e-8647-c51f29a51189",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c1a48280-b417-4ac2-9394-7efcd6170a50",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c228998d-4aab-47b4-806c-f31f0679a73d",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c3d90015-d180-486d-bcd1-28f06e2c97f4",
+    "route_id": "route-gölbaşı-donus-01",
+    "stop_id": "stop-gölbaşı-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c57f043d-938e-499e-98c6-6eab38860df7",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c5816a22-e1cb-410f-a61b-1da93934e3b2",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c65a27b3-afcf-4bdb-997b-744a5559c275",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c6e5137d-83e5-472f-af06-7856168f7765",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c71e3678-2c76-4756-87c7-ef53dbaf42e3",
+    "route_id": "route-balgat-donus-04",
+    "stop_id": "stop-balgat-donus-04-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c7d4d8fa-9beb-4430-a575-8333b11d0481",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "c99bbb9b-2683-4a93-987a-db63103c15bf",
+    "route_id": "route-aydınlıkevler-donus-01",
+    "stop_id": "stop-aydınlıkevler-donus-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cc7c4260-ef8a-4a51-b3cc-4192a4660864",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cc81e203-616a-4716-b148-a7ca2f0314d2",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "cd4993a0-5532-4fba-8139-48f3a6a186fd",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ceec47c1-5482-4c49-a304-507b6a33d14e",
+    "route_id": "route-sıhhiye-donus-02",
+    "stop_id": "stop-sıhhiye-donus-02-13",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d02bdbef-f252-4332-b8f1-fd2ac0972214",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d3fc8594-6834-4307-bb2e-baa8ef93d05d",
+    "route_id": "route-sincan-donus-01",
+    "stop_id": "stop-sincan-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d4c23026-8821-48a0-90cc-13b044a5d3ae",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d4dd79ae-de52-44e2-b1e2-7203a1dd9e36",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d51449a3-5d64-4f83-84cc-099b0159125c",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d5d66b44-9b8d-437a-b4d2-9c678f706949",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "d9af2189-fe5f-4150-a457-dc3f1e2fae90",
+    "route_id": "route-şentepe-donus-01",
+    "stop_id": "stop-şentepe-donus-07",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "daa81488-ae40-4d0c-9c62-bcf45948b03a",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "db385833-4035-43c3-9849-11d17d268ba8",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "dc40c256-24f2-4bac-a2d6-876043df4060",
+    "route_id": "route-balgat-donus-01",
+    "stop_id": "stop-balgat-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ddc4d40e-efbb-4a82-a988-0d3e2c982a5e",
+    "route_id": "route-şentepe-donus-01",
+    "stop_id": "stop-şentepe-donus-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ddd75b30-0d7b-4717-9d64-ee683f1deb7c",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "df422a44-917a-4a34-8faa-16cd1280692c",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e0300c7b-409f-4fd1-9e14-500faff647a5",
+    "route_id": "route-aydınlıkevler-donus-01",
+    "stop_id": "stop-aydınlıkevler-donus-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e1ca3aab-16f6-4d8c-a4ab-1e5811edb412",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e20188ab-7a43-48d8-9f3c-73a8a053ddfe",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-14",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e2b25784-f8ea-4943-a59b-5a27fa3f5e89",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e2de4fb9-7559-4923-8e05-5c6a238adf2e",
+    "route_id": "route-şentepe-donus-01",
+    "stop_id": "stop-şentepe-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e2de8f88-1d60-48d4-ad58-6b9674824fce",
+    "route_id": "route-balgat-donus-07",
+    "stop_id": "stop-balgat-donus-07-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e3348e78-f0ce-4ecd-a031-3c2eb3e10af2",
+    "route_id": "route-balgat-donus-02",
+    "stop_id": "stop-balgat-donus-02-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e4185ebd-7154-4b39-b303-deae9882b7af",
+    "route_id": "route-çakırlar-donus-01",
+    "stop_id": "stop-çakırlar-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e57ad156-a758-4bfe-afcc-1a2f850ac6e3",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e6389519-2b80-49ce-94aa-b1a620387ab1",
+    "route_id": "route-balgat-donus-06",
+    "stop_id": "stop-balgat-donus-06-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e6b5fecc-0026-4dfe-b269-276a9560f33b",
+    "route_id": "route-ümitköy-donus-01",
+    "stop_id": "stop-ümitköy-donus-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e757c564-89b1-4a0a-9282-d504f1c211e3",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-12",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e781e0aa-8f35-46a9-957b-a8b536a5397b",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e89b9a07-5e06-48fc-b6da-0472854e4591",
+    "route_id": "route-sıhhiye-donus-07",
+    "stop_id": "stop-sıhhiye-donus-07-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e97edc61-5eab-435b-a6a4-6a0e1f6a52a7",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-05",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "e99b8a62-1e17-4a36-9863-afa4026532b4",
+    "route_id": "route-gop-donus-01",
+    "stop_id": "stop-gop-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "eb7b8800-37c1-4657-9d24-10013bb8938f",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-03",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ebf1bfbe-0fcf-4869-8279-abf2f487e553",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ec990a5c-ad86-42a1-a258-c83abcd12872",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ecb1e8cc-3219-43e5-a7cb-cebf6a9470ce",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "eeabb4f1-3545-49f6-a936-8e2a61537acc",
+    "route_id": "route-sıhhiye-donus-04",
+    "stop_id": "stop-sıhhiye-donus-04-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ef98a834-adfc-4428-8dcd-a38504c18459",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-16",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "efb9654c-1636-4709-b22d-85a8080b7268",
+    "route_id": "route-eryaman-donus-01",
+    "stop_id": "stop-eryaman-donus-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f020fa5a-fcb8-47a5-824a-554fe797f497",
+    "route_id": "route-sıhhiye-donus-08",
+    "stop_id": "stop-sıhhiye-donus-08-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f1afe8cd-0d98-4ed3-83cd-fac6330a5c39",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-11",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f20c0283-82f9-4761-b4ca-7983cb6b8281",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f2567453-bc39-4759-83b9-0acdd5383b23",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f3d00cd3-9de0-4481-a5fb-3e112f49754b",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-06",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f3e33da2-5b0e-4444-a42d-1d0797f342d7",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-15",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f40b7c49-5e34-4308-8167-27fef764b2c5",
+    "route_id": "route-sıhhiye-donus-09",
+    "stop_id": "stop-sıhhiye-donus-09-18",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f52522ff-0e0f-4e12-b9d3-2ffa849e5489",
+    "route_id": "route-balgat-donus-05",
+    "stop_id": "stop-balgat-donus-05-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f5d939dc-9f2e-46f3-bce1-892b801f99f0",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-10",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f6e3a4b7-8b6e-4b7d-81d7-52bc74ed126a",
+    "route_id": "route-balgat-donus-08",
+    "stop_id": "stop-balgat-donus-08-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f91155c3-8f6e-4c59-a251-21b53d516b48",
+    "route_id": "route-abidinpaşa-donus-01",
+    "stop_id": "stop-abidinpaşa-donus-09",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "f9bc4419-21c8-4958-8940-c675e6591cab",
+    "route_id": "route-sıhhiye-donus-06",
+    "stop_id": "stop-sıhhiye-donus-06-02",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fa816063-e032-4a1e-b0be-eb1e2b121d97",
+    "route_id": "route-sıhhiye-donus-01",
+    "stop_id": "stop-sıhhiye-donus-17",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fcfe91b3-27c6-489d-992d-b5e7d02a31fe",
+    "route_id": "route-balgat-donus-03",
+    "stop_id": "stop-balgat-donus-03-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "fe8e5ddd-9bf3-4a8b-b831-32cbc46f4235",
+    "route_id": "route-sıhhiye-donus-03",
+    "stop_id": "stop-sıhhiye-donus-03-01",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "feb0bed4-71f7-4498-9552-8a24da46ffed",
+    "route_id": "route-bilkent-donus-01",
+    "stop_id": "stop-bilkent-donus-04",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  },
+  {
+    "id": "ff8cc483-f741-4c9f-a9e3-aa07f4465193",
+    "route_id": "route-sıhhiye-donus-05",
+    "stop_id": "stop-sıhhiye-donus-05-08",
+    "static_minutes": 0,
+    "updated_at": "2026-01-31T23:13:10.781019+00:00"
+  }
+]
