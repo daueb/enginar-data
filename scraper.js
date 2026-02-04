@@ -8,8 +8,8 @@ require('dotenv').config();
 const DEPT_LIST_URL = 'https://www.cankaya.edu.tr/ogrenci_isleri/sinav.php';
 const EXAM_TABLE_URL = 'https://www.cankaya.edu.tr/ogrenci_isleri/sinavderskod.php';
 
-// Bekleme Süresi: 5 Saniye (İdeal)
-const SLEEP_TIME = 5000; 
+// Bekleme Süresi: 3 Saniye (İdeal)
+const SLEEP_TIME = 3000; 
 // Hata olursa kaç kere tekrar denesin?
 const MAX_RETRIES = 3;
 
