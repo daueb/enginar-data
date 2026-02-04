@@ -83,7 +83,7 @@
     "color": "#0d47a1",
     "size": 8,
     "show_icon": true,
-    "show_label": true,
+    "show_label": false,
     "zoom_level": 6,
     "icon": "<i class=\"fa-solid fa-car\"></i>"
   },
@@ -94,7 +94,7 @@
     "color": "#1e40af",
     "size": 7,
     "show_icon": true,
-    "show_label": false,
+    "show_label": true,
     "zoom_level": 6,
     "icon": "<i class=\"fa-solid fa-shield-halved\"></i>"
   },
