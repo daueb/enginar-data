@@ -5,7 +5,10 @@
     "lat": 39.8191876970336,
     "lng": 32.5643492851391,
     "type_id": "type-0001",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0002",
@@ -13,7 +16,10 @@
     "lat": 39.820271312612,
     "lng": 32.5661769974092,
     "type_id": "type-0001",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0003",
@@ -21,7 +27,10 @@
     "lat": 39.8190342177803,
     "lng": 32.5618754993561,
     "type_id": "type-0010",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0004",
@@ -36,7 +45,10 @@
       "3",
       "4",
       "5"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0005",
@@ -50,7 +62,10 @@
       "1",
       "2",
       "3"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0006",
@@ -62,7 +77,10 @@
       "B",
       "A",
       "1"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0007",
@@ -74,7 +92,10 @@
       "C",
       "B",
       "A"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0008",
@@ -88,7 +109,10 @@
       "A",
       "1",
       "2"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0009",
@@ -102,7 +126,10 @@
       "1",
       "2",
       "3"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0010",
@@ -114,7 +141,10 @@
       "B",
       "A",
       "1"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0011",
@@ -131,7 +161,10 @@
       "4",
       "5",
       "6"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0012",
@@ -146,7 +179,10 @@
       "2",
       "3",
       "4"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0013",
@@ -154,7 +190,10 @@
     "lat": 39.8201600676932,
     "lng": 32.5662788671343,
     "type_id": "type-0011",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0014",
@@ -162,7 +201,10 @@
     "lat": 39.81843368828,
     "lng": 32.5630899997127,
     "type_id": "type-0004",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0015",
@@ -170,7 +212,10 @@
     "lat": 39.8187633106108,
     "lng": 32.5625054124591,
     "type_id": "type-0005",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0016",
@@ -178,7 +223,10 @@
     "lat": 39.8185202142949,
     "lng": 32.5624625069726,
     "type_id": "type-0013",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0017",
@@ -186,7 +234,10 @@
     "lat": 39.819537916865,
     "lng": 32.5604057252134,
     "type_id": "type-0006",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0018",
@@ -194,7 +245,10 @@
     "lat": 39.8199931999775,
     "lng": 32.5606256158317,
     "type_id": "type-0007",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0019",
@@ -202,7 +256,10 @@
     "lat": 39.8205659047676,
     "lng": 32.5600785708788,
     "type_id": "type-0007",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0020",
@@ -210,7 +267,10 @@
     "lat": 39.8199107960178,
     "lng": 32.5640792555068,
     "type_id": "type-0014",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0021",
@@ -218,7 +278,10 @@
     "lat": 39.8200282216304,
     "lng": 32.5639451758614,
     "type_id": "type-0012",
-    "floors": null
+    "floors": null,
+    "opening_time": "11:00:00",
+    "closing_time": "16:00:00",
+    "routes_id": null
   },
   {
     "id": "pin-0022",
@@ -226,7 +289,10 @@
     "lat": 39.820081784124,
     "lng": 32.5639237231182,
     "type_id": "type-0012",
-    "floors": null
+    "floors": null,
+    "opening_time": "08:00:00",
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0023",
@@ -234,7 +300,10 @@
     "lat": 39.818921940794,
     "lng": 32.5632173516556,
     "type_id": "type-0012",
-    "floors": null
+    "floors": null,
+    "opening_time": "08:00:00",
+    "closing_time": "16:00:00",
+    "routes_id": null
   },
   {
     "id": "pin-0024",
@@ -242,7 +311,10 @@
     "lat": 39.8204273642083,
     "lng": 32.5585895376278,
     "type_id": "type-0009",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0025",
@@ -250,7 +322,10 @@
     "lat": 39.8183265606821,
     "lng": 32.5608399732183,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0026",
@@ -258,7 +333,10 @@
     "lat": 39.8194513921315,
     "lng": 32.5595877130747,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0027",
@@ -266,7 +344,10 @@
     "lat": 39.8188065734244,
     "lng": 32.5600811261695,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0028",
@@ -274,7 +355,10 @@
     "lat": 39.818089643286,
     "lng": 32.5606335343082,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0029",
@@ -282,7 +366,10 @@
     "lat": 39.8173191410636,
     "lng": 32.561325385278,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0030",
@@ -290,7 +377,10 @@
     "lat": 39.8173397428397,
     "lng": 32.5622558980166,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0031",
@@ -298,7 +388,10 @@
     "lat": 39.8192896729922,
     "lng": 32.5606415106988,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0032",
@@ -306,7 +399,10 @@
     "lat": 39.8193844383938,
     "lng": 32.5619729215769,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0033",
@@ -314,7 +410,10 @@
     "lat": 39.8181020042138,
     "lng": 32.5636851186476,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0034",
@@ -322,7 +421,10 @@
     "lat": 39.8193277851803,
     "lng": 32.5658827944622,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0035",
@@ -330,7 +432,10 @@
     "lat": 39.8188930989697,
     "lng": 32.5652418937576,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0036",
@@ -338,7 +443,10 @@
     "lat": 39.8195070151869,
     "lng": 32.5664700633087,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0037",
@@ -346,7 +454,10 @@
     "lat": 39.8199705388984,
     "lng": 32.5642631123467,
     "type_id": "type-0008",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0038",
@@ -354,7 +465,10 @@
     "lat": 39.8195739688051,
     "lng": 32.5653110009323,
     "type_id": "type-0012",
-    "floors": null
+    "floors": null,
+    "opening_time": "08:00:00",
+    "closing_time": "16:00:00",
+    "routes_id": null
   },
   {
     "id": "pin-0039",
@@ -362,7 +476,10 @@
     "lat": 39.8196821245121,
     "lng": 32.5603584409187,
     "type_id": "type-0012",
-    "floors": null
+    "floors": null,
+    "opening_time": "08:00:00",
+    "closing_time": "16:00:00",
+    "routes_id": null
   },
   {
     "id": "pin-0040",
@@ -370,7 +487,10 @@
     "lat": 39.8197501080122,
     "lng": 32.5641400016754,
     "type_id": "type-0015",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0041",
@@ -378,7 +498,10 @@
     "lat": 39.8197058157394,
     "lng": 32.5639750837117,
     "type_id": "type-0016",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0042",
@@ -386,7 +509,10 @@
     "lat": 39.8188807381842,
     "lng": 32.5640917330031,
     "type_id": "type-0017",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0043",
@@ -394,7 +520,10 @@
     "lat": 39.8189858047903,
     "lng": 32.5642687181349,
     "type_id": "type-0017",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0044",
@@ -402,7 +531,10 @@
     "lat": 39.8205421494592,
     "lng": 32.5589874150822,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0045",
@@ -410,7 +542,10 @@
     "lat": 39.8204507981739,
     "lng": 32.5590619537809,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0046",
@@ -418,7 +553,10 @@
     "lat": 39.8203584800903,
     "lng": 32.5591399016305,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0047",
@@ -426,7 +564,10 @@
     "lat": 39.8202583082963,
     "lng": 32.5592235535248,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0048",
@@ -434,7 +575,10 @@
     "lat": 39.8201524711008,
     "lng": 32.5593124121337,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0049",
@@ -442,7 +586,10 @@
     "lat": 39.8200496182401,
     "lng": 32.5593992297964,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0050",
@@ -450,7 +597,10 @@
     "lat": 39.8199481353598,
     "lng": 32.5594830606445,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0051",
@@ -458,7 +608,10 @@
     "lat": 39.8198500250566,
     "lng": 32.5595664125793,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0052",
@@ -466,7 +619,10 @@
     "lat": 39.8197398074862,
     "lng": 32.5596561860282,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0053",
@@ -474,7 +630,10 @@
     "lat": 39.8196362871142,
     "lng": 32.5597359634172,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0054",
@@ -482,7 +641,10 @@
     "lat": 39.8195209209438,
     "lng": 32.5598190927973,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0055",
@@ -490,7 +652,10 @@
     "lat": 39.8194094172959,
     "lng": 32.5598986831612,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0056",
@@ -498,7 +663,10 @@
     "lat": 39.819271389435,
     "lng": 32.5599996145218,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0057",
@@ -506,7 +674,10 @@
     "lat": 39.8191383828478,
     "lng": 32.5601304237333,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0058",
@@ -514,7 +685,10 @@
     "lat": 39.8190378230016,
     "lng": 32.5602870207477,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0059",
@@ -522,7 +696,10 @@
     "lat": 39.819005891035,
     "lng": 32.5605906962037,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0060",
@@ -530,7 +707,10 @@
     "lat": 39.8191428893675,
     "lng": 32.5610110358918,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0061",
@@ -538,7 +718,10 @@
     "lat": 39.8188289773707,
     "lng": 32.5604570027814,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0062",
@@ -546,7 +729,10 @@
     "lat": 39.8187105196407,
     "lng": 32.5605066122502,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0063",
@@ -554,7 +740,10 @@
     "lat": 39.8180674966181,
     "lng": 32.5609242046528,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0064",
@@ -562,7 +751,10 @@
     "lat": 39.8178867177365,
     "lng": 32.5610797370413,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0065",
@@ -570,7 +762,10 @@
     "lat": 39.8176482536981,
     "lng": 32.5612694597395,
     "type_id": "type-0018",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0066",
@@ -578,7 +773,10 @@
     "lat": 39.8180886132086,
     "lng": 32.5612362661298,
     "type_id": "type-0012",
-    "floors": null
+    "floors": null,
+    "opening_time": "08:00:00",
+    "closing_time": "16:00:00",
+    "routes_id": null
   },
   {
     "id": "pin-0067",
@@ -586,7 +784,10 @@
     "lat": 39.8187973028238,
     "lng": 32.5631355815552,
     "type_id": "type-0019",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0068",
@@ -594,7 +795,10 @@
     "lat": 39.8187025366124,
     "lng": 32.5630200457161,
     "type_id": "type-0012",
-    "floors": null
+    "floors": null,
+    "opening_time": "08:00:00",
+    "closing_time": "16:00:00",
+    "routes_id": null
   },
   {
     "id": "pin-0069",
@@ -602,7 +806,10 @@
     "lat": 39.8189507826062,
     "lng": 32.5644552092911,
     "type_id": "type-0012",
-    "floors": null
+    "floors": null,
+    "opening_time": "08:00:00",
+    "closing_time": "16:00:00",
+    "routes_id": null
   },
   {
     "id": "pin-0070",
@@ -610,7 +817,10 @@
     "lat": 39.8190167067028,
     "lng": 32.5644203485834,
     "type_id": "type-0020",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0071",
@@ -618,7 +828,10 @@
     "lat": 39.8190537889793,
     "lng": 32.5644042590259,
     "type_id": "type-0021",
-    "floors": null
+    "floors": null,
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0072",
@@ -631,7 +844,10 @@
       "1",
       "2",
       "3"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   },
   {
     "id": "pin-0073",
@@ -644,6 +860,9 @@
       "1",
       "2",
       "3"
-    ]
+    ],
+    "opening_time": null,
+    "closing_time": null,
+    "routes_id": null
   }
 ]
