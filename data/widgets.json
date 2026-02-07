@@ -12,5 +12,12 @@
     "module_title": "Akademik Takvim",
     "table": "academic_calendar",
     "area": 2
+  },
+  {
+    "id": "widget-0003",
+    "created_at": "2026-02-07T22:56:28.517955+00:00",
+    "module_title": "Yaklaşan Vizeler / Finaller",
+    "table": "exams",
+    "area": 1
   }
 ]
