@@ -5,7 +5,9 @@
     "lat": 39.8191876970336,
     "lng": 32.5643492851391,
     "type_id": "type-0001",
-    "floors": null,
+    "floors": [
+      "C"
+    ],
     "opening_time": null,
     "closing_time": null,
     "routes_id": null
@@ -267,7 +269,10 @@
     "lat": 39.8199107960178,
     "lng": 32.5640792555068,
     "type_id": "type-0014",
-    "floors": null,
+    "floors": [
+      "B",
+      "C"
+    ],
     "opening_time": null,
     "closing_time": null,
     "routes_id": null
@@ -278,7 +283,9 @@
     "lat": 39.8200282216304,
     "lng": 32.5639451758614,
     "type_id": "type-0012",
-    "floors": null,
+    "floors": [
+      "3"
+    ],
     "opening_time": "11:00:00",
     "closing_time": "16:00:00",
     "routes_id": null
@@ -289,7 +296,9 @@
     "lat": 39.820081784124,
     "lng": 32.5639237231182,
     "type_id": "type-0012",
-    "floors": null,
+    "floors": [
+      "1"
+    ],
     "opening_time": "08:00:00",
     "closing_time": null,
     "routes_id": null
@@ -300,7 +309,9 @@
     "lat": 39.818921940794,
     "lng": 32.5632173516556,
     "type_id": "type-0012",
-    "floors": null,
+    "floors": [
+      "B"
+    ],
     "opening_time": "08:00:00",
     "closing_time": "16:00:00",
     "routes_id": null
@@ -465,7 +476,9 @@
     "lat": 39.8195739688051,
     "lng": 32.5653110009323,
     "type_id": "type-0012",
-    "floors": null,
+    "floors": [
+      "B"
+    ],
     "opening_time": "08:00:00",
     "closing_time": "16:00:00",
     "routes_id": null
@@ -487,7 +500,9 @@
     "lat": 39.8197501080122,
     "lng": 32.5641400016754,
     "type_id": "type-0015",
-    "floors": null,
+    "floors": [
+      "1"
+    ],
     "opening_time": null,
     "closing_time": null,
     "routes_id": null
@@ -498,7 +513,9 @@
     "lat": 39.8197058157394,
     "lng": 32.5639750837117,
     "type_id": "type-0016",
-    "floors": null,
+    "floors": [
+      "1"
+    ],
     "opening_time": null,
     "closing_time": null,
     "routes_id": null
@@ -773,7 +790,9 @@
     "lat": 39.8180886132086,
     "lng": 32.5612362661298,
     "type_id": "type-0012",
-    "floors": null,
+    "floors": [
+      "Z"
+    ],
     "opening_time": "08:00:00",
     "closing_time": "16:00:00",
     "routes_id": null
@@ -806,7 +825,9 @@
     "lat": 39.8189507826062,
     "lng": 32.5644552092911,
     "type_id": "type-0012",
-    "floors": null,
+    "floors": [
+      "1"
+    ],
     "opening_time": "08:00:00",
     "closing_time": "16:00:00",
     "routes_id": null
@@ -817,7 +838,9 @@
     "lat": 39.8190167067028,
     "lng": 32.5644203485834,
     "type_id": "type-0020",
-    "floors": null,
+    "floors": [
+      "1"
+    ],
     "opening_time": null,
     "closing_time": null,
     "routes_id": null
@@ -828,7 +851,9 @@
     "lat": 39.8190537889793,
     "lng": 32.5644042590259,
     "type_id": "type-0021",
-    "floors": null,
+    "floors": [
+      "1"
+    ],
     "opening_time": null,
     "closing_time": null,
     "routes_id": null
