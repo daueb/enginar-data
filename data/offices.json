@@ -2303,24 +2303,59 @@
     "pin_id": "pin-0009"
   },
   {
-    "id": "office-0330",
-    "name": "Dr. Öğr. Üyesi Şeyma BİLAZEROĞLU",
-    "office_code": "R-203",
-    "floor": "2",
-    "pin_id": "pin-0009"
-  },
-  {
-    "id": "office-0331",
-    "name": "Prof. Dr. Erol ÖZÇELİK",
-    "office_code": "R-319",
-    "floor": "3",
-    "pin_id": "pin-0009"
-  },
-  {
     "id": "office-0332",
     "name": "Dr. Öğr. Üyesi Ceylan YALÇIN",
     "office_code": "R-202",
     "floor": "2",
     "pin_id": "pin-0009"
+  },
+  {
+    "id": "office-0333",
+    "name": "Öğr. Gör. Saliha TOSCU",
+    "office_code": "210",
+    "floor": "2",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "office-0334",
+    "name": "Öğr. Gör. Sevgi KOYUNCU TUNÇ",
+    "office_code": "L-121",
+    "floor": "1",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "office-0335",
+    "name": "Arş. Gör. Müberra KORKMAZ",
+    "office_code": "408",
+    "floor": "4",
+    "pin_id": "pin-0011"
+  },
+  {
+    "id": "office-0336",
+    "name": "Öğr. Gör. Halil Fırat ÖZEL",
+    "office_code": "N-A08",
+    "floor": "A",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "office-0337",
+    "name": "Prof. Dr. Özlem UZUNDEMİR",
+    "office_code": "R-103",
+    "floor": "1",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "office-0338",
+    "name": "Dr. Öğr. Üyesi Fatma Neslihan EKMEKÇİOĞLU",
+    "office_code": "R-105",
+    "floor": "1",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "office-0339",
+    "name": "Dr. Öğr. Üyesi Deniz ALTAY KAYA",
+    "office_code": "330",
+    "floor": "3",
+    "pin_id": "pin-0012"
   }
 ]
