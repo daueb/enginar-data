@@ -12,14 +12,15 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@supabase/supabase-js": "^2.93.3",
+    "@supabase/supabase-js": "^2.95.3",
     "axios": "^1.13.3",
     "cheerio": "^1.2.0",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.2.4",
     "express": "^5.2.1",
     "iconv-lite": "^0.7.2",
     "pg": "^8.17.1",
+    "puppeteer": "^24.37.2",
     "socket.io": "^4.8.3"
   },
   "devDependencies": {
@@ -28,5 +29,13 @@
     "@types/pg": "^8.16.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/daueb/enginar-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daueb/enginar-data/issues"
+  },
+  "homepage": "https://github.com/daueb/enginar-data#readme"
 }

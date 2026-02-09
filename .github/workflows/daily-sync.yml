@@ -2,41 +2,71 @@ name: Daily Data Sync & Purge
 
 on:
   schedule:
-    - cron: '0 3 * * *' # Her gece 03:00 (UTC)
-  workflow_dispatch: # Elle tetiklemek için
+    - cron: '0 3 * * *' # Her gece 03:00 (UTC) - TSİ 06:00
+  workflow_dispatch: # Manuel tetikleme butonu
 
 jobs:
   update-and-purge:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Yazma izni şart
+      contents: write
     
     steps:
     - name: Depoyu Çek
       uses: actions/checkout@v3
 
-    - name: Node.js Kur (v20 Güncellendi)
+    - name: Node.js Kur (v20)
       uses: actions/setup-node@v3
       with:
-        node-version: '20' # BURASI DEĞİŞTİ (18 -> 20)
+        node-version: '20'
 
     - name: Kütüphaneleri Yükle
       run: npm install
 
-    # --- BOTLAR BURADA ---
+    # --- 1. GRUP: TEMEL VERİLER (Sıralama Önemli!) ---
+    # Not: Puppeteer için gerekli kütüphaneler Ubuntu imajında hazır gelir.
+
+    - name: 🏛️ Sınıf Listesini Güncelle
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      run: node 1_sync_classrooms.js
+
+    - name: 👨‍🏫 Akademisyen Listesini Güncelle
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      run: node 2_sync_academics.js
+
+    - name: 📚 Ders Listesini Güncelle
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      run: node 3_sync_courses.js
+
+    - name: ⏰ Ders Programı Oturumlarını Eşitle
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      run: node 4_sync_sessions.js
+      timeout-minutes: 60
+
+    # --- 2. GRUP: DİĞER TARAYICILAR ---
+
     - name: 📅 Akademik Takvim Güncelle
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       run: node calendar_scraper.js
 
-    - name: 📝 Sınav Programı Güncelle (10 Saniye Modu)
+    - name: 📝 Sınav Programı Güncelle
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       run: node scraper.js
-      timeout-minutes: 360 # 6 Saat sınır
-    # ---------------------
+      timeout-minutes: 120 # 2 saat yeterli olacaktır
+
+    # --- 3. GRUP: JSON ÇIKTILARI VE KAYIT ---
 
     - name: Verileri Çek ve JSON Yap
       env:
@@ -49,14 +79,14 @@ jobs:
         git config --global user.name 'Enginar Bot'
         git config --global user.email 'bot@enginar.app'
         git add .
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Otomatik Veri Güncellemesi" && git push)
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Otomatik Veri Güncellemesi: $(date +'%Y-%m-%d')" && git push)
 
-    - name: 🔥 Cache Temizle
+    - name: 🔥 Cache Temizle (Purge)
       run: |
-        FILES=("routes.json" "stops.json" "pins.json" "polygons.json" "food_menu.json" "widgets.json" "exams.json" "academic_calendar.json")
+        FILES=("routes.json" "stops.json" "pins.json" "polygons.json" "food_menu.json" "widgets.json" "exams.json" "academic_calendar.json" "classrooms.json" "academics.json" "courses.json")
         REPO="${{ github.repository }}"
         for file in "${FILES[@]}"; do
           curl -s -I "https://purge.jsdelivr.net/gh/$REPO/data/$file"
           curl -s -o /dev/null "https://cdn.jsdelivr.net/gh/$REPO/data/$file"
         done
-        echo "✅ Bitti!"
+        echo "✅ Tüm işlemler ve Purge bitti!"
