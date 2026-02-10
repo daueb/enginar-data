@@ -280,6 +280,11 @@
     "created_at": "2026-02-08T10:04:45.043167+00:00"
   },
   {
+    "id": "401caecf-83bc-4a62-a457-58b9a975d2f7",
+    "name": "Prof. Dr. Sinan KILIÇASLAN",
+    "created_at": "2026-02-10T23:36:33.260488+00:00"
+  },
+  {
     "id": "409708a9-9ba7-423f-bb6b-e3f0d6d16885",
     "name": "Prof. Dr. Sıtkı Kemal İDER",
     "created_at": "2026-02-09T22:02:04.74102+00:00"
@@ -518,6 +523,11 @@
     "id": "782a14e2-35b5-4c99-9cc0-2458be674dfd",
     "name": "Prof. Dr. Yahya Kemal BAYKAL",
     "created_at": "2026-02-08T09:58:08.427713+00:00"
+  },
+  {
+    "id": "78e3ac17-8a63-4a7f-b102-c431c23ae750",
+    "name": "Öğr. Elm. Dr. Mert AKİT",
+    "created_at": "2026-02-10T23:38:36.710717+00:00"
   },
   {
     "id": "7a1b8311-c229-48e0-90f4-bb7e6a5fb2a3",
