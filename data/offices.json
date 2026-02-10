@@ -687,7 +687,7 @@
   },
   {
     "id": "office-0099",
-    "name": "Dr. Öğr. Üyesi Eyüp KOÇAK",
+    "name": "Dr. Öğr. Üyesi Eyup KOÇAK",
     "office_code": "L-A18",
     "floor": "A",
     "pin_id": "pin-0005"
@@ -841,7 +841,7 @@
   },
   {
     "id": "office-0121",
-    "name": "Dr. Öğr. Üyesi Syed Shah Sultan M. QADRI",
+    "name": "Dr. Öğr. Üyesi S. Shah Sultan Mohiuddin QADRI",
     "office_code": "L-322",
     "floor": "3",
     "pin_id": "pin-0005"
@@ -2357,5 +2357,236 @@
     "office_code": "330",
     "floor": "3",
     "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0340",
+    "name": "Prof. Dr. Aykut KANSU",
+    "office_code": "K-404",
+    "floor": "4",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "office-0341",
+    "name": "Arş. Gör. Oben Hüseyin SAZANER",
+    "office_code": "K-411",
+    "floor": "4",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "office-0342",
+    "name": "Prof. Dr. Tanel DEMİREL",
+    "office_code": "K-401/415",
+    "floor": "4",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "office-0343",
+    "name": "Öğr. Gör. Bülent AKAT",
+    "office_code": "R-120",
+    "floor": "1",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "office-0344",
+    "name": "Öğr. Gör. Ahmet KABARCIK",
+    "office_code": "L-304",
+    "floor": "3",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "office-0345",
+    "name": "Öğr. Gör. Cihat BURAK",
+    "office_code": "210",
+    "floor": "2",
+    "pin_id": "pin-0072"
+  },
+  {
+    "id": "office-0346",
+    "name": "Prof. Dr. Ezgi ORHAN",
+    "office_code": "206",
+    "floor": "2",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0347",
+    "name": "Prof. Dr. Fatma Gül ÖZTÜRK BÜKE",
+    "office_code": "310",
+    "floor": "3",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0348",
+    "name": "Dr. Öğr. Üyesi Gökhan AKŞEMSETTİNOĞLU",
+    "office_code": "K-414",
+    "floor": "4",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "office-0349",
+    "name": "Arş. Gör. Emine Burcu ERYILMAZ CEYLAN",
+    "office_code": "Z22",
+    "floor": "Z",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0350",
+    "name": "Dr. Öğr. Üyesi Gülru MUTLU TUNCA",
+    "office_code": "Z25",
+    "floor": "Z",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0351",
+    "name": "Dr. Öğr. Üyesi Sevilay ULAŞ",
+    "office_code": "Ofis bilgisi bulunamadı.",
+    "floor": null,
+    "pin_id": null
+  },
+  {
+    "id": "office-0352",
+    "name": "Dr. Öğr. Üyesi Mustafa ÖNGE",
+    "office_code": "103",
+    "floor": "1",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0353",
+    "name": "Dr. Öğr. Üyesi Berkem SAĞLAM",
+    "office_code": "R-103",
+    "floor": "1",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "office-0354",
+    "name": "Öğr. Elm. Barış ERDOĞAN",
+    "office_code": "308",
+    "floor": "3",
+    "pin_id": null
+  },
+  {
+    "id": "office-0355",
+    "name": "Arş. Gör. Hande Cansın UZGÖREN KAZANÇ",
+    "office_code": "K-314",
+    "floor": "3",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "office-0356",
+    "name": "Prof. Dr. Papatya Nur DÖKMECİ YÖRÜKOĞLU",
+    "office_code": "228",
+    "floor": "2",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0357",
+    "name": "Arş. Gör. Zehra Burçin KANIK NABİ",
+    "office_code": "K-205",
+    "floor": "2",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "office-0358",
+    "name": "Doç. Dr. Nurcan ALKIŞ BAYHAN",
+    "office_code": "Ofis bilgisi bulunamadı.",
+    "floor": null,
+    "pin_id": null
+  },
+  {
+    "id": "office-0359",
+    "name": "Dr. Öğr. Üyesi Sude HATEM",
+    "office_code": "N-B10",
+    "floor": "B",
+    "pin_id": "pin-0007"
+  },
+  {
+    "id": "office-0360",
+    "name": "Arş. Gör. Huriye Nur ÖZKAN ÖZTÜRK",
+    "office_code": "420",
+    "floor": "4",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0361",
+    "name": "Prof. Dr. Ertan YAKICI",
+    "office_code": "L-329",
+    "floor": "3",
+    "pin_id": "pin-0005"
+  },
+  {
+    "id": "office-0362",
+    "name": "Prof. Dr. Fatma Didem EKİNCİ",
+    "office_code": "K-406",
+    "floor": "4",
+    "pin_id": "pin-0004"
+  },
+  {
+    "id": "office-0363",
+    "name": "Dr. Öğr. Üyesi Yağmur SÖNMEZ DEMİR",
+    "office_code": "R-104",
+    "floor": "1",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "office-0364",
+    "name": "Arş. Gör. Başak KALFA",
+    "office_code": "411",
+    "floor": "4",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0365",
+    "name": "Öğr. Elm. Minel SAYAR ÖZTÜRK",
+    "office_code": "Ofis bilgisi bulunamadı.",
+    "floor": null,
+    "pin_id": null
+  },
+  {
+    "id": "office-0366",
+    "name": "Dr. Öğr. Üyesi Özge ÜSTÜNDAĞ GÜVENÇ",
+    "office_code": "R-107",
+    "floor": "1",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "office-0367",
+    "name": "Dr. Öğr. Üyesi Mehmet Ali ÇİNİCİ",
+    "office_code": "Ofis bilgisi bulunamadı.",
+    "floor": null,
+    "pin_id": null
+  },
+  {
+    "id": "office-0368",
+    "name": "Dr. Öğr. Üyesi Güler Ufuk DEMİRBAŞ",
+    "office_code": "Z26",
+    "floor": "Z",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0369",
+    "name": "Dr. Öğr. Üyesi Ali Özkan ÇAKIRLAR",
+    "office_code": "R-108",
+    "floor": "1",
+    "pin_id": "pin-0009"
+  },
+  {
+    "id": "office-0370",
+    "name": "Arş. Gör. Damla YEŞİLBAĞ",
+    "office_code": "314",
+    "floor": "3",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0371",
+    "name": "Arş. Gör. Şafak SAKÇAK",
+    "office_code": "418",
+    "floor": "4",
+    "pin_id": "pin-0012"
+  },
+  {
+    "id": "office-0372",
+    "name": "Doç. Dr. Cemile Akça ATAÇ",
+    "office_code": "K-409",
+    "floor": "4",
+    "pin_id": "pin-0004"
   }
 ]

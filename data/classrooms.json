@@ -1,1087 +1,1107 @@
 [
   {
-    "id": "007c4a72-65d1-4001-b518-581c7217bc12",
-    "room_name": "MB04",
-    "classes_title": "MB04"
+    "id": "013e1c98-60bc-4abe-9119-d2f7c6691e04",
+    "room_name": "Hazırlık Okulu 113 (Kapasite=27)",
+    "classes_title": null
+  },
+  {
+    "id": "02054315-523c-4b14-a5ec-ec14df8056bb",
+    "room_name": "H307 Control Systems Lab. (MERKEZ KAMPÜS) (Kapasite=0)",
+    "classes_title": null
+  },
+  {
+    "id": "024bee9e-c7a2-4d50-9924-0802e722b507",
+    "room_name": "Hazırlık Okulu Z 09 (Kapasite=22)",
+    "classes_title": null
+  },
+  {
+    "id": "02a2bd64-916a-4379-abc1-310da2a7a52e",
+    "room_name": "Mimarlık Fakültesi 202 PC Lab (Kapasite=36)",
+    "classes_title": null
   },
   {
-    "id": "01571f5e-07f5-43a9-9bc7-c7ecedaf5dbe",
-    "room_name": "HC-2 Mechanical Engineering Lab. 2",
-    "classes_title": "HC-2 Mechanical Engineering Lab. 2"
+    "id": "02ec782c-bb06-4e39-8bdc-8c1d1347e772",
+    "room_name": "KA02 (MERKEZ KAMPÜS) (Kapasite=42)",
+    "classes_title": null
+  },
+  {
+    "id": "036a27a2-3089-410d-b3a0-dc8450f89a22",
+    "room_name": "MA07 (MERKEZ KAMPÜS) (Kapasite=36)",
+    "classes_title": null
   },
   {
-    "id": "027ed353-e151-461a-8d1b-d814136c2073",
-    "room_name": "HA04",
-    "classes_title": "HA04"
+    "id": "05de7449-35af-4afa-a478-f34e0cc3e23a",
+    "room_name": "Amfi-5 (MERKEZ KAMPÜS) (Kapasite=96)",
+    "classes_title": null
   },
   {
-    "id": "029a7c47-ac4c-4daf-9ad4-ccd2bc5e9a3b",
-    "room_name": "BİLARDO SALONU",
+    "id": "06389ac8-2656-4bae-9e45-c9beac9d11a3",
+    "room_name": "Haz. Ek Bina 212 (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "03893125-2792-4857-8a96-b2b6628cc249",
-    "room_name": "B 15 Mimarlık Fakültesi Ahşap ve Sayısal Üretim Odası",
-    "classes_title": "B 15 Ahşap ve Sayısal Üretim Atölyesi"
+    "id": "0785afd9-5f96-48b0-9653-e3bfa6706816",
+    "room_name": "H308 Solid Modelling and Pro. Lab. (MERKEZ KAMPÜS) (Kapasite=0)",
+    "classes_title": null
   },
   {
-    "id": "0564e5ad-81ef-40af-be81-032f84156262",
-    "room_name": "Hazırlık Okulu 113",
-    "classes_title": "Hazırlık Okulu 113"
+    "id": "07ba0ea8-7aa9-4b6f-8ad7-2fb0f4d7b1e8",
+    "room_name": "PB01 Akademik Çalışma Merkezi (MERKEZ KAMPÜS) (Kapasite=48)",
+    "classes_title": null
   },
   {
-    "id": "057ca8ae-eb71-4463-bbb0-2df7b85f6206",
-    "room_name": "Amfi-6",
-    "classes_title": "Amfi-6 (Ortak Alan)"
+    "id": "081d66d8-fa28-4c8e-a42d-55514387b5f2",
+    "room_name": "Z-17 Hukuk Amfi (Kapasite=104)",
+    "classes_title": null
   },
   {
-    "id": "0b3b48bc-e144-4d5a-90f6-9c464a1abd58",
-    "room_name": "R213 Matematik Seminer odası",
-    "classes_title": "R213 Matematik Seminer odası"
+    "id": "0a5c7cfe-a773-4804-94c2-59d06c25e3d4",
+    "room_name": "216 Mimarlık Stüdyo (Kapasite=56)",
+    "classes_title": null
   },
   {
-    "id": "0ba342fc-7263-4da1-9c44-3bc8091a66be",
-    "room_name": "404 Mimarlık Stüdyo",
-    "classes_title": "404 Mimarlık Stüdyo"
+    "id": "0b8a3183-8237-4f63-bed5-8935df71f973",
+    "room_name": "B 03 Mimarlık Fakültesi Toplantı Salonu (Kapasite=20)",
+    "classes_title": null
   },
   {
-    "id": "0cbafb41-2d00-441d-9564-65eb4aa39473",
-    "room_name": "RA01",
-    "classes_title": "RA01"
+    "id": "0d92a777-daeb-4fd0-81dd-7ad79c21b2c7",
+    "room_name": "H338 Modelling and Simulation Lab. (MERKEZ KAMPÜS) (Kapasite=28)",
+    "classes_title": null
   },
   {
-    "id": "0d6736f2-ece1-49f9-90f1-e6e8578a54f4",
-    "room_name": "210",
+    "id": "0faab4d4-1a3e-4b9b-a96b-4c8155d5ecf5",
+    "room_name": "K101 (MERKEZ KAMPÜS) (Kapasite=42)",
     "classes_title": null
   },
   {
-    "id": "0d810b51-b6de-480f-a306-78b024123f93",
-    "room_name": "LA15",
+    "id": "1101c488-dcd0-4349-a6d3-d682b282820c",
+    "room_name": "H340 Fizik Lab. 2 (MERKEZ KAMPÜS) (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "0ebc4d78-878d-4b35-904c-718378f79261",
-    "room_name": "H340 Fizik Lab. 2",
+    "id": "11994ec9-19cd-4e41-babc-ed937e71633f",
+    "room_name": "M102 (MERKEZ KAMPÜS) (Kapasite=70)",
     "classes_title": null
   },
   {
-    "id": "0fe8dbbe-14b9-452b-976c-54716c7cf583",
-    "room_name": "H331 Digital Lab.",
+    "id": "129725aa-63b1-4afa-b5e2-92d0a16dadc1",
+    "room_name": "RA04 (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "13bf274a-3695-42a2-b15e-ca5529b080b2",
-    "room_name": "212 Mimarlık Sınıf",
+    "id": "1620bf2e-9bc1-4dae-8667-29d25ef6dd8f",
+    "room_name": "Z-14 Mimarlık Stüdyo (Kapasite=60)",
     "classes_title": null
   },
   {
-    "id": "15caac74-1505-4843-a14d-dd2739d0ff81",
-    "room_name": "HİRA Reklam Atölyesi",
+    "id": "170d1c41-767e-49a1-a0c5-8af5cfc9f47c",
+    "room_name": "MA01 (MERKEZ KAMPÜS) (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "19b47394-9660-478a-8d44-3a04ecf4d1f1",
-    "room_name": "MÜZİK ODASI",
+    "id": "1990e8d8-3c5e-4c6c-8515-1bf068956ecf",
+    "room_name": "Hazırlık Okulu 112 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "1a0b988a-b460-4f5e-b49f-00a40058f98c",
-    "room_name": "Hazırlık Okulu Z 04",
+    "id": "1b162ba9-e5b3-481c-9b6e-aeb9d80219bf",
+    "room_name": "HA03 (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "1c218a33-0383-42a0-a911-219a050e3570",
-    "room_name": "NB02",
+    "id": "1d5ae433-eb6a-4025-945c-be058c5ca4be",
+    "room_name": "VİTRAY ATÖLYESİ (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "1c79a34f-e10f-435b-943d-0b190c95fc68",
-    "room_name": "Haz. Ek Bina Z 17",
+    "id": "1e58dbc8-2e01-429c-bad9-a1bb15aa8032",
+    "room_name": "B 15 Mimarlık Fakültesi Ahşap ve Sayısal Üretim Odası (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "1cb5e799-373c-4654-8157-3e76b6655498",
-    "room_name": "L112",
+    "id": "1e58f356-701e-4e65-89c0-022f9ed28d0b",
+    "room_name": "HA02 (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "1cf3a1d4-e238-4b8a-9327-be93acea51a0",
-    "room_name": "LB04 Robot ve Elektrik Lab.",
+    "id": "1ee6b7d2-8956-473d-894f-67c2040191e2",
+    "room_name": "LB06 (MERKEZ KAMPÜS) (Kapasite=50)",
     "classes_title": null
   },
   {
-    "id": "1ea154d4-20ca-42c1-a159-661dfe3b7179",
-    "room_name": "Haz. Ek Bina 304",
+    "id": "201c368b-c05a-4b54-9e2c-b72d5576548f",
+    "room_name": "Haz. Ek Bina Z 14 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "1eee61e3-f5cd-4371-b58a-a4d68c132682",
-    "room_name": "106 Hukuk Sınıf",
+    "id": "2552a8a5-26b8-4f80-8f86-1d69890921db",
+    "room_name": "Z-12 Hukuk Amfi (Kapasite=92)",
     "classes_title": null
   },
   {
-    "id": "228ff1e9-7e84-4828-9773-a2b78dea74d1",
-    "room_name": "LB07",
+    "id": "260dc5cf-c581-4c10-9dfc-5c98dab947f3",
+    "room_name": "HC-3 Welding Lab. (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "22fcb4d9-48e6-4967-ab37-2aa09dae7e10",
-    "room_name": "KA02",
+    "id": "26abea07-d4cd-4e13-93ca-41e4ce302053",
+    "room_name": "NC04 Kimya Lab. (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "238fea31-1897-4886-8bfd-b3643ecd5589",
-    "room_name": "Hazırlık Sınıfı Binası",
+    "id": "27491f13-1c1c-43b4-958b-0afdbe0db4d4",
+    "room_name": "Haz. Ek Bina 305 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "245b5721-1e86-4338-85c5-cd1e64c8c8ae",
-    "room_name": "HA02",
+    "id": "279dab46-a6df-4bfd-b557-eca2b474bd57",
+    "room_name": "P101 (MERKEZ KAMPÜS) (Kapasite=80)",
     "classes_title": null
   },
   {
-    "id": "25673640-44cf-4646-9eaa-2f55421ff224",
-    "room_name": "L111",
+    "id": "27cd012c-49c0-40a3-87af-e8333ccb25d8",
+    "room_name": "Haz. Ek Bina Z 16 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "26373f1d-189e-4025-b3a5-eab163780a09",
-    "room_name": "Hazırlık Okulu 102",
+    "id": "296e31f5-ecba-49e1-bbaa-ac11f5ce918d",
+    "room_name": "KA05 (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "286f446d-d8d1-43ff-87e5-a4f79214933f",
-    "room_name": "HC-3 Welding Lab.",
+    "id": "2d25a243-ed91-4fcf-bd75-57da6dc57c86",
+    "room_name": "RB04 (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "28fc337e-c66d-4448-9e64-9437b0c64970",
-    "room_name": "406 Mimarlık Stüdyo",
+    "id": "2d6c6d31-f0ee-4f09-ae70-2e688e03edb8",
+    "room_name": "HİRA Reklam Atölyesi (Kapasite=15)",
     "classes_title": null
   },
   {
-    "id": "2de9a3aa-d875-4afc-8cc2-0b71119c5043",
-    "room_name": "MB06",
+    "id": "2dd589f1-61fb-490d-a6ea-3f7ee5571db7",
+    "room_name": "B 15 Ahşap ve Sayısal Üretim Atölyesi (Kapasite=25)",
     "classes_title": null
   },
   {
-    "id": "2e7b51f0-0d5d-497b-a5b9-e732cc0c8648",
-    "room_name": "H309 Computerized Lecture Hall-1",
+    "id": "2f63cd42-f856-47e3-9380-6b5e272dfd57",
+    "room_name": "Hazırlık Okulu Z 10 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "2f58af23-1aca-4048-b03c-5e5e1be3cab8",
-    "room_name": "Z-17 Hukuk Amfi",
+    "id": "30816847-eb14-4c47-91c8-7d49f168590f",
+    "room_name": "RB05 Seminer odası (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "30397276-474d-4cd0-8389-b3a807a9c064",
-    "room_name": "MA06",
+    "id": "317c4701-4dcc-4c7b-931e-c381c4fe4b38",
+    "room_name": "B 14 Mimarlık Fakültesi Yapı Fiziği Lab. (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "3294c28b-72b5-42d7-8dd7-ed567f38f887",
-    "room_name": "Haz. Ek Bina 307",
+    "id": "32411dff-e6ec-4a7a-b1fc-ff898dee9f0f",
+    "room_name": "HC-4 Makine Mühendisliği Tasarım Lab. (MERKEZ KAMPÜS) (Kapasite=60)",
     "classes_title": null
   },
   {
-    "id": "32fa6fee-e7c0-419e-8760-0ad38dab0e53",
-    "room_name": "B-11 Hukuk-Mimarlık Amfi",
+    "id": "341fe560-5e17-4092-8310-59758d56fe10",
+    "room_name": "108 Mimarlık Stüdyo (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "38ef4325-33e2-43ce-8730-a2e0cbb6ea53",
-    "room_name": "RESİM ATÖLYESİ",
+    "id": "3475cdaf-4794-46e1-b30f-d63b7e9035d5",
+    "room_name": "RA02 (MERKEZ KAMPÜS) (Kapasite=28)",
     "classes_title": null
   },
   {
-    "id": "39b70f49-dce1-4e79-9051-cf724053a5fc",
-    "room_name": "Hazırlık Okulu Z 08",
+    "id": "348e98e9-580a-4d7d-8822-d7bbdf8396eb",
+    "room_name": "HA04 (MERKEZ KAMPÜS) (Kapasite=80)",
     "classes_title": null
   },
   {
-    "id": "3d3c93a0-aad1-4cb3-8dc1-8b5de217e5e5",
-    "room_name": "H315 Computerized Lecture Hall-5",
+    "id": "36f1d576-d4a8-4794-969a-f9a01945c23f",
+    "room_name": "H332 Communication Lab. (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "3d50255e-ea2c-40aa-a19d-1956dc53d9c0",
-    "room_name": "B 03 Mimarlık Fakültesi Toplantı Salonu",
+    "id": "3875cca4-9469-4275-8b88-463d32559e96",
+    "room_name": "Hazırlık Okulu Z 06 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "3ddb865a-adc7-4f13-95e6-773e89e294ab",
-    "room_name": "Haz. Ek Bina 215",
+    "id": "3a5a5129-d029-495e-a39f-61fc2b3ebfd4",
+    "room_name": "K106 (MERKEZ KAMPÜS) (Kapasite=34)",
     "classes_title": null
   },
   {
-    "id": "3e25bb57-672b-4177-8547-54c4516f1ea6",
-    "room_name": "Haz. Ek Bina 114",
+    "id": "3c6dabd4-ac22-4ae3-958a-fe9b8de45f7f",
+    "room_name": "Hazırlık Okulu Z 04 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "3e52f9a8-a47a-4ad7-a690-ae52d22a97e7",
-    "room_name": "Hazırlık Okulu 111",
+    "id": "3d40b050-bd2d-443d-b07f-8ab91dc81606",
+    "room_name": "L111 (MERKEZ KAMPÜS) (Kapasite=48)",
     "classes_title": null
   },
   {
-    "id": "3f629ca0-8e88-4798-a40f-c8701bf4ef78",
-    "room_name": "B 14 Mimarlık Fakültesi Yapı Fiziği Lab.",
+    "id": "3e28b98a-47b4-4b26-878c-5ab0a441f528",
+    "room_name": "LB07 (MERKEZ KAMPÜS) (Kapasite=50)",
     "classes_title": null
   },
   {
-    "id": "3f65bc4e-7772-4e96-b14c-c81afb0e5119",
-    "room_name": "Hazırlık Okulu Z 11",
+    "id": "3ebd955a-5857-42d6-ad7a-496869782241",
+    "room_name": "LB03 Metalografi Lab. (MERKEZ KAMPÜS) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "3f87a1c2-caf4-4f8d-aaee-a110306f991b",
-    "room_name": "304 Mimarlık Stüdyo",
+    "id": "4111aea9-492b-4636-802e-ee4d2fb06c18",
+    "room_name": "Haz. Ek Bina 214 (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "40214501-29de-4365-9fc5-1dc9ac6bb914",
-    "room_name": "H313 Computerized Lecture Hall-3",
+    "id": "412b0f09-fa10-441b-8d13-6f0c8b3bb771",
+    "room_name": "109 (Hukuk Seminer Odası) (Kapasite=15)",
     "classes_title": null
   },
   {
-    "id": "4042dfbc-bc8e-44e8-88e7-5aabb6a82225",
-    "room_name": "L113",
+    "id": "41bf1a54-b489-4e4b-b0d3-bb7130e4b9c5",
+    "room_name": "B-10 Hukuk-Mimarlık Amfi (Kapasite=108)",
     "classes_title": null
   },
   {
-    "id": "4286b78d-ca62-46ea-bfb4-879fc33e2eda",
-    "room_name": "MB07",
+    "id": "421c223f-014a-4983-91d7-68807392d8fd",
+    "room_name": "KA04 (MERKEZ KAMPÜS) (Kapasite=42)",
     "classes_title": null
   },
   {
-    "id": "4374c24a-38e2-4bdc-bbf2-7b1943701c86",
-    "room_name": "Haz. Ek Bina Z 15",
+    "id": "4353027a-71f0-40f6-a432-b76d00d95262",
+    "room_name": "RB03 (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "445e8422-2835-4759-8655-85dfd376c19a",
-    "room_name": "216 Mimarlık Stüdyo",
+    "id": "43d37337-9e07-4b04-8718-03e68cebd5b6",
+    "room_name": "HA05 (MERKEZ KAMPÜS) (Kapasite=39)",
     "classes_title": null
   },
   {
-    "id": "45277caf-804d-433e-af59-50ebb56a4053",
-    "room_name": "Hazırlık Okulu Z 10",
+    "id": "465c16cf-8726-444a-9750-a6ef7c220416",
+    "room_name": "Haz. Ek Bina 215 (Kapasite=18)",
     "classes_title": null
   },
   {
-    "id": "45c07110-a245-4b3e-a8c1-ee665779b2d8",
-    "room_name": "MA10 Electromechanical Energy Con. Lab.",
+    "id": "465ff355-e24a-4225-a113-0747636f080c",
+    "room_name": "Hazırlık Okulu Z 11 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "4706cf05-0b59-4aa8-8e71-ff0e4fc8918e",
-    "room_name": "NA02",
+    "id": "46b7ec80-009d-4c9a-bed1-4a08ac9675f2",
+    "room_name": "NA06 (MERKEZ KAMPÜS) (Kapasite=64)",
     "classes_title": null
   },
   {
-    "id": "47091c92-339d-46f5-829c-0517f71b2eb2",
-    "room_name": "HA01",
+    "id": "48b3dc0a-5e3c-4914-9f90-c0f8bfd15a40",
+    "room_name": "NB06 (MERKEZ KAMPÜS) (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "476ae84a-9145-44cd-afd2-dfcdb814fe65",
-    "room_name": "K102",
+    "id": "499ee7ca-6477-46ce-a3eb-f8b84d4ad853",
+    "room_name": "R213 Matematik Seminer odası (MERKEZ KAMPÜS) (Kapasite=7)",
     "classes_title": null
   },
   {
-    "id": "47788bad-ec7b-495d-961b-c28e18ce8249",
-    "room_name": "NB01-B Ergonomi Lab.",
+    "id": "49ea84c3-3d4c-42ae-8343-e6fc94ee88b2",
+    "room_name": "NB01-A Malzeme Lab. 1 (MERKEZ KAMPÜS) (Kapasite=48)",
     "classes_title": null
   },
   {
-    "id": "4822e941-38d7-44db-b3c7-33ddf49e758a",
-    "room_name": "H332 Communication Lab.",
+    "id": "49f64a3d-e9aa-4b3d-85d4-5907e63c6a4d",
+    "room_name": "B-08 Hukuk-Mimarlık Amfi (Kapasite=126)",
     "classes_title": null
   },
   {
-    "id": "49275fd9-fcb2-48f7-ba37-060a13e6c2d8",
-    "room_name": "Haz. Ek Bina 309",
+    "id": "4a4fda72-ffbb-42c1-873a-c441bed164e6",
+    "room_name": "Hazırlık Sınıfı Binası (Kapasite=1500)",
     "classes_title": null
   },
   {
-    "id": "497de1c6-2ce4-4d87-99b5-4f540a817041",
-    "room_name": "MB01",
+    "id": "4cc2d65d-c30e-4a78-b942-552b60c1fec4",
+    "room_name": "Haz. Ek Bina 211 (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "49afa637-4b46-4c61-ab1a-26a1bbb8c88b",
-    "room_name": "Hazırlık Okulu Z 09",
+    "id": "4e1349d2-5dd8-43dc-ae9e-1bda6b191ec3",
+    "room_name": "HC10 MASA TENİSİ SALONU (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "4a7f9e1b-762a-4549-bf8a-4d8702f442a0",
-    "room_name": "Z 03 Mimarlık Fakültesi PC Lab.",
+    "id": "4e883d8e-3236-4b30-81ba-cee93ab937ad",
+    "room_name": "H315 Computerized Lecture Hall-5 (MERKEZ KAMPÜS) (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "4bbc677f-c47a-412c-b0e2-b5e23bf6ed96",
-    "room_name": "PB01 Akademik Çalışma Merkezi",
+    "id": "4feacd2c-a910-41d8-880d-00e68845e9ce",
+    "room_name": "MB01 (MERKEZ KAMPÜS) (Kapasite=28)",
     "classes_title": null
   },
   {
-    "id": "4e224589-6bb2-4a79-be57-fafc675a55aa",
-    "room_name": "LB03 Metalografi Lab.",
+    "id": "504bf64b-bc84-4727-b28f-7bb44e8eea3a",
+    "room_name": "Mimarlık Fakültesi 102 PC Lab (Kapasite=36)",
     "classes_title": null
   },
   {
-    "id": "4e2a44b0-d487-4b53-906a-6e43adaa438c",
-    "room_name": "K107",
+    "id": "50fd96ed-7f7e-4966-83a9-7d74b8d6d0b5",
+    "room_name": "Haz. Ek Bina 306 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "5004c938-c43e-4bc8-9860-5df2bf60a91c",
-    "room_name": "H338 Modelling and Simulation Lab.",
+    "id": "51f77270-a5ec-4182-890d-1d564b45d005",
+    "room_name": "RA05 (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "50497bd5-dea1-4251-b125-6a459f8fd4bf",
-    "room_name": "Hazırlık Okulu 109",
+    "id": "52b423b4-8c56-4f7e-9ffe-edb9cb35140a",
+    "room_name": "K103 (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "5294ba94-6c00-4d7e-bc75-dcfb8189b77e",
-    "room_name": "Haz. Ek Bina 306",
+    "id": "558de2c1-6418-45bf-af28-7c6812533d76",
+    "room_name": "NB02 (MERKEZ KAMPÜS) (Kapasite=150)",
     "classes_title": null
   },
   {
-    "id": "52db4188-e32f-4d4e-8b2f-5317ec92ff05",
-    "room_name": "H334 Electronics Lab.",
+    "id": "5602a038-1446-47c7-90fc-3b07e8b0fd3f",
+    "room_name": "NA02 (MERKEZ KAMPÜS) (Kapasite=140)",
     "classes_title": null
   },
   {
-    "id": "53716cab-6c7c-4a2a-9916-08865acab322",
-    "room_name": "Z-01 PC Lab",
+    "id": "562d67e9-aea1-419e-b4b9-d5724ccd4995",
+    "room_name": "Hazırlık Okulu 111 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "5645aec1-5ae2-4b0a-9fe2-bfcc2459c560",
-    "room_name": "Z-12 Hukuk Amfi",
+    "id": "571d14d0-0480-41e0-8d2f-22d1afb39ce4",
+    "room_name": "KA03 (MERKEZ KAMPÜS) (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "56f22530-da52-4a8c-a402-d0d31f764e6d",
-    "room_name": "Hazırlık Okulu Z 01",
+    "id": "572ba789-d971-47fa-b89f-2920f8a800ad",
+    "room_name": "WEBONLINE CANLI YAYIN (Kapasite=1500)",
     "classes_title": null
   },
   {
-    "id": "5958d207-494e-48cf-8cbb-ffb9d62b38f6",
-    "room_name": "205 Hukuk Amfi",
+    "id": "58058748-f0ed-4cb9-8dd8-5972c71ecd30",
+    "room_name": "212 Mimarlık Sınıf (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "5a4229df-29f1-4cb3-8c3b-eb4ef1570490",
-    "room_name": "H329 Fiberoptik Lab.",
+    "id": "5a8e8dbb-9ea4-4d91-acda-4db17eb5930c",
+    "room_name": "Hazırlık Okulu 105 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "5a91cd3c-e0f5-4fe5-a0a3-482687f9f6b6",
-    "room_name": "RA03",
+    "id": "5aa72310-804b-4de5-88a2-afc9768a7275",
+    "room_name": "NC03 Mekanik ve Hidrolik Lab.(MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "5acf3c53-f3cb-476b-a4da-7c2cfae1f3a6",
-    "room_name": "Hazırlık Okulu 110",
+    "id": "5b3d87cc-39b7-4a15-9920-6bb422027c0d",
+    "room_name": "Belirsiz (Kapasite=1000)",
     "classes_title": null
   },
   {
-    "id": "5d9afd4f-982a-47b1-8434-065a3a6eb09a",
-    "room_name": "PA01",
+    "id": "5bc67b75-2a78-4ed5-852f-6edfc227fbe6",
+    "room_name": "H312 Computerized Lecture Hall-2 (MERKEZ KAMPÜS) (Kapasite=41)",
     "classes_title": null
   },
   {
-    "id": "5e31deec-4039-460d-a23e-a6bf4267894f",
-    "room_name": "Haz. Ek Bina 116",
+    "id": "5c6eb3cc-5dec-4bf7-8609-413a3f220865",
+    "room_name": "H102 (Konferans Salonu) (MERKEZ KAMPÜS) (Kapasite=210)",
     "classes_title": null
   },
   {
-    "id": "5faddf70-3263-4e75-870c-07ea74088519",
-    "room_name": "Hazırlık Okulu Z 03",
+    "id": "5c7a52be-7c03-4b81-afd0-76771875829d",
+    "room_name": "Z-15 Mimarlık Stüdyo (Kapasite=60)",
     "classes_title": null
   },
   {
-    "id": "5fdcb0b7-5388-4dee-b2a1-e0bb3a50554c",
-    "room_name": "H327 Microwave Lab.",
+    "id": "5cd6b2f1-c307-44f5-9623-2c8a0bd930db",
+    "room_name": "Haz. Ek Bina 309 (Kapasite=18)",
     "classes_title": null
   },
   {
-    "id": "6328a37f-aa00-48a5-970f-037bb030c012",
-    "room_name": "RA02",
+    "id": "5ea84e4b-a804-437a-b354-562c6a744e41",
+    "room_name": "Haz. Ek Bina 114 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "6337bd3d-eceb-4aa1-af3f-60c09c4a9f22",
-    "room_name": "103 Mimarlık Sınıf",
+    "id": "5fc6e86f-03b1-4051-a059-f1370b0c4b3f",
+    "room_name": "405 Mimarlık Stüdyo (Kapasite=72)",
     "classes_title": null
   },
   {
-    "id": "63e3ef8e-c6a8-40fc-a242-c12809c3858b",
-    "room_name": "Haz. Ek Bina 303",
+    "id": "610f768f-5f16-45f7-84b3-ece577276810",
+    "room_name": "Haz. Ek Bina 115 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "69734509-714c-4441-8e3c-cf3fec67727a",
-    "room_name": "LA16",
+    "id": "63048d8a-a0eb-4be5-aeb7-7ccc076586d4",
+    "room_name": "H314 Computerized Lecture Hall-4 (MERKEZ KAMPÜS) (Kapasite=37)",
     "classes_title": null
   },
   {
-    "id": "69a37db9-d227-498d-9463-7d1e6a617270",
-    "room_name": "RA06",
+    "id": "648848a8-252e-43fa-b7a4-d4827265b90b",
+    "room_name": "L113 (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "69b1d1b2-8f17-4a2f-9f98-3c7c5a42ef7b",
-    "room_name": "K101",
+    "id": "66105cfe-8554-4cbe-bdb5-19d3f809e669",
+    "room_name": "MB07 (MERKEZ KAMPÜS) (Kapasite=82)",
     "classes_title": null
   },
   {
-    "id": "6a13c97e-53a5-4be4-9f63-cd22612c8948",
-    "room_name": "Haz. Ek Bina Z 16",
+    "id": "66be9bed-bac8-40c1-884a-e54bf6178c83",
+    "room_name": "Hazırlık Okulu Z 13 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "6b9bf8dd-5f43-4f8e-bf5b-1bcd08023ef7",
-    "room_name": "B-08 Hukuk-Mimarlık Amfi",
+    "id": "676d858f-2272-4c64-967c-648b12fc87c1",
+    "room_name": "KA06 (MERKEZ KAMPÜS) (Kapasite=50)",
     "classes_title": null
   },
   {
-    "id": "6c595dc0-cefb-4786-b3fb-a658cdfb1d37",
-    "room_name": "208",
+    "id": "6c48857f-5bdc-40b5-8d70-138566bf8872",
+    "room_name": "Hazırlık Okulu Z 03 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "6cb39060-854d-40a7-9064-9f5ab839014e",
-    "room_name": "H307 Control Systems Lab.",
+    "id": "6cb8163f-eda4-4d86-8c1f-a26777a20d8a",
+    "room_name": "Z-01 PC Lab (Kapasite=36)",
     "classes_title": null
   },
   {
-    "id": "6d643c22-eae8-4caa-8443-76f696eb9ff0",
-    "room_name": "B-12 Hukuk-Mimarlık Amfi",
+    "id": "6fbca367-e84c-4b05-8d45-fad55699db2c",
+    "room_name": "B 07 Mimarlık Fakültesi Öğrenci Toplulukları Odası (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "70366008-4112-44f9-9400-dad51041d8bb",
-    "room_name": "NC02 Geoteknik ve Ulaşım Müh. Lab.",
+    "id": "7028695d-fac0-43a2-a897-6a6784931aec",
+    "room_name": "LB11 Mekanik Lab. (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "70664dd9-a7b6-4c1c-a304-6282b95b498c",
-    "room_name": "107 Hukuk Sınıf",
+    "id": "7046047f-363f-4092-91be-a48fcc7e8f79",
+    "room_name": "B-11 Hukuk-Mimarlık Amfi (Kapasite=108)",
     "classes_title": null
   },
   {
-    "id": "70900f08-cc4d-4314-9d45-4ee3f4e11976",
-    "room_name": "Z-14 Mimarlık Stüdyo",
+    "id": "70587275-8cf8-4187-90ff-49c3da87b2d3",
+    "room_name": "B 13 Mimarlık Fakültesi Sanatsal Üretim Atölyesi (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "71c43ae8-ea61-4de9-b532-f72acd350681",
-    "room_name": "Haz. Ek Bina 212",
+    "id": "7177593d-fffb-4ff4-9e00-52fde52402a1",
+    "room_name": "304 Mimarlık Stüdyo (Kapasite=32)",
     "classes_title": null
   },
   {
-    "id": "720a029d-01b6-4b78-a826-6353b1f6b02d",
-    "room_name": "Hazırlık Okulu 106",
+    "id": "72b9bcd6-388e-4e7e-bc36-ce7c75c3835b",
+    "room_name": "H331 Digital Lab. (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "7302140e-a708-442b-bd43-6b65f8202c81",
-    "room_name": "LB11 Mekanik Lab.",
+    "id": "74a2c60f-9bb1-4470-a339-945d7f49d9af",
+    "room_name": "H302 Microprocessor Lab. (MERKEZ KAMPÜS) (Kapasite=55)",
     "classes_title": null
   },
   {
-    "id": "73d7f074-04f3-4369-a428-156dddd5af84",
-    "room_name": "Hazırlık Okulu 112",
+    "id": "74dfb283-3b45-4d68-a1d6-7537a644644f",
+    "room_name": "K105 (MERKEZ KAMPÜS) (Kapasite=44)",
     "classes_title": null
   },
   {
-    "id": "740bc629-e1f4-4c92-806d-8fc9fdb6e973",
-    "room_name": "Hazırlık Okulu Z 12",
+    "id": "77085969-2575-40a9-a92f-8c0f3b122f54",
+    "room_name": "205 Hukuk Amfi (Kapasite=149)",
     "classes_title": null
   },
   {
-    "id": "752706d5-46fb-4036-a1c4-caaf39779a33",
-    "room_name": "NB01-A Malzeme Lab. 1",
+    "id": "794c58f2-e453-41f8-9db9-136f4c147e4c",
+    "room_name": "Hazırlık Okulu 101 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "770b05d1-25c4-449d-ae49-b1836dc6f07e",
-    "room_name": "B-10 Hukuk-Mimarlık Amfi",
+    "id": "7975c894-47ee-49fc-acd9-6b7089400baf",
+    "room_name": "M101 (MERKEZ KAMPÜS) (Kapasite=48)",
     "classes_title": null
   },
   {
-    "id": "77f103b8-e2a7-4a99-ba55-d3855cc839f8",
-    "room_name": "Z-14 Hukuk Amfi",
+    "id": "79e7f28e-901f-4354-8390-da211a37d4a1",
+    "room_name": "Hazırlık Okulu 110 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "797a4383-51d1-4fe6-872f-eb7181b826a3",
-    "room_name": "SERAMİK ATÖLYESİ",
+    "id": "7a80b44d-7585-46fc-82b8-8de3aa765863",
+    "room_name": "K107 (MERKEZ KAMPÜS) (Kapasite=24)",
     "classes_title": null
   },
   {
-    "id": "7a293709-32df-4685-b560-9d55545d3ddf",
-    "room_name": "RA05",
+    "id": "7e9ba448-4c45-43d5-9b44-2290983a8770",
+    "room_name": "MB04 (MERKEZ KAMPÜS) (Kapasite=26)",
     "classes_title": null
   },
   {
-    "id": "7a2ea26c-b1f1-42e1-9d39-ec331086d632",
-    "room_name": "B 13 Mimarlık Fakültesi Sanatsal Üretim Atölyesi",
+    "id": "8087c818-9eed-48a7-9cb1-1099ca87fafa",
+    "room_name": "406 Mimarlık Stüdyo (Kapasite=32)",
     "classes_title": null
   },
   {
-    "id": "7dc9b106-cf20-4521-b80c-acf6e72b0155",
-    "room_name": "KA01",
+    "id": "848bcb97-36d8-4c5f-945b-714b211c1d27",
+    "room_name": "Z-14 Hukuk Amfi (Kapasite=107)",
     "classes_title": null
   },
   {
-    "id": "7e0ca0e4-c206-4a41-ac6a-33b7a8685f5e",
-    "room_name": "405 Mimarlık Stüdyo",
+    "id": "84f42d1e-d7f7-4995-a3d7-2da1258cff73",
+    "room_name": "NC02 Geoteknik ve Ulaşım Müh. Lab. (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "80aa73cc-b14b-435f-8ae2-fcec732bdba7",
-    "room_name": "Z-13 Hukuk Amfi",
+    "id": "89f82fa7-d28e-4072-a468-f62a8ab88e0c",
+    "room_name": "206 Hukuk Amfi (Kapasite=149)",
     "classes_title": null
   },
   {
-    "id": "80b6bb89-34e8-4db4-b354-07f7839b305a",
-    "room_name": "RA07",
+    "id": "8a09cbf2-c3eb-4361-b744-9d5e9ce5eacf",
+    "room_name": "MA06 (MERKEZ KAMPÜS) (Kapasite=28)",
     "classes_title": null
   },
   {
-    "id": "845d0297-8b18-4aa3-b50a-1be4bb13f1d6",
-    "room_name": "B 07 Mimarlık Fakültesi Öğrenci Toplulukları Odası",
+    "id": "8baa50c0-bc71-4b92-808d-cea3d8f05374",
+    "room_name": "106 Hukuk Sınıf (Kapasite=45)",
     "classes_title": null
   },
   {
-    "id": "8773aab3-4f1a-4ce2-8c76-2854efb1a8cd",
-    "room_name": "RB04",
+    "id": "8cb7c22a-090a-45cf-b283-359989df5a63",
+    "room_name": "MÜZİK ODASI (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "8852e6e1-150c-49e2-8b90-7cb48fcf2fdd",
-    "room_name": "MA08",
+    "id": "8ce38b2b-5c00-41ed-8a21-2735346410d0",
+    "room_name": "RA07 (MERKEZ KAMPÜS) (Dil Sınıfı) (Kapasite=25)",
     "classes_title": null
   },
   {
-    "id": "8a3f62a3-a186-4dc6-86a2-cfd3cc851db4",
-    "room_name": "218 Mimarlık Stüdyo",
+    "id": "8e402f00-551b-4f18-84b9-036884db849e",
+    "room_name": "Haz. Ek Bina Z 15 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "8b6e798f-5529-4acb-bd12-aba17b3e39b7",
-    "room_name": "NC Nano Teknoloji Lab.",
+    "id": "8e95a9a7-fb83-4310-804d-26d2db3394d1",
+    "room_name": "218 Mimarlık Stüdyo (Kapasite=38)",
     "classes_title": null
   },
   {
-    "id": "8cb3a8e6-e1c4-4ea5-96f1-91d5742da57e",
-    "room_name": "217 Mimarlık Stüdyo",
+    "id": "91921b86-9721-4e66-8f1a-2d619888ee52",
+    "room_name": "Z-15 Hukuk Amfi (Kapasite=115)",
     "classes_title": null
   },
   {
-    "id": "8cbfca9f-611e-4867-9d6b-03b28cb0b98c",
-    "room_name": "RB05 Seminer odası",
+    "id": "921c53b6-41a6-4fb8-9b6e-bb526a46ae57",
+    "room_name": "B-12 Hukuk-Mimarlık Amfi (Kapasite=75)",
     "classes_title": null
   },
   {
-    "id": "8e264581-2a0e-482d-aa8b-1e621e595018",
-    "room_name": "K105",
+    "id": "936009d3-09fe-46ec-a71d-cc209bce62f6",
+    "room_name": "Z-11 PC Lab (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "8eee0283-0ed0-49b5-8722-b67528b5e083",
-    "room_name": "LB06",
+    "id": "93d8d0a9-b7bb-470c-a5df-a689db4c62f0",
+    "room_name": "Hazırlık Okulu Z 12 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "8f6091ce-80a4-45d8-a4ec-b6ad69e9ab1c",
-    "room_name": "K106",
+    "id": "948d2ceb-96f4-4063-bdfe-42511d1dc169",
+    "room_name": "Hazırlık Okulu Z 05 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "91c410d0-0c6f-471d-a373-a27b651c3ee4",
-    "room_name": "Haz. Ek Bina 117",
+    "id": "9517d10b-70ba-4a6e-bf64-1894682b28df",
+    "room_name": "LB05 (MERKEZ KAMPÜS) (Kapasite=50)",
     "classes_title": null
   },
   {
-    "id": "9268c889-834a-4552-82ea-28769140b24b",
-    "room_name": "105 Hukuk Sınıf",
+    "id": "95a9ab95-36da-4412-b036-79f2246ca155",
+    "room_name": "LB02 Enerji ve Mekanik Lab. (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "92a55888-d344-4a86-8770-81ac6e218d5b",
-    "room_name": "KA03",
+    "id": "96a3a685-46cf-4f99-831b-adbfb892bc6d",
+    "room_name": "118 Mimarlık Stüdyo (Kapasite=32)",
     "classes_title": null
   },
   {
-    "id": "942ef91e-bf4a-4041-96fe-d1a45dc230e3",
-    "room_name": "M101",
+    "id": "98623756-d2f3-49a3-8a31-4d0e977dac05",
+    "room_name": "NC Nano Teknoloji Lab. (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "95ed1b5a-24be-41f1-bd43-66d6329b4708",
-    "room_name": "B-09 Hukuk-Mimarlık Amfi",
+    "id": "997addec-8780-4c78-bdb6-f27c6ee40569",
+    "room_name": "RESİM ATÖLYESİ (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "98dd8d2f-515b-4ef1-adfe-9e85c6f29039",
-    "room_name": "H302 Microprocessor Lab.",
+    "id": "9a18266a-2007-4de1-95c6-1dc3cbf243f7",
+    "room_name": "Haz. Ek Bina 210 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "98efe32f-11b0-4d2f-8897-f927274309ec",
-    "room_name": "B 16 Mimarlık Malzeme Lab.",
+    "id": "9a63815d-57ca-40e2-a19c-03a303080659",
+    "room_name": "HC-2 Mechanical Engineering Lab. 2 (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "9a0d8fcf-5669-42b7-bd8b-0e973e9da5d0",
-    "room_name": "108 Mimarlık Stüdyo",
+    "id": "9a77457e-47ed-4cc4-83cf-8e8ccaa02944",
+    "room_name": "Hazırlık Okulu 107 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "9c190711-3732-432b-8895-dda9b0508d29",
-    "room_name": "NC04 Kimya Lab.",
+    "id": "9b2c7db8-8b5b-4f0c-86ae-cf454df66ce6",
+    "room_name": "SERAMİK ATÖLYESİ (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "9da77177-56a2-43ea-b4e0-15153f792d7f",
-    "room_name": "Amfi-2",
+    "id": "9b8df306-c172-4331-a89e-4de5189790e0",
+    "room_name": "K102 (MERKEZ KAMPÜS) (Kapasite=42)",
     "classes_title": null
   },
   {
-    "id": "9e31e1fb-c4fc-4fd0-9700-de6344175d27",
-    "room_name": "Mimarlık Fakültesi 202 PC Lab",
+    "id": "9c71f342-4a6d-4d9d-a0b1-e49e7c943d07",
+    "room_name": "MB02 (MERKEZ KAMPÜS) (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "9eda7b85-911c-4891-a091-223a3af1102e",
-    "room_name": "MA01",
+    "id": "9c7e8403-6ea0-4505-8f61-75376df5855a",
+    "room_name": "208 (Hukuk Seminer Odası) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "9fbc76b2-e36a-429c-b42b-542e5aabf1b3",
-    "room_name": "HA03",
+    "id": "9da1b505-f4df-44c1-b8f6-84f9e99aa27e",
+    "room_name": "Z-16 Hukuk Amfi (Kapasite=104)",
     "classes_title": null
   },
   {
-    "id": "a1c1c6e5-1f9f-42b6-9dad-e292299a45e6",
-    "room_name": "LA14",
+    "id": "9df289cf-a7a2-49d8-ab8e-49c4a33ab4dd",
+    "room_name": "H334 Electronics Lab. (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "a1fc97e8-49eb-47e7-9a7b-6dc2febbb35e",
-    "room_name": "LB01 Makine Lab.",
+    "id": "9e31d3ae-d4d8-47ca-b5ca-aa1b4b3fe91e",
+    "room_name": "Z-13 Mimarlık Amfi (Kapasite=142)",
     "classes_title": null
   },
   {
-    "id": "a28d5c8c-f98a-463a-834c-063f9d8e1c60",
-    "room_name": "HC10 MASA TENİSİ SALONU",
+    "id": "9f87bd93-af63-4a0c-9825-dc7b768c4820",
+    "room_name": "HA01 (MERKEZ KAMPÜS) (Kapasite=39)",
     "classes_title": null
   },
   {
-    "id": "a2c38736-6296-4aa9-a703-e0a57098dffc",
-    "room_name": "Z-15 Hukuk Amfi",
+    "id": "a0757d92-0ab3-47dd-ba3d-2bcf38bb2586",
+    "room_name": "Mimarlık Fakültesi Toplantı Salonu 205 (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "a37e83a2-8420-4f76-8c55-bb2a7278fdee",
-    "room_name": "H324 Finans Lab.",
+    "id": "a5a748f2-8ba1-482b-ba09-07dbd59c2ac5",
+    "room_name": "Z-13 Hukuk Amfi (Kapasite=92)",
     "classes_title": null
   },
   {
-    "id": "a509feab-65ed-496e-8a3e-2c6af0056696",
-    "room_name": "HA05",
+    "id": "a63be304-6809-4a00-b935-dacd087c54de",
+    "room_name": "Hazırlık Okulu 108 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "a5321106-f08c-4b75-9c35-80bdce8c9ef0",
-    "room_name": "Hazırlık Okulu Z 06",
+    "id": "a6b9a47f-ff62-4660-8b14-f41ceacb2b44",
+    "room_name": "PA01 (MERKEZ KAMPÜS) (Kapasite=80)",
     "classes_title": null
   },
   {
-    "id": "a577577e-8045-4ba8-865c-8c991b1add57",
-    "room_name": "LB12 Sensör Lab.",
+    "id": "a7d306c7-3ce4-41e3-bd11-3a8bcbc7de3a",
+    "room_name": "Haz. Ek Bina 304 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "a58d3d7a-0437-440a-9d91-8169686ab316",
-    "room_name": "M102",
+    "id": "a8020f97-d532-46dc-9f01-aa6072d9a91c",
+    "room_name": "Amfi-6 (MERKEZ KAMPÜS) (Kapasite=86)",
     "classes_title": null
   },
   {
-    "id": "a7b56980-59f8-4cd2-8f2e-167d8c985b9b",
-    "room_name": "Z-11 PC Lab",
+    "id": "a8e56fe4-730f-4af3-a3dc-fce561360263",
+    "room_name": "Amfi-3 (MERKEZ KAMPÜS) (Kapasite=133)",
     "classes_title": null
   },
   {
-    "id": "a83b7793-9ef4-47f5-8ba8-a2413859c7b5",
-    "room_name": "Amfi-4",
+    "id": "abfe4311-ad45-439e-8add-187c4c121c97",
+    "room_name": "103 Mimarlık Sınıf (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "a9b30a4f-c686-40ee-a07d-a73d9108459c",
-    "room_name": "NC03 Mekanik ve Hidrolik Lab.",
+    "id": "ac08b571-8066-43f7-92db-d5d15a227c37",
+    "room_name": "Haz. Ek Bina 215 (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "ad58398d-9302-47eb-af01-063741a83bd2",
-    "room_name": "RB01",
+    "id": "ac4c340a-aa1e-45d9-8752-72166d58d180",
+    "room_name": "Haz. Ek Bina 117 (Kapasite=18)",
     "classes_title": null
   },
   {
-    "id": "ad684a0a-d0a8-4cfd-87c0-8eddfb04b300",
-    "room_name": "H102",
+    "id": "af6f00f0-7be4-4e1e-94e1-03937b110278",
+    "room_name": "404 Mimarlık Stüdyo (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "adb614a6-f5f9-4f62-83c5-2888ff9408c0",
-    "room_name": "Hazırlık Okulu 101",
+    "id": "af98ef14-b761-4f81-af23-827d16bdb7f0",
+    "room_name": "NA07  Seminer Odası (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "ae367d9c-30bb-4581-bbd8-6ba5e3a1ca95",
-    "room_name": "Amfi-5",
+    "id": "b08940da-bd14-475d-ae7e-3a379e9a65bd",
+    "room_name": "110 (Hukuk Seminer Odası) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "afec466c-62e1-44c7-aa4a-efdc369265c0",
-    "room_name": "NB07 Seminer Salonu",
+    "id": "b09d2284-634b-41df-b421-c1422a078772",
+    "room_name": "RB01 (MERKEZ KAMPÜS) (Kapasite=32)",
     "classes_title": null
   },
   {
-    "id": "b0b16ed8-042d-49ec-883a-432b12c4d848",
-    "room_name": "KA05",
+    "id": "b163aab2-21ad-4d84-b23d-d55846880416",
+    "room_name": "Haz. Ek Bina 303 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "b4d4b607-e4e7-4357-86f8-888fb3b4ba30",
-    "room_name": "RA04",
+    "id": "b2a14bd8-f93b-4a01-abcf-af1cb0ecc63f",
+    "room_name": "MA02 (MERKEZ KAMPÜS) (Kapasite=70)",
     "classes_title": null
   },
   {
-    "id": "b58925fc-3294-4aa1-b682-0776850c1f7a",
-    "room_name": "Haz. Ek Bina 213",
+    "id": "b5451408-a2b2-4dfd-a333-e6b42a58b067",
+    "room_name": "Hazırlık Okulu Z 08 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "b6a7c77e-4e07-487d-b78a-2d66dc8427ab",
-    "room_name": "Hazırlık Okulu Z 13",
+    "id": "b7e04fb0-7db2-4a83-9675-cd5a3805343a",
+    "room_name": "NB07 Seminer Salonu (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "b6affbb9-2a0a-41a1-b61e-374250be82b7",
-    "room_name": "Hazırlık Okulu 108",
+    "id": "b8f29fa1-42f0-4728-8b94-6fdd6faa5b65",
+    "room_name": "323 Mimarlık Stüdyo (Kapasite=62)",
     "classes_title": null
   },
   {
-    "id": "b741e5a1-75ff-4d44-a19f-a8ccba7480c4",
-    "room_name": "109",
+    "id": "b968e07a-fb29-4b0d-9e1a-ef5508e87589",
+    "room_name": "107 Hukuk Sınıf (Kapasite=45)",
     "classes_title": null
   },
   {
-    "id": "b8bce69d-5bb0-488f-9fee-2cc322550c0c",
-    "room_name": "Haz. Ek Bina 115",
+    "id": "ba5f3430-b124-478d-9f79-832a79ba6153",
+    "room_name": "Hazırlık Okulu Z 01 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "b8f414e2-5c4f-43d7-bab9-d062c03fc05d",
-    "room_name": "MA07",
+    "id": "bb674068-78fa-4319-b357-6d6de6a7b96c",
+    "room_name": "H324 Finans Lab. (MERKEZ KAMPÜS) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "b99b2375-9cbf-475f-915f-37f08c74daf7",
-    "room_name": "HC-4 Makine Mühendisliği Tasarım Lab.",
+    "id": "bbb8b345-17bc-414c-ab4d-a9aaed0589ae",
+    "room_name": "RB02 Psikoloji lab. (MERKEZ KAMPÜS) (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "bb9cfeb1-cc55-42df-ae77-a2abb9caf59e",
-    "room_name": "H337 Computer Aided Design",
+    "id": "bc2c4dcf-74fb-4de2-af45-5fc14cd72a49",
+    "room_name": "RA01 (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "bc6394be-0241-46a0-85c1-900ca7675177",
-    "room_name": "K104",
+    "id": "bd847d3b-a29c-4c42-9294-a602d9bd4c21",
+    "room_name": "Mimarlık Fakültesi Ahşap ve Sayısal Üretim Odası (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "bca162fd-afd5-4459-ad9c-413c3d6254e5",
-    "room_name": "MB03",
+    "id": "bd8d3ed2-83a2-4761-b91e-0e690d67dd59",
+    "room_name": "Haz. Ek Bina 307 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "bd894eb4-9d88-47c4-a496-4d0b8c825d87",
-    "room_name": "Amfi-3",
+    "id": "bff91b0e-9ff3-4193-bce1-7a5f7f0877da",
+    "room_name": "LA16 (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "bdaaf255-2216-48a7-a273-f749665ead27",
-    "room_name": "Hazırlık Okulu 107",
+    "id": "c182552a-e2c1-47aa-b2f6-4b61468893cb",
+    "room_name": "Z 14 Mimarlık Fakültesi (Kapasite=80)",
     "classes_title": null
   },
   {
-    "id": "bec42927-3f01-4e52-8019-10e138db6c4a",
-    "room_name": "MA02",
+    "id": "c20a785f-b10c-429d-86e9-3fceaafaaae8",
+    "room_name": "Haz. Ek Bina 307 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "bf59ae95-d000-4c6f-b383-6f341a7eedbf",
-    "room_name": "Z-15 Mimarlık Stüdyo",
+    "id": "c58f63ba-d070-4789-b41e-f44400fcc65f",
+    "room_name": "217 Mimarlık Stüdyo (Kapasite=56)",
     "classes_title": null
   },
   {
-    "id": "bf5e1d1f-8d4d-48e2-9136-caccb3b801ee",
-    "room_name": "R112 Çeviri Lab.",
+    "id": "c5cc3a9c-48af-4564-b3ef-8fe746b7a948",
+    "room_name": "MA09 (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "c2af5dc6-c88f-4cbd-929c-8ffff35aefc0",
-    "room_name": "B 15 Ahşap ve Sayısal Üretim Atölyesi",
+    "id": "c6afe59a-1efa-4fd9-baf9-89ce1c158fd2",
+    "room_name": "Haz. Ek Bina 116 (Kapasite=16)",
     "classes_title": null
   },
   {
-    "id": "c3f4a2c4-e0f1-4108-891a-af219cd9180d",
-    "room_name": "Hazırlık Okulu 103",
+    "id": "c6e6d9f5-4e1e-48e0-a1bd-70847b699ecd",
+    "room_name": "Haz. Ek Bina 306 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "c528f06b-b19b-4e85-aa19-78f8fb9cb928",
-    "room_name": "Z-06 Mimarlık Sınıf",
+    "id": "c841f962-9ba3-4f8d-916e-a344aafe292c",
+    "room_name": "H337 Computer Aided Design (CAD) lab.-1 (MERKEZ KAMPÜS) (Kapasite=31)",
     "classes_title": null
   },
   {
-    "id": "c602a5b7-49e4-4779-8dcf-a6090f34931c",
-    "room_name": "Z-16 Hukuk Amfi",
+    "id": "c9e4e39e-1f63-46df-b618-a4c0bf1b4427",
+    "room_name": "Amfi-4 (MERKEZ KAMPÜS) (Kapasite=98)",
     "classes_title": null
   },
   {
-    "id": "c71fca5f-1d8e-4220-a466-c52354cf4b57",
-    "room_name": "NA07  Seminer Odası",
+    "id": "ca130940-fe9e-455c-9621-afe8b86944e8",
+    "room_name": "H335 Computer Aided Design (CAD) lab.-2 (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "c81c21f9-2ea2-4ece-b443-519c8acc3eeb",
-    "room_name": "Haz. Ek Bina 211",
+    "id": "cc397432-197f-43d7-8181-5fc98def54ab",
+    "room_name": "H309 Computerized Lecture Hall-1 (MERKEZ KAMPÜS) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "cb293325-a791-43a8-90f0-20ddc2ea4e74",
-    "room_name": "Z 14 Mimarlık Fakültesi",
+    "id": "cc7ce143-cae4-43ce-88a4-624d8a97a187",
+    "room_name": "LB01 Makine Lab. (MERKEZ KAMPÜS) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "d0fed0b9-6440-4c90-bd1b-aedb4bc7228c",
-    "room_name": "LB02 Enerji ve Mekanik Lab.",
+    "id": "cd8d403a-23d1-45b2-8d6e-3613622607da",
+    "room_name": "105 Hukuk Sınıf (Kapasite=45)",
     "classes_title": null
   },
   {
-    "id": "d24a1d85-1c6f-47a9-a9c2-dd8f51d68427",
-    "room_name": "Mimarlık Fakültesi 102 PC Lab",
+    "id": "cdea01a9-41ad-40ae-b25e-77be49f57bd0",
+    "room_name": "MB03 (MERKEZ KAMPÜS) (Kapasite=32)",
     "classes_title": null
   },
   {
-    "id": "d465675c-5e5d-4941-bc35-1d10c61717d3",
-    "room_name": "RB02 Psikoloji lab.",
+    "id": "cff6a46c-c393-48ca-bdc0-12fe52a36aa4",
+    "room_name": "H304 Fizik Lab. 1 (MERKEZ KAMPÜS) (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "d4baded4-ec8b-4f29-b063-079a832f9b98",
-    "room_name": "Z-13 Mimarlık Amfi",
+    "id": "d046877c-dd69-43ac-8f60-48635b74d7d4",
+    "room_name": "RA06 (MERKEZ KAMPÜS) (Kapasite=32)",
     "classes_title": null
   },
   {
-    "id": "d71091d5-d828-40d1-8263-749a6170250e",
-    "room_name": "H314 Computerized Lecture Hall-4",
+    "id": "d11aa0f8-737e-41b0-b7ea-29a944f841fb",
+    "room_name": "Hazırlık Okulu 109 (Kapasite=27)",
     "classes_title": null
   },
   {
-    "id": "d81396ab-eb2f-4293-830b-b6d1f632e052",
-    "room_name": "Haz. Ek Bina 210",
+    "id": "d2d71aad-ad89-4dbd-9087-8a51ec11e1b8",
+    "room_name": "LA15 (MERKEZ KAMPÜS) (Kapasite=50)",
     "classes_title": null
   },
   {
-    "id": "d8a83693-ff5d-478d-aeed-8dad512aef16",
-    "room_name": "K103",
+    "id": "d2f2d16e-9909-4c1d-aa8b-c2224acc193d",
+    "room_name": "Haz. Ek Bina Z 17 (Kapasite=18)",
     "classes_title": null
   },
   {
-    "id": "d96afaf7-9f0d-43c7-bbd8-5d41af5d91a3",
-    "room_name": "Haz. Ek Bina 214",
+    "id": "d36075d9-253f-46ee-b1d4-7cab70b26151",
+    "room_name": "LA14 (MERKEZ KAMPÜS) (Kapasite=50)",
     "classes_title": null
   },
   {
-    "id": "da459540-1360-4544-8a07-0a410e27ecde",
-    "room_name": "H304 Fizik Lab. 1",
+    "id": "d95587e0-bd5e-4fd2-9764-1fa888fb00e4",
+    "room_name": "MA08 (MERKEZ KAMPÜS) (Kapasite=36)",
     "classes_title": null
   },
   {
-    "id": "db4b3622-3b21-4337-b39a-ec6b64796898",
-    "room_name": "LB09 Optik ve Foto. Arş. Lab.",
+    "id": "da55825d-b600-4263-8d6e-119ffcdfcd19",
+    "room_name": "NA01 (MERKEZ KAMPÜS) (Kapasite=110)",
     "classes_title": null
   },
   {
-    "id": "dbe90b3f-1ce4-424e-a9c6-01c00cd81d83",
-    "room_name": "110",
+    "id": "daf5e829-4bbf-4813-bd13-bf1e2e1242c4",
+    "room_name": "NB01-B Ergonomi Lab. (MERKEZ KAMPÜS) (Kapasite=48)",
     "classes_title": null
   },
   {
-    "id": "dc440d49-7258-4556-bdd2-0e616fa62936",
-    "room_name": "Mimarlık Fakültesi Ahşap ve Sayısal Üretim Odası",
+    "id": "db25f974-ea72-4ce8-a8bb-010f80759b92",
+    "room_name": "Amfi-2 (MERKEZ KAMPÜS) (Kapasite=102)",
     "classes_title": null
   },
   {
-    "id": "deb59a48-b68d-4f35-95c7-37068265bc94",
-    "room_name": "Hazırlık Okulu 104",
+    "id": "dfaae9f0-6377-487a-b5ac-0b8894481e90",
+    "room_name": "Z 03 Mimarlık Fakültesi PC Lab. (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "e12dfcde-0474-4368-9dd2-dec9dd9f1b00",
-    "room_name": "H335 Computer Aided Design",
+    "id": "dffdd8d2-c194-432f-b53a-ff1541f36d08",
+    "room_name": "MB06 (MERKEZ KAMPÜS) (Kapasite=60)",
     "classes_title": null
   },
   {
-    "id": "e19705ce-4974-4369-8dbe-cfaed9adc573",
-    "room_name": "MB02",
+    "id": "e03b9d6b-3a9b-480e-866c-a3426a8c92b5",
+    "room_name": "MA10 Electromechanical Energy Con. Lab. (MERKEZ KAMPÜS) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "e48a68fa-8cd1-41e8-8834-3eb92a681c30",
-    "room_name": "H312 Computerized Lecture Hall-2",
+    "id": "e050abbd-70d3-44f0-9bc2-88cfbeedb46d",
+    "room_name": "B 16 Mimarlık Malzeme Lab. (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "e55990fb-3f0d-4246-b172-2272ea012e97",
-    "room_name": "323 Mimarlık Stüdyo",
+    "id": "e0f4de43-8265-4bb6-98b9-453b80fdb309",
+    "room_name": "H125 (Mavi Salon) (MERKEZ KAMPÜS) (Kapasite=140)",
     "classes_title": null
   },
   {
-    "id": "e5989d08-d08d-4108-91fe-68d6fdb3e4d1",
-    "room_name": "WEBONLINE CANLI YAYIN",
+    "id": "e199b56f-d280-4507-bd53-f9e670e0c477",
+    "room_name": "K104 (MERKEZ KAMPÜS) (Kapasite=44)",
     "classes_title": null
   },
   {
-    "id": "e6c09bd0-c15e-4465-9f53-e1230ad26b9a",
-    "room_name": "NA01",
+    "id": "e371e353-dfa1-4b15-9b78-66547dccc915",
+    "room_name": "KA01 (MERKEZ KAMPÜS) (Kapasite=44)",
     "classes_title": null
   },
   {
-    "id": "e6d7471a-d98e-499b-b609-fb8e0ff1a5f2",
-    "room_name": "VİTRAY ATÖLYESİ",
+    "id": "e89b3732-ae35-42ca-ad83-a7f0464254c2",
+    "room_name": "210 (Hukuk Seminer Odası) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "e9fc8d8c-8916-42e2-b6e5-00d50da874d8",
-    "room_name": "P101",
+    "id": "e8ad30bb-ee56-4f05-991a-680eb0236358",
+    "room_name": "Hazırlık Okulu Z 02 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "eb1b04d3-4372-48d3-8c66-01848d980d3e",
-    "room_name": "KA04",
+    "id": "e9790aaf-2597-49ae-80d5-b4c1f77c9cd3",
+    "room_name": "HAZIRLIK BİNASI (Merkez Kampüs) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "ec2c09c4-fdee-489b-a248-cabefe9961fa",
-    "room_name": "Z-18 Hukuk Amfi",
+    "id": "e9ce6e09-b8ee-4207-b33f-7a7afa5b602a",
+    "room_name": "Hazırlık Okulu 104 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "ec5a13b8-8c5c-445c-b8cc-7d54d0fc9f49",
-    "room_name": "H308 Solid Modelling and Pro. Lab.",
+    "id": "ea251f0b-bf9b-4008-b157-6c365954e920",
+    "room_name": "L112 (MERKEZ KAMPÜS) (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "eeb28fed-48da-4ea1-b196-195f24895cac",
-    "room_name": "MA09",
+    "id": "ea592004-bdb4-49ba-82d9-e558005505cf",
+    "room_name": "Z-06 Mimarlık Sınıf (Kapasite=40)",
     "classes_title": null
   },
   {
-    "id": "eec57c8f-1d81-47af-9849-822e409b1896",
-    "room_name": "Mimarlık Fakültesi Toplantı Salonu 205",
+    "id": "ea78b87b-99e4-4b5d-92ea-7461e9d15295",
+    "room_name": "H329 Fiberoptik Lab. (MERKEZ KAMPÜS) (Kapasite=24)",
     "classes_title": null
   },
   {
-    "id": "ef5379fc-abf1-4541-afde-0609b39f0492",
-    "room_name": "Haz. Ek Bina 305",
+    "id": "eb784d57-6826-4adb-ac0e-705e7c51ed45",
+    "room_name": "HC-1 Mechanical Engineering Lab. 1 (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "f0060c85-5cc6-4b93-b08f-1236b8399685",
-    "room_name": "NB06",
+    "id": "ebf75838-e313-4e49-9427-fdf24e35df23",
+    "room_name": "Haz. Ek Bina 213 (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "f06044e8-314e-4047-a9ec-1507d2af3346",
-    "room_name": "LB05",
+    "id": "ecc7855b-2228-48da-82bc-d7e4db1383ff",
+    "room_name": "NC05 Metal Yap. ve Fonk. Mal. Lab. (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "f09c4f27-7ae6-4788-8722-90ebd5c4931b",
-    "room_name": "Hazırlık Okulu 105",
+    "id": "ecd99bad-5097-47a6-aa5b-e3770c9da945",
+    "room_name": "B-09 Hukuk-Mimarlık Amfi (Kapasite=108)",
     "classes_title": null
   },
   {
-    "id": "f0ef5e76-0f03-4c2a-a2c6-6bc071b617c7",
-    "room_name": "Hazırlık Okulu Z 02",
+    "id": "efc6aeaa-a28d-4802-ac17-b69a341d2fc5",
+    "room_name": "Hazırlık Okulu 106 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "f0f03f7a-1820-4a0c-8b91-34003d2e0d74",
-    "room_name": "Haz. Ek Bina Z 14",
+    "id": "efe37756-992f-4fdf-ba60-6f57c39e78bc",
+    "room_name": "Hazırlık Okulu 102 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "f193127a-b362-4422-bc4c-20f8649fd5a8",
-    "room_name": "HAZIRLIK BİNASI",
+    "id": "f1850279-ff2d-4660-9b44-fb78597c7ace",
+    "room_name": "LB09 Optik ve Foto. Arş. Lab. (MERKEZ KAMPÜS) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "f2350571-edb3-49a5-b20d-a0288cf76295",
-    "room_name": "KA06",
+    "id": "f1c5f44c-7174-4a01-8849-39e43d995b25",
+    "room_name": "R112 Çeviri Lab. (MERKEZ KAMPÜS) (Kapasite=45)",
     "classes_title": null
   },
   {
-    "id": "f3fc7754-d48e-402a-9776-89d76541ed12",
-    "room_name": "206 Hukuk Amfi",
+    "id": "f34513ef-39af-4ad8-a7be-c463c497755c",
+    "room_name": "BİLARDO SALONU (MERKEZ KAMPÜS) (Kapasite=0)",
     "classes_title": null
   },
   {
-    "id": "f44d2df3-7ce4-407e-b52f-8a8590983924",
-    "room_name": "NA06",
+    "id": "f5b34382-3f8a-49d8-9d3d-48b5d4cac1e4",
+    "room_name": "Hazırlık Okulu 103 (Kapasite=22)",
     "classes_title": null
   },
   {
-    "id": "f47218a9-8dd8-465b-b9c8-5a3b5d04a17b",
-    "room_name": "118 Mimarlık Stüdyo",
+    "id": "f9e2685f-af18-40aa-8c49-300cb4ecfd43",
+    "room_name": "RA03 (MERKEZ KAMPÜS) (Kapasite=70)",
     "classes_title": null
   },
   {
-    "id": "f71d41b3-c710-4add-8ce0-8fdd163422cc",
-    "room_name": "NC05 Metal Yap. ve Fonk. Mal. Lab.",
+    "id": "fa69d285-70a5-405a-a43a-0e5084924175",
+    "room_name": "H327 Microwave Lab. (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   },
   {
-    "id": "fa365d9a-5057-4324-a030-05d0adfb8ffd",
-    "room_name": "RB03",
+    "id": "fab32708-c10c-455f-8ce3-fffaa0a07981",
+    "room_name": "H313 Computerized Lecture Hall-3 (MERKEZ KAMPÜS) (Kapasite=39)",
     "classes_title": null
   },
   {
-    "id": "fab785b2-8df3-4eb9-901a-df58d10ac662",
-    "room_name": "HC-1 Mechanical Engineering Lab. 1",
+    "id": "fd404069-4585-45fd-b32b-64be5b275603",
+    "room_name": "LB12 Sensör Lab. (MERKEZ KAMPÜS) (Kapasite=20)",
     "classes_title": null
   },
   {
-    "id": "fb52ff32-9e20-46a1-ba80-c84a667144f9",
-    "room_name": "H125",
+    "id": "fda75a8a-e050-4c64-90b8-112cc565d1bc",
+    "room_name": "Z-18 Hukuk Amfi (Kapasite=92)",
     "classes_title": null
   },
   {
-    "id": "fd99780f-067e-4084-bd8a-98f61b94f8b2",
-    "room_name": "Hazırlık Okulu Z 05",
+    "id": "fe890a8c-0a60-4e60-8a79-b51e3456eee8",
+    "room_name": "LB04 Robot ve Elektrik Lab. (MERKEZ KAMPÜS) (Kapasite=30)",
     "classes_title": null
   }
 ]

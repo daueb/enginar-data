@@ -41,19 +41,24 @@ async function syncDataTables() {
             tables = rpcData;
         } else {
             // ADIM B: RPC Yoksa Manuel Listeyi Kullan
-            // Senin server.js'deki manuel listenin aynısı:
+            // Veritabanındaki tüm tabloları buraya ekledik:
             console.log('⚠️ Otomatik liste alınamadı veya RPC yok. Manuel liste kullanılıyor.');
             tables = [
-                'pins', 
-                'types', 
-                'classes', 
-                'offices', 
-                'foods', 
-                'polygons', 
-                'widgets', 
-                'stops', 
-                'routes', 
-                'exams'
+                'pins',             // Harita işaretçileri
+                'types',            // Kategori türleri
+                'classes',          // Derslik genel bilgileri (classrooms)
+                'offices',          // Akademisyen ofisleri
+                'foods',            // Yemek menüsü
+                'polygons',         // Harita çizimleri (binalar vb.)
+                'widgets',          // Uygulama içi widget'lar
+                'stops',            // Servis durakları
+                'routes',           // Servis rotaları
+                'exams',            // Sınav programı verileri
+                'academic_calendar',// Akademik takvim
+                'academics',        // Akademisyen listesi (2_sync_academics.js'den gelen)
+                'courses',          // Ders listesi (3_sync_courses.js'den gelen)
+                'sessions',         // Ders programı saatleri (4_sync_sessions.js'den gelen)
+                'classrooms'        // Detaylı derslik/konum verileri
             ];
         }
 

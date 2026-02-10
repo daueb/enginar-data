@@ -2,13 +2,23 @@ require('dotenv').config();
 const { createClient } = require('@supabase/supabase-js');
 const puppeteer = require('puppeteer');
 
-const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
+// --- GÜVENLİK AYARI (DÜZELTİLDİ) ---
+const supabaseUrl = process.env.SUPABASE_URL;
+// Hem SERVICE_KEY hem de normal KEY'i kontrol eder
+const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+  throw new Error(`❌ Hata: Supabase Bağlantı Bilgileri Eksik! \nURL: ${supabaseUrl ? 'Var' : 'Yok'}\nKEY: ${supabaseKey ? 'Var' : 'Yok'}`);
+}
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+// ------------------------------------
 
 (async () => {
   const browser = await puppeteer.launch({ 
-  headless: "new", 
-  args: ['--no-sandbox', '--disable-setuid-sandbox'] 
-});
+    headless: "new", 
+    args: ['--no-sandbox', '--disable-setuid-sandbox'] 
+  });
   const page = await browser.newPage();
   
   console.log('🌍 Siteye gidiliyor...');
@@ -21,8 +31,6 @@ const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SER
   console.log(`📦 Toplam ${options.length} seçenek bulundu.`);
 
   for (const text of options) {
-    // SADECE BALGAT VE TEST OLANLARI ATLA
-    // "Belirsiz" artık serbest
     if (text.includes('BALGAT') || text.includes('TEST')) {
         continue;
     }
