@@ -420,6 +420,11 @@
     "created_at": "2026-02-08T10:03:11.839569+00:00"
   },
   {
+    "id": "63d4aabd-a83b-4f5c-9d35-7baf039b12fe",
+    "name": "Öğr. Elm. Dr. Melisa Aşkım PAKER",
+    "created_at": "2026-02-11T23:31:04.57479+00:00"
+  },
+  {
     "id": "63fd27e7-dc0a-45e5-a6e9-0c06b8bb6a6a",
     "name": "Dr. Öğr. Üyesi Barış KONOR",
     "created_at": "2026-02-08T10:00:22.504945+00:00"
@@ -613,6 +618,11 @@
     "id": "93ae1cf5-9e6f-4886-ab9c-cfd01aace775",
     "name": "Prof. Dr. H. Selçuk GEÇİM",
     "created_at": "2026-02-08T09:58:21.367687+00:00"
+  },
+  {
+    "id": "9470ba2b-88cd-4e12-a6b2-a769e853ba94",
+    "name": "Prof. Dr. Mehmet Nihat SOLAKOĞLU",
+    "created_at": "2026-02-11T23:27:04.717756+00:00"
   },
   {
     "id": "9586bc03-265c-4029-b2e0-c9f3daccf5a4",
@@ -1008,6 +1018,11 @@
     "id": "f355acc3-2b38-4ad0-acbe-5c9663153034",
     "name": "Dr. Öğr. Üyesi Ali Özkan ÇAKIRLAR",
     "created_at": "2026-02-08T10:02:37.518572+00:00"
+  },
+  {
+    "id": "f39af330-dd08-4c95-965f-4c04548c65bf",
+    "name": "Öğr. Elm. Dr. Arda İlayda SAĞLAM AKTAN",
+    "created_at": "2026-02-11T23:31:23.703932+00:00"
   },
   {
     "id": "f3c2dbc1-76fc-4f1e-aa43-3524cb0b1eed",
