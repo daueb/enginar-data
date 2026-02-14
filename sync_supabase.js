@@ -36,8 +36,9 @@ async function syncDataTables() {
         if (!rpcError && rpcData && rpcData.length > 0) {
             console.log(`📡 Supabase'den otomatik tablo listesi alındı: ${rpcData.length} tablo.`);
 
-            // 🚫 rag_sources hariç hepsini al
-            tables = rpcData.filter(t => t !== 'rag_sources');
+            // 🚫 RAG tablolarını (kaynak + index) dump'a dahil etme
+            const EXCLUDED_TABLES = new Set(['rag_sources', 'rag_documents', 'rag_chunks']);
+            tables = rpcData.filter(t => !EXCLUDED_TABLES.has(t));
 
         } else {
             console.log('⚠️ Otomatik liste alınamadı. Manuel liste kullanılıyor.');
