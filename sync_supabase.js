@@ -1,17 +1,16 @@
-//sync_supabase.js
+// /scripts/sync_supabase.js
 
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs');
 const path = require('path');
-require('dotenv').config(); // Lokal testler için (GitHub'da secretlardan okur)
+require('dotenv').config();
 
 // --- 1. AYARLAR VE GÜVENLİK ---
-// GitHub Secrets'ta 'SUPABASE_KEY' veya 'SUPABASE_SERVICE_KEY' olarak tanımlayabilirsin.
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
-  console.error("❌ Hata: Supabase URL veya Key bulunamadı! .env dosyasını veya GitHub Secrets'ı kontrol et.");
+  console.error("❌ Hata: Supabase URL veya Key bulunamadı!");
   process.exit(1);
 }
 
@@ -20,51 +19,51 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 // --- 2. HEDEF KLASÖR ---
 const DATA_DIR = path.join(__dirname, 'data');
 
-// Klasör yoksa oluştur
 if (!fs.existsSync(DATA_DIR)) {
     fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
-// --- 3. ANA SENKRONİZASYON FONKSİYONU ---
+// --- 3. ANA SENKRONİZASYON ---
 async function syncDataTables() {
     console.log('🔄 Data Sync Başlatılıyor (Supabase -> JSON)...');
 
     try {
         let tables = [];
 
-        // ADIM A: Otomatik Tablo Listesi Çekmeyi Dene (RPC varsa)
-        // Eğer veritabanında 'get_public_tables' fonksiyonun yoksa bu kısım hata verir, catch'e düşmez ama else'e düşer.
+        // --- ADIM A: RPC ile tablo listesi ---
         const { data: rpcData, error: rpcError } = await supabase.rpc('get_public_tables');
         
         if (!rpcError && rpcData && rpcData.length > 0) {
             console.log(`📡 Supabase'den otomatik tablo listesi alındı: ${rpcData.length} tablo.`);
-            tables = rpcData;
+
+            // 🚫 rag_sources hariç hepsini al
+            tables = rpcData.filter(t => t !== 'rag_sources');
+
         } else {
-            // ADIM B: RPC Yoksa Manuel Listeyi Kullan
-            // Veritabanındaki tüm tabloları buraya ekledik:
-            console.log('⚠️ Otomatik liste alınamadı veya RPC yok. Manuel liste kullanılıyor.');
+            console.log('⚠️ Otomatik liste alınamadı. Manuel liste kullanılıyor.');
+
             tables = [
-                'pins',             // Harita işaretçileri
-                'types',            // Kategori türleri
-                'classes',          // Derslik genel bilgileri (classrooms)
-                'offices',          // Akademisyen ofisleri
-                'foods',            // Yemek menüsü
-                'polygons',         // Harita çizimleri (binalar vb.)
-                'widgets',          // Uygulama içi widget'lar
-                'stops',            // Servis durakları
-                'routes',           // Servis rotaları
-                'exams',            // Sınav programı verileri
-                'academic_calendar',// Akademik takvim
-                'academics',        // Akademisyen listesi (2_sync_academics.js'den gelen)
-                'courses',          // Ders listesi (3_sync_courses.js'den gelen)
-                'sessions',         // Ders programı saatleri (4_sync_sessions.js'den gelen)
-                'classrooms'        // Detaylı derslik/konum verileri
+                'pins',
+                'types',
+                'classes',
+                'offices',
+                'foods',
+                'polygons',
+                'widgets',
+                'stops',
+                'routes',
+                'exams',
+                'academic_calendar',
+                'academics',
+                'courses',
+                'sessions',
+                'classrooms'
             ];
         }
 
         console.log(`📋 İşlenecek Tablolar: ${tables.join(', ')}`);
 
-        // ADIM C: Temizlik (Eski JSON'ları sil ki çöp kalmasın)
+        // --- ADIM B: Eski JSON temizliği ---
         if (fs.existsSync(DATA_DIR)) {
             const existingFiles = fs.readdirSync(DATA_DIR);
             for (const file of existingFiles) {
@@ -75,9 +74,9 @@ async function syncDataTables() {
             console.log('🧹 Eski JSON dosyaları temizlendi.');
         }
 
-        // ADIM D: Döngüye Gir, Veriyi Çek ve Yaz
+        // --- ADIM C: Verileri çek ---
         for (const tableName of tables) {
-            // Veriyi ID sırasına göre çekiyoruz ki liste karışmasın
+
             const { data, error } = await supabase
                 .from(tableName)
                 .select('*')
@@ -85,12 +84,14 @@ async function syncDataTables() {
 
             if (error) {
                 console.error(`❌ Hata (${tableName}):`, error.message);
-                // Bir tabloda hata olsa bile diğerlerine devam etsin diye continue diyoruz
-                continue; 
+                continue;
             }
 
-            // Dosyayı diske yaz
-            fs.writeFileSync(path.join(DATA_DIR, `${tableName}.json`), JSON.stringify(data, null, 2));
+            fs.writeFileSync(
+                path.join(DATA_DIR, `${tableName}.json`),
+                JSON.stringify(data, null, 2)
+            );
+
             console.log(`✅ Oluşturuldu: ${tableName}.json (${data.length} satır)`);
         }
 
@@ -98,9 +99,8 @@ async function syncDataTables() {
 
     } catch (err) {
         console.error('🔥 Kritik Sync Hatası:', err.message);
-        process.exit(1); // Hata varsa GitHub Action'ı başarısız olarak işaretle
+        process.exit(1);
     }
 }
 
-// Fonksiyonu Çalıştır
 syncDataTables();
