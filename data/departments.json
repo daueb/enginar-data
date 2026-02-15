@@ -1,0 +1,227 @@
+[
+  {
+    "id": "04343fa8-3c91-4737-91ab-7c0df5f7166e",
+    "code": null,
+    "name": "İşletme",
+    "type": "Lisans",
+    "faculty": "İktisadi ve İdari Bilimler Fakültesi",
+    "created_at": "2026-02-15T00:23:50.205821+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "code": 17,
+    "name": "Mekatronik Mühendisliği",
+    "type": "Lisans",
+    "faculty": "Mühendislik Fakültesi",
+    "created_at": "2026-02-15T00:25:44.779062+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "1447dc7b-c083-4cea-97f5-019d4f009b01",
+    "code": null,
+    "name": "Psikoloji",
+    "type": "Lisans",
+    "faculty": "Fen-Edebiyat Fakültesi",
+    "created_at": "2026-02-15T00:26:48.45452+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "1a3506fb-8cbe-4265-b8c4-1a8ea83603a2",
+    "code": null,
+    "name": "İngiliz Dili ve Edebiyatı",
+    "type": "Lisans",
+    "faculty": "Fen-Edebiyat Fakültesi",
+    "created_at": "2026-02-15T00:20:36.56862+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "25e945ec-14d2-4e2f-b391-5d51a12ae355",
+    "code": 27,
+    "name": "Matematik",
+    "type": "Lisans",
+    "faculty": "Fen-Edebiyat Fakültesi",
+    "created_at": "2026-02-15T00:25:10.33302+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "code": null,
+    "name": "Hukuk",
+    "type": "Lisans",
+    "faculty": "Hukuk Fakültesi",
+    "created_at": "2026-02-15T00:18:40.535675+00:00",
+    "language": "Türkçe"
+  },
+  {
+    "id": "3c6b7e6a-d88b-47e1-80a4-d3363ccf9654",
+    "code": null,
+    "name": "Siyaset Bilimi ve Uluslararası İlişkiler",
+    "type": "Lisans",
+    "faculty": "İktisadi ve İdari Bilimler Fakültesi",
+    "created_at": "2026-02-15T00:27:21.235196+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "45d032a2-1229-415a-b9fe-c9cf057966ea",
+    "code": null,
+    "name": "Mimarlık",
+    "type": "Lisans",
+    "faculty": "Mimarlık Fakültesi",
+    "created_at": "2026-02-15T00:26:14.60724+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "520ee500-d07d-4b4f-be21-d06177f7ad29",
+    "code": 46,
+    "name": "Bilgisayar Programcılığı",
+    "type": "Önlisans",
+    "faculty": "Meslek Yüksekokulu",
+    "created_at": "2026-02-15T00:31:31.113099+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "700bda6f-89f1-4e15-9633-f52643cf823c",
+    "code": null,
+    "name": "Bilgisayar Bilimleri",
+    "type": "Lisans",
+    "faculty": "Fen-Edebiyat Fakültesi",
+    "created_at": "2026-02-15T00:13:35.94387+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "80596678-0a6f-4fb8-a1dd-0dc4a0fa9819",
+    "code": null,
+    "name": "E-Ticaret ve Pazarlama",
+    "type": "Önlisans",
+    "faculty": "Meslek Yüksekokulu",
+    "created_at": "2026-02-15T00:33:14.346939+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "839004ae-3c5d-4e2d-95a2-b67f5ab2d394",
+    "code": null,
+    "name": "İç Mimarlık ",
+    "type": "Lisans",
+    "faculty": "Mimarlık Fakültesi",
+    "created_at": "2026-02-15T00:19:16.433135+00:00",
+    "language": "İngilizce\n"
+  },
+  {
+    "id": "8684dc32-811b-4c95-87f6-d9909a3ec9aa",
+    "code": 19,
+    "name": "İnşaat Mühendisliği",
+    "type": "Lisans",
+    "faculty": "Mühendislik Fakültesi",
+    "created_at": "2026-02-15T00:23:20.181091+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "8e15c0da-fa7a-4ed4-be68-c634e1e15b2a",
+    "code": 12,
+    "name": "Endüstri Mühendisliği",
+    "type": "Lisans",
+    "faculty": "Mühendislik Fakültesi",
+    "created_at": "2026-02-15T00:17:19.365654+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "95743227-0fc2-43f5-8650-2b9ed1e724a4",
+    "code": null,
+    "name": "Şehir ve Bölge Planlama",
+    "type": "Lisans",
+    "faculty": "Mimarlık Fakültesi",
+    "created_at": "2026-02-15T00:27:54.52838+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "96494939-67b2-414d-909b-fe0b33d4842e",
+    "code": 15,
+    "name": "Makine Mühendisliği",
+    "type": "Lisans",
+    "faculty": "Mühendislik Fakültesi",
+    "created_at": "2026-02-15T00:24:19.026164+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "9c3f05d0-8bab-4696-bb42-3742d516fa73",
+    "code": null,
+    "name": "Uluslararası Ticaret ve Finansman",
+    "type": "Lisans",
+    "faculty": "İktisadi ve İdari Bilimler Fakültesi",
+    "created_at": "2026-02-15T00:28:37.03809+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "b161b775-3799-4a87-b20b-225a9c21c028",
+    "code": 26,
+    "name": "Elektrik-Elektronik Mühendisliği",
+    "type": "Lisans",
+    "faculty": "Mühendislik Fakültesi",
+    "created_at": "2026-02-15T00:16:46.402276+00:00",
+    "language": "İngilizce\n"
+  },
+  {
+    "id": "bd3c0324-5231-4649-ac47-9ee907420655",
+    "code": null,
+    "name": "İngilizce Mütercim ve Tercümanlık",
+    "type": "Lisans",
+    "faculty": "Fen-Edebiyat Fakültesi",
+    "created_at": "2026-02-15T00:22:48.439466+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "be98d5b5-b59a-45f8-868b-ef166f3ca187",
+    "code": 38,
+    "name": "Yönetim Bilişim Sistemleri",
+    "type": "Lisans",
+    "faculty": "İktisadi ve İdari Bilimler Fakültesi",
+    "created_at": "2026-02-15T00:29:56.810413+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "c9f6efb9-0915-4001-9574-4a2a812a0650",
+    "code": null,
+    "name": "İktisat",
+    "type": "Lisans",
+    "faculty": "İktisadi ve İdari Bilimler Fakültesi",
+    "created_at": "2026-02-15T00:19:50.114336+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "cfd8657b-e05a-47f6-9e73-84732e3a7301",
+    "code": 11,
+    "name": "Bilgisayar Mühendisliği",
+    "type": "Lisans",
+    "faculty": "Mühendislik Fakültesi",
+    "created_at": "2026-02-15T00:14:28.469588+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "df127286-a7af-41a4-a284-eb9d894418e9",
+    "code": null,
+    "name": "Halkla İlişkiler ve Reklamcılık",
+    "type": "Lisans",
+    "faculty": "İktisadi ve İdari Bilimler Fakültesi",
+    "created_at": "2026-02-15T00:18:14.206276+00:00",
+    "language": "Türkçe"
+  },
+  {
+    "id": "e4378da7-a77a-4a19-ad5d-9369de1219be",
+    "code": 28,
+    "name": "Yazılım Mühendisliği",
+    "type": "Lisans",
+    "faculty": "Mühendislik Fakültesi",
+    "created_at": "2026-02-15T00:29:19.230383+00:00",
+    "language": "İngilizce"
+  },
+  {
+    "id": "efca0838-a119-48a3-9b56-8a6d03ef3212",
+    "code": null,
+    "name": "Dış Ticaret",
+    "type": "Önlisans",
+    "faculty": "Meslek Yüksekokulu",
+    "created_at": "2026-02-15T00:32:01.63567+00:00",
+    "language": "İngilizce"
+  }
+]

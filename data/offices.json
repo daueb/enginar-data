@@ -2588,5 +2588,82 @@
     "office_code": "K-409",
     "floor": "4",
     "pin_id": "pin-0004"
+  },
+  {
+    "id": "office-0373",
+    "name": "Müdür Özlem ERMİŞ",
+    "office_code": "Z03",
+    "floor": "Z",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0374",
+    "name": "Kütüphaneci Alaaddin AKÇA",
+    "office_code": "B20",
+    "floor": "B",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0375",
+    "name": "Kütüphaneci Burçin BALTA",
+    "office_code": "B21",
+    "floor": "B",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0376",
+    "name": "Kütüphaneci Ceren ÖRS",
+    "office_code": "B22",
+    "floor": "B",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0377",
+    "name": "Kütüphaneci Figen KAYA",
+    "office_code": "Z04",
+    "floor": "Z",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0378",
+    "name": "Kütüphaneci Yudum DİNÇER",
+    "office_code": "Z02",
+    "floor": "Z",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0378 ",
+    "name": "Kütüphaneci Murat ÇELİK",
+    "office_code": "B20",
+    "floor": "B",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0379",
+    "name": "Memur Ertan KILIÇ",
+    "office_code": "B20",
+    "floor": "B",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0380",
+    "name": "Memur Fatma GENÇBOYACI",
+    "office_code": "Z02",
+    "floor": "Z",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0381",
+    "name": "Memur Salih YEŞİLYURT",
+    "office_code": "Z-Banko",
+    "floor": "Z",
+    "pin_id": "pin-0014"
+  },
+  {
+    "id": "office-0382",
+    "name": "Memur Seçil SIĞIRTMAÇ",
+    "office_code": "Z-Banko",
+    "floor": "Z",
+    "pin_id": "pin-0014"
   }
 ]
