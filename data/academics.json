@@ -210,6 +210,11 @@
     "created_at": "2026-02-08T09:58:21.60819+00:00"
   },
   {
+    "id": "3209ee21-55f6-4c53-bed1-4e78a2b5fc6c",
+    "name": "Öğr. Gör. Fulda KARAAZMAK",
+    "created_at": "2026-02-17T23:30:15.104168+00:00"
+  },
+  {
     "id": "3267e733-e8a0-4570-8692-743b30f9392d",
     "name": "Prof. Dr. Nadir ÖCAL",
     "created_at": "2026-02-08T09:58:13.915347+00:00"
@@ -330,6 +335,11 @@
     "created_at": "2026-02-08T09:57:24.438528+00:00"
   },
   {
+    "id": "4e644ee5-9f54-415e-a1a6-0fe5d64c096c",
+    "name": "Öğr. Elm. Dr. Ahmet Anıl KARAPOLATGİL",
+    "created_at": "2026-02-17T23:23:48.469878+00:00"
+  },
+  {
     "id": "5217826e-122d-4e62-9369-598b216a7c91",
     "name": "Öğr. Gör. Bülent AKAT",
     "created_at": "2026-02-08T09:59:29.657083+00:00"
@@ -445,6 +455,11 @@
     "created_at": "2026-02-08T10:04:28.87427+00:00"
   },
   {
+    "id": "66d1ecd0-a4f6-4db1-af2d-d5e47edebbff",
+    "name": "Öğr. Gör. Ebru YEĞEN",
+    "created_at": "2026-02-17T23:30:22.490574+00:00"
+  },
+  {
     "id": "67b74a03-6c99-400d-91bb-c997ec4ca655",
     "name": "Dr. Öğr. Üyesi Deniz BAYRAKTAROĞLU",
     "created_at": "2026-02-08T09:57:48.255415+00:00"
@@ -513,6 +528,11 @@
     "id": "73c7519d-0294-4488-9a42-77647216dfe4",
     "name": "Öğr. Elm. Dr. Meltem ERDİL BÖLÜKBAŞI",
     "created_at": "2026-02-08T10:04:44.642824+00:00"
+  },
+  {
+    "id": "74e986b9-822a-42d6-9c19-23b93bf12fc1",
+    "name": "Öğr. Gör. Filiz Ayça İNCE",
+    "created_at": "2026-02-17T23:30:22.131021+00:00"
   },
   {
     "id": "74fcc89e-b910-4e59-b933-de0380e7e672",
