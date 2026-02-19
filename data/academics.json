@@ -25,6 +25,11 @@
     "created_at": "2026-02-08T10:03:18.368192+00:00"
   },
   {
+    "id": "04c01201-1377-4860-8394-c4a59d3ee9f4",
+    "name": "Öğr. Gör. Müzeyyen MUTLU",
+    "created_at": "2026-02-19T23:31:25.380577+00:00"
+  },
+  {
     "id": "070aab20-a5b1-41f0-bde9-465d29ba41fd",
     "name": "Dr. Öğr. Üyesi Nefise ŞİRZAD",
     "created_at": "2026-02-08T09:58:13.452084+00:00"
@@ -130,6 +135,11 @@
     "created_at": "2026-02-08T09:57:37.726073+00:00"
   },
   {
+    "id": "1f029db4-8960-4c0c-baad-257c5ad80fe6",
+    "name": "Öğr. Gör. Çağrı ERİŞEN",
+    "created_at": "2026-02-19T23:31:25.657886+00:00"
+  },
+  {
     "id": "1f5f978d-4681-4788-b0fc-37a6a3477d85",
     "name": "Öğr. Elm. Dr. Tolga TEMUÇİN",
     "created_at": "2026-02-08T09:59:27.292355+00:00"
@@ -138,6 +148,11 @@
     "id": "1fd28a80-312f-4676-90bc-7c5d8477a8eb",
     "name": "Öğr. Elm. Dr. Gülmelahat DOĞAN",
     "created_at": "2026-02-08T10:03:13.987762+00:00"
+  },
+  {
+    "id": "206696d1-39ba-460c-91c2-5e3d27d90a8d",
+    "name": "Öğr. Gör. İzge GÜLTEKİN",
+    "created_at": "2026-02-19T23:31:20.039605+00:00"
   },
   {
     "id": "259bf41b-5451-4afb-951e-2d1aef7b2281",
@@ -190,6 +205,11 @@
     "created_at": "2026-02-08T10:04:35.352326+00:00"
   },
   {
+    "id": "2d5d88c7-41b2-415c-b02f-0adcde982060",
+    "name": "Öğr. Gör. Seda AĞIRBAŞ KANAT",
+    "created_at": "2026-02-19T23:31:39.124938+00:00"
+  },
+  {
     "id": "2d82196b-b62c-4618-bb5f-afca3b8b30b0",
     "name": "Öğr. Gör. Mahmut Yavuz ŞENGÖR",
     "created_at": "2026-02-08T09:59:39.725912+00:00"
@@ -210,6 +230,11 @@
     "created_at": "2026-02-08T09:58:21.60819+00:00"
   },
   {
+    "id": "31497ab3-f012-4edd-9f5c-6d3a0b18fefc",
+    "name": "Öğr. Gör. Suna ÖZCAN",
+    "created_at": "2026-02-19T23:24:39.817135+00:00"
+  },
+  {
     "id": "3209ee21-55f6-4c53-bed1-4e78a2b5fc6c",
     "name": "Öğr. Gör. Fulda KARAAZMAK",
     "created_at": "2026-02-17T23:30:15.104168+00:00"
@@ -220,9 +245,19 @@
     "created_at": "2026-02-08T09:58:13.915347+00:00"
   },
   {
+    "id": "32f0b294-2cb2-414c-acae-a4ffab05f731",
+    "name": "Öğr. Gör. Rudolf Peter JELEN",
+    "created_at": "2026-02-19T23:31:23.119752+00:00"
+  },
+  {
     "id": "33f6138a-bc91-4739-a671-be14f0fb9988",
     "name": "Öğr. Gör. Bülent İNAL",
     "created_at": "2026-02-08T10:00:28.954613+00:00"
+  },
+  {
+    "id": "341e792c-b360-4158-9c61-ee7a7fddddd7",
+    "name": "Öğr. Gör. Özden ÖZTOK",
+    "created_at": "2026-02-19T23:31:34.591002+00:00"
   },
   {
     "id": "342af59e-b25f-4c3b-a8ae-668ca3717b05",
@@ -305,6 +340,11 @@
     "created_at": "2026-02-08T09:59:10.815771+00:00"
   },
   {
+    "id": "44a728c0-a6da-4473-80f7-95cd500d0546",
+    "name": "Öğr. Gör. Sibel ERSAN",
+    "created_at": "2026-02-19T23:31:53.805597+00:00"
+  },
+  {
     "id": "4540d048-2d4a-4fa1-a6e2-a70d3cb8545a",
     "name": "Dr. Öğr. Üyesi Naim ATABAĞSOY",
     "created_at": "2026-02-08T09:59:02.933176+00:00"
@@ -340,9 +380,19 @@
     "created_at": "2026-02-17T23:23:48.469878+00:00"
   },
   {
+    "id": "5100a56f-2fa8-4213-bbcc-b2712e32e3db",
+    "name": "Öğr. Gör. Diğdem SANCAK",
+    "created_at": "2026-02-19T23:32:00.277814+00:00"
+  },
+  {
     "id": "5217826e-122d-4e62-9369-598b216a7c91",
     "name": "Öğr. Gör. Bülent AKAT",
     "created_at": "2026-02-08T09:59:29.657083+00:00"
+  },
+  {
+    "id": "523e176d-f975-4f08-8ea1-0bf28a0fbebc",
+    "name": "Öğr. Gör. Şadiye Deniz BİLGİÇ",
+    "created_at": "2026-02-19T23:24:40.433352+00:00"
   },
   {
     "id": "52ad0138-a236-43d6-96d4-eeec28ee8958",
@@ -450,6 +500,11 @@
     "created_at": "2026-02-08T09:57:27.55172+00:00"
   },
   {
+    "id": "6668011e-d286-4d28-9555-53ad173b54ea",
+    "name": "Öğr. Gör. Gülçin YILDIRIMER",
+    "created_at": "2026-02-19T23:31:05.565205+00:00"
+  },
+  {
     "id": "6687cd73-37aa-4631-a37a-4a33a6357fd1",
     "name": "Prof. Dr. Ezgi ORHAN",
     "created_at": "2026-02-08T10:04:28.87427+00:00"
@@ -463,6 +518,11 @@
     "id": "67b74a03-6c99-400d-91bb-c997ec4ca655",
     "name": "Dr. Öğr. Üyesi Deniz BAYRAKTAROĞLU",
     "created_at": "2026-02-08T09:57:48.255415+00:00"
+  },
+  {
+    "id": "684a0283-5783-43a3-8d12-8554c4296cfe",
+    "name": "Öğr. Gör. Gönül Damla ATAY",
+    "created_at": "2026-02-19T23:31:03.09206+00:00"
   },
   {
     "id": "691d91a3-4003-4b13-8caf-53ff7132ca7d",
@@ -545,6 +605,11 @@
     "created_at": "2026-02-08T09:57:31.088397+00:00"
   },
   {
+    "id": "769fce2e-861c-45fa-8606-be8426cf4eba",
+    "name": "Öğr. Gör. Leyla ŞAHBAZ",
+    "created_at": "2026-02-19T23:31:55.847376+00:00"
+  },
+  {
     "id": "780128bb-90d7-4e18-87de-c45c16047785",
     "name": "Prof. Dr. Ali KİRACI",
     "created_at": "2026-02-15T23:20:32.63509+00:00"
@@ -590,6 +655,11 @@
     "created_at": "2026-02-08T10:04:45.684444+00:00"
   },
   {
+    "id": "7fc51a66-280f-4a4a-b43b-2ea202f1cdc6",
+    "name": "Öğr. Gör. Ceren ATEŞER",
+    "created_at": "2026-02-19T23:31:56.129542+00:00"
+  },
+  {
     "id": "80dd3078-6ce6-4cd6-a011-08cb6c30dfe3",
     "name": "Öğr. Elm. Dr. Koşun Özgür ÖZBEY",
     "created_at": "2026-02-18T23:24:11.958438+00:00"
@@ -630,6 +700,11 @@
     "created_at": "2026-02-08T10:05:29.549214+00:00"
   },
   {
+    "id": "86f60aaf-c2a6-4e1b-9ea8-a9df107baaa5",
+    "name": "Öğr. Gör. Christopher MEACHEN",
+    "created_at": "2026-02-19T23:31:05.86989+00:00"
+  },
+  {
     "id": "89c2e237-a0fe-4c09-8cd6-239089f778eb",
     "name": "Dr. Öğr. Üyesi Serdar ARSLAN",
     "created_at": "2026-02-09T22:01:22.760106+00:00"
@@ -648,6 +723,11 @@
     "id": "8e2aeaee-4983-4548-a032-8bd0f454386e",
     "name": "Dr. Öğr. Üyesi Serkan MERTYÜREK",
     "created_at": "2026-02-08T10:04:49.464025+00:00"
+  },
+  {
+    "id": "90a5301e-dd4b-4f0b-b953-dae32a2754b8",
+    "name": "Öğr. Gör. Besime AKTUĞ",
+    "created_at": "2026-02-19T23:31:07.842793+00:00"
   },
   {
     "id": "925d6145-94a4-407b-a9a4-0a2ff751fa7c",
@@ -685,6 +765,11 @@
     "created_at": "2026-02-09T21:57:48.601736+00:00"
   },
   {
+    "id": "98987644-a9f7-4c77-83bd-e7120f80e6cf",
+    "name": "Öğr. Gör. Sevilay SAKIZLI",
+    "created_at": "2026-02-19T23:30:59.893827+00:00"
+  },
+  {
     "id": "99b86f05-6092-493d-ab79-1d4e18c1f4ce",
     "name": "Prof. Dr. İres İSKENDER",
     "created_at": "2026-02-08T10:00:41.665311+00:00"
@@ -705,6 +790,11 @@
     "created_at": "2026-02-08T10:02:06.471611+00:00"
   },
   {
+    "id": "9c761315-7f37-4eb0-bd4f-14fb78bea40d",
+    "name": "Öğr. Gör. Elvan ÇEVİK",
+    "created_at": "2026-02-19T23:31:44.208774+00:00"
+  },
+  {
     "id": "9ce98fe1-9c86-4ebf-aba2-f6b9e440665c",
     "name": "Doç. Dr. Zeynep Çiğdem UYSAL ÜREY",
     "created_at": "2026-02-08T10:05:11.223292+00:00"
@@ -715,9 +805,19 @@
     "created_at": "2026-02-08T10:02:58.83872+00:00"
   },
   {
+    "id": "9f62eafd-6366-4079-8f37-baffd710c16d",
+    "name": "Öğr. Gör. Esen METİN",
+    "created_at": "2026-02-19T23:31:49.049498+00:00"
+  },
+  {
     "id": "a076a4c5-1404-4eb1-ad41-3075c8071e74",
     "name": "Prof. Dr. Müfit GÜLGEÇ",
     "created_at": "2026-02-08T09:57:41.443874+00:00"
+  },
+  {
+    "id": "a095bf1f-ec86-4f37-bd86-ef15ff3ee79e",
+    "name": "Öğr. Gör. Meryem MOLDUR",
+    "created_at": "2026-02-19T23:24:38.920962+00:00"
   },
   {
     "id": "a27b93bf-e5f8-4eee-b7a5-a376d9868f9e",
@@ -738,6 +838,11 @@
     "id": "a560cbfe-edb9-40f0-8061-38b35c01952b",
     "name": "Doç. Dr. Azime PEKŞEN YAKAR",
     "created_at": "2026-02-12T23:26:48.806726+00:00"
+  },
+  {
+    "id": "a5b192f4-7f2f-441b-b683-dee5ea8f6892",
+    "name": "Öğr. Gör. Burcu ATAY",
+    "created_at": "2026-02-19T23:31:00.544276+00:00"
   },
   {
     "id": "ad141d05-5e76-4649-92b6-578bd9b94056",
@@ -773,6 +878,11 @@
     "id": "b4e836db-fea7-498a-84e3-2e724ec37313",
     "name": "Öğr. Gör. Eda Nur TİMUR",
     "created_at": "2026-02-08T10:06:11.499173+00:00"
+  },
+  {
+    "id": "b64cd2cf-7dc9-4ee3-89ea-9c122637ce93",
+    "name": "Öğr. Gör. Bilge ÇELİK",
+    "created_at": "2026-02-19T23:31:38.806653+00:00"
   },
   {
     "id": "b69d6748-1166-49db-ab5a-573e1d5c5d84",
@@ -828,6 +938,11 @@
     "id": "bf001ab8-120f-498b-913c-32e687ce08b2",
     "name": "Öğr. Gör. Hasan Hüseyin SEÇİLMİŞ",
     "created_at": "2026-02-08T09:59:46.609716+00:00"
+  },
+  {
+    "id": "bfa1fba3-2e2f-4a23-806a-f04b220370eb",
+    "name": "Öğr. Gör. Merve UÇAK",
+    "created_at": "2026-02-19T23:31:34.887718+00:00"
   },
   {
     "id": "c0867f24-033a-499b-a6d7-fc18c7ed4e70",
@@ -895,6 +1010,11 @@
     "created_at": "2026-02-08T09:57:58.338314+00:00"
   },
   {
+    "id": "cce989f1-f621-4106-9c8a-8379f819eb78",
+    "name": "Öğr. Gör. Erdem BİLİR",
+    "created_at": "2026-02-19T23:31:19.741078+00:00"
+  },
+  {
     "id": "cd5d8ad7-5d10-4a88-82e5-4278c54a2ae7",
     "name": "Doç. Dr. Mustafa KIRCA",
     "created_at": "2026-02-08T10:02:10.592026+00:00"
@@ -933,6 +1053,11 @@
     "id": "d2dc3a84-13ee-42fc-9072-46ede5fc1c8d",
     "name": "Dr. Öğr. Üyesi Atila BOSTAN",
     "created_at": "2026-02-08T09:58:02.307789+00:00"
+  },
+  {
+    "id": "d5422b32-142e-4d48-9668-856f034853ab",
+    "name": "Öğr. Gör. Güzide ÇALIŞKAN",
+    "created_at": "2026-02-19T23:31:51.525187+00:00"
   },
   {
     "id": "d5bfd5c7-43a9-413e-a9a0-069a21ed328e",
@@ -1025,6 +1150,11 @@
     "created_at": "2026-02-08T10:02:19.858444+00:00"
   },
   {
+    "id": "e83f3b83-6e3a-43d5-923a-1d19773bc412",
+    "name": "Öğr. Gör. Zikri BİLGİN",
+    "created_at": "2026-02-19T23:31:51.834482+00:00"
+  },
+  {
     "id": "e8a63d26-6500-4a83-9fdb-cd40e04de2be",
     "name": "Dr. Öğr. Üyesi Batuhan AKTAŞ",
     "created_at": "2026-02-08T10:03:01.68399+00:00"
@@ -1045,9 +1175,19 @@
     "created_at": "2026-02-08T10:03:42.230116+00:00"
   },
   {
+    "id": "ed26bd47-ac24-4e50-ad7b-7f877681bf88",
+    "name": "Öğr. Gör. Gülşah ÇETİNEL",
+    "created_at": "2026-02-19T23:31:00.211825+00:00"
+  },
+  {
     "id": "eea2acb1-8c7e-43d3-86a1-c73802bb474f",
     "name": "Doç. Dr. Ekin Ayşe ÖZŞUCA ERENOĞLU",
     "created_at": "2026-02-08T09:59:05.163163+00:00"
+  },
+  {
+    "id": "eed18fb8-270b-4bc5-9411-b900c9b22312",
+    "name": "Öğr. Gör. Lütfi Umut ÇUHADAR",
+    "created_at": "2026-02-19T23:31:08.13909+00:00"
   },
   {
     "id": "f13c0e47-0e97-4a3c-be4d-37069773df3a",
@@ -1095,14 +1235,29 @@
     "created_at": "2026-02-08T10:04:35.917762+00:00"
   },
   {
+    "id": "f8400e91-da94-48ac-96dc-0bf91936c2cc",
+    "name": "Öğr. Gör. Tuğçe TAŞ",
+    "created_at": "2026-02-19T23:31:22.8147+00:00"
+  },
+  {
     "id": "f92e397d-9fb6-4d7a-8a68-073128d08150",
     "name": "Dr. Öğr. Üyesi Bilgin AVENOĞLU",
     "created_at": "2026-02-08T09:59:30.141975+00:00"
   },
   {
+    "id": "f980a8f4-b411-4d29-87f9-7d5fd45ed51c",
+    "name": "Öğr. Gör. Enes ALTUNTAŞ",
+    "created_at": "2026-02-19T23:31:43.910784+00:00"
+  },
+  {
     "id": "f9c9eabb-e7c2-45f9-b204-f9cacf8ba816",
     "name": "Öğr. Elm. Dr. Erhan KONUK",
     "created_at": "2026-02-08T09:57:34.424802+00:00"
+  },
+  {
+    "id": "fb451417-8288-4ee3-bd1e-9a1138bc823f",
+    "name": "Öğr. Gör. Sümeyra BATUR ÖNAL",
+    "created_at": "2026-02-19T23:31:02.756712+00:00"
   },
   {
     "id": "fb6273f7-91a1-433e-9ea0-c1c4097e4f47",
