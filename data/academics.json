@@ -155,6 +155,11 @@
     "created_at": "2026-02-19T23:31:20.039605+00:00"
   },
   {
+    "id": "20bf29dc-1c7b-4f67-84f8-b801b3d639d4",
+    "name": "Doç. Dr. Mehmet AKSOY",
+    "created_at": "2026-02-24T23:27:47.274228+00:00"
+  },
+  {
     "id": "259bf41b-5451-4afb-951e-2d1aef7b2281",
     "name": "Dr. Öğr. Üyesi Eser US DOĞAN",
     "created_at": "2026-02-08T09:57:47.861947+00:00"
@@ -168,6 +173,11 @@
     "id": "270bbf65-c8af-4c9b-a2da-6a28186cc6f0",
     "name": "Öğr. Elm. Dr. Saadet Pınar İÇEMER",
     "created_at": "2026-02-08T09:58:46.823923+00:00"
+  },
+  {
+    "id": "2777e68e-beff-4ef3-8a6e-f2349cc9a734",
+    "name": "Öğr. Elm. Dr. Fatma Selcen PHELPS",
+    "created_at": "2026-02-24T23:26:24.225968+00:00"
   },
   {
     "id": "28624e0e-7083-4af8-9256-1abd77d38b29",
