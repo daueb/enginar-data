@@ -16,6 +16,22 @@
     "extra_cal": "120"
   },
   {
+    "id": "food-02-03-26",
+    "date": "02.03.2026",
+    "day_name": "Pazartesi",
+    "holiday": null,
+    "soup": "BEYRAN ÇORBA",
+    "soup_cal": "199",
+    "main": "TAZE FASULYE YEMEĞİ",
+    "main_cal": "249",
+    "side": "PİRİNÇ PİLAV",
+    "side_cal": "270",
+    "salad": "MAYDANOZ SALATA",
+    "salad_cal": "80",
+    "extra": "YOĞURT",
+    "extra_cal": "150"
+  },
+  {
     "id": "food-03-02-26",
     "date": "03.02.2026",
     "day_name": "Salı",
@@ -29,6 +45,22 @@
     "salad": "MAYDANOZ SALATA",
     "salad_cal": "80",
     "extra": "AYRAN",
+    "extra_cal": "120"
+  },
+  {
+    "id": "food-03-03-26",
+    "date": "03.03.2026",
+    "day_name": "Salı",
+    "holiday": null,
+    "soup": "YAYLA ÇORBA",
+    "soup_cal": "98",
+    "main": "BARBEKÜ SOSLU TAVUK",
+    "main_cal": "310",
+    "side": "BAHARATLI MAKARNA",
+    "side_cal": "282",
+    "salad": "ROKA TERE SALATA",
+    "salad_cal": "130",
+    "extra": "MEYVE SUYU",
     "extra_cal": "120"
   },
   {
@@ -48,6 +80,22 @@
     "extra_cal": "300"
   },
   {
+    "id": "food-04-03-26",
+    "date": "04.03.2026",
+    "day_name": "Çarşamba",
+    "holiday": null,
+    "soup": "ŞEHRİYE ÇORBA",
+    "soup_cal": "135",
+    "main": "ROSTO KÖFTE-PÜRE",
+    "main_cal": "367",
+    "side": "ERİŞTE",
+    "side_cal": "243",
+    "salad": "KARIŞIK SALATA",
+    "salad_cal": "97",
+    "extra": "ÇİKOLATALI SUPANGLE",
+    "extra_cal": "232"
+  },
+  {
     "id": "food-05-02-26",
     "date": "05.02.2026",
     "day_name": "Perşembe",
@@ -62,6 +110,22 @@
     "salad_cal": "130",
     "extra": "MEYVE SUYU",
     "extra_cal": "120"
+  },
+  {
+    "id": "food-05-03-26",
+    "date": "05.03.2026",
+    "day_name": "Perşembe",
+    "holiday": null,
+    "soup": "ARABAŞI ÇORBA",
+    "soup_cal": "148",
+    "main": "EV USULÜ NOHUT",
+    "main_cal": "365",
+    "side": "TEREYAĞLI PİRİNÇ PİLAV",
+    "side_cal": "270",
+    "salad": "KIŞ CACIĞI",
+    "salad_cal": "136",
+    "extra": "KARIŞIK TURŞU",
+    "extra_cal": "154"
   },
   {
     "id": "food-06-02-26",
@@ -80,6 +144,22 @@
     "extra_cal": "110"
   },
   {
+    "id": "food-06-03-26",
+    "date": "06.03.2026",
+    "day_name": "Cuma",
+    "holiday": null,
+    "soup": "SAKALA ÇARPAN ÇORBA",
+    "soup_cal": "120",
+    "main": "ET DÖNER-PATATES SOTE",
+    "main_cal": "335",
+    "side": "BULGUR PİLAV",
+    "side_cal": "220",
+    "salad": "AYSBERK SALATA",
+    "salad_cal": "96",
+    "extra": "AYRAN",
+    "extra_cal": "120"
+  },
+  {
     "id": "food-09-02-26",
     "date": "09.02.2026",
     "day_name": "Pazartesi",
@@ -96,6 +176,22 @@
     "extra_cal": "200"
   },
   {
+    "id": "food-09-03-26",
+    "date": "09.03.2026",
+    "day_name": "Pazartesi",
+    "holiday": null,
+    "soup": "EZOGELİN ÇORBA",
+    "soup_cal": "136",
+    "main": "SEBZELİ KÖFTE",
+    "main_cal": "375",
+    "side": "ERİŞTE",
+    "side_cal": "243",
+    "salad": "KIŞ SALATA",
+    "salad_cal": "101",
+    "extra": "MEVSİM MEYVE",
+    "extra_cal": "120"
+  },
+  {
     "id": "food-10-02-26",
     "date": "10.02.2026",
     "day_name": "Salı",
@@ -108,6 +204,22 @@
     "side_cal": "282",
     "salad": "YEŞİL SALATA",
     "salad_cal": "76",
+    "extra": "AYRAN",
+    "extra_cal": "120"
+  },
+  {
+    "id": "food-10-03-26",
+    "date": "10.03.2026",
+    "day_name": "Salı",
+    "holiday": null,
+    "soup": "TARHANA ÇORBA",
+    "soup_cal": "91",
+    "main": "TAVUK DÖNER-KARAMELİZE SOĞAN",
+    "main_cal": "324",
+    "side": "BULGUR PİLAV",
+    "side_cal": "220",
+    "salad": "MEVSİM SALATA",
+    "salad_cal": "107",
     "extra": "AYRAN",
     "extra_cal": "120"
   },
@@ -128,6 +240,22 @@
     "extra_cal": "120"
   },
   {
+    "id": "food-11-03-26",
+    "date": "11.03.2026",
+    "day_name": "Çarşamba",
+    "holiday": null,
+    "soup": "MERCİMEK ÇORBA",
+    "soup_cal": "136",
+    "main": "TAS KEBAP",
+    "main_cal": "314",
+    "side": "TEREYAĞLI SADE PİRİNÇ PİLAV",
+    "side_cal": "270",
+    "salad": "LAHANA SALATA",
+    "salad_cal": "89",
+    "extra": "HAVUÇ TARATOR",
+    "extra_cal": "110"
+  },
+  {
     "id": "food-12-02-26",
     "date": "12.02.2026",
     "day_name": "Perşembe",
@@ -142,6 +270,22 @@
     "salad_cal": "80",
     "extra": "KADAYIF TATLISI",
     "extra_cal": "379"
+  },
+  {
+    "id": "food-12-03-26",
+    "date": "12.03.2026",
+    "day_name": "Perşembe",
+    "holiday": null,
+    "soup": "SEBZE ÇORBA",
+    "soup_cal": "114",
+    "main": "DEMİGLACE SOSLU TAVUK",
+    "main_cal": "310",
+    "side": "MAKARNA",
+    "side_cal": "282",
+    "salad": "YEŞİL SALATA",
+    "salad_cal": "76",
+    "extra": "MEYVE SUYU",
+    "extra_cal": "120"
   },
   {
     "id": "food-13-02-26",
@@ -160,6 +304,22 @@
     "extra_cal": "120"
   },
   {
+    "id": "food-13-03-26",
+    "date": "13.03.2026",
+    "day_name": "Cuma",
+    "holiday": null,
+    "soup": "ŞEHRİYE ÇORBA",
+    "soup_cal": "135",
+    "main": "SOSYETE MANTISI-YOĞURT",
+    "main_cal": "358",
+    "side": "ZEYTİNYAĞLI BARBUNYA",
+    "side_cal": "139",
+    "salad": "TERE ROKA SALATA",
+    "salad_cal": "130",
+    "extra": "TRİLEÇE",
+    "extra_cal": "300"
+  },
+  {
     "id": "food-16-02-26",
     "date": "16.02.2026",
     "day_name": "Pazartesi",
@@ -174,6 +334,22 @@
     "salad_cal": "76",
     "extra": "FIRIN SÜTLAÇ",
     "extra_cal": "286"
+  },
+  {
+    "id": "food-16-03-26",
+    "date": "16.03.2026",
+    "day_name": "Pazartesi",
+    "holiday": null,
+    "soup": "TARHANA ÇORBA",
+    "soup_cal": "91",
+    "main": "ÇİN USULÜ TAVUK",
+    "main_cal": "325",
+    "side": "MAKARNA",
+    "side_cal": "282",
+    "salad": "AYSBERK SALATA",
+    "salad_cal": "96",
+    "extra": "AYRAN",
+    "extra_cal": "120"
   },
   {
     "id": "food-17-02-26",
@@ -192,6 +368,22 @@
     "extra_cal": "120"
   },
   {
+    "id": "food-17-03-26",
+    "date": "17.03.2026",
+    "day_name": "Salı",
+    "holiday": null,
+    "soup": "TAVUK SUYU ÇORBA",
+    "soup_cal": "148",
+    "main": "KURU FASULYE",
+    "main_cal": "290",
+    "side": "TEREYAĞLI SADE PİRİNÇ PİLAV",
+    "side_cal": "270",
+    "salad": "AKDENİZ SALATA",
+    "salad_cal": "108",
+    "extra": "HAYDARİ",
+    "extra_cal": "110"
+  },
+  {
     "id": "food-18-02-26",
     "date": "18.02.2026",
     "day_name": "Çarşamba",
@@ -205,6 +397,22 @@
     "salad": "AKDENİZ SALATA",
     "salad_cal": "108",
     "extra": "MEVSİM MEYVE",
+    "extra_cal": "120"
+  },
+  {
+    "id": "food-18-03-26",
+    "date": "18.03.2026",
+    "day_name": "Çarşamba",
+    "holiday": null,
+    "soup": "DOMATES ÇORBA",
+    "soup_cal": "121",
+    "main": "KADINBUDU KÖFTE-PÜRE",
+    "main_cal": "394",
+    "side": "BAHARATLI MAKARNA",
+    "side_cal": "282",
+    "salad": "GÜLLAÇ",
+    "salad_cal": "319",
+    "extra": "MEYVE SUYU",
     "extra_cal": "120"
   },
   {
@@ -224,6 +432,22 @@
     "extra_cal": "369"
   },
   {
+    "id": "food-19-03-26",
+    "date": "19.03.2026",
+    "day_name": "Perşembe",
+    "holiday": "RAMAZAN BAYRAMI ARİFESİ",
+    "soup": null,
+    "soup_cal": null,
+    "main": null,
+    "main_cal": null,
+    "side": null,
+    "side_cal": null,
+    "salad": null,
+    "salad_cal": null,
+    "extra": null,
+    "extra_cal": null
+  },
+  {
     "id": "food-20-02-26",
     "date": "20.02.2026",
     "day_name": "Cuma",
@@ -238,6 +462,22 @@
     "salad_cal": "105",
     "extra": "AYRAN",
     "extra_cal": "120"
+  },
+  {
+    "id": "food-20-03-26",
+    "date": "20.03.2026",
+    "day_name": "Cuma",
+    "holiday": "RAMAZAN BAYRAMI 1. GÜN",
+    "soup": null,
+    "soup_cal": null,
+    "main": null,
+    "main_cal": null,
+    "side": null,
+    "side_cal": null,
+    "salad": null,
+    "salad_cal": null,
+    "extra": null,
+    "extra_cal": null
   },
   {
     "id": "food-23-02-26",
@@ -256,6 +496,22 @@
     "extra_cal": "120"
   },
   {
+    "id": "food-23-03-26",
+    "date": "23.03.2026",
+    "day_name": "Pazartesi",
+    "holiday": null,
+    "soup": "YEŞİL MERCİMEK ÇORBA",
+    "soup_cal": "120",
+    "main": "HAMBURGER",
+    "main_cal": "394",
+    "side": "PATATES KIZARTMA",
+    "side_cal": "302",
+    "salad": "HAVUÇLU SALATA",
+    "salad_cal": "103",
+    "extra": "KOLA",
+    "extra_cal": "200"
+  },
+  {
     "id": "food-24-02-26",
     "date": "24.02.2026",
     "day_name": "Salı",
@@ -270,6 +526,22 @@
     "salad_cal": "101",
     "extra": "KALBURABASTI",
     "extra_cal": "328"
+  },
+  {
+    "id": "food-24-03-26",
+    "date": "24.03.2026",
+    "day_name": "Salı",
+    "holiday": null,
+    "soup": "HAVUÇ ÇORBA",
+    "soup_cal": "107",
+    "main": "ÇITIR TAVUK-SOS",
+    "main_cal": "321",
+    "side": "MAKARNA",
+    "side_cal": "282",
+    "salad": "MEVSİM SALATA",
+    "salad_cal": "107",
+    "extra": "MEYVE SUYU",
+    "extra_cal": "120"
   },
   {
     "id": "food-25-02-26",
@@ -288,6 +560,22 @@
     "extra_cal": "120"
   },
   {
+    "id": "food-25-03-26",
+    "date": "25.03.2026",
+    "day_name": "Çarşamba",
+    "holiday": null,
+    "soup": "TARHANA ÇORBA",
+    "soup_cal": "91",
+    "main": "ORMAN KEBAP",
+    "main_cal": "345",
+    "side": "ŞEHRİYE PİLAV",
+    "side_cal": "270",
+    "salad": "YEŞİL SALATA",
+    "salad_cal": "76",
+    "extra": "KALBURABASTI",
+    "extra_cal": "328"
+  },
+  {
     "id": "food-26-02-26",
     "date": "26.02.2026",
     "day_name": "Perşembe",
@@ -304,6 +592,22 @@
     "extra_cal": "154"
   },
   {
+    "id": "food-26-03-26",
+    "date": "26.03.2026",
+    "day_name": "Perşembe",
+    "holiday": null,
+    "soup": "BROKOLİ ÇORBA",
+    "soup_cal": "140",
+    "main": "FIRIN TAVUK BUT",
+    "main_cal": "310",
+    "side": "İÇ PİLAV",
+    "side_cal": "270",
+    "salad": "LAHANA SALATA",
+    "salad_cal": "89",
+    "extra": "AYRAN",
+    "extra_cal": "120"
+  },
+  {
     "id": "food-27-02-26",
     "date": "27.02.2026",
     "day_name": "Cuma",
@@ -318,5 +622,53 @@
     "salad_cal": "76",
     "extra": "MEYVE SUYU",
     "extra_cal": "120"
+  },
+  {
+    "id": "food-27-03-26",
+    "date": "27.03.2026",
+    "day_name": "Cuma",
+    "holiday": null,
+    "soup": "ZERDEÇALLI MERCİMEK ÇORBA",
+    "soup_cal": "136",
+    "main": "ISPANAK YEMEĞİ",
+    "main_cal": "320",
+    "side": "FIRIN MAKARNA",
+    "side_cal": "286",
+    "salad": "AKDENİZ SALATA",
+    "salad_cal": "108",
+    "extra": "MOZAIK PASTA",
+    "extra_cal": "330"
+  },
+  {
+    "id": "food-30-03-26",
+    "date": "30.03.2026",
+    "day_name": "Pazartesi",
+    "holiday": null,
+    "soup": "EZOGELİN ÇORBA",
+    "soup_cal": "136",
+    "main": "EKŞİLİ KÖFTE",
+    "main_cal": "306",
+    "side": "BULGUR PİLAV",
+    "side_cal": "220",
+    "salad": "MISIRLI SALATA",
+    "salad_cal": "89",
+    "extra": "MEVSİM MEYVE",
+    "extra_cal": "120"
+  },
+  {
+    "id": "food-31-03-26",
+    "date": "31.03.2026",
+    "day_name": "Salı",
+    "holiday": null,
+    "soup": "SAKALA ÇARPAN ÇORBA",
+    "soup_cal": "120",
+    "main": "BEZELYE YEMEĞİ",
+    "main_cal": "365",
+    "side": "PİRİNÇ PİLAV",
+    "side_cal": "270",
+    "salad": "BAHÇE SALATA",
+    "salad_cal": "104",
+    "extra": "YOĞURT",
+    "extra_cal": "150"
   }
 ]
