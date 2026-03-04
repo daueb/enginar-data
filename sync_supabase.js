@@ -58,7 +58,8 @@ async function syncDataTables() {
                 'academics',
                 'courses',
                 'sessions',
-                'classrooms'
+                'classrooms',
+                'versions.json'
             ];
         }
 
