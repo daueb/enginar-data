@@ -81,9 +81,3 @@ jobs:
               --content-type "application/json" \
               --cache-control "public, max-age=300"
           done
-      - name: Purge jsdelivr CDN (yedek)
-        run: |
-          FILES=("versions.json" "pins.json" "types.json" "classes.json" "offices.json" "foods.json" "polygons.json" "widgets.json" "stops.json" "routes.json" "exams.json" "academic_calendar.json" "academics.json" "courses.json" "sessions.json" "classrooms.json")
-          for file in "${FILES[@]}"; do
-            curl -s -I "https://purge.jsdelivr.net/gh/${{ github.repository }}/data/$file" > /dev/null
-          done
