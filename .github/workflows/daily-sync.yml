@@ -4,10 +4,20 @@ on:
   schedule:
     - cron: '0 23 * * *' # Türkiye saatiyle 02:00
   workflow_dispatch:
+    inputs:
+      run_scrapers:
+        description: 'Scraperları çalıştır (Üniversite sitelerinden veri çek)'
+        type: boolean
+        default: true
+      run_sync:
+        description: 'Supabase → JSON + CDN (Veriyi JSON yap ve CDNe at)'
+        type: boolean
+        default: true
 
 jobs:
   # --- 1. ADIM: BOTLARI ÇALIŞTIR (Hızlı/Paralel) ---
   run-scrapers:
+    if: ${{ github.event_name == 'schedule' || inputs.run_scrapers == true }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -37,7 +47,7 @@ jobs:
   # --- 2. ADIM: JSON YAP VE PUSHLA ---
   sync-json:
     needs: run-scrapers
-    if: always() # Bazı botlar hata verse de JSON'ları çekmeye çalış
+    if: always() && (github.event_name == 'schedule' || inputs.run_sync == true)
     runs-on: ubuntu-latest
     permissions:
       contents: write
