@@ -240,6 +240,11 @@
     "created_at": "2026-02-08T09:58:21.60819+00:00"
   },
   {
+    "id": "307ad5ce-b962-4fc1-a4f2-5508fe5f0a60",
+    "name": "Öğr. Elm. Dr. Bilgehan ERKAL",
+    "created_at": "2026-03-09T23:22:46.103332+00:00"
+  },
+  {
     "id": "31497ab3-f012-4edd-9f5c-6d3a0b18fefc",
     "name": "Öğr. Gör. Suna ÖZCAN",
     "created_at": "2026-02-19T23:24:39.817135+00:00"
@@ -1263,6 +1268,11 @@
     "id": "f980a8f4-b411-4d29-87f9-7d5fd45ed51c",
     "name": "Öğr. Gör. Enes ALTUNTAŞ",
     "created_at": "2026-02-19T23:31:43.910784+00:00"
+  },
+  {
+    "id": "f9b769f2-dbcc-44a7-8a32-cb2b0f772e4e",
+    "name": "Doç. Dr. Mehmet ÖZCAN",
+    "created_at": "2026-03-09T23:22:41.879056+00:00"
   },
   {
     "id": "f9c9eabb-e7c2-45f9-b204-f9cacf8ba816",

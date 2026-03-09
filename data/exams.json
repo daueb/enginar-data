@@ -319,7 +319,7 @@
     "created_at": "2026-02-22T23:28:28.910321+00:00"
   },
   {
-    "id": "AİIT-1773012423224-1",
+    "id": "AİIT-1773099033797-1",
     "code": "AİIT 101",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -327,10 +327,10 @@
     "date": "Jun 09 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:27:03.803499+00:00"
+    "created_at": "2026-03-09T23:30:34.136317+00:00"
   },
   {
-    "id": "AİIT-1773012423224-2",
+    "id": "AİIT-1773099033797-2",
     "code": "AİIT 101",
     "section": "Tüm Gruplar",
     "exam": "Bütünleme",
@@ -338,7 +338,7 @@
     "date": "Jun 29 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:27:03.803499+00:00"
+    "created_at": "2026-03-09T23:30:34.136317+00:00"
   },
   {
     "id": "ALM-1771802921167-33",
@@ -1474,7 +1474,7 @@
     "created_at": "2026-02-22T23:29:32.836871+00:00"
   },
   {
-    "id": "CEC-1773012480639-3",
+    "id": "CEC-1773099091108-3",
     "code": "CEC  104",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1482,10 +1482,43 @@
     "date": "Apr 01 2026",
     "starting": "09:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480639-4",
+    "id": "CEC-1773099091108-4",
+    "code": "CEC  104",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "2 Saat",
+    "date": "Jun 05 2026",
+    "starting": "12:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091108-5",
+    "code": "CEC  104",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "Apr 13 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091109-6",
+    "code": "CEC  104",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "Jun 15 2026",
+    "starting": "12:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091109-7",
     "code": "CEC  108",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1493,10 +1526,21 @@
     "date": "Apr 15 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480639-5",
+    "id": "CEC-1773099091109-8",
+    "code": "CEC  108",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 01 2026",
+    "starting": "12:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091109-9",
     "code": "CEC  109",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1504,186 +1548,10 @@
     "date": "Apr 16 2026",
     "starting": "11:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480639-6",
-    "code": "CEC  111",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 06 2026",
-    "starting": "13:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480639-7",
-    "code": "CEC  112",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 08 2026",
-    "starting": "13:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480639-8",
-    "code": "CEC  114",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Mar 25 2026",
-    "starting": "11:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-10",
-    "code": "CEC  217",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 08 2026",
-    "starting": "10:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-11",
-    "code": "CEC  224",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 06 2026",
-    "starting": "13:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-12",
-    "code": "CEC  226",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 07 2026",
-    "starting": "13:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-13",
-    "code": "CEC  227",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 09 2026",
-    "starting": "13:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-14",
-    "code": "CEC  346",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Mar 23 2026",
-    "starting": "11:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-15",
-    "code": "CEC  203",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 09 2026",
-    "starting": "10:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-16",
-    "code": "CEC  205",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Mar 24 2026",
-    "starting": "10:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-17",
-    "code": "CEC  210",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 02 2026",
-    "starting": "09:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-18",
-    "code": "CEC  211",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 31 2026",
-    "starting": "09:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-19",
-    "code": "CEC  212",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 13 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-20",
-    "code": "CEC  214",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 14 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-21",
-    "code": "CEC  104",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jun 05 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-22",
-    "code": "CEC  108",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 01 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480640-23",
+    "id": "CEC-1773099091110-10",
     "code": "CEC  109",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1691,10 +1559,21 @@
     "date": "Jun 04 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480640-24",
+    "id": "CEC-1773099091110-11",
+    "code": "CEC  111",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 06 2026",
+    "starting": "13:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091110-12",
     "code": "CEC  111",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1702,21 +1581,43 @@
     "date": "Jun 08 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480640-9",
-    "code": "CEC  216",
+    "id": "CEC-1773099091110-13",
+    "code": "CEC  111",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "2 Saat",
+    "date": "Apr 13 2026",
+    "starting": "13:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091110-14",
+    "code": "CEC  111",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "2 Saat",
+    "date": "Jun 15 2026",
+    "starting": "13:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091110-15",
+    "code": "CEC  112",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 10 2026",
-    "starting": "10:20",
+    "duration": "1 Saat",
+    "date": "Apr 08 2026",
+    "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480641-25",
+    "id": "CEC-1773099091110-16",
     "code": "CEC  112",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1724,197 +1625,10 @@
     "date": "Jun 04 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480641-26",
-    "code": "CEC  114",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 08 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480641-27",
-    "code": "CEC  216",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jun 12 2026",
-    "starting": "10:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480641-28",
-    "code": "CEC  217",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jun 12 2026",
-    "starting": "13:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480641-29",
-    "code": "CEC  224",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 01 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480641-30",
-    "code": "CEC  226",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 01 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480641-31",
-    "code": "CEC  227",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 02 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480641-32",
-    "code": "CEC  346",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 10 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480642-33",
-    "code": "CEC  203",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 11 2026",
-    "starting": "10:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480642-34",
-    "code": "CEC  205",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 09 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480642-35",
-    "code": "CEC  210",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jun 05 2026",
-    "starting": "15:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480642-36",
-    "code": "CEC  211",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jun 04 2026",
-    "starting": "15:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480642-37",
-    "code": "CEC  212",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 02 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480642-38",
-    "code": "CEC  214",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 02 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480642-39",
-    "code": "CEC  104",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "Apr 13 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480642-40",
-    "code": "CEC  104",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "Jun 15 2026",
-    "starting": "12:30",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480643-41",
-    "code": "CEC  111",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "Apr 13 2026",
-    "starting": "13:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480643-42",
-    "code": "CEC  111",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "Jun 15 2026",
-    "starting": "13:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
-  },
-  {
-    "id": "CEC-1773012480643-43",
+    "id": "CEC-1773099091110-17",
     "code": "CEC  112",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1922,10 +1636,10 @@
     "date": "Apr 15 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480643-44",
+    "id": "CEC-1773099091110-18",
     "code": "CEC  112",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1933,54 +1647,252 @@
     "date": "Jun 11 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480643-45",
-    "code": "CEC  226",
+    "id": "CEC-1773099091110-19",
+    "code": "CEC  114",
     "section": "Tüm Gruplar",
-    "exam": "Mazeret",
+    "exam": "1. Midterm",
     "duration": "1 Saat",
-    "date": "Apr 28 2026",
-    "starting": "13:20",
+    "date": "Mar 25 2026",
+    "starting": "11:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480643-46",
-    "code": "CEC  226",
+    "id": "CEC-1773099091110-20",
+    "code": "CEC  114",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 08 2026",
+    "starting": "12:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091110-21",
+    "code": "CEC  203",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 09 2026",
+    "starting": "10:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091110-22",
+    "code": "CEC  203",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 11 2026",
+    "starting": "10:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091110-23",
+    "code": "CEC  203",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "2 Saat",
+    "date": "Apr 24 2026",
+    "starting": "13:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091111-24",
+    "code": "CEC  203",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
     "duration": "1 Saat",
-    "date": "Jun 12 2026",
+    "date": "Jun 16 2026",
+    "starting": "13:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091111-25",
+    "code": "CEC  205",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Mar 24 2026",
+    "starting": "10:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091111-26",
+    "code": "CEC  205",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 09 2026",
+    "starting": "12:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091111-27",
+    "code": "CEC  210",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 02 2026",
+    "starting": "09:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091111-28",
+    "code": "CEC  210",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "2 Saat",
+    "date": "Jun 05 2026",
+    "starting": "15:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091111-29",
+    "code": "CEC  210",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "2 Saat",
+    "date": "Apr 13 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480643-47",
-    "code": "CEC  227",
+    "id": "CEC-1773099091111-30",
+    "code": "CEC  210",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "Apr 30 2026",
-    "starting": "13:20",
+    "duration": "2 Saat",
+    "date": "Jun 15 2026",
+    "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480643-48",
-    "code": "CEC  227",
+    "id": "CEC-1773099091111-31",
+    "code": "CEC  211",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 31 2026",
+    "starting": "09:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091111-32",
+    "code": "CEC  211",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "2 Saat",
+    "date": "Jun 04 2026",
+    "starting": "15:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091111-33",
+    "code": "CEC  211",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "Jun 12 2026",
+    "duration": "2 Saat",
+    "date": "Apr 13 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480643-49",
+    "id": "CEC-1773099091112-34",
+    "code": "CEC  211",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "2 Saat",
+    "date": "Jun 15 2026",
+    "starting": "12:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-35",
+    "code": "CEC  212",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 13 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-36",
+    "code": "CEC  212",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 02 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-37",
+    "code": "CEC  214",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 14 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-38",
+    "code": "CEC  214",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 02 2026",
+    "starting": "12:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-39",
+    "code": "CEC  216",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 10 2026",
+    "starting": "10:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-40",
+    "code": "CEC  216",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "2 Saat",
+    "date": "Jun 12 2026",
+    "starting": "10:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-41",
     "code": "CEC  216",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1988,10 +1900,10 @@
     "date": "Apr 24 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480643-50",
+    "id": "CEC-1773099091112-42",
     "code": "CEC  216",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1999,10 +1911,32 @@
     "date": "Jun 16 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-51",
+    "id": "CEC-1773099091112-43",
+    "code": "CEC  217",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 08 2026",
+    "starting": "10:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-44",
+    "code": "CEC  217",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "2 Saat",
+    "date": "Jun 12 2026",
+    "starting": "13:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091112-45",
     "code": "CEC  217",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2010,10 +1944,10 @@
     "date": "Apr 24 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-52",
+    "id": "CEC-1773099091113-46",
     "code": "CEC  217",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2021,10 +1955,32 @@
     "date": "Jun 16 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-53",
+    "id": "CEC-1773099091113-47",
+    "code": "CEC  224",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 06 2026",
+    "starting": "13:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091113-48",
+    "code": "CEC  224",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 01 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091113-49",
     "code": "CEC  224",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2032,10 +1988,10 @@
     "date": "Apr 27 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-54",
+    "id": "CEC-1773099091113-50",
     "code": "CEC  224",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2043,73 +1999,117 @@
     "date": "Jun 12 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-55",
-    "code": "CEC  203",
+    "id": "CEC-1773099091113-51",
+    "code": "CEC  226",
     "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "Apr 24 2026",
-    "starting": "13:30",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 07 2026",
+    "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-56",
-    "code": "CEC  203",
+    "id": "CEC-1773099091113-52",
+    "code": "CEC  226",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 01 2026",
+    "starting": "12:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091113-53",
+    "code": "CEC  226",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
     "duration": "1 Saat",
-    "date": "Jun 16 2026",
-    "starting": "13:30",
+    "date": "Apr 28 2026",
+    "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-57",
-    "code": "CEC  210",
+    "id": "CEC-1773099091113-54",
+    "code": "CEC  226",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "Apr 13 2026",
+    "duration": "1 Saat",
+    "date": "Jun 12 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-58",
-    "code": "CEC  210",
+    "id": "CEC-1773099091113-55",
+    "code": "CEC  227",
     "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "Jun 15 2026",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 09 2026",
+    "starting": "13:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091114-56",
+    "code": "CEC  227",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 02 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-59",
-    "code": "CEC  211",
+    "id": "CEC-1773099091114-57",
+    "code": "CEC  227",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "Apr 13 2026",
+    "duration": "1 Saat",
+    "date": "Apr 30 2026",
+    "starting": "13:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091114-58",
+    "code": "CEC  227",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "Jun 12 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
-    "id": "CEC-1773012480644-60",
-    "code": "CEC  211",
+    "id": "CEC-1773099091114-59",
+    "code": "CEC  346",
     "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "Jun 15 2026",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Mar 23 2026",
+    "starting": "11:30",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
+  },
+  {
+    "id": "CEC-1773099091114-60",
+    "code": "CEC  346",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 10 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:00.926662+00:00"
+    "created_at": "2026-03-09T23:31:31.38722+00:00"
   },
   {
     "id": "CENG-1771802992727-228",
@@ -2585,7 +2585,7 @@
     "created_at": "2026-02-22T23:29:53.151221+00:00"
   },
   {
-    "id": "CHEM-1773012492071-61",
+    "id": "CHEM-1773099102537-61",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -2593,10 +2593,10 @@
     "date": "Mar 27 2026",
     "starting": "15:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:12.363857+00:00"
+    "created_at": "2026-03-09T23:31:43.024122+00:00"
   },
   {
-    "id": "CHEM-1773012492071-62",
+    "id": "CHEM-1773099102537-62",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -2604,10 +2604,10 @@
     "date": "May 08 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:12.363857+00:00"
+    "created_at": "2026-03-09T23:31:43.024122+00:00"
   },
   {
-    "id": "CHEM-1773012492071-63",
+    "id": "CHEM-1773099102537-63",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -2615,10 +2615,10 @@
     "date": "Jun 08 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:12.363857+00:00"
+    "created_at": "2026-03-09T23:31:43.024122+00:00"
   },
   {
-    "id": "CHEM-1773012492071-64",
+    "id": "CHEM-1773099102537-64",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2626,10 +2626,10 @@
     "date": "Apr 10 2026",
     "starting": "15:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:12.363857+00:00"
+    "created_at": "2026-03-09T23:31:43.024122+00:00"
   },
   {
-    "id": "CHEM-1773012492071-65",
+    "id": "CHEM-1773099102537-65",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2637,10 +2637,10 @@
     "date": "May 15 2026",
     "starting": "13:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:12.363857+00:00"
+    "created_at": "2026-03-09T23:31:43.024122+00:00"
   },
   {
-    "id": "CHEM-1773012492072-66",
+    "id": "CHEM-1773099102537-66",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2648,7 +2648,7 @@
     "date": "Jun 15 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:28:12.363857+00:00"
+    "created_at": "2026-03-09T23:31:43.024122+00:00"
   },
   {
     "id": "CPR-1771803038678-281",
@@ -4708,18 +4708,18 @@
     "created_at": "2026-02-22T23:32:22.304923+00:00"
   },
   {
-    "id": "ESR-1773012627231-67",
+    "id": "ESR-1773099237893-67",
     "code": "ESR  103",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "1 Saat",
     "date": "Apr 03 2026",
-    "starting": "13:40",
+    "starting": "16:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:30:27.503211+00:00"
+    "created_at": "2026-03-09T23:33:58.224007+00:00"
   },
   {
-    "id": "ESR-1773012627231-68",
+    "id": "ESR-1773099237893-68",
     "code": "ESR  103",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -4727,10 +4727,10 @@
     "date": "Jun 10 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:30:27.503211+00:00"
+    "created_at": "2026-03-09T23:33:58.224007+00:00"
   },
   {
-    "id": "ESR-1773012627231-69",
+    "id": "ESR-1773099237893-69",
     "code": "ESR  103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -4738,10 +4738,10 @@
     "date": "Apr 10 2026",
     "starting": "15:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:30:27.503211+00:00"
+    "created_at": "2026-03-09T23:33:58.224007+00:00"
   },
   {
-    "id": "ESR-1773012627231-70",
+    "id": "ESR-1773099237893-70",
     "code": "ESR  103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -4749,7 +4749,7 @@
     "date": "Jun 15 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:30:27.503211+00:00"
+    "created_at": "2026-03-09T23:33:58.224007+00:00"
   },
   {
     "id": "FTP-1771803188384-475",
@@ -5412,7 +5412,7 @@
     "created_at": "2026-02-22T23:33:16.957853+00:00"
   },
   {
-    "id": "HIST-1773012671287-71",
+    "id": "HIST-1773099282035-71",
     "code": "HIST 201",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -5420,32 +5420,10 @@
     "date": "May 08 2026",
     "starting": "15:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
   },
   {
-    "id": "HIST-1773012671287-72",
-    "code": "HIST 202",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 10 2026",
-    "starting": "15:40",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
-  },
-  {
-    "id": "HIST-1773012671287-73",
-    "code": "HIST 206",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 07 2026",
-    "starting": "09:20",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
-  },
-  {
-    "id": "HIST-1773012671287-74",
+    "id": "HIST-1773099282035-72",
     "code": "HIST 201",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -5453,10 +5431,43 @@
     "date": "Jun 08 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
   },
   {
-    "id": "HIST-1773012671287-75",
+    "id": "HIST-1773099282035-73",
+    "code": "HIST 201",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "May 15 2026",
+    "starting": "13:40",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
+  },
+  {
+    "id": "HIST-1773099282035-74",
+    "code": "HIST 201",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "Jun 16 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
+  },
+  {
+    "id": "HIST-1773099282036-75",
+    "code": "HIST 202",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 10 2026",
+    "starting": "15:40",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
+  },
+  {
+    "id": "HIST-1773099282036-76",
     "code": "HIST 202",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -5464,10 +5475,43 @@
     "date": "Jun 08 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
   },
   {
-    "id": "HIST-1773012671288-76",
+    "id": "HIST-1773099282036-77",
+    "code": "HIST 202",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "May 15 2026",
+    "starting": "13:40",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
+  },
+  {
+    "id": "HIST-1773099282036-78",
+    "code": "HIST 202",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "Jun 16 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
+  },
+  {
+    "id": "HIST-1773099282036-79",
+    "code": "HIST 206",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 07 2026",
+    "starting": "09:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
+  },
+  {
+    "id": "HIST-1773099282036-80",
     "code": "HIST 206",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -5475,54 +5519,10 @@
     "date": "Jun 08 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
   },
   {
-    "id": "HIST-1773012671288-77",
-    "code": "HIST 201",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "May 15 2026",
-    "starting": "13:40",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
-  },
-  {
-    "id": "HIST-1773012671288-78",
-    "code": "HIST 201",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "Jun 16 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
-  },
-  {
-    "id": "HIST-1773012671288-79",
-    "code": "HIST 202",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "May 15 2026",
-    "starting": "13:40",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
-  },
-  {
-    "id": "HIST-1773012671288-80",
-    "code": "HIST 202",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "Jun 16 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
-  },
-  {
-    "id": "HIST-1773012671288-81",
+    "id": "HIST-1773099282036-81",
     "code": "HIST 206",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5530,10 +5530,10 @@
     "date": "Apr 14 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
   },
   {
-    "id": "HIST-1773012671288-82",
+    "id": "HIST-1773099282036-82",
     "code": "HIST 206",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5541,7 +5541,7 @@
     "date": "Jun 16 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:11.625167+00:00"
+    "created_at": "2026-03-09T23:34:42.31742+00:00"
   },
   {
     "id": "HUK-1771803226713-556",
@@ -7260,7 +7260,7 @@
     "created_at": "2026-02-22T23:34:09.444141+00:00"
   },
   {
-    "id": "INF-1773012704232-83",
+    "id": "INF-1773099314842-83",
     "code": "INF  214",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7268,10 +7268,10 @@
     "date": "Apr 09 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:44.508494+00:00"
+    "created_at": "2026-03-09T23:35:15.155151+00:00"
   },
   {
-    "id": "INF-1773012704232-84",
+    "id": "INF-1773099314842-84",
     "code": "INF  214",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -7279,10 +7279,10 @@
     "date": "Jun 04 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:44.508494+00:00"
+    "created_at": "2026-03-09T23:35:15.155151+00:00"
   },
   {
-    "id": "INF-1773012704232-85",
+    "id": "INF-1773099314842-85",
     "code": "INF  214",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -7290,10 +7290,10 @@
     "date": "Apr 16 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:44.508494+00:00"
+    "created_at": "2026-03-09T23:35:15.155151+00:00"
   },
   {
-    "id": "INF-1773012704232-86",
+    "id": "INF-1773099314843-86",
     "code": "INF  214",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -7301,7 +7301,7 @@
     "date": "Jun 13 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:31:44.508494+00:00"
+    "created_at": "2026-03-09T23:35:15.155151+00:00"
   },
   {
     "id": "ING-1771803261583-725",
@@ -8635,95 +8635,7 @@
     "created_at": "2026-02-22T23:35:35.434991+00:00"
   },
   {
-    "id": "MATH-1773012791389-87",
-    "code": "MATH 104",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 27 2026",
-    "starting": "13:50",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
-  },
-  {
-    "id": "MATH-1773012791389-88",
-    "code": "MATH 106",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 27 2026",
-    "starting": "13:50",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
-  },
-  {
-    "id": "MATH-1773012791390-100",
-    "code": "MATH 253",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jun 09 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
-  },
-  {
-    "id": "MATH-1773012791390-89",
-    "code": "MATH 112",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 27 2026",
-    "starting": "13:50",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
-  },
-  {
-    "id": "MATH-1773012791390-90",
-    "code": "MATH 157",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 27 2026",
-    "starting": "13:50",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
-  },
-  {
-    "id": "MATH-1773012791390-91",
-    "code": "MATH 158",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 17 2026",
-    "starting": "13:40",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
-  },
-  {
-    "id": "MATH-1773012791390-92",
-    "code": "MATH 205",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 03 2026",
-    "starting": "13:50",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
-  },
-  {
-    "id": "MATH-1773012791390-93",
-    "code": "MATH 253",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 03 2026",
-    "starting": "13:50",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
-  },
-  {
-    "id": "MATH-1773012791390-94",
+    "id": "MATH-1773099402164-100",
     "code": "MATH 254",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -8731,10 +8643,21 @@
     "date": "Apr 10 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
   },
   {
-    "id": "MATH-1773012791390-95",
+    "id": "MATH-1773099402164-87",
+    "code": "MATH 104",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 27 2026",
+    "starting": "13:50",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
+  },
+  {
+    "id": "MATH-1773099402164-88",
     "code": "MATH 104",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -8742,10 +8665,21 @@
     "date": "Jun 01 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
   },
   {
-    "id": "MATH-1773012791390-96",
+    "id": "MATH-1773099402164-89",
+    "code": "MATH 106",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 27 2026",
+    "starting": "13:50",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
+  },
+  {
+    "id": "MATH-1773099402164-90",
     "code": "MATH 106",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -8753,10 +8687,21 @@
     "date": "Jun 01 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
   },
   {
-    "id": "MATH-1773012791390-97",
+    "id": "MATH-1773099402164-91",
+    "code": "MATH 112",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 27 2026",
+    "starting": "13:50",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
+  },
+  {
+    "id": "MATH-1773099402164-92",
     "code": "MATH 112",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -8764,10 +8709,21 @@
     "date": "Jun 01 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
   },
   {
-    "id": "MATH-1773012791390-98",
+    "id": "MATH-1773099402164-93",
+    "code": "MATH 157",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 27 2026",
+    "starting": "13:50",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
+  },
+  {
+    "id": "MATH-1773099402164-94",
     "code": "MATH 157",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -8775,10 +8731,32 @@
     "date": "Jun 02 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
   },
   {
-    "id": "MATH-1773012791390-99",
+    "id": "MATH-1773099402164-95",
+    "code": "MATH 158",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 17 2026",
+    "starting": "13:50",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
+  },
+  {
+    "id": "MATH-1773099402164-96",
+    "code": "MATH 205",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 03 2026",
+    "starting": "13:50",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
+  },
+  {
+    "id": "MATH-1773099402164-97",
     "code": "MATH 205",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -8786,7 +8764,29 @@
     "date": "Jun 09 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:33:11.700603+00:00"
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
+  },
+  {
+    "id": "MATH-1773099402164-98",
+    "code": "MATH 253",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 03 2026",
+    "starting": "13:50",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
+  },
+  {
+    "id": "MATH-1773099402164-99",
+    "code": "MATH 253",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "2 Saat",
+    "date": "Jun 09 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:36:42.73372+00:00"
   },
   {
     "id": "ME-1771803372766-905",
@@ -10274,7 +10274,7 @@
     "created_at": "2026-02-22T23:36:35.484566+00:00"
   },
   {
-    "id": "OTT-1773012840442-101",
+    "id": "OTT-1773099451445-101",
     "code": "OTT  101",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -10282,10 +10282,10 @@
     "date": "Apr 07 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:00.751861+00:00"
+    "created_at": "2026-03-09T23:37:31.756189+00:00"
   },
   {
-    "id": "OTT-1773012840442-102",
+    "id": "OTT-1773099451445-102",
     "code": "OTT  101",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -10293,10 +10293,10 @@
     "date": "Jun 12 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:00.751861+00:00"
+    "created_at": "2026-03-09T23:37:31.756189+00:00"
   },
   {
-    "id": "OTT-1773012840442-103",
+    "id": "OTT-1773099451445-103",
     "code": "OTT  101",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10304,10 +10304,10 @@
     "date": "Apr 24 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:00.751861+00:00"
+    "created_at": "2026-03-09T23:37:31.756189+00:00"
   },
   {
-    "id": "OTT-1773012840442-104",
+    "id": "OTT-1773099451445-104",
     "code": "OTT  101",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10315,10 +10315,10 @@
     "date": "Jun 16 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:00.751861+00:00"
+    "created_at": "2026-03-09T23:37:31.756189+00:00"
   },
   {
-    "id": "PHYS-1773012862735-105",
+    "id": "PHYS-1773099473711-105",
     "code": "PHYS 131",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -10326,21 +10326,10 @@
     "date": "Apr 10 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:23.02492+00:00"
+    "created_at": "2026-03-09T23:37:53.977352+00:00"
   },
   {
-    "id": "PHYS-1773012862735-106",
-    "code": "PHYS 132",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 24 2026",
-    "starting": "13:40",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:23.02492+00:00"
-  },
-  {
-    "id": "PHYS-1773012862735-107",
+    "id": "PHYS-1773099473711-106",
     "code": "PHYS 131",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -10348,10 +10337,43 @@
     "date": "Jun 05 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:23.02492+00:00"
+    "created_at": "2026-03-09T23:37:53.977352+00:00"
   },
   {
-    "id": "PHYS-1773012862735-108",
+    "id": "PHYS-1773099473711-107",
+    "code": "PHYS 131",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "2 Saat",
+    "date": "May 15 2026",
+    "starting": "13:40",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:37:53.977352+00:00"
+  },
+  {
+    "id": "PHYS-1773099473711-108",
+    "code": "PHYS 131",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "2 Saat",
+    "date": "Jun 15 2026",
+    "starting": "15:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:37:53.977352+00:00"
+  },
+  {
+    "id": "PHYS-1773099473711-109",
+    "code": "PHYS 132",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 24 2026",
+    "starting": "13:40",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-09T23:37:53.977352+00:00"
+  },
+  {
+    "id": "PHYS-1773099473711-110",
     "code": "PHYS 132",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -10359,32 +10381,10 @@
     "date": "Jun 03 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:23.02492+00:00"
+    "created_at": "2026-03-09T23:37:53.977352+00:00"
   },
   {
-    "id": "PHYS-1773012862735-109",
-    "code": "PHYS 131",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "May 15 2026",
-    "starting": "13:40",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:23.02492+00:00"
-  },
-  {
-    "id": "PHYS-1773012862735-110",
-    "code": "PHYS 131",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "2 Saat",
-    "date": "Jun 15 2026",
-    "starting": "15:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:23.02492+00:00"
-  },
-  {
-    "id": "PHYS-1773012862735-111",
+    "id": "PHYS-1773099473711-111",
     "code": "PHYS 132",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10392,10 +10392,10 @@
     "date": "May 15 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:23.02492+00:00"
+    "created_at": "2026-03-09T23:37:53.977352+00:00"
   },
   {
-    "id": "PHYS-1773012862735-112",
+    "id": "PHYS-1773099473711-112",
     "code": "PHYS 132",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10403,7 +10403,7 @@
     "date": "Jun 15 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-08T23:34:23.02492+00:00"
+    "created_at": "2026-03-09T23:37:53.977352+00:00"
   },
   {
     "id": "PMY-1771803452994-1058",
