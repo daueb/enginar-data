@@ -32,7 +32,7 @@ async function syncDataTables() {
 
         // --- ADIM A: RPC ile tablo listesi ---
         const { data: rpcData, error: rpcError } = await supabase.rpc('get_public_tables');
-        
+
         if (!rpcError && rpcData && rpcData.length > 0) {
             console.log(`📡 Supabase'den otomatik tablo listesi alındı: ${rpcData.length} tablo.`);
 

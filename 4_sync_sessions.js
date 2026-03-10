@@ -80,38 +80,41 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
         const lines = session.rawContent.split('\n').map(l => l.trim()).filter(l => l.length > 0);
         if (lines.length < 2) continue;
 
-        const firstLine = lines[0]; 
-        const instructorName = lines[lines.length - 1]; 
+        // Satırları ikişerli grupla: [ders kodu + section, hoca adı]
+        for (let k = 0; k + 1 < lines.length; k += 2) {
+            const courseLine = lines[k];
+            const instructorName = lines[k + 1];
 
-        const lastSpace = firstLine.lastIndexOf(' ');
-        if (lastSpace === -1) continue;
+            const lastSpace = courseLine.lastIndexOf(' ');
+            if (lastSpace === -1) continue;
 
-        const code = firstLine.substring(0, lastSpace).trim();
-        const section = firstLine.substring(lastSpace + 1).trim();
+            const code = courseLine.substring(0, lastSpace).trim();
+            const section = courseLine.substring(lastSpace + 1).trim();
 
-        const { data: courseData } = await supabase.from('courses').select('id').eq('course_code', code).maybeSingle();
+            const { data: courseData } = await supabase.from('courses').select('id').eq('course_code', code).maybeSingle();
 
-        const { data: instData } = await supabase
-            .from('academics') 
-            .select('id')
-            .ilike('name', `%${instructorName}%`)
-            .maybeSingle();
+            const { data: instData } = await supabase
+                .from('academics')
+                .select('id')
+                .ilike('name', `%${instructorName}%`)
+                .maybeSingle();
 
-        if (courseData && instData) {
-            const { error: insertError } = await supabase.from('course_sessions').insert({
-                course_id: courseData.id,
-                classroom_id: classData.id,
-                instructor_id: instData.id,
-                section: section,
-                day_of_week: session.day,
-                time: session.time
-            });
+            if (courseData && instData) {
+                const { error: insertError } = await supabase.from('course_sessions').insert({
+                    course_id: courseData.id,
+                    classroom_id: classData.id,
+                    instructor_id: instData.id,
+                    section: section,
+                    day_of_week: session.day,
+                    time: session.time
+                });
 
-            if (insertError) console.log(`❌ Hata (${code}): ${insertError.message}`);
-            else console.log(`✅ ${code} (${section}) -> ${instructorName}`);
-        } else {
-            if (!courseData) console.log(`❓ Ders DB'de yok: "${code}"`);
-            if (!instData) console.log(`❓ Eğitmen DB'de yok: "${instructorName}"`);
+                if (insertError) console.log(`❌ Hata (${code}): ${insertError.message}`);
+                else console.log(`✅ ${code} (${section}) -> ${instructorName}`);
+            } else {
+                if (!courseData) console.log(`❓ Ders DB'de yok: "${code}"`);
+                if (!instData) console.log(`❓ Eğitmen DB'de yok: "${instructorName}"`);
+            }
         }
     }
     await delay(300);
