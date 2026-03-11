@@ -23,7 +23,33 @@ if (!fs.existsSync(DATA_DIR)) {
     fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
-// --- 3. ANA SENKRONİZASYON ---
+// --- 3. PAGINATION HELPER ---
+const PAGE_SIZE = 1000;
+
+async function fetchAllRows(tableName) {
+    let allData = [];
+    let from = 0;
+
+    while (true) {
+        const { data, error } = await supabase
+            .from(tableName)
+            .select('*')
+            .order('id', { ascending: true })
+            .range(from, from + PAGE_SIZE - 1);
+
+        if (error) throw error;
+        if (!data || data.length === 0) break;
+
+        allData = allData.concat(data);
+
+        if (data.length < PAGE_SIZE) break;
+        from += PAGE_SIZE;
+    }
+
+    return allData;
+}
+
+// --- 4. ANA SENKRONİZASYON ---
 async function syncDataTables() {
     console.log('🔄 Data Sync Başlatılıyor (Supabase -> JSON)...');
 
@@ -76,25 +102,21 @@ async function syncDataTables() {
             console.log('🧹 Eski JSON dosyaları temizlendi.');
         }
 
-        // --- ADIM C: Verileri çek ---
+        // --- ADIM C: Verileri çek (pagination ile) ---
         for (const tableName of tables) {
+            try {
+                const data = await fetchAllRows(tableName);
 
-            const { data, error } = await supabase
-                .from(tableName)
-                .select('*')
-                .order('id', { ascending: true });
+                fs.writeFileSync(
+                    path.join(DATA_DIR, `${tableName}.json`),
+                    JSON.stringify(data, null, 2)
+                );
 
-            if (error) {
-                console.error(`❌ Hata (${tableName}):`, error.message);
+                console.log(`✅ Oluşturuldu: ${tableName}.json (${data.length} satır)`);
+            } catch (err) {
+                console.error(`❌ Hata (${tableName}):`, err.message);
                 continue;
             }
-
-            fs.writeFileSync(
-                path.join(DATA_DIR, `${tableName}.json`),
-                JSON.stringify(data, null, 2)
-            );
-
-            console.log(`✅ Oluşturuldu: ${tableName}.json (${data.length} satır)`);
         }
 
         console.log(`🏁 Data Sync Başarıyla Tamamlandı.`);
