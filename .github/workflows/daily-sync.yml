@@ -68,9 +68,7 @@ jobs:
           git config --global user.name 'Enginar Bot'
           git config --global user.email 'bot@enginar.app'
           git add data/*.json
-          git diff --staged --quiet || git commit -m "Otomatik Güncelleme: $(date +'%Y-%m-%d')"
-          git pull --rebase
-          git push
+          git diff --staged --quiet || (git commit -m "Otomatik Güncelleme: $(date +'%Y-%m-%d')" && git push)
       - name: Upload to Cloudflare R2
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
