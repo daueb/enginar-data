@@ -28,16 +28,19 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
   for (const opt of options) {
     if (opt.text.includes('BALGAT') || opt.text.includes('TEST')) continue;
 
-    const { data: classData } = await supabase.from('classrooms').select('id').eq('room_name', opt.text).single();
-    
+    const { data: classData } = await supabase.from('classrooms').select('id').eq('room_name', opt.text).maybeSingle();
+
+    const classroomId = classData?.id || null;
+
     if (!classData) {
-        console.log(`⚠️ Sınıf DB'de yok: ${opt.text}`);
-        continue;
+        console.log(`⚠️ Sınıf DB'de yok: ${opt.text} (dersler classroom_id=null olarak kaydedilecek)`);
     }
 
     console.log(`\n>> Senkronize ediliyor: ${opt.text}`);
 
-    await supabase.from('course_sessions').delete().eq('classroom_id', classData.id);
+    if (classroomId) {
+        await supabase.from('course_sessions').delete().eq('classroom_id', classroomId);
+    }
 
     try {
         await Promise.all([
@@ -102,7 +105,7 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
             if (courseData && instData) {
                 const { error: insertError } = await supabase.from('course_sessions').insert({
                     course_id: courseData.id,
-                    classroom_id: classData.id,
+                    classroom_id: classroomId,
                     instructor_id: instData.id,
                     section: section,
                     day_of_week: session.day,
