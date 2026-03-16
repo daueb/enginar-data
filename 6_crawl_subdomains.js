@@ -303,15 +303,17 @@ function extractLinks(html, baseUrl) {
 
 // =====================================================
 // RAG SOURCE KAYDI
+// Gerçek tablo: id (uuid), title (text), source_type (text), url (text), category (text), department_id (uuid)
 // =====================================================
 async function ensureRagSource(domain) {
     const { data: existing } = await supabase
         .from('rag_sources').select('id').eq('url', domain).maybeSingle();
     if (existing) return existing.id;
 
+    const hostname = new URL(domain).hostname;
     const { data: inserted, error } = await supabase
         .from('rag_sources')
-        .insert({ url: domain, name: new URL(domain).hostname, type: 'website', status: 'active' })
+        .insert({ url: domain, title: hostname, source_type: 'website', category: 'subdomain' })
         .select('id').single();
 
     if (error) {
@@ -323,32 +325,46 @@ async function ensureRagSource(domain) {
 
 // =====================================================
 // DOKÜMAN + CHUNK KAYDI
+// rag_documents: doc_id (text PK), title, url, category, source_type, content_hash
+// rag_chunks: id (int8), doc_id (text FK), chunk_index, chunk_text, embedding, created_at
 // =====================================================
 async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) {
-    let docId;
+    // doc_id olarak URL hash'i kullan
+    const crypto = require('crypto');
+    const docId = crypto.createHash('md5').update(url).digest('hex');
+    const contentHash = crypto.createHash('md5').update(text).digest('hex');
+    const sourceType = metadata.type || 'html';
+    const category = metadata.domain || 'cankaya.edu.tr';
+
+    // Mevcut doküman var mı?
     const { data: existing } = await supabase.from('rag_documents')
-        .select('id').eq('url', url).maybeSingle();
+        .select('doc_id, content_hash').eq('doc_id', docId).maybeSingle();
 
     if (existing) {
-        docId = existing.id;
+        // İçerik değişmediyse atla
+        if (existing.content_hash === contentHash) return 0;
+        // Güncelle
         await supabase.from('rag_documents').update({
             title: title || url,
-            content: text.substring(0, 50000),
-            metadata, status: 'processed'
-        }).eq('id', docId);
+            content_hash: contentHash,
+            source_type: sourceType,
+            category: category,
+            updated_from_source_at: new Date().toISOString()
+        }).eq('doc_id', docId);
     } else {
-        const { data: ins } = await supabase.from('rag_documents')
-            .insert({
-                source_id: sourceId, url, title: title || url,
-                content: text.substring(0, 50000), metadata, status: 'processed'
-            }).select('id').single();
-        docId = ins?.id;
+        const { error: docErr } = await supabase.from('rag_documents').insert({
+            doc_id: docId, url, title: title || url,
+            source_type: sourceType, category: category,
+            content_hash: contentHash
+        });
+        if (docErr) {
+            console.error(`   ❌ Doküman eklenemedi: ${docErr.message}`);
+            return 0;
+        }
     }
 
-    if (!docId) return 0;
-
     // Eski chunk'ları temizle
-    await supabase.from('rag_chunks').delete().eq('document_id', docId);
+    await supabase.from('rag_chunks').delete().eq('doc_id', docId);
 
     // Chunk + embed
     const chunks = chunkText(text);
@@ -359,8 +375,7 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
         if (!embedding) continue;
 
         const { error: chunkErr } = await supabase.from('rag_chunks').insert({
-            document_id: docId, chunk_index: i, content: chunks[i],
-            embedding, metadata: { ...metadata, chunk_index: i, total_chunks: chunks.length }
+            doc_id: docId, chunk_index: i, chunk_text: chunks[i], embedding
         });
         if (!chunkErr) savedChunks++;
         await delay(100);

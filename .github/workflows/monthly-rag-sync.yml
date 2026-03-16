@@ -1,0 +1,77 @@
+name: Monthly RAG & Bilgipaketi Sync
+
+on:
+  schedule:
+    - cron: '0 23 1 * *' # Her ayın 1'i, Türkiye 02:00
+  workflow_dispatch:
+    inputs:
+      run_bilgipaketi:
+        description: 'Bilgipaketi API sync (Script 5)'
+        type: boolean
+        default: true
+      run_crawl:
+        description: 'Subdomain crawl + RAG (Script 6)'
+        type: boolean
+        default: true
+      run_vectorize:
+        description: 'Bilgipaketi vektörizasyon (Script 7)'
+        type: boolean
+        default: true
+
+jobs:
+  # --- JOB 1: Bilgipaketi API + Subdomain Crawl (paralel) ---
+  bilgipaketi-sync:
+    if: ${{ github.event_name == 'schedule' || inputs.run_bilgipaketi == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - name: Bilgipaketi API Sync (Script 5)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          BILGIPAKETI_TOKEN: ${{ secrets.BILGIPAKETI_TOKEN }}
+        run: node 5_sync_bilgipaketi.js
+
+  subdomain-crawl:
+    if: ${{ github.event_name == 'schedule' || inputs.run_crawl == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - name: Subdomain Crawl + RAG (Script 6)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node 6_crawl_subdomains.js
+
+  # --- JOB 2: Vektörizasyon (5 ve 6 bittikten sonra) ---
+  vectorize:
+    needs: [bilgipaketi-sync, subdomain-crawl]
+    if: always() && (github.event_name == 'schedule' || inputs.run_vectorize == true)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - name: Bilgipaketi Vektörizasyon (Script 7)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node 7_vectorize_bilgipaketi.js

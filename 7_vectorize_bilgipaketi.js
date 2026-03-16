@@ -51,6 +51,7 @@ function chunkText(text, chunkSize = CHUNK_SIZE, overlap = CHUNK_OVERLAP) {
 }
 
 // --- RAG SOURCE ---
+// Gerçek tablo: id (uuid), title (text), source_type (text), url (text), category (text), department_id (uuid)
 async function ensureRagSource(name, type) {
     const url = `bilgipaketi://${type}`;
     const { data: existing } = await supabase.from('rag_sources')
@@ -58,33 +59,43 @@ async function ensureRagSource(name, type) {
     if (existing) return existing.id;
 
     const { data: inserted } = await supabase.from('rag_sources')
-        .insert({ url, name, type: 'bilgipaketi', status: 'active' })
+        .insert({ url, title: name, source_type: 'bilgipaketi', category: type })
         .select('id').single();
     return inserted?.id;
 }
 
 // --- DOKÜMAN + CHUNK KAYDI ---
+// rag_documents: doc_id (text PK), title, url, category, source_type, content_hash
+// rag_chunks: id (int8), doc_id (text FK), chunk_index, chunk_text, embedding, created_at
+const crypto = require('crypto');
+
 async function saveChunks(sourceId, docUrl, title, text, metadata) {
-    // Doküman kaydet
-    let docId;
+    const docId = crypto.createHash('md5').update(docUrl).digest('hex');
+    const contentHash = crypto.createHash('md5').update(text).digest('hex');
+
     const { data: existing } = await supabase.from('rag_documents')
-        .select('id').eq('url', docUrl).maybeSingle();
+        .select('doc_id, content_hash').eq('doc_id', docId).maybeSingle();
 
     if (existing) {
-        docId = existing.id;
+        if (existing.content_hash === contentHash) return 0; // Değişmemiş
         await supabase.from('rag_documents').update({
-            title, content: text.substring(0, 50000), metadata, status: 'processed'
-        }).eq('id', docId);
+            title, content_hash: contentHash,
+            source_type: metadata?.type || 'bilgipaketi',
+            category: metadata?.source || 'bilgipaketi',
+            updated_from_source_at: new Date().toISOString()
+        }).eq('doc_id', docId);
     } else {
-        const { data: ins } = await supabase.from('rag_documents')
-            .insert({ source_id: sourceId, url: docUrl, title, content: text.substring(0, 50000), metadata, status: 'processed' })
-            .select('id').single();
-        docId = ins?.id;
+        const { error: docErr } = await supabase.from('rag_documents').insert({
+            doc_id: docId, url: docUrl, title,
+            source_type: metadata?.type || 'bilgipaketi',
+            category: metadata?.source || 'bilgipaketi',
+            content_hash: contentHash
+        });
+        if (docErr) { console.error(`   ❌ Doküman eklenemedi: ${docErr.message}`); return 0; }
     }
-    if (!docId) return 0;
 
     // Eski chunk'ları temizle
-    await supabase.from('rag_chunks').delete().eq('document_id', docId);
+    await supabase.from('rag_chunks').delete().eq('doc_id', docId);
 
     // Chunk + embed
     const chunks = chunkText(text);
@@ -94,11 +105,10 @@ async function saveChunks(sourceId, docUrl, title, text, metadata) {
         if (!embedding) continue;
 
         const { error } = await supabase.from('rag_chunks').insert({
-            document_id: docId,
+            doc_id: docId,
             chunk_index: i,
-            content: chunks[i],
-            embedding,
-            metadata: { ...metadata, chunk_index: i, total_chunks: chunks.length }
+            chunk_text: chunks[i],
+            embedding
         });
         if (!error) saved++;
         await delay(100);
