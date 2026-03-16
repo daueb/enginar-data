@@ -5,10 +5,10 @@ const axios = require('axios');
 // --- GÜVENLİK AYARI ---
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 if (!supabaseUrl || !supabaseKey) throw new Error("❌ Supabase URL/Key eksik!");
-if (!OPENAI_API_KEY) throw new Error("❌ OPENAI_API_KEY eksik!");
+if (!GEMINI_API_KEY) throw new Error("❌ GEMINI_API_KEY eksik! https://aistudio.google.com/apikey adresinden ucretsiz al.");
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
@@ -16,19 +16,17 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
 const CHUNK_SIZE = 500;
 const CHUNK_OVERLAP = 50;
 
-// --- EMBEDDING ---
+// --- EMBEDDING (Google Gemini - Ucretsiz, 768 boyut) ---
 async function getEmbedding(text) {
     try {
-        const res = await axios.post('https://api.openai.com/v1/embeddings', {
-            model: 'text-embedding-3-small',
-            input: text
-        }, {
-            headers: {
-                'Authorization': `Bearer ${OPENAI_API_KEY}`,
-                'Content-Type': 'application/json'
-            }
-        });
-        return res.data.data[0].embedding;
+        const res = await axios.post(
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
+            {
+                content: { parts: [{ text: text.substring(0, 8000) }] }
+            },
+            { headers: { 'Content-Type': 'application/json' } }
+        );
+        return res.data.embedding.values;
     } catch (err) {
         console.error('❌ Embedding hatası:', err.response?.data?.error?.message || err.message);
         return null;

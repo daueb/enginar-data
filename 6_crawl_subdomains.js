@@ -7,13 +7,13 @@ const pdfParse = require('pdf-parse');
 // --- GÜVENLİK AYARI ---
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
     throw new Error("❌ Hata: Supabase URL veya Key eksik!");
 }
-if (!OPENAI_API_KEY) {
-    throw new Error("❌ Hata: OPENAI_API_KEY eksik! .env dosyasına ekleyin.");
+if (!GEMINI_API_KEY) {
+    throw new Error("❌ Hata: GEMINI_API_KEY eksik! https://aistudio.google.com/apikey adresinden ucretsiz al ve .env'ye ekle.");
 }
 
 const supabase = createClient(supabaseUrl, supabaseKey);
@@ -155,20 +155,18 @@ const PDF_EXTENSION = /\.pdf$/i;
 const OFFICE_EXTENSIONS = /\.(doc|docx|xls|xlsx|ppt|pptx)$/i;
 
 // =====================================================
-// EMBEDDING FONKSİYONU
+// EMBEDDING FONKSİYONU (Google Gemini - Ucretsiz, 768 boyut)
 // =====================================================
 async function getEmbedding(text) {
     try {
-        const res = await axios.post('https://api.openai.com/v1/embeddings', {
-            model: 'text-embedding-3-small',
-            input: text
-        }, {
-            headers: {
-                'Authorization': `Bearer ${OPENAI_API_KEY}`,
-                'Content-Type': 'application/json'
-            }
-        });
-        return res.data.data[0].embedding;
+        const res = await axios.post(
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
+            {
+                content: { parts: [{ text: text.substring(0, 8000) }] }
+            },
+            { headers: { 'Content-Type': 'application/json' } }
+        );
+        return res.data.embedding.values;
     } catch (err) {
         console.error('❌ Embedding hatası:', err.response?.data?.error?.message || err.message);
         return null;

@@ -96,12 +96,32 @@ const PAGE_KEYS = {
     console.log(`📋 ${Object.keys(deptMap).length} bölüm eşleştirildi.\n`);
 
     // 1. Program listesini al
-    const programs = await fetchProgramList();
+    let programs = await fetchProgramList();
     if (programs.length === 0) {
-        console.log('⚠️ Program listesi boş. methodNo=1 çalışmadıysa, sabit listeyi dene.');
-        // Fallback: bilinen program ID'leri
-        console.log('❌ Çıkılıyor.');
-        return;
+        console.log('⚠️ API listesi bos, sabit program listesi kullaniliyor...');
+        // Bilgipaketi.cankaya.edu.tr'den bilinen program ID'leri
+        programs = [
+            { ProgramId: 1, ProgramAdi: 'Bilgisayar Muhendisligi' },
+            { ProgramId: 2, ProgramAdi: 'Elektrik-Elektronik Muhendisligi' },
+            { ProgramId: 3, ProgramAdi: 'Endustri Muhendisligi' },
+            { ProgramId: 4, ProgramAdi: 'Insaat Muhendisligi' },
+            { ProgramId: 5, ProgramAdi: 'Makine Muhendisligi' },
+            { ProgramId: 6, ProgramAdi: 'Mekatronik Muhendisligi' },
+            { ProgramId: 7, ProgramAdi: 'Malzeme Bilimi ve Muhendisligi' },
+            { ProgramId: 10, ProgramAdi: 'Matematik' },
+            { ProgramId: 11, ProgramAdi: 'Psikoloji' },
+            { ProgramId: 12, ProgramAdi: 'Ingiliz Dili ve Edebiyati' },
+            { ProgramId: 13, ProgramAdi: 'Molekuler Biyoloji ve Genetik' },
+            { ProgramId: 20, ProgramAdi: 'Hukuk' },
+            { ProgramId: 30, ProgramAdi: 'Mimarlik' },
+            { ProgramId: 31, ProgramAdi: 'Ic Mimarlik' },
+            { ProgramId: 40, ProgramAdi: 'Isletme' },
+            { ProgramId: 41, ProgramAdi: 'Ekonomi' },
+            { ProgramId: 42, ProgramAdi: 'Uluslararasi Iliskiler' },
+            { ProgramId: 43, ProgramAdi: 'Siyaset Bilimi ve Kamu Yonetimi' },
+            { ProgramId: 44, ProgramAdi: 'Bankacilik ve Finans' },
+        ];
+        console.log(`   Sabit listeden ${programs.length} program kullanilacak.`);
     }
 
     console.log(`📡 ${programs.length} program bulundu.\n`);
