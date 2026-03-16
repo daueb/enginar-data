@@ -313,7 +313,7 @@ async function ensureRagSource(domain) {
     const hostname = new URL(domain).hostname;
     const { data: inserted, error } = await supabase
         .from('rag_sources')
-        .insert({ url: domain, title: hostname, source_type: 'website', category: 'subdomain' })
+        .insert({ url: domain, title: hostname, source_type: 'html', category: 'subdomain' })
         .select('id').single();
 
     if (error) {

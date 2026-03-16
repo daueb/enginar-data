@@ -59,7 +59,7 @@ async function ensureRagSource(name, type) {
     if (existing) return existing.id;
 
     const { data: inserted } = await supabase.from('rag_sources')
-        .insert({ url, title: name, source_type: 'bilgipaketi', category: type })
+        .insert({ url, title: name, source_type: 'html', category: type })
         .select('id').single();
     return inserted?.id;
 }
