@@ -20,53 +20,138 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
 
 // --- AYARLAR ---
-const MAX_DEPTH = 2;            // Link takip derinliği
-const MAX_PAGES_PER_DOMAIN = 150; // Her subdomain için max sayfa
-const MAX_PDF_SIZE = 20 * 1024 * 1024; // 20MB max PDF boyutu
-const CHUNK_SIZE = 500;          // Token başına chunk boyutu (yaklaşık)
-const CHUNK_OVERLAP = 50;        // Chunk'lar arası örtüşme
+const MAX_DEPTH = 3;              // Link takip derinliği
+const MAX_PAGES_PER_DOMAIN = 200; // Her subdomain için max sayfa
+const MAX_PDF_SIZE = 20 * 1024 * 1024; // 20MB
+const CHUNK_SIZE = 500;
+const CHUNK_OVERLAP = 50;
 
-// --- TARANACAK SUBDOMAİNLER ---
-const SUBDOMAINS = [
-    'https://cankaya.edu.tr',
-    'https://oim.cankaya.edu.tr',
-    'https://kutuphane.cankaya.edu.tr',
-    'https://spor.cankaya.edu.tr',
-    'https://iro.cankaya.edu.tr',
-    'https://pdrm.cankaya.edu.tr',
-    'https://saglik.cankaya.edu.tr',
-    'https://kalite.cankaya.edu.tr',
-    // Mühendislik bölümleri
-    'https://me.cankaya.edu.tr',
-    'https://ceng.cankaya.edu.tr',
-    'https://ee.cankaya.edu.tr',
-    'https://ce.cankaya.edu.tr',
-    'https://ie.cankaya.edu.tr',
-    // Fen-Edebiyat
-    'https://math.cankaya.edu.tr',
-    'https://ell.cankaya.edu.tr',
-    'https://psy.cankaya.edu.tr',
-    'https://mtb.cankaya.edu.tr',
+// =====================================================
+// KVKK / KİŞİSEL VERİ FİLTRESİ
+// =====================================================
+// Telefon numaraları (Türkiye formatları)
+const PHONE_REGEX = /(\+?90[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}|\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}|0\d{3}[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2})/g;
+// E-posta adresleri
+const EMAIL_REGEX = /[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/g;
+// TC Kimlik numarası (11 haneli)
+const TC_REGEX = /\b[1-9]\d{10}\b/g;
+
+function sanitizePersonalData(text) {
+    return text
+        .replace(PHONE_REGEX, '[TELEFON]')
+        .replace(EMAIL_REGEX, '[E-POSTA]')
+        .replace(TC_REGEX, '[TC-NO]');
+}
+
+// =====================================================
+// OTOMATİK SUBDOMAİN KEŞFİ (crt.sh)
+// =====================================================
+async function discoverSubdomains() {
+    console.log('🔍 crt.sh üzerinden tüm subdomain\'ler keşfediliyor...');
+
+    try {
+        const res = await axios.get('https://crt.sh/?q=%.cankaya.edu.tr&output=json', {
+            timeout: 30000
+        });
+
+        const subdomains = new Set();
+        for (const cert of res.data) {
+            const names = (cert.name_value || '').split('\n');
+            for (const name of names) {
+                const clean = name.trim().replace(/^\*\./, '');
+                if (clean.endsWith('cankaya.edu.tr') && !clean.includes('*')) {
+                    subdomains.add(clean);
+                }
+            }
+        }
+
+        console.log(`   📡 crt.sh'den ${subdomains.size} benzersiz subdomain bulundu`);
+        return [...subdomains];
+    } catch (err) {
+        console.error('   ⚠️ crt.sh erişilemedi, yedek listeye geçiliyor:', err.message);
+        return null; // Yedek listeye düşecek
+    }
+}
+
+// Yedek sabit liste (crt.sh çalışmazsa)
+const FALLBACK_SUBDOMAINS = [
+    // Ana site
+    'cankaya.edu.tr', 'www.cankaya.edu.tr',
+    // Öğrenci hizmetleri
+    'oim.cankaya.edu.tr', 'oidb.cankaya.edu.tr', 'registrar.cankaya.edu.tr',
+    'kutuphane.cankaya.edu.tr', 'spor.cankaya.edu.tr', 'saglik.cankaya.edu.tr',
+    'pdrm.cankaya.edu.tr', 'sks.cankaya.edu.tr', 'kariyer.cankaya.edu.tr',
+    // Uluslararası
+    'iro.cankaya.edu.tr', 'erasmus.cankaya.edu.tr',
+    // İdari
+    'kalite.cankaya.edu.tr', 'cc.cankaya.edu.tr',
+    // Mühendislik Fakültesi
+    'fbe.cankaya.edu.tr', 'en.fbe.cankaya.edu.tr',
+    'ceng.cankaya.edu.tr', 'me.cankaya.edu.tr', 'ce.cankaya.edu.tr',
+    'ee.cankaya.edu.tr', 'ie.cankaya.edu.tr', 'ece.cankaya.edu.tr',
+    'mece.cankaya.edu.tr', 'mse.cankaya.edu.tr',
+    'en.ceng.cankaya.edu.tr', 'en.me.cankaya.edu.tr', 'en.ce.cankaya.edu.tr',
+    'en.ee.cankaya.edu.tr', 'en.ie.cankaya.edu.tr', 'en.ece.cankaya.edu.tr',
+    'en.mece.cankaya.edu.tr',
+    // Fen-Edebiyat Fakültesi
+    'math.cankaya.edu.tr', 'ell.cankaya.edu.tr', 'psy.cankaya.edu.tr',
+    'mtb.cankaya.edu.tr',
+    'en.math.cankaya.edu.tr', 'en.ell.cankaya.edu.tr', 'en.psy.cankaya.edu.tr',
+    'en.mtb.cankaya.edu.tr',
     // İktisadi ve İdari Bilimler
-    'https://bb.cankaya.edu.tr',
-    'https://econ.cankaya.edu.tr',
-    'https://ir.cankaya.edu.tr',
+    'bb.cankaya.edu.tr', 'econ.cankaya.edu.tr', 'ir.cankaya.edu.tr',
+    'man.cankaya.edu.tr', 'bf.cankaya.edu.tr', 'psi.cankaya.edu.tr',
+    'economics.cankaya.edu.tr',
+    'en.bb.cankaya.edu.tr', 'en.econ.cankaya.edu.tr', 'en.man.cankaya.edu.tr',
+    'en.bf.cankaya.edu.tr',
     // Hukuk
-    'https://law.cankaya.edu.tr',
+    'law.cankaya.edu.tr', 'fld.cankaya.edu.tr',
     // Mimarlık
-    'https://arch.cankaya.edu.tr',
-    'https://id.cankaya.edu.tr',
-    // Diğer
-    'https://sks.cankaya.edu.tr',
-    'https://oidb.cankaya.edu.tr',
-    'https://kariyer.cankaya.edu.tr',
+    'arch.cankaya.edu.tr', 'architecture.cankaya.edu.tr',
+    'id.cankaya.edu.tr', 'inar.cankaya.edu.tr',
+    'en.inar.cankaya.edu.tr',
+    // Enstitüler
+    'gs.cankaya.edu.tr', 'sbe.cankaya.edu.tr',
+    'en.sbe.cankaya.edu.tr', 'en.gs.cankaya.edu.tr',
+    // Ders siteleri
+    'ce102.cankaya.edu.tr', 'math111.cankaya.edu.tr', 'math112.cankaya.edu.tr',
+    'math103.cankaya.edu.tr', 'ell114.cankaya.edu.tr',
+    'psi101.cankaya.edu.tr', 'psi102.cankaya.edu.tr', 'psi103.cankaya.edu.tr',
+    'psi203.cankaya.edu.tr', 'psi303.cankaya.edu.tr', 'psi412.cankaya.edu.tr',
+    'ece329.cankaya.edu.tr', 'me416.cankaya.edu.tr', 'me626.cankaya.edu.tr',
+    'mest.cankaya.edu.tr',
+    'mse235.cankaya.edu.tr', 'mse226.cankaya.edu.tr', 'mse206.cankaya.edu.tr',
+    'mse302.cankaya.edu.tr', 'mse225.cankaya.edu.tr',
+    'inar384.cankaya.edu.tr', 'inar357.cankaya.edu.tr', 'inar121.cankaya.edu.tr',
+    // Portal/sistem
+    'webonline.cankaya.edu.tr', 'sql.cankaya.edu.tr', 'onbasvuru.cankaya.edu.tr',
 ];
 
-// Atlanacak uzantılar (resim, video, arşiv — PDF HARİÇ, onları ayrı işliyoruz)
-const SKIP_EXTENSIONS = /\.(jpg|jpeg|png|gif|svg|webp|ico|bmp|tiff|mp4|mp3|wav|avi|mov|zip|rar|7z|tar|gz|exe|dmg|msi)$/i;
-// PDF ayrı işlenecek
+// Atlanacak subdomain'ler (login gerekli, boş, veya faydasız)
+const SKIP_SUBDOMAINS = new Set([
+    'mail.cankaya.edu.tr',
+    'webmail.cankaya.edu.tr',
+    'vpn.cankaya.edu.tr',
+    'sql.cankaya.edu.tr',       // Öğrenci bilgi sistemi (login)
+    'webonline.cankaya.edu.tr', // Personel sistemi (login)
+    'onbasvuru.cankaya.edu.tr', // Başvuru sistemi (login)
+    'moodle.cankaya.edu.tr',    // LMS (login)
+    'lms.cankaya.edu.tr',
+    'portal.cankaya.edu.tr',
+    'autodiscover.cankaya.edu.tr',
+    'ftp.cankaya.edu.tr',
+    'ns1.cankaya.edu.tr',
+    'ns2.cankaya.edu.tr',
+    'dns.cankaya.edu.tr',
+    'mx.cankaya.edu.tr',
+    'smtp.cankaya.edu.tr',
+    'pop.cankaya.edu.tr',
+    'imap.cankaya.edu.tr',
+]);
+
+// Dosya uzantıları
+const SKIP_EXTENSIONS = /\.(jpg|jpeg|png|gif|svg|webp|ico|bmp|tiff|mp4|mp3|wav|avi|mov|zip|rar|7z|tar|gz|exe|dmg|msi|css|js|woff|woff2|ttf|eot)$/i;
 const PDF_EXTENSION = /\.pdf$/i;
-// doc/docx/xls/xlsx/ppt/pptx -> şimdilik atla (ileride eklenebilir)
 const OFFICE_EXTENSIONS = /\.(doc|docx|xls|xlsx|ppt|pptx)$/i;
 
 // =====================================================
@@ -95,20 +180,15 @@ async function getEmbedding(text) {
 // =====================================================
 function chunkText(text, chunkSize = CHUNK_SIZE, overlap = CHUNK_OVERLAP) {
     if (!text || text.length < 50) return [];
-
     const words = text.split(/\s+/);
     const chunks = [];
     let start = 0;
-
     while (start < words.length) {
         const end = Math.min(start + chunkSize, words.length);
         const chunk = words.slice(start, end).join(' ');
-        if (chunk.length > 30) { // Çok kısa chunk'ları atla
-            chunks.push(chunk);
-        }
+        if (chunk.length > 30) chunks.push(chunk);
         start += chunkSize - overlap;
     }
-
     return chunks;
 }
 
@@ -117,20 +197,15 @@ function chunkText(text, chunkSize = CHUNK_SIZE, overlap = CHUNK_OVERLAP) {
 // =====================================================
 function htmlToText(html) {
     const $ = cheerio.load(html);
-
-    // Script, style, nav, footer, header gibi gereksiz elementleri kaldır
-    $('script, style, nav, footer, header, iframe, noscript, .menu, .sidebar, .navigation, .breadcrumb').remove();
-
-    // Metin çıkar
+    $('script, style, nav, footer, header, iframe, noscript, .menu, .sidebar, .navigation, .breadcrumb, .cookie-banner').remove();
     let text = $('body').text() || $.text();
-
-    // Temizle
     text = text
         .replace(/\t/g, ' ')
         .replace(/\n{3,}/g, '\n\n')
         .replace(/ {2,}/g, ' ')
         .trim();
-
+    // KVKK: Kişisel verileri maskele
+    text = sanitizePersonalData(text);
     return text;
 }
 
@@ -149,10 +224,8 @@ async function fetchPage(url) {
             maxRedirects: 3,
             responseType: 'text'
         });
-
         const contentType = res.headers['content-type'] || '';
         if (!contentType.includes('text/html')) return null;
-
         return res.data;
     } catch (err) {
         return null;
@@ -166,9 +239,7 @@ async function fetchAndParsePdf(url) {
     try {
         const res = await axios.get(url, {
             timeout: 30000,
-            headers: {
-                'User-Agent': 'EnginarBot/1.0 (Cankaya University Campus App Data Collector)',
-            },
+            headers: { 'User-Agent': 'EnginarBot/1.0 (Cankaya University Campus App Data Collector)' },
             responseType: 'arraybuffer',
             maxContentLength: MAX_PDF_SIZE,
             maxRedirects: 3
@@ -177,16 +248,16 @@ async function fetchAndParsePdf(url) {
         const buffer = Buffer.from(res.data);
         const pdf = await pdfParse(buffer);
 
-        let text = pdf.text || '';
-        // Temizle
-        text = text
+        let text = (pdf.text || '')
             .replace(/\t/g, ' ')
             .replace(/\n{3,}/g, '\n\n')
             .replace(/ {2,}/g, ' ')
             .trim();
 
-        const title = pdf.info?.Title || url.split('/').pop().replace('.pdf', '') || 'PDF Document';
+        // KVKK: Kişisel verileri maskele
+        text = sanitizePersonalData(text);
 
+        const title = pdf.info?.Title || decodeURIComponent(url.split('/').pop().replace('.pdf', '')) || 'PDF Document';
         return { text, title, pages: pdf.numpages || 0 };
     } catch (err) {
         if (err.response?.status === 404) return null;
@@ -207,18 +278,12 @@ function extractLinks(html, baseUrl) {
     $('a[href]').each((_, el) => {
         let href = $(el).attr('href');
         if (!href) return;
-
-        // Anchor ve javascript linklerini atla
         if (href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
-
-        // Resim/video/arşiv atla
         if (SKIP_EXTENSIONS.test(href)) return;
-        // Office dosyaları atla
         if (OFFICE_EXTENSIONS.test(href)) return;
 
         try {
             const fullUrl = new URL(href, baseUrl);
-            // Aynı domain veya cankaya.edu.tr altındaki linkler
             const isSameDomain = fullUrl.hostname === baseHost;
             const isCankayaDomain = fullUrl.hostname.endsWith('cankaya.edu.tr');
 
@@ -230,9 +295,7 @@ function extractLinks(html, baseUrl) {
                     htmlLinks.add(fullUrl.href);
                 }
             }
-        } catch {
-            // Geçersiz URL, atla
-        }
+        } catch { /* geçersiz URL */ }
     });
 
     return { htmlLinks, pdfLinks };
@@ -243,23 +306,13 @@ function extractLinks(html, baseUrl) {
 // =====================================================
 async function ensureRagSource(domain) {
     const { data: existing } = await supabase
-        .from('rag_sources')
-        .select('id')
-        .eq('url', domain)
-        .maybeSingle();
-
+        .from('rag_sources').select('id').eq('url', domain).maybeSingle();
     if (existing) return existing.id;
 
     const { data: inserted, error } = await supabase
         .from('rag_sources')
-        .insert({
-            url: domain,
-            name: new URL(domain).hostname,
-            type: 'website',
-            status: 'active'
-        })
-        .select('id')
-        .single();
+        .insert({ url: domain, name: new URL(domain).hostname, type: 'website', status: 'active' })
+        .select('id').single();
 
     if (error) {
         console.error(`❌ RAG source eklenemedi (${domain}):`, error.message);
@@ -272,42 +325,24 @@ async function ensureRagSource(domain) {
 // DOKÜMAN + CHUNK KAYDI
 // =====================================================
 async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) {
-    // rag_documents'a kaydet
-    const { data: docData, error: docErr } = await supabase
-        .from('rag_documents')
-        .upsert({
-            source_id: sourceId,
-            url: url,
+    let docId;
+    const { data: existing } = await supabase.from('rag_documents')
+        .select('id').eq('url', url).maybeSingle();
+
+    if (existing) {
+        docId = existing.id;
+        await supabase.from('rag_documents').update({
             title: title || url,
-            content: text.substring(0, 50000), // Max 50K karakter
-            metadata: metadata,
-            status: 'processed'
-        }, { onConflict: 'url' })
-        .select('id')
-        .single();
-
-    let docId = docData?.id;
-    if (docErr || !docId) {
-        const { data: existing } = await supabase.from('rag_documents')
-            .select('id')
-            .eq('url', url)
-            .maybeSingle();
-        docId = existing?.id;
-
-        if (!docId) {
-            const { data: ins } = await supabase.from('rag_documents')
-                .insert({
-                    source_id: sourceId,
-                    url: url,
-                    title: title || url,
-                    content: text.substring(0, 50000),
-                    metadata: metadata,
-                    status: 'processed'
-                })
-                .select('id')
-                .single();
-            docId = ins?.id;
-        }
+            content: text.substring(0, 50000),
+            metadata, status: 'processed'
+        }).eq('id', docId);
+    } else {
+        const { data: ins } = await supabase.from('rag_documents')
+            .insert({
+                source_id: sourceId, url, title: title || url,
+                content: text.substring(0, 50000), metadata, status: 'processed'
+            }).select('id').single();
+        docId = ins?.id;
     }
 
     if (!docId) return 0;
@@ -315,28 +350,51 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
     // Eski chunk'ları temizle
     await supabase.from('rag_chunks').delete().eq('document_id', docId);
 
-    // Chunk'la ve embedding al
+    // Chunk + embed
     const chunks = chunkText(text);
     let savedChunks = 0;
 
     for (let i = 0; i < chunks.length; i++) {
-        const chunk = chunks[i];
-        const embedding = await getEmbedding(chunk);
+        const embedding = await getEmbedding(chunks[i]);
         if (!embedding) continue;
 
         const { error: chunkErr } = await supabase.from('rag_chunks').insert({
-            document_id: docId,
-            chunk_index: i,
-            content: chunk,
-            embedding: embedding,
-            metadata: { ...metadata, chunk_index: i, total_chunks: chunks.length }
+            document_id: docId, chunk_index: i, content: chunks[i],
+            embedding, metadata: { ...metadata, chunk_index: i, total_chunks: chunks.length }
         });
-
         if (!chunkErr) savedChunks++;
-        await delay(100); // OpenAI rate limit
+        await delay(100);
     }
 
     return savedChunks;
+}
+
+// =====================================================
+// SUBDOMAIN ERIŞILEBILIRLIK KONTROLÜ
+// =====================================================
+async function isSubdomainReachable(hostname) {
+    try {
+        const res = await axios.get(`https://${hostname}`, {
+            timeout: 8000,
+            maxRedirects: 3,
+            headers: { 'User-Agent': 'EnginarBot/1.0' },
+            validateStatus: (status) => status < 500
+        });
+        return res.status < 400;
+    } catch {
+        // HTTPS başarısızsa HTTP dene
+        try {
+            const res = await axios.get(`http://${hostname}`, {
+                timeout: 8000,
+                maxRedirects: 3,
+                headers: { 'User-Agent': 'EnginarBot/1.0' },
+                validateStatus: (status) => status < 500
+            });
+            return res.status < 400;
+        } catch {
+            return false;
+        }
+    }
 }
 
 // =====================================================
@@ -348,10 +406,10 @@ async function crawlSubdomain(baseUrl) {
     console.log('─'.repeat(50));
 
     const sourceId = await ensureRagSource(baseUrl);
-    if (!sourceId) return;
+    if (!sourceId) return { pages: 0, chunks: 0 };
 
     const visited = new Set();
-    const pdfQueue = new Set(); // PDF linkleri ayrı topla
+    const pdfQueue = new Set();
     const queue = [{ url: baseUrl, depth: 0 }];
     let totalPages = 0;
     let totalPdfs = 0;
@@ -375,28 +433,21 @@ async function crawlSubdomain(baseUrl) {
         if (text.length < 100) continue;
 
         const chunkCount = await saveDocumentAndChunks(sourceId, url, title, text, {
-            source: 'subdomain_crawl',
-            type: 'html',
+            source: 'subdomain_crawl', type: 'html',
             domain: new URL(baseUrl).hostname
         });
 
         totalPages++;
         totalChunks += chunkCount;
-        console.log(`   📄 [${totalPages}] ${title.substring(0, 50)}... (${chunkCount} chunk)`);
+        console.log(`   📄 [${totalPages}] ${title.substring(0, 60)}... (${chunkCount} chunk)`);
 
-        // Linkleri çıkar
         if (depth < MAX_DEPTH) {
             const { htmlLinks, pdfLinks } = extractLinks(html, url);
             for (const link of htmlLinks) {
                 const normLink = link.replace(/\/$/, '');
-                if (!visited.has(normLink)) {
-                    queue.push({ url: link, depth: depth + 1 });
-                }
+                if (!visited.has(normLink)) queue.push({ url: link, depth: depth + 1 });
             }
-            // PDF linklerini topla
-            for (const pdfUrl of pdfLinks) {
-                pdfQueue.add(pdfUrl);
-            }
+            for (const pdfUrl of pdfLinks) pdfQueue.add(pdfUrl);
         }
 
         await delay(300);
@@ -414,24 +465,20 @@ async function crawlSubdomain(baseUrl) {
             if (!pdfResult || pdfResult.text.length < 100) continue;
 
             const pdfName = decodeURIComponent(pdfUrl.split('/').pop() || 'document.pdf');
-
             const chunkCount = await saveDocumentAndChunks(sourceId, pdfUrl, pdfResult.title || pdfName, pdfResult.text, {
-                source: 'subdomain_crawl',
-                type: 'pdf',
+                source: 'subdomain_crawl', type: 'pdf',
                 domain: new URL(baseUrl).hostname,
-                filename: pdfName,
-                pdf_pages: pdfResult.pages
+                filename: pdfName, pdf_pages: pdfResult.pages
             });
 
             totalPdfs++;
             totalChunks += chunkCount;
-            console.log(`   📎 [PDF ${totalPdfs}] ${pdfName.substring(0, 50)} (${pdfResult.pages} sayfa, ${chunkCount} chunk)`);
-
-            await delay(500); // PDF'ler büyük, daha yavaş git
+            console.log(`   📎 [PDF ${totalPdfs}] ${pdfName.substring(0, 50)} (${pdfResult.pages}p, ${chunkCount} chunk)`);
+            await delay(500);
         }
     }
 
-    console.log(`   ✅ ${baseUrl}: ${totalPages} HTML + ${totalPdfs} PDF = ${totalChunks} chunk`);
+    console.log(`   ✅ ${new URL(baseUrl).hostname}: ${totalPages} HTML + ${totalPdfs} PDF = ${totalChunks} chunk`);
     return { pages: totalPages + totalPdfs, chunks: totalChunks };
 }
 
@@ -439,25 +486,61 @@ async function crawlSubdomain(baseUrl) {
 // ANA FONKSİYON
 // =====================================================
 (async () => {
-    console.log('🔄 Subdomain Crawler + RAG Vektörize Başlatılıyor...\n');
+    console.log('🔄 Çankaya Üniversitesi Tüm Subdomain Crawler Başlatılıyor...\n');
 
+    // 1. Subdomain keşfi
+    let allHostnames = await discoverSubdomains();
+    if (!allHostnames || allHostnames.length === 0) {
+        console.log('⚠️ Otomatik keşif başarısız, yedek liste kullanılıyor...');
+        allHostnames = FALLBACK_SUBDOMAINS;
+    }
+
+    // 2. Atlanacak subdomain'leri filtrele
+    const filtered = allHostnames.filter(h => {
+        const clean = h.replace(/^www\./, '');
+        if (SKIP_SUBDOMAINS.has(clean)) return false;
+        if (SKIP_SUBDOMAINS.has(h)) return false;
+        return true;
+    });
+
+    // Benzersiz yap
+    const unique = [...new Set(filtered)];
+    console.log(`\n📋 ${unique.length} subdomain işlenecek (${allHostnames.length} bulundu, ${allHostnames.length - unique.length} filtrelendi)\n`);
+
+    // 3. Erişilebilirlik kontrolü + crawl
     let grandTotalPages = 0;
     let grandTotalChunks = 0;
+    let reachableCount = 0;
+    let unreachableCount = 0;
 
-    for (const subdomain of SUBDOMAINS) {
+    for (let i = 0; i < unique.length; i++) {
+        const hostname = unique[i];
+        console.log(`\n[${i + 1}/${unique.length}] ${hostname} kontrol ediliyor...`);
+
+        const reachable = await isSubdomainReachable(hostname);
+        if (!reachable) {
+            console.log(`   ⏭️ Erişilemiyor, atlanıyor`);
+            unreachableCount++;
+            continue;
+        }
+
+        reachableCount++;
+        const baseUrl = `https://${hostname}`;
+
         try {
-            const result = await crawlSubdomain(subdomain);
+            const result = await crawlSubdomain(baseUrl);
             if (result) {
                 grandTotalPages += result.pages;
                 grandTotalChunks += result.chunks;
             }
         } catch (err) {
-            console.error(`❌ ${subdomain} taranırken hata:`, err.message);
+            console.error(`❌ ${hostname} taranırken hata:`, err.message);
         }
     }
 
     console.log(`\n${'='.repeat(60)}`);
     console.log(`🚀 Subdomain Crawl Tamamlandı!`);
-    console.log(`   Toplam: ${grandTotalPages} sayfa, ${grandTotalChunks} chunk`);
+    console.log(`   Erişilen: ${reachableCount} | Erişilemeyen: ${unreachableCount}`);
+    console.log(`   Toplam: ${grandTotalPages} sayfa/PDF, ${grandTotalChunks} chunk`);
     console.log('='.repeat(60));
 })();
