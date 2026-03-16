@@ -319,7 +319,7 @@
     "created_at": "2026-02-22T23:28:28.910321+00:00"
   },
   {
-    "id": "AİIT-1773617547532-1",
+    "id": "AİIT-1773704107758-1",
     "code": "AİIT 101",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -327,10 +327,10 @@
     "date": "Jun 09 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:32:28.01454+00:00"
+    "created_at": "2026-03-16T23:35:08.494431+00:00"
   },
   {
-    "id": "AİIT-1773617547532-2",
+    "id": "AİIT-1773704107758-2",
     "code": "AİIT 101",
     "section": "Tüm Gruplar",
     "exam": "Bütünleme",
@@ -338,10 +338,10 @@
     "date": "Jun 29 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:32:28.01454+00:00"
+    "created_at": "2026-03-16T23:35:08.494431+00:00"
   },
   {
-    "id": "ALM-1773617553882-3",
+    "id": "ALM-1773704114356-3",
     "code": "ALM  101",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -349,10 +349,10 @@
     "date": "Mar 24 2026",
     "starting": "10:20",
     "hall": "Z-17 Hukuk Amfi RB01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:32:34.212294+00:00"
+    "created_at": "2026-03-16T23:35:14.654831+00:00"
   },
   {
-    "id": "ALM-1773617553884-4",
+    "id": "ALM-1773704114357-4",
     "code": "ALM  102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -360,10 +360,10 @@
     "date": "Mar 25 2026",
     "starting": "10:20",
     "hall": "RB01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:32:34.212294+00:00"
+    "created_at": "2026-03-16T23:35:14.654831+00:00"
   },
   {
-    "id": "ALM-1773617553884-5",
+    "id": "ALM-1773704114358-5",
     "code": "ALM  101",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -371,10 +371,10 @@
     "date": "Apr 21 2026",
     "starting": "13:20",
     "hall": "Z-17 Hukuk Amfi RB01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:32:34.212294+00:00"
+    "created_at": "2026-03-16T23:35:14.654831+00:00"
   },
   {
-    "id": "ALM-1773617553885-6",
+    "id": "ALM-1773704114358-6",
     "code": "ALM  102",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -382,10 +382,10 @@
     "date": "Apr 29 2026",
     "starting": "10:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:32:34.212294+00:00"
+    "created_at": "2026-03-16T23:35:14.654831+00:00"
   },
   {
-    "id": "ALM-1773617553885-7",
+    "id": "ALM-1773704114358-7",
     "code": "ALM  101",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -393,10 +393,10 @@
     "date": "Jun 02 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:32:34.212294+00:00"
+    "created_at": "2026-03-16T23:35:14.654831+00:00"
   },
   {
-    "id": "ALM-1773617553885-8",
+    "id": "ALM-1773704114358-8",
     "code": "ALM  102",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -404,7 +404,7 @@
     "date": "Jun 02 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:32:34.212294+00:00"
+    "created_at": "2026-03-16T23:35:14.654831+00:00"
   },
   {
     "id": "ARCH-1771802936800-42",
@@ -1441,18 +1441,7 @@
     "created_at": "2026-02-22T23:29:32.836871+00:00"
   },
   {
-    "id": "CEC-1773617606069-9",
-    "code": "CEC  104",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Apr 01 2026",
-    "starting": "09:30",
-    "hall": "Amfi-6 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
-  },
-  {
-    "id": "CEC-1773617606070-10",
+    "id": "CEC-1773704166147-10",
     "code": "CEC  108",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1460,10 +1449,10 @@
     "date": "Apr 15 2026",
     "starting": "10:00",
     "hall": "NA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606070-11",
+    "id": "CEC-1773704166147-11",
     "code": "CEC  109",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1471,10 +1460,21 @@
     "date": "Apr 16 2026",
     "starting": "11:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606070-12",
+    "id": "CEC-1773704166147-9",
+    "code": "CEC  104",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 01 2026",
+    "starting": "09:30",
+    "hall": "Amfi-6 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
+  },
+  {
+    "id": "CEC-1773704166148-12",
     "code": "CEC  111",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1482,10 +1482,10 @@
     "date": "Apr 06 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606070-13",
+    "id": "CEC-1773704166148-13",
     "code": "CEC  112",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1493,10 +1493,10 @@
     "date": "Apr 08 2026",
     "starting": "13:30",
     "hall": "RA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606070-14",
+    "id": "CEC-1773704166148-14",
     "code": "CEC  114",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1504,10 +1504,10 @@
     "date": "Mar 25 2026",
     "starting": "11:30",
     "hall": "NA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-15",
+    "id": "CEC-1773704166148-15",
     "code": "CEC  216",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1515,10 +1515,10 @@
     "date": "Apr 10 2026",
     "starting": "10:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-16",
+    "id": "CEC-1773704166148-16",
     "code": "CEC  217",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1526,10 +1526,10 @@
     "date": "Apr 08 2026",
     "starting": "10:20",
     "hall": "B-09 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-17",
+    "id": "CEC-1773704166148-17",
     "code": "CEC  224",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1537,10 +1537,10 @@
     "date": "Apr 06 2026",
     "starting": "13:20",
     "hall": "NA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-18",
+    "id": "CEC-1773704166148-18",
     "code": "CEC  226",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1548,10 +1548,10 @@
     "date": "Apr 07 2026",
     "starting": "13:20",
     "hall": "MB07 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-19",
+    "id": "CEC-1773704166148-19",
     "code": "CEC  227",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1559,10 +1559,10 @@
     "date": "Apr 09 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-20",
+    "id": "CEC-1773704166148-20",
     "code": "CEC  346",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1570,10 +1570,10 @@
     "date": "Mar 23 2026",
     "starting": "11:30",
     "hall": "M101 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-21",
+    "id": "CEC-1773704166148-21",
     "code": "CEC  203",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1581,10 +1581,10 @@
     "date": "Apr 09 2026",
     "starting": "10:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-22",
+    "id": "CEC-1773704166148-22",
     "code": "CEC  205",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1592,10 +1592,10 @@
     "date": "Mar 24 2026",
     "starting": "10:30",
     "hall": "L112 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-23",
+    "id": "CEC-1773704166148-23",
     "code": "CEC  210",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1603,10 +1603,10 @@
     "date": "Apr 02 2026",
     "starting": "09:30",
     "hall": "NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-24",
+    "id": "CEC-1773704166148-24",
     "code": "CEC  211",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1614,10 +1614,10 @@
     "date": "Mar 31 2026",
     "starting": "09:30",
     "hall": "PA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-25",
+    "id": "CEC-1773704166149-25",
     "code": "CEC  212",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1625,10 +1625,10 @@
     "date": "Apr 13 2026",
     "starting": "10:00",
     "hall": "B-09 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-26",
+    "id": "CEC-1773704166149-26",
     "code": "CEC  214",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -1636,10 +1636,10 @@
     "date": "Apr 14 2026",
     "starting": "10:00",
     "hall": "B-09 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-27",
+    "id": "CEC-1773704166149-27",
     "code": "CEC  104",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1647,10 +1647,10 @@
     "date": "Jun 05 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606071-28",
+    "id": "CEC-1773704166149-28",
     "code": "CEC  108",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1658,10 +1658,10 @@
     "date": "Jun 01 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-29",
+    "id": "CEC-1773704166149-29",
     "code": "CEC  109",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1669,10 +1669,10 @@
     "date": "Jun 04 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-30",
+    "id": "CEC-1773704166149-30",
     "code": "CEC  111",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1680,10 +1680,10 @@
     "date": "Jun 08 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-31",
+    "id": "CEC-1773704166149-31",
     "code": "CEC  112",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1691,10 +1691,10 @@
     "date": "Jun 04 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-32",
+    "id": "CEC-1773704166149-32",
     "code": "CEC  114",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1702,10 +1702,10 @@
     "date": "Jun 08 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-33",
+    "id": "CEC-1773704166149-33",
     "code": "CEC  216",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1713,10 +1713,10 @@
     "date": "Jun 12 2026",
     "starting": "10:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-34",
+    "id": "CEC-1773704166149-34",
     "code": "CEC  217",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1724,10 +1724,10 @@
     "date": "Jun 12 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-35",
+    "id": "CEC-1773704166149-35",
     "code": "CEC  224",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1735,10 +1735,10 @@
     "date": "Jun 01 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-36",
+    "id": "CEC-1773704166149-36",
     "code": "CEC  226",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1746,10 +1746,10 @@
     "date": "Jun 01 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-37",
+    "id": "CEC-1773704166149-37",
     "code": "CEC  227",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1757,10 +1757,10 @@
     "date": "Jun 02 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-38",
+    "id": "CEC-1773704166150-38",
     "code": "CEC  346",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1768,10 +1768,10 @@
     "date": "Jun 10 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-39",
+    "id": "CEC-1773704166150-39",
     "code": "CEC  203",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1779,10 +1779,10 @@
     "date": "Jun 11 2026",
     "starting": "10:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606072-40",
+    "id": "CEC-1773704166150-40",
     "code": "CEC  205",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1790,10 +1790,10 @@
     "date": "Jun 09 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-41",
+    "id": "CEC-1773704166150-41",
     "code": "CEC  210",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1801,10 +1801,10 @@
     "date": "Jun 05 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-42",
+    "id": "CEC-1773704166150-42",
     "code": "CEC  211",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1812,10 +1812,10 @@
     "date": "Jun 04 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-43",
+    "id": "CEC-1773704166150-43",
     "code": "CEC  212",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1823,10 +1823,10 @@
     "date": "Jun 02 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-44",
+    "id": "CEC-1773704166150-44",
     "code": "CEC  214",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -1834,10 +1834,10 @@
     "date": "Jun 02 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-45",
+    "id": "CEC-1773704166150-45",
     "code": "CEC  104",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1845,10 +1845,10 @@
     "date": "Apr 13 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-46",
+    "id": "CEC-1773704166150-46",
     "code": "CEC  104",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1856,10 +1856,10 @@
     "date": "Jun 15 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-47",
+    "id": "CEC-1773704166150-47",
     "code": "CEC  111",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1867,10 +1867,10 @@
     "date": "Apr 13 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-48",
+    "id": "CEC-1773704166150-48",
     "code": "CEC  111",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1878,10 +1878,10 @@
     "date": "Jun 15 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-49",
+    "id": "CEC-1773704166150-49",
     "code": "CEC  112",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1889,10 +1889,10 @@
     "date": "Apr 15 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-50",
+    "id": "CEC-1773704166150-50",
     "code": "CEC  112",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1900,10 +1900,10 @@
     "date": "Jun 11 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-51",
+    "id": "CEC-1773704166150-51",
     "code": "CEC  226",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1911,10 +1911,10 @@
     "date": "Apr 28 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-52",
+    "id": "CEC-1773704166150-52",
     "code": "CEC  226",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1922,10 +1922,10 @@
     "date": "Jun 12 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-53",
+    "id": "CEC-1773704166150-53",
     "code": "CEC  227",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1933,10 +1933,10 @@
     "date": "Apr 30 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-54",
+    "id": "CEC-1773704166150-54",
     "code": "CEC  227",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1944,10 +1944,10 @@
     "date": "Jun 12 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-55",
+    "id": "CEC-1773704166150-55",
     "code": "CEC  216",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1955,10 +1955,10 @@
     "date": "Apr 24 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606073-56",
+    "id": "CEC-1773704166150-56",
     "code": "CEC  216",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1966,10 +1966,10 @@
     "date": "Jun 16 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-57",
+    "id": "CEC-1773704166150-57",
     "code": "CEC  217",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1977,10 +1977,10 @@
     "date": "Apr 24 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-58",
+    "id": "CEC-1773704166150-58",
     "code": "CEC  217",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1988,10 +1988,10 @@
     "date": "Jun 16 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-59",
+    "id": "CEC-1773704166150-59",
     "code": "CEC  224",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -1999,10 +1999,10 @@
     "date": "Apr 27 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-60",
+    "id": "CEC-1773704166151-60",
     "code": "CEC  224",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2010,10 +2010,10 @@
     "date": "Jun 12 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-61",
+    "id": "CEC-1773704166151-61",
     "code": "CEC  203",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2021,10 +2021,10 @@
     "date": "Apr 24 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-62",
+    "id": "CEC-1773704166151-62",
     "code": "CEC  203",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2032,10 +2032,10 @@
     "date": "Jun 16 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-63",
+    "id": "CEC-1773704166151-63",
     "code": "CEC  210",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2043,10 +2043,10 @@
     "date": "Apr 13 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-64",
+    "id": "CEC-1773704166151-64",
     "code": "CEC  210",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2054,10 +2054,10 @@
     "date": "Jun 15 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-65",
+    "id": "CEC-1773704166151-65",
     "code": "CEC  211",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2065,10 +2065,10 @@
     "date": "Apr 13 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
-    "id": "CEC-1773617606074-66",
+    "id": "CEC-1773704166151-66",
     "code": "CEC  211",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2076,7 +2076,7 @@
     "date": "Jun 15 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:26.405614+00:00"
+    "created_at": "2026-03-16T23:36:06.464448+00:00"
   },
   {
     "id": "CENG-1771802992727-228",
@@ -2552,7 +2552,7 @@
     "created_at": "2026-02-22T23:29:53.151221+00:00"
   },
   {
-    "id": "CHEM-1773617617714-67",
+    "id": "CHEM-1773704177630-67",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -2560,10 +2560,10 @@
     "date": "Mar 27 2026",
     "starting": "15:40",
     "hall": "PA01 (MERKEZ KAMPÜS) P101 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:33:38.356392+00:00"
+    "created_at": "2026-03-16T23:36:17.911912+00:00"
   },
   {
-    "id": "CHEM-1773617617714-68",
+    "id": "CHEM-1773704177630-68",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -2571,10 +2571,10 @@
     "date": "May 08 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:38.356392+00:00"
+    "created_at": "2026-03-16T23:36:17.911912+00:00"
   },
   {
-    "id": "CHEM-1773617617714-69",
+    "id": "CHEM-1773704177630-69",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -2582,10 +2582,10 @@
     "date": "Jun 08 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:38.356392+00:00"
+    "created_at": "2026-03-16T23:36:17.911912+00:00"
   },
   {
-    "id": "CHEM-1773617617714-70",
+    "id": "CHEM-1773704177630-70",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2593,10 +2593,10 @@
     "date": "Apr 10 2026",
     "starting": "15:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:38.356392+00:00"
+    "created_at": "2026-03-16T23:36:17.911912+00:00"
   },
   {
-    "id": "CHEM-1773617617714-71",
+    "id": "CHEM-1773704177631-71",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2604,10 +2604,10 @@
     "date": "May 15 2026",
     "starting": "13:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:38.356392+00:00"
+    "created_at": "2026-03-16T23:36:17.911912+00:00"
   },
   {
-    "id": "CHEM-1773617617714-72",
+    "id": "CHEM-1773704177631-72",
     "code": "CHEM 103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -2615,7 +2615,7 @@
     "date": "Jun 15 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:33:38.356392+00:00"
+    "created_at": "2026-03-16T23:36:17.911912+00:00"
   },
   {
     "id": "CPR-1771803038678-281",
@@ -3179,7 +3179,7 @@
     "created_at": "2026-02-22T23:30:46.927346+00:00"
   },
   {
-    "id": "CS-1773617667398-73",
+    "id": "CS-1773704226549-73",
     "code": "CS   103",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -3187,10 +3187,10 @@
     "date": "Apr 10 2026",
     "starting": "10:00",
     "hall": "R213 Matematik Seminer odası (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:34:27.742817+00:00"
+    "created_at": "2026-03-16T23:37:07.066584+00:00"
   },
   {
-    "id": "CS-1773617667398-74",
+    "id": "CS-1773704226549-74",
     "code": "CS   104",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -3198,7 +3198,7 @@
     "date": "Apr 10 2026",
     "starting": "10:00",
     "hall": "R213 Matematik Seminer odası (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:34:27.742817+00:00"
+    "created_at": "2026-03-16T23:37:07.066584+00:00"
   },
   {
     "id": "DSGN-1771803063953-336",
@@ -3267,422 +3267,103 @@
     "created_at": "2026-02-22T23:31:21.269737+00:00"
   },
   {
-    "id": "ECON-1771803089179-342",
-    "code": "ECON 101",
+    "id": "ECON-1773704259902-75",
+    "code": "ECON 102",
     "section": "1",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 25 2025",
-    "starting": "15:20",
-    "hall": "Amfi-2 (MERKEZ KAMPÜS) Amfi-5 (MERKEZ KAMPÜS) Amfi-6 (MERKEZ KAMPÜS) HA02 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
+    "date": "Apr 08 2026",
+    "starting": "15:40",
+    "hall": "Z-15 Hukuk Amfi Z-18 Hukuk Amfi",
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
   },
   {
-    "id": "ECON-1771803089180-343",
-    "code": "ECON 101",
+    "id": "ECON-1773704259902-76",
+    "code": "ECON 102",
     "section": "2",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 25 2025",
-    "starting": "15:20",
-    "hall": "Amfi-5 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
+    "date": "Apr 08 2026",
+    "starting": "15:40",
+    "hall": "205 Hukuk Amfi 206 Hukuk Amfi",
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
   },
   {
-    "id": "ECON-1771803089180-344",
-    "code": "ECON 101",
+    "id": "ECON-1773704259902-77",
+    "code": "ECON 102",
     "section": "3",
     "exam": "1. Midterm",
     "duration": "1 Saat",
-    "date": "Nov 17 2025",
+    "date": "Mar 16 2026",
+    "starting": "09:30",
+    "hall": "K106 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
+  },
+  {
+    "id": "ECON-1773704259902-78",
+    "code": "ECON 206",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 02 2026",
+    "starting": "13:20",
+    "hall": "Amfi-5 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
+  },
+  {
+    "id": "ECON-1773704259902-79",
+    "code": "ECON 208",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 30 2026",
+    "starting": "13:20",
+    "hall": "KA02 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
+  },
+  {
+    "id": "ECON-1773704259902-80",
+    "code": "ECON 210",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 01 2026",
     "starting": "11:20",
     "hall": "KA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
   },
   {
-    "id": "ECON-1771803089180-345",
-    "code": "ECON 101",
+    "id": "ECON-1773704259902-81",
+    "code": "ECON 320",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 25 2025",
-    "starting": "15:20",
-    "hall": "Amfi-6 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-346",
-    "code": "ECON 104",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 19 2025",
-    "starting": "13:20",
-    "hall": "KA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-347",
-    "code": "ECON 205",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 12 2025",
-    "starting": "13:20",
-    "hall": "KA05 (MERKEZ KAMPÜS) K101 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-348",
-    "code": "ECON 207",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "1 Saat",
-    "date": "Nov 20 2025",
-    "starting": "10:20",
-    "hall": "KA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-349",
-    "code": "ECON 209",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 25 2025",
-    "starting": "13:20",
-    "hall": "KA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-350",
-    "code": "ECON 213",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 18 2025",
-    "starting": "13:20",
-    "hall": "B-09 Hukuk-Mimarlık Amfi B-10 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-351",
-    "code": "ECON 223",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 24 2025",
-    "starting": "14:20",
-    "hall": "KA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-352",
-    "code": "ECON 305",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 14 2025",
-    "starting": "09:20",
-    "hall": "KA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-353",
-    "code": "ECON 311",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 17 2025",
-    "starting": "09:20",
-    "hall": "KA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-354",
-    "code": "ECON 316",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 20 2025",
-    "starting": "13:20",
-    "hall": "KA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-355",
-    "code": "ECON 411",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 17 2025",
-    "starting": "14:20",
-    "hall": "KA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089180-356",
-    "code": "ECON 426",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 26 2025",
-    "starting": "10:30",
-    "hall": "KA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089181-357",
-    "code": "ECON 436",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 20 2025",
-    "starting": "09:20",
-    "hall": "NB06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089181-358",
-    "code": "ECON 205",
-    "section": "Tüm Gruplar",
-    "exam": "2. Midterm",
-    "duration": "2 Saat",
-    "date": "Dec 18 2025",
+    "date": "Apr 06 2026",
     "starting": "09:30",
-    "hall": "B-08 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
+    "hall": "KA01 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
   },
   {
-    "id": "ECON-1771803089181-359",
-    "code": "ECON 101",
-    "section": "1",
-    "exam": "Lab Sınavı",
-    "duration": "2 Saat",
-    "date": "Nov 18 2025",
-    "starting": "15:20",
-    "hall": "Amfi-2 (MERKEZ KAMPÜS) Amfi-4 (MERKEZ KAMPÜS) Amfi-6 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089181-360",
-    "code": "ECON 101",
-    "section": "1",
-    "exam": "Lab Sınavı",
-    "duration": "1 Saat",
-    "date": "Dec 19 2025",
-    "starting": "13:20",
-    "hall": "Amfi-3 (MERKEZ KAMPÜS) Amfi-2 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089181-361",
-    "code": "ECON 101",
-    "section": "2",
-    "exam": "Lab Sınavı",
-    "duration": "2 Saat",
-    "date": "Nov 18 2025",
-    "starting": "15:20",
-    "hall": "Amfi-5 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089181-362",
-    "code": "ECON 101",
-    "section": "2",
-    "exam": "Lab Sınavı",
-    "duration": "1 Saat",
-    "date": "Dec 19 2025",
-    "starting": "13:20",
-    "hall": "Amfi-4 (MERKEZ KAMPÜS) Amfi-5 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089181-363",
-    "code": "ECON 101",
-    "section": "1",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 09 2026",
-    "starting": "12:30",
-    "hall": "B-08 Hukuk-Mimarlık Amfi B-09 Hukuk-Mimarlık Amfi B-10 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-364",
-    "code": "ECON 101",
-    "section": "2",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 09 2026",
-    "starting": "12:30",
-    "hall": "B-11 Hukuk-Mimarlık Amfi B-12 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-365",
-    "code": "ECON 101",
-    "section": "3",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 14 2026",
-    "starting": "10:00",
-    "hall": "K106 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-366",
-    "code": "ECON 104",
-    "section": "1",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 12 2026",
-    "starting": "12:30",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-367",
-    "code": "ECON 205",
-    "section": "1",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 09 2026",
-    "starting": "15:00",
-    "hall": "PA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-368",
-    "code": "ECON 207",
+    "id": "ECON-1773704259902-82",
+    "code": "ECON 442",
     "section": "Tüm Gruplar",
-    "exam": "Final",
+    "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Jan 12 2026",
-    "starting": "15:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
+    "date": "Apr 14 2026",
+    "starting": "09:30",
+    "hall": "KA02 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
   },
   {
-    "id": "ECON-1771803089182-369",
-    "code": "ECON 209",
+    "id": "ECON-1773704259902-83",
+    "code": "ECON 450",
     "section": "Tüm Gruplar",
-    "exam": "Final",
+    "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Jan 14 2026",
-    "starting": "10:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-370",
-    "code": "ECON 213",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 15 2026",
-    "starting": "15:00",
-    "hall": "NB02 (MERKEZ KAMPÜS) NA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-371",
-    "code": "ECON 223",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 08 2026",
-    "starting": "12:30",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-372",
-    "code": "ECON 305",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 08 2026",
-    "starting": "15:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-373",
-    "code": "ECON 311",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 14 2026",
-    "starting": "12:30",
-    "hall": "H315 Computerized Lecture Hall-5 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-374",
-    "code": "ECON 316",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 05 2026",
-    "starting": "15:00",
+    "date": "Apr 20 2026",
+    "starting": "14:20",
     "hall": "K107 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-375",
-    "code": "ECON 317",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 06 2026",
-    "starting": "10:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-376",
-    "code": "ECON 407",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 07 2026",
-    "starting": "10:00",
-    "hall": "K107 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-377",
-    "code": "ECON 411",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 12 2026",
-    "starting": "10:00",
-    "hall": "K102 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089182-378",
-    "code": "ECON 426",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 13 2026",
-    "starting": "13:10",
-    "hall": "KA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
-  },
-  {
-    "id": "ECON-1771803089183-379",
-    "code": "ECON 205",
-    "section": "Tüm Gruplar",
-    "exam": "Düzey B.",
-    "duration": "1 Saat",
-    "date": "Oct 23 2025",
-    "starting": "09:20",
-    "hall": "NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:31:29.563761+00:00"
+    "created_at": "2026-03-16T23:37:40.257378+00:00"
   },
   {
     "id": "EE-1771803098507-380",
@@ -4147,183 +3828,7 @@
     "created_at": "2026-02-22T23:31:38.929541+00:00"
   },
   {
-    "id": "ELL-1773617728748-75",
-    "code": "ELL  122",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 03 2026",
-    "starting": "10:00",
-    "hall": "RA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728748-76",
-    "code": "ELL  124",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 31 2026",
-    "starting": "10:00",
-    "hall": "MB07 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-77",
-    "code": "ELL  130",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 02 2026",
-    "starting": "10:00",
-    "hall": "NA06 (MERKEZ KAMPÜS) NB06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-78",
-    "code": "ELL  132",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 30 2026",
-    "starting": "13:00",
-    "hall": "NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-79",
-    "code": "ELL  136",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 01 2026",
-    "starting": "13:00",
-    "hall": "NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-80",
-    "code": "ELL  224",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 01 2026",
-    "starting": "10:00",
-    "hall": "NA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-81",
-    "code": "ELL  560",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 02 2026",
-    "starting": "14:00",
-    "hall": "BALGAT KAMPÜSÜ A-124",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-82",
-    "code": "ELL  374",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 02 2026",
-    "starting": "10:00",
-    "hall": "RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-83",
-    "code": "ELL  392",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 01 2026",
-    "starting": "10:00",
-    "hall": "RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-84",
-    "code": "ELL  442",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 02 2026",
-    "starting": "13:00",
-    "hall": "RB01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-85",
-    "code": "ELL  468",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 30 2026",
-    "starting": "10:00",
-    "hall": "RA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-86",
-    "code": "ELL  469",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 31 2026",
-    "starting": "13:00",
-    "hall": "RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-87",
-    "code": "ELL  472",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 31 2026",
-    "starting": "10:00",
-    "hall": "RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-88",
-    "code": "ELL  234",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Mar 30 2026",
-    "starting": "10:00",
-    "hall": "RA05 (MERKEZ KAMPÜS) RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-89",
-    "code": "ELL  236",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 02 2026",
-    "starting": "10:00",
-    "hall": "RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-90",
-    "code": "ELL  282",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Apr 03 2026",
-    "starting": "10:00",
-    "hall": "RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
-  },
-  {
-    "id": "ELL-1773617728749-91",
+    "id": "ELL-1773704288364-100",
     "code": "ELL  334",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4331,10 +3836,10 @@
     "date": "Apr 01 2026",
     "starting": "13:00",
     "hall": "RA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
   },
   {
-    "id": "ELL-1773617728749-92",
+    "id": "ELL-1773704288364-101",
     "code": "ELL  344",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4342,10 +3847,10 @@
     "date": "Mar 30 2026",
     "starting": "13:00",
     "hall": "RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
   },
   {
-    "id": "ELL-1773617728749-93",
+    "id": "ELL-1773704288364-102",
     "code": "ELL  362",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4353,10 +3858,186 @@
     "date": "Apr 03 2026",
     "starting": "13:00",
     "hall": "MB06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:29.081701+00:00"
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
   },
   {
-    "id": "ENG-1773617745648-94",
+    "id": "ELL-1773704288364-84",
+    "code": "ELL  122",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 03 2026",
+    "starting": "10:00",
+    "hall": "RA03 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-85",
+    "code": "ELL  124",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 31 2026",
+    "starting": "10:00",
+    "hall": "MB07 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-86",
+    "code": "ELL  130",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 02 2026",
+    "starting": "10:00",
+    "hall": "NA06 (MERKEZ KAMPÜS) NB06 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-87",
+    "code": "ELL  132",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 30 2026",
+    "starting": "13:00",
+    "hall": "NA01 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-88",
+    "code": "ELL  136",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 01 2026",
+    "starting": "13:00",
+    "hall": "NA01 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-89",
+    "code": "ELL  224",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 01 2026",
+    "starting": "10:00",
+    "hall": "NA06 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-90",
+    "code": "ELL  560",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 02 2026",
+    "starting": "14:00",
+    "hall": "BALGAT KAMPÜSÜ A-124",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-91",
+    "code": "ELL  374",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 02 2026",
+    "starting": "10:00",
+    "hall": "RB04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-92",
+    "code": "ELL  392",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 01 2026",
+    "starting": "10:00",
+    "hall": "RB04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-93",
+    "code": "ELL  442",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 02 2026",
+    "starting": "13:00",
+    "hall": "RB01 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-94",
+    "code": "ELL  468",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 30 2026",
+    "starting": "10:00",
+    "hall": "RA01 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-95",
+    "code": "ELL  469",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 31 2026",
+    "starting": "13:00",
+    "hall": "RB04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-96",
+    "code": "ELL  472",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 31 2026",
+    "starting": "10:00",
+    "hall": "RB04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-97",
+    "code": "ELL  234",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 30 2026",
+    "starting": "10:00",
+    "hall": "RA05 (MERKEZ KAMPÜS) RB04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-98",
+    "code": "ELL  236",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 02 2026",
+    "starting": "10:00",
+    "hall": "RB04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ELL-1773704288364-99",
+    "code": "ELL  282",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 03 2026",
+    "starting": "10:00",
+    "hall": "RB04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:38:08.679727+00:00"
+  },
+  {
+    "id": "ENG-1773704305149-103",
     "code": "ENG  122",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4364,10 +4045,10 @@
     "date": "Apr 17 2026",
     "starting": "15:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:35:45.959373+00:00"
+    "created_at": "2026-03-16T23:38:25.470425+00:00"
   },
   {
-    "id": "ENG-1773617745648-95",
+    "id": "ENG-1773704305149-104",
     "code": "ENG  334",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4375,10 +4056,10 @@
     "date": "Apr 09 2026",
     "starting": "10:20",
     "hall": "Haz. Ek Bina 304",
-    "created_at": "2026-03-15T23:35:45.959373+00:00"
+    "created_at": "2026-03-16T23:38:25.470425+00:00"
   },
   {
-    "id": "ENG-1773617745648-96",
+    "id": "ENG-1773704305149-105",
     "code": "ENG  122",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -4386,10 +4067,10 @@
     "date": "Jun 02 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:35:45.959373+00:00"
+    "created_at": "2026-03-16T23:38:25.470425+00:00"
   },
   {
-    "id": "ENG-1773617745648-97",
+    "id": "ENG-1773704305149-106",
     "code": "ENG  222",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -4397,10 +4078,10 @@
     "date": "Jun 01 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:35:45.959373+00:00"
+    "created_at": "2026-03-16T23:38:25.470425+00:00"
   },
   {
-    "id": "ENG-1773617745648-98",
+    "id": "ENG-1773704305149-107",
     "code": "ENG  334",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -4408,43 +4089,10 @@
     "date": "Jun 02 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:35:45.959373+00:00"
+    "created_at": "2026-03-16T23:38:25.470425+00:00"
   },
   {
-    "id": "ESR-1773617757156-100",
-    "code": "ESR  103",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jun 10 2026",
-    "starting": "10:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:35:57.485805+00:00"
-  },
-  {
-    "id": "ESR-1773617757156-101",
-    "code": "ESR  103",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "Apr 10 2026",
-    "starting": "15:40",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:35:57.485805+00:00"
-  },
-  {
-    "id": "ESR-1773617757156-102",
-    "code": "ESR  103",
-    "section": "Tüm Gruplar",
-    "exam": "Mazeret",
-    "duration": "1 Saat",
-    "date": "Jun 15 2026",
-    "starting": "15:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:35:57.485805+00:00"
-  },
-  {
-    "id": "ESR-1773617757156-99",
+    "id": "ESR-1773704316527-108",
     "code": "ESR  103",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4452,10 +4100,54 @@
     "date": "Apr 03 2026",
     "starting": "16:00",
     "hall": "NA02 (MERKEZ KAMPÜS) NA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:35:57.485805+00:00"
+    "created_at": "2026-03-16T23:38:36.782777+00:00"
   },
   {
-    "id": "FTP-1773617790175-103",
+    "id": "ESR-1773704316527-109",
+    "code": "ESR  103",
+    "section": "Tüm Gruplar",
+    "exam": "Final",
+    "duration": "1 Saat",
+    "date": "Jun 10 2026",
+    "starting": "10:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-16T23:38:36.782777+00:00"
+  },
+  {
+    "id": "ESR-1773704316527-110",
+    "code": "ESR  103",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "Apr 10 2026",
+    "starting": "15:40",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-16T23:38:36.782777+00:00"
+  },
+  {
+    "id": "ESR-1773704316527-111",
+    "code": "ESR  103",
+    "section": "Tüm Gruplar",
+    "exam": "Mazeret",
+    "duration": "1 Saat",
+    "date": "Jun 15 2026",
+    "starting": "15:00",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-16T23:38:36.782777+00:00"
+  },
+  {
+    "id": "FTP-1773704349357-112",
+    "code": "FTP  202",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Mar 30 2026",
+    "starting": "09:30",
+    "hall": "K106 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:39:09.86166+00:00"
+  },
+  {
+    "id": "FTP-1773704349357-113",
     "code": "FTP  204",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4463,7 +4155,40 @@
     "date": "Apr 02 2026",
     "starting": "13:20",
     "hall": "K107 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:36:30.500061+00:00"
+    "created_at": "2026-03-16T23:39:09.86166+00:00"
+  },
+  {
+    "id": "FTP-1773704349357-114",
+    "code": "FTP  206",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 06 2026",
+    "starting": "13:30",
+    "hall": "K106 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:39:09.86166+00:00"
+  },
+  {
+    "id": "FTP-1773704349357-115",
+    "code": "FTP  220",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 07 2026",
+    "starting": "09:30",
+    "hall": "K107 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:39:09.86166+00:00"
+  },
+  {
+    "id": "FTP-1773704349357-116",
+    "code": "FTP  227",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "1 Saat",
+    "date": "Apr 08 2026",
+    "starting": "09:30",
+    "hall": "K106 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:39:09.86166+00:00"
   },
   {
     "id": "HİR-1771803196531-491",
@@ -4950,7 +4675,7 @@
     "created_at": "2026-02-22T23:33:16.957853+00:00"
   },
   {
-    "id": "HIST-1773617802780-104",
+    "id": "HIST-1773704362089-117",
     "code": "HIST 201",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4958,10 +4683,10 @@
     "date": "May 08 2026",
     "starting": "15:50",
     "hall": "NA02 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802780-105",
+    "id": "HIST-1773704362090-118",
     "code": "HIST 202",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4969,10 +4694,10 @@
     "date": "Apr 10 2026",
     "starting": "15:40",
     "hall": "Amfi-3 (MERKEZ KAMPÜS) Amfi-2 (MERKEZ KAMPÜS) Amfi-4 (MERKEZ KAMPÜS) Amfi-5 (MERKEZ KAMPÜS) Amfi-6 (MERKEZ KAMPÜS) HA04 (MERKEZ KAMPÜS) HA02 (MERKEZ KAMPÜS) HA03 (MERKEZ KAMPÜS) PA01 (MERKEZ KAMPÜS) P101 (MERKEZ KAMPÜS) NB02 (MERKEZ KAMPÜS) NA02 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS) MB07 (MERKEZ KAMPÜS) MA02 (MERKEZ KAMPÜS) M102 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802781-106",
+    "id": "HIST-1773704362091-119",
     "code": "HIST 206",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -4980,10 +4705,10 @@
     "date": "Apr 07 2026",
     "starting": "09:20",
     "hall": "LA16 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802781-107",
+    "id": "HIST-1773704362091-120",
     "code": "HIST 201",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -4991,10 +4716,10 @@
     "date": "Jun 08 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802781-108",
+    "id": "HIST-1773704362091-121",
     "code": "HIST 202",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -5002,10 +4727,10 @@
     "date": "Jun 08 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802781-109",
+    "id": "HIST-1773704362091-122",
     "code": "HIST 206",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -5013,10 +4738,10 @@
     "date": "Jun 08 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802782-110",
+    "id": "HIST-1773704362091-123",
     "code": "HIST 201",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5024,10 +4749,10 @@
     "date": "May 15 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802782-111",
+    "id": "HIST-1773704362091-124",
     "code": "HIST 201",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5035,10 +4760,10 @@
     "date": "Jun 16 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802782-112",
+    "id": "HIST-1773704362091-125",
     "code": "HIST 202",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5046,10 +4771,10 @@
     "date": "May 15 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802782-113",
+    "id": "HIST-1773704362092-126",
     "code": "HIST 202",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5057,10 +4782,10 @@
     "date": "Jun 16 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802782-114",
+    "id": "HIST-1773704362092-127",
     "code": "HIST 206",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5068,10 +4793,10 @@
     "date": "Apr 14 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HIST-1773617802782-115",
+    "id": "HIST-1773704362092-128",
     "code": "HIST 206",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5079,10 +4804,10 @@
     "date": "Jun 16 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:43.105111+00:00"
+    "created_at": "2026-03-16T23:39:22.391293+00:00"
   },
   {
-    "id": "HUK-1773617815183-116",
+    "id": "HUK-1773704374241-129",
     "code": "HUK  103",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5090,10 +4815,10 @@
     "date": "Mar 25 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815183-117",
+    "id": "HUK-1773704374241-130",
     "code": "HUK  111",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5101,10 +4826,10 @@
     "date": "Mar 25 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815183-118",
+    "id": "HUK-1773704374241-131",
     "code": "HUK  113",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5112,10 +4837,10 @@
     "date": "Mar 25 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815183-119",
+    "id": "HUK-1773704374241-132",
     "code": "HUK  121",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5123,10 +4848,10 @@
     "date": "Mar 26 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815183-120",
+    "id": "HUK-1773704374241-133",
     "code": "HUK  123",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5134,10 +4859,10 @@
     "date": "Mar 25 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815183-121",
+    "id": "HUK-1773704374241-134",
     "code": "HUK  213",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5145,10 +4870,10 @@
     "date": "Mar 24 2026",
     "starting": "14:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815183-122",
+    "id": "HUK-1773704374241-135",
     "code": "HUK  431",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5156,10 +4881,10 @@
     "date": "Mar 24 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-123",
+    "id": "HUK-1773704374241-136",
     "code": "HUK  463",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5167,10 +4892,10 @@
     "date": "Mar 24 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-124",
+    "id": "HUK-1773704374241-137",
     "code": "HUK  471",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5178,10 +4903,10 @@
     "date": "Mar 24 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-125",
+    "id": "HUK-1773704374241-138",
     "code": "HUK  317",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5189,21 +4914,21 @@
     "date": "Mar 26 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-126",
+    "id": "HUK-1773704374241-139",
     "code": "HUK  331",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
     "duration": "1 Saat",
-    "date": "Mar 24 2026",
-    "starting": "10:00",
+    "date": "Mar 27 2026",
+    "starting": "11:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-127",
+    "id": "HUK-1773704374241-140",
     "code": "HUK  371",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5211,10 +4936,10 @@
     "date": "Mar 25 2026",
     "starting": "14:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-128",
+    "id": "HUK-1773704374241-141",
     "code": "HUK  415",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5222,10 +4947,10 @@
     "date": "Mar 26 2026",
     "starting": "14:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-129",
+    "id": "HUK-1773704374241-142",
     "code": "HUK  419",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5233,10 +4958,10 @@
     "date": "Mar 25 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-130",
+    "id": "HUK-1773704374242-143",
     "code": "HUK  429",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5244,10 +4969,10 @@
     "date": "Mar 26 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-131",
+    "id": "HUK-1773704374242-144",
     "code": "HUK  217",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5255,10 +4980,10 @@
     "date": "Mar 25 2026",
     "starting": "14:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-132",
+    "id": "HUK-1773704374242-145",
     "code": "HUK  231",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5266,10 +4991,10 @@
     "date": "Mar 24 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-133",
+    "id": "HUK-1773704374242-146",
     "code": "HUK  241",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5277,10 +5002,10 @@
     "date": "Mar 26 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815184-134",
+    "id": "HUK-1773704374242-147",
     "code": "HUK  261",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5288,10 +5013,10 @@
     "date": "Mar 25 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815185-135",
+    "id": "HUK-1773704374242-148",
     "code": "HUK  313",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5299,10 +5024,10 @@
     "date": "Mar 24 2026",
     "starting": "14:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
-    "id": "HUK-1773617815185-136",
+    "id": "HUK-1773704374243-149",
     "code": "HUK  315",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -5310,7 +5035,7 @@
     "date": "Mar 26 2026",
     "starting": "14:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:36:55.496363+00:00"
+    "created_at": "2026-03-16T23:39:34.509774+00:00"
   },
   {
     "id": "IAGR-1771803232885-639",
@@ -6116,7 +5841,7 @@
     "created_at": "2026-02-22T23:34:09.444141+00:00"
   },
   {
-    "id": "INF-1773617837442-137",
+    "id": "INF-1773704396393-150",
     "code": "INF  214",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -6124,10 +5849,10 @@
     "date": "Apr 09 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:37:17.773983+00:00"
+    "created_at": "2026-03-16T23:39:56.670411+00:00"
   },
   {
-    "id": "INF-1773617837442-138",
+    "id": "INF-1773704396393-151",
     "code": "INF  214",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -6135,10 +5860,10 @@
     "date": "Jun 04 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:37:17.773983+00:00"
+    "created_at": "2026-03-16T23:39:56.670411+00:00"
   },
   {
-    "id": "INF-1773617837442-139",
+    "id": "INF-1773704396393-152",
     "code": "INF  214",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -6146,10 +5871,10 @@
     "date": "Apr 16 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:37:17.773983+00:00"
+    "created_at": "2026-03-16T23:39:56.670411+00:00"
   },
   {
-    "id": "INF-1773617837442-140",
+    "id": "INF-1773704396393-153",
     "code": "INF  214",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -6157,10 +5882,10 @@
     "date": "Jun 13 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:37:17.773983+00:00"
+    "created_at": "2026-03-16T23:39:56.670411+00:00"
   },
   {
-    "id": "ING-1773617843299-141",
+    "id": "ING-1773704402155-154",
     "code": "ING  102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -6168,10 +5893,10 @@
     "date": "Apr 09 2026",
     "starting": "10:20",
     "hall": "Haz. Ek Bina 307",
-    "created_at": "2026-03-15T23:37:23.618307+00:00"
+    "created_at": "2026-03-16T23:40:02.645494+00:00"
   },
   {
-    "id": "INTT-1773617854630-142",
+    "id": "INTT-1773704414447-155",
     "code": "INTT 102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -6179,10 +5904,98 @@
     "date": "Mar 27 2026",
     "starting": "10:00",
     "hall": "M102 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:37:34.96351+00:00"
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
   },
   {
-    "id": "INTT-1773617854630-143",
+    "id": "INTT-1773704414447-156",
+    "code": "INTT 104",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 02 2026",
+    "starting": "15:00",
+    "hall": "HA04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-157",
+    "code": "INTT 106",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 06 2026",
+    "starting": "14:20",
+    "hall": "HA04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-158",
+    "code": "INTT 204",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 06 2026",
+    "starting": "13:20",
+    "hall": "MB07 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-159",
+    "code": "INTT 234",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 30 2026",
+    "starting": "10:20",
+    "hall": "RB01 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-160",
+    "code": "INTT 238",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 13 2026",
+    "starting": "10:00",
+    "hall": "K102 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-161",
+    "code": "INTT 338",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 13 2026",
+    "starting": "13:20",
+    "hall": "K105 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-162",
+    "code": "INTT 404",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 09 2026",
+    "starting": "14:20",
+    "hall": "K105 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-163",
+    "code": "INTT 416",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 30 2026",
+    "starting": "10:00",
+    "hall": "KA03 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-164",
     "code": "INTT 428",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -6190,7 +6003,84 @@
     "date": "Mar 19 2026",
     "starting": "10:00",
     "hall": "HA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:37:34.96351+00:00"
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-165",
+    "code": "INTT 430",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 06 2026",
+    "starting": "13:20",
+    "hall": "P101 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-166",
+    "code": "INTT 304",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 09 2026",
+    "starting": "13:20",
+    "hall": "Z-17 Hukuk Amfi",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-167",
+    "code": "INTT 308",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 06 2026",
+    "starting": "10:00",
+    "hall": "HA02 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-168",
+    "code": "INTT 318",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 08 2026",
+    "starting": "10:00",
+    "hall": "NA06 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-169",
+    "code": "INTT 320",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 01 2026",
+    "starting": "15:20",
+    "hall": "MB07 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-170",
+    "code": "INTT 324",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 07 2026",
+    "starting": "10:00",
+    "hall": "MB07 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
+  },
+  {
+    "id": "INTT-1773704414447-171",
+    "code": "INTT 334",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 30 2026",
+    "starting": "13:20",
+    "hall": "MA01 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:40:14.73385+00:00"
   },
   {
     "id": "IT-1771803292078-775",
@@ -6369,612 +6259,194 @@
     "created_at": "2026-02-22T23:35:26.539029+00:00"
   },
   {
-    "id": "MAN-1771803335020-791",
-    "code": "MAN  101",
+    "id": "MAN-1773704469463-172",
+    "code": "MAN  102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 14 2025",
-    "starting": "12:30",
-    "hall": "B-08 Hukuk-Mimarlık Amfi 106 Hukuk Sınıf",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335020-792",
-    "code": "MAN  103",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 20 2025",
-    "starting": "13:20",
+    "date": "Apr 06 2026",
+    "starting": "14:30",
     "hall": "NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
   },
   {
-    "id": "MAN-1771803335020-793",
-    "code": "MAN  201",
+    "id": "MAN-1773704469463-173",
+    "code": "MAN  202",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Dec 05 2025",
-    "starting": "15:30",
-    "hall": "Amfi-2 (MERKEZ KAMPÜS) Amfi-4 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335020-794",
-    "code": "MAN  205",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 17 2025",
-    "starting": "13:20",
-    "hall": "KA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-795",
-    "code": "MAN  209",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 27 2025",
-    "starting": "10:00",
-    "hall": "B-08 Hukuk-Mimarlık Amfi B-10 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-796",
-    "code": "MAN  211",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 21 2025",
+    "date": "Apr 14 2026",
     "starting": "10:20",
-    "hall": "HA04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
+    "hall": "NA02 (MERKEZ KAMPÜS) MB07 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
   },
   {
-    "id": "MAN-1771803335021-797",
-    "code": "MAN  305",
+    "id": "MAN-1773704469463-174",
+    "code": "MAN  208",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 10 2025",
+    "date": "Mar 30 2026",
     "starting": "13:20",
-    "hall": "HA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
+    "hall": "Z-16 Hukuk Amfi",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
   },
   {
-    "id": "MAN-1771803335021-798",
-    "code": "MAN  307",
-    "section": "1",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 21 2025",
-    "starting": "10:30",
-    "hall": "RA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-799",
-    "code": "MAN  307",
-    "section": "2",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 13 2025",
-    "starting": "13:20",
-    "hall": "PA01 (MERKEZ KAMPÜS) RB03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-800",
-    "code": "MAN  317",
+    "id": "MAN-1773704469463-175",
+    "code": "MAN  212",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 26 2025",
-    "starting": "13:20",
-    "hall": "B-12 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-801",
-    "code": "MAN  401",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 19 2025",
-    "starting": "13:20",
-    "hall": "KA04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-802",
-    "code": "MAN  406",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 21 2025",
-    "starting": "10:20",
-    "hall": "P101 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-803",
-    "code": "MAN  414",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 19 2025",
-    "starting": "10:20",
-    "hall": "KA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-804",
-    "code": "MAN  415",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 20 2025",
-    "starting": "10:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-805",
-    "code": "MAN  433",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Dec 09 2025",
-    "starting": "11:20",
-    "hall": "B-08 Hukuk-Mimarlık Amfi B-09 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-806",
-    "code": "MAN  438",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 25 2025",
-    "starting": "10:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-807",
-    "code": "MAN  445",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 24 2025",
-    "starting": "14:20",
-    "hall": "KA04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-808",
-    "code": "MAN  448",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 11 2025",
-    "starting": "13:20",
-    "hall": "KA06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-809",
-    "code": "MAN  503",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Dec 09 2025",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-104/105",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-810",
-    "code": "MAN  505",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "4 Saat",
-    "date": "Nov 16 2025",
-    "starting": "10:00",
-    "hall": "BALGAT KAMPÜSÜ A-301 (Stüdyo)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-811",
-    "code": "MAN  515",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 19 2025",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-104/105",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-812",
-    "code": "MAN  519",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 20 2025",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-104/105",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-813",
-    "code": "MAN  526",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 28 2025",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-104/105",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335021-814",
-    "code": "MAN  567",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Dec 16 2025",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-202",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-815",
-    "code": "MAN  573",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 26 2025",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-202",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-816",
-    "code": "MAN  575",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 27 2025",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-202",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-817",
-    "code": "MAN  604",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 28 2025",
-    "starting": "14:00",
-    "hall": "Belirsiz",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-818",
-    "code": "MAN  415",
-    "section": "Tüm Gruplar",
-    "exam": "2. Midterm",
-    "duration": "2 Saat",
-    "date": "Dec 05 2025",
-    "starting": "14:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-819",
-    "code": "MAN  505",
-    "section": "Tüm Gruplar",
-    "exam": "2. Midterm",
-    "duration": "3 Saat",
-    "date": "Dec 07 2025",
-    "starting": "14:00",
-    "hall": "BALGAT KAMPÜSÜ A-301 (Stüdyo)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-820",
-    "code": "MAN  101",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 07 2026",
-    "starting": "10:30",
-    "hall": "HA04 (MERKEZ KAMPÜS) HA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-821",
-    "code": "MAN  103",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 12 2026",
-    "starting": "15:00",
-    "hall": "NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-822",
-    "code": "MAN  201",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 05 2026",
-    "starting": "13:00",
-    "hall": "B-08 Hukuk-Mimarlık Amfi B-09 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-823",
-    "code": "MAN  205",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 15 2026",
-    "starting": "10:00",
-    "hall": "KA05 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-824",
-    "code": "MAN  209",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 13 2026",
-    "starting": "10:00",
-    "hall": "HA04 (MERKEZ KAMPÜS) HA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-825",
-    "code": "MAN  211",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 06 2026",
-    "starting": "15:00",
-    "hall": "MA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-826",
-    "code": "MAN  305",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 08 2026",
-    "starting": "15:00",
-    "hall": "K103 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-827",
-    "code": "MAN  307",
-    "section": "1",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 09 2026",
-    "starting": "10:00",
-    "hall": "MB06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335022-828",
-    "code": "MAN  307",
-    "section": "2",
-    "exam": "Final",
-    "duration": "1 Saat",
-    "date": "Jan 06 2026",
+    "date": "Apr 08 2026",
     "starting": "13:30",
-    "hall": "Amfi-2 (MERKEZ KAMPÜS) Amfi-5 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
+    "hall": "NA01 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
   },
   {
-    "id": "MAN-1771803335022-829",
-    "code": "MAN  317",
+    "id": "MAN-1773704469464-176",
+    "code": "MAN  214",
     "section": "Tüm Gruplar",
-    "exam": "Final",
+    "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Jan 13 2026",
-    "starting": "10:00",
-    "hall": "MA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
+    "date": "Apr 07 2026",
+    "starting": "13:30",
+    "hall": "B-11 Hukuk-Mimarlık Amfi",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
   },
   {
-    "id": "MAN-1771803335023-830",
-    "code": "MAN  401",
+    "id": "MAN-1773704469464-177",
+    "code": "MAN  216",
     "section": "Tüm Gruplar",
-    "exam": "Final",
+    "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Jan 09 2026",
-    "starting": "15:00",
-    "hall": "K101 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
+    "date": "Apr 09 2026",
+    "starting": "14:30",
+    "hall": "KA06 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
   },
   {
-    "id": "MAN-1771803335023-831",
-    "code": "MAN  414",
+    "id": "MAN-1773704469464-178",
+    "code": "MAN  418",
     "section": "Tüm Gruplar",
-    "exam": "Final",
+    "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Jan 12 2026",
-    "starting": "13:00",
+    "date": "Apr 07 2026",
+    "starting": "13:30",
+    "hall": "Z-14 Hukuk Amfi",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-179",
+    "code": "MAN  426",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 01 2026",
+    "starting": "13:30",
+    "hall": "HA04 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-180",
+    "code": "MAN  430",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 10 2026",
+    "starting": "10:20",
+    "hall": "KA06 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-181",
+    "code": "MAN  432",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 10 2026",
+    "starting": "10:30",
+    "hall": "Amfi-2 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-182",
+    "code": "MAN  436",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 09 2026",
+    "starting": "13:30",
+    "hall": "HA02 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-183",
+    "code": "MAN  306",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 07 2026",
+    "starting": "14:20",
+    "hall": "Z-17 Hukuk Amfi",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-184",
+    "code": "MAN  308",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 09 2026",
+    "starting": "13:30",
+    "hall": "B-09 Hukuk-Mimarlık Amfi",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-185",
+    "code": "MAN  312",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 09 2026",
+    "starting": "10:20",
+    "hall": "MB07 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-186",
+    "code": "MAN  403",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Mar 31 2026",
+    "starting": "10:30",
+    "hall": "H314 Computerized Lecture Hall-4 (MERKEZ KAMPÜS)",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
+  },
+  {
+    "id": "MAN-1773704469464-187",
+    "code": "MAN  404",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 03 2026",
+    "starting": "13:30",
     "hall": "KA05 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
   },
   {
-    "id": "MAN-1771803335023-832",
-    "code": "MAN  415",
+    "id": "MAN-1773704469464-188",
+    "code": "MAN  413",
     "section": "Tüm Gruplar",
-    "exam": "Final",
+    "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Jan 14 2026",
-    "starting": "13:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
+    "date": "Apr 08 2026",
+    "starting": "10:20",
+    "hall": "Z-17 Hukuk Amfi",
+    "created_at": "2026-03-16T23:41:09.798642+00:00"
   },
   {
-    "id": "MAN-1771803335023-833",
-    "code": "MAN  433",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 09 2026",
-    "starting": "10:00",
-    "hall": "Amfi-4 (MERKEZ KAMPÜS) Amfi-5 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-834",
-    "code": "MAN  438",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 08 2026",
-    "starting": "10:00",
-    "hall": "K102 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-835",
-    "code": "MAN  445",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 05 2026",
-    "starting": "15:00",
-    "hall": "KA03 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-836",
-    "code": "MAN  448",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 13 2026",
-    "starting": "15:00",
-    "hall": "K101 (MERKEZ KAMPÜS)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-837",
-    "code": "MAN  503",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 07 2026",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-104/105",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-838",
-    "code": "MAN  505",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 18 2026",
-    "starting": "14:00",
-    "hall": "BALGAT KAMPÜSÜ A-301 (Stüdyo)",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-839",
-    "code": "MAN  515",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 12 2026",
-    "starting": "19:00",
-    "hall": "BALGAT KAMPÜSÜ A-104/105",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-840",
-    "code": "MAN  519",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 15 2026",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-104/105",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-841",
-    "code": "MAN  526",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 16 2026",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-104/105",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-842",
-    "code": "MAN  569",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 06 2026",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ S.B. ENSTİTÜSÜ No:1",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-843",
-    "code": "MAN  573",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 07 2026",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-201",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-844",
-    "code": "MAN  575",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 15 2026",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-202",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MAN-1771803335023-845",
-    "code": "MAN  604",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 08 2026",
-    "starting": "17:00",
-    "hall": "BALGAT KAMPÜSÜ S.B. ENSTİTÜSÜ No:1",
-    "created_at": "2026-02-22T23:35:35.434991+00:00"
-  },
-  {
-    "id": "MATH-1773617927410-144",
+    "id": "MATH-1773704487967-189",
     "code": "MATH 104",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -6982,10 +6454,10 @@
     "date": "Mar 25 2026",
     "starting": "09:30",
     "hall": "RA04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927410-145",
+    "id": "MATH-1773704487967-190",
     "code": "MATH 106",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -6993,10 +6465,10 @@
     "date": "Mar 27 2026",
     "starting": "13:50",
     "hall": "B-08 Hukuk-Mimarlık Amfi",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927410-146",
+    "id": "MATH-1773704487967-191",
     "code": "MATH 112",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7004,10 +6476,10 @@
     "date": "Mar 27 2026",
     "starting": "13:50",
     "hall": "Amfi-5 (MERKEZ KAMPÜS) Amfi-6 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927410-147",
+    "id": "MATH-1773704487967-192",
     "code": "MATH 157",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7015,10 +6487,10 @@
     "date": "Mar 27 2026",
     "starting": "13:50",
     "hall": "NB02 (MERKEZ KAMPÜS) NA02 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS) MA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927410-148",
+    "id": "MATH-1773704487968-193",
     "code": "MATH 158",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7026,10 +6498,10 @@
     "date": "Apr 17 2026",
     "starting": "13:50",
     "hall": "PA01 (MERKEZ KAMPÜS) P101 (MERKEZ KAMPÜS) NB02 (MERKEZ KAMPÜS) NA02 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS) MA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927410-149",
+    "id": "MATH-1773704487968-194",
     "code": "MATH 205",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7037,10 +6509,10 @@
     "date": "Apr 03 2026",
     "starting": "13:50",
     "hall": "Z-16 Hukuk Amfi Z-17 Hukuk Amfi RA04 (MERKEZ KAMPÜS) RA05 (MERKEZ KAMPÜS) RB03 (MERKEZ KAMPÜS) RB04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927410-150",
+    "id": "MATH-1773704487968-195",
     "code": "MATH 253",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7048,10 +6520,10 @@
     "date": "Apr 03 2026",
     "starting": "13:50",
     "hall": "LB05 (MERKEZ KAMPÜS) LB06 (MERKEZ KAMPÜS) LB07 (MERKEZ KAMPÜS) LA14 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927410-151",
+    "id": "MATH-1773704487968-196",
     "code": "MATH 254",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7059,10 +6531,10 @@
     "date": "Apr 10 2026",
     "starting": "13:50",
     "hall": "Amfi-2 (MERKEZ KAMPÜS) Amfi-4 (MERKEZ KAMPÜS) Amfi-5 (MERKEZ KAMPÜS) Amfi-6 (MERKEZ KAMPÜS) HA04 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927411-152",
+    "id": "MATH-1773704487968-197",
     "code": "MATH 104",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -7070,10 +6542,10 @@
     "date": "Jun 01 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927411-153",
+    "id": "MATH-1773704487968-198",
     "code": "MATH 106",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -7081,10 +6553,10 @@
     "date": "Jun 01 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927411-154",
+    "id": "MATH-1773704487968-199",
     "code": "MATH 112",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -7092,10 +6564,10 @@
     "date": "Jun 01 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927411-155",
+    "id": "MATH-1773704487968-200",
     "code": "MATH 157",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -7103,10 +6575,10 @@
     "date": "Jun 02 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927411-156",
+    "id": "MATH-1773704487968-201",
     "code": "MATH 205",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -7114,10 +6586,10 @@
     "date": "Jun 09 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "MATH-1773617927411-157",
+    "id": "MATH-1773704487968-202",
     "code": "MATH 253",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -7125,10 +6597,10 @@
     "date": "Jun 09 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:38:47.76689+00:00"
+    "created_at": "2026-03-16T23:41:28.236154+00:00"
   },
   {
-    "id": "ME-1773617939988-158",
+    "id": "ME-1773704500475-203",
     "code": "ME   102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7136,10 +6608,10 @@
     "date": "Apr 09 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939988-159",
+    "id": "ME-1773704500475-204",
     "code": "ME   113",
     "section": "1",
     "exam": "1. Midterm",
@@ -7147,10 +6619,10 @@
     "date": "Apr 16 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939988-160",
+    "id": "ME-1773704500475-205",
     "code": "ME   114",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7158,10 +6630,10 @@
     "date": "Apr 02 2026",
     "starting": "15:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939988-161",
+    "id": "ME-1773704500476-206",
     "code": "ME   202",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7169,10 +6641,10 @@
     "date": "Mar 25 2026",
     "starting": "09:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939988-162",
+    "id": "ME-1773704500476-207",
     "code": "ME   203",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7180,10 +6652,10 @@
     "date": "Mar 30 2026",
     "starting": "14:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-163",
+    "id": "ME-1773704500476-208",
     "code": "ME   206",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7191,10 +6663,10 @@
     "date": "Mar 30 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-164",
+    "id": "ME-1773704500476-209",
     "code": "ME   445",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7202,10 +6674,10 @@
     "date": "Apr 14 2026",
     "starting": "10:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-165",
+    "id": "ME-1773704500476-210",
     "code": "ME   458",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7213,10 +6685,10 @@
     "date": "Apr 20 2026",
     "starting": "10:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-166",
+    "id": "ME-1773704500476-211",
     "code": "ME   463",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7224,10 +6696,10 @@
     "date": "May 06 2026",
     "starting": "14:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-167",
+    "id": "ME-1773704500476-212",
     "code": "ME   304",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7235,10 +6707,10 @@
     "date": "Apr 10 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-168",
+    "id": "ME-1773704500476-213",
     "code": "ME   308",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7246,10 +6718,10 @@
     "date": "Apr 14 2026",
     "starting": "15:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-169",
+    "id": "ME-1773704500476-214",
     "code": "ME   312",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7257,10 +6729,10 @@
     "date": "Apr 07 2026",
     "starting": "10:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-170",
+    "id": "ME-1773704500476-215",
     "code": "ME   402",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7268,10 +6740,10 @@
     "date": "May 07 2026",
     "starting": "10:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-171",
+    "id": "ME-1773704500476-216",
     "code": "ME   408",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7279,10 +6751,10 @@
     "date": "Apr 30 2026",
     "starting": "15:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-172",
+    "id": "ME-1773704500476-217",
     "code": "ME   415",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7290,10 +6762,10 @@
     "date": "Apr 17 2026",
     "starting": "13:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-173",
+    "id": "ME-1773704500476-218",
     "code": "ME   210",
     "section": "1",
     "exam": "1. Midterm",
@@ -7301,10 +6773,10 @@
     "date": "Apr 15 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939989-174",
+    "id": "ME-1773704500476-219",
     "code": "ME   210",
     "section": "2",
     "exam": "1. Midterm",
@@ -7312,10 +6784,10 @@
     "date": "Apr 15 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-175",
+    "id": "ME-1773704500476-220",
     "code": "ME   210",
     "section": "3",
     "exam": "1. Midterm",
@@ -7323,10 +6795,10 @@
     "date": "Apr 15 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-176",
+    "id": "ME-1773704500476-221",
     "code": "ME   210",
     "section": "4",
     "exam": "1. Midterm",
@@ -7334,10 +6806,10 @@
     "date": "Apr 15 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-177",
+    "id": "ME-1773704500476-222",
     "code": "ME   212",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7345,10 +6817,10 @@
     "date": "Mar 27 2026",
     "starting": "13:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-178",
+    "id": "ME-1773704500477-223",
     "code": "ME   302",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7356,10 +6828,10 @@
     "date": "Apr 17 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-179",
+    "id": "ME-1773704500477-224",
     "code": "ME   113",
     "section": "1",
     "exam": "2. Midterm",
@@ -7367,10 +6839,10 @@
     "date": "May 21 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-180",
+    "id": "ME-1773704500477-225",
     "code": "ME   114",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7378,10 +6850,10 @@
     "date": "May 14 2026",
     "starting": "15:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-181",
+    "id": "ME-1773704500477-226",
     "code": "ME   202",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7389,10 +6861,10 @@
     "date": "Apr 22 2026",
     "starting": "09:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-182",
+    "id": "ME-1773704500477-227",
     "code": "ME   203",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7400,10 +6872,10 @@
     "date": "Apr 27 2026",
     "starting": "14:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939990-183",
+    "id": "ME-1773704500477-228",
     "code": "ME   206",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7411,10 +6883,10 @@
     "date": "Apr 27 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939991-184",
+    "id": "ME-1773704500477-229",
     "code": "ME   212",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7422,10 +6894,10 @@
     "date": "May 08 2026",
     "starting": "13:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "ME-1773617939991-185",
+    "id": "ME-1773704500477-230",
     "code": "ME   304",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7433,10 +6905,21 @@
     "date": "May 15 2026",
     "starting": "15:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:00.335394+00:00"
+    "created_at": "2026-03-16T23:41:40.824001+00:00"
   },
   {
-    "id": "MECE-1773617946688-186",
+    "id": "MECE-1773704507499-231",
+    "code": "MECE 114",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 01 2026",
+    "starting": "15:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
+  },
+  {
+    "id": "MECE-1773704507499-232",
     "code": "MECE 202",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7444,10 +6927,10 @@
     "date": "Apr 07 2026",
     "starting": "14:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946688-187",
+    "id": "MECE-1773704507499-233",
     "code": "MECE 206",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7455,10 +6938,10 @@
     "date": "Apr 01 2026",
     "starting": "14:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946688-188",
+    "id": "MECE-1773704507499-234",
     "code": "MECE 212",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7466,10 +6949,10 @@
     "date": "Mar 30 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946688-189",
+    "id": "MECE-1773704507499-235",
     "code": "MECE 218",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7477,10 +6960,10 @@
     "date": "Apr 16 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-190",
+    "id": "MECE-1773704507499-236",
     "code": "MECE 234",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7488,10 +6971,10 @@
     "date": "Apr 08 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-191",
+    "id": "MECE-1773704507499-237",
     "code": "MECE 302",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7499,10 +6982,10 @@
     "date": "Apr 14 2026",
     "starting": "14:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-192",
+    "id": "MECE-1773704507499-238",
     "code": "MECE 306",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7510,10 +6993,10 @@
     "date": "Apr 01 2026",
     "starting": "09:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-193",
+    "id": "MECE-1773704507499-239",
     "code": "MECE 307",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7521,10 +7004,10 @@
     "date": "Apr 16 2026",
     "starting": "13:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-194",
+    "id": "MECE-1773704507500-240",
     "code": "MECE 308",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7532,10 +7015,10 @@
     "date": "Apr 17 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-195",
+    "id": "MECE-1773704507500-241",
     "code": "MECE 340",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7543,10 +7026,10 @@
     "date": "Apr 07 2026",
     "starting": "09:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-196",
+    "id": "MECE-1773704507500-242",
     "code": "MECE 486",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -7554,10 +7037,21 @@
     "date": "Apr 24 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-197",
+    "id": "MECE-1773704507500-243",
+    "code": "MECE 114",
+    "section": "Tüm Gruplar",
+    "exam": "2. Midterm",
+    "duration": "2 Saat",
+    "date": "May 13 2026",
+    "starting": "15:20",
+    "hall": "Belirsiz",
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
+  },
+  {
+    "id": "MECE-1773704507500-244",
     "code": "MECE 202",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7565,10 +7059,10 @@
     "date": "May 12 2026",
     "starting": "14:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946689-198",
+    "id": "MECE-1773704507500-245",
     "code": "MECE 206",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7576,10 +7070,10 @@
     "date": "May 06 2026",
     "starting": "14:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946690-199",
+    "id": "MECE-1773704507500-246",
     "code": "MECE 212",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7587,10 +7081,10 @@
     "date": "Apr 27 2026",
     "starting": "11:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946690-200",
+    "id": "MECE-1773704507500-247",
     "code": "MECE 307",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7598,10 +7092,10 @@
     "date": "May 21 2026",
     "starting": "13:50",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946690-201",
+    "id": "MECE-1773704507500-248",
     "code": "MECE 308",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7609,10 +7103,10 @@
     "date": "May 15 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
-    "id": "MECE-1773617946690-202",
+    "id": "MECE-1773704507500-249",
     "code": "MECE 486",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -7620,7 +7114,7 @@
     "date": "May 22 2026",
     "starting": "13:20",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:07.005179+00:00"
+    "created_at": "2026-03-16T23:41:47.812697+00:00"
   },
   {
     "id": "MIS-1771803388539-1004",
@@ -8019,7 +7513,7 @@
     "created_at": "2026-02-22T23:36:35.484566+00:00"
   },
   {
-    "id": "OTT-1773617979818-203",
+    "id": "OTT-1773704540676-250",
     "code": "OTT  101",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -8027,10 +7521,10 @@
     "date": "Apr 07 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:40.142601+00:00"
+    "created_at": "2026-03-16T23:42:20.988897+00:00"
   },
   {
-    "id": "OTT-1773617979818-204",
+    "id": "OTT-1773704540676-251",
     "code": "OTT  101",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -8038,10 +7532,10 @@
     "date": "Jun 12 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:40.142601+00:00"
+    "created_at": "2026-03-16T23:42:20.988897+00:00"
   },
   {
-    "id": "OTT-1773617979818-205",
+    "id": "OTT-1773704540676-252",
     "code": "OTT  101",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -8049,10 +7543,10 @@
     "date": "Apr 24 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:40.142601+00:00"
+    "created_at": "2026-03-16T23:42:20.988897+00:00"
   },
   {
-    "id": "OTT-1773617979818-206",
+    "id": "OTT-1773704540676-253",
     "code": "OTT  101",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -8060,10 +7554,10 @@
     "date": "Jun 16 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:39:40.142601+00:00"
+    "created_at": "2026-03-16T23:42:20.988897+00:00"
   },
   {
-    "id": "PHYS-1773618002801-207",
+    "id": "PHYS-1773704563532-254",
     "code": "PHYS 131",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -8071,10 +7565,10 @@
     "date": "Apr 10 2026",
     "starting": "13:40",
     "hall": "NA02 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:40:03.125397+00:00"
+    "created_at": "2026-03-16T23:42:43.847655+00:00"
   },
   {
-    "id": "PHYS-1773618002802-208",
+    "id": "PHYS-1773704563532-255",
     "code": "PHYS 132",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -8082,10 +7576,10 @@
     "date": "Apr 24 2026",
     "starting": "13:40",
     "hall": "HA04 (MERKEZ KAMPÜS) HA02 (MERKEZ KAMPÜS) HA03 (MERKEZ KAMPÜS) PA01 (MERKEZ KAMPÜS) NB02 (MERKEZ KAMPÜS) NA02 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS) MB07 (MERKEZ KAMPÜS) MA02 (MERKEZ KAMPÜS) M102 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:40:03.125397+00:00"
+    "created_at": "2026-03-16T23:42:43.847655+00:00"
   },
   {
-    "id": "PHYS-1773618002802-209",
+    "id": "PHYS-1773704563532-256",
     "code": "PHYS 131",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -8093,10 +7587,10 @@
     "date": "Jun 05 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:03.125397+00:00"
+    "created_at": "2026-03-16T23:42:43.847655+00:00"
   },
   {
-    "id": "PHYS-1773618002802-210",
+    "id": "PHYS-1773704563532-257",
     "code": "PHYS 132",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -8104,10 +7598,10 @@
     "date": "Jun 03 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:03.125397+00:00"
+    "created_at": "2026-03-16T23:42:43.847655+00:00"
   },
   {
-    "id": "PHYS-1773618002802-211",
+    "id": "PHYS-1773704563532-258",
     "code": "PHYS 131",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -8115,10 +7609,10 @@
     "date": "May 15 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:03.125397+00:00"
+    "created_at": "2026-03-16T23:42:43.847655+00:00"
   },
   {
-    "id": "PHYS-1773618002802-212",
+    "id": "PHYS-1773704563532-259",
     "code": "PHYS 131",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -8126,10 +7620,10 @@
     "date": "Jun 15 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:03.125397+00:00"
+    "created_at": "2026-03-16T23:42:43.847655+00:00"
   },
   {
-    "id": "PHYS-1773618002802-213",
+    "id": "PHYS-1773704563532-260",
     "code": "PHYS 132",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -8137,10 +7631,10 @@
     "date": "May 15 2026",
     "starting": "13:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:03.125397+00:00"
+    "created_at": "2026-03-16T23:42:43.847655+00:00"
   },
   {
-    "id": "PHYS-1773618002802-214",
+    "id": "PHYS-1773704563532-261",
     "code": "PHYS 132",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -8148,7 +7642,7 @@
     "date": "Jun 15 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:03.125397+00:00"
+    "created_at": "2026-03-16T23:42:43.847655+00:00"
   },
   {
     "id": "PMY-1771803452994-1058",
@@ -8987,7 +8481,7 @@
     "created_at": "2026-02-22T23:37:49.880216+00:00"
   },
   {
-    "id": "RME-1773618030603-215",
+    "id": "RME-1773704591180-262",
     "code": "RME  500",
     "section": "2",
     "exam": "1. Midterm",
@@ -8995,10 +8489,10 @@
     "date": "Apr 13 2026",
     "starting": "18:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:30.934657+00:00"
+    "created_at": "2026-03-16T23:43:13.169133+00:00"
   },
   {
-    "id": "RME-1773618030603-216",
+    "id": "RME-1773704591180-263",
     "code": "RME  500",
     "section": "2",
     "exam": "1. Midterm",
@@ -9006,10 +8500,10 @@
     "date": "Apr 13 2026",
     "starting": "18:30",
     "hall": "BALGAT KAMPÜSÜ A-207/208",
-    "created_at": "2026-03-15T23:40:30.934657+00:00"
+    "created_at": "2026-03-16T23:43:13.169133+00:00"
   },
   {
-    "id": "RME-1773618030603-217",
+    "id": "RME-1773704591180-264",
     "code": "RME  500",
     "section": "2",
     "exam": "Final",
@@ -9017,10 +8511,10 @@
     "date": "Jun 01 2026",
     "starting": "18:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:30.934657+00:00"
+    "created_at": "2026-03-16T23:43:13.169133+00:00"
   },
   {
-    "id": "RME-1773618030604-218",
+    "id": "RME-1773704591181-265",
     "code": "RME  500",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9028,10 +8522,10 @@
     "date": "Jun 01 2026",
     "starting": "18:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:30.934657+00:00"
+    "created_at": "2026-03-16T23:43:13.169133+00:00"
   },
   {
-    "id": "RME-1773618030604-219",
+    "id": "RME-1773704591181-266",
     "code": "RME  500",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -9039,10 +8533,10 @@
     "date": "Apr 20 2026",
     "starting": "18:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:30.934657+00:00"
+    "created_at": "2026-03-16T23:43:13.169133+00:00"
   },
   {
-    "id": "RME-1773618030604-220",
+    "id": "RME-1773704591181-267",
     "code": "RME  500",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -9050,10 +8544,10 @@
     "date": "Jun 08 2026",
     "starting": "18:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:30.934657+00:00"
+    "created_at": "2026-03-16T23:43:13.169133+00:00"
   },
   {
-    "id": "RUS-1773618047526-221",
+    "id": "RUS-1773704609929-268",
     "code": "RUS  101",
     "section": "1",
     "exam": "1. Midterm",
@@ -9061,10 +8555,10 @@
     "date": "Apr 09 2026",
     "starting": "10:20",
     "hall": "Haz. Ek Bina 214",
-    "created_at": "2026-03-15T23:40:47.827536+00:00"
+    "created_at": "2026-03-16T23:43:30.199156+00:00"
   },
   {
-    "id": "RUS-1773618047526-222",
+    "id": "RUS-1773704609929-269",
     "code": "RUS  101",
     "section": "2",
     "exam": "1. Midterm",
@@ -9072,10 +8566,10 @@
     "date": "Apr 10 2026",
     "starting": "10:20",
     "hall": "Haz. Ek Bina 214",
-    "created_at": "2026-03-15T23:40:47.827536+00:00"
+    "created_at": "2026-03-16T23:43:30.199156+00:00"
   },
   {
-    "id": "RUS-1773618047526-223",
+    "id": "RUS-1773704609929-270",
     "code": "RUS  102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -9083,10 +8577,10 @@
     "date": "Apr 09 2026",
     "starting": "13:20",
     "hall": "Haz. Ek Bina 214",
-    "created_at": "2026-03-15T23:40:47.827536+00:00"
+    "created_at": "2026-03-16T23:43:30.199156+00:00"
   },
   {
-    "id": "RUS-1773618047526-224",
+    "id": "RUS-1773704609929-271",
     "code": "RUS  101",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9094,10 +8588,10 @@
     "date": "Jun 04 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:47.827536+00:00"
+    "created_at": "2026-03-16T23:43:30.199156+00:00"
   },
   {
-    "id": "RUS-1773618047526-225",
+    "id": "RUS-1773704609929-272",
     "code": "RUS  102",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9105,7 +8599,7 @@
     "date": "Jun 04 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:47.827536+00:00"
+    "created_at": "2026-03-16T23:43:30.199156+00:00"
   },
   {
     "id": "SENG-1771803500629-1144",
@@ -9372,7 +8866,7 @@
     "created_at": "2026-02-22T23:38:21.039336+00:00"
   },
   {
-    "id": "SOC-1773618058952-226",
+    "id": "SOC-1773704621262-273",
     "code": "SOC  102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -9380,10 +8874,10 @@
     "date": "Apr 10 2026",
     "starting": "13:40",
     "hall": "NB02 (MERKEZ KAMPÜS) NA06 (MERKEZ KAMPÜS) NB06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:40:59.253905+00:00"
+    "created_at": "2026-03-16T23:43:41.543481+00:00"
   },
   {
-    "id": "SOC-1773618058952-227",
+    "id": "SOC-1773704621262-274",
     "code": "SOC  102",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9391,10 +8885,10 @@
     "date": "Jun 03 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:40:59.253905+00:00"
+    "created_at": "2026-03-16T23:43:41.543481+00:00"
   },
   {
-    "id": "STAT-1773618075925-228",
+    "id": "STAT-1773704638085-275",
     "code": "STAT 102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -9402,10 +8896,10 @@
     "date": "Apr 10 2026",
     "starting": "13:40",
     "hall": "LA15 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:41:16.227001+00:00"
+    "created_at": "2026-03-16T23:43:58.379635+00:00"
   },
   {
-    "id": "STAT-1773618075925-229",
+    "id": "STAT-1773704638085-276",
     "code": "STAT 202",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -9413,10 +8907,10 @@
     "date": "Apr 10 2026",
     "starting": "13:40",
     "hall": "Amfi-3 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:41:16.227001+00:00"
+    "created_at": "2026-03-16T23:43:58.379635+00:00"
   },
   {
-    "id": "STAT-1773618075925-230",
+    "id": "STAT-1773704638085-277",
     "code": "STAT 206",
     "section": "2",
     "exam": "1. Midterm",
@@ -9424,10 +8918,10 @@
     "date": "Apr 10 2026",
     "starting": "13:40",
     "hall": "MA02 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:41:16.227001+00:00"
+    "created_at": "2026-03-16T23:43:58.379635+00:00"
   },
   {
-    "id": "STAT-1773618075925-231",
+    "id": "STAT-1773704638085-278",
     "code": "STAT 102",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9435,10 +8929,10 @@
     "date": "Jun 03 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:16.227001+00:00"
+    "created_at": "2026-03-16T23:43:58.379635+00:00"
   },
   {
-    "id": "STAT-1773618075925-232",
+    "id": "STAT-1773704638085-279",
     "code": "STAT 202",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9446,10 +8940,10 @@
     "date": "Jun 03 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:16.227001+00:00"
+    "created_at": "2026-03-16T23:43:58.379635+00:00"
   },
   {
-    "id": "STAT-1773618075925-233",
+    "id": "STAT-1773704638085-280",
     "code": "STAT 206",
     "section": "2",
     "exam": "Final",
@@ -9457,10 +8951,10 @@
     "date": "Jun 03 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:16.227001+00:00"
+    "created_at": "2026-03-16T23:43:58.379635+00:00"
   },
   {
-    "id": "THEA-1773618082176-234",
+    "id": "THEA-1773704644260-281",
     "code": "THEA 270",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -9468,10 +8962,10 @@
     "date": "Apr 10 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:22.492066+00:00"
+    "created_at": "2026-03-16T23:44:04.597875+00:00"
   },
   {
-    "id": "THEA-1773618082176-235",
+    "id": "THEA-1773704644260-282",
     "code": "THEA 274",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -9479,10 +8973,10 @@
     "date": "Apr 10 2026",
     "starting": "13:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:22.492066+00:00"
+    "created_at": "2026-03-16T23:44:04.597875+00:00"
   },
   {
-    "id": "THEA-1773618082176-236",
+    "id": "THEA-1773704644260-283",
     "code": "THEA 280",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -9490,10 +8984,10 @@
     "date": "Apr 10 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:22.492066+00:00"
+    "created_at": "2026-03-16T23:44:04.597875+00:00"
   },
   {
-    "id": "THEA-1773618082176-237",
+    "id": "THEA-1773704644261-284",
     "code": "THEA 287",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -9501,10 +8995,10 @@
     "date": "Apr 10 2026",
     "starting": "11:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:22.492066+00:00"
+    "created_at": "2026-03-16T23:44:04.597875+00:00"
   },
   {
-    "id": "THEA-1773618082176-238",
+    "id": "THEA-1773704644261-285",
     "code": "THEA 270",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9512,10 +9006,10 @@
     "date": "Jun 03 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:22.492066+00:00"
+    "created_at": "2026-03-16T23:44:04.597875+00:00"
   },
   {
-    "id": "THEA-1773618082176-239",
+    "id": "THEA-1773704644261-286",
     "code": "THEA 274",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9523,10 +9017,10 @@
     "date": "Jun 03 2026",
     "starting": "13:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:22.492066+00:00"
+    "created_at": "2026-03-16T23:44:04.597875+00:00"
   },
   {
-    "id": "THEA-1773618082176-240",
+    "id": "THEA-1773704644261-287",
     "code": "THEA 280",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9534,10 +9028,10 @@
     "date": "Jun 03 2026",
     "starting": "12:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:22.492066+00:00"
+    "created_at": "2026-03-16T23:44:04.597875+00:00"
   },
   {
-    "id": "THEA-1773618082176-241",
+    "id": "THEA-1773704644261-288",
     "code": "THEA 287",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -9545,7 +9039,7 @@
     "date": "Jun 03 2026",
     "starting": "11:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:22.492066+00:00"
+    "created_at": "2026-03-16T23:44:04.597875+00:00"
   },
   {
     "id": "TINS-1771803543957-1200",
@@ -10054,7 +9548,7 @@
     "created_at": "2026-02-22T23:39:04.316492+00:00"
   },
   {
-    "id": "TURK-1773618100666-242",
+    "id": "TURK-1773704662744-289",
     "code": "TURK 101",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -10062,10 +9556,10 @@
     "date": "Apr 24 2026",
     "starting": "15:40",
     "hall": "NB02 (MERKEZ KAMPÜS) NB06 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-243",
+    "id": "TURK-1773704662744-290",
     "code": "TURK 102",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -10073,10 +9567,10 @@
     "date": "Apr 03 2026",
     "starting": "14:40",
     "hall": "B-08 Hukuk-Mimarlık Amfi B-09 Hukuk-Mimarlık Amfi B-10 Hukuk-Mimarlık Amfi B-11 Hukuk-Mimarlık Amfi B-12 Hukuk-Mimarlık Amfi Amfi-3 (MERKEZ KAMPÜS) Amfi-2 (MERKEZ KAMPÜS) Amfi-4 (MERKEZ KAMPÜS) Amfi-5 (MERKEZ KAMPÜS) Amfi-6 (MERKEZ KAMPÜS) HA04 (MERKEZ KAMPÜS) PA01 (MERKEZ KAMPÜS) P101 (MERKEZ KAMPÜS) NB02 (MERKEZ KAMPÜS) NA02 (MERKEZ KAMPÜS) NA01 (MERKEZ KAMPÜS) MB07 (MERKEZ KAMPÜS) MA02 (MERKEZ KAMPÜS) M102 (MERKEZ KAMPÜS)",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-244",
+    "id": "TURK-1773704662744-291",
     "code": "TURK 106",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -10084,10 +9578,10 @@
     "date": "Mar 30 2026",
     "starting": "13:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-245",
+    "id": "TURK-1773704662744-292",
     "code": "TURK 107",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
@@ -10095,10 +9589,10 @@
     "date": "Apr 03 2026",
     "starting": "09:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-246",
+    "id": "TURK-1773704662744-293",
     "code": "TURK 101",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -10106,10 +9600,10 @@
     "date": "Jun 03 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-247",
+    "id": "TURK-1773704662744-294",
     "code": "TURK 102",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -10117,10 +9611,10 @@
     "date": "Jun 02 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-248",
+    "id": "TURK-1773704662744-295",
     "code": "TURK 103",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -10128,10 +9622,10 @@
     "date": "Jun 02 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-249",
+    "id": "TURK-1773704662744-296",
     "code": "TURK 106",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -10139,10 +9633,10 @@
     "date": "Jun 01 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-250",
+    "id": "TURK-1773704662744-297",
     "code": "TURK 107",
     "section": "Tüm Gruplar",
     "exam": "Final",
@@ -10150,10 +9644,10 @@
     "date": "Jun 01 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100666-251",
+    "id": "TURK-1773704662745-298",
     "code": "TURK 103",
     "section": "Tüm Gruplar",
     "exam": "Bütünleme",
@@ -10161,10 +9655,10 @@
     "date": "Jun 29 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100667-252",
+    "id": "TURK-1773704662745-299",
     "code": "TURK 101",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10172,10 +9666,10 @@
     "date": "May 08 2026",
     "starting": "14:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100667-253",
+    "id": "TURK-1773704662745-300",
     "code": "TURK 101",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10183,10 +9677,10 @@
     "date": "Jun 16 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100667-254",
+    "id": "TURK-1773704662745-301",
     "code": "TURK 102",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10194,10 +9688,10 @@
     "date": "May 08 2026",
     "starting": "14:40",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100667-255",
+    "id": "TURK-1773704662745-302",
     "code": "TURK 102",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10205,10 +9699,10 @@
     "date": "Jun 16 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100667-256",
+    "id": "TURK-1773704662745-303",
     "code": "TURK 106",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10216,10 +9710,10 @@
     "date": "Apr 13 2026",
     "starting": "10:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100667-257",
+    "id": "TURK-1773704662745-304",
     "code": "TURK 106",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10227,10 +9721,10 @@
     "date": "Jun 15 2026",
     "starting": "15:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100667-258",
+    "id": "TURK-1773704662745-305",
     "code": "TURK 107",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10238,10 +9732,10 @@
     "date": "Apr 13 2026",
     "starting": "16:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "TURK-1773618100667-259",
+    "id": "TURK-1773704662745-306",
     "code": "TURK 107",
     "section": "Tüm Gruplar",
     "exam": "Mazeret",
@@ -10249,120 +9743,65 @@
     "date": "Jun 15 2026",
     "starting": "12:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:40.994621+00:00"
+    "created_at": "2026-03-16T23:44:23.054812+00:00"
   },
   {
-    "id": "UTL-1771803559916-1273",
-    "code": "UTL  501",
+    "id": "UTL-1773704669226-307",
+    "code": "UTL  503",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 07 2025",
-    "starting": "19:30",
-    "hall": "BALGAT KAMPÜSÜ A-306",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
-  },
-  {
-    "id": "UTL-1771803559916-1274",
-    "code": "UTL  502",
-    "section": "Tüm Gruplar",
-    "exam": "1. Midterm",
-    "duration": "2 Saat",
-    "date": "Nov 20 2025",
+    "date": "Apr 08 2026",
     "starting": "18:30",
     "hall": "BALGAT KAMPÜSÜ A-306",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
+    "created_at": "2026-03-16T23:44:29.707126+00:00"
   },
   {
-    "id": "UTL-1771803559916-1275",
-    "code": "UTL  509",
+    "id": "UTL-1773704669226-308",
+    "code": "UTL  505",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 24 2025",
+    "date": "Apr 03 2026",
     "starting": "18:30",
     "hall": "BALGAT KAMPÜSÜ A-306",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
+    "created_at": "2026-03-16T23:44:29.707126+00:00"
   },
   {
-    "id": "UTL-1771803559916-1276",
-    "code": "UTL  515",
+    "id": "UTL-1773704669226-309",
+    "code": "UTL  513",
     "section": "Tüm Gruplar",
     "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Nov 05 2025",
-    "starting": "19:30",
+    "date": "Apr 06 2026",
+    "starting": "18:30",
+    "hall": "BALGAT KAMPÜSÜ A-306",
+    "created_at": "2026-03-16T23:44:29.707126+00:00"
+  },
+  {
+    "id": "UTL-1773704669226-310",
+    "code": "UTL  514",
+    "section": "Tüm Gruplar",
+    "exam": "1. Midterm",
+    "duration": "2 Saat",
+    "date": "Apr 16 2026",
+    "starting": "18:30",
     "hall": "BALGAT KAMPÜSÜ A-323",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
+    "created_at": "2026-03-16T23:44:29.707126+00:00"
   },
   {
-    "id": "UTL-1771803559916-1277",
-    "code": "UTL  501",
+    "id": "UTL-1773704669226-311",
+    "code": "UTL  520",
     "section": "Tüm Gruplar",
-    "exam": "2. Midterm",
+    "exam": "1. Midterm",
     "duration": "2 Saat",
-    "date": "Dec 12 2025",
-    "starting": "19:00",
-    "hall": "BALGAT KAMPÜSÜ A-306",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
-  },
-  {
-    "id": "UTL-1771803559916-1278",
-    "code": "UTL  515",
-    "section": "Tüm Gruplar",
-    "exam": "2. Midterm",
-    "duration": "2 Saat",
-    "date": "Dec 10 2025",
-    "starting": "19:00",
-    "hall": "BALGAT KAMPÜSÜ A-323",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
-  },
-  {
-    "id": "UTL-1771803559916-1279",
-    "code": "UTL  501",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 09 2026",
-    "starting": "19:00",
-    "hall": "BALGAT KAMPÜSÜ A-306",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
-  },
-  {
-    "id": "UTL-1771803559916-1280",
-    "code": "UTL  502",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 08 2026",
+    "date": "Apr 07 2026",
     "starting": "18:30",
     "hall": "BALGAT KAMPÜSÜ A-306",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
+    "created_at": "2026-03-16T23:44:29.707126+00:00"
   },
   {
-    "id": "UTL-1771803559916-1281",
-    "code": "UTL  509",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 14 2026",
-    "starting": "18:30",
-    "hall": "BALGAT KAMPÜSÜ A-306",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
-  },
-  {
-    "id": "UTL-1771803559916-1282",
-    "code": "UTL  515",
-    "section": "Tüm Gruplar",
-    "exam": "Final",
-    "duration": "2 Saat",
-    "date": "Jan 07 2026",
-    "starting": "19:00",
-    "hall": "BALGAT KAMPÜSÜ A-323",
-    "created_at": "2026-02-22T23:39:20.329088+00:00"
-  },
-  {
-    "id": "YBD-1773618113373-260",
+    "id": "YBD-1773704675248-312",
     "code": "YBD  109",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -10370,10 +9809,10 @@
     "date": "Apr 24 2026",
     "starting": "14:00",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:53.736121+00:00"
+    "created_at": "2026-03-16T23:44:35.582229+00:00"
   },
   {
-    "id": "YBD-1773618113373-261",
+    "id": "YBD-1773704675249-313",
     "code": "YBD  209",
     "section": "Tüm Gruplar",
     "exam": "2. Midterm",
@@ -10381,6 +9820,6 @@
     "date": "Apr 24 2026",
     "starting": "15:30",
     "hall": "Belirsiz",
-    "created_at": "2026-03-15T23:41:53.736121+00:00"
+    "created_at": "2026-03-16T23:44:35.582229+00:00"
   }
 ]
