@@ -2,6 +2,7 @@ require('dotenv').config();
 const { createClient } = require('@supabase/supabase-js');
 const axios = require('axios');
 const cheerio = require('cheerio');
+const pdfParse = require('pdf-parse');
 
 // --- GÜVENLİK AYARI ---
 const supabaseUrl = process.env.SUPABASE_URL;
@@ -20,7 +21,8 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
 
 // --- AYARLAR ---
 const MAX_DEPTH = 2;            // Link takip derinliği
-const MAX_PAGES_PER_DOMAIN = 100; // Her subdomain için max sayfa
+const MAX_PAGES_PER_DOMAIN = 150; // Her subdomain için max sayfa
+const MAX_PDF_SIZE = 20 * 1024 * 1024; // 20MB max PDF boyutu
 const CHUNK_SIZE = 500;          // Token başına chunk boyutu (yaklaşık)
 const CHUNK_OVERLAP = 50;        // Chunk'lar arası örtüşme
 
@@ -60,8 +62,12 @@ const SUBDOMAINS = [
     'https://kariyer.cankaya.edu.tr',
 ];
 
-// Atlanacak uzantılar
-const SKIP_EXTENSIONS = /\.(pdf|jpg|jpeg|png|gif|svg|webp|mp4|mp3|wav|zip|rar|doc|docx|xls|xlsx|ppt|pptx|exe|dmg)$/i;
+// Atlanacak uzantılar (resim, video, arşiv — PDF HARİÇ, onları ayrı işliyoruz)
+const SKIP_EXTENSIONS = /\.(jpg|jpeg|png|gif|svg|webp|ico|bmp|tiff|mp4|mp3|wav|avi|mov|zip|rar|7z|tar|gz|exe|dmg|msi)$/i;
+// PDF ayrı işlenecek
+const PDF_EXTENSION = /\.pdf$/i;
+// doc/docx/xls/xlsx/ppt/pptx -> şimdilik atla (ileride eklenebilir)
+const OFFICE_EXTENSIONS = /\.(doc|docx|xls|xlsx|ppt|pptx)$/i;
 
 // =====================================================
 // EMBEDDING FONKSİYONU
@@ -129,7 +135,7 @@ function htmlToText(html) {
 }
 
 // =====================================================
-// SAYFA CRAWL
+// SAYFA CRAWL (HTML)
 // =====================================================
 async function fetchPage(url) {
     try {
@@ -149,17 +155,53 @@ async function fetchPage(url) {
 
         return res.data;
     } catch (err) {
-        // Sessiz ol, bazı sayfalar 404 dönecek
         return null;
     }
 }
 
 // =====================================================
-// LINK ÇIKARMA
+// PDF İNDİR + METİN ÇIKAR
+// =====================================================
+async function fetchAndParsePdf(url) {
+    try {
+        const res = await axios.get(url, {
+            timeout: 30000,
+            headers: {
+                'User-Agent': 'EnginarBot/1.0 (Cankaya University Campus App Data Collector)',
+            },
+            responseType: 'arraybuffer',
+            maxContentLength: MAX_PDF_SIZE,
+            maxRedirects: 3
+        });
+
+        const buffer = Buffer.from(res.data);
+        const pdf = await pdfParse(buffer);
+
+        let text = pdf.text || '';
+        // Temizle
+        text = text
+            .replace(/\t/g, ' ')
+            .replace(/\n{3,}/g, '\n\n')
+            .replace(/ {2,}/g, ' ')
+            .trim();
+
+        const title = pdf.info?.Title || url.split('/').pop().replace('.pdf', '') || 'PDF Document';
+
+        return { text, title, pages: pdf.numpages || 0 };
+    } catch (err) {
+        if (err.response?.status === 404) return null;
+        console.error(`   ⚠️ PDF okunamadı (${url.split('/').pop()}): ${err.message}`);
+        return null;
+    }
+}
+
+// =====================================================
+// LINK ÇIKARMA (HTML + PDF ayrı)
 // =====================================================
 function extractLinks(html, baseUrl) {
     const $ = cheerio.load(html);
-    const links = new Set();
+    const htmlLinks = new Set();
+    const pdfLinks = new Set();
     const baseHost = new URL(baseUrl).hostname;
 
     $('a[href]').each((_, el) => {
@@ -169,23 +211,31 @@ function extractLinks(html, baseUrl) {
         // Anchor ve javascript linklerini atla
         if (href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
 
-        // Dosya uzantılarını atla
+        // Resim/video/arşiv atla
         if (SKIP_EXTENSIONS.test(href)) return;
+        // Office dosyaları atla
+        if (OFFICE_EXTENSIONS.test(href)) return;
 
         try {
             const fullUrl = new URL(href, baseUrl);
-            // Sadece aynı hostname'deki linkler
-            if (fullUrl.hostname === baseHost && fullUrl.protocol.startsWith('http')) {
-                // Query string ve hash'i temizle
+            // Aynı domain veya cankaya.edu.tr altındaki linkler
+            const isSameDomain = fullUrl.hostname === baseHost;
+            const isCankayaDomain = fullUrl.hostname.endsWith('cankaya.edu.tr');
+
+            if ((isSameDomain || isCankayaDomain) && fullUrl.protocol.startsWith('http')) {
                 fullUrl.hash = '';
-                links.add(fullUrl.href);
+                if (PDF_EXTENSION.test(fullUrl.pathname)) {
+                    pdfLinks.add(fullUrl.href);
+                } else if (isSameDomain) {
+                    htmlLinks.add(fullUrl.href);
+                }
             }
         } catch {
             // Geçersiz URL, atla
         }
     });
 
-    return links;
+    return { htmlLinks, pdfLinks };
 }
 
 // =====================================================
@@ -290,7 +340,7 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
 }
 
 // =====================================================
-// BİR SUBDOMAİN'İ TARA
+// BİR SUBDOMAİN'İ TARA (HTML + PDF)
 // =====================================================
 async function crawlSubdomain(baseUrl) {
     console.log(`\n${'─'.repeat(50)}`);
@@ -301,33 +351,32 @@ async function crawlSubdomain(baseUrl) {
     if (!sourceId) return;
 
     const visited = new Set();
+    const pdfQueue = new Set(); // PDF linkleri ayrı topla
     const queue = [{ url: baseUrl, depth: 0 }];
     let totalPages = 0;
+    let totalPdfs = 0;
     let totalChunks = 0;
 
+    // --- HTML SAYFALARINI TARA ---
     while (queue.length > 0 && totalPages < MAX_PAGES_PER_DOMAIN) {
         const { url, depth } = queue.shift();
 
-        // Zaten ziyaret edildiyse atla
         const normalizedUrl = url.replace(/\/$/, '');
         if (visited.has(normalizedUrl)) continue;
         visited.add(normalizedUrl);
 
-        // Sayfayı çek
         const html = await fetchPage(url);
         if (!html) continue;
 
-        // Metin çıkar
         const $ = cheerio.load(html);
         const title = $('title').text().trim() || url;
         const text = htmlToText(html);
 
-        // Çok kısa sayfaları atla (genelde boş veya redirect)
         if (text.length < 100) continue;
 
-        // Kaydet + vektörize
         const chunkCount = await saveDocumentAndChunks(sourceId, url, title, text, {
             source: 'subdomain_crawl',
+            type: 'html',
             domain: new URL(baseUrl).hostname
         });
 
@@ -335,22 +384,55 @@ async function crawlSubdomain(baseUrl) {
         totalChunks += chunkCount;
         console.log(`   📄 [${totalPages}] ${title.substring(0, 50)}... (${chunkCount} chunk)`);
 
-        // Derinlik kontrolü - alt linkleri kuyruğa ekle
+        // Linkleri çıkar
         if (depth < MAX_DEPTH) {
-            const links = extractLinks(html, url);
-            for (const link of links) {
+            const { htmlLinks, pdfLinks } = extractLinks(html, url);
+            for (const link of htmlLinks) {
                 const normLink = link.replace(/\/$/, '');
                 if (!visited.has(normLink)) {
                     queue.push({ url: link, depth: depth + 1 });
                 }
             }
+            // PDF linklerini topla
+            for (const pdfUrl of pdfLinks) {
+                pdfQueue.add(pdfUrl);
+            }
         }
 
-        await delay(300); // Sunucuyu yormamak için
+        await delay(300);
     }
 
-    console.log(`   ✅ ${baseUrl}: ${totalPages} sayfa, ${totalChunks} chunk kaydedildi`);
-    return { pages: totalPages, chunks: totalChunks };
+    // --- PDF'LERİ İŞLE ---
+    if (pdfQueue.size > 0) {
+        console.log(`   📎 ${pdfQueue.size} PDF bulundu, işleniyor...`);
+
+        for (const pdfUrl of pdfQueue) {
+            if (visited.has(pdfUrl)) continue;
+            visited.add(pdfUrl);
+
+            const pdfResult = await fetchAndParsePdf(pdfUrl);
+            if (!pdfResult || pdfResult.text.length < 100) continue;
+
+            const pdfName = decodeURIComponent(pdfUrl.split('/').pop() || 'document.pdf');
+
+            const chunkCount = await saveDocumentAndChunks(sourceId, pdfUrl, pdfResult.title || pdfName, pdfResult.text, {
+                source: 'subdomain_crawl',
+                type: 'pdf',
+                domain: new URL(baseUrl).hostname,
+                filename: pdfName,
+                pdf_pages: pdfResult.pages
+            });
+
+            totalPdfs++;
+            totalChunks += chunkCount;
+            console.log(`   📎 [PDF ${totalPdfs}] ${pdfName.substring(0, 50)} (${pdfResult.pages} sayfa, ${chunkCount} chunk)`);
+
+            await delay(500); // PDF'ler büyük, daha yavaş git
+        }
+    }
+
+    console.log(`   ✅ ${baseUrl}: ${totalPages} HTML + ${totalPdfs} PDF = ${totalChunks} chunk`);
+    return { pages: totalPages + totalPdfs, chunks: totalChunks };
 }
 
 // =====================================================
