@@ -1,0 +1,15 @@
+name = "enginar-chat"
+main = "index.js"
+compatibility_date = "2024-12-01"
+
+[vars]
+ENVIRONMENT = "production"
+
+# Secrets (wrangler secret put ile eklenir):
+# SUPABASE_URL
+# SUPABASE_SERVICE_KEY
+# GEMINI_API_KEY
+# GROQ_API_KEY
+
+# Custom domain (Cloudflare Dashboard'dan ayarlanır)
+# routes = [{ pattern = "api.kovan.myenginar.org/chat*", zone_name = "myenginar.org" }]
