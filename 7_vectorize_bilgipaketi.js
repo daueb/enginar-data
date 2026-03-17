@@ -109,7 +109,12 @@ async function saveChunks(sourceId, docUrl, title, text, metadata) {
         .select('doc_id, content_hash').eq('doc_id', docId).maybeSingle();
 
     if (existing) {
-        if (existing.content_hash === contentHash) return 0; // Değişmemiş
+        if (existing.content_hash === contentHash) {
+            // Chunk'lar gercekten var mi? (onceki run basarisiz olmus olabilir)
+            const { count } = await supabase.from('rag_chunks')
+                .select('id', { count: 'exact', head: true }).eq('doc_id', docId);
+            if (count && count > 0) return 0; // Chunk'lar mevcut, atla
+        }
         await supabase.from('rag_documents').update({
             title, content_hash: contentHash,
             source_type: metadata?.type || 'bilgipaketi',

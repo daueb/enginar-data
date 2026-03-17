@@ -381,8 +381,15 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
         .select('doc_id, content_hash').eq('doc_id', docId).maybeSingle();
 
     if (existing) {
-        // İçerik değişmediyse atla
-        if (existing.content_hash === contentHash) return 0;
+        // İçerik değişmediyse VE chunk'lar varsa atla
+        if (existing.content_hash === contentHash) {
+            // Chunk'lar gercekten var mi kontrol et (onceki run basarisiz olmus olabilir)
+            const { count } = await supabase.from('rag_chunks')
+                .select('id', { count: 'exact', head: true }).eq('doc_id', docId);
+            if (count && count > 0) return 0; // Gercekten atla, chunk'lar mevcut
+            // Chunk yok — tekrar olustur (asagiya devam et)
+            console.log(`   🔄 Chunk'lar eksik, tekrar oluşturuluyor: ${(title || url).substring(0, 50)}`);
+        }
         // Güncelle
         await supabase.from('rag_documents').update({
             title: title || url,
