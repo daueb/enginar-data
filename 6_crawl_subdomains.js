@@ -13,7 +13,8 @@ if (!supabaseUrl || !supabaseKey) {
     throw new Error("❌ Hata: Supabase URL veya Key eksik!");
 }
 if (!GEMINI_API_KEY) {
-    throw new Error("❌ Hata: GEMINI_API_KEY eksik! https://aistudio.google.com/apikey adresinden ucretsiz al ve .env'ye ekle.");
+    console.warn("⚠️ UYARI: GEMINI_API_KEY eksik! Embedding olmadan devam edilecek (chunk'lar embedding'siz kaydedilecek).");
+    console.warn("   Embedding icin: https://aistudio.google.com/apikey adresinden ucretsiz al.");
 }
 
 const supabase = createClient(supabaseUrl, supabaseKey);
@@ -162,6 +163,7 @@ const OFFICE_EXTENSIONS = /\.(doc|docx|xls|xlsx|ppt|pptx)$/i;
 // EMBEDDING FONKSİYONU (Google Gemini - Ucretsiz, 768 boyut)
 // =====================================================
 async function getEmbedding(text) {
+    if (!GEMINI_API_KEY) return null;
     try {
         const res = await axios.post(
             `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
@@ -374,12 +376,23 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
 
     for (let i = 0; i < chunks.length; i++) {
         const embedding = await getEmbedding(chunks[i]);
-        if (!embedding) continue;
 
-        const { error: chunkErr } = await supabase.from('rag_chunks').insert({
-            doc_id: docId, chunk_index: i, chunk_text: chunks[i], embedding
-        });
-        if (!chunkErr) savedChunks++;
+        // Embedding olsa da olmasa da chunk'i kaydet (embedding sonra eklenebilir)
+        const chunkData = { doc_id: docId, chunk_index: i, chunk_text: chunks[i] };
+        if (embedding) chunkData.embedding = embedding;
+
+        const { error: chunkErr } = await supabase.from('rag_chunks').insert(chunkData);
+        if (chunkErr) {
+            // Embedding zorunlu olabilir, embedding'siz deneyelim
+            if (embedding) {
+                const { error: retryErr } = await supabase.from('rag_chunks').insert({
+                    doc_id: docId, chunk_index: i, chunk_text: chunks[i]
+                });
+                if (!retryErr) savedChunks++;
+            }
+        } else {
+            savedChunks++;
+        }
         await delay(150);
     }
 
