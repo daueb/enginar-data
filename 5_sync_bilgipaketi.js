@@ -18,7 +18,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
 
 const API_BASE = 'https://ogbs.cankaya.edu.tr/Api/InformationPack';
-const headers = { 'Authorization': `Bearer ${BEARER_TOKEN}` };
+const headers = { 'Authorization': `Bearer ${BEARER_TOKEN}`, 'Content-Type': 'application/json' };
 
 // --- API ÇAĞRI HELPER ---
 async function apiGet(endpoint, params = {}) {
@@ -33,17 +33,34 @@ async function apiGet(endpoint, params = {}) {
 }
 
 // --- Bilgipaketi Program Listesi ---
-// Program ID'leri bilgipaketi frontend'den alınır
-// Bu mapping'i bilgipaketi ana sayfasındaki dropdown'dan çekiyoruz
+// /Fakulteler ve /Bolumler endpointlerinden tum programlari cek
 async function fetchProgramList() {
-    // WsPersonel methodNo=1 tüm fakülte/bölüm listesini döndürür
-    const data = await apiGet('WsPersonel', { methodNo: 1 });
-    if (!data) {
-        console.error('❌ Program listesi alınamadı!');
-        return [];
+    const allPrograms = [];
+    // L=Lisans, Y=Yuksek Lisans, D=Doktora
+    for (const progType of ['L', 'Y', 'D']) {
+        const fakulteler = await apiGet('Fakulteler', { Program: progType });
+        if (!fakulteler || !Array.isArray(fakulteler)) continue;
+
+        for (const fak of fakulteler) {
+            const fakNo = fak.FakNo || fak.fakNo;
+            if (!fakNo) continue;
+
+            const bolumler = await apiGet('Bolumler', { Program: progType, FakNo: fakNo });
+            if (!bolumler || !Array.isArray(bolumler)) continue;
+
+            for (const b of bolumler) {
+                allPrograms.push({
+                    ProgramId: b.ProgramId || b.programId,
+                    ProgramAdi: b.ProgramAdi || b.programAdi || '',
+                    ProgramAdiEN: b.ProgramAdiEn || b.programAdiEn || '',
+                    FakulteTR: fak.FakTurkce || '',
+                    ProgramType: progType
+                });
+            }
+            await delay(100);
+        }
     }
-    // API bir dizi döndürür, her eleman { ProgramId, ProgramAdi, ProgramAdiEN, ... }
-    return Array.isArray(data) ? data : [];
+    return allPrograms;
 }
 
 // --- Supabase departments eşleştirme ---
@@ -95,33 +112,11 @@ const PAGE_KEYS = {
     const deptMap = await getDepartmentMap();
     console.log(`📋 ${Object.keys(deptMap).length} bölüm eşleştirildi.\n`);
 
-    // 1. Program listesini al
-    let programs = await fetchProgramList();
+    // 1. Program listesini al (/Fakulteler + /Bolumler endpointleri)
+    const programs = await fetchProgramList();
     if (programs.length === 0) {
-        console.log('⚠️ API listesi bos, sabit program listesi kullaniliyor...');
-        // Bilgipaketi.cankaya.edu.tr'den bilinen program ID'leri
-        programs = [
-            { ProgramId: 1, ProgramAdi: 'Bilgisayar Muhendisligi' },
-            { ProgramId: 2, ProgramAdi: 'Elektrik-Elektronik Muhendisligi' },
-            { ProgramId: 3, ProgramAdi: 'Endustri Muhendisligi' },
-            { ProgramId: 4, ProgramAdi: 'Insaat Muhendisligi' },
-            { ProgramId: 5, ProgramAdi: 'Makine Muhendisligi' },
-            { ProgramId: 6, ProgramAdi: 'Mekatronik Muhendisligi' },
-            { ProgramId: 7, ProgramAdi: 'Malzeme Bilimi ve Muhendisligi' },
-            { ProgramId: 10, ProgramAdi: 'Matematik' },
-            { ProgramId: 11, ProgramAdi: 'Psikoloji' },
-            { ProgramId: 12, ProgramAdi: 'Ingiliz Dili ve Edebiyati' },
-            { ProgramId: 13, ProgramAdi: 'Molekuler Biyoloji ve Genetik' },
-            { ProgramId: 20, ProgramAdi: 'Hukuk' },
-            { ProgramId: 30, ProgramAdi: 'Mimarlik' },
-            { ProgramId: 31, ProgramAdi: 'Ic Mimarlik' },
-            { ProgramId: 40, ProgramAdi: 'Isletme' },
-            { ProgramId: 41, ProgramAdi: 'Ekonomi' },
-            { ProgramId: 42, ProgramAdi: 'Uluslararasi Iliskiler' },
-            { ProgramId: 43, ProgramAdi: 'Siyaset Bilimi ve Kamu Yonetimi' },
-            { ProgramId: 44, ProgramAdi: 'Bankacilik ve Finans' },
-        ];
-        console.log(`   Sabit listeden ${programs.length} program kullanilacak.`);
+        console.log('❌ Hic program bulunamadi! API erisilemez olabilir.');
+        return;
     }
 
     console.log(`📡 ${programs.length} program bulundu.\n`);
@@ -288,17 +283,20 @@ async function syncProgramQualifications(programId) {
 // C: Müfredatlar ve Müfredat Dersleri
 // =====================================================
 async function syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari) {
-    // Müfredat listesi
-    const mufredatlar = await apiGet('WsPersonel', { methodNo: 11, ProgramId: programId });
+    // Müfredat listesi (method:700 + Params gerekli, array of arrays döner)
+    // Format: [[mufNo, bolumKodu, nameTR, nameEN, ?, year, ?, programId], ...]
+    const mufredatlar = await apiGet('WsPersonel', { method: 700, methodNo: 11, Params: String(programId) });
     if (!mufredatlar || !Array.isArray(mufredatlar) || mufredatlar.length === 0) {
         console.log(`   ⚠️ Müfredat bulunamadı`);
         return;
     }
 
     for (const muf of mufredatlar) {
-        const mufNo = muf.MufredatNo || muf.mufredatNo || muf.Id;
-        const mufYear = muf.Yil || muf.yil || muf.Year || new Date().getFullYear();
-        const mufName = muf.Ad || muf.MufredatAdi || programName;
+        // API array of arrays doner: [mufNo, ?, nameTR, nameEN, ?, year, ?, programId]
+        const mufNo = Array.isArray(muf) ? muf[0] : (muf.MufredatNo || muf.mufredatNo || muf.Id);
+        const mufYear = Array.isArray(muf) ? (muf[5] || new Date().getFullYear()) : (muf.Yil || muf.yil || new Date().getFullYear());
+        const mufName = Array.isArray(muf) ? (muf[2] || programName) : (muf.Ad || muf.MufredatAdi || programName);
+        const mufNameEN = Array.isArray(muf) ? (muf[3] || programNameEN) : programNameEN;
 
         if (!mufNo) continue;
 
@@ -341,10 +339,11 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
             continue;
         }
 
-        // Müfredattaki dersler
-        const dersler = await apiGet('WsPersonel', { methodNo: 14, ProgramId: programId, MufredatNo: mufNo });
-        if (!dersler || !Array.isArray(dersler)) {
-            console.log(`   ⚠️ Müfredat dersleri bulunamadı (MufNo: ${mufNo})`);
+        // Müfredattaki dersler (method:700, Params: "programId;mufNo")
+        // NOT: Bu endpoint sunucu tarafinda zaman zaman 500 donebilir
+        const dersler = await apiGet('WsPersonel', { method: 700, methodNo: 14, Params: `${programId};${mufNo}` });
+        if (!dersler || !Array.isArray(dersler) || dersler.length === 0) {
+            console.log(`   ⚠️ Müfredat dersleri alinamadi (MufNo: ${mufNo}) - API hatasi olabilir`);
             continue;
         }
 
@@ -353,12 +352,29 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
 
         let courseCount = 0;
         for (const ders of dersler) {
-            const bimKodu = ders.BimKodu || ders.bimKodu;
-            const courseCode = ders.DersKodu || ders.dersKodu || '';
-            const courseName = ders.DersAdi || ders.dersAdi || '';
-            const courseNameEN = ders.DersAdiEN || ders.dersAdiEN || '';
+            // API array of arrays veya object donebilir
+            let bimKodu, courseCode, courseName, courseNameEN, sinif, donem, teorik, uygulama, kredi, akts, secmeli;
+            if (Array.isArray(ders)) {
+                // Array format: indeksler API'ye gore degisebilir
+                bimKodu = ders[0]; courseCode = ders[1] || ''; courseName = ders[2] || '';
+                courseNameEN = ders[3] || ''; sinif = ders[4]; donem = ders[5];
+                teorik = ders[6]; uygulama = ders[7]; kredi = ders[8]; akts = ders[9];
+                secmeli = ders[10];
+            } else {
+                bimKodu = ders.BimKodu || ders.bimKodu;
+                courseCode = ders.DersKodu || ders.dersKodu || '';
+                courseName = ders.DersAdi || ders.dersAdi || '';
+                courseNameEN = ders.DersAdiEN || ders.dersAdiEN || '';
+                sinif = ders.Sinif || ders.sinif || ders.Yil;
+                donem = ders.Donem || ders.donem;
+                teorik = ders.Teorik || ders.teorik;
+                uygulama = ders.Uygulama || ders.uygulama || ders.Lab;
+                kredi = ders.Kredi || ders.kredi;
+                akts = ders.AKTS || ders.akts || ders.Ects;
+                secmeli = ders.Secmeli || ders.secmeli || ders.IsElective;
+            }
 
-            // Mevcut courses tablosuyla eşleştir
+            // Mevcut courses tablosuyla eslestir
             let courseId = null;
             if (courseCode) {
                 const { data: courseMatch } = await supabase.from('courses')
@@ -372,16 +388,16 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
                 curriculum_id: curriculumId,
                 course_id: courseId,
                 bim_kodu: bimKodu || null,
-                year: ders.Sinif || ders.sinif || ders.Yil || null,
-                semester: ders.Donem || ders.donem || null,
+                year: sinif || null,
+                semester: donem || null,
                 course_code: courseCode,
                 course_name: courseName,
                 course_name_en: courseNameEN,
-                theory_hours: ders.Teorik || ders.teorik || null,
-                lab_hours: ders.Uygulama || ders.uygulama || ders.Lab || null,
-                credit: ders.Kredi || ders.kredi || null,
-                ects: ders.AKTS || ders.akts || ders.Ects || null,
-                is_elective: !!(ders.Secmeli || ders.secmeli || ders.IsElective)
+                theory_hours: teorik || null,
+                lab_hours: uygulama || null,
+                credit: kredi || null,
+                ects: akts || null,
+                is_elective: !!secmeli
             });
 
             if (bimKodu) allBimKodlari.add(bimKodu);
