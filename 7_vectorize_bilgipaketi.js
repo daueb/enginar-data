@@ -22,7 +22,18 @@ let embedRequestCount = 0;
 let embedMinuteStart = Date.now();
 const MAX_EMBEDS_PER_MINUTE = 900; // 1000 limitin altinda kal
 
+// Ardışık hata sayacı: üst üste 3 quota hatası → embedding tamamen kapat
+let consecutiveEmbedFailures = 0;
+let embeddingDisabled = false;
+let successfulEmbeddings = 0;
+let skippedEmbeddings = 0;
+
 async function getEmbedding(text, retryCount = 0) {
+    if (embeddingDisabled) {
+        skippedEmbeddings++;
+        return null;
+    }
+
     // Rate limiting: dakikada max 900 istek
     embedRequestCount++;
     const elapsed = Date.now() - embedMinuteStart;
@@ -45,21 +56,32 @@ async function getEmbedding(text, retryCount = 0) {
             },
             { headers: { 'Content-Type': 'application/json' }, timeout: 15000 }
         );
+        consecutiveEmbedFailures = 0; // Başarılı → sıfırla
+        successfulEmbeddings++;
         return res.data.embedding.values;
     } catch (err) {
         const msg = err.response?.data?.error?.message || err.message;
-        // Quota/rate limit hatasi: bekle ve tekrar dene (max 3 deneme)
+        // Quota/rate limit hatasi: bekle ve tekrar dene (max 2 deneme)
         if (msg.includes('Quota exceeded') || msg.includes('RATE_LIMIT') || err.response?.status === 429) {
-            if (retryCount < 3) {
-                const retryMatch = msg.match(/retry in (\d+\.?\d*)/i);
-                const waitSec = retryMatch ? Math.ceil(parseFloat(retryMatch[1])) + 2 : 15;
-                console.log(`   ⏳ Embedding quota - ${waitSec}sn bekleniyor (deneme ${retryCount + 1}/3)...`);
+            if (retryCount < 2) {
+                const waitSec = retryCount === 0 ? 5 : 10;
+                console.log(`   ⏳ Embedding quota - ${waitSec}sn bekleniyor (deneme ${retryCount + 1}/2)...`);
                 await delay(waitSec * 1000);
                 embedRequestCount = 0;
                 embedMinuteStart = Date.now();
                 return getEmbedding(text, retryCount + 1);
             }
-            console.error('❌ Embedding 3 denemede de başarısız, atlanıyor');
+            consecutiveEmbedFailures++;
+            if (consecutiveEmbedFailures >= 3) {
+                console.warn('⚠️ ═══════════════════════════════════════════════════');
+                console.warn('⚠️ Embedding kotası tükendi! Geri kalan chunk\'lar embedding\'siz kaydedilecek.');
+                console.warn('⚠️ Kota yenilenince bu script\'i tekrar çalıştırarak embedding ekleyebilirsin.');
+                console.warn('⚠️ ═══════════════════════════════════════════════════');
+                embeddingDisabled = true;
+                skippedEmbeddings++;
+            } else {
+                console.warn(`⚠️ Embedding başarısız (ardışık hata: ${consecutiveEmbedFailures}/3)`);
+            }
             return null;
         }
         console.error('❌ Embedding hatası:', msg);
@@ -434,5 +456,6 @@ async function vectorizeQualifications(programNames) {
 
     console.log(`\n${'='.repeat(60)}`);
     console.log('🚀 Bilgipaketi Vektörizasyonu Tamamlandı!');
+    console.log(`   📊 Embedding: ${successfulEmbeddings} başarılı, ${skippedEmbeddings} atlandı${embeddingDisabled ? ' (kota doldu — tekrar çalıştır)' : ''}`);
     console.log('='.repeat(60));
 })();

@@ -167,8 +167,18 @@ let embedRequestCount = 0;
 let embedMinuteStart = Date.now();
 const MAX_EMBEDS_PER_MINUTE = 900; // 1000 limitin altinda kal
 
+// Ardışık hata sayacı: üst üste 3 quota hatası → embedding tamamen kapat
+let consecutiveEmbedFailures = 0;
+let embeddingDisabled = false;
+let successfulEmbeddings = 0;
+let skippedEmbeddings = 0;
+
 async function getEmbedding(text, retryCount = 0) {
     if (!GEMINI_API_KEY) return null;
+    if (embeddingDisabled) {
+        skippedEmbeddings++;
+        return null;
+    }
 
     // Rate limiting: dakikada max 900 istek
     embedRequestCount++;
@@ -192,22 +202,33 @@ async function getEmbedding(text, retryCount = 0) {
             },
             { headers: { 'Content-Type': 'application/json' }, timeout: 15000 }
         );
+        consecutiveEmbedFailures = 0; // Başarılı → sıfırla
+        successfulEmbeddings++;
         return res.data.embedding.values;
     } catch (err) {
         const msg = err.response?.data?.error?.message || err.message;
         // Quota/rate limit hatasi: bekle ve tekrar dene (max 3 deneme)
         if (msg.includes('Quota exceeded') || msg.includes('RATE_LIMIT') || err.response?.status === 429) {
-            if (retryCount < 3) {
-                // API "Please retry in X.XXs" diyorsa o sureyi kullan
-                const retryMatch = msg.match(/retry in (\d+\.?\d*)/i);
-                const waitSec = retryMatch ? Math.ceil(parseFloat(retryMatch[1])) + 2 : 15;
-                console.log(`   ⏳ Embedding quota - ${waitSec}sn bekleniyor (deneme ${retryCount + 1}/3)...`);
+            if (retryCount < 2) {
+                // İlk denemede kısa bekle, uzun bekleme yapma
+                const waitSec = retryCount === 0 ? 5 : 10;
+                console.log(`   ⏳ Embedding quota - ${waitSec}sn bekleniyor (deneme ${retryCount + 1}/2)...`);
                 await delay(waitSec * 1000);
                 embedRequestCount = 0;
                 embedMinuteStart = Date.now();
                 return getEmbedding(text, retryCount + 1);
             }
-            console.error('❌ Embedding 3 denemede de başarısız, atlanıyor');
+            consecutiveEmbedFailures++;
+            if (consecutiveEmbedFailures >= 3) {
+                console.warn('⚠️ ═══════════════════════════════════════════════════');
+                console.warn('⚠️ Embedding kotası tükendi! Geri kalan chunk\'lar embedding\'siz kaydedilecek.');
+                console.warn('⚠️ Kota yenilenince "Vectorize" job\'ını tekrar çalıştırarak embedding ekleyebilirsin.');
+                console.warn('⚠️ ═══════════════════════════════════════════════════');
+                embeddingDisabled = true;
+                skippedEmbeddings++;
+            } else {
+                console.warn(`⚠️ Embedding başarısız (ardışık hata: ${consecutiveEmbedFailures}/3)`);
+            }
             return null;
         }
         console.error('❌ Embedding hatası:', msg);
@@ -646,12 +667,16 @@ async function crawlSubdomain(baseUrl) {
 (async () => {
     console.log('🔄 Çankaya Üniversitesi Tüm Subdomain Crawler Başlatılıyor...\n');
 
-    // 1. Subdomain keşfi
-    let allHostnames = await discoverSubdomains();
-    if (!allHostnames || allHostnames.length === 0) {
-        console.log('⚠️ Otomatik keşif başarısız, yedek liste kullanılıyor...');
-        allHostnames = FALLBACK_SUBDOMAINS;
+    // 1. Subdomain keşfi: crt.sh + fallback listesini BİRLEŞTİR
+    const crtResults = await discoverSubdomains();
+    const mergedSet = new Set(FALLBACK_SUBDOMAINS); // Önce sabit listeyi ekle
+    if (crtResults && crtResults.length > 0) {
+        for (const h of crtResults) mergedSet.add(h); // crt.sh sonuçlarını da ekle
+        console.log(`   🔗 Birleştirildi: ${FALLBACK_SUBDOMAINS.length} sabit + ${crtResults.length} crt.sh = ${mergedSet.size} benzersiz`);
+    } else {
+        console.log('⚠️ crt.sh başarısız, sadece sabit liste kullanılıyor...');
     }
+    let allHostnames = [...mergedSet];
 
     // 2. Atlanacak subdomain'leri filtrele
     const filtered = allHostnames.filter(h => {
@@ -703,5 +728,6 @@ async function crawlSubdomain(baseUrl) {
     console.log(`🚀 Subdomain Crawl Tamamlandı!`);
     console.log(`   Erişilen: ${reachableCount} | Erişilemeyen: ${unreachableCount}`);
     console.log(`   Toplam: ${grandTotalPages} sayfa/PDF, ${grandTotalChunks} chunk`);
+    console.log(`   📊 Embedding: ${successfulEmbeddings} başarılı, ${skippedEmbeddings} atlandı${embeddingDisabled ? ' (kota doldu — tekrar çalıştır)' : ''}`);
     console.log('='.repeat(60));
 })();
