@@ -17,18 +17,52 @@ const CHUNK_SIZE = 500;
 const CHUNK_OVERLAP = 50;
 
 // --- EMBEDDING (Google Gemini - Ucretsiz, 768 boyut) ---
-async function getEmbedding(text) {
+// Rate limiter: Gemini free tier = 1000 req/dakika
+let embedRequestCount = 0;
+let embedMinuteStart = Date.now();
+const MAX_EMBEDS_PER_MINUTE = 900; // 1000 limitin altinda kal
+
+async function getEmbedding(text, retryCount = 0) {
+    // Rate limiting: dakikada max 900 istek
+    embedRequestCount++;
+    const elapsed = Date.now() - embedMinuteStart;
+    if (elapsed >= 60000) {
+        embedRequestCount = 1;
+        embedMinuteStart = Date.now();
+    } else if (embedRequestCount >= MAX_EMBEDS_PER_MINUTE) {
+        const waitMs = 60000 - elapsed + 2000;
+        console.log(`   ⏳ Embedding rate limit: ${Math.round(waitMs/1000)}sn bekleniyor...`);
+        await delay(waitMs);
+        embedRequestCount = 1;
+        embedMinuteStart = Date.now();
+    }
+
     try {
         const res = await axios.post(
             `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
             {
                 content: { parts: [{ text: text.substring(0, 8000) }] }
             },
-            { headers: { 'Content-Type': 'application/json' } }
+            { headers: { 'Content-Type': 'application/json' }, timeout: 15000 }
         );
         return res.data.embedding.values;
     } catch (err) {
-        console.error('❌ Embedding hatası:', err.response?.data?.error?.message || err.message);
+        const msg = err.response?.data?.error?.message || err.message;
+        // Quota/rate limit hatasi: bekle ve tekrar dene (max 3 deneme)
+        if (msg.includes('Quota exceeded') || msg.includes('RATE_LIMIT') || err.response?.status === 429) {
+            if (retryCount < 3) {
+                const retryMatch = msg.match(/retry in (\d+\.?\d*)/i);
+                const waitSec = retryMatch ? Math.ceil(parseFloat(retryMatch[1])) + 2 : 15;
+                console.log(`   ⏳ Embedding quota - ${waitSec}sn bekleniyor (deneme ${retryCount + 1}/3)...`);
+                await delay(waitSec * 1000);
+                embedRequestCount = 0;
+                embedMinuteStart = Date.now();
+                return getEmbedding(text, retryCount + 1);
+            }
+            console.error('❌ Embedding 3 denemede de başarısız, atlanıyor');
+            return null;
+        }
+        console.error('❌ Embedding hatası:', msg);
         return null;
     }
 }
@@ -115,9 +149,37 @@ async function saveChunks(sourceId, docUrl, title, text, metadata) {
 }
 
 // =====================================================
+// PROGRAM ADLARINI CACHE'LE (chunk'lara bolum bilgisi eklemek icin)
+// =====================================================
+async function buildProgramNameMap() {
+    const map = {};
+    // curricula tablosundan program_id -> name eslestirmesi
+    const { data: curricula } = await supabase.from('curricula').select('program_id, name');
+    if (curricula) {
+        for (const c of curricula) {
+            if (!map[c.program_id]) map[c.program_id] = c.name;
+        }
+    }
+    // program_info'dan da dene (bolum_tanitimi sayfasinda isim olabilir)
+    const { data: infos } = await supabase.from('program_info')
+        .select('program_id, content_tr')
+        .eq('page_key', 'bolum_tanitimi');
+    if (infos) {
+        for (const info of infos) {
+            if (!map[info.program_id] && info.content_tr) {
+                // Ilk satirdan program adini cikar
+                const firstLine = info.content_tr.split('\n')[0].substring(0, 100);
+                if (firstLine.length > 5) map[info.program_id] = firstLine;
+            }
+        }
+    }
+    return map;
+}
+
+// =====================================================
 // 1. PROGRAM BİLGİ SAYFALARI → VEKTÖR
 // =====================================================
-async function vectorizeProgramInfo() {
+async function vectorizeProgramInfo(programNames) {
     console.log('\n📚 Program Bilgi Sayfaları Vektörize Ediliyor...');
     const sourceId = await ensureRagSource('Bilgipaketi - Bölüm Bilgileri', 'program_info');
     if (!sourceId) return;
@@ -125,14 +187,33 @@ async function vectorizeProgramInfo() {
     const { data: pages } = await supabase.from('program_info').select('*');
     if (!pages || pages.length === 0) { console.log('   ⚠️ program_info tablosu boş'); return; }
 
+    // Sayfa anahtarlarinin Turkce karsiliklari
+    const PAGE_LABELS = {
+        bolum_tanitimi: 'Bölüm Tanıtımı',
+        kazanilan_derece: 'Kazanılan Derece',
+        kabul_kosullari: 'Kabul Koşulları',
+        onceki_ogrenme: 'Önceki Öğrenme',
+        yeterlilik_kosullari: 'Yeterlilik Koşulları',
+        programin_amaci: 'Programın Amacı',
+        program_ciktilari: 'Program Çıktıları',
+        program_yeterlilikleri: 'Program Yeterlilikleri',
+        mezunlarin_istihdam: 'Mezunların İstihdam Profili',
+        ust_derece_programlara_gecis: 'Üst Derece Programlara Geçiş'
+    };
+
     let total = 0;
     for (const page of pages) {
-        const text = [page.content_tr, page.content_en].filter(Boolean).join('\n\n');
+        const progName = programNames[page.program_id] || `Program ${page.program_id}`;
+        const pageLabel = PAGE_LABELS[page.page_key] || page.page_key;
+
+        // Chunk'a bolum + sayfa konteksti ekle
+        const prefix = `[${progName} | ${pageLabel}]\n`;
+        const text = prefix + [page.content_tr, page.content_en].filter(Boolean).join('\n\n');
         if (text.length < 50) continue;
 
         const chunks = await saveChunks(sourceId,
             `bilgipaketi://program_info/${page.program_id}/${page.page_key}`,
-            `${page.page_key} - Program ${page.program_id}`,
+            `${progName} - ${pageLabel}`,
             text,
             { source: 'bilgipaketi', type: 'program_info', program_id: page.program_id, page_key: page.page_key }
         );
@@ -144,10 +225,27 @@ async function vectorizeProgramInfo() {
 // =====================================================
 // 2. DERS DETAYLARI → VEKTÖR
 // =====================================================
-async function vectorizeCourseDetails() {
+async function vectorizeCourseDetails(programNames) {
     console.log('\n📖 Ders Detayları Vektörize Ediliyor...');
     const sourceId = await ensureRagSource('Bilgipaketi - Ders Detayları', 'course_details');
     if (!sourceId) return;
+
+    // BimKodu -> program adi eslestirmesi icin curriculum_courses + curricula join
+    const bimToProgramMap = {};
+    const { data: ccRows } = await supabase.from('curriculum_courses')
+        .select('bim_kodu, curriculum_id');
+    if (ccRows) {
+        const { data: currRows } = await supabase.from('curricula').select('id, program_id, name');
+        const currMap = {};
+        if (currRows) {
+            for (const c of currRows) currMap[c.id] = { program_id: c.program_id, name: c.name };
+        }
+        for (const cc of ccRows) {
+            if (cc.bim_kodu && currMap[cc.curriculum_id]) {
+                bimToProgramMap[cc.bim_kodu] = currMap[cc.curriculum_id].name;
+            }
+        }
+    }
 
     // Tüm ders detaylarını çek (pagination)
     let allDetails = [];
@@ -165,9 +263,13 @@ async function vectorizeCourseDetails() {
 
     let total = 0;
     for (const detail of allDetails) {
+        // Dersin hangi programa ait oldugunu bul
+        const progName = bimToProgramMap[detail.bim_kodu] || '';
+        const progPrefix = progName ? `[${progName}] ` : '';
+
         // Ders hakkındaki tüm metni birleştir
         const parts = [
-            detail.course_code && detail.course_name ? `${detail.course_code} - ${detail.course_name}` : '',
+            progPrefix + (detail.course_code && detail.course_name ? `${detail.course_code} - ${detail.course_name}` : ''),
             detail.course_name_en ? `(${detail.course_name_en})` : '',
             detail.description ? `Ders Tanımı: ${detail.description}` : '',
             detail.teaching_methods ? `Öğretme Yöntemleri: ${detail.teaching_methods}` : '',
@@ -273,7 +375,7 @@ async function vectorizeCurricula() {
 // =====================================================
 // 4. PROGRAM YETERLİLİKLERİ → VEKTÖR
 // =====================================================
-async function vectorizeQualifications() {
+async function vectorizeQualifications(programNames) {
     console.log('\n🎯 Program Yeterlilikleri Vektörize Ediliyor...');
     const sourceId = await ensureRagSource('Bilgipaketi - Program Yeterlilikleri', 'qualifications');
     if (!sourceId) return;
@@ -291,7 +393,8 @@ async function vectorizeQualifications() {
 
     let total = 0;
     for (const [programId, items] of Object.entries(grouped)) {
-        const parts = [`Program ${programId} Yeterlilikleri:`];
+        const progName = programNames[programId] || `Program ${programId}`;
+        const parts = [`[${progName}] Program Yeterlilikleri:`];
         for (const item of items) {
             parts.push(`${item.qualification_no}. ${item.content_tr}`);
             if (item.content_en) parts.push(`   (EN: ${item.content_en})`);
@@ -300,7 +403,7 @@ async function vectorizeQualifications() {
 
         const chunks = await saveChunks(sourceId,
             `bilgipaketi://qualifications/${programId}`,
-            `Program Yeterlilikleri - ${programId}`,
+            `${progName} - Program Yeterlilikleri`,
             text,
             { source: 'bilgipaketi', type: 'qualifications', program_id: parseInt(programId) }
         );
@@ -315,10 +418,14 @@ async function vectorizeQualifications() {
 (async () => {
     console.log('🔄 Bilgipaketi Veri Vektörizasyonu Başlatılıyor...\n');
 
-    await vectorizeProgramInfo();
-    await vectorizeCourseDetails();
+    // Program ID -> Program Adi eslestirmesi (chunk'lara bolum bilgisi eklemek icin)
+    const programNames = await buildProgramNameMap();
+    console.log(`📋 ${Object.keys(programNames).length} program adı eşleştirildi.\n`);
+
+    await vectorizeProgramInfo(programNames);
+    await vectorizeCourseDetails(programNames);
     await vectorizeCurricula();
-    await vectorizeQualifications();
+    await vectorizeQualifications(programNames);
 
     console.log(`\n${'='.repeat(60)}`);
     console.log('🚀 Bilgipaketi Vektörizasyonu Tamamlandı!');

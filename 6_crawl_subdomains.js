@@ -162,19 +162,55 @@ const OFFICE_EXTENSIONS = /\.(doc|docx|xls|xlsx|ppt|pptx)$/i;
 // =====================================================
 // EMBEDDING FONKSİYONU (Google Gemini - Ucretsiz, 768 boyut)
 // =====================================================
-async function getEmbedding(text) {
+// Embedding rate limiter: Gemini free tier = 1000 req/dakika
+let embedRequestCount = 0;
+let embedMinuteStart = Date.now();
+const MAX_EMBEDS_PER_MINUTE = 900; // 1000 limitin altinda kal
+
+async function getEmbedding(text, retryCount = 0) {
     if (!GEMINI_API_KEY) return null;
+
+    // Rate limiting: dakikada max 900 istek
+    embedRequestCount++;
+    const elapsed = Date.now() - embedMinuteStart;
+    if (elapsed >= 60000) {
+        embedRequestCount = 1;
+        embedMinuteStart = Date.now();
+    } else if (embedRequestCount >= MAX_EMBEDS_PER_MINUTE) {
+        const waitMs = 60000 - elapsed + 2000;
+        console.log(`   ⏳ Embedding rate limit: ${Math.round(waitMs/1000)}sn bekleniyor...`);
+        await delay(waitMs);
+        embedRequestCount = 1;
+        embedMinuteStart = Date.now();
+    }
+
     try {
         const res = await axios.post(
             `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
             {
                 content: { parts: [{ text: text.substring(0, 8000) }] }
             },
-            { headers: { 'Content-Type': 'application/json' } }
+            { headers: { 'Content-Type': 'application/json' }, timeout: 15000 }
         );
         return res.data.embedding.values;
     } catch (err) {
-        console.error('❌ Embedding hatası:', err.response?.data?.error?.message || err.message);
+        const msg = err.response?.data?.error?.message || err.message;
+        // Quota/rate limit hatasi: bekle ve tekrar dene (max 3 deneme)
+        if (msg.includes('Quota exceeded') || msg.includes('RATE_LIMIT') || err.response?.status === 429) {
+            if (retryCount < 3) {
+                // API "Please retry in X.XXs" diyorsa o sureyi kullan
+                const retryMatch = msg.match(/retry in (\d+\.?\d*)/i);
+                const waitSec = retryMatch ? Math.ceil(parseFloat(retryMatch[1])) + 2 : 15;
+                console.log(`   ⏳ Embedding quota - ${waitSec}sn bekleniyor (deneme ${retryCount + 1}/3)...`);
+                await delay(waitSec * 1000);
+                embedRequestCount = 0;
+                embedMinuteStart = Date.now();
+                return getEmbedding(text, retryCount + 1);
+            }
+            console.error('❌ Embedding 3 denemede de başarısız, atlanıyor');
+            return null;
+        }
+        console.error('❌ Embedding hatası:', msg);
         return null;
     }
 }
@@ -393,7 +429,7 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
         } else {
             savedChunks++;
         }
-        await delay(150);
+        await delay(80); // embedding rate limiter zaten bekliyor, burada kisa tut
     }
 
     return savedChunks;
