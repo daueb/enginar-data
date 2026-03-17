@@ -126,21 +126,29 @@ const crypto = require('crypto');
 async function saveChunks(sourceId, docUrl, title, text, metadata) {
     const docId = crypto.createHash('md5').update(docUrl).digest('hex');
     const contentHash = crypto.createHash('md5').update(text).digest('hex');
+    const department = metadata?.department || null;
+
+    // Chunk metadata — AI filtreleme için
+    const chunkMeta = { source_type: 'bilgipaketi' };
+    if (department) chunkMeta.department = department;
+    if (metadata?.course_code) chunkMeta.course_code = metadata.course_code;
+    if (metadata?.program_id) chunkMeta.program_id = metadata.program_id;
+    if (metadata?.page_key) chunkMeta.page_key = metadata.page_key;
 
     const { data: existing } = await supabase.from('rag_documents')
         .select('doc_id, content_hash').eq('doc_id', docId).maybeSingle();
 
     if (existing) {
         if (existing.content_hash === contentHash) {
-            // Chunk'lar gercekten var mi? (onceki run basarisiz olmus olabilir)
             const { count } = await supabase.from('rag_chunks')
                 .select('id', { count: 'exact', head: true }).eq('doc_id', docId);
-            if (count && count > 0) return 0; // Chunk'lar mevcut, atla
+            if (count && count > 0) return 0;
         }
         await supabase.from('rag_documents').update({
             title, content_hash: contentHash,
             source_type: metadata?.type || 'bilgipaketi',
             category: metadata?.source || 'bilgipaketi',
+            department: department,
             updated_from_source_at: new Date().toISOString()
         }).eq('doc_id', docId);
     } else {
@@ -148,6 +156,7 @@ async function saveChunks(sourceId, docUrl, title, text, metadata) {
             doc_id: docId, url: docUrl, title,
             source_type: metadata?.type || 'bilgipaketi',
             category: metadata?.source || 'bilgipaketi',
+            department: department,
             content_hash: contentHash
         });
         if (docErr) { console.error(`   ❌ Doküman eklenemedi: ${docErr.message}`); return 0; }
@@ -161,15 +170,25 @@ async function saveChunks(sourceId, docUrl, title, text, metadata) {
     let saved = 0;
     for (let i = 0; i < chunks.length; i++) {
         const embedding = await getEmbedding(chunks[i]);
-        if (!embedding) continue;
 
-        const { error } = await supabase.from('rag_chunks').insert({
+        const chunkData = {
             doc_id: docId,
             chunk_index: i,
             chunk_text: chunks[i],
-            embedding
-        });
-        if (!error) saved++;
+            metadata: chunkMeta
+        };
+        if (embedding) chunkData.embedding = embedding;
+
+        const { error } = await supabase.from('rag_chunks').insert(chunkData);
+        if (error) {
+            // metadata kolonu yoksa onsuz dene
+            delete chunkData.metadata;
+            if (!embedding) delete chunkData.embedding;
+            const { error: retryErr } = await supabase.from('rag_chunks').insert(chunkData);
+            if (!retryErr) saved++;
+        } else {
+            saved++;
+        }
         await delay(100);
     }
     return saved;
@@ -242,7 +261,7 @@ async function vectorizeProgramInfo(programNames) {
             `bilgipaketi://program_info/${page.program_id}/${page.page_key}`,
             `${progName} - ${pageLabel}`,
             text,
-            { source: 'bilgipaketi', type: 'program_info', program_id: page.program_id, page_key: page.page_key }
+            { source: 'bilgipaketi', type: 'program_info', program_id: page.program_id, page_key: page.page_key, department: progName }
         );
         total += chunks;
     }
@@ -339,7 +358,7 @@ async function vectorizeCourseDetails(programNames) {
             `bilgipaketi://course_details/${detail.bim_kodu}`,
             `${detail.course_code} - ${detail.course_name}`,
             text,
-            { source: 'bilgipaketi', type: 'course_detail', bim_kodu: detail.bim_kodu, course_code: detail.course_code }
+            { source: 'bilgipaketi', type: 'course_detail', bim_kodu: detail.bim_kodu, course_code: detail.course_code, department: progName || null }
         );
         total += chunks;
 
@@ -392,7 +411,7 @@ async function vectorizeCurricula() {
             `bilgipaketi://curriculum/${curr.program_id}/${curr.muf_no}`,
             `Müfredat: ${curr.name}`,
             text,
-            { source: 'bilgipaketi', type: 'curriculum', program_id: curr.program_id, muf_no: curr.muf_no }
+            { source: 'bilgipaketi', type: 'curriculum', program_id: curr.program_id, muf_no: curr.muf_no, department: curr.name }
         );
         total += chunks;
     }
@@ -432,7 +451,7 @@ async function vectorizeQualifications(programNames) {
             `bilgipaketi://qualifications/${programId}`,
             `${progName} - Program Yeterlilikleri`,
             text,
-            { source: 'bilgipaketi', type: 'qualifications', program_id: parseInt(programId) }
+            { source: 'bilgipaketi', type: 'qualifications', program_id: parseInt(programId), department: progName }
         );
         total += chunks;
     }

@@ -396,6 +396,14 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
     const contentHash = crypto.createHash('md5').update(text).digest('hex');
     const sourceType = metadata.type || 'html';
     const category = metadata.domain || 'cankaya.edu.tr';
+    const department = metadata.department || null;
+
+    // Chunk metadata objesi — AI filtreleme için kullanacak
+    const chunkMeta = {};
+    if (department) chunkMeta.department = department;
+    if (metadata.domain) chunkMeta.hostname = metadata.domain;
+    if (sourceType) chunkMeta.source_type = sourceType;
+    if (metadata.language) chunkMeta.language = metadata.language;
 
     // Mevcut doküman var mı?
     const { data: existing } = await supabase.from('rag_documents')
@@ -404,11 +412,9 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
     if (existing) {
         // İçerik değişmediyse VE chunk'lar varsa atla
         if (existing.content_hash === contentHash) {
-            // Chunk'lar gercekten var mi kontrol et (onceki run basarisiz olmus olabilir)
             const { count } = await supabase.from('rag_chunks')
                 .select('id', { count: 'exact', head: true }).eq('doc_id', docId);
-            if (count && count > 0) return 0; // Gercekten atla, chunk'lar mevcut
-            // Chunk yok — tekrar olustur (asagiya devam et)
+            if (count && count > 0) return 0;
             console.log(`   🔄 Chunk'lar eksik, tekrar oluşturuluyor: ${(title || url).substring(0, 50)}`);
         }
         // Güncelle
@@ -417,12 +423,14 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
             content_hash: contentHash,
             source_type: sourceType,
             category: category,
+            department: department,
             updated_from_source_at: new Date().toISOString()
         }).eq('doc_id', docId);
     } else {
         const { error: docErr } = await supabase.from('rag_documents').insert({
             doc_id: docId, url, title: title || url,
             source_type: sourceType, category: category,
+            department: department,
             content_hash: contentHash
         });
         if (docErr) {
@@ -441,23 +449,24 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
     for (let i = 0; i < chunks.length; i++) {
         const embedding = await getEmbedding(chunks[i]);
 
-        // Embedding olsa da olmasa da chunk'i kaydet (embedding sonra eklenebilir)
-        const chunkData = { doc_id: docId, chunk_index: i, chunk_text: chunks[i] };
+        const chunkData = {
+            doc_id: docId,
+            chunk_index: i,
+            chunk_text: chunks[i],
+            metadata: chunkMeta
+        };
         if (embedding) chunkData.embedding = embedding;
 
         const { error: chunkErr } = await supabase.from('rag_chunks').insert(chunkData);
         if (chunkErr) {
-            // Embedding zorunlu olabilir, embedding'siz deneyelim
-            if (embedding) {
-                const { error: retryErr } = await supabase.from('rag_chunks').insert({
-                    doc_id: docId, chunk_index: i, chunk_text: chunks[i]
-                });
-                if (!retryErr) savedChunks++;
-            }
+            // metadata kolonu henüz yoksa, onsuz dene
+            delete chunkData.metadata;
+            const { error: retryErr } = await supabase.from('rag_chunks').insert(chunkData);
+            if (!retryErr) savedChunks++;
         } else {
             savedChunks++;
         }
-        await delay(80); // embedding rate limiter zaten bekliyor, burada kisa tut
+        await delay(80);
     }
 
     return savedChunks;
@@ -610,7 +619,8 @@ async function crawlSubdomain(baseUrl) {
 
         const chunkCount = await saveDocumentAndChunks(sourceId, url, title, text, {
             source: 'subdomain_crawl', type: 'html',
-            domain: hostname
+            domain: hostname,
+            department: deptLabel !== hostname ? deptLabel : null
         });
 
         totalPages++;
@@ -646,6 +656,7 @@ async function crawlSubdomain(baseUrl) {
             const chunkCount = await saveDocumentAndChunks(sourceId, pdfUrl, pdfResult.title || pdfName, pdfTextWithContext, {
                 source: 'subdomain_crawl', type: 'pdf',
                 domain: hostname,
+                department: deptLabel !== hostname ? deptLabel : null,
                 filename: pdfName, pdf_pages: pdfResult.pages
             });
 
