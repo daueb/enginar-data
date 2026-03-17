@@ -122,7 +122,9 @@ const PAGE_KEYS = {
     console.log(`📡 ${programs.length} program bulundu.\n`);
 
     // Tüm benzersiz BimKodu'ları topla (ders detayları için)
-    const allBimKodlari = new Set();
+    // Her entry: { bimKodu, mufNo, bolumKodu }
+    const allBimKodlari = [];
+    const bimKodMap = new Map(); // bimKodu -> { mufNo, bolumKodu }
 
     for (const prog of programs) {
         const programId = prog.ProgramId || prog.programId;
@@ -147,27 +149,28 @@ const PAGE_KEYS = {
         await delay(200);
 
         // --- C: Müfredatlar ---
-        await syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari);
+        await syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari, prog.ProgramType);
         await delay(200);
     }
 
     // 2. Ders Detayları (benzersiz BimKodu'lar)
     console.log(`\n${'='.repeat(60)}`);
-    console.log(`📖 Ders Detayları Senkronize Ediliyor (${allBimKodlari.size} ders)...`);
+    console.log(`📖 Ders Detayları Senkronize Ediliyor (${allBimKodlari.length} ders)...`);
     console.log('='.repeat(60));
 
     let detailCount = 0;
-    for (const bimKodu of allBimKodlari) {
-        await syncCourseDetail(bimKodu);
+    for (const entry of allBimKodlari) {
+        // entry = { bimKodu, mufNo, bolumKodu }
+        await syncCourseDetail(entry.bimKodu, entry.mufNo, entry.bolumKodu);
         detailCount++;
         if (detailCount % 50 === 0) {
-            console.log(`   ... ${detailCount}/${allBimKodlari.size} ders detayı işlendi`);
+            console.log(`   ... ${detailCount}/${allBimKodlari.length} ders detayı işlendi`);
         }
         await delay(200);
     }
 
     console.log(`\n🚀 Bilgipaketi Senkronizasyonu Tamamlandı!`);
-    console.log(`   Toplam ${allBimKodlari.size} ders detayı işlendi.`);
+    console.log(`   Toplam ${allBimKodlari.length} ders detayı işlendi.`);
 })();
 
 // =====================================================
@@ -282,9 +285,9 @@ async function syncProgramQualifications(programId) {
 // =====================================================
 // C: Müfredatlar ve Müfredat Dersleri
 // =====================================================
-async function syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari) {
+async function syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari, programType) {
     // Müfredat listesi (method:700 + Params gerekli, array of arrays döner)
-    // Format: [[mufNo, bolumKodu, nameTR, nameEN, ?, year, ?, programId], ...]
+    // Format: [[mufNo, bolumKodu, nameTR, nameEN, progType, year, ?, programId], ...]
     const mufredatlar = await apiGet('WsPersonel', { method: 700, methodNo: 11, Params: String(programId) });
     if (!mufredatlar || !Array.isArray(mufredatlar) || mufredatlar.length === 0) {
         console.log(`   ⚠️ Müfredat bulunamadı`);
@@ -292,11 +295,14 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
     }
 
     for (const muf of mufredatlar) {
-        // API array of arrays doner: [mufNo, ?, nameTR, nameEN, ?, year, ?, programId]
+        // API array of arrays doner: [mufNo, bolumKodu, nameTR, nameEN, progType, year, ?, programId]
         const mufNo = Array.isArray(muf) ? muf[0] : (muf.MufredatNo || muf.mufredatNo || muf.Id);
+        const bolumKodu = Array.isArray(muf) ? muf[1] : (muf.BolumKodu || muf.bolumKodu || 0);
         const mufYear = Array.isArray(muf) ? (muf[5] || new Date().getFullYear()) : (muf.Yil || muf.yil || new Date().getFullYear());
         const mufName = Array.isArray(muf) ? (muf[2] || programName) : (muf.Ad || muf.MufredatAdi || programName);
         const mufNameEN = Array.isArray(muf) ? (muf[3] || programNameEN) : programNameEN;
+        // Program tipi kodu: frontend'de sabit "3" kullanıyor ama müfredat array'inden de gelebilir
+        const progTypeCode = Array.isArray(muf) ? (muf[4] || '3') : '3';
 
         if (!mufNo) continue;
 
@@ -339,9 +345,9 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
             continue;
         }
 
-        // Müfredattaki dersler (method:700, Params: "programId;mufNo")
-        // NOT: Bu endpoint sunucu tarafinda zaman zaman 500 donebilir
-        const dersler = await apiGet('WsPersonel', { method: 700, methodNo: 14, Params: `${programId};${mufNo}` });
+        // Müfredattaki dersler (method:700, Params: "progTypeCode;programId;mufNo")
+        // Frontend JS bundle'dan: const e = `3;${this.id};${this.selectedCurriculum}`
+        const dersler = await apiGet('WsPersonel', { method: 700, methodNo: 14, Params: `${progTypeCode};${programId};${mufNo}` });
         if (!dersler || !Array.isArray(dersler) || dersler.length === 0) {
             console.log(`   ⚠️ Müfredat dersleri alinamadi (MufNo: ${mufNo}) - API hatasi olabilir`);
             continue;
@@ -353,13 +359,19 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
         let courseCount = 0;
         for (const ders of dersler) {
             // API array of arrays veya object donebilir
+            // Gercek format (methodNo=14): ["mufNo","siraNo","bimKodu","sinif","donem","dersKodPrefix","dersNo","dersAdiTR","dersAdiEN","?","teorik","uygulama","kredi","akts","secmeli","?"]
             let bimKodu, courseCode, courseName, courseNameEN, sinif, donem, teorik, uygulama, kredi, akts, secmeli;
             if (Array.isArray(ders)) {
-                // Array format: indeksler API'ye gore degisebilir
-                bimKodu = ders[0]; courseCode = ders[1] || ''; courseName = ders[2] || '';
-                courseNameEN = ders[3] || ''; sinif = ders[4]; donem = ders[5];
-                teorik = ders[6]; uygulama = ders[7]; kredi = ders[8]; akts = ders[9];
-                secmeli = ders[10];
+                // Array format: [mufNo, siraNo, bimKodu, sinif, donem, dersKodPrefix, dersNo, adTR, adEN, ?, teorik, uygulama, kredi, akts, secmeli, ?]
+                bimKodu = ders[2];
+                const prefix = (ders[5] || '').trim();
+                const no = ders[6] || '';
+                courseCode = prefix ? `${prefix} ${no}`.trim() : '';
+                courseName = ders[7] || '';
+                courseNameEN = ders[8] || '';
+                sinif = ders[3]; donem = ders[4];
+                teorik = ders[10]; uygulama = ders[11]; kredi = ders[12];
+                akts = ders[13]; secmeli = ders[14];
             } else {
                 bimKodu = ders.BimKodu || ders.bimKodu;
                 courseCode = ders.DersKodu || ders.dersKodu || '';
@@ -400,7 +412,10 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
                 is_elective: !!secmeli
             });
 
-            if (bimKodu) allBimKodlari.add(bimKodu);
+            if (bimKodu && !bimKodMap.has(Number(bimKodu))) {
+                bimKodMap.set(Number(bimKodu), { mufNo: Number(mufNo), bolumKodu: Number(bolumKodu) });
+                allBimKodlari.push({ bimKodu: Number(bimKodu), mufNo: Number(mufNo), bolumKodu: Number(bolumKodu) });
+            }
             courseCount++;
         }
 
@@ -412,31 +427,33 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
 // =====================================================
 // D: Ders Detayları
 // =====================================================
-async function syncCourseDetail(bimKodu) {
-    const data = await apiGet('DersBilgi', { BimKodu: bimKodu });
+async function syncCourseDetail(bimKodu, mufNo, bolumKodu) {
+    // DersBilgi dogru parametreler: BimKodu + MufredatNo + BolumKodu + lang (JS bundle'dan)
+    const data = await apiGet('DersBilgi', { BimKodu: bimKodu, MufredatNo: mufNo, BolumKodu: bolumKodu, lang: 'tr' });
     if (!data) return;
 
-    // Ana ders bilgisi
+    // Ana ders bilgisi (API field isimleri: BimKodu, DersKod, DersNo, DersAdi, Teori, Pratik, Kredi, ECTSKredi, DersTanimi, DersWebSayfa, vb.)
+    const dersKod = ((data.DersKod || data.dersKod || '') + ' ' + (data.DersNo || data.dersNo || '')).trim();
     const detail = {
         bim_kodu: bimKodu,
-        course_code: data.DersKodu || data.dersKodu || '',
-        course_name: data.DersAdi || data.dersAdi || '',
-        course_name_en: data.DersAdiEN || data.dersAdiEN || '',
-        language: data.DersDili || data.dersDili || '',
-        level: data.DersDuzeyi || data.dersDuzeyi || '',
-        type: data.DersTuru || data.dersTuru || '',
-        delivery: data.DersVerilis || data.dersVerilis || '',
-        theory_hours: data.Teorik || data.teorik || null,
-        lab_hours: data.Uygulama || data.uygulama || null,
+        course_code: dersKod,
+        course_name: data.DersAdi || data.dersAdi || data.DersAdiTurkce || '',
+        course_name_en: data.DersAdiEN || data.dersAdiEN || data.DersAdiEng || '',
+        language: data.DersDili || data.dersDili || data.DersDilAd || '',
+        level: data.DersSeviyesi || data.DersDuzeyi || data.dersDuzeyi || '',
+        type: data.DersTuru || data.dersTuru || data.DersTipAd || '',
+        delivery: data.DersVerilisBicimi || data.DersVerilis || data.dersVerilis || '',
+        theory_hours: data.Teori || data.Teorik || data.teorik || null,
+        lab_hours: data.Pratik || data.Uygulama || data.uygulama || null,
         credit: data.Kredi || data.kredi || null,
-        ects: data.AKTS || data.akts || null,
+        ects: data.ECTSKredi || data.AKTS || data.akts || null,
         description: stripHtml(data.DersTanimi || data.dersTanimi || data.Tanim || ''),
         teaching_methods: stripHtml(data.OgretmeYontemleri || data.ogretmeYontemleri || ''),
         textbook: stripHtml(data.DersKaynaklar || data.dersKaynaklar || data.Textbook || ''),
         other_resources: stripHtml(data.DigerKaynaklar || data.digerKaynaklar || ''),
-        prerequisites: data.OnKosul || data.onKosul || '',
-        corequisites: data.EsKosul || data.esKosul || '',
-        web_page: data.WebSayfasi || data.webSayfasi || null
+        prerequisites: data.Prequisites || data.OnKosul || data.onKosul || '',
+        corequisites: data.Corequisites || data.EsKosul || data.esKosul || '',
+        web_page: data.DersWebSayfa || data.WebSayfasi || data.webSayfasi || null
     };
 
     // Upsert ders detayı
@@ -457,8 +474,8 @@ async function syncCourseDetail(bimKodu) {
 
     if (!detailId) return;
 
-    // Haftalık konular
-    const topics = data.HaftalikKonular || data.haftalikKonular || data.WeeklyTopics || [];
+    // Haftalik konular (API field: CourseSubjets)
+    const topics = data.CourseSubjets || data.HaftalikKonular || [];
     if (Array.isArray(topics) && topics.length > 0) {
         await supabase.from('course_weekly_topics').delete().eq('course_detail_id', detailId);
         for (const topic of topics) {
@@ -470,29 +487,29 @@ async function syncCourseDetail(bimKodu) {
         }
     }
 
-    // Ders kazanımları
-    const outcomes = data.DersKazanimlari || data.dersKazanimlari || data.Outcomes || [];
+    // Ders kazanimlari (API field: CourseOutcomes)
+    const outcomes = data.CourseOutcomes || data.DersKazanimlari || [];
     if (Array.isArray(outcomes) && outcomes.length > 0) {
         await supabase.from('course_outcomes').delete().eq('course_detail_id', detailId);
         for (const outcome of outcomes) {
             await supabase.from('course_outcomes').insert({
                 course_detail_id: detailId,
-                outcome_no: outcome.SiraNo || outcome.No || 0,
+                outcome_no: outcome.KazanimId || outcome.SiraNo || 0,
                 outcome: stripHtml(outcome.Kazanim || outcome.kazanim || outcome.Outcome || '')
             });
         }
     }
 
-    // Değerlendirme kriterleri
-    const evals = data.DegerlendirmeKriterleri || data.degerlendirmeKriterleri || data.Evaluations || [];
+    // Degerlendirme kriterleri (API field: CourseEvaluations)
+    const evals = data.CourseEvaluations || data.DegerlendirmeKriterleri || [];
     if (Array.isArray(evals) && evals.length > 0) {
         await supabase.from('course_evaluations').delete().eq('course_detail_id', detailId);
         for (const ev of evals) {
             await supabase.from('course_evaluations').insert({
                 course_detail_id: detailId,
-                eval_type: ev.DegerlendirmeTuru || ev.Tur || ev.Type || '',
-                weight_percent: ev.Oran || ev.oran || ev.Weight || null,
-                count: ev.Sayi || ev.sayi || ev.Count || null
+                eval_type: ev.DegerlendirmeTuru || ev.Tur || ev.Type || ev.Ad || '',
+                weight_percent: ev.Oran || ev.oran || ev.Weight || ev.Yuzde || null,
+                count: ev.Sayi || ev.sayi || ev.Count || ev.Adet || null
             });
         }
     }
