@@ -189,7 +189,7 @@ const PAGE_KEYS = {
         await smartDelay(400);
 
         // --- C: Müfredatlar ---
-        await syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari, prog.ProgramType);
+        await syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari, bimKodMap, prog.ProgramType);
         await smartDelay(500);
     }
 
@@ -325,7 +325,7 @@ async function syncProgramQualifications(programId) {
 // =====================================================
 // C: Müfredatlar ve Müfredat Dersleri
 // =====================================================
-async function syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari, programType) {
+async function syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari, bimKodMap, programType) {
     // Müfredat listesi (method:700 + Params gerekli, array of arrays döner)
     // Format: [[mufNo, bolumKodu, nameTR, nameEN, progType, year, ?, programId], ...]
     const mufredatlar = await apiGet('WsPersonel', { method: 700, methodNo: 11, Params: String(programId) });
