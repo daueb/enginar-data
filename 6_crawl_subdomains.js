@@ -18,10 +18,14 @@ if (!GEMINI_API_KEY) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
+function smartDelay(baseMs = 500) {
+    const jitter = baseMs * 0.4 * (Math.random() * 2 - 1);
+    return delay(Math.max(200, Math.round(baseMs + jitter)));
+}
 
 // --- AYARLAR ---
 const MAX_DEPTH = 3;              // Link takip derinliği
-const MAX_PAGES_PER_DOMAIN = 200; // Her subdomain için max sayfa
+const MAX_PAGES_PER_DOMAIN = 150; // Her subdomain için max sayfa (sunucu yukunu azalt)
 const MAX_PDF_SIZE = 20 * 1024 * 1024; // 20MB
 const CHUNK_SIZE = 500;
 const CHUNK_OVERLAP = 50;
@@ -215,7 +219,7 @@ async function fetchPage(url) {
         const res = await axios.get(url, {
             timeout: 15000,
             headers: {
-                'User-Agent': 'EnginarBot/1.0 (Cankaya University Campus App Data Collector)',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
                 'Accept': 'text/html,application/xhtml+xml',
                 'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8'
             },
@@ -237,7 +241,7 @@ async function fetchAndParsePdf(url) {
     try {
         const res = await axios.get(url, {
             timeout: 30000,
-            headers: { 'User-Agent': 'EnginarBot/1.0 (Cankaya University Campus App Data Collector)' },
+            headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' },
             responseType: 'arraybuffer',
             maxContentLength: MAX_PDF_SIZE,
             maxRedirects: 3
@@ -376,7 +380,7 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
             doc_id: docId, chunk_index: i, chunk_text: chunks[i], embedding
         });
         if (!chunkErr) savedChunks++;
-        await delay(100);
+        await delay(150);
     }
 
     return savedChunks;
@@ -390,7 +394,7 @@ async function isSubdomainReachable(hostname) {
         const res = await axios.get(`https://${hostname}`, {
             timeout: 8000,
             maxRedirects: 3,
-            headers: { 'User-Agent': 'EnginarBot/1.0' },
+            headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
             validateStatus: (status) => status < 500
         });
         return res.status < 400;
@@ -400,7 +404,7 @@ async function isSubdomainReachable(hostname) {
             const res = await axios.get(`http://${hostname}`, {
                 timeout: 8000,
                 maxRedirects: 3,
-                headers: { 'User-Agent': 'EnginarBot/1.0' },
+                headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
                 validateStatus: (status) => status < 500
             });
             return res.status < 400;
@@ -463,7 +467,7 @@ async function crawlSubdomain(baseUrl) {
             for (const pdfUrl of pdfLinks) pdfQueue.add(pdfUrl);
         }
 
-        await delay(300);
+        await smartDelay(600);
     }
 
     // --- PDF'LERİ İŞLE ---
@@ -487,10 +491,11 @@ async function crawlSubdomain(baseUrl) {
             totalPdfs++;
             totalChunks += chunkCount;
             console.log(`   📎 [PDF ${totalPdfs}] ${pdfName.substring(0, 50)} (${pdfResult.pages}p, ${chunkCount} chunk)`);
-            await delay(500);
+            await smartDelay(800);
         }
     }
 
+    // Subdomain'ler arasi uzun mola (farkli IP'ye gecis gibi gorunsun)
     console.log(`   ✅ ${new URL(baseUrl).hostname}: ${totalPages} HTML + ${totalPdfs} PDF = ${totalChunks} chunk`);
     return { pages: totalPages + totalPdfs, chunks: totalChunks };
 }
@@ -549,6 +554,9 @@ async function crawlSubdomain(baseUrl) {
         } catch (err) {
             console.error(`❌ ${hostname} taranırken hata:`, err.message);
         }
+
+        // Subdomain'ler arasi 2-4sn mola (farkli kullanici oturumu simulasyonu)
+        await smartDelay(3000);
     }
 
     console.log(`\n${'='.repeat(60)}`);

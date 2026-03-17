@@ -15,18 +15,58 @@ if (!BEARER_TOKEN) {
 }
 
 const supabase = createClient(supabaseUrl, supabaseKey);
+
+// --- ANTI-DDOS: Rastgele gecikmeli delay ---
 const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
+function smartDelay(baseMs = 300) {
+    // baseMs +/- %40 rastgele jitter (insan davranisi simulasyonu)
+    const jitter = baseMs * 0.4 * (Math.random() * 2 - 1);
+    return delay(Math.max(100, Math.round(baseMs + jitter)));
+}
+
+// Dakikalik istek sayaci (sunucu korumasi)
+let requestCount = 0;
+let minuteStart = Date.now();
+const MAX_REQUESTS_PER_MINUTE = 80; // Dakikada max 80 istek (cok dusuk profil)
+
+async function throttle() {
+    requestCount++;
+    const elapsed = Date.now() - minuteStart;
+    if (elapsed >= 60000) {
+        requestCount = 1;
+        minuteStart = Date.now();
+    } else if (requestCount >= MAX_REQUESTS_PER_MINUTE) {
+        const waitMs = 60000 - elapsed + 1000;
+        console.log(`   ⏳ Rate limit: ${waitMs / 1000}sn bekleniyor...`);
+        await delay(waitMs);
+        requestCount = 1;
+        minuteStart = Date.now();
+    }
+}
 
 const API_BASE = 'https://ogbs.cankaya.edu.tr/Api/InformationPack';
-const headers = { 'Authorization': `Bearer ${BEARER_TOKEN}`, 'Content-Type': 'application/json' };
+const API_HEADERS = {
+    'Authorization': `Bearer ${BEARER_TOKEN}`,
+    'Content-Type': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'Accept': 'application/json, text/plain, */*',
+    'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Referer': 'https://bilgipaketi.cankaya.edu.tr/'
+};
 
 // --- API ÇAĞRI HELPER ---
 async function apiGet(endpoint, params = {}) {
+    await throttle();
     const url = `${API_BASE}/${endpoint}`;
     try {
-        const res = await axios.get(url, { headers, params });
+        const res = await axios.get(url, { headers: API_HEADERS, params, timeout: 15000 });
         return res.data;
     } catch (err) {
+        if (err.response?.status === 429) {
+            console.log(`   ⏳ 429 Too Many Requests - 30sn bekleniyor...`);
+            await delay(30000);
+            return apiGet(endpoint, params); // Tekrar dene
+        }
         console.error(`❌ API Hatası (${endpoint}):`, err.response?.status, err.response?.data || err.message);
         return null;
     }
@@ -57,7 +97,7 @@ async function fetchProgramList() {
                     ProgramType: progType
                 });
             }
-            await delay(100);
+            await smartDelay(300);
         }
     }
     return allPrograms;
@@ -142,15 +182,15 @@ const PAGE_KEYS = {
 
         // --- A: Bölüm Bilgi Sayfaları (Sayfa 0-9) ---
         await syncProgramInfo(programId, deptId);
-        await delay(200);
+        await smartDelay(400);
 
         // --- B: Program Yeterlilikleri (Sayfa 7'den) ---
         await syncProgramQualifications(programId);
-        await delay(200);
+        await smartDelay(400);
 
         // --- C: Müfredatlar ---
         await syncCurricula(programId, programName, programNameEN, deptId, allBimKodlari, prog.ProgramType);
-        await delay(200);
+        await smartDelay(500);
     }
 
     // 2. Ders Detayları (benzersiz BimKodu'lar)
@@ -166,7 +206,7 @@ const PAGE_KEYS = {
         if (detailCount % 50 === 0) {
             console.log(`   ... ${detailCount}/${allBimKodlari.length} ders detayı işlendi`);
         }
-        await delay(200);
+        await smartDelay(300);
     }
 
     console.log(`\n🚀 Bilgipaketi Senkronizasyonu Tamamlandı!`);
@@ -221,7 +261,7 @@ async function syncProgramInfo(programId, deptId) {
             });
         }
 
-        await delay(100);
+        await smartDelay(250);
     }
     console.log(`   ✅ Bölüm bilgi sayfaları kaydedildi`);
 }
@@ -420,7 +460,7 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
         }
 
         console.log(`   ✅ Müfredat "${mufName}" -> ${courseCount} ders kaydedildi`);
-        await delay(200);
+        await smartDelay(500);
     }
 }
 
