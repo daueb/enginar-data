@@ -66,7 +66,8 @@ async function getQueryEmbedding(text, apiKey) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        content: { parts: [{ text: text.substring(0, 2000) }] }
+        content: { parts: [{ text: text.substring(0, 2000) }] },
+        outputDimensionality: 768
       })
     }
   );
@@ -235,7 +236,8 @@ async function handleChat(request, env) {
   } catch (err) {
     console.error('Chat error:', err);
     return new Response(JSON.stringify({
-      error: 'Bir hata oluştu. Lütfen tekrar deneyin.'
+      error: 'Bir hata oluştu. Lütfen tekrar deneyin.',
+      debug: err.message
     }), {
       status: 500,
       headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' }

@@ -198,7 +198,8 @@ async function getEmbedding(text, retryCount = 0) {
         const res = await axios.post(
             `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
             {
-                content: { parts: [{ text: text.substring(0, 8000) }] }
+                content: { parts: [{ text: text.substring(0, 8000) }] },
+                outputDimensionality: 768
             },
             { headers: { 'Content-Type': 'application/json' }, timeout: 15000 }
         );
