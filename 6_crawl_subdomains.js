@@ -436,6 +436,82 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
 }
 
 // =====================================================
+// HOSTNAME → BÖLÜM ADI EŞLEŞTİRMESİ (chunk'lara kontekst eklemek icin)
+// =====================================================
+const HOSTNAME_TO_DEPARTMENT = {
+    // Mühendislik
+    'ceng.cankaya.edu.tr': 'Bilgisayar Mühendisliği', 'en.ceng.cankaya.edu.tr': 'Computer Engineering',
+    'me.cankaya.edu.tr': 'Makine Mühendisliği', 'en.me.cankaya.edu.tr': 'Mechanical Engineering',
+    'ce.cankaya.edu.tr': 'İnşaat Mühendisliği', 'en.ce.cankaya.edu.tr': 'Civil Engineering',
+    'ee.cankaya.edu.tr': 'Elektrik-Elektronik Mühendisliği', 'en.ee.cankaya.edu.tr': 'Electrical-Electronics Engineering',
+    'ie.cankaya.edu.tr': 'Endüstri Mühendisliği', 'en.ie.cankaya.edu.tr': 'Industrial Engineering',
+    'ece.cankaya.edu.tr': 'Elektronik ve Haberleşme Mühendisliği', 'en.ece.cankaya.edu.tr': 'Electronics and Communication Engineering',
+    'mece.cankaya.edu.tr': 'Mekatronik Mühendisliği', 'en.mece.cankaya.edu.tr': 'Mechatronics Engineering',
+    'mse.cankaya.edu.tr': 'Malzeme Bilimi ve Mühendisliği',
+    'se.cankaya.edu.tr': 'Yazılım Mühendisliği',
+    // Fen-Edebiyat
+    'math.cankaya.edu.tr': 'Matematik', 'en.math.cankaya.edu.tr': 'Mathematics',
+    'ell.cankaya.edu.tr': 'İngiliz Dili ve Edebiyatı', 'en.ell.cankaya.edu.tr': 'English Language and Literature',
+    'psy.cankaya.edu.tr': 'Psikoloji', 'en.psy.cankaya.edu.tr': 'Psychology',
+    'mtb.cankaya.edu.tr': 'İngilizce Mütercim ve Tercümanlık', 'en.mtb.cankaya.edu.tr': 'Translation and Interpreting',
+    // İktisadi ve İdari Bilimler
+    'bb.cankaya.edu.tr': 'Bankacılık ve Finans', 'en.bb.cankaya.edu.tr': 'Banking and Finance',
+    'econ.cankaya.edu.tr': 'İktisat', 'en.econ.cankaya.edu.tr': 'Economics',
+    'economics.cankaya.edu.tr': 'İktisat',
+    'ir.cankaya.edu.tr': 'Siyaset Bilimi ve Uluslararası İlişkiler',
+    'man.cankaya.edu.tr': 'İşletme', 'en.man.cankaya.edu.tr': 'Management',
+    'bf.cankaya.edu.tr': 'Uluslararası Ticaret ve Finansman', 'en.bf.cankaya.edu.tr': 'International Trade and Finance',
+    'psi.cankaya.edu.tr': 'Siyaset Bilimi ve Uluslararası İlişkiler',
+    'ybs.cankaya.edu.tr': 'Yönetim Bilişim Sistemleri',
+    // Hukuk
+    'law.cankaya.edu.tr': 'Hukuk Fakültesi', 'fld.cankaya.edu.tr': 'Hukuk Fakültesi',
+    // Mimarlık
+    'arch.cankaya.edu.tr': 'Mimarlık', 'architecture.cankaya.edu.tr': 'Mimarlık',
+    'id.cankaya.edu.tr': 'İç Mimarlık', 'inar.cankaya.edu.tr': 'İç Mimarlık', 'en.inar.cankaya.edu.tr': 'Interior Architecture',
+    'plan.cankaya.edu.tr': 'Şehir ve Bölge Planlama',
+    // Enstitüler
+    'fbe.cankaya.edu.tr': 'Fen Bilimleri Enstitüsü', 'en.fbe.cankaya.edu.tr': 'Graduate School of Natural and Applied Sciences',
+    'sbe.cankaya.edu.tr': 'Sosyal Bilimler Enstitüsü', 'en.sbe.cankaya.edu.tr': 'Graduate School of Social Sciences',
+    'gs.cankaya.edu.tr': 'Lisansüstü Eğitim',
+    // İdari birimler
+    'oim.cankaya.edu.tr': 'Uluslararası İlişkiler Ofisi',
+    'oidb.cankaya.edu.tr': 'Öğrenci İşleri Daire Başkanlığı',
+    'registrar.cankaya.edu.tr': 'Öğrenci İşleri',
+    'kutuphane.cankaya.edu.tr': 'Kütüphane',
+    'spor.cankaya.edu.tr': 'Spor Birimi',
+    'saglik.cankaya.edu.tr': 'Sağlık Birimi',
+    'kariyer.cankaya.edu.tr': 'Kariyer Merkezi',
+    'kalite.cankaya.edu.tr': 'Kalite Güvence Birimi',
+    'iro.cankaya.edu.tr': 'Uluslararası İlişkiler Ofisi',
+    'erasmus.cankaya.edu.tr': 'Erasmus Ofisi',
+    'sks.cankaya.edu.tr': 'Sağlık Kültür ve Spor',
+    'pdrm.cankaya.edu.tr': 'Psikolojik Danışmanlık',
+    'cc.cankaya.edu.tr': 'Bilgi İşlem',
+    // Ana site
+    'cankaya.edu.tr': 'Çankaya Üniversitesi',
+    'www.cankaya.edu.tr': 'Çankaya Üniversitesi',
+};
+
+function getDepartmentLabel(hostname) {
+    if (HOSTNAME_TO_DEPARTMENT[hostname]) return HOSTNAME_TO_DEPARTMENT[hostname];
+    // en. prefix'ini kaldir ve tekrar dene
+    if (hostname.startsWith('en.')) {
+        const trHost = hostname.replace('en.', '');
+        if (HOSTNAME_TO_DEPARTMENT[trHost]) return HOSTNAME_TO_DEPARTMENT[trHost] + ' (EN)';
+    }
+    // Ders sitelerini yakala (ör: ce102.cankaya.edu.tr -> İnşaat Mühendisliği Dersi)
+    const dersMatch = hostname.match(/^([a-z]+)\d+\.cankaya\.edu\.tr$/);
+    if (dersMatch) {
+        const prefix = dersMatch[1];
+        const deptMap = { ce: 'İnşaat Müh.', me: 'Makine Müh.', ee: 'Elektrik-Elektronik Müh.', ece: 'Elektronik ve Haberleşme Müh.',
+            mse: 'Malzeme Bilimi', math: 'Matematik', psi: 'Psikoloji', ell: 'İngiliz Dili', inar: 'İç Mimarlık',
+            ceng: 'Bilgisayar Müh.', mece: 'Mekatronik Müh.' };
+        if (deptMap[prefix]) return `${deptMap[prefix]} Ders Sayfası`;
+    }
+    return hostname; // fallback: hostname'i döndür
+}
+
+// =====================================================
 // SUBDOMAIN ERIŞILEBILIRLIK KONTROLÜ
 // =====================================================
 async function isSubdomainReachable(hostname) {
@@ -467,8 +543,11 @@ async function isSubdomainReachable(hostname) {
 // BİR SUBDOMAİN'İ TARA (HTML + PDF)
 // =====================================================
 async function crawlSubdomain(baseUrl) {
+    const hostname = new URL(baseUrl).hostname;
+    const deptLabel = getDepartmentLabel(hostname);
+
     console.log(`\n${'─'.repeat(50)}`);
-    console.log(`🌐 Taranıyor: ${baseUrl}`);
+    console.log(`🌐 Taranıyor: ${baseUrl} [${deptLabel}]`);
     console.log('─'.repeat(50));
 
     const sourceId = await ensureRagSource(baseUrl);
@@ -494,13 +573,16 @@ async function crawlSubdomain(baseUrl) {
 
         const $ = cheerio.load(html);
         const title = $('title').text().trim() || url;
-        const text = htmlToText(html);
+        const rawText = htmlToText(html);
 
-        if (text.length < 100) continue;
+        if (rawText.length < 100) continue;
+
+        // Chunk'a bölüm konteksti ekle (RAG aramasinda dogru bolumun donmesini saglar)
+        const text = `[${deptLabel}] ${title}\n${rawText}`;
 
         const chunkCount = await saveDocumentAndChunks(sourceId, url, title, text, {
             source: 'subdomain_crawl', type: 'html',
-            domain: new URL(baseUrl).hostname
+            domain: hostname
         });
 
         totalPages++;
@@ -531,9 +613,11 @@ async function crawlSubdomain(baseUrl) {
             if (!pdfResult || pdfResult.text.length < 100) continue;
 
             const pdfName = decodeURIComponent(pdfUrl.split('/').pop() || 'document.pdf');
-            const chunkCount = await saveDocumentAndChunks(sourceId, pdfUrl, pdfResult.title || pdfName, pdfResult.text, {
+            // PDF'e de bölüm konteksti ekle
+            const pdfTextWithContext = `[${deptLabel}] ${pdfResult.title || pdfName}\n${pdfResult.text}`;
+            const chunkCount = await saveDocumentAndChunks(sourceId, pdfUrl, pdfResult.title || pdfName, pdfTextWithContext, {
                 source: 'subdomain_crawl', type: 'pdf',
-                domain: new URL(baseUrl).hostname,
+                domain: hostname,
                 filename: pdfName, pdf_pages: pdfResult.pages
             });
 
