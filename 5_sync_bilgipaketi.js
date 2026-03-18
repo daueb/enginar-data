@@ -27,7 +27,7 @@ function smartDelay(baseMs = 300) {
 // Dakikalik istek sayaci (sunucu korumasi)
 let requestCount = 0;
 let minuteStart = Date.now();
-const MAX_REQUESTS_PER_MINUTE = 80; // Dakikada max 80 istek (cok dusuk profil)
+const MAX_REQUESTS_PER_MINUTE = 120; // Dakikada max 120 istek
 
 async function throttle() {
     requestCount++;

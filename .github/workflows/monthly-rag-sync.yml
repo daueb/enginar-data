@@ -23,7 +23,7 @@ jobs:
   bilgipaketi-sync:
     if: ${{ github.event_name == 'schedule' || inputs.run_bilgipaketi == true }}
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -41,7 +41,7 @@ jobs:
   subdomain-crawl:
     if: ${{ github.event_name == 'schedule' || inputs.run_crawl == true }}
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
