@@ -147,7 +147,7 @@ async function saveChunks(sourceId, docUrl, title, text, metadata) {
         }
         await supabase.from('rag_documents').update({
             title, content_hash: contentHash,
-            source_type: metadata?.type || 'bilgipaketi',
+            source_type: 'bilgipaketi',
             category: metadata?.source || 'bilgipaketi',
             department: department,
             updated_from_source_at: new Date().toISOString()
@@ -155,7 +155,7 @@ async function saveChunks(sourceId, docUrl, title, text, metadata) {
     } else {
         const { error: docErr } = await supabase.from('rag_documents').insert({
             doc_id: docId, url: docUrl, title,
-            source_type: metadata?.type || 'bilgipaketi',
+            source_type: 'bilgipaketi',
             category: metadata?.source || 'bilgipaketi',
             department: department,
             content_hash: contentHash
