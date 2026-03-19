@@ -14,12 +14,16 @@ on:
         type: boolean
         default: true
       run_vectorize:
-        description: 'Bilgipaketi vektörizasyon (Script 7)'
+        description: 'Vektörizasyon - Script 7 + Script 8 (Embedding)'
         type: boolean
         default: true
+      run_fill_only:
+        description: 'SADECE eksik embeddingleri doldur (Script 8)'
+        type: boolean
+        default: false
 
 jobs:
-  # --- JOB 1: Bilgipaketi API + Subdomain Crawl (paralel) ---
+  # --- JOB 1: Bilgipaketi API Sync (Script 5) ---
   bilgipaketi-sync:
     if: ${{ github.event_name == 'schedule' || inputs.run_bilgipaketi == true }}
     runs-on: ubuntu-latest
@@ -38,6 +42,7 @@ jobs:
           BILGIPAKETI_TOKEN: ${{ secrets.BILGIPAKETI_TOKEN }}
         run: node 5_sync_bilgipaketi.js
 
+  # --- JOB 2: Subdomain Crawl + RAG (Script 6) ---
   subdomain-crawl:
     if: ${{ github.event_name == 'schedule' || inputs.run_crawl == true }}
     runs-on: ubuntu-latest
@@ -56,7 +61,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node 6_crawl_subdomains.js
 
-  # --- JOB 2: Vektörizasyon (5 ve 6 bittikten sonra) ---
+  # --- JOB 3: Bilgipaketi Vektörizasyon (Script 7) + Embedding Doldur (Script 8) ---
   vectorize:
     needs: [bilgipaketi-sync, subdomain-crawl]
     if: always() && (github.event_name == 'schedule' || inputs.run_vectorize == true)
@@ -75,7 +80,26 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node 7_vectorize_bilgipaketi.js
-      - name: Eksik Embedding'leri Doldur (Script 8)
+      - name: Eksik Embeddingleri Doldur (Script 8 - Batch)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node 8_fill_embeddings.js
+
+  # --- JOB 4: SADECE Script 8 (Eksik embedding doldur) ---
+  fill-embeddings-only:
+    if: ${{ inputs.run_fill_only == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - name: Eksik Embeddingleri Doldur (Script 8 - Batch)
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
