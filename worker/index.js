@@ -34,51 +34,48 @@ const CORS_HEADERS = {
   'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 };
 
-// ─── Rate Limiter (KV olmadan, basit in-memory) ───
-// Not: Cloudflare Worker'lar stateless, her instance sıfırdan başlar
-// Gerçek rate limit için KV veya D1 kullanılabilir ama başlangıç için
-// kullanıcı bazlı basit kontrol yeterli
-const rateLimitMap = new Map();
+// ─── Rate Limiter (Cloudflare KV) ───
+const DAILY_LIMIT = 20;
 
-function checkRateLimit(userId) {
-  const now = Date.now();
-  const dayStart = now - (now % 86400000); // Günün başı (UTC)
-  const key = `${userId}_${dayStart}`;
+async function checkRateLimit(userId, kvStore) {
+  const today = new Date().toISOString().split('T')[0]; // "2026-03-18"
+  const key = `rl:${userId}:${today}`;
 
-  const count = rateLimitMap.get(key) || 0;
-  if (count >= 20) return false; // Günlük 20 soru limiti
+  const current = parseInt(await kvStore.get(key)) || 0;
+  if (current >= DAILY_LIMIT) return false;
 
-  rateLimitMap.set(key, count + 1);
-
-  // Eski kayıtları temizle
-  for (const [k] of rateLimitMap) {
-    if (!k.endsWith(`_${dayStart}`)) rateLimitMap.delete(k);
-  }
-
+  // TTL 86400 = 24 saat sonra otomatik silinir
+  await kvStore.put(key, String(current + 1), { expirationTtl: 86400 });
   return true;
 }
 
 // ─── Gemini Embedding ───
 async function getQueryEmbedding(text, apiKey) {
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        content: { parts: [{ text: text.substring(0, 2000) }] },
-        outputDimensionality: 768
-      })
+  try {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${apiKey}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          content: { parts: [{ text: text.substring(0, 2000) }] },
+          outputDimensionality: 768
+        })
+      }
+    );
+
+    if (!res.ok) {
+      const err = await res.text();
+      console.error('Gemini embedding failed:', res.status, err);
+      return null; // Fallback to text search
     }
-  );
 
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Embedding hatası: ${res.status} - ${err}`);
+    const data = await res.json();
+    return data.embedding.values;
+  } catch (e) {
+    console.error('Gemini embedding error:', e.message);
+    return null; // Fallback to text search
   }
-
-  const data = await res.json();
-  return data.embedding.values;
 }
 
 // ─── Supabase Vektör Araması ───
@@ -104,6 +101,50 @@ async function searchChunks(embedding, supabaseUrl, supabaseKey, limit = 5) {
   }
 
   return await res.json();
+}
+
+// ─── Supabase Text Search (embedding fallback) ───
+async function searchChunksText(question, supabaseUrl, supabaseKey, limit = 5) {
+  // Basit keyword arama — embedding çalışmadığında kullanılır
+  const keywords = question.toLowerCase()
+    .replace(/[^\w\sğüşıöçĞÜŞİÖÇa-z0-9]/g, '')
+    .split(/\s+/)
+    .filter(w => w.length > 2)
+    .slice(0, 5);
+
+  if (keywords.length === 0) return [];
+
+  // Supabase full-text search (daha güvenilir)
+  const searchQuery = keywords.join(' & ');
+
+  // Önce ilike deneyelim (en basit)
+  const orFilter = keywords.map(k => `chunk_text.ilike.%25${encodeURIComponent(k)}%25`).join(',');
+
+  const res = await fetch(
+    `${supabaseUrl}/rest/v1/rag_chunks?select=id,doc_id,chunk_text,rag_documents(title,url,department)&or=(${orFilter})&limit=${limit}`,
+    {
+      headers: {
+        'apikey': supabaseKey,
+        'Authorization': `Bearer ${supabaseKey}`,
+      }
+    }
+  );
+
+  if (!res.ok) {
+    console.error('Text search failed:', res.status, await res.text());
+    return [];
+  }
+
+  const data = await res.json();
+  return data.map(c => ({
+    id: c.id,
+    doc_id: c.doc_id,
+    chunk_text: c.chunk_text,
+    title: c.rag_documents?.title || '',
+    url: c.rag_documents?.url || '',
+    department: c.rag_documents?.department || '',
+    similarity: 0.5,
+  }));
 }
 
 // ─── Groq LLM ───
@@ -190,9 +231,9 @@ async function handleChat(request, env) {
     });
   }
 
-  // Rate limit
+  // Rate limit (KV)
   const uid = user_id || request.headers.get('CF-Connecting-IP') || 'anonymous';
-  if (!checkRateLimit(uid)) {
+  if (!await checkRateLimit(uid, env.RATE_LIMIT)) {
     return new Response(JSON.stringify({
       error: 'Günlük soru limitine ulaştınız (20/gün). Yarın tekrar deneyin.'
     }), {
@@ -202,11 +243,17 @@ async function handleChat(request, env) {
   }
 
   try {
-    // 1. Soruyu embed et
+    // 1. Soruyu embed et (Gemini çökerse null döner)
     const embedding = await getQueryEmbedding(question, env.GEMINI_API_KEY);
 
-    // 2. En yakın chunk'ları bul
-    const chunks = await searchChunks(embedding, env.SUPABASE_URL, env.SUPABASE_SERVICE_KEY);
+    // 2. En yakın chunk'ları bul (embedding varsa vektör, yoksa text search)
+    let chunks;
+    if (embedding) {
+      chunks = await searchChunks(embedding, env.SUPABASE_URL, env.SUPABASE_SERVICE_KEY);
+    }
+    if (!chunks || chunks.length === 0) {
+      chunks = await searchChunksText(question, env.SUPABASE_URL, env.SUPABASE_SERVICE_KEY);
+    }
 
     if (!chunks || chunks.length === 0) {
       return new Response(JSON.stringify({
@@ -236,8 +283,7 @@ async function handleChat(request, env) {
   } catch (err) {
     console.error('Chat error:', err);
     return new Response(JSON.stringify({
-      error: 'Bir hata oluştu. Lütfen tekrar deneyin.',
-      debug: err.message
+      error: 'Bir hata oluştu. Lütfen tekrar deneyin.'
     }), {
       status: 500,
       headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' }
