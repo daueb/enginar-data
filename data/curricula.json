@@ -1,1 +1,1222 @@
-[]
+[
+  {
+    "id": "00b1bcd2-bf47-454c-9346-562f21922568",
+    "program_id": 463209,
+    "department_id": "45d032a2-1229-415a-b9fe-c9cf057966ea",
+    "name": "Mimarlık Doktora 2017",
+    "name_en": "Architecture (Doctorate)",
+    "year": 2017,
+    "muf_no": 333,
+    "created_at": "2026-03-17T01:23:02.751288+00:00"
+  },
+  {
+    "id": "048500df-17bb-429a-a54b-9bf407771572",
+    "program_id": 157358,
+    "department_id": "c9f6efb9-0915-4001-9574-4a2a812a0650",
+    "name": "İktisat 2018",
+    "name_en": "Economics",
+    "year": 2018,
+    "muf_no": 366,
+    "created_at": "2026-03-17T00:46:14.880208+00:00"
+  },
+  {
+    "id": "04d14d8c-9ff2-4409-b6a6-3cedccb35fbd",
+    "program_id": 463261,
+    "department_id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "name": "Kamu Hukuku YL (Tezsiz) 2024",
+    "name_en": "Public Law (Without Thesis)",
+    "year": 2024,
+    "muf_no": 474,
+    "created_at": "2026-03-17T01:16:28.402871+00:00"
+  },
+  {
+    "id": "051fedbd-2b24-4da1-b815-9404e8918596",
+    "program_id": 463189,
+    "department_id": "8e15c0da-fa7a-4ed4-be68-c634e1e15b2a",
+    "name": "Endüstri Mühendisliği YL (Tezli) 2017",
+    "name_en": "Industrial  Engineering (With Thesis)",
+    "year": 2017,
+    "muf_no": 365,
+    "created_at": "2026-03-17T01:12:50.656192+00:00"
+  },
+  {
+    "id": "06de245c-0911-45db-9f8f-fc5095b80ed4",
+    "program_id": 463217,
+    "department_id": null,
+    "name": "Yapım Teknolojileri YL (Tezli) 2018",
+    "name_en": "Building Technologies",
+    "year": 2018,
+    "muf_no": 383,
+    "created_at": "2026-03-17T01:21:28.732273+00:00"
+  },
+  {
+    "id": "08e630d0-4d5f-4bc4-9b23-333c8c8174cc",
+    "program_id": 463237,
+    "department_id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "name": "Özel Hukuk Doktora 2018",
+    "name_en": "Private Law (Doctorate)",
+    "year": 2018,
+    "muf_no": 381,
+    "created_at": "2026-03-17T01:23:15.925119+00:00"
+  },
+  {
+    "id": "0a785717-22bd-4269-9c67-479de5037147",
+    "program_id": 469410,
+    "department_id": "700bda6f-89f1-4e15-9633-f52643cf823c",
+    "name": "Bilgisayar Bilimleri 2025",
+    "name_en": "Computer Sciences",
+    "year": 2025,
+    "muf_no": 502,
+    "created_at": "2026-03-17T00:39:33.476436+00:00"
+  },
+  {
+    "id": "0bfae76c-fa87-41fb-bd5e-8b58b425bcc8",
+    "program_id": 463226,
+    "department_id": null,
+    "name": "Veri Analitiği YL (Tezsiz) 2024",
+    "name_en": "Data Analytics (Without Thesis)",
+    "year": 2024,
+    "muf_no": 476,
+    "created_at": "2026-03-17T01:21:15.420743+00:00"
+  },
+  {
+    "id": "0c09f1e8-373c-4551-887b-2ad6207f487a",
+    "program_id": 463234,
+    "department_id": null,
+    "name": "Finansal Ekonomi YL (Tezli) 2021",
+    "name_en": "Financial Economics (With Thesis)",
+    "year": 2021,
+    "muf_no": 416,
+    "created_at": "2026-03-17T01:13:19.741554+00:00"
+  },
+  {
+    "id": "0c2875a8-a63d-423e-8e36-add71f11fbab",
+    "program_id": 157371,
+    "department_id": "cfd8657b-e05a-47f6-9e73-84732e3a7301",
+    "name": "Bilgisayar Mühendisliği 2022",
+    "name_en": "Computer Engineering",
+    "year": 2022,
+    "muf_no": 418,
+    "created_at": "2026-03-17T01:00:34.431272+00:00"
+  },
+  {
+    "id": "0f5d9915-5bf7-47e1-8a91-85dc44cc9db5",
+    "program_id": 463251,
+    "department_id": "04343fa8-3c91-4737-91ab-7c0df5f7166e",
+    "name": "İşletme Yönetimi YL (Tezli) 2025",
+    "name_en": "Business Administration (With Thesis)",
+    "year": 2025,
+    "muf_no": 500,
+    "created_at": "2026-03-17T01:15:42.606562+00:00"
+  },
+  {
+    "id": "0fb208b0-1b36-4ead-b93a-adc3ccab51ff",
+    "program_id": 463255,
+    "department_id": null,
+    "name": "Siyaset Bilimi YL (Tezsiz) 2016",
+    "name_en": "Political Science (Without Thesis)",
+    "year": 2016,
+    "muf_no": 287,
+    "created_at": "2026-03-17T01:20:06.115508+00:00"
+  },
+  {
+    "id": "10feca7f-9469-4c85-a3a9-d4e6983fea45",
+    "program_id": 463235,
+    "department_id": null,
+    "name": "İnsan Kaynakları Yönetimi YL (Tezli) 2025",
+    "name_en": "Human Resource Management (With Thesis)",
+    "year": 2025,
+    "muf_no": 498,
+    "created_at": "2026-03-17T01:14:14.977152+00:00"
+  },
+  {
+    "id": "12bf5991-a252-419f-a506-5ac93638cf96",
+    "program_id": 463259,
+    "department_id": "1447dc7b-c083-4cea-97f5-019d4f009b01",
+    "name": "Psikoloji YL (Sosyal / Örgütsel Psikoloji) (Tezli) 2018",
+    "name_en": "Psychology (With Thesis)",
+    "year": 2018,
+    "muf_no": 370,
+    "created_at": "2026-03-17T01:19:43.526316+00:00"
+  },
+  {
+    "id": "14bcf167-179e-44a2-8173-4877450203d8",
+    "program_id": 463196,
+    "department_id": "cfd8657b-e05a-47f6-9e73-84732e3a7301",
+    "name": "Bilgisayar Mühendisliği YL (Tezsiz) 2017",
+    "name_en": "Computer Engineering (Without Thesis)",
+    "year": 2017,
+    "muf_no": 352,
+    "created_at": "2026-03-17T01:11:53.55618+00:00"
+  },
+  {
+    "id": "15b7470d-a5e5-4346-8b83-906c2e124988",
+    "program_id": 157347,
+    "department_id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "name": "Hukuk 2016 (Yıllık Sistem)",
+    "name_en": "Law",
+    "year": 2016,
+    "muf_no": 295,
+    "created_at": "2026-03-17T01:00:10.12211+00:00"
+  },
+  {
+    "id": "15c6d3d0-f00f-4c96-b34f-17da45e102b3",
+    "program_id": 463232,
+    "department_id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "name": "Kamu Hukuku Doktora 2018",
+    "name_en": "Public Law (Doctorate)",
+    "year": 2018,
+    "muf_no": 379,
+    "created_at": "2026-03-17T01:22:38.835935+00:00"
+  },
+  {
+    "id": "1a123a13-0d7a-4e60-85e1-0d66687c6d2a",
+    "program_id": 463245,
+    "department_id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "name": "Özel Hukuk YL (Tezli) 2018",
+    "name_en": "Private Law (With Thesis)",
+    "year": 2018,
+    "muf_no": 380,
+    "created_at": "2026-03-17T01:18:47.7256+00:00"
+  },
+  {
+    "id": "1a472977-b9a8-4dfc-a98e-9646b6599339",
+    "program_id": 252880,
+    "department_id": "b161b775-3799-4a87-b20b-225a9c21c028",
+    "name": "Elektrik-Elektronik Mühendisliği 2018",
+    "name_en": "Electrical-Electronics Engineering",
+    "year": 2018,
+    "muf_no": 377,
+    "created_at": "2026-03-17T01:01:02.130998+00:00"
+  },
+  {
+    "id": "1ca6b9a4-435c-4edd-9e93-0437a8277b1c",
+    "program_id": 463218,
+    "department_id": null,
+    "name": "Yapım Teknolojileri YL (Tezsiz) 2018",
+    "name_en": "Building Technologies",
+    "year": 2018,
+    "muf_no": 382,
+    "created_at": "2026-03-17T01:21:40.463746+00:00"
+  },
+  {
+    "id": "2594ffc8-bab3-4301-92b9-7c0b83e7000b",
+    "program_id": 226261,
+    "department_id": "45d032a2-1229-415a-b9fe-c9cf057966ea",
+    "name": "Mimarlık 2020",
+    "name_en": "Architecture",
+    "year": 2020,
+    "muf_no": 402,
+    "created_at": "2026-03-17T01:09:25.560796+00:00"
+  },
+  {
+    "id": "2c698284-40c4-4a3e-9127-c5ccce11fec0",
+    "program_id": 248963,
+    "department_id": null,
+    "name": "Elektronik ve Haberleşme YL (Tezsiz) 2017",
+    "name_en": "Electronic and Communication Engineering (Without Thesis)",
+    "year": 2017,
+    "muf_no": 359,
+    "created_at": "2026-03-17T01:12:39.218709+00:00"
+  },
+  {
+    "id": "326ae3bf-c473-4bb6-9fcf-a1a5e6ff71fb",
+    "program_id": 463247,
+    "department_id": null,
+    "name": "İngiliz Edebiyatı ve Kültür İncelemeleri YL (Tezsiz) 2016",
+    "name_en": "English Literature and Cultural Studies (Without Thesis)",
+    "year": 2016,
+    "muf_no": 289,
+    "created_at": "2026-03-17T01:14:02.844849+00:00"
+  },
+  {
+    "id": "330764ec-012d-453f-86fb-f403a30e9c43",
+    "program_id": 420205,
+    "department_id": "bd3c0324-5231-4649-ac47-9ee907420655",
+    "name": "İngilizce Mütercim ve Tercümanlık 2023 (InterPreting Track)",
+    "name_en": "Translation and Interpreting Studies (English)",
+    "year": 2023,
+    "muf_no": 472,
+    "created_at": "2026-03-17T00:42:30.781222+00:00"
+  },
+  {
+    "id": "3316751b-f4b0-4c75-943e-208bb28f7ae3",
+    "program_id": 463259,
+    "department_id": "1447dc7b-c083-4cea-97f5-019d4f009b01",
+    "name": "Psikoloji YL (Bilişsel Psikoloji) (Tezli) 2018",
+    "name_en": "Psychology (With Thesis)",
+    "year": 2018,
+    "muf_no": 371,
+    "created_at": "2026-03-17T01:19:38.340744+00:00"
+  },
+  {
+    "id": "391611cb-7186-4a4f-b363-391148f20013",
+    "program_id": 463221,
+    "department_id": "95743227-0fc2-43f5-8650-2b9ed1e724a4",
+    "name": "Şehir ve Bölge Planlama Doktora 2018",
+    "name_en": "City and Regional Planning",
+    "year": 2018,
+    "muf_no": 375,
+    "created_at": "2026-03-17T01:23:27.483958+00:00"
+  },
+  {
+    "id": "393dbe30-7aeb-465b-876c-67ec6eda8e69",
+    "program_id": 463211,
+    "department_id": "96494939-67b2-414d-909b-fe0b33d4842e",
+    "name": "Makine Doktora 2017",
+    "name_en": "Mechanical Engineering (Doctorate)",
+    "year": 2017,
+    "muf_no": 320,
+    "created_at": "2026-03-17T01:22:50.692642+00:00"
+  },
+  {
+    "id": "3c6c3746-371e-4d4e-816a-e886dfbfe686",
+    "program_id": 157349,
+    "department_id": "1a3506fb-8cbe-4265-b8c4-1a8ea83603a2",
+    "name": "İngiliz Dili ve Edebiyatı 2019",
+    "name_en": "English Language and Literature",
+    "year": 2019,
+    "muf_no": 394,
+    "created_at": "2026-03-17T00:42:04.253792+00:00"
+  },
+  {
+    "id": "3c96f056-9705-4e22-a971-964a689f737f",
+    "program_id": 463231,
+    "department_id": "04343fa8-3c91-4737-91ab-7c0df5f7166e",
+    "name": "İşletme Doktora 2024",
+    "name_en": "Management (Doctorate)",
+    "year": 2024,
+    "muf_no": 471,
+    "created_at": "2026-03-17T01:22:26.107777+00:00"
+  },
+  {
+    "id": "401c5766-600b-460c-9619-5bcffb782d73",
+    "program_id": 226263,
+    "department_id": "8684dc32-811b-4c95-87f6-d9909a3ec9aa",
+    "name": "İnşaat Mühendisliği 2017",
+    "name_en": "Civil Engineering",
+    "year": 2017,
+    "muf_no": 386,
+    "created_at": "2026-03-17T01:02:42.755692+00:00"
+  },
+  {
+    "id": "41db438d-5b30-4aac-bdc2-3105724eccd1",
+    "program_id": 463250,
+    "department_id": "04343fa8-3c91-4737-91ab-7c0df5f7166e",
+    "name": "İşletme Yönetimi YL (Tezsiz) 2025",
+    "name_en": "Business Administration (Without Thesis)",
+    "year": 2025,
+    "muf_no": 501,
+    "created_at": "2026-03-17T01:15:59.752731+00:00"
+  },
+  {
+    "id": "44650d09-88c9-4b33-8020-9be9409ab861",
+    "program_id": 463260,
+    "department_id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "name": "Özel Hukuk YL (Tezsiz) 2024",
+    "name_en": "Private Law (Without Thesis)",
+    "year": 2024,
+    "muf_no": 473,
+    "created_at": "2026-03-17T01:18:57.328021+00:00"
+  },
+  {
+    "id": "461c6763-c82d-41e2-9915-a6b6290cbbc6",
+    "program_id": 463194,
+    "department_id": null,
+    "name": "Bilgi Teknolojileri YL (Tezsiz) 2021",
+    "name_en": "Information Technology (Without Thesis)",
+    "year": 2021,
+    "muf_no": 411,
+    "created_at": "2026-03-17T01:11:36.170363+00:00"
+  },
+  {
+    "id": "47c8714c-3c30-4621-b1cc-fa61d6fcd535",
+    "program_id": 248962,
+    "department_id": null,
+    "name": "Elektronik ve Haberleşme YL (Tezli) 2017",
+    "name_en": "Electronic and Communication Engineering (With Thesis)",
+    "year": 2017,
+    "muf_no": 360,
+    "created_at": "2026-03-17T01:12:27.353767+00:00"
+  },
+  {
+    "id": "486a9998-8694-41b0-b585-b8f346ccd51b",
+    "program_id": 130437,
+    "department_id": null,
+    "name": "Ortak Dersler Bölümü 2018",
+    "name_en": "Department of Inter-Curricular Courses",
+    "year": 2018,
+    "muf_no": 384,
+    "created_at": "2026-03-17T01:11:00.443913+00:00"
+  },
+  {
+    "id": "49531bc0-2035-47b6-a21e-4a83320dda6f",
+    "program_id": 463190,
+    "department_id": "8e15c0da-fa7a-4ed4-be68-c634e1e15b2a",
+    "name": "Endüstri Mühendisliği YL (Tezsiz) 2017",
+    "name_en": "Industrial  Engineering (Without Thesis)",
+    "year": 2017,
+    "muf_no": 364,
+    "created_at": "2026-03-17T01:13:06.269512+00:00"
+  },
+  {
+    "id": "4d6a5c4d-7c6c-4476-b976-a79412075644",
+    "program_id": 463200,
+    "department_id": null,
+    "name": "İş Sağlığı ve İş Güvenliği YL (Tezsiz) 2017",
+    "name_en": "Occupational Health and Occupational Safety (Without Thesis)",
+    "year": 2017,
+    "muf_no": 349,
+    "created_at": "2026-03-17T01:15:30.982362+00:00"
+  },
+  {
+    "id": "4d9d1b50-63af-4dae-9f66-82e339effa4d",
+    "program_id": 463195,
+    "department_id": "cfd8657b-e05a-47f6-9e73-84732e3a7301",
+    "name": "Bilgisayar Mühendisliği YL (Tezli) 2017",
+    "name_en": "Computer Engineering (With Thesis)",
+    "year": 2017,
+    "muf_no": 353,
+    "created_at": "2026-03-17T01:11:44.921074+00:00"
+  },
+  {
+    "id": "5076f12b-9add-49d7-89c3-4cf4e5849fee",
+    "program_id": 463202,
+    "department_id": "8684dc32-811b-4c95-87f6-d9909a3ec9aa",
+    "name": "İnşaat YL (Tezsiz) 2025",
+    "name_en": "Civil Engineering (Without Thesis)",
+    "year": 2025,
+    "muf_no": 492,
+    "created_at": "2026-03-17T01:15:01.385616+00:00"
+  },
+  {
+    "id": "511870b8-2d5c-4005-b795-495cc719f93e",
+    "program_id": 107048,
+    "department_id": "839004ae-3c5d-4e2d-95a2-b67f5ab2d394",
+    "name": "İç Mimarlık 2017-2",
+    "name_en": "Interior Architecture",
+    "year": 2017,
+    "muf_no": 403,
+    "created_at": "2026-03-17T01:08:34.779509+00:00"
+  },
+  {
+    "id": "539840b9-9639-4987-ae15-6c05d9434fdd",
+    "program_id": 463213,
+    "department_id": null,
+    "name": "Kentsel Tasarım ve Dönüşüm YL (Tezli) 2017",
+    "name_en": "Urban Design and Transformation (With Thesis)",
+    "year": 2017,
+    "muf_no": 246,
+    "created_at": "2026-03-17T01:16:41.816121+00:00"
+  },
+  {
+    "id": "568ace72-3b26-4e9b-8e60-b0daf308738e",
+    "program_id": 463201,
+    "department_id": "8684dc32-811b-4c95-87f6-d9909a3ec9aa",
+    "name": "İnşaat YL (Tezli) 2017",
+    "name_en": "Civil Engineering (With Thesis)",
+    "year": 2017,
+    "muf_no": 331,
+    "created_at": "2026-03-17T01:14:50.21901+00:00"
+  },
+  {
+    "id": "569adea2-d199-49b2-9790-76a357be8e1e",
+    "program_id": 463236,
+    "department_id": null,
+    "name": "İngiliz Edebiyatı ve Kültür İncelemeleri Doktora 2018",
+    "name_en": "English Literature and Cultural Studies (Doctorate)",
+    "year": 2018,
+    "muf_no": 374,
+    "created_at": "2026-03-17T01:22:14.56102+00:00"
+  },
+  {
+    "id": "5a3cc53d-1691-4858-8a17-f720a425ce2c",
+    "program_id": 463259,
+    "department_id": "1447dc7b-c083-4cea-97f5-019d4f009b01",
+    "name": "Psikoloji YL (Bilişsel Psikoloji) (Yarı Pasif - Tezsiz) 2018",
+    "name_en": "Psychology (With Thesis)",
+    "year": 2018,
+    "muf_no": 398,
+    "created_at": "2026-03-17T01:19:26.858643+00:00"
+  },
+  {
+    "id": "5a81e783-d12c-4dec-b9ec-af766833a3af",
+    "program_id": 226258,
+    "department_id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "name": "Mekatronik Mühendisliği 2016",
+    "name_en": "Mechatronics Engineering",
+    "year": 2016,
+    "muf_no": 290,
+    "created_at": "2026-03-17T01:06:36.899272+00:00"
+  },
+  {
+    "id": "5ce78e02-e9ce-4fa1-9140-e5bd06ef8c37",
+    "program_id": 463257,
+    "department_id": null,
+    "name": "Uluslararası Ticaret ve Lojistiği YL (Tezsiz) 2017",
+    "name_en": "International Trade and Its Logistics (Without Thesis)",
+    "year": 2017,
+    "muf_no": 347,
+    "created_at": "2026-03-17T01:20:56.339553+00:00"
+  },
+  {
+    "id": "5da6e324-772a-42fb-9fa5-611884327b73",
+    "program_id": 157359,
+    "department_id": "04343fa8-3c91-4737-91ab-7c0df5f7166e",
+    "name": "İşletme 2018",
+    "name_en": "Management",
+    "year": 2018,
+    "muf_no": 369,
+    "created_at": "2026-03-17T00:46:53.663425+00:00"
+  },
+  {
+    "id": "5eee6651-9f11-405d-8267-01d20fbb9ee0",
+    "program_id": 226246,
+    "department_id": "1447dc7b-c083-4cea-97f5-019d4f009b01",
+    "name": "Psikoloji 2018",
+    "name_en": "Psychology",
+    "year": 2018,
+    "muf_no": 373,
+    "created_at": "2026-03-17T00:44:50.748925+00:00"
+  },
+  {
+    "id": "60d4bfc7-c322-4287-bbbb-abd80ea279f9",
+    "program_id": 157361,
+    "department_id": "3c6b7e6a-d88b-47e1-80a4-d3363ccf9654",
+    "name": "Siyaset Bilimi ve Uluslararası İlişkiler 2018",
+    "name_en": "Political Science and International Relations",
+    "year": 2018,
+    "muf_no": 368,
+    "created_at": "2026-03-17T00:47:17.722829+00:00"
+  },
+  {
+    "id": "619f610d-6d5c-4655-926b-a4c6565a762e",
+    "program_id": 420205,
+    "department_id": "bd3c0324-5231-4649-ac47-9ee907420655",
+    "name": "İngilizce Mütercim ve Tercümanlık 2020 (Written Translation Track)",
+    "name_en": "Translation and Interpreting Studies (English)",
+    "year": 2020,
+    "muf_no": 405,
+    "created_at": "2026-03-17T00:43:02.967719+00:00"
+  },
+  {
+    "id": "64c7646c-cc76-404b-96f9-891421cfbb47",
+    "program_id": 157381,
+    "department_id": null,
+    "name": "Elektronik ve Haberleşme Mühendisliği 2015",
+    "name_en": "Electronic and Communication Engineering",
+    "year": 2015,
+    "muf_no": 273,
+    "created_at": "2026-03-17T01:01:27.290881+00:00"
+  },
+  {
+    "id": "6ca7ce3e-0f19-43c5-bd81-e8eb7e22c22b",
+    "program_id": 463253,
+    "department_id": null,
+    "name": "İnsan Kaynakları Yönetimi YL (Tezsiz) 2025",
+    "name_en": "Human Resource Management (Without Thesis)",
+    "year": 2025,
+    "muf_no": 499,
+    "created_at": "2026-03-17T01:14:31.81973+00:00"
+  },
+  {
+    "id": "6f015fd8-1c1d-448f-8e11-1c763a19f1fd",
+    "program_id": 463241,
+    "department_id": "9c3f05d0-8bab-4696-bb42-3742d516fa73",
+    "name": "Uluslararası Ticaret ve Finansman YL (Tezli) 2017",
+    "name_en": "International Trade and Finance (With Thesis)",
+    "year": 2017,
+    "muf_no": 325,
+    "created_at": "2026-03-17T01:20:17.978571+00:00"
+  },
+  {
+    "id": "6f3f705a-df91-4e45-b176-1f3f056b83f2",
+    "program_id": 226258,
+    "department_id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "name": "Mekatronik Mühendisliği 2024 (Geçiş Müfredatı B)",
+    "name_en": "Mechatronics Engineering",
+    "year": 2024,
+    "muf_no": 486,
+    "created_at": "2026-03-17T01:05:23.861189+00:00"
+  },
+  {
+    "id": "70f7eb1e-9535-472f-b387-6382d9fb3196",
+    "program_id": 226273,
+    "department_id": null,
+    "name": "Bankacılık ve Finans 2018",
+    "name_en": "Banking and Finance",
+    "year": 2018,
+    "muf_no": 367,
+    "created_at": "2026-03-17T00:45:12.190908+00:00"
+  },
+  {
+    "id": "74951566-19c6-485d-84f3-88c260ed18f0",
+    "program_id": 463246,
+    "department_id": null,
+    "name": "İngiliz Edebiyatı ve Kültür İncelemeleri YL (Tezli) 2017",
+    "name_en": "English Literature and Cultural Studies (With Thesis)",
+    "year": 2017,
+    "muf_no": 340,
+    "created_at": "2026-03-17T01:13:53.004366+00:00"
+  },
+  {
+    "id": "769ba20f-6ae6-4a00-ac18-34770dde1bcd",
+    "program_id": 226252,
+    "department_id": "96494939-67b2-414d-909b-fe0b33d4842e",
+    "name": "Makine Mühendisliği 2017",
+    "name_en": "Mechanical Engineering",
+    "year": 2017,
+    "muf_no": 318,
+    "created_at": "2026-03-17T01:03:32.689066+00:00"
+  },
+  {
+    "id": "771bdc26-9535-4614-837f-0727430168d3",
+    "program_id": 463186,
+    "department_id": null,
+    "name": "Tasarım Doktora 2017",
+    "name_en": "Design (Doctorate)",
+    "year": 2017,
+    "muf_no": 358,
+    "created_at": "2026-03-17T01:23:38.497323+00:00"
+  },
+  {
+    "id": "7b754410-f426-4a1d-8d74-531cab300bba",
+    "program_id": 463253,
+    "department_id": null,
+    "name": "İnsan Kaynakları Yönetimi YL (Tezsiz) 2022",
+    "name_en": "Human Resource Management (Without Thesis)",
+    "year": 2022,
+    "muf_no": 420,
+    "created_at": "2026-03-17T01:14:37.470206+00:00"
+  },
+  {
+    "id": "7c07298d-293e-4bfb-bac9-b3c501050cb9",
+    "program_id": 463210,
+    "department_id": "700bda6f-89f1-4e15-9633-f52643cf823c",
+    "name": "Bilgisayar Bilimleri ve Mühendisliği (Doktora) 2017",
+    "name_en": "Computer Sciences and Engineering (Doctorate)",
+    "year": 2017,
+    "muf_no": 323,
+    "created_at": "2026-03-17T01:21:50.679103+00:00"
+  },
+  {
+    "id": "7c643dd9-2c0c-481a-8d2d-0c96b490970b",
+    "program_id": 463187,
+    "department_id": null,
+    "name": "Elektronik ve Haberleşme Doktora 2017",
+    "name_en": "Electronic and Communication Engineering (Doctorate)",
+    "year": 2017,
+    "muf_no": 361,
+    "created_at": "2026-03-17T01:22:02.6875+00:00"
+  },
+  {
+    "id": "7d9eed5d-9e88-4d03-92c0-325cf5aed04a",
+    "program_id": 420206,
+    "department_id": "9c3f05d0-8bab-4696-bb42-3742d516fa73",
+    "name": "Uluslararası Ticaret ve Finansman 2024",
+    "name_en": "International Trade and Finance",
+    "year": 2024,
+    "muf_no": 479,
+    "created_at": "2026-03-17T00:48:01.882656+00:00"
+  },
+  {
+    "id": "7edb3d47-8377-4ff1-a0d2-b25b5f342c6f",
+    "program_id": 432448,
+    "department_id": "be98d5b5-b59a-45f8-868b-ef166f3ca187",
+    "name": "Yönetim Bilişim Sistemleri 2025",
+    "name_en": "Management Information Systems",
+    "year": 2025,
+    "muf_no": 494,
+    "created_at": "2026-03-17T00:48:56.108505+00:00"
+  },
+  {
+    "id": "7f8a8f45-f11b-47fd-bf81-ced903223f8f",
+    "program_id": 226252,
+    "department_id": "96494939-67b2-414d-909b-fe0b33d4842e",
+    "name": "Makine Mühendisliği 2025",
+    "name_en": "Mechanical Engineering",
+    "year": 2025,
+    "muf_no": 493,
+    "created_at": "2026-03-17T01:03:11.586273+00:00"
+  },
+  {
+    "id": "8114efa5-2a77-45d0-883a-1e53da58456e",
+    "program_id": 463235,
+    "department_id": null,
+    "name": "İnsan Kaynakları Yönetimi YL (Tezli) 2019",
+    "name_en": "Human Resource Management (With Thesis)",
+    "year": 2019,
+    "muf_no": 389,
+    "created_at": "2026-03-17T01:14:20.270392+00:00"
+  },
+  {
+    "id": "8147d0c5-b5d2-4335-b4a7-cde748e64acd",
+    "program_id": 404203,
+    "department_id": "e4378da7-a77a-4a19-ad5d-9369de1219be",
+    "name": "Yazılım 2025",
+    "name_en": "Software Engineering",
+    "year": 2025,
+    "muf_no": 497,
+    "created_at": "2026-03-17T01:07:07.877615+00:00"
+  },
+  {
+    "id": "8154711b-6bd2-4e6d-9e5d-d62684d4b833",
+    "program_id": 157362,
+    "department_id": null,
+    "name": "Uluslararası Ticaret 2015",
+    "name_en": "International Trade",
+    "year": 2015,
+    "muf_no": 256,
+    "created_at": "2026-03-17T00:47:38.701357+00:00"
+  },
+  {
+    "id": "841e04fc-5ba8-4a9c-8bdc-31f474cf7d1e",
+    "program_id": 463191,
+    "department_id": "96494939-67b2-414d-909b-fe0b33d4842e",
+    "name": "Makine YL (Tezsiz) 2017",
+    "name_en": "Mechanical Engineering (Without Thesis)",
+    "year": 2017,
+    "muf_no": 362,
+    "created_at": "2026-03-17T01:17:16.097403+00:00"
+  },
+  {
+    "id": "863fd356-0b89-43e2-8cc4-03fd82501462",
+    "program_id": 432448,
+    "department_id": "be98d5b5-b59a-45f8-868b-ef166f3ca187",
+    "name": "Yönetim Bilişim Sistemleri 2024-Geçiş Müfredatı",
+    "name_en": "Management Information Systems",
+    "year": 2024,
+    "muf_no": 489,
+    "created_at": "2026-03-17T00:49:13.556645+00:00"
+  },
+  {
+    "id": "869ef0cf-25b9-46e5-9b8a-758be3c38240",
+    "program_id": 463204,
+    "department_id": "25e945ec-14d2-4e2f-b391-5d51a12ae355",
+    "name": "Matematik YL (Tezli) 2017",
+    "name_en": "Mathematics (With Thesis)",
+    "year": 2017,
+    "muf_no": 351,
+    "created_at": "2026-03-17T01:17:28.017551+00:00"
+  },
+  {
+    "id": "899ad117-c5e8-47e2-9e2a-502916a5fdc0",
+    "program_id": 404203,
+    "department_id": "e4378da7-a77a-4a19-ad5d-9369de1219be",
+    "name": "Yazılım 2019",
+    "name_en": "Software Engineering",
+    "year": 2019,
+    "muf_no": 395,
+    "created_at": "2026-03-17T01:07:45.50302+00:00"
+  },
+  {
+    "id": "8c83e8a3-e13c-4dd1-a30f-b1405b3db0ee",
+    "program_id": 463223,
+    "department_id": "b161b775-3799-4a87-b20b-225a9c21c028",
+    "name": "Elektrik-Elektronik Mühendisliği YL (Tezli) 2019",
+    "name_en": "Electrical-Electronics Engineering",
+    "year": 2019,
+    "muf_no": 391,
+    "created_at": "2026-03-17T01:12:04.325883+00:00"
+  },
+  {
+    "id": "8da4fc02-a1da-4946-af65-7a97de589182",
+    "program_id": 463252,
+    "department_id": null,
+    "name": "Finansal Ekonomi YL (Tezsiz) 2021",
+    "name_en": "Financial Economics (Without Thesis)",
+    "year": 2015,
+    "muf_no": 417,
+    "created_at": "2026-03-17T01:13:31.780981+00:00"
+  },
+  {
+    "id": "926c84c3-65a4-41a5-81f2-1c44aa16149d",
+    "program_id": 226263,
+    "department_id": "8684dc32-811b-4c95-87f6-d9909a3ec9aa",
+    "name": "İnşaat Mühendisliği 2025",
+    "name_en": "Civil Engineering",
+    "year": 2025,
+    "muf_no": 495,
+    "created_at": "2026-03-17T01:02:21.289565+00:00"
+  },
+  {
+    "id": "92c10316-5ab0-418c-a436-1598096b3c63",
+    "program_id": 404203,
+    "department_id": "e4378da7-a77a-4a19-ad5d-9369de1219be",
+    "name": "Yazılım 2024",
+    "name_en": "Software Engineering",
+    "year": 2024,
+    "muf_no": 482,
+    "created_at": "2026-03-17T01:07:26.352509+00:00"
+  },
+  {
+    "id": "949aeb11-850a-499d-adb9-6debee37078c",
+    "program_id": 157359,
+    "department_id": "04343fa8-3c91-4737-91ab-7c0df5f7166e",
+    "name": "İşletme 2025",
+    "name_en": "Management",
+    "year": 2025,
+    "muf_no": 496,
+    "created_at": "2026-03-17T00:46:35.999736+00:00"
+  },
+  {
+    "id": "9777bf59-dbe7-4b52-913c-decd1f4a86a5",
+    "program_id": 463251,
+    "department_id": "04343fa8-3c91-4737-91ab-7c0df5f7166e",
+    "name": "İşletme Yönetimi YL (Tezli) 2019",
+    "name_en": "Business Administration (With Thesis)",
+    "year": 2019,
+    "muf_no": 408,
+    "created_at": "2026-03-17T01:15:47.838833+00:00"
+  },
+  {
+    "id": "9cff8323-56e3-4eca-8a97-56312fd738d9",
+    "program_id": 463258,
+    "department_id": null,
+    "name": "Pazarlama ve Marka Yönetimi (Tezsiz) 2023",
+    "name_en": "Marketing and Brand Management (Without Thesis)",
+    "year": 2023,
+    "muf_no": 423,
+    "created_at": "2026-03-17T01:19:14.455111+00:00"
+  },
+  {
+    "id": "a69050ff-6287-43e7-88b1-3d462c5cbb7a",
+    "program_id": 463260,
+    "department_id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "name": "Özel Hukuk YL (Yarı Pasif - Tezsiz) 2018",
+    "name_en": "Private Law (Without Thesis)",
+    "year": 2018,
+    "muf_no": 396,
+    "created_at": "2026-03-17T01:19:02.708837+00:00"
+  },
+  {
+    "id": "a807816c-28e9-48cb-84de-998a55e338e0",
+    "program_id": 157351,
+    "department_id": null,
+    "name": "Mütercim-Tercümanlık (İngilizce) 2019 (InterPreting Track)",
+    "name_en": "Translation and Interpreting Studies (English)",
+    "year": 2019,
+    "muf_no": 392,
+    "created_at": "2026-03-17T00:44:25.641841+00:00"
+  },
+  {
+    "id": "a993f1ca-ffdf-4792-a862-91d35806a072",
+    "program_id": 463242,
+    "department_id": "9c3f05d0-8bab-4696-bb42-3742d516fa73",
+    "name": "Uluslararası Ticaret ve Finansman YL (Tezsiz) 2017",
+    "name_en": "International Trade and Finance (Without Thesis)",
+    "year": 2017,
+    "muf_no": 324,
+    "created_at": "2026-03-17T01:20:28.910978+00:00"
+  },
+  {
+    "id": "ac19d0f5-c860-4884-a6d5-dbf728bb652d",
+    "program_id": 463205,
+    "department_id": "25e945ec-14d2-4e2f-b391-5d51a12ae355",
+    "name": "Matematik YL (Tezsiz) 2017",
+    "name_en": "Mathematics (Without Thesis)",
+    "year": 2017,
+    "muf_no": 350,
+    "created_at": "2026-03-17T01:17:38.771662+00:00"
+  },
+  {
+    "id": "aca4db3d-3f6b-4ab2-bcf1-8f53134a45b2",
+    "program_id": 378142,
+    "department_id": "df127286-a7af-41a4-a284-eb9d894418e9",
+    "name": "Halkla İlişkiler ve Reklamcılık 2023",
+    "name_en": "Public Relations and Advertising",
+    "year": 2023,
+    "muf_no": 426,
+    "created_at": "2026-03-17T00:45:35.387974+00:00"
+  },
+  {
+    "id": "ae630ea6-6dde-4c47-95b0-03773f0e70ac",
+    "program_id": 463216,
+    "department_id": null,
+    "name": "Mikro ve Nanoteknoloji YL (Tezli) 2017",
+    "name_en": "Micro and Nanotechnology (With Thesis)",
+    "year": 2017,
+    "muf_no": 335,
+    "created_at": "2026-03-17T01:18:12.290796+00:00"
+  },
+  {
+    "id": "b235b87b-b16e-430c-89c1-48c25bc7dff7",
+    "program_id": 463193,
+    "department_id": null,
+    "name": "Bilgi Teknolojileri YL (Tezli) 2021",
+    "name_en": "Information Technology (With Thesis)",
+    "year": 2021,
+    "muf_no": 410,
+    "created_at": "2026-03-17T01:11:26.370709+00:00"
+  },
+  {
+    "id": "bad61501-c6c1-4cae-bcd6-66cb6c2467bd",
+    "program_id": 463206,
+    "department_id": "45d032a2-1229-415a-b9fe-c9cf057966ea",
+    "name": "Mimarlık YL (Tezli) 2022",
+    "name_en": "Architecture (With Thesis)",
+    "year": 2022,
+    "muf_no": 422,
+    "created_at": "2026-03-17T01:18:36.167439+00:00"
+  },
+  {
+    "id": "bafe1fef-87d5-4ebf-b928-c8e2d65e1875",
+    "program_id": 226258,
+    "department_id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "name": "Mekatronik Mühendisliği 2024 (Geçiş Müfredatı D)",
+    "name_en": "Mechatronics Engineering",
+    "year": 2024,
+    "muf_no": 488,
+    "created_at": "2026-03-17T01:04:34.016038+00:00"
+  },
+  {
+    "id": "bb8818c9-4927-4ef3-b726-ce71579149e5",
+    "program_id": 226255,
+    "department_id": null,
+    "name": "Malzeme Bilimi ve Mühendisliği 2015",
+    "name_en": "Materials Science and Engineering",
+    "year": 2015,
+    "muf_no": 266,
+    "created_at": "2026-03-17T01:04:04.41715+00:00"
+  },
+  {
+    "id": "bbc02704-ea36-42d0-ad3a-13c2720da4ba",
+    "program_id": 463188,
+    "department_id": "96494939-67b2-414d-909b-fe0b33d4842e",
+    "name": "Makine YL (Tezli) 2017",
+    "name_en": "Mechanical Engineering (With Thesis)",
+    "year": 2017,
+    "muf_no": 363,
+    "created_at": "2026-03-17T01:17:05.268764+00:00"
+  },
+  {
+    "id": "bde08ecd-744f-40cf-86c2-5e31188e517b",
+    "program_id": 420206,
+    "department_id": "9c3f05d0-8bab-4696-bb42-3742d516fa73",
+    "name": "Uluslararası Ticaret ve Finansman 2020",
+    "name_en": "International Trade and Finance",
+    "year": 2020,
+    "muf_no": 399,
+    "created_at": "2026-03-17T00:48:33.694046+00:00"
+  },
+  {
+    "id": "c38195ce-a837-498e-9521-a417afb657ad",
+    "program_id": 463202,
+    "department_id": "8684dc32-811b-4c95-87f6-d9909a3ec9aa",
+    "name": "İnşaat YL (Tezsiz) 2017",
+    "name_en": "Civil Engineering (Without Thesis)",
+    "year": 2017,
+    "muf_no": 332,
+    "created_at": "2026-03-17T01:15:07.593108+00:00"
+  },
+  {
+    "id": "c3a66fc4-b829-4089-8f6c-33e1a5d4feee",
+    "program_id": 463185,
+    "department_id": "b161b775-3799-4a87-b20b-225a9c21c028",
+    "name": "Elektrik-Elektronik Mühendisliği YL (Tezsiz) 2024",
+    "name_en": "Electrical-Electronics Engineering",
+    "year": 2024,
+    "muf_no": 478,
+    "created_at": "2026-03-17T01:12:15.017158+00:00"
+  },
+  {
+    "id": "c4a0597d-aa5b-430e-8afd-205a2021d0e0",
+    "program_id": 157351,
+    "department_id": null,
+    "name": "Mütercim-Tercümanlık (İngilizce) 2019 (Written Translation Track)",
+    "name_en": "Translation and Interpreting Studies (English)",
+    "year": 2019,
+    "muf_no": 393,
+    "created_at": "2026-03-17T00:44:06.158938+00:00"
+  },
+  {
+    "id": "c4d0ea1e-53fe-4a02-af03-290184dbeff7",
+    "program_id": 463192,
+    "department_id": "839004ae-3c5d-4e2d-95a2-b67f5ab2d394",
+    "name": "İç Mimarlık YL (Tezli) 2017",
+    "name_en": "Interior Architecture (With Thesis)",
+    "year": 2017,
+    "muf_no": 357,
+    "created_at": "2026-03-17T01:13:43.197645+00:00"
+  },
+  {
+    "id": "c554c9e6-6481-40db-8347-ce62eeed90ea",
+    "program_id": 420205,
+    "department_id": "bd3c0324-5231-4649-ac47-9ee907420655",
+    "name": "İngilizce Mütercim ve Tercümanlık 2020 (InterPreting Track)",
+    "name_en": "Translation and Interpreting Studies (English)",
+    "year": 2020,
+    "muf_no": 404,
+    "created_at": "2026-03-17T00:43:21.149327+00:00"
+  },
+  {
+    "id": "c7979d2f-65e6-4e4c-a60b-03debcb243c6",
+    "program_id": 463190,
+    "department_id": "8e15c0da-fa7a-4ed4-be68-c634e1e15b2a",
+    "name": "Endüstri Mühendisliği YL (Tezsiz) 2025",
+    "name_en": "Industrial  Engineering (Without Thesis)",
+    "year": 2025,
+    "muf_no": 491,
+    "created_at": "2026-03-17T01:13:00.768395+00:00"
+  },
+  {
+    "id": "c8fa8de8-2e3f-4373-b86f-d66cdb9985f2",
+    "program_id": 463233,
+    "department_id": null,
+    "name": "Siyaset Bilimi YL (Tezli) 2017",
+    "name_en": "Political Science (With Thesis)",
+    "year": 2017,
+    "muf_no": 344,
+    "created_at": "2026-03-17T01:19:54.957296+00:00"
+  },
+  {
+    "id": "c979137f-6788-4424-b1c5-ff98705dafcf",
+    "program_id": 226261,
+    "department_id": "45d032a2-1229-415a-b9fe-c9cf057966ea",
+    "name": "Mimarlık 2017",
+    "name_en": "Architecture",
+    "year": 2017,
+    "muf_no": 317,
+    "created_at": "2026-03-17T01:09:47.096286+00:00"
+  },
+  {
+    "id": "c996d5d4-6347-4f01-806b-18e23517ef31",
+    "program_id": 226267,
+    "department_id": "95743227-0fc2-43f5-8650-2b9ed1e724a4",
+    "name": "Şehir ve Bölge Planlama 2024",
+    "name_en": "City and Regional Planning",
+    "year": 2024,
+    "muf_no": 485,
+    "created_at": "2026-03-17T01:10:15.541918+00:00"
+  },
+  {
+    "id": "d0ba0fdf-8abf-4abe-b7b3-d7709aa79b88",
+    "program_id": 463214,
+    "department_id": null,
+    "name": "Kentsel Tasarım ve Dönüşüm YL (Tezsiz) 2017",
+    "name_en": "Urban Design and Transformation (Without Thesis)",
+    "year": 2017,
+    "muf_no": 247,
+    "created_at": "2026-03-17T01:16:53.043259+00:00"
+  },
+  {
+    "id": "d23f5395-d2bf-49bb-b6d4-88cbf439d884",
+    "program_id": 226258,
+    "department_id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "name": "Mekatronik Mühendisliği 2024 (Geçiş Müfredatı C)",
+    "name_en": "Mechatronics Engineering",
+    "year": 2024,
+    "muf_no": 487,
+    "created_at": "2026-03-17T01:04:58.549577+00:00"
+  },
+  {
+    "id": "d4a85ac8-a342-4020-84a4-e2848eb31f67",
+    "program_id": 463225,
+    "department_id": null,
+    "name": "Veri Analitiği YL (Tezli) 2024",
+    "name_en": "Data Analytics (With Thesis)",
+    "year": 2024,
+    "muf_no": 475,
+    "created_at": "2026-03-17T01:21:06.776037+00:00"
+  },
+  {
+    "id": "d57011f0-7982-4521-a936-24fae25225a2",
+    "program_id": 463208,
+    "department_id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "name": "Mekatronik YL (Tezsiz) 2017",
+    "name_en": "Mechatronics Engineering (Without Thesis)",
+    "year": 2017,
+    "muf_no": 322,
+    "created_at": "2026-03-17T01:17:59.715525+00:00"
+  },
+  {
+    "id": "d658fde7-ce4d-4eef-8247-8d4eda15972c",
+    "program_id": 157383,
+    "department_id": "8e15c0da-fa7a-4ed4-be68-c634e1e15b2a",
+    "name": "Endüstri Mühendisliği 2024",
+    "name_en": "Industrial Engineering",
+    "year": 2024,
+    "muf_no": 481,
+    "created_at": "2026-03-17T01:01:53.991805+00:00"
+  },
+  {
+    "id": "d7576abf-d3d8-4fb6-8412-90c51ea4f190",
+    "program_id": 463199,
+    "department_id": null,
+    "name": "İş Sağlığı ve İş Güvenliği YL (Tezli) 2017",
+    "name_en": "Occupational Health and Occupational Safety (With Thesis)",
+    "year": 2017,
+    "muf_no": 348,
+    "created_at": "2026-03-17T01:15:19.55615+00:00"
+  },
+  {
+    "id": "df68c067-d9a3-436c-997f-1fdf7fea3266",
+    "program_id": 378142,
+    "department_id": "df127286-a7af-41a4-a284-eb9d894418e9",
+    "name": "Halkla İlişkiler ve Reklamcılık 2020",
+    "name_en": "Public Relations and Advertising",
+    "year": 2020,
+    "muf_no": 400,
+    "created_at": "2026-03-17T00:45:51.786101+00:00"
+  },
+  {
+    "id": "dfca4ddd-2a0a-4ebb-8bf0-b57424270c45",
+    "program_id": 226261,
+    "department_id": "45d032a2-1229-415a-b9fe-c9cf057966ea",
+    "name": "Mimarlık 2025",
+    "name_en": "Architecture",
+    "year": 2025,
+    "muf_no": 503,
+    "created_at": "2026-03-17T01:09:03.145646+00:00"
+  },
+  {
+    "id": "e0cbc0b2-e791-440e-825e-916ad7cfd4ab",
+    "program_id": 463207,
+    "department_id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "name": "Mekatronik YL (Tezli) 2017",
+    "name_en": "Mechatronics Engineering (With Thesis)",
+    "year": 2017,
+    "muf_no": 321,
+    "created_at": "2026-03-17T01:17:51.363548+00:00"
+  },
+  {
+    "id": "e2f7a7d8-e679-4f1e-bcd0-282ec77ebcab",
+    "program_id": 226267,
+    "department_id": "95743227-0fc2-43f5-8650-2b9ed1e724a4",
+    "name": "Şehir ve Bölge Planlama 2017",
+    "name_en": "City and Regional Planning",
+    "year": 2017,
+    "muf_no": 329,
+    "created_at": "2026-03-17T01:10:34.558762+00:00"
+  },
+  {
+    "id": "e427dce7-155a-4ebf-9c3a-8980662b1394",
+    "program_id": 463256,
+    "department_id": null,
+    "name": "Uluslararası Ticaret ve Lojistiği YL (Tezli) 2017",
+    "name_en": "International Trade and Its Logistics (With Thesis)",
+    "year": 2017,
+    "muf_no": 343,
+    "created_at": "2026-03-17T01:20:42.991378+00:00"
+  },
+  {
+    "id": "e59135d3-5997-4860-b9c8-3f79f258569c",
+    "program_id": 420206,
+    "department_id": "9c3f05d0-8bab-4696-bb42-3742d516fa73",
+    "name": "Uluslararası Ticaret ve Finansman 2021",
+    "name_en": "International Trade and Finance",
+    "year": 2021,
+    "muf_no": 415,
+    "created_at": "2026-03-17T00:48:17.468997+00:00"
+  },
+  {
+    "id": "e5f6eee5-f97c-4ab3-9b8f-818b64ec6a9a",
+    "program_id": 107048,
+    "department_id": "839004ae-3c5d-4e2d-95a2-b67f5ab2d394",
+    "name": "İç Mimarlık 2025",
+    "name_en": "Interior Architecture",
+    "year": 2025,
+    "muf_no": 505,
+    "created_at": "2026-03-17T01:08:11.478546+00:00"
+  },
+  {
+    "id": "e8c9cc5e-c2e6-4118-bbe8-7fcd37b4256d",
+    "program_id": 463215,
+    "department_id": null,
+    "name": "Mikro ve Nanoteknoloji YL (Tezsiz) 2017",
+    "name_en": "Micro and Nanotechnology (Without Thesis)",
+    "year": 2017,
+    "muf_no": 334,
+    "created_at": "2026-03-17T01:18:23.121785+00:00"
+  },
+  {
+    "id": "eb1899d0-4da6-4eea-8b47-41f697210ec3",
+    "program_id": 463240,
+    "department_id": "32d8ed33-ef9a-4b87-a697-708b8f8137a5",
+    "name": "Kamu Hukuku YL (Tezli) 2018",
+    "name_en": "Public Law (With Thesis)",
+    "year": 2018,
+    "muf_no": 378,
+    "created_at": "2026-03-17T01:16:18.835629+00:00"
+  },
+  {
+    "id": "ecf860c8-0853-4f12-8556-9138ef1663d6",
+    "program_id": 226258,
+    "department_id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "name": "Mekatronik Mühendisliği 2023 (Geçiş Müfredatı)",
+    "name_en": "Mechatronics Engineering",
+    "year": 2024,
+    "muf_no": 483,
+    "created_at": "2026-03-17T01:06:12.410261+00:00"
+  },
+  {
+    "id": "ed05d85c-8c21-415e-a556-686096966a28",
+    "program_id": 420205,
+    "department_id": "bd3c0324-5231-4649-ac47-9ee907420655",
+    "name": "İngilizce Mütercim ve Tercümanlık 2023 (Written Translation Track)",
+    "name_en": "Translation and Interpreting Studies (English)",
+    "year": 2023,
+    "muf_no": 425,
+    "created_at": "2026-03-17T00:42:46.687334+00:00"
+  },
+  {
+    "id": "edd25147-3d44-4ec8-8310-3beef89ffc5f",
+    "program_id": 463250,
+    "department_id": "04343fa8-3c91-4737-91ab-7c0df5f7166e",
+    "name": "İşletme Yönetimi YL (Tezsiz) 2022",
+    "name_en": "Business Administration (Without Thesis)",
+    "year": 2019,
+    "muf_no": 421,
+    "created_at": "2026-03-17T01:16:05.368271+00:00"
+  },
+  {
+    "id": "f231b2a7-d2aa-43f1-9f04-08994ad6b3d3",
+    "program_id": 226258,
+    "department_id": "06a8b292-3bcc-4635-805a-0beaabc94446",
+    "name": "Mekatronik Mühendisliği 2024",
+    "name_en": "Mechatronics Engineering",
+    "year": 2024,
+    "muf_no": 484,
+    "created_at": "2026-03-17T01:05:48.258836+00:00"
+  },
+  {
+    "id": "f37d803a-66f9-480f-a866-8283370fb158",
+    "program_id": 432448,
+    "department_id": "be98d5b5-b59a-45f8-868b-ef166f3ca187",
+    "name": "Yönetim Bilişim Sistemleri 2024",
+    "name_en": "Management Information Systems",
+    "year": 2021,
+    "muf_no": 480,
+    "created_at": "2026-03-17T00:59:39.561272+00:00"
+  },
+  {
+    "id": "f616f193-d78c-477d-8726-b76001ef1cc1",
+    "program_id": 378141,
+    "department_id": "25e945ec-14d2-4e2f-b391-5d51a12ae355",
+    "name": "Matematik 2020",
+    "name_en": "Mathematics",
+    "year": 2020,
+    "muf_no": 401,
+    "created_at": "2026-03-17T00:43:45.174591+00:00"
+  },
+  {
+    "id": "f89d0450-8386-4db9-b5a5-f28ef1866dd9",
+    "program_id": 331357,
+    "department_id": null,
+    "name": "Yabancı Diller Bölümü",
+    "name_en": "Department of Foreign Languages",
+    "year": 2018,
+    "muf_no": 385,
+    "created_at": "2026-03-17T01:11:17.721205+00:00"
+  },
+  {
+    "id": "ffcc73f4-8212-4987-8398-3f584145b43b",
+    "program_id": 463259,
+    "department_id": "1447dc7b-c083-4cea-97f5-019d4f009b01",
+    "name": "Psikoloji YL (Sosyal / Örgütsel Psikoloji) (Yarı Pasif - Tezsiz) 2018",
+    "name_en": "Psychology (With Thesis)",
+    "year": 2018,
+    "muf_no": 397,
+    "created_at": "2026-03-17T01:19:32.446171+00:00"
+  }
+]
