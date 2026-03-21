@@ -7,6 +7,13 @@
     "content_en": ""
   },
   {
+    "id": "00938bd0-9858-4d08-a51c-82cd405525a4",
+    "program_id": 157358,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "00d17a84-6ee6-4a65-9976-19804c2c9f8d",
     "program_id": 463213,
     "qualification_no": 7,
@@ -17,13 +24,6 @@
     "id": "00e3fd4d-1525-4185-b30b-883a496b2fad",
     "program_id": 226255,
     "qualification_no": 15,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "016bb153-0237-4df6-8fec-ca02c50ff768",
-    "program_id": 157358,
-    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -42,9 +42,16 @@
     "content_en": ""
   },
   {
-    "id": "02d2789c-e61a-4bde-8b6e-6b0dafce9084",
-    "program_id": 226273,
-    "qualification_no": 10,
+    "id": "01f71ce9-caef-40a9-8f26-9756d21a455f",
+    "program_id": 157362,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "0297b3f2-814e-45f0-8407-0fdd1373941c",
+    "program_id": 226263,
+    "qualification_no": 16,
     "content_tr": "",
     "content_en": ""
   },
@@ -84,13 +91,6 @@
     "content_en": ""
   },
   {
-    "id": "03cda589-ee4e-4ea6-8f2a-f858509087e4",
-    "program_id": 252880,
-    "qualification_no": 13,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "03d9da62-57e2-4a21-8c34-8efa84edef1b",
     "program_id": 463214,
     "qualification_no": 14,
@@ -112,13 +112,6 @@
     "content_en": ""
   },
   {
-    "id": "04535eb3-aeed-4036-a93f-5372b97509ca",
-    "program_id": 226246,
-    "qualification_no": 15,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "04edeb2a-ef58-4c1b-84ec-284003e9200c",
     "program_id": 463258,
     "qualification_no": 13,
@@ -136,6 +129,13 @@
     "id": "05662772-c2ab-4de4-8b5e-71967432d4fd",
     "program_id": 226261,
     "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "059f4364-cd51-4d86-838e-aa135ac40522",
+    "program_id": 469410,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -196,6 +196,13 @@
     "content_en": ""
   },
   {
+    "id": "07a931da-b7f4-4bbd-8106-78de5f414b32",
+    "program_id": 378142,
+    "qualification_no": 15,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "084368b9-cde0-47cc-9ea0-ed22ea893457",
     "program_id": 463223,
     "qualification_no": 4,
@@ -224,30 +231,9 @@
     "content_en": ""
   },
   {
-    "id": "099a22b5-3ded-4578-be6b-011eb371bec8",
-    "program_id": 157359,
-    "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "0a2f75ff-05d3-4df1-9676-883c6d5283cb",
-    "program_id": 157351,
-    "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "0aa6ff2c-f1f7-4358-a93f-20c53107c942",
     "program_id": 248962,
     "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "0b3de950-5f90-441f-a397-0855da61f562",
-    "program_id": 157358,
-    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -273,6 +259,13 @@
     "content_en": ""
   },
   {
+    "id": "0c00ea25-5f2a-48d7-903f-582d927c3306",
+    "program_id": 420206,
+    "qualification_no": 12,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "0c0d13bd-2383-4d78-81df-78819c04734b",
     "program_id": 463191,
     "qualification_no": 2,
@@ -280,9 +273,30 @@
     "content_en": ""
   },
   {
-    "id": "0c688b49-a605-41a6-aff2-c22418744d96",
+    "id": "0c4aa483-7daa-4ad4-bd80-dfb3c8aa5c22",
     "program_id": 157347,
-    "qualification_no": 12,
+    "qualification_no": 13,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "0c822779-3ede-4afc-bee0-16578e907441",
+    "program_id": 157383,
+    "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "0c90633e-bdd8-4beb-a6f9-85e81ceb1d06",
+    "program_id": 157347,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "0c9d9a30-dbc6-461f-b9a5-485ef695ab61",
+    "program_id": 226273,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -290,13 +304,6 @@
     "id": "0d0ba7a6-135a-482c-925b-55fa0344537e",
     "program_id": 463250,
     "qualification_no": 13,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "0d9672e9-6ff4-49ae-b10d-c529e74f14e4",
-    "program_id": 226246,
-    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -322,9 +329,9 @@
     "content_en": ""
   },
   {
-    "id": "0ef02004-082a-4f34-92be-3322350b80b1",
-    "program_id": 157358,
-    "qualification_no": 8,
+    "id": "0e6424da-f9c4-4949-8eb4-e7c371d5f0d7",
+    "program_id": 157347,
+    "qualification_no": 15,
     "content_tr": "",
     "content_en": ""
   },
@@ -339,6 +346,13 @@
     "id": "0f4a1ce6-4645-4d33-a5fa-6816a3b8f748",
     "program_id": 463202,
     "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "0f619383-469a-4726-a368-b5dcf9b843f3",
+    "program_id": 226246,
+    "qualification_no": 15,
     "content_tr": "",
     "content_en": ""
   },
@@ -378,6 +392,13 @@
     "content_en": ""
   },
   {
+    "id": "1032e67b-71e0-41c0-80b6-9d6df9e9ff3f",
+    "program_id": 226246,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "10a36e8a-9eb6-477a-a8c5-94639627c8af",
     "program_id": 463204,
     "qualification_no": 2,
@@ -406,9 +427,9 @@
     "content_en": ""
   },
   {
-    "id": "1127ff9c-af21-475a-a388-e9cf4b839e79",
-    "program_id": 157371,
-    "qualification_no": 8,
+    "id": "111c847c-6877-4876-bf87-691e9bad2dde",
+    "program_id": 157362,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -420,13 +441,6 @@
     "content_en": ""
   },
   {
-    "id": "114bf0e3-33fb-4986-8456-2a098d7d3ad1",
-    "program_id": 157383,
-    "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "11698c42-e2a6-4903-b7a8-93b60b742418",
     "program_id": 463258,
     "qualification_no": 8,
@@ -434,9 +448,23 @@
     "content_en": ""
   },
   {
+    "id": "11739dc7-ea3e-4cd5-a388-e864faba6726",
+    "program_id": 226263,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "11cceaa7-bee9-4837-8766-35eafa34097d",
     "program_id": 463231,
     "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "124e22c5-6c09-43ac-b7a0-bcdc15d863a7",
+    "program_id": 378142,
+    "qualification_no": 19,
     "content_tr": "",
     "content_en": ""
   },
@@ -476,6 +504,13 @@
     "content_en": ""
   },
   {
+    "id": "13c297bd-8dc1-4f36-b201-b6d4c77f2523",
+    "program_id": 157371,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "14335a18-e06e-478e-82ce-f8aabfc08e49",
     "program_id": 107048,
     "qualification_no": 3,
@@ -486,6 +521,13 @@
     "id": "1484fcd2-4c86-4507-a3ba-4a72307d52f0",
     "program_id": 248963,
     "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "14a91b4d-b5e9-4664-8753-cca2d0a606fd",
+    "program_id": 226246,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -504,13 +546,6 @@
     "content_en": ""
   },
   {
-    "id": "15959c0b-41d6-42c9-b9f9-5daa2a02c5ea",
-    "program_id": 420205,
-    "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "159f3413-7a11-4049-bc83-125e6f475eb7",
     "program_id": 463240,
     "qualification_no": 2,
@@ -518,9 +553,23 @@
     "content_en": ""
   },
   {
+    "id": "162a2b75-6179-40a5-9477-e88c0ef0e66e",
+    "program_id": 157347,
+    "qualification_no": 16,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "16375412-a61f-433b-8ae0-172ff1b700b1",
     "program_id": 463237,
     "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "164b76d8-92ac-4500-89f1-4e1759cf4640",
+    "program_id": 420206,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -560,9 +609,9 @@
     "content_en": ""
   },
   {
-    "id": "176aaea7-fcda-4b89-aa2e-3e151790c627",
-    "program_id": 432448,
-    "qualification_no": 2,
+    "id": "1733f667-495c-4f03-89d7-a7e41be953df",
+    "program_id": 226263,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -574,16 +623,16 @@
     "content_en": ""
   },
   {
-    "id": "186e7195-4b8d-4250-892f-297e8f7d94c0",
-    "program_id": 463186,
-    "qualification_no": 5,
+    "id": "180d6351-041e-418c-9f61-8ebc7e6c7e95",
+    "program_id": 157383,
+    "qualification_no": 16,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "1883ed6c-143b-4cbc-b087-cd197cc1b12e",
-    "program_id": 226273,
-    "qualification_no": 4,
+    "id": "186e7195-4b8d-4250-892f-297e8f7d94c0",
+    "program_id": 463186,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -595,15 +644,15 @@
     "content_en": ""
   },
   {
-    "id": "18b8eef4-9893-43b1-872e-e1637d84b782",
-    "program_id": 226273,
-    "qualification_no": 2,
+    "id": "18ea128e-ff06-4467-b09b-61102ab6815e",
+    "program_id": 463240,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "18ea128e-ff06-4467-b09b-61102ab6815e",
-    "program_id": 463240,
+    "id": "1950623c-85ed-4b25-9e12-738ca31c697b",
+    "program_id": 469410,
     "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
@@ -616,23 +665,23 @@
     "content_en": ""
   },
   {
-    "id": "1a02a169-8f19-49e5-a29c-bee40512fb64",
-    "program_id": 420205,
-    "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "1ae4d207-53f1-45bb-b55c-b7380039fd9d",
+    "id": "19c1bda2-0f96-4c93-a2be-edde8ebe7720",
     "program_id": 469410,
-    "qualification_no": 10,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "1bc1c718-74c8-4aab-bf5e-e5d1ab85a10c",
-    "program_id": 157362,
-    "qualification_no": 13,
+    "id": "19fffaa0-4702-4bfe-9973-95b325718b7e",
+    "program_id": 469410,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "1a321e70-ea5c-401c-8acb-f2270832ab01",
+    "program_id": 157351,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
@@ -644,13 +693,6 @@
     "content_en": ""
   },
   {
-    "id": "1c1f3cab-64e4-4fe3-8fda-c01cbe4a01f5",
-    "program_id": 157351,
-    "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "1c94c8ef-9567-4853-b626-1598aec3fa15",
     "program_id": 463250,
     "qualification_no": 15,
@@ -658,9 +700,9 @@
     "content_en": ""
   },
   {
-    "id": "1d37410c-9a8b-4e25-8d60-4f53517801c1",
-    "program_id": 432448,
-    "qualification_no": 11,
+    "id": "1cd001e6-d04a-4919-834e-70cc109291f4",
+    "program_id": 157383,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
@@ -693,13 +735,6 @@
     "content_en": ""
   },
   {
-    "id": "1d832e36-4d26-4b18-9bdc-eb2f4a58c9e3",
-    "program_id": 157361,
-    "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "1d8f0914-3f97-4dbf-a293-8e778ed0d53e",
     "program_id": 463245,
     "qualification_no": 10,
@@ -707,23 +742,16 @@
     "content_en": ""
   },
   {
-    "id": "1dbaee67-c04f-45dd-805c-e0598e5308c8",
-    "program_id": 157359,
-    "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "1e4c4a7b-114a-4668-a239-2cf7cc0255a5",
-    "program_id": 432448,
+    "id": "1d9c89ac-f889-4082-a5a1-234f28bb7a86",
+    "program_id": 157361,
     "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "1e526eee-1f73-460d-8315-dc2d1f4d1d31",
-    "program_id": 157359,
-    "qualification_no": 7,
+    "id": "1ddbfffe-1b77-482d-adf2-7212d4b0d68e",
+    "program_id": 226263,
+    "qualification_no": 14,
     "content_tr": "",
     "content_en": ""
   },
@@ -735,23 +763,16 @@
     "content_en": ""
   },
   {
-    "id": "1ed16c9d-14d0-49bc-bad3-f462c1932c02",
-    "program_id": 420206,
-    "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "1ef320b0-9c6f-4093-ba30-7927f6c638e2",
+    "id": "1f90543a-e03f-41f8-9b9d-b8fbe817ff79",
     "program_id": 157359,
-    "qualification_no": 10,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "1f8026af-eb77-48f3-86f4-7a08e3de5f12",
-    "program_id": 226246,
-    "qualification_no": 5,
+    "id": "1fa229ae-f6fa-4d00-acba-87a47031b940",
+    "program_id": 157361,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -791,6 +812,13 @@
     "content_en": ""
   },
   {
+    "id": "21d43c46-f021-416b-8228-f467c5b9b473",
+    "program_id": 226273,
+    "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "21d7a989-7648-47b6-a540-4dfed56f5c4a",
     "program_id": 463231,
     "qualification_no": 14,
@@ -812,13 +840,6 @@
     "content_en": ""
   },
   {
-    "id": "223c3f7d-afa2-4fba-832d-63a0587374c2",
-    "program_id": 226246,
-    "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "22e3f35b-a02d-43c1-8c6e-2e6c18dc7f6f",
     "program_id": 463237,
     "qualification_no": 9,
@@ -829,34 +850,6 @@
     "id": "23722467-6d9c-4a4c-976d-1f9a63cdb27c",
     "program_id": 463233,
     "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "23896e3c-fb1a-43b8-99fc-e81af346b190",
-    "program_id": 378142,
-    "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "2418b418-5bcb-436e-8fd9-08a9c8b032ef",
-    "program_id": 226263,
-    "qualification_no": 15,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "24208192-ef94-45b2-b8d4-db63b5c4ac59",
-    "program_id": 420206,
-    "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "2430b8f9-7159-4eb3-b4d0-f1ce23e858c3",
-    "program_id": 157361,
-    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -889,6 +882,13 @@
     "content_en": ""
   },
   {
+    "id": "24e0c3fc-221b-4ba9-bf28-9d849ad1215e",
+    "program_id": 157351,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "25424139-429e-4a70-9d84-30061c94e11f",
     "program_id": 463215,
     "qualification_no": 6,
@@ -903,9 +903,23 @@
     "content_en": ""
   },
   {
+    "id": "25771bbf-6baf-4169-8894-277c0737829f",
+    "program_id": 420206,
+    "qualification_no": 6,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "260fa124-0e8d-48e9-9573-cd5bbcb1f4b9",
     "program_id": 463240,
     "qualification_no": 10,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "265917ff-7f02-4ef9-b0b6-6ba3cfa5f502",
+    "program_id": 226273,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -931,6 +945,13 @@
     "content_en": ""
   },
   {
+    "id": "26f33dda-647f-4772-a2ce-8fa71ea847de",
+    "program_id": 157351,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "26fcb1b1-e49a-4ddb-b7a8-a743f286f789",
     "program_id": 248963,
     "qualification_no": 6,
@@ -945,6 +966,13 @@
     "content_en": ""
   },
   {
+    "id": "27489657-f76a-4c90-84e3-85bed7256e30",
+    "program_id": 157358,
+    "qualification_no": 12,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "278f11b7-9830-4937-ac13-790ca85d90bb",
     "program_id": 463189,
     "qualification_no": 6,
@@ -952,9 +980,9 @@
     "content_en": ""
   },
   {
-    "id": "28037d85-1f25-4be1-ba5e-8fed021317ba",
-    "program_id": 157347,
-    "qualification_no": 4,
+    "id": "280964b1-0335-40cb-9929-282cf48cd35c",
+    "program_id": 226246,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -966,16 +994,16 @@
     "content_en": ""
   },
   {
-    "id": "28bd858a-b8ad-4919-a851-52df03416108",
-    "program_id": 463251,
-    "qualification_no": 15,
+    "id": "2872dfd2-fe64-4881-8173-746c28cf34b8",
+    "program_id": 157351,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "29388899-8e40-4cac-a8ff-37105e711d19",
-    "program_id": 157347,
-    "qualification_no": 18,
+    "id": "28bd858a-b8ad-4919-a851-52df03416108",
+    "program_id": 463251,
+    "qualification_no": 15,
     "content_tr": "",
     "content_en": ""
   },
@@ -1001,16 +1029,9 @@
     "content_en": ""
   },
   {
-    "id": "29db4e06-3f30-4ec6-ad79-be5d25c6b80b",
+    "id": "2a1ec3c1-0eb1-4d35-88b9-996471291c4f",
     "program_id": 378142,
-    "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "2a23562e-091b-419b-9ab4-27db2bf8a06d",
-    "program_id": 157349,
-    "qualification_no": 2,
+    "qualification_no": 20,
     "content_tr": "",
     "content_en": ""
   },
@@ -1106,16 +1127,16 @@
     "content_en": ""
   },
   {
-    "id": "2d043ae9-678e-44b5-8560-610651b6a189",
-    "program_id": 157383,
-    "qualification_no": 16,
+    "id": "2d1c5384-b75e-4b85-b38e-de47d86cbd5d",
+    "program_id": 463237,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "2d1c5384-b75e-4b85-b38e-de47d86cbd5d",
-    "program_id": 463237,
-    "qualification_no": 6,
+    "id": "2d377e2e-031c-43bc-91f7-b2412f46ad07",
+    "program_id": 157359,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -1148,30 +1169,9 @@
     "content_en": ""
   },
   {
-    "id": "2e4fb293-86ba-4138-b715-1038bcb9a591",
-    "program_id": 469410,
-    "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "2e5afebf-7d62-4dd6-a1c4-717a3fbf9ed3",
-    "program_id": 252880,
-    "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "2ea84605-cbad-4ed5-8737-d6ae5d73988e",
     "program_id": 463236,
     "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "2eeb066b-5472-4998-92e3-dd981119e2ac",
-    "program_id": 252880,
-    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -1204,16 +1204,23 @@
     "content_en": ""
   },
   {
-    "id": "2f8f14c5-2d79-4b6f-aa03-e2a818c0904a",
-    "program_id": 226263,
-    "qualification_no": 5,
+    "id": "2fa04ce2-6af1-4698-9da7-7de7787a970a",
+    "program_id": 157383,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "2fcfc8db-751a-4dbc-8545-3518e6df74fa",
+    "id": "2fc955c8-aa8b-4b30-b95b-ddc779e2e338",
     "program_id": 226263,
-    "qualification_no": 14,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "3047a5db-eabb-44ca-bc32-16f841af19b3",
+    "program_id": 157371,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -1239,9 +1246,16 @@
     "content_en": ""
   },
   {
-    "id": "31e15de1-85c3-47d4-8b4d-b35de13de383",
-    "program_id": 226263,
-    "qualification_no": 6,
+    "id": "31e8baee-58c8-420d-931e-bd7f6f7e99b9",
+    "program_id": 378142,
+    "qualification_no": 17,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "322884c5-1eff-412e-8a45-45c56b4b692a",
+    "program_id": 157359,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -1249,6 +1263,13 @@
     "id": "32388a43-a8aa-405c-ae95-740b71e35363",
     "program_id": 463200,
     "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "328aa4d8-94e7-4d78-a423-e585adb93271",
+    "program_id": 157347,
+    "qualification_no": 19,
     "content_tr": "",
     "content_en": ""
   },
@@ -1263,6 +1284,13 @@
     "id": "32dea175-cc41-459f-be0a-23ec13d8ed2d",
     "program_id": 463214,
     "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "32ff9468-9714-4ff4-9ba1-9c18c566c892",
+    "program_id": 378142,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -1295,13 +1323,6 @@
     "content_en": ""
   },
   {
-    "id": "33c25447-e555-47e5-9981-e0da3341b4b0",
-    "program_id": 226246,
-    "qualification_no": 13,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "33d381f2-4731-4eec-9c8c-ad0d4663a85c",
     "program_id": 463221,
     "qualification_no": 10,
@@ -1319,13 +1340,6 @@
     "id": "3428347a-0e3c-44bf-8b65-448211805744",
     "program_id": 463258,
     "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "345982c6-a8bf-4031-aa08-503f12054d18",
-    "program_id": 226263,
-    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -1365,13 +1379,6 @@
     "content_en": ""
   },
   {
-    "id": "35e09477-ce4b-411c-9b67-2bca1c5c6352",
-    "program_id": 157361,
-    "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "35ff5758-cd3c-45ce-a6a1-57a22f2599ed",
     "program_id": 463245,
     "qualification_no": 16,
@@ -1381,6 +1388,13 @@
   {
     "id": "3605ce6e-2b39-4247-afb0-d1f162f9ebd4",
     "program_id": 226261,
+    "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "3608cd40-b461-42d8-9894-c08b426a1771",
+    "program_id": 420206,
     "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
@@ -1407,16 +1421,16 @@
     "content_en": ""
   },
   {
-    "id": "36e877d4-c6fd-41aa-9214-96dcfa11c6d8",
-    "program_id": 463204,
-    "qualification_no": 7,
+    "id": "36b59d08-cfdd-4bd3-86c8-0f5e1db609f0",
+    "program_id": 226263,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "370b0bf1-8858-44ac-b0b9-f58c5bea2ca1",
-    "program_id": 157371,
-    "qualification_no": 10,
+    "id": "36e877d4-c6fd-41aa-9214-96dcfa11c6d8",
+    "program_id": 463204,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -1428,6 +1442,20 @@
     "content_en": ""
   },
   {
+    "id": "37271494-9dc3-4822-8f02-8007d2285c3c",
+    "program_id": 157361,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "376b9f74-51ad-46e4-b35b-0a645580cbe8",
+    "program_id": 157358,
+    "qualification_no": 14,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "37804072-5d89-43fa-8a60-a7389835bc21",
     "program_id": 463202,
     "qualification_no": 7,
@@ -1435,9 +1463,30 @@
     "content_en": ""
   },
   {
-    "id": "37a6bc6d-6206-4a95-a2da-dc0a4d74f533",
-    "program_id": 378141,
-    "qualification_no": 5,
+    "id": "3799292f-adf7-4727-a7e7-e94dd590f8c9",
+    "program_id": 157359,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "379f6fa3-27a1-4f48-b4be-a4cf4aed3aae",
+    "program_id": 226273,
+    "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "37bae50e-df76-454d-a43c-50ffc1b8b477",
+    "program_id": 157383,
+    "qualification_no": 12,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "38546380-ad69-47e2-84b7-3e50ed3e3366",
+    "program_id": 157349,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -1449,16 +1498,16 @@
     "content_en": ""
   },
   {
-    "id": "38db89b3-c760-40b5-a478-c138c251d124",
-    "program_id": 378142,
-    "qualification_no": 15,
+    "id": "39cf8466-297e-4237-8922-83dd1c72fc82",
+    "program_id": 157347,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "3a357ef8-5565-4648-b0a2-3ffdac5b48c4",
-    "program_id": 157383,
-    "qualification_no": 7,
+    "id": "3a06f90f-1bc1-42a2-8362-98c5c1f76a67",
+    "program_id": 252880,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -1505,23 +1554,9 @@
     "content_en": ""
   },
   {
-    "id": "3b903ae3-eda8-4cc5-8f5c-84b4f2c8c961",
-    "program_id": 420206,
+    "id": "3be379d7-878b-4baf-ab21-9d92f70c3329",
+    "program_id": 157359,
     "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "3c8aa77f-8315-4023-86b9-a29c1521377d",
-    "program_id": 378142,
-    "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "3c8b13f6-6a0b-421e-9280-13515689f820",
-    "program_id": 157361,
-    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -1561,23 +1596,23 @@
     "content_en": ""
   },
   {
-    "id": "3e7af0b9-2489-45eb-aab3-0c6abf27e0ee",
-    "program_id": 157359,
-    "qualification_no": 5,
+    "id": "3ec6145a-a4a0-435a-aa99-b5b5ecd89423",
+    "program_id": 248962,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "3eaf193a-4764-4951-b6ac-e858656841a0",
-    "program_id": 157362,
+    "id": "3efce48f-97bc-4c93-8635-1fa28b7f613f",
+    "program_id": 157347,
     "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "3ec6145a-a4a0-435a-aa99-b5b5ecd89423",
-    "program_id": 248962,
-    "qualification_no": 11,
+    "id": "3f300ec2-ac7c-4ada-be18-b2bc2c84e848",
+    "program_id": 226246,
+    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -1598,6 +1633,13 @@
   {
     "id": "3fc11b69-799f-4929-b708-4b4d50fe604b",
     "program_id": 463246,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "3ff3bb35-9724-477c-8095-174e9d976a04",
+    "program_id": 420205,
     "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
@@ -1631,6 +1673,13 @@
     "content_en": ""
   },
   {
+    "id": "41604e3e-5452-4b73-ab31-ef3669de7da9",
+    "program_id": 432448,
+    "qualification_no": 11,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "419d1755-3190-4360-8c0e-b9cfd2df653d",
     "program_id": 248962,
     "qualification_no": 3,
@@ -1638,16 +1687,16 @@
     "content_en": ""
   },
   {
-    "id": "41d17e2a-60a7-4fb2-b94a-824d36353a1a",
-    "program_id": 378142,
-    "qualification_no": 2,
+    "id": "4224b33d-8b54-44a2-b290-eefb5312e1d9",
+    "program_id": 463232,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "4224b33d-8b54-44a2-b290-eefb5312e1d9",
-    "program_id": 463232,
-    "qualification_no": 3,
+    "id": "424b2636-1872-45fd-8387-376f7f2c2cea",
+    "program_id": 420205,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -1666,13 +1715,6 @@
     "content_en": ""
   },
   {
-    "id": "42b2734e-6866-4021-892b-92cce0f95822",
-    "program_id": 157371,
-    "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "42c6c6bd-d3a6-45ed-b501-21fcfaaf7e1e",
     "program_id": 248962,
     "qualification_no": 13,
@@ -1680,9 +1722,16 @@
     "content_en": ""
   },
   {
-    "id": "42e14968-0712-4aba-aaca-e0caafe1e521",
-    "program_id": 432448,
-    "qualification_no": 10,
+    "id": "430d7bb1-8468-44bd-9518-58b2b8588ed5",
+    "program_id": 378141,
+    "qualification_no": 6,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "4312b90f-3eb8-4154-9980-7deeb8bc32db",
+    "program_id": 157371,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -1694,6 +1743,13 @@
     "content_en": ""
   },
   {
+    "id": "43bd376a-6177-4874-929f-31de731c5111",
+    "program_id": 157349,
+    "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "43beb4a1-776b-412f-bc30-7689c15a7b72",
     "program_id": 463259,
     "qualification_no": 9,
@@ -1701,9 +1757,23 @@
     "content_en": ""
   },
   {
+    "id": "43c234c8-8368-4dfe-b1f1-043e08d76608",
+    "program_id": 157371,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "43de706c-f35d-42e5-8930-0a9b526123dc",
     "program_id": 463204,
     "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "43e3cc3f-d500-4a9b-819d-c372f564c636",
+    "program_id": 157347,
+    "qualification_no": 18,
     "content_tr": "",
     "content_en": ""
   },
@@ -1718,13 +1788,6 @@
     "id": "44007128-423d-4037-8a1d-7f824afe6839",
     "program_id": 463246,
     "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "4443185d-6bc9-4d9e-a7c7-4ea5aa2b51c2",
-    "program_id": 226263,
-    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -1750,16 +1813,23 @@
     "content_en": ""
   },
   {
-    "id": "4491edb4-89f8-4d3f-8dc8-8424287044bf",
-    "program_id": 157371,
-    "qualification_no": 3,
+    "id": "44b21705-d6fc-4657-aea7-0353510b3dbe",
+    "program_id": 463253,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "44b21705-d6fc-4657-aea7-0353510b3dbe",
-    "program_id": 463253,
-    "qualification_no": 7,
+    "id": "4522ab97-755a-4176-adc0-177a40403ada",
+    "program_id": 226273,
+    "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "452c571f-6d97-48a7-8fb7-2c0c26b501a6",
+    "program_id": 252880,
+    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -1778,16 +1848,9 @@
     "content_en": ""
   },
   {
-    "id": "45d79981-9ce4-4852-aa53-69526329bc9a",
-    "program_id": 226246,
-    "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "461a773f-703a-4261-bb16-39c2c7456d60",
-    "program_id": 157371,
-    "qualification_no": 1,
+    "id": "462965aa-f711-491e-bdfd-a1f3fe9beab6",
+    "program_id": 157358,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -1795,6 +1858,13 @@
     "id": "469ef7b9-192f-4c5f-9eea-9cd0d0775250",
     "program_id": 463221,
     "qualification_no": 15,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "46c335e2-0a81-4b76-925b-546d0674fdf1",
+    "program_id": 420206,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
@@ -1809,13 +1879,6 @@
     "id": "478f2d20-08d1-4b36-9f59-78541bfdbfe6",
     "program_id": 130437,
     "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "479d99bd-6da5-4a1d-bcac-8d433010bba2",
-    "program_id": 157351,
-    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -1841,9 +1904,9 @@
     "content_en": ""
   },
   {
-    "id": "48e33507-7171-4b4e-9a4e-6c49a33c04f3",
-    "program_id": 157358,
-    "qualification_no": 2,
+    "id": "47fa2fe3-93f1-4ba2-902f-98d0816cc159",
+    "program_id": 226246,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -1858,6 +1921,13 @@
     "id": "494482ee-c791-46e1-b6d6-495695e122ed",
     "program_id": 463207,
     "qualification_no": 10,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "49453a5e-e44b-4418-917c-6961688ccd4b",
+    "program_id": 157361,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -1890,6 +1960,13 @@
     "content_en": ""
   },
   {
+    "id": "4a50f6d5-13e9-4b63-b997-f399fe5440a1",
+    "program_id": 157362,
+    "qualification_no": 10,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "4a814ff2-adda-4346-b0fc-c1be775a04ec",
     "program_id": 463247,
     "qualification_no": 5,
@@ -1900,6 +1977,20 @@
     "id": "4aa22a95-e32c-4592-b173-459a53336f77",
     "program_id": 463225,
     "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "4ab70781-690b-44b0-b4a9-e4952dd01b38",
+    "program_id": 157359,
+    "qualification_no": 6,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "4b11451a-f751-41e0-97ff-f992167b5d1b",
+    "program_id": 157347,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -1925,13 +2016,6 @@
     "content_en": ""
   },
   {
-    "id": "4ba8f460-c4c0-416e-aee3-02ba5228be57",
-    "program_id": 157361,
-    "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "4ba972d3-ac8a-4204-b997-6db12f054b1b",
     "program_id": 463231,
     "qualification_no": 15,
@@ -1939,23 +2023,37 @@
     "content_en": ""
   },
   {
-    "id": "4bcae1dd-b6f9-470e-954c-a597d081763b",
-    "program_id": 157362,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "4bf0c3e7-d282-41cd-bc19-8f4be7e9e4d4",
-    "program_id": 252880,
-    "qualification_no": 14,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "4c1fc861-1e26-43db-92fc-e47e669be502",
     "program_id": 248962,
     "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "4c36c211-246d-46a1-bfa6-329ff6053871",
+    "program_id": 157359,
+    "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "4c9d932d-902f-4ae4-95b2-dd3ba532969c",
+    "program_id": 420206,
+    "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "4cbe8d76-71cf-404e-968d-857d9ccebd13",
+    "program_id": 157362,
+    "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "4cd13510-65a8-4cdf-8cc4-95984f6270ed",
+    "program_id": 157349,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -1995,16 +2093,23 @@
     "content_en": ""
   },
   {
-    "id": "4e57c374-3a69-41f1-a6bc-df1b11e4da09",
-    "program_id": 226273,
-    "qualification_no": 5,
+    "id": "4e69449d-7908-44a9-9ac5-bc26f54a6fd2",
+    "program_id": 432448,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "4f0693f6-8947-4c28-96a6-c4d8d316287b",
+    "id": "4ea86c3a-9a38-4d63-9528-fef673b3f36e",
+    "program_id": 157383,
+    "qualification_no": 14,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "4f8598dc-1110-46aa-8407-222194d110f5",
     "program_id": 157347,
-    "qualification_no": 3,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -2023,6 +2128,13 @@
     "content_en": ""
   },
   {
+    "id": "4fe6e18e-b5bf-4195-9129-2d4e3cec564b",
+    "program_id": 157358,
+    "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "5021330d-d17d-41de-84c7-d54058bdb524",
     "program_id": 331357,
     "qualification_no": 8,
@@ -2030,37 +2142,16 @@
     "content_en": ""
   },
   {
-    "id": "504e24b8-e518-489f-bfc9-d08d5b0f51bb",
-    "program_id": 157358,
-    "qualification_no": 7,
+    "id": "503446cb-9c58-4a52-b7d3-8fe9304ffbd4",
+    "program_id": 420206,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "50584fdb-98f9-46ec-8fbe-418900c89d4a",
-    "program_id": 157351,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "50d683b2-5b49-494e-84aa-2294db3fea4b",
-    "program_id": 226263,
-    "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "51091a1f-190a-4b85-8d7f-d09b6cc4df90",
-    "program_id": 420205,
-    "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "510c8c86-f40d-472f-8951-94d69a537fa4",
-    "program_id": 157347,
-    "qualification_no": 20,
+    "id": "50418dc8-acfc-47b0-8344-fa893c35c392",
+    "program_id": 157362,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
@@ -2107,16 +2198,23 @@
     "content_en": ""
   },
   {
-    "id": "5222efc0-d7bf-41cc-9df5-d5426b6b9ca7",
-    "program_id": 157347,
-    "qualification_no": 13,
+    "id": "522c780b-598c-49ec-9e5a-5d270eef80a1",
+    "program_id": 463252,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "522c780b-598c-49ec-9e5a-5d270eef80a1",
-    "program_id": 463252,
-    "qualification_no": 2,
+    "id": "5260e585-ef94-4a9d-8f2a-69160a2e86ad",
+    "program_id": 157383,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "5294f414-2c9b-4130-9ae8-e248c3ebcfda",
+    "program_id": 157351,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -2128,9 +2226,9 @@
     "content_en": ""
   },
   {
-    "id": "52f3cc14-f9bc-4d8a-869c-8fb3137f596e",
-    "program_id": 252880,
-    "qualification_no": 8,
+    "id": "52f6bd49-dc55-40a2-a5c1-8f6b3f59fdf5",
+    "program_id": 226273,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
@@ -2142,9 +2240,9 @@
     "content_en": ""
   },
   {
-    "id": "53431a30-827e-4811-b105-bff2b772c421",
-    "program_id": 157351,
-    "qualification_no": 10,
+    "id": "5329ecb7-1bb6-48db-8d6d-82d57b41b31a",
+    "program_id": 432448,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -2170,6 +2268,13 @@
     "content_en": ""
   },
   {
+    "id": "54a85be1-d946-4c71-979b-14530413f189",
+    "program_id": 157383,
+    "qualification_no": 15,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "54ebdd77-8ae0-4de7-92e1-09c0ff7384d2",
     "program_id": 463205,
     "qualification_no": 5,
@@ -2184,16 +2289,16 @@
     "content_en": ""
   },
   {
-    "id": "552c44e3-a1e8-414f-898d-d609171d1653",
-    "program_id": 463251,
-    "qualification_no": 12,
+    "id": "550bb6fe-c128-43a4-8a93-0acdd447af8c",
+    "program_id": 469410,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "55699b8b-c352-4166-bb9d-7865af2494a0",
-    "program_id": 157347,
-    "qualification_no": 8,
+    "id": "552c44e3-a1e8-414f-898d-d609171d1653",
+    "program_id": 463251,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -2212,30 +2317,9 @@
     "content_en": ""
   },
   {
-    "id": "55952e6e-73d3-49f0-848c-fec4806fa5a1",
-    "program_id": 378142,
-    "qualification_no": 14,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "55d0b24a-6bc0-4626-a8d9-d6bd626855ea",
-    "program_id": 157383,
-    "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "55f406a9-95ec-4343-b45a-95746adc0995",
     "program_id": 463215,
     "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "562689f4-9241-4fc9-9c5c-a50d982ec0e2",
-    "program_id": 420205,
-    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -2247,9 +2331,16 @@
     "content_en": ""
   },
   {
-    "id": "56bcc6a2-78a6-41a3-a48f-d8716a3fa705",
-    "program_id": 157383,
-    "qualification_no": 17,
+    "id": "56992de7-54de-4fa2-9327-acc86029ef32",
+    "program_id": 157347,
+    "qualification_no": 20,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "569a675b-3974-46e1-9bc7-e7e981c64cdb",
+    "program_id": 252880,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
@@ -2275,16 +2366,16 @@
     "content_en": ""
   },
   {
-    "id": "57be47a4-98e9-4033-a538-13d051d6b57f",
-    "program_id": 157362,
-    "qualification_no": 3,
+    "id": "57d417e1-aae2-48ec-bd61-d5e78723a0c9",
+    "program_id": 463217,
+    "qualification_no": 16,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "57d417e1-aae2-48ec-bd61-d5e78723a0c9",
-    "program_id": 463217,
-    "qualification_no": 16,
+    "id": "5885d37c-9d70-4efa-8729-4a5c7177b741",
+    "program_id": 378142,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -2296,9 +2387,23 @@
     "content_en": ""
   },
   {
-    "id": "5905a2b4-b566-4048-86d5-99384a5c9d5e",
-    "program_id": 226246,
-    "qualification_no": 16,
+    "id": "58e7d7d3-8aaa-4e37-8dcc-fe6e96ed2ba3",
+    "program_id": 252880,
+    "qualification_no": 12,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "591acd4e-554d-4e8d-ab5b-3878f69466b1",
+    "program_id": 157351,
+    "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "594b4c30-2bf2-429c-a68b-ae5cceab369f",
+    "program_id": 157358,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -2306,13 +2411,6 @@
     "id": "59737b54-c195-4a72-afef-40777e227d1c",
     "program_id": 463245,
     "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "5977383e-27c7-4a1f-9a01-4c867c43afbf",
-    "program_id": 226273,
-    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -2331,29 +2429,15 @@
     "content_en": ""
   },
   {
-    "id": "5a172f15-5aca-485f-871e-c515d27209e0",
-    "program_id": 157359,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "5a3da5a9-218a-4df1-ad1e-ceb75c4d6cf9",
-    "program_id": 157347,
-    "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "5a41fa2e-24de-4456-9d08-cf4cdb28c901",
-    "program_id": 157371,
-    "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "5a8beb87-99a4-4a75-9a09-fba3e3cec5ce",
     "program_id": 463259,
+    "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "5b0a4e17-7660-4250-93b4-f7b9bc8aa820",
+    "program_id": 378142,
     "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
@@ -2380,16 +2464,23 @@
     "content_en": ""
   },
   {
-    "id": "5cfa9b3f-1a2b-43c8-86ec-04dabcb6c7ca",
-    "program_id": 252880,
-    "qualification_no": 4,
+    "id": "5c787a16-aa9b-4479-8619-f03d122ec196",
+    "program_id": 420205,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "5d4982d3-a17d-47fb-adef-448ae206d8f1",
-    "program_id": 157361,
-    "qualification_no": 7,
+    "id": "5cc1760e-711d-440e-bc72-8f93390dea1d",
+    "program_id": 157362,
+    "qualification_no": 11,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "5cf9b299-f9e9-4a03-96a9-1cab04622db6",
+    "program_id": 157362,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -2408,9 +2499,30 @@
     "content_en": ""
   },
   {
-    "id": "5dc89f78-7cc4-4f2b-803f-2756cb03ce80",
-    "program_id": 226246,
-    "qualification_no": 11,
+    "id": "5d66f2ca-af85-4e02-a3ca-dca9a306c907",
+    "program_id": 157351,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "5efe87f3-ca77-45e5-9ec9-6b9ad4b17d5f",
+    "program_id": 432448,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "5f0b5406-ada5-404a-a505-62f7377f2444",
+    "program_id": 432448,
+    "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "5f2ed76a-77ae-4992-a065-13978ebbc9d1",
+    "program_id": 226263,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -2436,6 +2548,13 @@
     "content_en": ""
   },
   {
+    "id": "6125cce9-5f2f-40c5-9f8b-c3ec4c9b9f70",
+    "program_id": 157349,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "613b3dc1-581d-4d2f-be72-6c0caa8485d3",
     "program_id": 463185,
     "qualification_no": 1,
@@ -2443,9 +2562,9 @@
     "content_en": ""
   },
   {
-    "id": "61484100-0a99-48d3-8b61-aaacc40f88ce",
-    "program_id": 157349,
-    "qualification_no": 1,
+    "id": "614ae802-ac20-40c5-bcd0-4fc3021edb0a",
+    "program_id": 157351,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -2485,16 +2604,16 @@
     "content_en": ""
   },
   {
-    "id": "6336021d-2bba-431a-becc-e3ff642502e9",
-    "program_id": 463241,
-    "qualification_no": 8,
+    "id": "623e9d4a-d51e-4f78-8c95-50dedec5743b",
+    "program_id": 469410,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "634ac803-6c51-467c-bcf8-fa5a28033fa8",
-    "program_id": 157351,
-    "qualification_no": 14,
+    "id": "6336021d-2bba-431a-becc-e3ff642502e9",
+    "program_id": 463241,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -2513,13 +2632,6 @@
     "content_en": ""
   },
   {
-    "id": "63f5011b-740d-49f9-b2db-1771a8fafa73",
-    "program_id": 157358,
-    "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "640d9163-f172-40ae-91bd-fb7ab64758e3",
     "program_id": 463221,
     "qualification_no": 14,
@@ -2534,8 +2646,8 @@
     "content_en": ""
   },
   {
-    "id": "64a089fb-874a-46c1-b447-c8f22d81c710",
-    "program_id": 157383,
+    "id": "64a5e31d-58b2-4c38-b707-eb3bac66e888",
+    "program_id": 157358,
     "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
@@ -2548,16 +2660,9 @@
     "content_en": ""
   },
   {
-    "id": "654ccd33-9b53-4008-bb25-c6520bbda83e",
-    "program_id": 226263,
-    "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "657269a9-9a4f-41a3-bd6e-a87d3fd437c9",
-    "program_id": 157349,
-    "qualification_no": 7,
+    "id": "65673256-6fda-4dfc-b2d8-f665ecff956a",
+    "program_id": 378141,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -2569,23 +2674,23 @@
     "content_en": ""
   },
   {
-    "id": "657eb3dc-507a-4c75-a46d-05aa5ae43403",
-    "program_id": 252880,
-    "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "66215e33-41bd-4afa-adbf-f782446b27f7",
+    "id": "658eedd7-904e-47db-ba12-561c4022a030",
     "program_id": 157358,
-    "qualification_no": 4,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "6661d6b7-c6da-4692-8687-79067ace6296",
-    "program_id": 157359,
-    "qualification_no": 3,
+    "id": "65ec1d6b-814b-4166-a989-7b2cd4cc9eb2",
+    "program_id": 420205,
+    "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "65f12049-8cc0-4e43-b8e1-999c24b417b2",
+    "program_id": 432448,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -2604,13 +2709,6 @@
     "content_en": ""
   },
   {
-    "id": "6706821c-f503-4807-9f16-c4669e5594c8",
-    "program_id": 157349,
-    "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "676e829b-830a-4fa3-9665-1d7a1e27e655",
     "program_id": 463221,
     "qualification_no": 13,
@@ -2621,13 +2719,6 @@
     "id": "67d69358-85c7-438c-ac2b-b8fca3eb17fc",
     "program_id": 463234,
     "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "68005f22-e37a-4de6-80bb-b54590676f7a",
-    "program_id": 378141,
-    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
@@ -2653,23 +2744,9 @@
     "content_en": ""
   },
   {
-    "id": "68c83e8d-81cd-4aea-a5b1-ce7cb6e8c392",
-    "program_id": 420205,
-    "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "68d6114a-5e71-4994-936b-863b746857ef",
     "program_id": 463233,
     "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "69065508-944a-4470-a560-417e68adfa6d",
-    "program_id": 420206,
-    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -2688,6 +2765,13 @@
     "content_en": ""
   },
   {
+    "id": "69c6c588-8eb8-4827-b904-fa8f33104623",
+    "program_id": 157361,
+    "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "69e31667-d1e3-4db5-b629-ea93256b940f",
     "program_id": 226255,
     "qualification_no": 2,
@@ -2702,20 +2786,6 @@
     "content_en": ""
   },
   {
-    "id": "6ab1487b-1c41-44c9-9269-3bd70f4aae7f",
-    "program_id": 157347,
-    "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "6af23592-a0ce-4e4b-b193-1c847829ffa2",
-    "program_id": 469410,
-    "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "6afd98a7-0e48-4f64-bc52-1183d664ec85",
     "program_id": 463214,
     "qualification_no": 3,
@@ -2726,20 +2796,6 @@
     "id": "6b667814-91e8-4534-bccd-464aeee8f7cf",
     "program_id": 463206,
     "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "6b6bc838-7970-4f22-9afd-bd9dd77665b4",
-    "program_id": 378141,
-    "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "6b98a07a-a989-4bd1-96ea-038d3382bea1",
-    "program_id": 157383,
-    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -2779,23 +2835,9 @@
     "content_en": ""
   },
   {
-    "id": "6cf5ce2d-1a93-4a53-a6f6-2416c1852651",
-    "program_id": 157383,
-    "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "6d17733b-a0ef-4f87-9f4a-1979eb32ad76",
-    "program_id": 157361,
-    "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "6d28427e-34e2-4923-b90d-cbde84ff4ed4",
-    "program_id": 226263,
-    "qualification_no": 11,
+    "id": "6d0a1445-8857-478a-921b-b876d60e185c",
+    "program_id": 157347,
+    "qualification_no": 17,
     "content_tr": "",
     "content_en": ""
   },
@@ -2821,9 +2863,16 @@
     "content_en": ""
   },
   {
-    "id": "6ea37da0-c77e-403f-94f0-42d49dd75964",
-    "program_id": 378142,
-    "qualification_no": 13,
+    "id": "6ea49e2c-9d38-432d-9471-7107b76683a0",
+    "program_id": 157383,
+    "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "6ec24f8b-09ef-4ead-9623-ad6f76fa1575",
+    "program_id": 157349,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -2842,9 +2891,23 @@
     "content_en": ""
   },
   {
+    "id": "6fc83fe7-bbbe-4466-8cc9-2503b5d4b901",
+    "program_id": 378142,
+    "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "70121cae-1335-421b-b8ff-f3681149c12a",
     "program_id": 463188,
     "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "70633253-0ece-41f6-9f7f-1fa874653100",
+    "program_id": 157362,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -2859,6 +2922,20 @@
     "id": "71106c96-af2d-484f-a2e0-569050dfeb02",
     "program_id": 226255,
     "qualification_no": 14,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "71273cb5-bb0b-46ca-898f-2c3acc1aff20",
+    "program_id": 157362,
+    "qualification_no": 14,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "7131b8a8-fef6-40c6-9436-2656b0139ca6",
+    "program_id": 157351,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -2884,9 +2961,9 @@
     "content_en": ""
   },
   {
-    "id": "7197c7c8-0ca7-4b55-868c-8a5dfc82458b",
-    "program_id": 157371,
-    "qualification_no": 7,
+    "id": "71e7ba05-a18c-4ec2-9982-9eee751df446",
+    "program_id": 157349,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -2919,9 +2996,9 @@
     "content_en": ""
   },
   {
-    "id": "741da918-3ed9-4cf9-b369-74311dbd13e5",
-    "program_id": 420206,
-    "qualification_no": 5,
+    "id": "745b5dee-f22c-4fd7-ba30-ba7de8ec72c4",
+    "program_id": 157371,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -2933,6 +3010,13 @@
     "content_en": ""
   },
   {
+    "id": "75255891-aa7a-4afc-8496-62ddf026c5ad",
+    "program_id": 157358,
+    "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "75383522-b834-4ff8-91b2-a42e14540919",
     "program_id": 463232,
     "qualification_no": 12,
@@ -2940,23 +3024,16 @@
     "content_en": ""
   },
   {
-    "id": "753d00a4-9d4b-481d-805f-ffd84b4b2497",
-    "program_id": 226263,
-    "qualification_no": 13,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "7690d56e-fa92-4a3d-9cef-14b0c5857845",
-    "program_id": 226273,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "76e4944a-c88a-4562-b7b9-4bc50674359f",
     "program_id": 463232,
     "qualification_no": 11,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "76e555ef-dcec-4cf0-9233-e21c2542feae",
+    "program_id": 252880,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -2982,9 +3059,9 @@
     "content_en": ""
   },
   {
-    "id": "778cb92e-9e1f-4df5-aa2c-af1694d70cfc",
-    "program_id": 157362,
-    "qualification_no": 11,
+    "id": "77a5c799-c82b-409c-8b8a-1541be569c7a",
+    "program_id": 157359,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -2992,6 +3069,13 @@
     "id": "77ba585b-c224-441f-b37c-a9ba0e3fd1c6",
     "program_id": 463209,
     "qualification_no": 11,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "77d4fdeb-c5ac-49dc-b7d3-4a4dc453933d",
+    "program_id": 157359,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
@@ -3006,6 +3090,13 @@
     "id": "7836c6b4-e82e-4306-9cce-bb7a238b2dd8",
     "program_id": 463259,
     "qualification_no": 13,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "78451f5d-6376-4585-bd05-233903731229",
+    "program_id": 226263,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -3041,6 +3132,13 @@
     "id": "78f08719-75c9-430f-bfd3-9fc3415662d9",
     "program_id": 463217,
     "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "793d8f42-28e9-4d21-87c5-45e8cdd43e61",
+    "program_id": 252880,
+    "qualification_no": 16,
     "content_tr": "",
     "content_en": ""
   },
@@ -3087,16 +3185,16 @@
     "content_en": ""
   },
   {
-    "id": "7bfe172b-2c56-4541-9161-e51192791482",
-    "program_id": 463217,
-    "qualification_no": 5,
+    "id": "7b8da882-1628-4381-b2e3-7c1b5d713a96",
+    "program_id": 157358,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "7c3c5f06-17dc-4fe6-8d2c-983ff0f86dc2",
-    "program_id": 252880,
-    "qualification_no": 12,
+    "id": "7bfe172b-2c56-4541-9161-e51192791482",
+    "program_id": 463217,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -3108,16 +3206,9 @@
     "content_en": ""
   },
   {
-    "id": "7c8f037e-cafb-41cf-87b0-5f44bfec8f8a",
-    "program_id": 157347,
-    "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "7cd4bfe9-b6a0-4e92-8fbb-e28c65542af5",
-    "program_id": 157359,
-    "qualification_no": 6,
+    "id": "7c4ac3e0-30cb-4796-b521-55e764347e57",
+    "program_id": 226263,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -3143,9 +3234,37 @@
     "content_en": ""
   },
   {
+    "id": "7da5dfc7-9ada-48ee-806c-9a0bfa8e9406",
+    "program_id": 378141,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "7e106280-2113-4260-8868-3d5b20a8d764",
+    "program_id": 157383,
+    "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "7e17f65b-0da8-4d8a-ade8-d082a7fee497",
+    "program_id": 378141,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "7ea94cbd-10e2-4803-911c-16731b120b51",
     "program_id": 463255,
     "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "7eb00898-eea6-4108-b0f3-4e2952d3cb0c",
+    "program_id": 420206,
+    "qualification_no": 14,
     "content_tr": "",
     "content_en": ""
   },
@@ -3192,20 +3311,6 @@
     "content_en": ""
   },
   {
-    "id": "7f293fc5-c497-4f6c-b796-516874d496ca",
-    "program_id": 226273,
-    "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "7f829f92-6ded-4781-a825-7a851026f7ea",
-    "program_id": 378141,
-    "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "7fa029ef-e3b4-4972-830e-bb446290f363",
     "program_id": 226252,
     "qualification_no": 11,
@@ -3220,23 +3325,9 @@
     "content_en": ""
   },
   {
-    "id": "8073590b-01a5-4b89-a831-9dcec70bcde4",
-    "program_id": 157347,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "80f902a0-87ec-498d-9e33-1c852764c95e",
     "program_id": 463214,
     "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "81206dec-3d4d-4a96-b343-9a3e9824921d",
-    "program_id": 157349,
-    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
@@ -3269,6 +3360,13 @@
     "content_en": ""
   },
   {
+    "id": "8229c0e1-2499-4f69-83ef-249777c5001b",
+    "program_id": 378141,
+    "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "825ffd00-816e-4120-bcb3-dd9efbd9c58d",
     "program_id": 463223,
     "qualification_no": 6,
@@ -3293,6 +3391,13 @@
     "id": "8306ebb8-b843-4e88-bbad-342a3c799abf",
     "program_id": 463211,
     "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "832ad020-d9b4-4c01-86d5-813b30820186",
+    "program_id": 226246,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -3346,13 +3451,6 @@
     "content_en": ""
   },
   {
-    "id": "85007e30-836e-45f8-8cc4-c2f503e4a0f6",
-    "program_id": 157351,
-    "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "85109709-9441-4e97-a871-af3cbd511324",
     "program_id": 463256,
     "qualification_no": 4,
@@ -3381,20 +3479,6 @@
     "content_en": ""
   },
   {
-    "id": "85e27335-be4f-4546-b643-5ae1dfa06a94",
-    "program_id": 432448,
-    "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "8642a459-9183-4b5c-8ff9-215a5da8f403",
-    "program_id": 157358,
-    "qualification_no": 14,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "86753e8f-0a1d-485b-8343-577eb436bfd2",
     "program_id": 463191,
     "qualification_no": 1,
@@ -3416,6 +3500,20 @@
     "content_en": ""
   },
   {
+    "id": "87797846-7763-4b68-b985-6841e3f9f409",
+    "program_id": 157361,
+    "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "8784ae44-dd68-4ab5-9197-b5173c29dc63",
+    "program_id": 252880,
+    "qualification_no": 11,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "879e751a-8ff2-42bd-8d83-26748948c895",
     "program_id": 463214,
     "qualification_no": 12,
@@ -3423,9 +3521,30 @@
     "content_en": ""
   },
   {
-    "id": "88a41f9e-573d-4499-ac24-1ff35c705831",
+    "id": "88381510-1650-427a-bf36-7e4fd6157142",
+    "program_id": 432448,
+    "qualification_no": 12,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "885956f1-a312-4676-bd7f-b1917aaf3b80",
     "program_id": 252880,
-    "qualification_no": 15,
+    "qualification_no": 14,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "888bd789-2c27-49c1-a20a-b624b5b943bf",
+    "program_id": 469410,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "892d2095-e6c7-4b3d-b694-147c60d188b3",
+    "program_id": 378142,
+    "qualification_no": 18,
     "content_tr": "",
     "content_en": ""
   },
@@ -3433,27 +3552,6 @@
     "id": "8973d3ed-7647-41da-9fdd-8a049cbe788a",
     "program_id": 463189,
     "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "899385d4-33cc-4323-ad4e-db466f552230",
-    "program_id": 432448,
-    "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "89c3e9ac-5f74-4ef1-80f2-0393f5d64a1d",
-    "program_id": 157349,
-    "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "8a087129-cf61-4cae-a8f8-47f28e9c6886",
-    "program_id": 378141,
-    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -3479,13 +3577,6 @@
     "content_en": ""
   },
   {
-    "id": "8a96c122-6016-4b97-879c-ebb886b42cc6",
-    "program_id": 157383,
-    "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "8aad4fdf-3580-401c-b31e-e305dfd7c2d8",
     "program_id": 463205,
     "qualification_no": 6,
@@ -3503,13 +3594,6 @@
     "id": "8b09a1ca-bb08-4980-908a-5b7a6501d60d",
     "program_id": 463205,
     "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "8b397b5b-e6ef-4d7f-bac8-ae49eef8620c",
-    "program_id": 420205,
-    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -3535,6 +3619,13 @@
     "content_en": ""
   },
   {
+    "id": "8bb51eb7-0e50-467b-b4f8-701e1ac5a5ad",
+    "program_id": 432448,
+    "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "8bbf1d61-e54b-42ee-8226-2f625dafc260",
     "program_id": 107048,
     "qualification_no": 2,
@@ -3549,9 +3640,9 @@
     "content_en": ""
   },
   {
-    "id": "8c0a75b6-ba23-4ce6-8068-8d982ef5e275",
-    "program_id": 157362,
-    "qualification_no": 9,
+    "id": "8c834d90-a84f-44a7-ab26-51fbf7f17e5b",
+    "program_id": 378142,
+    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -3570,9 +3661,9 @@
     "content_en": ""
   },
   {
-    "id": "8d5e0964-55cc-43f4-864c-bb57b0252e6a",
-    "program_id": 157347,
-    "qualification_no": 17,
+    "id": "8d9dbf50-6bd3-4cfe-9d21-c8b75f4efcdf",
+    "program_id": 252880,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -3580,20 +3671,6 @@
     "id": "8da7005f-702a-474d-b300-d46299d13495",
     "program_id": 463240,
     "qualification_no": 13,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "8df103f9-c8b7-49e0-84dd-91500c5b550f",
-    "program_id": 157361,
-    "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "8e0921e7-b408-4af1-abd5-588425f7c96a",
-    "program_id": 469410,
-    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -3619,13 +3696,6 @@
     "content_en": ""
   },
   {
-    "id": "8ee90ea0-22aa-41d5-9895-28ee7d015881",
-    "program_id": 157371,
-    "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "8ef15e00-826f-43fc-a713-4b0b56df1fb2",
     "program_id": 463217,
     "qualification_no": 13,
@@ -3643,13 +3713,6 @@
     "id": "8f980eec-add6-4c71-8e44-3b16954d75f7",
     "program_id": 463206,
     "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "8fbf10f5-4adc-4af9-bd5b-242fc65f5e2e",
-    "program_id": 252880,
-    "qualification_no": 16,
     "content_tr": "",
     "content_en": ""
   },
@@ -3682,13 +3745,6 @@
     "content_en": ""
   },
   {
-    "id": "90865502-281a-49a0-878e-1433204f570b",
-    "program_id": 420206,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "90966138-7e55-4291-90cd-12c89cc98a34",
     "program_id": 463231,
     "qualification_no": 1,
@@ -3703,30 +3759,9 @@
     "content_en": ""
   },
   {
-    "id": "915fcbc2-4fd8-4472-b8e2-8a13eef9bc68",
-    "program_id": 432448,
-    "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "917faac7-7a75-485f-a3eb-927cd981aac5",
-    "program_id": 157383,
-    "qualification_no": 14,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "91d7faae-5e4c-4073-a913-0b37675b443f",
     "program_id": 463209,
     "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "922fcb73-3b72-4bff-af0c-e4a07f0efb70",
-    "program_id": 378142,
-    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -3759,13 +3794,6 @@
     "content_en": ""
   },
   {
-    "id": "92bbd3eb-bf6a-4360-8c0e-468441abd47d",
-    "program_id": 157383,
-    "qualification_no": 13,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "92be34ad-fa5e-4b91-9967-1ac013c067d8",
     "program_id": 226255,
     "qualification_no": 12,
@@ -3787,6 +3815,13 @@
     "content_en": ""
   },
   {
+    "id": "9320a7ba-c8c1-437d-a91d-9db1bd3d0ae4",
+    "program_id": 469410,
+    "qualification_no": 11,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "93987af1-b4e6-4d87-8361-e6783c70ab51",
     "program_id": 463258,
     "qualification_no": 11,
@@ -3801,23 +3836,16 @@
     "content_en": ""
   },
   {
-    "id": "943d1397-ed9e-41ed-a3df-94c9e4535444",
-    "program_id": 157383,
-    "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "943e0147-7d52-401a-a0ab-d983bca8f436",
-    "program_id": 420206,
-    "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "943fa64a-3bf4-4547-893e-75a1a9644c98",
     "program_id": 463201,
     "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "947861c7-34e9-41af-a543-09de7488a5b5",
+    "program_id": 252880,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -3832,6 +3860,13 @@
     "id": "95001467-4549-4f63-b3aa-1f84337da673",
     "program_id": 463216,
     "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "9512a551-cd78-488e-a684-606072f3c05f",
+    "program_id": 157371,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -3857,6 +3892,13 @@
     "content_en": ""
   },
   {
+    "id": "95f40bb5-b060-49b1-9ea9-4a253746ca9d",
+    "program_id": 157358,
+    "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "960043fc-b849-416f-81f0-dd2b8db389b4",
     "program_id": 463256,
     "qualification_no": 18,
@@ -3878,6 +3920,13 @@
     "content_en": ""
   },
   {
+    "id": "977c971f-abd8-4f43-ab4a-fb311e9a9af3",
+    "program_id": 226246,
+    "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "97a119a6-6b35-4129-8351-b9dd860b0ba8",
     "program_id": 463257,
     "qualification_no": 17,
@@ -3892,16 +3941,9 @@
     "content_en": ""
   },
   {
-    "id": "98bbf463-3de0-4ca5-a336-54a0b3469280",
-    "program_id": 420206,
-    "qualification_no": 14,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "98d4f00e-c025-4847-8b98-c64c03d4c5ce",
-    "program_id": 469410,
-    "qualification_no": 4,
+    "id": "98fa5272-8055-4204-ad1a-8a21c0e05acd",
+    "program_id": 226246,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -3941,23 +3983,9 @@
     "content_en": ""
   },
   {
-    "id": "9a665cb9-cf93-4086-b8b3-2fecca3436b9",
-    "program_id": 226273,
-    "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "9b497fe8-c596-4e37-9d7b-c7cd1d827631",
     "program_id": 463256,
     "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "9b571028-e56c-430c-b7ac-a6b6866df195",
-    "program_id": 157362,
-    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -3993,20 +4021,6 @@
     "id": "9c13bd40-01d7-4dfd-ae40-b85cbe01f653",
     "program_id": 463188,
     "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "9c13bf21-3033-453b-8f5a-6bbba0aa612b",
-    "program_id": 378142,
-    "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "9c34cb04-13bc-40ab-9336-380abbf4ccc2",
-    "program_id": 157362,
-    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -4053,13 +4067,6 @@
     "content_en": ""
   },
   {
-    "id": "9dd37bfe-fa7c-4256-baaf-1ac11207b22b",
-    "program_id": 157361,
-    "qualification_no": 13,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "9e2377af-f18b-4590-bec4-80a20f9f583d",
     "program_id": 463234,
     "qualification_no": 6,
@@ -4088,16 +4095,16 @@
     "content_en": ""
   },
   {
-    "id": "9f006ddb-2896-4efa-98d3-4afa295f7706",
-    "program_id": 157358,
-    "qualification_no": 13,
+    "id": "9f0a0487-d362-4cc7-bffd-35ef1ffd5be2",
+    "program_id": 130437,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "9f0a0487-d362-4cc7-bffd-35ef1ffd5be2",
-    "program_id": 130437,
-    "qualification_no": 1,
+    "id": "9f3258b5-3768-4a01-937a-100381879674",
+    "program_id": 157362,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -4109,9 +4116,9 @@
     "content_en": ""
   },
   {
-    "id": "9fb4eea7-8e0f-4e28-b376-868ed25de9f2",
+    "id": "9fa6b179-2b73-401d-b3d2-a0c7a25c0e9a",
     "program_id": 157383,
-    "qualification_no": 12,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -4130,9 +4137,23 @@
     "content_en": ""
   },
   {
-    "id": "a0f77cbb-5f13-4a6e-81b6-e8c4bf666039",
-    "program_id": 469410,
-    "qualification_no": 9,
+    "id": "a0a0257f-c86d-43e8-971a-3c7e1d9bf878",
+    "program_id": 157347,
+    "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "a0c74a79-e509-41af-a694-3445c8de24a8",
+    "program_id": 420206,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "a0e3d1cb-657d-4ad0-abb9-d11d484be6ea",
+    "program_id": 157371,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
@@ -4144,9 +4165,9 @@
     "content_en": ""
   },
   {
-    "id": "a12a9474-9801-432b-be62-0ce525ad85ed",
-    "program_id": 378141,
-    "qualification_no": 9,
+    "id": "a17a8220-4a11-44ef-ad49-e8530428db68",
+    "program_id": 252880,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -4172,13 +4193,6 @@
     "content_en": ""
   },
   {
-    "id": "a245e3f2-5e2d-4c8e-bc3c-3592e6cf0068",
-    "program_id": 157362,
-    "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "a27e85db-a1a4-45d0-8535-ebe33d6e7240",
     "program_id": 463234,
     "qualification_no": 8,
@@ -4193,16 +4207,16 @@
     "content_en": ""
   },
   {
-    "id": "a30fddba-5fb8-42a3-b977-c0368bf3c0bd",
-    "program_id": 157383,
-    "qualification_no": 11,
+    "id": "a319b6f2-5df7-4aac-8314-61c1519f81fd",
+    "program_id": 463256,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "a319b6f2-5df7-4aac-8314-61c1519f81fd",
-    "program_id": 463256,
-    "qualification_no": 6,
+    "id": "a31d5cf1-1f1b-4a18-b036-51f4f9b3ffc5",
+    "program_id": 226273,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -4221,23 +4235,9 @@
     "content_en": ""
   },
   {
-    "id": "a43f9f56-8e18-4f9b-9f87-6d6fc5106874",
-    "program_id": 378142,
-    "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "a45aedb8-fd68-4eac-93cf-0b8c6fa73765",
-    "program_id": 226273,
-    "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "a49f615f-456b-4d27-aac2-0fc8aa9b3ea6",
-    "program_id": 157361,
-    "qualification_no": 12,
+    "id": "a45e8888-7fa3-40b2-ad78-5bd5741cbceb",
+    "program_id": 252880,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -4245,13 +4245,6 @@
     "id": "a4f15f2a-e04e-4c59-bbc5-856a0e5b08e0",
     "program_id": 463232,
     "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "a53c4f16-326d-4427-bcc5-f440a6a92edc",
-    "program_id": 157347,
-    "qualification_no": 14,
     "content_tr": "",
     "content_en": ""
   },
@@ -4265,13 +4258,6 @@
   {
     "id": "a63a73a7-dcba-4aee-b1da-a0cd04552249",
     "program_id": 248962,
-    "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "a655ade7-d1b0-407d-8f61-e95f066f9496",
-    "program_id": 420206,
     "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
@@ -4291,8 +4277,8 @@
     "content_en": ""
   },
   {
-    "id": "a72e2f71-65f3-4fa0-940a-9a91ef8410a2",
-    "program_id": 157358,
+    "id": "a7375218-7c75-4bf0-87cb-7064fea07558",
+    "program_id": 157371,
     "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
@@ -4308,6 +4294,13 @@
     "id": "a77dc550-b8b9-4790-b902-55e81bf7d723",
     "program_id": 463237,
     "qualification_no": 13,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "a7ac4dc6-8b80-4f9f-bdb4-8a1e82a1ca08",
+    "program_id": 157349,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
@@ -4329,13 +4322,6 @@
     "id": "a8a9110d-3e99-4994-8cdf-2b13c607a82f",
     "program_id": 463205,
     "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "a8b20bb5-a789-42ff-b516-c9f75ad262ed",
-    "program_id": 378142,
-    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -4389,20 +4375,6 @@
     "content_en": ""
   },
   {
-    "id": "aa8ff51d-f6b0-40a6-9810-394b86acd704",
-    "program_id": 378141,
-    "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "aa9bbf6d-a091-4b5f-9f68-8ad0cb5cda2a",
-    "program_id": 226263,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "aabb9971-a43b-48c7-8252-4adabd5fada4",
     "program_id": 463252,
     "qualification_no": 6,
@@ -4438,23 +4410,9 @@
     "content_en": ""
   },
   {
-    "id": "ab8a19d9-59dc-4dd6-8c45-eac0272a5de7",
-    "program_id": 226246,
-    "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "abb8be13-5c7f-4332-94fc-39aedb594b4e",
     "program_id": 463245,
     "qualification_no": 15,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "abd5036d-5fd8-41a3-a39c-0264a3edbf6a",
-    "program_id": 420206,
-    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -4487,9 +4445,30 @@
     "content_en": ""
   },
   {
-    "id": "adafa441-7360-4641-ae6d-29fc91fb9bef",
-    "program_id": 378141,
+    "id": "acdf0ad8-d4c6-46ca-8db1-2fc197046be5",
+    "program_id": 378142,
+    "qualification_no": 14,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "ad2d8df9-1d40-44ed-9f3e-fd8c1a95e51a",
+    "program_id": 420206,
     "qualification_no": 10,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "ad3852e8-84c3-4890-82ef-04a7cce53dea",
+    "program_id": 378142,
+    "qualification_no": 6,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "ad493b34-d81d-40a1-96b4-bf9e535353c1",
+    "program_id": 157383,
+    "qualification_no": 17,
     "content_tr": "",
     "content_en": ""
   },
@@ -4501,9 +4480,9 @@
     "content_en": ""
   },
   {
-    "id": "aeb57b43-8a09-4b23-90e5-e24fa2243b89",
-    "program_id": 157362,
-    "qualification_no": 5,
+    "id": "ae91e279-2223-4c48-9fc5-38677ad15979",
+    "program_id": 157358,
+    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -4511,6 +4490,13 @@
     "id": "aef439fa-da62-4df3-ace1-887f67133674",
     "program_id": 463242,
     "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "af2bd001-c70a-418a-90dd-bca7add11ed2",
+    "program_id": 157351,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -4525,20 +4511,6 @@
     "id": "af3cbabc-fd64-4121-b111-4c7b71ed2769",
     "program_id": 463232,
     "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "af471298-85bc-4694-8db7-bd8a468b00f7",
-    "program_id": 157347,
-    "qualification_no": 19,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "af4afd86-8643-466e-8958-6c5d782db276",
-    "program_id": 252880,
-    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -4571,23 +4543,9 @@
     "content_en": ""
   },
   {
-    "id": "b04d1009-68cf-414f-af1c-dc830a6ea7fb",
-    "program_id": 157347,
-    "qualification_no": 15,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "b08b24d1-7780-47d2-90fa-912714aa57da",
     "program_id": 463258,
     "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "b0c148ef-bb40-44c1-95e3-6de3d6047085",
-    "program_id": 226273,
-    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -4599,9 +4557,9 @@
     "content_en": ""
   },
   {
-    "id": "b1857927-3ff8-426f-b8aa-f234cb2b6b3e",
-    "program_id": 226263,
-    "qualification_no": 4,
+    "id": "b16d3854-d479-481b-a3fe-23cf5d6653d4",
+    "program_id": 432448,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -4613,9 +4571,9 @@
     "content_en": ""
   },
   {
-    "id": "b1c49d3a-e364-48bc-852e-53124fdb7e2e",
-    "program_id": 157359,
-    "qualification_no": 2,
+    "id": "b200ba63-e079-47c7-b5bd-d62202c3edd6",
+    "program_id": 432448,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -4627,16 +4585,9 @@
     "content_en": ""
   },
   {
-    "id": "b2676a63-0cef-4f46-891b-83e2d5ee1e9d",
-    "program_id": 157358,
-    "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "b28a9149-d59d-42b1-9faa-1eb070f8d586",
-    "program_id": 226246,
-    "qualification_no": 14,
+    "id": "b26f1341-b0d7-4b3c-b0a0-adc91eab4323",
+    "program_id": 157359,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -4662,13 +4613,6 @@
     "content_en": ""
   },
   {
-    "id": "b2bb0427-551c-4164-bb60-ccb9e17ab9ac",
-    "program_id": 157347,
-    "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "b2c977c6-9be7-4331-acb1-c382dda405af",
     "program_id": 463192,
     "qualification_no": 2,
@@ -4676,16 +4620,16 @@
     "content_en": ""
   },
   {
-    "id": "b2f2c9c1-70c8-4cef-a653-75d0aa02839e",
-    "program_id": 463204,
-    "qualification_no": 1,
+    "id": "b2f201e6-08d8-4d03-a0fe-d68c1c42dbea",
+    "program_id": 252880,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "b3278c77-b990-4d4f-8ba4-836947a7b338",
-    "program_id": 157358,
-    "qualification_no": 3,
+    "id": "b2f2c9c1-70c8-4cef-a653-75d0aa02839e",
+    "program_id": 463204,
+    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -4760,13 +4704,6 @@
     "content_en": ""
   },
   {
-    "id": "b594207f-edb2-43c8-907d-2943aa612480",
-    "program_id": 157361,
-    "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "b6089cff-2af3-4ced-839e-be64b26981b0",
     "program_id": 463188,
     "qualification_no": 10,
@@ -4777,13 +4714,6 @@
     "id": "b6222baf-ca3a-4cdc-bd7f-36b800b22d0a",
     "program_id": 463185,
     "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "b68aca5b-4c8b-4129-b335-0dd4a973bdc1",
-    "program_id": 157359,
-    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -4809,9 +4739,16 @@
     "content_en": ""
   },
   {
-    "id": "b6d146ab-710c-4c04-a73c-3fddf856a4a8",
-    "program_id": 226263,
-    "qualification_no": 9,
+    "id": "b6da4df4-9d71-4422-9109-f0a236828b11",
+    "program_id": 226246,
+    "qualification_no": 12,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "b6def576-fc45-4777-a44f-5af93772fa81",
+    "program_id": 378142,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -4837,9 +4774,9 @@
     "content_en": ""
   },
   {
-    "id": "b7d05cca-de60-47dd-b096-c6f6000a580d",
-    "program_id": 157371,
-    "qualification_no": 4,
+    "id": "b80ebf13-69ba-44d7-8d17-65369a49436e",
+    "program_id": 157358,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -4847,13 +4784,6 @@
     "id": "b82aba79-503d-4082-ab76-eb97d8528049",
     "program_id": 463251,
     "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "b844daa0-fb70-46b0-88b3-17b2ce49832b",
-    "program_id": 252880,
-    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -4872,13 +4802,6 @@
     "content_en": ""
   },
   {
-    "id": "b94abd86-e4ef-417e-b86b-69df29af6739",
-    "program_id": 252880,
-    "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "b95155ac-c6ed-4cf5-bc08-656567e0d467",
     "program_id": 463242,
     "qualification_no": 2,
@@ -4889,13 +4812,6 @@
     "id": "b968ea33-0d88-443a-ac38-31be57248c61",
     "program_id": 463185,
     "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "b968f06f-2c72-434a-8d56-a26818984a96",
-    "program_id": 226263,
-    "qualification_no": 16,
     "content_tr": "",
     "content_en": ""
   },
@@ -4921,16 +4837,16 @@
     "content_en": ""
   },
   {
-    "id": "ba8b833f-1e74-4c52-86d2-d0f53b7fa3a1",
-    "program_id": 463209,
-    "qualification_no": 2,
+    "id": "ba560a45-b623-4f10-b4fa-3a18383e6a58",
+    "program_id": 226263,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "ba8c4319-f68d-4806-be7b-0e34c578befe",
-    "program_id": 157358,
-    "qualification_no": 9,
+    "id": "ba8b833f-1e74-4c52-86d2-d0f53b7fa3a1",
+    "program_id": 463209,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -4945,6 +4861,13 @@
     "id": "bac645c6-7419-4317-b369-6e39fd889847",
     "program_id": 463232,
     "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "bb032d53-6c2d-4bf9-a8af-6d7b39ce08eb",
+    "program_id": 157347,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -4970,6 +4893,20 @@
     "content_en": ""
   },
   {
+    "id": "bbe2595f-2fb6-46d7-b41e-cd5918cf7eae",
+    "program_id": 226263,
+    "qualification_no": 15,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "bc322d4d-265d-4cfb-90cc-f7ae73722f9e",
+    "program_id": 157358,
+    "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "bc61723a-0d63-4a67-9643-fd1ff08ed054",
     "program_id": 463232,
     "qualification_no": 14,
@@ -4980,6 +4917,13 @@
     "id": "bc82304e-5c1a-4606-b2d3-2f064bd7ab60",
     "program_id": 463241,
     "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "bc97308d-1799-4115-9058-14a61dab6634",
+    "program_id": 157361,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -5026,16 +4970,16 @@
     "content_en": ""
   },
   {
-    "id": "be02efdf-fa7e-4de4-9894-e22e1b042ec2",
-    "program_id": 252880,
-    "qualification_no": 3,
+    "id": "be5b30f7-3a6c-4b24-8a9e-09f7cf0e81ef",
+    "program_id": 157347,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "be754099-da5e-4c27-8130-59fd233b0daa",
-    "program_id": 226263,
-    "qualification_no": 10,
+    "id": "be6313e0-4902-4ff3-a1a0-54feadeff02c",
+    "program_id": 469410,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -5050,13 +4994,6 @@
     "id": "beb3ab39-c58a-4b53-a7ac-ddb34e770765",
     "program_id": 463257,
     "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "bec217ec-2b4b-4b7e-8680-40d177d7b2df",
-    "program_id": 157351,
-    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
@@ -5082,16 +5019,16 @@
     "content_en": ""
   },
   {
-    "id": "c0313987-6232-4518-aef6-06acf30516b1",
-    "program_id": 463216,
+    "id": "bf85dcde-69b9-4bf7-902f-e50e1e49d9b1",
+    "program_id": 157359,
     "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "c06336fd-cd76-4d6a-adc1-954e257571c0",
-    "program_id": 378142,
-    "qualification_no": 12,
+    "id": "c0313987-6232-4518-aef6-06acf30516b1",
+    "program_id": 463216,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -5103,23 +5040,9 @@
     "content_en": ""
   },
   {
-    "id": "c099c5eb-ea25-4f76-b92c-321199cc5a3b",
-    "program_id": 378142,
-    "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "c0e10b9d-1c31-4a6a-9318-ff2bf7d801ab",
     "program_id": 463206,
     "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "c140a585-2764-4c7e-88c3-d43dadd830f4",
-    "program_id": 157347,
-    "qualification_no": 16,
     "content_tr": "",
     "content_en": ""
   },
@@ -5152,9 +5075,23 @@
     "content_en": ""
   },
   {
-    "id": "c32b4005-2e45-48e4-97b4-6b991597e498",
-    "program_id": 378141,
+    "id": "c28a1bc8-8796-424c-9602-55d97f98f8e3",
+    "program_id": 226263,
     "qualification_no": 6,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "c3afd3a4-ef8b-4cdd-861a-2fb31e990ea1",
+    "program_id": 157371,
+    "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "c41c835b-2c47-420e-815e-222535a950e6",
+    "program_id": 226246,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -5166,9 +5103,16 @@
     "content_en": ""
   },
   {
-    "id": "c4467134-fc00-4325-9b94-b8461fff50bb",
-    "program_id": 469410,
-    "qualification_no": 3,
+    "id": "c4490f55-ddc1-4299-a98e-f513af89516e",
+    "program_id": 226263,
+    "qualification_no": 12,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "c4f02be4-82fc-4a61-bb8c-17060c4664fd",
+    "program_id": 157349,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -5201,6 +5145,13 @@
     "content_en": ""
   },
   {
+    "id": "c668c437-a57a-4bc3-8761-cccb895b1573",
+    "program_id": 420206,
+    "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "c66af7d9-168f-4dab-ab8c-7f8364a1baa9",
     "program_id": 463223,
     "qualification_no": 2,
@@ -5218,13 +5169,6 @@
     "id": "c6abf550-55e2-41fe-8b57-bac8e7b3416f",
     "program_id": 463225,
     "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "c6ac3419-96b7-4c17-be0f-55593360a274",
-    "program_id": 469410,
-    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -5257,13 +5201,6 @@
     "content_en": ""
   },
   {
-    "id": "c758051d-ad37-45f4-b5e6-dab800a64855",
-    "program_id": 432448,
-    "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "c7893f03-223b-41d4-a644-8a34bf42f8d3",
     "program_id": 331357,
     "qualification_no": 5,
@@ -5292,20 +5229,6 @@
     "content_en": ""
   },
   {
-    "id": "c82c3033-5626-4817-a6be-ec8985967bc5",
-    "program_id": 432448,
-    "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "c88008b0-ce73-47ad-add5-b41dde0c9ee1",
-    "program_id": 157371,
-    "qualification_no": 2,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "c8c6fb83-4ce5-4de6-91ab-0c9ea6241682",
     "program_id": 463213,
     "qualification_no": 11,
@@ -5313,16 +5236,9 @@
     "content_en": ""
   },
   {
-    "id": "c8d196b1-acb5-4c9b-b077-f9b76a998c2e",
-    "program_id": 157351,
-    "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "c8db8629-cd92-4495-9721-1864bce03410",
-    "program_id": 157359,
-    "qualification_no": 4,
+    "id": "c8d16232-be13-415c-b85a-247f32d2e9dc",
+    "program_id": 157347,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
@@ -5334,9 +5250,9 @@
     "content_en": ""
   },
   {
-    "id": "c9b98f90-38a8-4841-b1f2-181f6e441b4e",
-    "program_id": 378142,
-    "qualification_no": 20,
+    "id": "c91485b6-7def-484f-bb06-4d142e5dde7f",
+    "program_id": 157383,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -5383,9 +5299,9 @@
     "content_en": ""
   },
   {
-    "id": "cb9d08a4-31c0-42cd-ab8a-0170bec09244",
-    "program_id": 252880,
-    "qualification_no": 9,
+    "id": "cb9802a3-f848-4537-ad80-625b5060515e",
+    "program_id": 378141,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
@@ -5397,22 +5313,22 @@
     "content_en": ""
   },
   {
-    "id": "cc2ba6d6-6023-4e78-a883-61adfb89f0c1",
-    "program_id": 157349,
-    "qualification_no": 4,
+    "id": "cbc7c043-25cb-4fa6-9570-168b7888c634",
+    "program_id": 378141,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "cc22170c-aa34-46c2-8d31-8a821d8fb215",
+    "program_id": 157351,
+    "qualification_no": 14,
     "content_tr": "",
     "content_en": ""
   },
   {
     "id": "cc306a2d-91eb-4603-8ddb-3f4a01c21a48",
     "program_id": 226258,
-    "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "cc4b7911-094a-4870-8c88-8eeeca9baf25",
-    "program_id": 378142,
     "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
@@ -5453,16 +5369,9 @@
     "content_en": ""
   },
   {
-    "id": "cd2eef87-2af3-4e62-87dd-166388daec49",
-    "program_id": 378142,
-    "qualification_no": 16,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "cd48d357-3be4-4d89-857a-9cc29a9f85f9",
-    "program_id": 469410,
-    "qualification_no": 6,
+    "id": "cd5150f2-726c-4f9e-a7ac-1624d7c72357",
+    "program_id": 157383,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -5470,13 +5379,6 @@
     "id": "cd5abd52-f093-45d2-910b-3e27cb7de503",
     "program_id": 463257,
     "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "cd63c82c-cab1-4ed8-aa5a-06eaeed4fe85",
-    "program_id": 378142,
-    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
@@ -5530,9 +5432,9 @@
     "content_en": ""
   },
   {
-    "id": "ce0e3965-eec8-4171-9dd7-664f4bac730a",
-    "program_id": 226246,
-    "qualification_no": 8,
+    "id": "ce62f70a-5a98-4880-b0e5-ea9ee71c419d",
+    "program_id": 378142,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
@@ -5544,6 +5446,13 @@
     "content_en": ""
   },
   {
+    "id": "ced5b8b9-fec1-4fb2-b7b5-ffa4077e3a0a",
+    "program_id": 157361,
+    "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "cefabd31-87c7-49a4-af56-78c1bd7ddfb2",
     "program_id": 463188,
     "qualification_no": 11,
@@ -5551,9 +5460,9 @@
     "content_en": ""
   },
   {
-    "id": "cf67452f-84b2-4b20-9e63-e9e00646bb46",
-    "program_id": 157362,
-    "qualification_no": 4,
+    "id": "cf24d95f-f2f1-40c7-9747-b855ae166530",
+    "program_id": 378142,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -5586,6 +5495,13 @@
     "content_en": ""
   },
   {
+    "id": "d078aa60-8b3b-441c-bf97-7ef36468be06",
+    "program_id": 420206,
+    "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "d09658f0-aede-4225-8020-02688071ca7c",
     "program_id": 463255,
     "qualification_no": 5,
@@ -5593,9 +5509,51 @@
     "content_en": ""
   },
   {
+    "id": "d0a0a3b8-9d96-4274-8f17-13fc3241d54b",
+    "program_id": 226263,
+    "qualification_no": 13,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "d0dbf141-78fc-4922-aec8-adb01f65d76b",
     "program_id": 463256,
     "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "d0eb488e-3d6c-4309-923f-6cf0554809b1",
+    "program_id": 226273,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "d1991a44-b9b2-457c-a7cf-d2735e6b9590",
+    "program_id": 157362,
+    "qualification_no": 13,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "d1ccfdd6-087b-41b8-8790-123af5147af1",
+    "program_id": 226273,
+    "qualification_no": 10,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "d205f98f-5879-443f-8eef-215afea815eb",
+    "program_id": 157361,
+    "qualification_no": 10,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "d2429cc7-5969-47be-b86c-e6eb0cf16fdf",
+    "program_id": 226273,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -5621,20 +5579,6 @@
     "content_en": ""
   },
   {
-    "id": "d306faf3-fb92-45dd-991f-c9184b806165",
-    "program_id": 157362,
-    "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "d31840f3-7b11-4cf8-bd3e-b8a4cae24d76",
-    "program_id": 157383,
-    "qualification_no": 15,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "d353c52b-e4be-4023-920f-647e4bce8d93",
     "program_id": 226258,
     "qualification_no": 15,
@@ -5656,6 +5600,13 @@
     "content_en": ""
   },
   {
+    "id": "d3dd908c-478b-4c8e-82bc-49d8dd2e6c5f",
+    "program_id": 157371,
+    "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "d3ed3b95-7b67-4881-88bd-e11823926f5f",
     "program_id": 107048,
     "qualification_no": 7,
@@ -5670,9 +5621,9 @@
     "content_en": ""
   },
   {
-    "id": "d42683f1-d8bf-465f-8f92-9bd181662809",
-    "program_id": 226246,
-    "qualification_no": 9,
+    "id": "d40d6cfd-bcbd-4153-aebc-639fd9d6ce68",
+    "program_id": 157361,
+    "qualification_no": 8,
     "content_tr": "",
     "content_en": ""
   },
@@ -5684,13 +5635,6 @@
     "content_en": ""
   },
   {
-    "id": "d43cef04-0c26-45e6-a477-b5a5f83047ce",
-    "program_id": 420206,
-    "qualification_no": 12,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "d441b008-df1a-4a88-8166-8f2066bb1eca",
     "program_id": 463257,
     "qualification_no": 15,
@@ -5698,16 +5642,16 @@
     "content_en": ""
   },
   {
-    "id": "d4b88682-3bfc-4e2a-ac88-25bbb5429c56",
-    "program_id": 463191,
-    "qualification_no": 6,
+    "id": "d4531fdd-2ea4-40e3-a1c7-549a6c43ae0d",
+    "program_id": 226263,
+    "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "d59175db-7f30-48ec-8628-648001bb8bb7",
-    "program_id": 157351,
-    "qualification_no": 5,
+    "id": "d4b88682-3bfc-4e2a-ac88-25bbb5429c56",
+    "program_id": 463191,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -5726,6 +5670,20 @@
     "content_en": ""
   },
   {
+    "id": "d5efe805-d1e3-4ab3-9f67-7f018b7abc13",
+    "program_id": 420205,
+    "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "d6166b5d-e84f-4c53-910e-44f06bbf95ce",
+    "program_id": 157362,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "d622348b-5b11-4648-9353-96bb4a8c8bd0",
     "program_id": 463191,
     "qualification_no": 4,
@@ -5733,9 +5691,23 @@
     "content_en": ""
   },
   {
+    "id": "d62550eb-c8fa-4ced-aeed-90e1e305af74",
+    "program_id": 252880,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "d63f9bfa-f2f5-4001-97cc-28b95238bc1b",
     "program_id": 463237,
     "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "d643ed85-b5f5-4545-8cd7-4b06b5f6b52c",
+    "program_id": 378142,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -5775,23 +5747,9 @@
     "content_en": ""
   },
   {
-    "id": "d7a04203-fc87-4790-b750-c38d42d79cc7",
-    "program_id": 432448,
-    "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "d8199020-e331-43a9-bb00-07eaec3a4c3a",
     "program_id": 463221,
     "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "d8a12a11-cb7f-44f1-a466-3f827e82f133",
-    "program_id": 157351,
-    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -5810,9 +5768,9 @@
     "content_en": ""
   },
   {
-    "id": "d8ef39cd-1e1d-40b3-9edc-24a2f8269700",
-    "program_id": 469410,
-    "qualification_no": 1,
+    "id": "d92a6913-6809-465d-b0ac-4ecb4a3a9460",
+    "program_id": 157347,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -5820,6 +5778,13 @@
     "id": "d9916a04-2836-4a0f-8e9d-da5378987bd3",
     "program_id": 463242,
     "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "d99f87b6-11e0-4b00-9dfb-ea61695c2f2e",
+    "program_id": 226246,
+    "qualification_no": 14,
     "content_tr": "",
     "content_en": ""
   },
@@ -5838,6 +5803,13 @@
     "content_en": ""
   },
   {
+    "id": "da1e55ef-04e6-42af-a0e3-5eb155e62f0a",
+    "program_id": 157351,
+    "qualification_no": 8,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "da26ac77-aef7-40be-a913-bae232c75f21",
     "program_id": 226258,
     "qualification_no": 3,
@@ -5845,29 +5817,8 @@
     "content_en": ""
   },
   {
-    "id": "da509689-36c6-4276-91a0-8ca07210401d",
-    "program_id": 469410,
-    "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "dab4b439-568a-4503-8a5e-399944325205",
     "program_id": 463258,
-    "qualification_no": 10,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "dac3efaf-f29c-4448-b61b-6b33499203b2",
-    "program_id": 157351,
-    "qualification_no": 3,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "db0ccabe-7cc7-4506-a0dd-43390765b72a",
-    "program_id": 157358,
     "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
@@ -5894,9 +5845,9 @@
     "content_en": ""
   },
   {
-    "id": "dbc5575c-893a-41fe-a682-611d903ffeca",
-    "program_id": 226273,
-    "qualification_no": 12,
+    "id": "dc020407-092e-4215-a9fc-d18812da0b71",
+    "program_id": 469410,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -5922,6 +5873,13 @@
     "content_en": ""
   },
   {
+    "id": "dcd86acf-4962-482e-b4b7-64ad7b7eb4c1",
+    "program_id": 226246,
+    "qualification_no": 16,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "dd00202c-78b8-4cd0-9c7a-d04fc50a3dc2",
     "program_id": 463241,
     "qualification_no": 4,
@@ -5939,13 +5897,6 @@
     "id": "dd306140-57d4-4b76-8570-dd2bf09967d2",
     "program_id": 463216,
     "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "de5f90e4-9e3a-48ff-b4fb-2168be965353",
-    "program_id": 157361,
-    "qualification_no": 1,
     "content_tr": "",
     "content_en": ""
   },
@@ -5985,9 +5936,9 @@
     "content_en": ""
   },
   {
-    "id": "dfa703ff-d45c-420e-ba10-3f4c0544c481",
-    "program_id": 157383,
-    "qualification_no": 4,
+    "id": "df92ff77-6c41-44c6-a347-b873d7c8719b",
+    "program_id": 157361,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -6027,16 +5978,16 @@
     "content_en": ""
   },
   {
-    "id": "e0b2a9a5-c657-4b65-ac5f-8c91ecfcd5fe",
-    "program_id": 157349,
-    "qualification_no": 5,
+    "id": "e0bd197a-cd13-4614-9cc6-db8618833012",
+    "program_id": 463235,
+    "qualification_no": 12,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "e0bd197a-cd13-4614-9cc6-db8618833012",
-    "program_id": 463235,
-    "qualification_no": 12,
+    "id": "e0c57c6f-0cee-4562-9f6f-d39466b715a4",
+    "program_id": 469410,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -6048,9 +5999,9 @@
     "content_en": ""
   },
   {
-    "id": "e1396356-02f3-4d16-aaa4-2856e6d13803",
-    "program_id": 226263,
-    "qualification_no": 7,
+    "id": "e12218a6-c903-48b5-b1c7-789fc42dba91",
+    "program_id": 157383,
+    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -6076,20 +6027,6 @@
     "content_en": ""
   },
   {
-    "id": "e1cd472c-9008-4510-8146-3271aaaa5a46",
-    "program_id": 420206,
-    "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "e1cdf035-ef0a-4ab8-8788-b7e7bac8e00b",
-    "program_id": 420206,
-    "qualification_no": 13,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "e2084171-1700-49ce-9342-3aadb7065b80",
     "program_id": 463202,
     "qualification_no": 2,
@@ -6100,20 +6037,6 @@
     "id": "e2585b28-77c1-4c99-9f73-6fa00d40b938",
     "program_id": 463257,
     "qualification_no": 8,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "e25eb859-f643-41cf-853c-a7dd24f92a5a",
-    "program_id": 157347,
-    "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "e28b27af-2de4-4287-989b-baabe8b08a7f",
-    "program_id": 432448,
-    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -6132,16 +6055,16 @@
     "content_en": ""
   },
   {
-    "id": "e3311023-522f-47c0-b0c0-d493e7d7aab2",
-    "program_id": 157361,
-    "qualification_no": 6,
+    "id": "e3bca12a-57c2-42cc-b029-0fdcd771ba55",
+    "program_id": 157347,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "e4957d92-2315-407d-a671-7fcdba7468fb",
-    "program_id": 378142,
-    "qualification_no": 19,
+    "id": "e410f45b-561d-4ae2-9769-dbf9d4ab7659",
+    "program_id": 157359,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -6167,9 +6090,23 @@
     "content_en": ""
   },
   {
-    "id": "e51f088e-facd-48b6-bb86-ec370b0ac321",
-    "program_id": 157351,
-    "qualification_no": 9,
+    "id": "e51658ea-b3dd-4f29-a4b0-0bc5ae6101ac",
+    "program_id": 157362,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "e5e3dc38-f5b6-4ade-b1fa-c398f02761f7",
+    "program_id": 378141,
+    "qualification_no": 7,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "e5ed8dbd-eae8-4440-a35e-e1d64b96065e",
+    "program_id": 157383,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -6177,6 +6114,13 @@
     "id": "e64a9c38-8984-437b-b38e-91257117a76c",
     "program_id": 404203,
     "qualification_no": 10,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "e6b1ce0b-6195-439d-86f1-1ecc9363cb61",
+    "program_id": 157361,
+    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -6195,8 +6139,8 @@
     "content_en": ""
   },
   {
-    "id": "e834e750-ec73-412e-a83e-22f3f81c4516",
-    "program_id": 252880,
+    "id": "e85f5274-6544-449c-84d3-339ac3350837",
+    "program_id": 226246,
     "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
@@ -6212,13 +6156,6 @@
     "id": "e87c8452-8d2e-43ae-afdf-ca49d5625c4f",
     "program_id": 404203,
     "qualification_no": 4,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "e8dbc0ea-dc4c-40c2-b82a-612229de4820",
-    "program_id": 157347,
-    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -6247,6 +6184,13 @@
     "id": "e95f3264-5cc9-4ae4-ab81-3e134525b9e3",
     "program_id": 463259,
     "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "e9e6f8ad-5da8-4929-a71a-7eb74055cf37",
+    "program_id": 226246,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -6286,6 +6230,13 @@
     "content_en": ""
   },
   {
+    "id": "eb3f6c33-4ea0-4d39-b66b-6765d777e1fb",
+    "program_id": 157347,
+    "qualification_no": 14,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "eb5e940b-be9e-4bce-96ba-49d3d814b475",
     "program_id": 463189,
     "qualification_no": 8,
@@ -6293,16 +6244,16 @@
     "content_en": ""
   },
   {
-    "id": "ebdd5f06-dbf0-42cd-a546-e1ef70c50830",
-    "program_id": 226246,
-    "qualification_no": 10,
+    "id": "ec028f3a-9cf2-41f1-ab42-579be6ca4936",
+    "program_id": 463251,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "ec028f3a-9cf2-41f1-ab42-579be6ca4936",
-    "program_id": 463251,
-    "qualification_no": 11,
+    "id": "ec4c11b3-b586-4c86-8754-f55af57b55cb",
+    "program_id": 157371,
+    "qualification_no": 2,
     "content_tr": "",
     "content_en": ""
   },
@@ -6342,13 +6293,6 @@
     "content_en": ""
   },
   {
-    "id": "ece21a0c-5726-472c-8e2e-694bd0898ea8",
-    "program_id": 226273,
-    "qualification_no": 11,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "ed0eb075-8532-493e-99fd-941d126b099c",
     "program_id": 248962,
     "qualification_no": 9,
@@ -6377,6 +6321,13 @@
     "content_en": ""
   },
   {
+    "id": "edc467e3-c124-4e41-b0da-3de313299142",
+    "program_id": 432448,
+    "qualification_no": 3,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "eddc8e28-65d6-4d37-96ff-d2538a253d57",
     "program_id": 463188,
     "qualification_no": 2,
@@ -6384,9 +6335,9 @@
     "content_en": ""
   },
   {
-    "id": "ee13707c-1f37-41b7-b61e-0ce692303011",
-    "program_id": 378142,
-    "qualification_no": 17,
+    "id": "ee8251be-5ff6-4c15-bded-acb33f363596",
+    "program_id": 157351,
+    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -6398,9 +6349,9 @@
     "content_en": ""
   },
   {
-    "id": "ef0b9cde-7145-4780-b56d-cb0e7dc3c205",
-    "program_id": 378141,
-    "qualification_no": 1,
+    "id": "ef2d2037-2fb4-4f24-8916-8af56c8a6554",
+    "program_id": 378142,
+    "qualification_no": 7,
     "content_tr": "",
     "content_en": ""
   },
@@ -6447,9 +6398,23 @@
     "content_en": ""
   },
   {
+    "id": "f0d13164-45cc-4f50-821a-e013991283ef",
+    "program_id": 157347,
+    "qualification_no": 6,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "f0daa2df-a281-4826-9703-77b2feae305d",
     "program_id": 463231,
     "qualification_no": 13,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "f12c524a-dd27-4023-b52c-b2e84c1b7d05",
+    "program_id": 226263,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -6461,13 +6426,6 @@
     "content_en": ""
   },
   {
-    "id": "f14be0be-9a5b-4472-a944-d9edf9bb5582",
-    "program_id": 157359,
-    "qualification_no": 9,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "f1851376-a997-4765-9ac8-be7d6b2fb687",
     "program_id": 248963,
     "qualification_no": 12,
@@ -6475,9 +6433,9 @@
     "content_en": ""
   },
   {
-    "id": "f206ee12-0852-44b3-b5fb-cd55d32612d1",
-    "program_id": 226246,
-    "qualification_no": 1,
+    "id": "f222bd90-823e-4636-b78e-5d3f238cfd89",
+    "program_id": 252880,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -6489,15 +6447,15 @@
     "content_en": ""
   },
   {
-    "id": "f2509022-6f6f-427c-afb2-7881cc01d315",
-    "program_id": 378142,
-    "qualification_no": 18,
+    "id": "f272b908-560b-4933-b287-abe3c3783ff5",
+    "program_id": 463231,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "f272b908-560b-4933-b287-abe3c3783ff5",
-    "program_id": 463231,
+    "id": "f294e21d-d7c8-4a40-97eb-48cf13f7a506",
+    "program_id": 157361,
     "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
@@ -6538,13 +6496,6 @@
     "content_en": ""
   },
   {
-    "id": "f3c62150-4c2c-43bd-9d96-5e4e533346cb",
-    "program_id": 157383,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "f4009a82-7a52-4929-8467-0d7abfaa98f9",
     "program_id": 463223,
     "qualification_no": 11,
@@ -6559,6 +6510,13 @@
     "content_en": ""
   },
   {
+    "id": "f48786af-bacc-4711-8260-493582e0f33c",
+    "program_id": 420206,
+    "qualification_no": 11,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "f4cd57ff-469a-4e27-a357-dcc68f658945",
     "program_id": 463237,
     "qualification_no": 4,
@@ -6569,13 +6527,6 @@
     "id": "f4dd0965-7b5c-4740-83f2-f57f2d880a3e",
     "program_id": 463192,
     "qualification_no": 7,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
-    "id": "f4e37896-cde8-4117-be2c-b8f8278f4c7e",
-    "program_id": 157371,
-    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -6622,6 +6573,13 @@
     "content_en": ""
   },
   {
+    "id": "f5ec2783-abd6-4385-b5f8-7d97c9e7d3eb",
+    "program_id": 157383,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "f601e23e-ffe7-42c3-ba34-afa818d0a21c",
     "program_id": 463202,
     "qualification_no": 9,
@@ -6636,15 +6594,15 @@
     "content_en": ""
   },
   {
-    "id": "f61c6292-5a0a-4cb7-8bd8-f28289b39ed7",
-    "program_id": 420205,
+    "id": "f659e90f-0a85-4e0c-a28f-4a4338987cde",
+    "program_id": 378142,
     "qualification_no": 3,
     "content_tr": "",
     "content_en": ""
   },
   {
-    "id": "f673a9c0-447f-406d-b5f7-50ae530c1378",
-    "program_id": 420206,
+    "id": "f6a19084-d952-42de-93a9-cad72e80efae",
+    "program_id": 420205,
     "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
@@ -6653,6 +6611,13 @@
     "id": "f6a872d0-c1c3-49b1-8979-9c4ea1856fdc",
     "program_id": 463245,
     "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "f6b979b7-1211-4f5f-830f-d46dccdd0efc",
+    "program_id": 157362,
+    "qualification_no": 6,
     "content_tr": "",
     "content_en": ""
   },
@@ -6671,9 +6636,23 @@
     "content_en": ""
   },
   {
+    "id": "f721fc03-2206-48fb-98c6-82c07af2d378",
+    "program_id": 378141,
+    "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "f732b196-187f-4077-a373-eb6beb62ad5f",
     "program_id": 463231,
     "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "f73e13e0-3b22-4b67-9aa3-ec5f3a3e8a18",
+    "program_id": 226273,
+    "qualification_no": 4,
     "content_tr": "",
     "content_en": ""
   },
@@ -6692,13 +6671,6 @@
     "content_en": ""
   },
   {
-    "id": "f7b6dc8a-6052-4b83-b9b1-176d44a3e505",
-    "program_id": 157347,
-    "qualification_no": 5,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "f7c25074-2b4e-4c59-a49f-4df5b87d12e7",
     "program_id": 463246,
     "qualification_no": 2,
@@ -6713,9 +6685,23 @@
     "content_en": ""
   },
   {
+    "id": "f815db79-2e66-48cd-931f-40118037ee1c",
+    "program_id": 432448,
+    "qualification_no": 2,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "f8a06466-e97e-4c72-a630-be79a69c14f0",
     "program_id": 226255,
     "qualification_no": 4,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "f91adfa3-d72d-4b7c-ae7a-50b763a9fcee",
+    "program_id": 252880,
+    "qualification_no": 15,
     "content_tr": "",
     "content_en": ""
   },
@@ -6730,6 +6716,13 @@
     "id": "f98fb072-c38c-49da-9527-85a4bd9ce44d",
     "program_id": 463235,
     "qualification_no": 9,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "f995a86b-f4a5-4105-988b-1af8ba8f8b5f",
+    "program_id": 420205,
+    "qualification_no": 5,
     "content_tr": "",
     "content_en": ""
   },
@@ -6755,13 +6748,6 @@
     "content_en": ""
   },
   {
-    "id": "fa3f64bf-c253-49b2-a8ba-29e3231e5366",
-    "program_id": 432448,
-    "qualification_no": 1,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "fa55f9d9-3af1-4b81-8bdd-bf245b7bcee9",
     "program_id": 463185,
     "qualification_no": 5,
@@ -6769,9 +6755,9 @@
     "content_en": ""
   },
   {
-    "id": "fb1d595d-8fc6-4eb6-9cee-30a76cc14155",
+    "id": "fafc94c4-6bee-402b-9984-87a6747e01f5",
     "program_id": 226246,
-    "qualification_no": 7,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
@@ -6811,6 +6797,13 @@
     "content_en": ""
   },
   {
+    "id": "fc7ab7b6-85ca-4ea4-8583-168194750c3e",
+    "program_id": 378142,
+    "qualification_no": 5,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
     "id": "fcade9d2-664d-4907-9b16-12dac31eaed9",
     "program_id": 226258,
     "qualification_no": 11,
@@ -6818,9 +6811,16 @@
     "content_en": ""
   },
   {
-    "id": "fd30353f-4df3-497a-8c34-05bea66be0d8",
-    "program_id": 226246,
-    "qualification_no": 3,
+    "id": "fcbb4471-a095-4b0e-a971-ac1a41a17c11",
+    "program_id": 378142,
+    "qualification_no": 16,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "fd98b025-38b3-4014-9789-d018ecd78e50",
+    "program_id": 226273,
+    "qualification_no": 11,
     "content_tr": "",
     "content_en": ""
   },
@@ -6846,13 +6846,6 @@
     "content_en": ""
   },
   {
-    "id": "fe17f4da-3199-48fd-ae4b-19d0d0573fbe",
-    "program_id": 157362,
-    "qualification_no": 6,
-    "content_tr": "",
-    "content_en": ""
-  },
-  {
     "id": "fe53f299-80f0-42b9-bd25-3f93f6c55812",
     "program_id": 463245,
     "qualification_no": 7,
@@ -6860,9 +6853,9 @@
     "content_en": ""
   },
   {
-    "id": "fe6fbf6d-6b7e-4a64-9dbd-0ceac5f91ef2",
-    "program_id": 157362,
-    "qualification_no": 14,
+    "id": "fe6aab6c-c452-40a8-9e37-557f9875f1f9",
+    "program_id": 157351,
+    "qualification_no": 10,
     "content_tr": "",
     "content_en": ""
   },
@@ -6881,9 +6874,9 @@
     "content_en": ""
   },
   {
-    "id": "fee8849a-0d87-477a-aff3-d959a101d721",
-    "program_id": 157351,
-    "qualification_no": 11,
+    "id": "ff77eb83-b5d2-4e5f-91df-19894f1b3cf3",
+    "program_id": 420206,
+    "qualification_no": 13,
     "content_tr": "",
     "content_en": ""
   },
@@ -6891,6 +6884,13 @@
     "id": "ff8655a0-e50c-47bd-b57e-7432d53d8ba6",
     "program_id": 463235,
     "qualification_no": 1,
+    "content_tr": "",
+    "content_en": ""
+  },
+  {
+    "id": "ffad2c15-e3f4-4cc4-bd02-c1426f2182e0",
+    "program_id": 378141,
+    "qualification_no": 9,
     "content_tr": "",
     "content_en": ""
   },
