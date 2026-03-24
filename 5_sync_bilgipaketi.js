@@ -4,7 +4,7 @@ const axios = require('axios');
 
 // --- GÜVENLİK AYARI ---
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_KEY;
 const BEARER_TOKEN = process.env.BILGIPAKETI_TOKEN;
 
 if (!supabaseUrl || !supabaseKey) {

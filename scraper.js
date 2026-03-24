@@ -17,7 +17,7 @@ const SLEEP_TIME = 5000;
 const MAX_RETRIES = 5;
 
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));

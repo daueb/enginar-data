@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
 // --- GÜVENLİK AYARI (DÜZELTİLDİ) ---
 const supabaseUrl = process.env.SUPABASE_URL;
 // Hem SERVICE_KEY hem de normal KEY'i kontrol eder
-const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
   throw new Error(`❌ Hata: Supabase Bağlantı Bilgileri Eksik! \nURL: ${supabaseUrl ? 'Var' : 'Yok'}\nKEY: ${supabaseKey ? 'Var' : 'Yok'}`);

@@ -8,7 +8,7 @@ const XLSX = require('xlsx');
 
 // --- GÜVENLİK AYARI ---
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 if (!supabaseUrl || !supabaseKey) {

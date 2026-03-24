@@ -11,7 +11,7 @@ const CALENDAR_URL = 'https://www.cankaya.edu.tr/akademik_takvim/index.php';
 
 // DÜZELTME: Hem SUPABASE_KEY hem de SERVICE_KEY kabul etsin
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_SERVICE_KEY;
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
     console.error("❌ Hata: Supabase URL veya Key eksik!");
