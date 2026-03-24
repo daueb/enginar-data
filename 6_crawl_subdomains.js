@@ -519,7 +519,9 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
     const crypto = require('crypto');
     const docId = crypto.createHash('md5').update(url).digest('hex');
     const contentHash = crypto.createHash('md5').update(text).digest('hex');
-    const sourceType = metadata.type || 'html';
+    // DB check constraint sadece belirli source_type değerlerini kabul eder
+    const rawType = metadata.type || 'html';
+    const sourceType = ['html', 'pdf'].includes(rawType) ? rawType : 'html';
     const category = metadata.domain || 'cankaya.edu.tr';
     const department = metadata.department || null;
 
@@ -854,7 +856,8 @@ async function crawlSubdomain(baseUrl) {
             for (const officeUrl of officeLinks) officeQueue.add(officeUrl);
         }
 
-        await smartDelay(600);
+        // Chunk oluşturulmadıysa (zaten DB'de var) kısa bekle, yeni chunk varsa normal bekle
+        await smartDelay(chunkCount === 0 ? 200 : 500);
     }
 
     // --- PDF'LERİ İŞLE ---
@@ -881,7 +884,7 @@ async function crawlSubdomain(baseUrl) {
             totalPdfs++;
             totalChunks += chunkCount;
             console.log(`   📎 [PDF ${totalPdfs}] ${pdfName.substring(0, 50)} (${pdfResult.pages}p, ${chunkCount} chunk)`);
-            await smartDelay(800);
+            await smartDelay(chunkCount === 0 ? 200 : 600);
         }
     }
 
@@ -908,7 +911,7 @@ async function crawlSubdomain(baseUrl) {
             totalOffice++;
             totalChunks += chunkCount;
             console.log(`   📋 [${officeResult.type.toUpperCase()} ${totalOffice}] ${fileName.substring(0, 50)} (${chunkCount} chunk)`);
-            await smartDelay(600);
+            await smartDelay(chunkCount === 0 ? 200 : 500);
         }
     }
 
@@ -985,8 +988,8 @@ async function crawlSubdomain(baseUrl) {
             crawlLog.push({ hostname, status: 'error', pages: 0, chunks: 0, error: err.message, timestamp: new Date().toISOString() });
         }
 
-        // Subdomain'ler arasi 2-4sn mola (farkli kullanici oturumu simulasyonu)
-        await smartDelay(3000);
+        // Subdomain'ler arasi mola
+        await smartDelay(1500);
     }
 
     // Crawl log özeti
