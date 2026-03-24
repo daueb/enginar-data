@@ -28,7 +28,7 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
   for (const opt of options) {
     if (opt.text.includes('BALGAT') || opt.text.includes('TEST')) continue;
 
-    const { data: classData } = await supabase.from('classrooms').select('id').eq('room_name', opt.text).maybeSingle();
+    const { data: classData } = await supabase.from('classrooms').select('id').ilike('room_name', `${opt.text}%`).maybeSingle();
 
     const classroomId = classData?.id || null;
 
@@ -96,27 +96,71 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
 
             const { data: courseData } = await supabase.from('courses').select('id').eq('course_code', code).maybeSingle();
 
-            const { data: instData } = await supabase
+            // Eğitmen arama: 3 aşamalı strateji
+            let instData = null;
+
+            // 1. Tam isimle ara
+            const { data: inst1 } = await supabase
                 .from('academics')
                 .select('id')
                 .ilike('name', `%${instructorName}%`)
                 .maybeSingle();
+            instData = inst1;
 
-            if (courseData && instData) {
+            // 2. Unvanları çıkarıp tekrar ara
+            if (!instData) {
+                const stripped = instructorName
+                    .replace(/Prof\.?\s*/gi, '')
+                    .replace(/Do[çc]\.?\s*/gi, '')
+                    .replace(/Dr\.?\s*/gi, '')
+                    .replace(/[Öö]ğr\.?\s*G[öo]r\.?\s*/gi, '')
+                    .replace(/Ar[şs]\.?\s*G[öo]r\.?\s*/gi, '')
+                    .replace(/Yrd\.?\s*/gi, '')
+                    .replace(/[Öö]ğr\.?\s*[Üü]yesi\s*/gi, '')
+                    .replace(/Elm\.?\s*/gi, '')
+                    .trim();
+
+                if (stripped && stripped !== instructorName) {
+                    const { data: inst2 } = await supabase
+                        .from('academics')
+                        .select('id')
+                        .ilike('name', `%${stripped}%`)
+                        .maybeSingle();
+                    instData = inst2;
+                }
+            }
+
+            // 3. Sadece soyadıyla ara (son kelime)
+            if (!instData) {
+                const parts = instructorName.trim().split(/\s+/);
+                const lastName = parts[parts.length - 1];
+                if (lastName && lastName.length > 2) {
+                    const { data: inst3 } = await supabase
+                        .from('academics')
+                        .select('id')
+                        .ilike('name', `%${lastName}%`)
+                        .limit(1)
+                        .maybeSingle();
+                    instData = inst3;
+                }
+            }
+
+            // Ders varsa kaydet (eğitmen opsiyonel)
+            if (courseData) {
                 const { error: insertError } = await supabase.from('course_sessions').insert({
                     course_id: courseData.id,
                     classroom_id: classroomId,
-                    instructor_id: instData.id,
+                    instructor_id: instData?.id || null,
                     section: section,
                     day_of_week: session.day,
                     time: session.time
                 });
 
                 if (insertError) console.log(`❌ Hata (${code}): ${insertError.message}`);
+                else if (!instData) console.log(`⚠️ ${code} (${section}) -> Eğitmen bulunamadı: "${instructorName}" (instructor_id=null)`);
                 else console.log(`✅ ${code} (${section}) -> ${instructorName}`);
             } else {
-                if (!courseData) console.log(`❓ Ders DB'de yok: "${code}"`);
-                if (!instData) console.log(`❓ Eğitmen DB'de yok: "${instructorName}"`);
+                console.log(`❓ Ders DB'de yok: "${code}"`);
             }
         }
     }

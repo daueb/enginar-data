@@ -136,7 +136,7 @@ async function scrapeAndUpload() {
             rows.each((index, element) => {
                 const cols = $(element).find('td');
                 if (cols.length >= 6) { 
-                    const code = $(cols[0]).text().trim();
+                    const code = $(cols[0]).text().trim().replace(/\s+/g, ' ');
                     const date = $(cols[3]).text().trim();
 
                     if (code && code !== 'Ders Kod' && date.length > 5) {

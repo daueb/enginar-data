@@ -3,6 +3,8 @@ const { createClient } = require('@supabase/supabase-js');
 const axios = require('axios');
 const cheerio = require('cheerio');
 const pdfParse = require('pdf-parse');
+const mammoth = require('mammoth');
+const XLSX = require('xlsx');
 
 // --- GÜVENLİK AYARI ---
 const supabaseUrl = process.env.SUPABASE_URL;
@@ -25,8 +27,8 @@ function smartDelay(baseMs = 500) {
 }
 
 // --- AYARLAR ---
-const MAX_DEPTH = 3;              // Link takip derinliği
-const MAX_PAGES_PER_DOMAIN = 150; // Her subdomain için max sayfa (sunucu yukunu azalt)
+const MAX_DEPTH = 10;             // Link takip derinliği (10 seviye — derin dokümanları da yakala)
+const MAX_PAGES_PER_DOMAIN = 300; // Her subdomain için max sayfa (artırıldı)
 const MAX_PDF_SIZE = 20 * 1024 * 1024; // 20MB
 const CHUNK_SIZE = 500;
 const CHUNK_OVERLAP = 50;
@@ -78,7 +80,7 @@ async function discoverSubdomains() {
     }
 }
 
-// Yedek sabit liste (crt.sh çalışmazsa)
+// Yedek sabit liste (crt.sh çalışmazsa) — 6b_crawl_missing.js ile birleştirildi
 const FALLBACK_SUBDOMAINS = [
     // Ana site
     'cankaya.edu.tr', 'www.cankaya.edu.tr',
@@ -87,37 +89,45 @@ const FALLBACK_SUBDOMAINS = [
     'kutuphane.cankaya.edu.tr', 'spor.cankaya.edu.tr', 'saglik.cankaya.edu.tr',
     'pdrm.cankaya.edu.tr', 'sks.cankaya.edu.tr', 'kariyer.cankaya.edu.tr',
     // Uluslararası
-    'iro.cankaya.edu.tr', 'erasmus.cankaya.edu.tr',
-    // İdari
+    'iro.cankaya.edu.tr', 'erasmus.cankaya.edu.tr', 'mevlana.cankaya.edu.tr',
+    // Fakülte ana sayfaları
+    'muhf.cankaya.edu.tr', 'fef.cankaya.edu.tr', 'iibf.cankaya.edu.tr',
+    'mimarlik.cankaya.edu.tr', 'hukuk.cankaya.edu.tr',
+    // İdari birimler
     'kalite.cankaya.edu.tr', 'cc.cankaya.edu.tr',
-    // Mühendislik Fakültesi
-    'fbe.cankaya.edu.tr', 'en.fbe.cankaya.edu.tr',
+    'odekan.cankaya.edu.tr', 'rektorluk.cankaya.edu.tr',
+    'genelsekreterlik.cankaya.edu.tr', 'bim.cankaya.edu.tr',
+    'kariyermezun.cankaya.edu.tr', 'kst.cankaya.edu.tr',
+    'kultur.cankaya.edu.tr', 'yurt.cankaya.edu.tr',
+    // Mühendislik Fakültesi bölümleri
     'ceng.cankaya.edu.tr', 'me.cankaya.edu.tr', 'ce.cankaya.edu.tr',
-    'ee.cankaya.edu.tr', 'ie.cankaya.edu.tr', 'ece.cankaya.edu.tr',
-    'mece.cankaya.edu.tr', 'mse.cankaya.edu.tr',
+    'ee.cankaya.edu.tr', 'eee.cankaya.edu.tr', 'ie.cankaya.edu.tr',
+    'ece.cankaya.edu.tr', 'mece.cankaya.edu.tr', 'mse.cankaya.edu.tr',
+    'yazilim.cankaya.edu.tr', 'malzeme.cankaya.edu.tr',
     'en.ceng.cankaya.edu.tr', 'en.me.cankaya.edu.tr', 'en.ce.cankaya.edu.tr',
     'en.ee.cankaya.edu.tr', 'en.ie.cankaya.edu.tr', 'en.ece.cankaya.edu.tr',
     'en.mece.cankaya.edu.tr',
-    // Fen-Edebiyat Fakültesi
+    // Fen-Edebiyat Fakültesi bölümleri
     'math.cankaya.edu.tr', 'ell.cankaya.edu.tr', 'psy.cankaya.edu.tr',
-    'mtb.cankaya.edu.tr',
+    'mtb.cankaya.edu.tr', 'bb.cankaya.edu.tr',
     'en.math.cankaya.edu.tr', 'en.ell.cankaya.edu.tr', 'en.psy.cankaya.edu.tr',
-    'en.mtb.cankaya.edu.tr',
-    // İktisadi ve İdari Bilimler
-    'bb.cankaya.edu.tr', 'econ.cankaya.edu.tr', 'ir.cankaya.edu.tr',
+    'en.mtb.cankaya.edu.tr', 'en.bb.cankaya.edu.tr',
+    // İktisadi ve İdari Bilimler Fakültesi bölümleri
+    'econ.cankaya.edu.tr', 'iktisat.cankaya.edu.tr', 'ir.cankaya.edu.tr',
     'man.cankaya.edu.tr', 'bf.cankaya.edu.tr', 'psi.cankaya.edu.tr',
-    'economics.cankaya.edu.tr',
-    'en.bb.cankaya.edu.tr', 'en.econ.cankaya.edu.tr', 'en.man.cankaya.edu.tr',
-    'en.bf.cankaya.edu.tr',
+    'economics.cankaya.edu.tr', 'sbu.cankaya.edu.tr', 'intt.cankaya.edu.tr',
+    'hir.cankaya.edu.tr', 'mis.cankaya.edu.tr',
+    'en.econ.cankaya.edu.tr', 'en.man.cankaya.edu.tr', 'en.bf.cankaya.edu.tr',
     // Hukuk
     'law.cankaya.edu.tr', 'fld.cankaya.edu.tr',
-    // Mimarlık
+    // Mimarlık Fakültesi bölümleri
     'arch.cankaya.edu.tr', 'architecture.cankaya.edu.tr',
-    'id.cankaya.edu.tr', 'inar.cankaya.edu.tr',
+    'id.cankaya.edu.tr', 'inar.cankaya.edu.tr', 'crp.cankaya.edu.tr',
     'en.inar.cankaya.edu.tr',
-    // Enstitüler
-    'gs.cankaya.edu.tr', 'sbe.cankaya.edu.tr',
-    'en.sbe.cankaya.edu.tr', 'en.gs.cankaya.edu.tr',
+    // Enstitüler ve Yüksekokullar
+    'gs.cankaya.edu.tr', 'sbe.cankaya.edu.tr', 'fbe.cankaya.edu.tr',
+    'lee.cankaya.edu.tr', 'adalet.cankaya.edu.tr', 'myo.cankaya.edu.tr',
+    'en.sbe.cankaya.edu.tr', 'en.gs.cankaya.edu.tr', 'en.fbe.cankaya.edu.tr',
     // Ders siteleri
     'ce102.cankaya.edu.tr', 'math111.cankaya.edu.tr', 'math112.cankaya.edu.tr',
     'math103.cankaya.edu.tr', 'ell114.cankaya.edu.tr',
@@ -154,10 +164,52 @@ const SKIP_SUBDOMAINS = new Set([
     'imap.cankaya.edu.tr',
 ]);
 
+// =====================================================
+// ÖNCELİKLİ URL'LER — Öğrencilerin en çok soracağı sayfalar
+// Bu URL'ler crawl sırasında ilk taranır ve derinlemesine inilir
+// =====================================================
+const PRIORITY_URLS = [
+    // Yönetmelikler & Yönergeler
+    'https://oim.cankaya.edu.tr/box/yonetmelik-ve-yonergeler/',
+    'https://oim.cankaya.edu.tr/',
+    'https://kutuphane.cankaya.edu.tr/yonetmelikler/',
+    'https://kutuphane.cankaya.edu.tr/yonetmelikler-ve-yonergeler/',
+    'https://fbe.cankaya.edu.tr/yonetmelikler/',
+    'https://sbe.cankaya.edu.tr/yonetmelikler/',
+    // Öğrenci İşleri
+    'https://www.cankaya.edu.tr/universite/ogrenci-isleri-iletisim.php',
+    'https://oim.cankaya.edu.tr/box/ogrenci-bilgi-sistemi/',
+    'https://oim.cankaya.edu.tr/box/uluslararasi-ogrenci/',
+    // Akademik bilgiler
+    'https://www.cankaya.edu.tr/akademik/',
+    'https://www.cankaya.edu.tr/universite/',
+    'https://www.cankaya.edu.tr/universite/idari.php',
+    'https://www.cankaya.edu.tr/universite/rektor.php',
+    // Kütüphane rehberleri
+    'https://kutuphane.cankaya.edu.tr/on-lisans-ve-lisans-ogrencileri-icin-rehber/',
+    'https://kutuphane.cankaya.edu.tr/yl-dr-ogrenci/',
+    // Erasmus / Uluslararası
+    'https://iro.cankaya.edu.tr/',
+    'https://erasmus.cankaya.edu.tr/',
+    // Sağlık
+    'https://saglik.cankaya.edu.tr/',
+    'https://saglik.cankaya.edu.tr/ogrenci-rapor-islemleri/',
+    'https://saglik.cankaya.edu.tr/box/yonetmelik/',
+    // Kariyer
+    'https://kariyer.cankaya.edu.tr/',
+    // Enstitüler
+    'https://fbe.cankaya.edu.tr/',
+    'https://sbe.cankaya.edu.tr/',
+    'https://gs.cankaya.edu.tr/',
+    // Kalite - öğrenciye yararlı olanlar
+    'https://kalite.cankaya.edu.tr/',
+];
+
 // Dosya uzantıları
-const SKIP_EXTENSIONS = /\.(jpg|jpeg|png|gif|svg|webp|ico|bmp|tiff|mp4|mp3|wav|avi|mov|zip|rar|7z|tar|gz|exe|dmg|msi|css|js|woff|woff2|ttf|eot)$/i;
+const SKIP_EXTENSIONS = /\.(jpg|jpeg|png|gif|svg|webp|ico|bmp|tiff|mp4|mp3|wav|avi|mov|zip|rar|7z|tar|gz|exe|dmg|msi|css|woff|woff2|ttf|eot)$/i;
 const PDF_EXTENSION = /\.pdf$/i;
 const OFFICE_EXTENSIONS = /\.(doc|docx|xls|xlsx|ppt|pptx)$/i;
+const JS_EXTENSION = /\.js$/i;
 
 // =====================================================
 // EMBEDDING FONKSİYONU (Google Gemini - Ucretsiz, 768 boyut)
@@ -329,7 +381,76 @@ async function fetchAndParsePdf(url) {
 }
 
 // =====================================================
-// LINK ÇIKARMA (HTML + PDF ayrı)
+// OFFICE DOSYALARI PARSE (docx, xlsx, pptx)
+// =====================================================
+async function fetchAndParseOffice(url) {
+    try {
+        const res = await axios.get(url, {
+            timeout: 30000,
+            headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' },
+            responseType: 'arraybuffer',
+            maxContentLength: MAX_PDF_SIZE,
+            maxRedirects: 3
+        });
+
+        const buffer = Buffer.from(res.data);
+        const ext = url.split('.').pop().toLowerCase().split('?')[0];
+        let text = '';
+        let title = decodeURIComponent(url.split('/').pop().replace(/\.[^.]+$/, '')) || 'Office Document';
+
+        if (ext === 'docx' || ext === 'doc') {
+            try {
+                const result = await mammoth.extractRawText({ buffer });
+                text = result.value || '';
+            } catch {
+                // doc (eski format) mammoth ile açılmayabilir
+                text = '';
+            }
+        } else if (ext === 'xlsx' || ext === 'xls') {
+            try {
+                const workbook = XLSX.read(buffer, { type: 'buffer' });
+                const parts = [];
+                for (const sheetName of workbook.SheetNames) {
+                    const sheet = workbook.Sheets[sheetName];
+                    const csv = XLSX.utils.sheet_to_csv(sheet);
+                    if (csv.trim()) parts.push(`[Sayfa: ${sheetName}]\n${csv}`);
+                }
+                text = parts.join('\n\n');
+            } catch {
+                text = '';
+            }
+        } else if (ext === 'pptx' || ext === 'ppt') {
+            // pptx basit XML parse — mammoth desteklemez
+            // Sadece text içeriğini çıkarmaya çalış
+            try {
+                const JSZip = require('jszip');
+                const zip = await JSZip.loadAsync(buffer);
+                const parts = [];
+                const slideFiles = Object.keys(zip.files).filter(f => f.startsWith('ppt/slides/slide') && f.endsWith('.xml'));
+                for (const slideFile of slideFiles.sort()) {
+                    const content = await zip.files[slideFile].async('text');
+                    // XML tag'lerini temizle, sadece text'i al
+                    const slideText = content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+                    if (slideText.length > 20) parts.push(slideText);
+                }
+                text = parts.join('\n\n');
+            } catch {
+                text = '';
+            }
+        }
+
+        text = sanitizePersonalData(text.replace(/\s+/g, ' ').trim());
+        if (text.length < 50) return null;
+        return { text, title, type: ext };
+    } catch (err) {
+        if (err.response?.status === 404) return null;
+        console.error(`   ⚠️ Office dosyası okunamadı (${url.split('/').pop()}): ${err.message}`);
+        return null;
+    }
+}
+
+// =====================================================
+// LINK ÇIKARMA (HTML + PDF + Office ayrı)
 // =====================================================
 function extractLinks(html, baseUrl) {
     const $ = cheerio.load(html);
@@ -337,12 +458,13 @@ function extractLinks(html, baseUrl) {
     const pdfLinks = new Set();
     const baseHost = new URL(baseUrl).hostname;
 
+    const officeLinks = new Set();
+
     $('a[href]').each((_, el) => {
         let href = $(el).attr('href');
         if (!href) return;
         if (href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
         if (SKIP_EXTENSIONS.test(href)) return;
-        if (OFFICE_EXTENSIONS.test(href)) return;
 
         try {
             const fullUrl = new URL(href, baseUrl);
@@ -353,6 +475,8 @@ function extractLinks(html, baseUrl) {
                 fullUrl.hash = '';
                 if (PDF_EXTENSION.test(fullUrl.pathname)) {
                     pdfLinks.add(fullUrl.href);
+                } else if (OFFICE_EXTENSIONS.test(fullUrl.pathname)) {
+                    officeLinks.add(fullUrl.href);
                 } else if (isSameDomain) {
                     htmlLinks.add(fullUrl.href);
                 }
@@ -360,7 +484,7 @@ function extractLinks(html, baseUrl) {
         } catch { /* geçersiz URL */ }
     });
 
-    return { htmlLinks, pdfLinks };
+    return { htmlLinks, pdfLinks, officeLinks };
 }
 
 // =====================================================
@@ -402,9 +526,28 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
     // Chunk metadata objesi — AI filtreleme için kullanacak
     const chunkMeta = {};
     if (department) chunkMeta.department = department;
+    // Fakülte bilgisi ekle
+    const faculty = HOSTNAME_TO_FACULTY[metadata.domain] || null;
+    if (faculty) chunkMeta.faculty = faculty;
     if (metadata.domain) chunkMeta.hostname = metadata.domain;
     if (sourceType) chunkMeta.source_type = sourceType;
-    if (metadata.language) chunkMeta.language = metadata.language;
+    // Dil tespiti: en. prefix'i varsa İngilizce
+    const language = metadata.language || ((metadata.domain || '').startsWith('en.') ? 'en' : 'tr');
+    chunkMeta.language = language;
+    // URL ve tarih
+    chunkMeta.url = url;
+    chunkMeta.crawl_date = new Date().toISOString().split('T')[0];
+    // Hedef kitle tespiti
+    const studentPrefixes = ['oim', 'oidb', 'registrar', 'kutuphane', 'sks', 'kariyer', 'pdrm', 'saglik', 'spor', 'yurt', 'odekan', 'erasmus', 'iro', 'mevlana', 'kariyermezun'];
+    const adminPrefixes = ['kalite', 'kst', 'genelsekreterlik', 'rektorluk', 'bim', 'cc'];
+    const domainPrefix = (metadata.domain || '').split('.')[0];
+    if (studentPrefixes.includes(domainPrefix)) {
+        chunkMeta.audience = 'ogrenci';
+    } else if (adminPrefixes.includes(domainPrefix)) {
+        chunkMeta.audience = 'idari';
+    } else {
+        chunkMeta.audience = 'genel';
+    }
 
     // Mevcut doküman var mı?
     const { data: existing } = await supabase.from('rag_documents')
@@ -477,40 +620,56 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
 // HOSTNAME → BÖLÜM ADI EŞLEŞTİRMESİ (chunk'lara kontekst eklemek icin)
 // =====================================================
 const HOSTNAME_TO_DEPARTMENT = {
-    // Mühendislik
+    // Mühendislik Fakültesi bölümleri
     'ceng.cankaya.edu.tr': 'Bilgisayar Mühendisliği', 'en.ceng.cankaya.edu.tr': 'Computer Engineering',
     'me.cankaya.edu.tr': 'Makine Mühendisliği', 'en.me.cankaya.edu.tr': 'Mechanical Engineering',
     'ce.cankaya.edu.tr': 'İnşaat Mühendisliği', 'en.ce.cankaya.edu.tr': 'Civil Engineering',
     'ee.cankaya.edu.tr': 'Elektrik-Elektronik Mühendisliği', 'en.ee.cankaya.edu.tr': 'Electrical-Electronics Engineering',
+    'eee.cankaya.edu.tr': 'Elektrik-Elektronik Mühendisliği', // yeni kod
     'ie.cankaya.edu.tr': 'Endüstri Mühendisliği', 'en.ie.cankaya.edu.tr': 'Industrial Engineering',
     'ece.cankaya.edu.tr': 'Elektronik ve Haberleşme Mühendisliği', 'en.ece.cankaya.edu.tr': 'Electronics and Communication Engineering',
     'mece.cankaya.edu.tr': 'Mekatronik Mühendisliği', 'en.mece.cankaya.edu.tr': 'Mechatronics Engineering',
     'mse.cankaya.edu.tr': 'Malzeme Bilimi ve Mühendisliği',
+    'malzeme.cankaya.edu.tr': 'Malzeme Bilimi ve Mühendisliği', // yeni kod
     'se.cankaya.edu.tr': 'Yazılım Mühendisliği',
-    // Fen-Edebiyat
+    'yazilim.cankaya.edu.tr': 'Yazılım Mühendisliği', // yeni kod
+    'muhf.cankaya.edu.tr': 'Mühendislik Fakültesi', // fakülte ana sayfa
+    // Fen-Edebiyat Fakültesi bölümleri
     'math.cankaya.edu.tr': 'Matematik', 'en.math.cankaya.edu.tr': 'Mathematics',
     'ell.cankaya.edu.tr': 'İngiliz Dili ve Edebiyatı', 'en.ell.cankaya.edu.tr': 'English Language and Literature',
     'psy.cankaya.edu.tr': 'Psikoloji', 'en.psy.cankaya.edu.tr': 'Psychology',
     'mtb.cankaya.edu.tr': 'İngilizce Mütercim ve Tercümanlık', 'en.mtb.cankaya.edu.tr': 'Translation and Interpreting',
-    // İktisadi ve İdari Bilimler
-    'bb.cankaya.edu.tr': 'Bankacılık ve Finans', 'en.bb.cankaya.edu.tr': 'Banking and Finance',
+    'bb.cankaya.edu.tr': 'Bilgisayar Bilimleri', 'en.bb.cankaya.edu.tr': 'Computer Science', // DÜZELTİLDİ: Bankacılık değil
+    'fef.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi', // fakülte ana sayfa
+    // İktisadi ve İdari Bilimler Fakültesi bölümleri
     'econ.cankaya.edu.tr': 'İktisat', 'en.econ.cankaya.edu.tr': 'Economics',
+    'iktisat.cankaya.edu.tr': 'İktisat', // yeni kod
     'economics.cankaya.edu.tr': 'İktisat',
     'ir.cankaya.edu.tr': 'Siyaset Bilimi ve Uluslararası İlişkiler',
+    'sbu.cankaya.edu.tr': 'Siyaset Bilimi ve Uluslararası İlişkiler', // yeni kod
     'man.cankaya.edu.tr': 'İşletme', 'en.man.cankaya.edu.tr': 'Management',
     'bf.cankaya.edu.tr': 'Uluslararası Ticaret ve Finansman', 'en.bf.cankaya.edu.tr': 'International Trade and Finance',
-    'psi.cankaya.edu.tr': 'Siyaset Bilimi ve Uluslararası İlişkiler',
+    'intt.cankaya.edu.tr': 'Uluslararası Ticaret ve Finansman', // yeni kod
+    'hir.cankaya.edu.tr': 'Halkla İlişkiler ve Reklamcılık', // yeni
+    'mis.cankaya.edu.tr': 'Yönetim Bilişim Sistemleri', // yeni
     'ybs.cankaya.edu.tr': 'Yönetim Bilişim Sistemleri',
-    // Hukuk
+    'iibf.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi', // fakülte ana sayfa
+    // Hukuk Fakültesi
     'law.cankaya.edu.tr': 'Hukuk Fakültesi', 'fld.cankaya.edu.tr': 'Hukuk Fakültesi',
-    // Mimarlık
+    'hukuk.cankaya.edu.tr': 'Hukuk Fakültesi', // yeni kod
+    // Mimarlık Fakültesi bölümleri
     'arch.cankaya.edu.tr': 'Mimarlık', 'architecture.cankaya.edu.tr': 'Mimarlık',
     'id.cankaya.edu.tr': 'İç Mimarlık', 'inar.cankaya.edu.tr': 'İç Mimarlık', 'en.inar.cankaya.edu.tr': 'Interior Architecture',
     'plan.cankaya.edu.tr': 'Şehir ve Bölge Planlama',
-    // Enstitüler
+    'crp.cankaya.edu.tr': 'Şehir ve Bölge Planlama', // yeni kod
+    'mimarlik.cankaya.edu.tr': 'Mimarlık Fakültesi', // fakülte ana sayfa
+    // Enstitüler ve Yüksekokullar
     'fbe.cankaya.edu.tr': 'Fen Bilimleri Enstitüsü', 'en.fbe.cankaya.edu.tr': 'Graduate School of Natural and Applied Sciences',
     'sbe.cankaya.edu.tr': 'Sosyal Bilimler Enstitüsü', 'en.sbe.cankaya.edu.tr': 'Graduate School of Social Sciences',
     'gs.cankaya.edu.tr': 'Lisansüstü Eğitim',
+    'lee.cankaya.edu.tr': 'Lisansüstü Eğitim Enstitüsü', // yeni
+    'adalet.cankaya.edu.tr': 'Adalet Meslek Yüksekokulu', // yeni
+    'myo.cankaya.edu.tr': 'Meslek Yüksekokulu', // yeni
     // İdari birimler
     'oim.cankaya.edu.tr': 'Uluslararası İlişkiler Ofisi',
     'oidb.cankaya.edu.tr': 'Öğrenci İşleri Daire Başkanlığı',
@@ -522,12 +681,67 @@ const HOSTNAME_TO_DEPARTMENT = {
     'kalite.cankaya.edu.tr': 'Kalite Güvence Birimi',
     'iro.cankaya.edu.tr': 'Uluslararası İlişkiler Ofisi',
     'erasmus.cankaya.edu.tr': 'Erasmus Ofisi',
+    'mevlana.cankaya.edu.tr': 'Mevlana Ofisi', // yeni
     'sks.cankaya.edu.tr': 'Sağlık Kültür ve Spor',
     'pdrm.cankaya.edu.tr': 'Psikolojik Danışmanlık',
     'cc.cankaya.edu.tr': 'Bilgi İşlem',
+    'bim.cankaya.edu.tr': 'Bilgi İşlem', // yeni
+    'odekan.cankaya.edu.tr': 'Öğrenci Dekanlığı', // yeni
+    'rektorluk.cankaya.edu.tr': 'Rektörlük', // yeni
+    'genelsekreterlik.cankaya.edu.tr': 'Genel Sekreterlik', // yeni
+    'kariyermezun.cankaya.edu.tr': 'Kariyer-Mezun İlişkileri', // yeni
+    'kst.cankaya.edu.tr': 'Kalite, Strateji ve Teknoloji Geliştirme', // yeni
+    'kultur.cankaya.edu.tr': 'Kültür Birimi', // yeni
+    'yurt.cankaya.edu.tr': 'Öğrenci Yurdu', // yeni
     // Ana site
     'cankaya.edu.tr': 'Çankaya Üniversitesi',
     'www.cankaya.edu.tr': 'Çankaya Üniversitesi',
+};
+
+// =====================================================
+// HOSTNAME → FAKÜLTE EŞLEŞTİRMESİ (chunk metadata için)
+// =====================================================
+const HOSTNAME_TO_FACULTY = {
+    // Mühendislik Fakültesi
+    'ceng.cankaya.edu.tr': 'Mühendislik Fakültesi', 'en.ceng.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'me.cankaya.edu.tr': 'Mühendislik Fakültesi', 'en.me.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'ce.cankaya.edu.tr': 'Mühendislik Fakültesi', 'en.ce.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'ee.cankaya.edu.tr': 'Mühendislik Fakültesi', 'en.ee.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'eee.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'ie.cankaya.edu.tr': 'Mühendislik Fakültesi', 'en.ie.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'ece.cankaya.edu.tr': 'Mühendislik Fakültesi', 'en.ece.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'mece.cankaya.edu.tr': 'Mühendislik Fakültesi', 'en.mece.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'mse.cankaya.edu.tr': 'Mühendislik Fakültesi', 'malzeme.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'se.cankaya.edu.tr': 'Mühendislik Fakültesi', 'yazilim.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    'muhf.cankaya.edu.tr': 'Mühendislik Fakültesi',
+    // Fen-Edebiyat Fakültesi
+    'math.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi', 'en.math.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi',
+    'ell.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi', 'en.ell.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi',
+    'psy.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi', 'en.psy.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi',
+    'mtb.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi', 'en.mtb.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi',
+    'bb.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi', 'en.bb.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi',
+    'fef.cankaya.edu.tr': 'Fen-Edebiyat Fakültesi',
+    // İktisadi ve İdari Bilimler Fakültesi
+    'econ.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi', 'en.econ.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'iktisat.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'economics.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'ir.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'sbu.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'man.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi', 'en.man.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'bf.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi', 'en.bf.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'intt.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'hir.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'mis.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'ybs.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    'iibf.cankaya.edu.tr': 'İktisadi ve İdari Bilimler Fakültesi',
+    // Hukuk Fakültesi
+    'law.cankaya.edu.tr': 'Hukuk Fakültesi', 'fld.cankaya.edu.tr': 'Hukuk Fakültesi',
+    'hukuk.cankaya.edu.tr': 'Hukuk Fakültesi',
+    // Mimarlık Fakültesi
+    'arch.cankaya.edu.tr': 'Mimarlık Fakültesi', 'architecture.cankaya.edu.tr': 'Mimarlık Fakültesi',
+    'id.cankaya.edu.tr': 'Mimarlık Fakültesi', 'inar.cankaya.edu.tr': 'Mimarlık Fakültesi', 'en.inar.cankaya.edu.tr': 'Mimarlık Fakültesi',
+    'plan.cankaya.edu.tr': 'Mimarlık Fakültesi', 'crp.cankaya.edu.tr': 'Mimarlık Fakültesi',
+    'mimarlik.cankaya.edu.tr': 'Mimarlık Fakültesi',
 };
 
 function getDepartmentLabel(hostname) {
@@ -593,9 +807,11 @@ async function crawlSubdomain(baseUrl) {
 
     const visited = new Set();
     const pdfQueue = new Set();
+    const officeQueue = new Set();
     const queue = [{ url: baseUrl, depth: 0 }];
     let totalPages = 0;
     let totalPdfs = 0;
+    let totalOffice = 0;
     let totalChunks = 0;
 
     // --- HTML SAYFALARINI TARA ---
@@ -629,12 +845,13 @@ async function crawlSubdomain(baseUrl) {
         console.log(`   📄 [${totalPages}] ${title.substring(0, 60)}... (${chunkCount} chunk)`);
 
         if (depth < MAX_DEPTH) {
-            const { htmlLinks, pdfLinks } = extractLinks(html, url);
+            const { htmlLinks, pdfLinks, officeLinks } = extractLinks(html, url);
             for (const link of htmlLinks) {
                 const normLink = link.replace(/\/$/, '');
                 if (!visited.has(normLink)) queue.push({ url: link, depth: depth + 1 });
             }
             for (const pdfUrl of pdfLinks) pdfQueue.add(pdfUrl);
+            for (const officeUrl of officeLinks) officeQueue.add(officeUrl);
         }
 
         await smartDelay(600);
@@ -668,9 +885,35 @@ async function crawlSubdomain(baseUrl) {
         }
     }
 
-    // Subdomain'ler arasi uzun mola (farkli IP'ye gecis gibi gorunsun)
-    console.log(`   ✅ ${new URL(baseUrl).hostname}: ${totalPages} HTML + ${totalPdfs} PDF = ${totalChunks} chunk`);
-    return { pages: totalPages + totalPdfs, chunks: totalChunks };
+    // --- OFFICE DOSYALARINI İŞLE ---
+    if (officeQueue.size > 0) {
+        console.log(`   📋 ${officeQueue.size} Office dosyası bulundu, işleniyor...`);
+
+        for (const officeUrl of officeQueue) {
+            if (visited.has(officeUrl)) continue;
+            visited.add(officeUrl);
+
+            const officeResult = await fetchAndParseOffice(officeUrl);
+            if (!officeResult) continue;
+
+            const fileName = decodeURIComponent(officeUrl.split('/').pop() || 'document');
+            const officeTextWithContext = `[${deptLabel}] ${officeResult.title || fileName}\n${officeResult.text}`;
+            const chunkCount = await saveDocumentAndChunks(sourceId, officeUrl, officeResult.title || fileName, officeTextWithContext, {
+                source: 'subdomain_crawl', type: officeResult.type,
+                domain: hostname,
+                department: deptLabel !== hostname ? deptLabel : null,
+                filename: fileName
+            });
+
+            totalOffice++;
+            totalChunks += chunkCount;
+            console.log(`   📋 [${officeResult.type.toUpperCase()} ${totalOffice}] ${fileName.substring(0, 50)} (${chunkCount} chunk)`);
+            await smartDelay(600);
+        }
+    }
+
+    console.log(`   ✅ ${new URL(baseUrl).hostname}: ${totalPages} HTML + ${totalPdfs} PDF + ${totalOffice} Office = ${totalChunks} chunk`);
+    return { pages: totalPages + totalPdfs + totalOffice, chunks: totalChunks };
 }
 
 // =====================================================
@@ -707,15 +950,23 @@ async function crawlSubdomain(baseUrl) {
     let grandTotalChunks = 0;
     let reachableCount = 0;
     let unreachableCount = 0;
+    const crawlLog = []; // Her subdomain'in durumunu logla
 
-    for (let i = 0; i < unique.length; i++) {
-        const hostname = unique[i];
-        console.log(`\n[${i + 1}/${unique.length}] ${hostname} kontrol ediliyor...`);
+    // Öncelikli subdomain'leri listenin başına al
+    const priorityHostnames = [...new Set(PRIORITY_URLS.map(u => new URL(u).hostname))];
+    const nonPriority = unique.filter(h => !priorityHostnames.includes(h));
+    const orderedList = [...priorityHostnames, ...nonPriority];
+    console.log(`⭐ ${priorityHostnames.length} öncelikli subdomain ilk sırada taranacak\n`);
+
+    for (let i = 0; i < orderedList.length; i++) {
+        const hostname = orderedList[i];
+        console.log(`\n[${i + 1}/${orderedList.length}] ${hostname} kontrol ediliyor...`);
 
         const reachable = await isSubdomainReachable(hostname);
         if (!reachable) {
             console.log(`   ⏭️ Erişilemiyor, atlanıyor`);
             unreachableCount++;
+            crawlLog.push({ hostname, status: 'unreachable', pages: 0, chunks: 0, error: null, timestamp: new Date().toISOString() });
             continue;
         }
 
@@ -727,19 +978,35 @@ async function crawlSubdomain(baseUrl) {
             if (result) {
                 grandTotalPages += result.pages;
                 grandTotalChunks += result.chunks;
+                crawlLog.push({ hostname, status: 'crawled', pages: result.pages, chunks: result.chunks, error: null, timestamp: new Date().toISOString() });
             }
         } catch (err) {
             console.error(`❌ ${hostname} taranırken hata:`, err.message);
+            crawlLog.push({ hostname, status: 'error', pages: 0, chunks: 0, error: err.message, timestamp: new Date().toISOString() });
         }
 
         // Subdomain'ler arasi 2-4sn mola (farkli kullanici oturumu simulasyonu)
         await smartDelay(3000);
     }
 
+    // Crawl log özeti
     console.log(`\n${'='.repeat(60)}`);
     console.log(`🚀 Subdomain Crawl Tamamlandı!`);
     console.log(`   Erişilen: ${reachableCount} | Erişilemeyen: ${unreachableCount}`);
     console.log(`   Toplam: ${grandTotalPages} sayfa/PDF, ${grandTotalChunks} chunk`);
     console.log(`   📊 Embedding: ${successfulEmbeddings} başarılı, ${skippedEmbeddings} atlandı${embeddingDisabled ? ' (kota doldu — tekrar çalıştır)' : ''}`);
     console.log('='.repeat(60));
+
+    // Detaylı crawl log çıktısı
+    console.log('\n📋 CRAWL LOG:');
+    console.log(JSON.stringify(crawlLog, null, 2));
+
+    // Hata alan subdomain'leri ayrıca listele
+    const failed = crawlLog.filter(l => l.status === 'error' || l.status === 'unreachable');
+    if (failed.length > 0) {
+        console.log(`\n⚠️ ${failed.length} subdomain taranaMADI:`);
+        for (const f of failed) {
+            console.log(`   - ${f.hostname}: ${f.status}${f.error ? ' (' + f.error + ')' : ''}`);
+        }
+    }
 })();

@@ -14,7 +14,7 @@ on:
         type: boolean
         default: true
       run_vectorize:
-        description: 'Vektörizasyon - Script 7 + Script 8 (Embedding)'
+        description: 'Bilgipaketi vektörizasyon (Script 7) + Eksik embedding doldur (Script 8)'
         type: boolean
         default: true
       run_fill_only:
@@ -92,7 +92,7 @@ jobs:
   fill-embeddings-only:
     if: ${{ inputs.run_fill_only == true }}
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
