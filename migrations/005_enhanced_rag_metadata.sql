@@ -2,6 +2,9 @@
 -- match_rag_chunks fonksiyonuna metadata JSONB döndürme eklendi
 -- Böylece worker; fakülte, audience, url gibi bilgilere erişebilir
 
+-- Eski fonksiyonu sil (dönüş tipi değiştiği için DROP gerekli)
+DROP FUNCTION IF EXISTS match_rag_chunks(vector, double precision, integer);
+
 CREATE OR REPLACE FUNCTION match_rag_chunks(
   query_embedding vector(768),
   match_threshold float DEFAULT 0.3,
