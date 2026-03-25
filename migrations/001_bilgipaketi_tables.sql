@@ -12,7 +12,8 @@ CREATE TABLE IF NOT EXISTS curricula (
     name_en TEXT,
     year INT,
     muf_no INT,
-    created_at TIMESTAMPTZ DEFAULT now()
+    created_at TIMESTAMPTZ DEFAULT now(),
+    UNIQUE (program_id, muf_no)
 );
 
 -- 2. curriculum_courses (müfredattaki ders slotları)
@@ -92,7 +93,8 @@ CREATE TABLE IF NOT EXISTS program_info (
     page_key TEXT NOT NULL,
     content_tr TEXT,
     content_en TEXT,
-    created_at TIMESTAMPTZ DEFAULT now()
+    created_at TIMESTAMPTZ DEFAULT now(),
+    UNIQUE (program_id, page_key)
 );
 
 -- 8. program_qualifications (program yeterlilikleri)

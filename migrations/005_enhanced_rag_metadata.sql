@@ -2,8 +2,9 @@
 -- match_rag_chunks fonksiyonuna metadata JSONB döndürme eklendi
 -- Böylece worker; fakülte, audience, url gibi bilgilere erişebilir
 
--- Eski fonksiyonu sil (dönüş tipi değiştiği için DROP gerekli)
+-- Eski fonksiyonları sil (dönüş tipi değiştiği için DROP gerekli)
 DROP FUNCTION IF EXISTS match_rag_chunks(vector, double precision, integer);
+DROP FUNCTION IF EXISTS match_rag_chunks(vector(768), float, int);
 
 CREATE OR REPLACE FUNCTION match_rag_chunks(
   query_embedding vector(768),
@@ -12,7 +13,7 @@ CREATE OR REPLACE FUNCTION match_rag_chunks(
 )
 RETURNS TABLE (
   id bigint,
-  doc_id bigint,
+  doc_id text,
   chunk_text text,
   title text,
   url text,
@@ -34,7 +35,7 @@ BEGIN
     rc.metadata,
     1 - (rc.embedding <=> query_embedding) as similarity
   FROM rag_chunks rc
-  JOIN rag_documents rd ON rd.id = rc.doc_id
+  JOIN rag_documents rd ON rd.doc_id = rc.doc_id
   WHERE rc.embedding IS NOT NULL
     AND 1 - (rc.embedding <=> query_embedding) > match_threshold
   ORDER BY rc.embedding <=> query_embedding
