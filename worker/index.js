@@ -423,7 +423,7 @@ async function searchChunksText(question, supabaseUrl, supabaseKey, limit = 5) {
     'apikey': supabaseKey,
     'Authorization': `Bearer ${supabaseKey}`,
   };
-  const select = 'select=id,doc_id,chunk_text,rag_documents(title,url,department)';
+  const select = 'select=id,doc_id,chunk_text,metadata,rag_documents(title,url,department)';
 
   // Tüm keyword varyantlarını topla (kök + Türkçe varyantları)
   const allVariants = keywords.flatMap(k => expandKeyword(k));
@@ -478,15 +478,18 @@ function formatTextResult(c, similarity) {
     title: c.rag_documents?.title || '',
     url: c.rag_documents?.url || '',
     department: c.rag_documents?.department || '',
+    metadata: c.metadata || null,
     similarity,
   };
 }
 
 // ─── Groq LLM ───
 async function askGroq(question, chunks, apiKey, appContext = '', history = []) {
-  const ragContext = chunks.map((c, i) =>
-    `[Kaynak ${i + 1}] ${c.chunk_text}\nURL: ${c.url || 'N/A'}`
-  ).join('\n\n---\n\n');
+  const ragContext = chunks.map((c, i) => {
+    let header = `[Kaynak ${i + 1}]`;
+    if (c.metadata?.doc_year) header += ` (${c.metadata.doc_year})`;
+    return `${header} ${c.chunk_text}\nURL: ${c.url || 'N/A'}`;
+  }).join('\n\n---\n\n');
 
   // Conversation history'yi mesaj listesine ekle
   const messages = [
@@ -525,9 +528,11 @@ async function askGroq(question, chunks, apiKey, appContext = '', history = []) 
 
 // ─── Gemini Flash Fallback ───
 async function askGemini(question, chunks, apiKey, appContext = '', history = []) {
-  const ragContext = chunks.map((c, i) =>
-    `[Kaynak ${i + 1}] ${c.chunk_text}\nURL: ${c.url || 'N/A'}`
-  ).join('\n\n---\n\n');
+  const ragContext = chunks.map((c, i) => {
+    let header = `[Kaynak ${i + 1}]`;
+    if (c.metadata?.doc_year) header += ` (${c.metadata.doc_year})`;
+    return `${header} ${c.chunk_text}\nURL: ${c.url || 'N/A'}`;
+  }).join('\n\n---\n\n');
 
   // Conversation history'yi Gemini formatına çevir
   const contents = [];
@@ -910,6 +915,20 @@ async function smartSearch(question, embedding, env) {
   // 3. Keyword araması (tamamlayıcı — düşük skorlu, vektörün arkasına düşer)
   const textChunks = await searchChunksText(question, SUPABASE_URL, SUPABASE_SERVICE_KEY, 3);
   addChunks(textChunks);
+
+  // Year-aware re-ranking: benzer similarity skorlarında yeni dokümanları öne al
+  // doc_year metadata'dan okunur (crawl sırasında URL/başlıktan çıkarılır)
+  const currentYear = new Date().getFullYear();
+  allChunks.forEach(c => {
+    const docYear = c.metadata?.doc_year || null;
+    if (docYear && c.similarity) {
+      // Yıl farkına göre küçük bonus/ceza (max ±0.03)
+      // 2026 doküman → +0.03, 2024 → +0.02, 2020 → 0, 2015 → -0.015
+      const yearDiff = docYear - (currentYear - 6); // 6 yıl önce nötr nokta
+      const yearBoost = Math.max(-0.03, Math.min(0.03, yearDiff * 0.005));
+      c.similarity = c.similarity + yearBoost;
+    }
+  });
 
   // Similarity'ye göre sırala — en ilgili chunk'lar en üstte
   allChunks.sort((a, b) => (b.similarity || 0) - (a.similarity || 0));

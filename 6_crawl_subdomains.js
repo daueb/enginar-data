@@ -614,6 +614,13 @@ async function saveDocumentAndChunks(sourceId, url, title, text, metadata = {}) 
     // URL ve tarih
     chunkMeta.url = url;
     chunkMeta.crawl_date = new Date().toISOString().split('T')[0];
+    // Doküman yılı — URL veya başlıktan çıkar (DGS puanları, yönetmelikler vb. için)
+    const yearMatch = (url + ' ' + (title || '')).match(/(?:20[0-2]\d|199\d)/g);
+    if (yearMatch) {
+        // En büyük (en güncel) yılı al
+        const years = yearMatch.map(Number);
+        chunkMeta.doc_year = Math.max(...years);
+    }
     // Hedef kitle tespiti
     const studentPrefixes = ['oim', 'oidb', 'registrar', 'kutuphane', 'sks', 'kariyer', 'pdrm', 'saglik', 'spor', 'yurt', 'odekan', 'erasmus', 'iro', 'mevlana', 'kariyermezun'];
     const adminPrefixes = ['kalite', 'kst', 'genelsekreterlik', 'rektorluk', 'bim', 'cc'];
