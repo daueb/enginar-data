@@ -945,17 +945,34 @@ async function crawlSubdomain(baseUrl) {
             visited.add(pdfUrl);
 
             const pdfResult = await fetchAndParsePdf(pdfUrl);
-            if (!pdfResult || pdfResult.text.length < 100) continue;
-
             const pdfName = decodeURIComponent(pdfUrl.split('/').pop() || 'document.pdf');
-            // PDF'e de bölüm konteksti ekle
-            const pdfTextWithContext = `[${deptLabel}] ${pdfResult.title || pdfName}\n${pdfResult.text}`;
-            const chunkCount = await saveDocumentAndChunks(sourceId, pdfUrl, pdfResult.title || pdfName, pdfTextWithContext, {
-                source: 'subdomain_crawl', type: 'pdf',
-                domain: hostname,
-                department: deptLabel !== hostname ? deptLabel : null,
-                filename: pdfName, pdf_pages: pdfResult.pages
-            });
+            const cleanTitle = (pdfResult?.title || pdfName)
+                .replace(/\.pdf$/i, '')
+                .replace(/[-_]+/g, ' ')
+                .trim();
+
+            let pdfTextWithContext;
+            let chunkCount;
+
+            if (!pdfResult || pdfResult.text.length < 100) {
+                // Metin çıkarılamayan PDF (form, scan vb.) — başlık + link olarak kaydet
+                pdfTextWithContext = `[${deptLabel}] 📄 ${cleanTitle}\nBu belge indirilebilir bir PDF dosyasıdır.\nBelge adı: ${cleanTitle}\nİndirme linki: ${pdfUrl}`;
+                chunkCount = await saveDocumentAndChunks(sourceId, pdfUrl, cleanTitle, pdfTextWithContext, {
+                    source: 'subdomain_crawl', type: 'pdf',
+                    domain: hostname,
+                    department: deptLabel !== hostname ? deptLabel : null,
+                    filename: pdfName, pdf_pages: pdfResult?.pages || 0
+                });
+            } else {
+                // Normal metin içeren PDF
+                pdfTextWithContext = `[${deptLabel}] ${cleanTitle}\n${pdfResult.text}`;
+                chunkCount = await saveDocumentAndChunks(sourceId, pdfUrl, cleanTitle, pdfTextWithContext, {
+                    source: 'subdomain_crawl', type: 'pdf',
+                    domain: hostname,
+                    department: deptLabel !== hostname ? deptLabel : null,
+                    filename: pdfName, pdf_pages: pdfResult.pages
+                });
+            }
 
             totalPdfs++;
             totalChunks += chunkCount;
@@ -973,12 +990,21 @@ async function crawlSubdomain(baseUrl) {
             visited.add(officeUrl);
 
             const officeResult = await fetchAndParseOffice(officeUrl);
-            if (!officeResult) continue;
-
             const fileName = decodeURIComponent(officeUrl.split('/').pop() || 'document');
-            const officeTextWithContext = `[${deptLabel}] ${officeResult.title || fileName}\n${officeResult.text}`;
-            const chunkCount = await saveDocumentAndChunks(sourceId, officeUrl, officeResult.title || fileName, officeTextWithContext, {
-                source: 'subdomain_crawl', type: officeResult.type,
+            const cleanOfficeName = (officeResult?.title || fileName)
+                .replace(/\.[^.]+$/, '')
+                .replace(/[-_]+/g, ' ')
+                .trim();
+
+            let officeTextWithContext;
+            if (!officeResult || !officeResult.text || officeResult.text.length < 50) {
+                // Metin çıkarılamayan Office dosyası — başlık + link olarak kaydet
+                officeTextWithContext = `[${deptLabel}] 📄 ${cleanOfficeName}\nBu belge indirilebilir bir dosyadır.\nBelge adı: ${cleanOfficeName}\nİndirme linki: ${officeUrl}`;
+            } else {
+                officeTextWithContext = `[${deptLabel}] ${cleanOfficeName}\n${officeResult.text}`;
+            }
+            const chunkCount = await saveDocumentAndChunks(sourceId, officeUrl, cleanOfficeName, officeTextWithContext, {
+                source: 'subdomain_crawl', type: officeResult?.type || 'doc',
                 domain: hostname,
                 department: deptLabel !== hostname ? deptLabel : null,
                 filename: fileName
@@ -986,7 +1012,7 @@ async function crawlSubdomain(baseUrl) {
 
             totalOffice++;
             totalChunks += chunkCount;
-            console.log(`   📋 [${officeResult.type.toUpperCase()} ${totalOffice}] ${fileName.substring(0, 50)} (${chunkCount} chunk)`);
+            console.log(`   📋 [${(officeResult?.type || 'doc').toUpperCase()} ${totalOffice}] ${fileName.substring(0, 50)} (${chunkCount} chunk)`);
             await smartDelay(chunkCount === 0 ? 200 : 500);
         }
     }
