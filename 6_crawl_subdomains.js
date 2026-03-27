@@ -755,7 +755,7 @@ const HOSTNAME_TO_DEPARTMENT = {
     'adalet.cankaya.edu.tr': 'Adalet Meslek Yüksekokulu', // yeni
     'myo.cankaya.edu.tr': 'Meslek Yüksekokulu', // yeni
     // İdari birimler
-    'oim.cankaya.edu.tr': 'Uluslararası İlişkiler Ofisi',
+    'oim.cankaya.edu.tr': 'Öğrenci İşleri Müdürlüğü',
     'oidb.cankaya.edu.tr': 'Öğrenci İşleri Daire Başkanlığı',
     'registrar.cankaya.edu.tr': 'Öğrenci İşleri',
     'kutuphane.cankaya.edu.tr': 'Kütüphane',
@@ -777,6 +777,13 @@ const HOSTNAME_TO_DEPARTMENT = {
     'kst.cankaya.edu.tr': 'Kalite, Strateji ve Teknoloji Geliştirme', // yeni
     'kultur.cankaya.edu.tr': 'Kültür Birimi', // yeni
     'yurt.cankaya.edu.tr': 'Öğrenci Yurdu', // yeni
+    'mezun.cankaya.edu.tr': 'Mezunlar',
+    'kvkk.cankaya.edu.tr': 'KVKK Birimi',
+    'bap.cankaya.edu.tr': 'Bilimsel Araştırma Projeleri',
+    'uzem.cankaya.edu.tr': 'Uzaktan Eğitim Merkezi',
+    'cengstaj.cankaya.edu.tr': 'Bilgisayar Müh. Staj',
+    'akademik.cankaya.edu.tr': 'Akademik Portal',
+    'psi.cankaya.edu.tr': 'Siyaset Bilimi ve Uluslararası İlişkiler',
     // Ana site
     'cankaya.edu.tr': 'Çankaya Üniversitesi',
     'www.cankaya.edu.tr': 'Çankaya Üniversitesi',
@@ -1063,9 +1070,22 @@ async function crawlSubdomain(baseUrl) {
     const orderedList = [...priorityHostnames, ...nonPriority];
     console.log(`⭐ ${priorityHostnames.length} öncelikli subdomain ilk sırada taranacak\n`);
 
-    for (let i = 0; i < orderedList.length; i++) {
-        const hostname = orderedList[i];
-        console.log(`\n[${i + 1}/${orderedList.length}] ${hostname} kontrol ediliyor...`);
+    // Parça bazlı çalıştırma desteği (CRAWL_PART=1, CRAWL_TOTAL=3 gibi)
+    const crawlPart = parseInt(process.env.CRAWL_PART) || 0;   // 0 = hepsini çalıştır
+    const crawlTotal = parseInt(process.env.CRAWL_TOTAL) || 1;
+    let finalList = orderedList;
+
+    if (crawlPart > 0 && crawlTotal > 1) {
+        const chunkSize = Math.ceil(finalList.length / crawlTotal);
+        const start = (crawlPart - 1) * chunkSize;
+        const end = Math.min(start + chunkSize, finalList.length);
+        finalList = orderedList.slice(start, end);
+        console.log(`🔀 Parça ${crawlPart}/${crawlTotal}: subdomain ${start + 1}-${end} arası (${finalList.length} adet)\n`);
+    }
+
+    for (let i = 0; i < finalList.length; i++) {
+        const hostname = finalList[i];
+        console.log(`\n[${i + 1}/${finalList.length}] ${hostname} kontrol ediliyor...`);
 
         const reachable = await isSubdomainReachable(hostname);
         if (!reachable) {
