@@ -448,7 +448,7 @@ async function searchChunksText(question, supabaseUrl, supabaseKey, limit = 5) {
         const data = await res.json();
         if (data.length > 0) {
           console.log(`Text search PAIR [${rootA}+${rootB}] matched: ${data.length} chunks`);
-          return data.map(c => formatTextResult(c, 0.6));
+          return data.map(c => formatTextResult(c, 0.35));
         }
       }
     }
@@ -467,7 +467,7 @@ async function searchChunksText(question, supabaseUrl, supabaseKey, limit = 5) {
   }
 
   const data = await res.json();
-  return data.map(c => formatTextResult(c, 0.5));
+  return data.map(c => formatTextResult(c, 0.25));
 }
 
 function formatTextResult(c, similarity) {
@@ -907,12 +907,15 @@ async function smartSearch(question, embedding, env) {
     }
   }
 
-  // 3. Keyword araması (tamamlayıcı)
+  // 3. Keyword araması (tamamlayıcı — düşük skorlu, vektörün arkasına düşer)
   const textChunks = await searchChunksText(question, SUPABASE_URL, SUPABASE_SERVICE_KEY, 3);
   addChunks(textChunks);
 
-  // Max 10 chunk
-  return allChunks.slice(0, 10);
+  // Similarity'ye göre sırala — en ilgili chunk'lar en üstte
+  allChunks.sort((a, b) => (b.similarity || 0) - (a.similarity || 0));
+
+  // Max 8 chunk (token tasarrufu)
+  return allChunks.slice(0, 8);
 }
 
 // ─── Ana Handler ───
