@@ -17,9 +17,11 @@ const SYSTEM_PROMPT = `Sen **Enginar** — Çankaya Üniversitesi kampüsünün 
 Çankaya Üniversitesi öğrencilerine kampüs yaşamı, dersler, sınavlar, yönetmelikler, akademik takvim, yemek menüsü, hocalar ve kampüs konumları hakkında yardımcı ol. Her cevabı öğrencinin **bölümüne, fakültesine, sınıfına, lisans/önlisans durumuna ve aldığı derslere** göre kişiselleştir.
 
 ## BİLGİ KAYNAKLARIN
-Sana iki tür veri gelir:
+Sana üç tür veri gelir:
 
-**UYGULAMA VERİLERİ** — Öğrencinin telefonundan gelen anlık ve kesin bilgiler: profil (isim, bölüm, fakülte, sınıf, danışman), aldığı dersler, haftalık ders programı (gün/saat/sınıf/hoca), sınav takvimi, yemek menüsü, akademisyen listesi, akademik takvim, kampüs harita konumları. Bu verilere güven ve doğrudan kullan.
+**UYGULAMA VERİLERİ** — Öğrencinin telefonundan gelen kişisel bilgiler: profil (isim, bölüm, fakülte, sınıf, danışman), aldığı dersler, haftalık ders programı ve yaklaşan sınavları. Bu verilere güven ve doğrudan kullan.
+
+**VERİTABANI VERİLERİ** — Soru tipine göre otomatik çekilen güncel kampüs verileri: akademisyenler, yemek menüsü, sınav takvimi, ders bilgileri, kampüs konumları, akademik takvim. Bunlar doğrudan veritabanından gelir, güvenilirdir.
 
 **KAYNAKLAR** — RAG ile bulunan üniversite dokümanları: yönetmelikler, müfredatlar, bilgi paketleri, web sitesi içerikleri. Birden fazla kaynak çelişiyorsa **en güncel tarihli** geçerlidir. Eski yönetmelikler geçersizdir.
 
@@ -177,7 +179,7 @@ async function checkRateLimit(userId, kvStore) {
 // Yaygın Türkçe kelime düzeltmeleri (ASCII → Türkçe)
 const TURKISH_WORD_MAP = {
   // Sık kullanılan akademik/kampüs kelimeleri
-  'ustu': 'üstü', 'alti': 'altı', 'ustu': 'üstü',
+  'ustu': 'üstü', 'alti': 'altı',
   'kac': 'kaç', 'kacinci': 'kaçıncı',
   'alirim': 'alırım', 'alabilir': 'alabilir', 'aliyorum': 'alıyorum',
   'sinav': 'sınav', 'sinavi': 'sınavı', 'sinavlar': 'sınavlar', 'sinavlari': 'sınavları',
@@ -218,7 +220,7 @@ const TURKISH_WORD_MAP = {
   'kredi': 'kredi', 'kredisi': 'kredisi',
   'akts': 'akts', 'ects': 'ects',
   'ortalama': 'ortalama', 'ortalamasi': 'ortalaması',
-  'basarili': 'başarılı', 'basarisiz': 'başarısız',
+  'basarili': 'başarılı',
   'onayli': 'onaylı', 'onayi': 'onayı',
   'erasmus': 'erasmus', 'degisim': 'değişim',
   'cift': 'çift', 'cifta': 'çifta', 'ciftanadal': 'çiftanadal',
@@ -228,7 +230,7 @@ const TURKISH_WORD_MAP = {
   'nerede': 'nerede', 'nerdedir': 'nerdedir',
   'nasil': 'nasıl', 'nedir': 'nedir',
   'ne': 'ne', 'neler': 'neler',
-  'mi': 'mi', 'mu': 'mu', 'mi': 'mı', 'mu': 'mü',
+  'mi': 'mı', 'mu': 'mü',
   'icin': 'için', 'disinda': 'dışında',
   'gunu': 'günü', 'gun': 'gün', 'gunler': 'günler',
   'saat': 'saat', 'saati': 'saati',
@@ -348,7 +350,7 @@ async function searchChunks(embedding, supabaseUrl, supabaseKey, limit = 8) {
     },
     body: JSON.stringify({
       query_embedding: embedding,
-      match_threshold: 0.45,
+      match_threshold: 0.40,
       match_count: limit,
     })
   });
@@ -567,6 +569,222 @@ async function askGemini(question, chunks, apiKey, appContext = '', history = []
   return data.candidates[0].content.parts[0].text;
 }
 
+// ─── Supabase Yapısal Veri Sorguları ───
+// Soru tipine göre ilgili tabloları sorgular (RAG yerine doğrudan SQL)
+
+function detectQuestionIntent(question) {
+  const q = question.toLowerCase();
+  const intents = new Set();
+
+  // Akademisyen / hoca
+  if (q.match(/hoca|profes[öo]r|akademis|do[çc]ent|[öo][ğg]retim|ofis|oda/)) intents.add('academics');
+
+  // Yemek
+  if (q.match(/yemek|men[üu]|yemekhane|[çc]orba|kafeterya/)) intents.add('foods');
+
+  // Sınav
+  if (q.match(/s[ıi]nav|vize|final|b[üu]t[üu]nleme|mazeret/)) intents.add('exams');
+
+  // Ders (genel bilgi — herkese açık)
+  if (q.match(/ders|kredi|akts|m[üu]fredat|se[çc]meli|zorunlu|[öo]nko[şs]ul|i[çc]erik/)) intents.add('courses');
+
+  // Ders programı (genel)
+  if (q.match(/program|saat|ka[çc]ta|hangi g[üu]n/)) intents.add('sessions');
+
+  // Konum / harita
+  if (q.match(/nerede|konum|harita|bina|k[üu]t[üu]phane|kampüs|otopark/)) intents.add('pins');
+
+  // Akademik takvim
+  if (q.match(/takvim|kay[ıi]t|ders ekleme|ders b[ıi]rakma|tatil|d[öo]nem ba[şs]/)) intents.add('calendar');
+
+  return intents;
+}
+
+// Ders kodu varsa ilgili dersi bul
+function extractCourseCode(question) {
+  const match = question.match(/\b([A-Za-zÇçĞğİıÖöŞşÜü]{2,5})\s*(\d{3,4})\b/i);
+  return match ? `${match[1].toUpperCase()} ${match[2]}` : null;
+}
+
+async function fetchStructuredData(question, intents, env) {
+  const { SUPABASE_URL, SUPABASE_SERVICE_KEY } = env;
+  const headers = {
+    'apikey': SUPABASE_SERVICE_KEY,
+    'Authorization': `Bearer ${SUPABASE_SERVICE_KEY}`,
+  };
+
+  const results = {};
+  const courseCode = extractCourseCode(question);
+
+  // Akademisyenler — sorudan isim çıkarıp filtreleyerek ara
+  if (intents.has('academics')) {
+    try {
+      const q = question.toLowerCase();
+      // Sorudan hoca adını çıkar: "ali yılmaz hangi dersleri veriyor" → "ali", "yılmaz"
+      const nameWords = q
+        .replace(/hoca|profes[öo]r|akademis|do[çc]ent|[öo][ğg]retim|ofis|oda|kim|hangi|ders|veriyor|nerede|ne|bir|bu|şu|dan|den|nin|nun|ile|için|mi|mı|mu|mü/g, '')
+        .trim().split(/\s+/).filter(w => w.length >= 2);
+
+      let url = `${SUPABASE_URL}/rest/v1/academics?select=name,title,first_name,last_name,department,email,office`;
+      if (nameWords.length > 0) {
+        // İsim kelimelerinden en az birini içeren akademisyenleri filtrele
+        const filters = nameWords.map(w => `name.ilike.%25${encodeURIComponent(w)}%25`).join(',');
+        url += `&or=(${filters})&limit=20`;
+      } else {
+        // İsim bulunamadı — tüm listeyi çekme, boş dön
+        url += `&limit=20`;
+      }
+      const res = await fetch(url, { headers });
+      if (res.ok) results.academics = await res.json();
+    } catch (e) { console.error('Academics fetch error:', e.message); }
+  }
+
+  // Yemekler — bu haftanın menüsü
+  if (intents.has('foods')) {
+    try {
+      const today = new Date().toISOString().split('T')[0];
+      const nextWeek = new Date(Date.now() + 7 * 86400000).toISOString().split('T')[0];
+      const url = `${SUPABASE_URL}/rest/v1/foods?select=date,day,soup,main,side,salad,extra&date=gte.${today}&date=lte.${nextWeek}&order=date.asc&limit=7`;
+      const res = await fetch(url, { headers });
+      if (res.ok) results.foods = await res.json();
+    } catch (e) { console.error('Foods fetch error:', e.message); }
+  }
+
+  // Sınavlar — yaklaşan sınavlar
+  if (intents.has('exams')) {
+    try {
+      let url = `${SUPABASE_URL}/rest/v1/exams?select=code,exam,date,starting,hall,type&order=date.asc&limit=50`;
+      // Ders kodu varsa filtrele
+      if (courseCode) {
+        url += `&code=ilike.${encodeURIComponent(courseCode.replace(' ', '%'))}*`;
+      }
+      const res = await fetch(url, { headers });
+      if (res.ok) results.exams = await res.json();
+    } catch (e) { console.error('Exams fetch error:', e.message); }
+  }
+
+  // Dersler — belirli ders veya genel bilgi
+  if (intents.has('courses')) {
+    try {
+      let url = `${SUPABASE_URL}/rest/v1/courses?select=course_code,name,instructor,department,credits,type&limit=50`;
+      if (courseCode) {
+        url += `&course_code=ilike.${encodeURIComponent(courseCode.replace(' ', '%'))}*`;
+      }
+      const res = await fetch(url, { headers });
+      if (res.ok) results.courses = await res.json();
+    } catch (e) { console.error('Courses fetch error:', e.message); }
+  }
+
+  // Ders oturumları — belirli ders programı
+  if (intents.has('sessions') && courseCode) {
+    try {
+      // Önce course_id'yi bul
+      const courseRes = await fetch(
+        `${SUPABASE_URL}/rest/v1/courses?select=id&course_code=ilike.${encodeURIComponent(courseCode.replace(' ', '%'))}*&limit=1`,
+        { headers }
+      );
+      if (courseRes.ok) {
+        const courseData = await courseRes.json();
+        if (courseData.length > 0) {
+          const sessUrl = `${SUPABASE_URL}/rest/v1/course_sessions?select=course_id,day_of_week,time,classroom_id&course_id=eq.${courseData[0].id}&limit=20`;
+          const sessRes = await fetch(sessUrl, { headers });
+          if (sessRes.ok) results.sessions = await sessRes.json();
+        }
+      }
+    } catch (e) { console.error('Sessions fetch error:', e.message); }
+  }
+
+  // Pinler — konum soruları
+  if (intents.has('pins')) {
+    try {
+      const url = `${SUPABASE_URL}/rest/v1/pins?select=id,title,description,type_id,lat,lng&limit=100`;
+      const res = await fetch(url, { headers });
+      if (res.ok) results.pins = await res.json();
+    } catch (e) { console.error('Pins fetch error:', e.message); }
+  }
+
+  // Akademik takvim
+  if (intents.has('calendar')) {
+    try {
+      const url = `${SUPABASE_URL}/rest/v1/academic_calendar?select=*&order=start_date.asc&limit=30`;
+      const res = await fetch(url, { headers });
+      if (res.ok) results.calendar = await res.json();
+    } catch (e) { console.error('Calendar fetch error:', e.message); }
+  }
+
+  return results;
+}
+
+function formatStructuredData(data) {
+  let parts = [];
+
+  if (data.academics?.length > 0) {
+    parts.push('\n👨‍🏫 AKADEMİSYENLER (veritabanından):');
+    data.academics.forEach(a => {
+      let line = `- ${a.title || ''} ${a.first_name || ''} ${a.last_name || ''}`.trim();
+      if (a.department) line += ` | Bölüm: ${a.department}`;
+      if (a.office) line += ` | Ofis: ${a.office}`;
+      parts.push(line);
+    });
+  }
+
+  if (data.foods?.length > 0) {
+    parts.push('\n🍽️ YEMEK MENÜSÜ (veritabanından):');
+    data.foods.forEach(f => {
+      const items = [f.soup, f.main, f.side, f.salad, f.extra].filter(Boolean).join(', ');
+      parts.push(`- ${f.day || f.date}: ${items}`);
+    });
+  }
+
+  if (data.exams?.length > 0) {
+    parts.push('\n📝 SINAV TAKVİMİ (veritabanından):');
+    data.exams.forEach(e => {
+      parts.push(`- ${e.exam || e.code} | Tarih: ${e.date} | Saat: ${e.starting || ''} | Salon: ${e.hall || ''} | Tip: ${e.type || ''}`);
+    });
+  }
+
+  if (data.courses?.length > 0) {
+    parts.push('\n📚 DERSLER (veritabanından):');
+    data.courses.forEach(c => {
+      let line = `- ${c.course_code || ''} ${c.name || ''}`;
+      if (c.credits) line += ` | Kredi: ${c.credits}`;
+      if (c.type) line += ` | ${c.type}`;
+      if (c.instructor) line += ` | Hoca: ${c.instructor}`;
+      parts.push(line);
+    });
+  }
+
+  if (data.sessions?.length > 0) {
+    const dayNames = ['', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+    parts.push('\n📋 DERS PROGRAMI (veritabanından):');
+    data.sessions.forEach(s => {
+      const day = dayNames[s.day_of_week] || s.day_of_week;
+      parts.push(`- ${day} | Saat: ${s.time} | Sınıf: ${s.classroom_id}`);
+    });
+  }
+
+  if (data.pins?.length > 0) {
+    parts.push('\n📍 KAMPÜS KONUMLARI (veritabanından):');
+    data.pins.forEach(p => {
+      let line = `- ${p.title}`;
+      if (p.description) line += `: ${p.description}`;
+      parts.push(line);
+    });
+  }
+
+  if (data.calendar?.length > 0) {
+    parts.push('\n📅 AKADEMİK TAKVİM (veritabanından):');
+    data.calendar.forEach(item => {
+      let line = `- ${item.event || item.title || ''}`;
+      if (item.start_date) line += ` | ${item.start_date}`;
+      if (item.end_date && item.end_date !== item.start_date) line += ` - ${item.end_date}`;
+      parts.push(line);
+    });
+  }
+
+  return parts.length > 0 ? '\n\n--- VERİTABANI VERİLERİ ---\n' + parts.join('\n') : '';
+}
+
 // ─── Uygulama Context'ini Formatlama ───
 function formatAppContext(context) {
   if (!context) return '';
@@ -591,34 +809,9 @@ function formatAppContext(context) {
 
   // Bugünkü dersler
   if (context.todayCourses?.length > 0) {
-    parts.push('\n📚 BUGÜNKÜ DERSLER:');
+    parts.push('\n📚 BUGÜNKÜ DERSLERİM:');
     context.todayCourses.forEach(c => {
       parts.push(`- ${c.code} | Saat: ${c.time} | Yer: ${c.room}`);
-    });
-  }
-
-  // Yaklaşan sınavlar
-  if (context.upcomingExams?.length > 0) {
-    parts.push('\n📝 YAKLAŞAN SINAVLAR:');
-    context.upcomingExams.forEach(e => {
-      parts.push(`- ${e.name} (${e.code}) | Tarih: ${e.date} | Saat: ${e.time} | Yer: ${e.room}`);
-    });
-  }
-
-  // Yemek menüsü
-  if (context.isWeekend) {
-    parts.push('\n🍽️ YEMEK: Bugün hafta sonu — yemekhane kapalı.');
-    if (context.foodMenu?.length > 0) {
-      parts.push('Önümüzdeki günlerin menüsü:');
-      context.foodMenu.forEach(day => {
-        parts.push(`- ${day.day} (${day.date}): ${day.items.join(', ')}`);
-      });
-    }
-  } else if (context.foodMenu?.length > 0) {
-    parts.push('\n🍽️ YEMEK MENÜSÜ:');
-    context.foodMenu.forEach(day => {
-      const prefix = day.isToday ? '📌 BUGÜN' : day.day;
-      parts.push(`${prefix} (${day.date}): ${day.items.join(', ')}`);
     });
   }
 
@@ -633,36 +826,11 @@ function formatAppContext(context) {
     });
   }
 
-  // Akademisyen listesi
-  if (context.academics?.length > 0) {
-    parts.push('\n👨‍🏫 AKADEMİSYENLER:');
-    context.academics.forEach(a => {
-      let line = `- ${a.name}`;
-      if (a.title) line = `- ${a.title} ${a.name}`;
-      if (a.department) line += ` | Bölüm: ${a.department}`;
-      if (a.courses) line += ` | Verdiği dersler: ${a.courses}`;
-      if (a.office) line += ` | Ofis: ${a.office}`;
-      // email gönderme — gizlilik kuralı
-      parts.push(line);
-    });
-  }
-
-  // Akademik takvim
-  if (context.academicCalendar?.length > 0) {
-    parts.push('\n📅 AKADEMİK TAKVİM:');
-    context.academicCalendar.forEach(item => {
-      let line = `- ${item.event || item.title}`;
-      if (item.startDate) line += ` | ${item.startDate}`;
-      if (item.endDate && item.endDate !== item.startDate) line += ` - ${item.endDate}`;
-      parts.push(line);
-    });
-  }
-
-  // Tüm ders programı (haftalık)
-  if (context.allCourseSessions?.length > 0) {
-    parts.push('\n📋 HAFTALIK DERS PROGRAMI:');
+  // Haftalık ders programım (sadece seçili dersler)
+  if (context.mySchedule?.length > 0) {
+    parts.push('\n📋 HAFTALIK DERS PROGRAMIM:');
     const byDay = {};
-    context.allCourseSessions.forEach(s => {
+    context.mySchedule.forEach(s => {
       const day = s.day || s.dayOfWeek;
       if (!byDay[day]) byDay[day] = [];
       byDay[day].push(`${s.courseCode} ${s.time} (${s.room})`);
@@ -672,15 +840,20 @@ function formatAppContext(context) {
     });
   }
 
-  // Tüm dersler (bilgi paketi)
-  if (context.allCourses?.length > 0 && context.allCourses.length <= 30) {
-    parts.push('\n📚 BÖLÜM DERSLERİ:');
-    context.allCourses.forEach(c => {
-      let line = `- ${c.code || ''} ${c.name || ''}`;
-      if (c.credits) line += ` | Kredi: ${c.credits}`;
-      if (c.type) line += ` | ${c.type}`;
-      if (c.instructor) line += ` | Hoca: ${c.instructor}`;
-      parts.push(line);
+  // Yaklaşan sınavlarım (sadece seçili dersler)
+  if (context.myExams?.length > 0) {
+    parts.push('\n📝 YAKLAŞAN SINAVLARIM:');
+    context.myExams.forEach(e => {
+      parts.push(`- ${e.name} (${e.code}) | Tarih: ${e.date} | Saat: ${e.time} | Yer: ${e.room}`);
+    });
+  }
+
+  // Bu haftanın yemek menüsü
+  if (context.weeklyMenu?.length > 0) {
+    parts.push('\n🍽️ BU HAFTANIN MENÜSÜ:');
+    context.weeklyMenu.forEach(day => {
+      const items = [day.soup, day.main, day.side, day.salad, day.extra].filter(Boolean).join(', ');
+      parts.push(`- ${day.day || day.date}: ${items}`);
     });
   }
 
@@ -781,7 +954,28 @@ async function handleChat(request, env) {
     // 2. Akıllı arama: soruyu parçalara ayır + çoklu vektör araması
     const chunks = await smartSearch(normalizedQuestion, embedding, env);
 
+    // RAG chunk bulunamadıysa bile yapısal verilerle cevap vermeyi dene
     if (!chunks || chunks.length === 0) {
+      const intentsForFallback = detectQuestionIntent(normalizedQuestion);
+      if (intentsForFallback.size > 0) {
+        const structuredData = await fetchStructuredData(normalizedQuestion, intentsForFallback, env);
+        const structCtx = formatStructuredData(structuredData);
+        const appCtx = formatAppContext(context);
+        if (structCtx) {
+          // Yapısal veri var — RAG chunk olmadan da cevaplayabiliriz
+          const fullCtx = appCtx + structCtx;
+          let answer;
+          try {
+            answer = await askGroq(question, [], env.GROQ_API_KEY, fullCtx, history || []);
+          } catch (groqErr) {
+            answer = await askGemini(question, [], env.GEMINI_API_KEY, fullCtx, history || []);
+          }
+          return new Response(JSON.stringify({ answer, sources: [] }), {
+            headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' }
+          });
+        }
+      }
+
       return new Response(JSON.stringify({
         answer: 'Bu konuda veritabanımda bilgi bulamadım. Lütfen sorunuzu farklı şekilde sormayı deneyin.',
         sources: []
@@ -793,16 +987,26 @@ async function handleChat(request, env) {
     // 3. Kaynak linkleri hazırla
     const sources = [...new Map(chunks.map(c => [c.url, { title: c.title || c.url, url: c.url }])).values()];
 
-    // 4. Uygulama context'ini formatla
+    // 4. Uygulama context'ini formatla (kullanıcıya özel)
     const appContext = formatAppContext(context);
 
-    // 5. LLM'e sor (Groq → Gemini fallback) — orijinal soruyu gönder
+    // 5. Yapısal veri sorgusu — soru tipine göre Supabase'den çek
+    const intents = detectQuestionIntent(normalizedQuestion);
+    let structuredContext = '';
+    if (intents.size > 0) {
+      console.log(`Structured data intents: ${[...intents].join(', ')}`);
+      const structuredData = await fetchStructuredData(normalizedQuestion, intents, env);
+      structuredContext = formatStructuredData(structuredData);
+    }
+
+    // 6. LLM'e sor (Groq → Gemini fallback) — orijinal soruyu gönder
+    const fullContext = appContext + structuredContext;
     let answer;
     try {
-      answer = await askGroq(question, chunks, env.GROQ_API_KEY, appContext, history || []);
+      answer = await askGroq(question, chunks, env.GROQ_API_KEY, fullContext, history || []);
     } catch (groqErr) {
       console.log('Groq failed, falling back to Gemini:', groqErr.message);
-      answer = await askGemini(question, chunks, env.GEMINI_API_KEY, appContext, history || []);
+      answer = await askGemini(question, chunks, env.GEMINI_API_KEY, fullContext, history || []);
     }
 
     return new Response(JSON.stringify({ answer, sources }), {

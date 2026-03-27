@@ -193,20 +193,23 @@ const PAGE_KEYS = {
         await smartDelay(500);
     }
 
-    // 2. Ders Detayları (benzersiz BimKodu'lar)
+    // 2. Ders Detayları (benzersiz BimKodu'lar) — 5'li paralel batch
     console.log(`\n${'='.repeat(60)}`);
     console.log(`📖 Ders Detayları Senkronize Ediliyor (${allBimKodlari.length} ders)...`);
     console.log('='.repeat(60));
 
+    const BATCH_SIZE = 5;
     let detailCount = 0;
-    for (const entry of allBimKodlari) {
-        // entry = { bimKodu, mufNo, bolumKodu }
-        await syncCourseDetail(entry.bimKodu, entry.mufNo, entry.bolumKodu);
-        detailCount++;
-        if (detailCount % 50 === 0) {
+    for (let i = 0; i < allBimKodlari.length; i += BATCH_SIZE) {
+        const batch = allBimKodlari.slice(i, i + BATCH_SIZE);
+        await Promise.all(batch.map(entry =>
+            syncCourseDetail(entry.bimKodu, entry.mufNo, entry.bolumKodu)
+        ));
+        detailCount += batch.length;
+        if (detailCount % 50 < BATCH_SIZE) {
             console.log(`   ... ${detailCount}/${allBimKodlari.length} ders detayı işlendi`);
         }
-        await smartDelay(300);
+        await smartDelay(200);
     }
 
     console.log(`\n🚀 Bilgipaketi Senkronizasyonu Tamamlandı!`);

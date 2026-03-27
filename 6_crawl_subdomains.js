@@ -1,8 +1,12 @@
 require('dotenv').config();
 const { createClient } = require('@supabase/supabase-js');
 const axios = require('axios');
+const https = require('https');
 const cheerio = require('cheerio');
 const pdfParse = require('pdf-parse');
+
+// Sertifika süresi dolmuş subdomain'lere erişim için (en.psy, en.arch vb.)
+const httpsAgent = new https.Agent({ rejectUnauthorized: false });
 const mammoth = require('mammoth');
 const XLSX = require('xlsx');
 
@@ -27,8 +31,8 @@ function smartDelay(baseMs = 500) {
 }
 
 // --- AYARLAR ---
-const MAX_DEPTH = 10;             // Link takip derinliği (10 seviye — derin dokümanları da yakala)
-const MAX_PAGES_PER_DOMAIN = 300; // Her subdomain için max sayfa (artırıldı)
+const MAX_DEPTH = 15;             // Link takip derinliği (15 seviye — derin dokümanları da yakala)
+const MAX_PAGES_PER_DOMAIN = 500; // Her subdomain için max sayfa
 const MAX_PDF_SIZE = 20 * 1024 * 1024; // 20MB
 const CHUNK_SIZE = 500;
 const CHUNK_OVERLAP = 50;
@@ -51,43 +55,16 @@ function sanitizePersonalData(text) {
 }
 
 // =====================================================
-// OTOMATİK SUBDOMAİN KEŞFİ (crt.sh)
+// SUBDOMAİN LİSTESİ (DNS brute-force ile keşfedildi — 2026-03-27)
 // =====================================================
-async function discoverSubdomains() {
-    console.log('🔍 crt.sh üzerinden tüm subdomain\'ler keşfediliyor...');
-
-    try {
-        const res = await axios.get('https://crt.sh/?q=%.cankaya.edu.tr&output=json', {
-            timeout: 30000
-        });
-
-        const subdomains = new Set();
-        for (const cert of res.data) {
-            const names = (cert.name_value || '').split('\n');
-            for (const name of names) {
-                const clean = name.trim().replace(/^\*\./, '');
-                if (clean.endsWith('cankaya.edu.tr') && !clean.includes('*')) {
-                    subdomains.add(clean);
-                }
-            }
-        }
-
-        console.log(`   📡 crt.sh'den ${subdomains.size} benzersiz subdomain bulundu`);
-        return [...subdomains];
-    } catch (err) {
-        console.error('   ⚠️ crt.sh erişilemedi, yedek listeye geçiliyor:', err.message);
-        return null; // Yedek listeye düşecek
-    }
-}
-
-// Yedek sabit liste (crt.sh çalışmazsa) — 6b_crawl_missing.js ile birleştirildi
-const FALLBACK_SUBDOMAINS = [
+const SUBDOMAINS = [
     // Ana site
     'cankaya.edu.tr', 'www.cankaya.edu.tr',
     // Öğrenci hizmetleri
-    'oim.cankaya.edu.tr', 'oidb.cankaya.edu.tr', 'registrar.cankaya.edu.tr',
+    'oim.cankaya.edu.tr', 'registrar.cankaya.edu.tr',
     'kutuphane.cankaya.edu.tr', 'spor.cankaya.edu.tr', 'saglik.cankaya.edu.tr',
     'pdrm.cankaya.edu.tr', 'sks.cankaya.edu.tr', 'kariyer.cankaya.edu.tr',
+    'mezun.cankaya.edu.tr',
     // Uluslararası
     'iro.cankaya.edu.tr', 'erasmus.cankaya.edu.tr', 'mevlana.cankaya.edu.tr',
     // Fakülte ana sayfaları
@@ -99,47 +76,120 @@ const FALLBACK_SUBDOMAINS = [
     'genelsekreterlik.cankaya.edu.tr', 'bim.cankaya.edu.tr',
     'kariyermezun.cankaya.edu.tr', 'kst.cankaya.edu.tr',
     'kultur.cankaya.edu.tr', 'yurt.cankaya.edu.tr',
-    // Mühendislik Fakültesi bölümleri
+    'kvkk.cankaya.edu.tr', 'bap.cankaya.edu.tr',
+    'uzem.cankaya.edu.tr', 'akademik.cankaya.edu.tr',
+    'survey.cankaya.edu.tr', 'video.cankaya.edu.tr',
+    // Mühendislik Fakültesi — bölümler
     'ceng.cankaya.edu.tr', 'me.cankaya.edu.tr', 'ce.cankaya.edu.tr',
-    'ee.cankaya.edu.tr', 'eee.cankaya.edu.tr', 'ie.cankaya.edu.tr',
-    'ece.cankaya.edu.tr', 'mece.cankaya.edu.tr', 'mse.cankaya.edu.tr',
-    'yazilim.cankaya.edu.tr', 'malzeme.cankaya.edu.tr',
-    'en.ceng.cankaya.edu.tr', 'en.me.cankaya.edu.tr', 'en.ce.cankaya.edu.tr',
-    'en.ee.cankaya.edu.tr', 'en.ie.cankaya.edu.tr', 'en.ece.cankaya.edu.tr',
-    'en.mece.cankaya.edu.tr',
-    // Fen-Edebiyat Fakültesi bölümleri
+    'ie.cankaya.edu.tr', 'ece.cankaya.edu.tr', 'mece.cankaya.edu.tr', 'mse.cankaya.edu.tr',
+    'en.me.cankaya.edu.tr', 'en.ce.cankaya.edu.tr',
+    'en.ece.cankaya.edu.tr', 'en.mece.cankaya.edu.tr',
+    // Mühendislik — staj
+    'cengstaj.cankaya.edu.tr',
+    // Mühendislik — ders siteleri
+    'ceng105.cankaya.edu.tr', 'ceng111.cankaya.edu.tr', 'ceng114.cankaya.edu.tr',
+    'ceng120.cankaya.edu.tr', 'ceng235.cankaya.edu.tr', 'ceng329.cankaya.edu.tr',
+    'ceng481.cankaya.edu.tr', 'ceng491.cankaya.edu.tr', 'ceng590.cankaya.edu.tr',
+    'me102.cankaya.edu.tr', 'me113.cankaya.edu.tr', 'me114.cankaya.edu.tr',
+    'me115.cankaya.edu.tr', 'me200.cankaya.edu.tr', 'me202.cankaya.edu.tr',
+    'me203.cankaya.edu.tr', 'me204.cankaya.edu.tr', 'me206.cankaya.edu.tr',
+    'me210.cankaya.edu.tr', 'me211.cankaya.edu.tr', 'me300.cankaya.edu.tr',
+    'me301.cankaya.edu.tr', 'me302.cankaya.edu.tr', 'me303.cankaya.edu.tr',
+    'me412.cankaya.edu.tr', 'me416.cankaya.edu.tr', 'me481.cankaya.edu.tr',
+    'me590.cankaya.edu.tr', 'me626.cankaya.edu.tr',
+    'ce102.cankaya.edu.tr', 'ce104.cankaya.edu.tr',
+    'ee101.cankaya.edu.tr', 'ee103.cankaya.edu.tr', 'ee104.cankaya.edu.tr',
+    'ee107.cankaya.edu.tr', 'ee201.cankaya.edu.tr', 'ee202.cankaya.edu.tr',
+    'ee203.cankaya.edu.tr', 'ee204.cankaya.edu.tr', 'ee205.cankaya.edu.tr',
+    'ee206.cankaya.edu.tr', 'ee210.cankaya.edu.tr', 'ee301.cankaya.edu.tr',
+    'ee303.cankaya.edu.tr', 'ee481.cankaya.edu.tr',
+    'ie101.cankaya.edu.tr', 'ie111.cankaya.edu.tr', 'ie114.cankaya.edu.tr',
+    'ie200.cankaya.edu.tr', 'ie202.cankaya.edu.tr', 'ie211.cankaya.edu.tr',
+    'ie300.cankaya.edu.tr', 'ie301.cankaya.edu.tr', 'ie302.cankaya.edu.tr',
+    'ie412.cankaya.edu.tr', 'ie481.cankaya.edu.tr',
+    'ece107.cankaya.edu.tr', 'ece108.cankaya.edu.tr', 'ece109.cankaya.edu.tr',
+    'ece310.cankaya.edu.tr', 'ece329.cankaya.edu.tr', 'ece412.cankaya.edu.tr',
+    'ece416.cankaya.edu.tr', 'ece491.cankaya.edu.tr',
+    'mece101.cankaya.edu.tr', 'mece104.cankaya.edu.tr', 'mece113.cankaya.edu.tr',
+    'mece200.cankaya.edu.tr', 'mece202.cankaya.edu.tr', 'mece203.cankaya.edu.tr',
+    'mece206.cankaya.edu.tr', 'mece210.cankaya.edu.tr', 'mece300.cankaya.edu.tr',
+    'mece302.cankaya.edu.tr', 'mece401.cankaya.edu.tr', 'mece491.cankaya.edu.tr', 'mece493.cankaya.edu.tr',
+    'mse102.cankaya.edu.tr',
+    'mse201.cankaya.edu.tr', 'mse202.cankaya.edu.tr', 'mse203.cankaya.edu.tr',
+    'mse204.cankaya.edu.tr', 'mse206.cankaya.edu.tr', 'mse225.cankaya.edu.tr',
+    'mse226.cankaya.edu.tr', 'mse235.cankaya.edu.tr', 'mse301.cankaya.edu.tr',
+    'mse302.cankaya.edu.tr', 'mse303.cankaya.edu.tr', 'mse310.cankaya.edu.tr', 'mse401.cankaya.edu.tr',
+    // Fen-Edebiyat Fakültesi — bölümler
     'math.cankaya.edu.tr', 'ell.cankaya.edu.tr', 'psy.cankaya.edu.tr',
     'mtb.cankaya.edu.tr', 'bb.cankaya.edu.tr',
     'en.math.cankaya.edu.tr', 'en.ell.cankaya.edu.tr', 'en.psy.cankaya.edu.tr',
-    'en.mtb.cankaya.edu.tr', 'en.bb.cankaya.edu.tr',
-    // İktisadi ve İdari Bilimler Fakültesi bölümleri
-    'econ.cankaya.edu.tr', 'iktisat.cankaya.edu.tr', 'ir.cankaya.edu.tr',
-    'man.cankaya.edu.tr', 'bf.cankaya.edu.tr', 'psi.cankaya.edu.tr',
-    'economics.cankaya.edu.tr', 'sbu.cankaya.edu.tr', 'intt.cankaya.edu.tr',
-    'hir.cankaya.edu.tr', 'mis.cankaya.edu.tr',
-    'en.econ.cankaya.edu.tr', 'en.man.cankaya.edu.tr', 'en.bf.cankaya.edu.tr',
-    // Hukuk
+    'en.mtb.cankaya.edu.tr',
+    // Fen-Edebiyat — ders siteleri
+    'math101.cankaya.edu.tr', 'math102.cankaya.edu.tr', 'math103.cankaya.edu.tr',
+    'math104.cankaya.edu.tr', 'math105.cankaya.edu.tr', 'math106.cankaya.edu.tr',
+    'math107.cankaya.edu.tr', 'math108.cankaya.edu.tr', 'math111.cankaya.edu.tr',
+    'math112.cankaya.edu.tr', 'math113.cankaya.edu.tr', 'math115.cankaya.edu.tr',
+    'math205.cankaya.edu.tr', 'math329.cankaya.edu.tr', 'math384.cankaya.edu.tr',
+    'math481.cankaya.edu.tr', 'math491.cankaya.edu.tr', 'math493.cankaya.edu.tr',
+    'ell101.cankaya.edu.tr', 'ell102.cankaya.edu.tr', 'ell104.cankaya.edu.tr',
+    'ell105.cankaya.edu.tr', 'ell109.cankaya.edu.tr', 'ell110.cankaya.edu.tr',
+    'ell111.cankaya.edu.tr', 'ell112.cankaya.edu.tr', 'ell114.cankaya.edu.tr',
+    'ell115.cankaya.edu.tr', 'ell205.cankaya.edu.tr', 'ell210.cankaya.edu.tr',
+    'ell211.cankaya.edu.tr', 'ell310.cankaya.edu.tr', 'ell590.cankaya.edu.tr',
+    'psy101.cankaya.edu.tr', 'psy102.cankaya.edu.tr', 'psy113.cankaya.edu.tr', 'psy204.cankaya.edu.tr',
+    // İİBF — bölümler
+    'man.cankaya.edu.tr', 'bf.cankaya.edu.tr',
+    'psi.cankaya.edu.tr', 'intt.cankaya.edu.tr', 'hir.cankaya.edu.tr',
+    'mis.cankaya.edu.tr', 'sbu.cankaya.edu.tr',
+    'en.man.cankaya.edu.tr', 'en.bf.cankaya.edu.tr',
+    'en.hir.cankaya.edu.tr', 'en.intt.cankaya.edu.tr', 'en.mis.cankaya.edu.tr',
+    // İİBF — ders siteleri
+    'econ101.cankaya.edu.tr', 'econ102.cankaya.edu.tr', 'econ103.cankaya.edu.tr',
+    'econ107.cankaya.edu.tr', 'econ203.cankaya.edu.tr', 'econ204.cankaya.edu.tr',
+    'econ205.cankaya.edu.tr', 'econ206.cankaya.edu.tr', 'econ210.cankaya.edu.tr',
+    'econ301.cankaya.edu.tr', 'econ302.cankaya.edu.tr', 'econ303.cankaya.edu.tr', 'econ412.cankaya.edu.tr',
+    'man101.cankaya.edu.tr', 'man102.cankaya.edu.tr', 'man201.cankaya.edu.tr',
+    'man202.cankaya.edu.tr', 'man205.cankaya.edu.tr', 'man206.cankaya.edu.tr',
+    'man211.cankaya.edu.tr', 'man412.cankaya.edu.tr', 'man416.cankaya.edu.tr',
+    'psi101.cankaya.edu.tr', 'psi102.cankaya.edu.tr', 'psi103.cankaya.edu.tr',
+    'psi104.cankaya.edu.tr', 'psi201.cankaya.edu.tr', 'psi202.cankaya.edu.tr',
+    'psi203.cankaya.edu.tr', 'psi204.cankaya.edu.tr', 'psi205.cankaya.edu.tr',
+    'psi301.cankaya.edu.tr', 'psi302.cankaya.edu.tr', 'psi303.cankaya.edu.tr',
+    'psi310.cankaya.edu.tr', 'psi329.cankaya.edu.tr', 'psi401.cankaya.edu.tr',
+    'psi412.cankaya.edu.tr', 'psi416.cankaya.edu.tr',
+    'intt103.cankaya.edu.tr', 'intt104.cankaya.edu.tr', 'intt235.cankaya.edu.tr',
+    'intt301.cankaya.edu.tr', 'intt303.cankaya.edu.tr', 'intt401.cankaya.edu.tr',
+    'intt412.cankaya.edu.tr', 'intt416.cankaya.edu.tr',
+    'hir105.cankaya.edu.tr', 'hir109.cankaya.edu.tr',
+    // Hukuk Fakültesi
     'law.cankaya.edu.tr', 'fld.cankaya.edu.tr',
-    // Mimarlık Fakültesi bölümleri
-    'arch.cankaya.edu.tr', 'architecture.cankaya.edu.tr',
-    'id.cankaya.edu.tr', 'inar.cankaya.edu.tr', 'crp.cankaya.edu.tr',
-    'en.inar.cankaya.edu.tr',
+    'law101.cankaya.edu.tr', 'law102.cankaya.edu.tr', 'law201.cankaya.edu.tr',
+    'law202.cankaya.edu.tr', 'law301.cankaya.edu.tr',
+    // Mimarlık Fakültesi — bölümler
+    'arch.cankaya.edu.tr', 'en.arch.cankaya.edu.tr',
+    'inar.cankaya.edu.tr', 'en.inar.cankaya.edu.tr', 'crp.cankaya.edu.tr',
+    // Mimarlık — ders siteleri
+    'arch100.cankaya.edu.tr', 'arch101.cankaya.edu.tr', 'arch102.cankaya.edu.tr',
+    'arch103.cankaya.edu.tr', 'arch104.cankaya.edu.tr', 'arch106.cankaya.edu.tr',
+    'arch115.cankaya.edu.tr', 'arch121.cankaya.edu.tr', 'arch131.cankaya.edu.tr',
+    'arch200.cankaya.edu.tr', 'arch201.cankaya.edu.tr', 'arch202.cankaya.edu.tr',
+    'arch204.cankaya.edu.tr', 'arch205.cankaya.edu.tr', 'arch206.cankaya.edu.tr',
+    'arch225.cankaya.edu.tr', 'arch226.cankaya.edu.tr', 'arch300.cankaya.edu.tr',
+    'arch301.cankaya.edu.tr', 'arch302.cankaya.edu.tr', 'arch357.cankaya.edu.tr',
+    'arch401.cankaya.edu.tr', 'arch412.cankaya.edu.tr', 'arch416.cankaya.edu.tr',
+    'inar100.cankaya.edu.tr', 'inar101.cankaya.edu.tr', 'inar102.cankaya.edu.tr',
+    'inar111.cankaya.edu.tr', 'inar112.cankaya.edu.tr', 'inar114.cankaya.edu.tr',
+    'inar115.cankaya.edu.tr', 'inar121.cankaya.edu.tr', 'inar131.cankaya.edu.tr',
+    'inar200.cankaya.edu.tr', 'inar201.cankaya.edu.tr', 'inar202.cankaya.edu.tr',
+    'inar235.cankaya.edu.tr', 'inar300.cankaya.edu.tr', 'inar301.cankaya.edu.tr',
+    'inar302.cankaya.edu.tr', 'inar310.cankaya.edu.tr', 'inar350.cankaya.edu.tr',
+    'inar357.cankaya.edu.tr', 'inar384.cankaya.edu.tr', 'inar401.cankaya.edu.tr',
+    'crp101.cankaya.edu.tr', 'crp102.cankaya.edu.tr', 'crp106.cankaya.edu.tr',
+    'crp111.cankaya.edu.tr', 'crp113.cankaya.edu.tr', 'crp201.cankaya.edu.tr',
+    'crp202.cankaya.edu.tr', 'crp211.cankaya.edu.tr', 'crp226.cankaya.edu.tr', 'crp301.cankaya.edu.tr',
     // Enstitüler ve Yüksekokullar
     'gs.cankaya.edu.tr', 'sbe.cankaya.edu.tr', 'fbe.cankaya.edu.tr',
     'lee.cankaya.edu.tr', 'adalet.cankaya.edu.tr', 'myo.cankaya.edu.tr',
-    'en.sbe.cankaya.edu.tr', 'en.gs.cankaya.edu.tr', 'en.fbe.cankaya.edu.tr',
-    // Ders siteleri
-    'ce102.cankaya.edu.tr', 'math111.cankaya.edu.tr', 'math112.cankaya.edu.tr',
-    'math103.cankaya.edu.tr', 'ell114.cankaya.edu.tr',
-    'psi101.cankaya.edu.tr', 'psi102.cankaya.edu.tr', 'psi103.cankaya.edu.tr',
-    'psi203.cankaya.edu.tr', 'psi303.cankaya.edu.tr', 'psi412.cankaya.edu.tr',
-    'ece329.cankaya.edu.tr', 'me416.cankaya.edu.tr', 'me626.cankaya.edu.tr',
-    'mest.cankaya.edu.tr',
-    'mse235.cankaya.edu.tr', 'mse226.cankaya.edu.tr', 'mse206.cankaya.edu.tr',
-    'mse302.cankaya.edu.tr', 'mse225.cankaya.edu.tr',
-    'inar384.cankaya.edu.tr', 'inar357.cankaya.edu.tr', 'inar121.cankaya.edu.tr',
-    // Portal/sistem
-    'webonline.cankaya.edu.tr', 'sql.cankaya.edu.tr', 'onbasvuru.cankaya.edu.tr',
 ];
 
 // Atlanacak subdomain'ler (login gerekli, boş, veya faydasız)
@@ -162,6 +212,14 @@ const SKIP_SUBDOMAINS = new Set([
     'smtp.cankaya.edu.tr',
     'pop.cankaya.edu.tr',
     'imap.cankaya.edu.tr',
+    'dersprog.cankaya.edu.tr', // ASP.NET form tabanlı, Puppeteer ile ayrı çekiliyor
+    'ogbs.cankaya.edu.tr',     // API — bilgipaketi sync ile ayrı çekiliyor
+    'bilgipaketi.cankaya.edu.tr', // API — bilgipaketi sync ile ayrı çekiliyor
+    'ogrenci.cankaya.edu.tr',  // 403 — login gerekli
+    'student.cankaya.edu.tr',  // Login gerekli
+    'corvus.cankaya.edu.tr',   // Sistem
+    'video.cankaya.edu.tr',    // Video stream
+    'survey.cankaya.edu.tr',   // Anket sistemi (login)
 ]);
 
 // =====================================================
@@ -336,7 +394,8 @@ async function fetchPage(url) {
                 'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8'
             },
             maxRedirects: 3,
-            responseType: 'text'
+            responseType: 'text',
+            httpsAgent,
         });
         const contentType = res.headers['content-type'] || '';
         if (!contentType.includes('text/html')) return null;
@@ -356,7 +415,8 @@ async function fetchAndParsePdf(url) {
             headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' },
             responseType: 'arraybuffer',
             maxContentLength: MAX_PDF_SIZE,
-            maxRedirects: 3
+            maxRedirects: 3,
+            httpsAgent,
         });
 
         const buffer = Buffer.from(res.data);
@@ -390,7 +450,8 @@ async function fetchAndParseOffice(url) {
             headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' },
             responseType: 'arraybuffer',
             maxContentLength: MAX_PDF_SIZE,
-            maxRedirects: 3
+            maxRedirects: 3,
+            httpsAgent,
         });
 
         const buffer = Buffer.from(res.data);
@@ -459,6 +520,20 @@ function extractLinks(html, baseUrl) {
     const baseHost = new URL(baseUrl).hostname;
 
     const officeLinks = new Set();
+
+    // Meta refresh redirect'leri yakala (ie.cankaya.edu.tr gibi)
+    $('meta[http-equiv="refresh"]').each((_, el) => {
+        const content = $(el).attr('content') || '';
+        const urlMatch = content.match(/url=(.+)/i);
+        if (urlMatch) {
+            try {
+                const fullUrl = new URL(urlMatch[1].trim(), baseUrl);
+                if (fullUrl.hostname.endsWith('cankaya.edu.tr')) {
+                    htmlLinks.add(fullUrl.href);
+                }
+            } catch { /* geçersiz URL */ }
+        }
+    });
 
     $('a[href]').each((_, el) => {
         let href = $(el).attr('href');
@@ -774,7 +849,8 @@ async function isSubdomainReachable(hostname) {
             timeout: 8000,
             maxRedirects: 3,
             headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
-            validateStatus: (status) => status < 500
+            validateStatus: (status) => status < 500,
+            httpsAgent,
         });
         return res.status < 400;
     } catch {
@@ -925,16 +1001,9 @@ async function crawlSubdomain(baseUrl) {
 (async () => {
     console.log('🔄 Çankaya Üniversitesi Tüm Subdomain Crawler Başlatılıyor...\n');
 
-    // 1. Subdomain keşfi: crt.sh + fallback listesini BİRLEŞTİR
-    const crtResults = await discoverSubdomains();
-    const mergedSet = new Set(FALLBACK_SUBDOMAINS); // Önce sabit listeyi ekle
-    if (crtResults && crtResults.length > 0) {
-        for (const h of crtResults) mergedSet.add(h); // crt.sh sonuçlarını da ekle
-        console.log(`   🔗 Birleştirildi: ${FALLBACK_SUBDOMAINS.length} sabit + ${crtResults.length} crt.sh = ${mergedSet.size} benzersiz`);
-    } else {
-        console.log('⚠️ crt.sh başarısız, sadece sabit liste kullanılıyor...');
-    }
-    let allHostnames = [...mergedSet];
+    // 1. Subdomain listesi (DNS brute-force ile keşfedildi)
+    let allHostnames = [...new Set(SUBDOMAINS)];
+    console.log(`📋 ${allHostnames.length} subdomain listede mevcut`);
 
     // 2. Atlanacak subdomain'leri filtrele
     const filtered = allHostnames.filter(h => {
