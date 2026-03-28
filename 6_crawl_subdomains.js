@@ -410,6 +410,18 @@ async function fetchPage(url) {
 // =====================================================
 async function fetchAndParsePdf(url) {
     try {
+        // Önce HEAD ile boyut kontrol et — büyük PDF'leri indirmeden atla
+        try {
+            const head = await axios.head(url, { timeout: 10000, httpsAgent, maxRedirects: 3 });
+            const size = parseInt(head.headers['content-length'] || '0');
+            if (size > MAX_PDF_SIZE) {
+                const sizeMB = (size / 1024 / 1024).toFixed(1);
+                console.error(`   ⚠️ PDF çok büyük, atlanıyor (${url.split('/').pop().substring(0, 50)}): ${sizeMB}MB > ${MAX_PDF_SIZE / 1024 / 1024}MB limit`);
+                const title = decodeURIComponent(url.split('/').pop().replace('.pdf', '')) || 'PDF Document';
+                return { text: '', title, pages: 0, skippedLarge: true };
+            }
+        } catch (_) { /* HEAD başarısız olursa GET ile devam et */ }
+
         const res = await axios.get(url, {
             timeout: 30000,
             headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' },
@@ -435,7 +447,12 @@ async function fetchAndParsePdf(url) {
         return { text, title, pages: pdf.numpages || 0 };
     } catch (err) {
         if (err.response?.status === 404) return null;
-        console.error(`   ⚠️ PDF okunamadı (${url.split('/').pop()}): ${err.message}`);
+        console.error(`   ⚠️ PDF okunamadı (${url.split('/').pop().substring(0, 60)}): ${err.message}`);
+        // maxContentLength aşıldıysa yine de başlık + link kaydet
+        if (err.message?.includes('maxContentLength')) {
+            const title = decodeURIComponent(url.split('/').pop().replace('.pdf', '')) || 'PDF Document';
+            return { text: '', title, pages: 0, skippedLarge: true };
+        }
         return null;
     }
 }
