@@ -10,23 +10,11 @@ on:
         type: boolean
         default: false
       run_crawl:
-        description: 'Subdomain crawl + RAG (Script 6) — 3 paralel parça'
-        type: boolean
-        default: false
-      run_crawl_1:
-        description: 'Sadece Crawl Parça 1/3'
-        type: boolean
-        default: false
-      run_crawl_2:
-        description: 'Sadece Crawl Parça 2/3'
-        type: boolean
-        default: false
-      run_crawl_3:
-        description: 'Sadece Crawl Parça 3/3'
+        description: 'Subdomain crawl — 24 parça, max 4 paralel'
         type: boolean
         default: false
       run_vectorize:
-        description: 'Bilgipaketi vektörizasyon (Script 7) + Eksik embedding doldur (Script 8)'
+        description: 'Vektörizasyon (Script 7) + Eksik embedding (Script 8)'
         type: boolean
         default: false
       run_fill_only:
@@ -58,72 +46,35 @@ jobs:
           BILGIPAKETI_TOKEN: ${{ secrets.BILGIPAKETI_TOKEN }}
         run: node 5_sync_bilgipaketi.js
 
-  # --- JOB 2a: Subdomain Crawl Parça 1/3 ---
-  crawl-part-1:
-    if: ${{ github.event_name == 'schedule' || inputs.run_crawl == true || inputs.run_crawl_1 == true || inputs.run_all == true }}
+  # --- JOB 2: Subdomain Crawl — 24 parça, max 4 paralel ---
+  crawl:
+    if: ${{ github.event_name == 'schedule' || inputs.run_crawl == true || inputs.run_all == true }}
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        part: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
       - run: npm install
-      - name: Subdomain Crawl Parça 1/3
+      - name: Subdomain Crawl Parça ${{ matrix.part }}/24
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CRAWL_PART: '1'
-          CRAWL_TOTAL: '3'
+          CRAWL_PART: '${{ matrix.part }}'
+          CRAWL_TOTAL: '24'
         run: node 6_crawl_subdomains.js
 
-  # --- JOB 2b: Subdomain Crawl Parça 2/3 ---
-  crawl-part-2:
-    if: ${{ github.event_name == 'schedule' || inputs.run_crawl == true || inputs.run_crawl_2 == true || inputs.run_all == true }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 350
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npm install
-      - name: Subdomain Crawl Parça 2/3
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CRAWL_PART: '2'
-          CRAWL_TOTAL: '3'
-        run: node 6_crawl_subdomains.js
-
-  # --- JOB 2c: Subdomain Crawl Parça 3/3 ---
-  crawl-part-3:
-    if: ${{ github.event_name == 'schedule' || inputs.run_crawl == true || inputs.run_crawl_3 == true || inputs.run_all == true }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 350
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npm install
-      - name: Subdomain Crawl Parça 3/3
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CRAWL_PART: '3'
-          CRAWL_TOTAL: '3'
-        run: node 6_crawl_subdomains.js
-
-  # --- JOB 3: Bilgipaketi Vektörizasyon (Script 7) + Embedding Doldur (Script 8) ---
+  # --- JOB 3: Vektörizasyon (Script 7) + Embedding (Script 8) ---
   vectorize:
-    needs: [bilgipaketi-sync, crawl-part-1, crawl-part-2, crawl-part-3]
+    needs: [bilgipaketi-sync, crawl]
     if: always() && (github.event_name == 'schedule' || inputs.run_vectorize == true || inputs.run_all == true)
     runs-on: ubuntu-latest
     timeout-minutes: 90
@@ -140,7 +91,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node 7_vectorize_bilgipaketi.js
-      - name: Eksik Embeddingleri Doldur (Script 8 - Batch)
+      - name: Eksik Embeddingleri Doldur (Script 8)
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
@@ -148,7 +99,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node 8_fill_embeddings.js
 
-  # --- JOB 4: JSON Export + R2 Upload (Bilgipaketi sonrası) ---
+  # --- JOB 4: JSON Export + R2 Upload ---
   export-json:
     needs: [vectorize]
     if: always() && (github.event_name == 'schedule' || inputs.run_bilgipaketi == true || inputs.run_vectorize == true || inputs.run_all == true)
@@ -199,7 +150,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
-      - name: Eksik Embeddingleri Doldur (Script 8 - Batch)
+      - name: Eksik Embeddingleri Doldur (Script 8)
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}

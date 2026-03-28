@@ -10,6 +10,31 @@ const httpsAgent = new https.Agent({ rejectUnauthorized: false });
 const mammoth = require('mammoth');
 const XLSX = require('xlsx');
 
+// Puppeteer — SPA/JS-rendered siteler için (lazy-load, ihtiyaç halinde import)
+let puppeteerBrowser = null;
+async function getPuppeteerBrowser() {
+    if (puppeteerBrowser) return puppeteerBrowser;
+    try {
+        const puppeteer = require('puppeteer');
+        puppeteerBrowser = await puppeteer.launch({
+            headless: 'new',
+            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage',
+                   '--disable-gpu', '--single-process'],
+            timeout: 30000,
+        });
+        return puppeteerBrowser;
+    } catch (err) {
+        console.error('   ⚠️ Puppeteer başlatılamadı:', err.message);
+        return null;
+    }
+}
+async function closePuppeteerBrowser() {
+    if (puppeteerBrowser) {
+        await puppeteerBrowser.close().catch(() => {});
+        puppeteerBrowser = null;
+    }
+}
+
 // --- GÜVENLİK AYARI ---
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_KEY;
@@ -190,6 +215,30 @@ const SUBDOMAINS = [
     // Enstitüler ve Yüksekokullar
     'gs.cankaya.edu.tr', 'sbe.cankaya.edu.tr', 'fbe.cankaya.edu.tr',
     'lee.cankaya.edu.tr', 'adalet.cankaya.edu.tr', 'myo.cankaya.edu.tr',
+    // ─── YENİ KEŞFEDİLEN SUBDOMAİN'LER (2026-03-28) ───
+    // Aday / Tanıtım
+    'aday.cankaya.edu.tr', 'tanitim.cankaya.edu.tr',
+    // Eksik bölüm siteleri (FACULTY_MAP'te vardı ama crawl listesinde yoktu)
+    'eee.cankaya.edu.tr', 'malzeme.cankaya.edu.tr',
+    'yazilim.cankaya.edu.tr', 'iktisat.cankaya.edu.tr',
+    // Ortak dersler ve yabancı diller
+    'odb.cankaya.edu.tr', 'ydb.cankaya.edu.tr',
+    // Yurt / barınma
+    'kizyurdu.cankaya.edu.tr', 'erkekyurdu.cankaya.edu.tr',
+    // İdari birimler
+    'pdb.cankaya.edu.tr', 'isg.cankaya.edu.tr',
+    'etik.cankaya.edu.tr', 'tto.cankaya.edu.tr',
+    'bmm.cankaya.edu.tr', 'bmidb.cankaya.edu.tr',
+    'dm.cankaya.edu.tr', 'gm.cankaya.edu.tr', 'hm.cankaya.edu.tr',
+    'ytim.cankaya.edu.tr',
+    // Araştırma merkezleri
+    'aaum.cankaya.edu.tr', 'akumer.cankaya.edu.tr',
+    'kadum.cankaya.edu.tr', 'kentmer.cankaya.edu.tr',
+    'sedam.cankaya.edu.tr',
+    // Spor ve Bologna
+    'sporkulubu.cankaya.edu.tr', 'bologna.cankaya.edu.tr',
+    // SPA siteler (Puppeteer ile taranacak)
+    'caa.cankaya.edu.tr',
 ];
 
 // Atlanacak subdomain'ler (login gerekli, boş, veya faydasız)
@@ -220,6 +269,13 @@ const SKIP_SUBDOMAINS = new Set([
     'corvus.cankaya.edu.tr',   // Sistem
     'video.cankaya.edu.tr',    // Video stream
     'survey.cankaya.edu.tr',   // Anket sistemi (login)
+    'ebys.cankaya.edu.tr',     // Elektronik Belge Yönetim Sistemi (login)
+    'evrak.cankaya.edu.tr',    // Evrak takip sistemi (login)
+]);
+
+// SPA/JS-rendered siteler — Puppeteer ile taranmalı (axios+cheerio yetersiz)
+const SPA_SUBDOMAINS = new Set([
+    'caa.cankaya.edu.tr',      // Angular SPA — araştırma bilgi sistemi
 ]);
 
 // =====================================================
@@ -382,7 +438,7 @@ function htmlToText(html) {
 }
 
 // =====================================================
-// SAYFA CRAWL (HTML)
+// SAYFA CRAWL (HTML) — statik siteler için axios
 // =====================================================
 async function fetchPage(url) {
     try {
@@ -402,6 +458,54 @@ async function fetchPage(url) {
         return res.data;
     } catch (err) {
         return null;
+    }
+}
+
+// =====================================================
+// SAYFA CRAWL (PUPPETEER) — SPA/JS-rendered siteler için
+// JS çalıştırır, Angular/React/Vue sayfalarını render eder
+// =====================================================
+async function fetchPageWithPuppeteer(url, waitMs = 5000) {
+    const browser = await getPuppeteerBrowser();
+    if (!browser) return null;
+
+    let page;
+    try {
+        page = await browser.newPage();
+        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36');
+        await page.setViewport({ width: 1920, height: 1080 });
+
+        // Gereksiz kaynakları engelle (hız için)
+        await page.setRequestInterception(true);
+        page.on('request', (req) => {
+            const type = req.resourceType();
+            if (['image', 'stylesheet', 'font', 'media'].includes(type)) {
+                req.abort();
+            } else {
+                req.continue();
+            }
+        });
+
+        await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
+        // SPA'nın tamamen render olması için ekstra bekle
+        await page.waitForTimeout(waitMs);
+
+        // Sayfadaki tüm metin içeriğini al (JS-rendered dahil)
+        const html = await page.content();
+
+        // Sayfadaki tüm iç linkleri de topla
+        const links = await page.evaluate(() => {
+            return Array.from(document.querySelectorAll('a[href]'))
+                .map(a => a.href)
+                .filter(href => href.startsWith('http'));
+        });
+
+        return { html, links };
+    } catch (err) {
+        console.error(`   ⚠️ Puppeteer fetch hatası (${url}): ${err.message}`);
+        return null;
+    } finally {
+        if (page) await page.close().catch(() => {});
     }
 }
 
@@ -804,6 +908,31 @@ const HOSTNAME_TO_DEPARTMENT = {
     // Ana site
     'cankaya.edu.tr': 'Çankaya Üniversitesi',
     'www.cankaya.edu.tr': 'Çankaya Üniversitesi',
+    // ─── YENİ KEŞFEDİLEN (2026-03-28) ───
+    'aday.cankaya.edu.tr': 'Aday Öğrenci Portalı',
+    'tanitim.cankaya.edu.tr': 'Tanıtım Ofisi',
+    'odb.cankaya.edu.tr': 'Ortak Dersler Bölümü',
+    'ydb.cankaya.edu.tr': 'Yabancı Diller Bölümü',
+    'kizyurdu.cankaya.edu.tr': 'Kız Öğrenci Yurdu',
+    'erkekyurdu.cankaya.edu.tr': 'Erkek Öğrenci Yurdu',
+    'pdb.cankaya.edu.tr': 'Personel Daire Başkanlığı',
+    'isg.cankaya.edu.tr': 'İş Sağlığı ve Güvenliği',
+    'etik.cankaya.edu.tr': 'Etik Kurulu',
+    'tto.cankaya.edu.tr': 'Teknoloji Transfer Ofisi',
+    'bmm.cankaya.edu.tr': 'İdari Birim',
+    'bmidb.cankaya.edu.tr': 'İdari Birim',
+    'dm.cankaya.edu.tr': 'İdari Birim',
+    'gm.cankaya.edu.tr': 'İdari Birim',
+    'hm.cankaya.edu.tr': 'İdari Birim',
+    'ytim.cankaya.edu.tr': 'Yapı Teknik İşler Müdürlüğü',
+    'aaum.cankaya.edu.tr': 'Atatürk İlkeleri Uygulama ve Araştırma Merkezi',
+    'akumer.cankaya.edu.tr': 'Akustik Uygulama ve Araştırma Merkezi',
+    'kadum.cankaya.edu.tr': 'Kadın Çalışmaları Araştırma Merkezi',
+    'kentmer.cankaya.edu.tr': 'Kent ve Bölge Planlama Araştırma Merkezi',
+    'sedam.cankaya.edu.tr': 'Sürekli Eğitim Merkezi',
+    'sporkulubu.cankaya.edu.tr': 'Spor Kulübü',
+    'bologna.cankaya.edu.tr': 'Bologna / AKTS Bilgi Sistemi',
+    'caa.cankaya.edu.tr': 'Araştırma Bilgi Sistemi (GCRIS)',
 };
 
 // =====================================================
@@ -901,15 +1030,84 @@ async function isSubdomainReachable(hostname) {
 }
 
 // =====================================================
+// SPA/JS-RENDERED SİTE CRAWL (Puppeteer ile)
+// Angular, React, Vue gibi client-side rendered siteleri tarar
+// =====================================================
+async function crawlSPA(baseUrl, hostname, deptLabel) {
+    const sourceId = await ensureRagSource(baseUrl);
+    if (!sourceId) return { pages: 0, chunks: 0 };
+
+    const visited = new Set();
+    const queue = [baseUrl];
+    let totalPages = 0;
+    let totalChunks = 0;
+
+    console.log(`   🔧 Puppeteer ile SPA taranıyor...`);
+
+    while (queue.length > 0 && totalPages < MAX_PAGES_PER_DOMAIN) {
+        const url = queue.shift();
+        const normalizedUrl = url.replace(/\/$/, '').replace(/#.*$/, '');
+        if (visited.has(normalizedUrl)) continue;
+        visited.add(normalizedUrl);
+
+        const result = await fetchPageWithPuppeteer(url);
+        if (!result || !result.html) continue;
+
+        const $ = cheerio.load(result.html);
+        const title = $('title').text().trim() || url;
+        const rawText = htmlToText(result.html);
+
+        if (rawText.length < 100) {
+            // SPA boş sayfa döndüyse — metin çıkarılamadı
+            console.log(`   ⏩ [SPA] ${url} — yetersiz metin (${rawText.length} char)`);
+            continue;
+        }
+
+        const text = `[${deptLabel}] ${title}\n${rawText}`;
+        const cleanTitle = title.replace(/\s+/g, ' ').substring(0, 200);
+
+        const chunkCount = await saveDocumentAndChunks(sourceId, url, cleanTitle, text, {
+            source: 'subdomain_crawl', type: 'spa_html',
+            domain: hostname,
+            department: deptLabel !== hostname ? deptLabel : null,
+        });
+        totalPages++;
+        totalChunks += chunkCount;
+        console.log(`   ✅ [SPA ${totalPages}] ${cleanTitle.substring(0, 60)} (${chunkCount} chunk)`);
+
+        // SPA iç linklerini queue'ya ekle (aynı hostname)
+        for (const link of (result.links || [])) {
+            try {
+                const linkHost = new URL(link).hostname;
+                if (linkHost === hostname && !visited.has(link.replace(/\/$/, '').replace(/#.*$/, ''))) {
+                    queue.push(link);
+                }
+            } catch (_) {}
+        }
+
+        await smartDelay(1500); // SPA'lar daha ağır, biraz daha bekle
+    }
+
+    console.log(`   ✅ ${hostname}: ${totalPages} SPA sayfa = ${totalChunks} chunk`);
+    return { pages: totalPages, chunks: totalChunks };
+}
+
+// =====================================================
 // BİR SUBDOMAİN'İ TARA (HTML + PDF)
 // =====================================================
 async function crawlSubdomain(baseUrl) {
     const hostname = new URL(baseUrl).hostname;
     const deptLabel = getDepartmentLabel(hostname);
+    const isSPA = SPA_SUBDOMAINS.has(hostname);
 
     console.log(`\n${'─'.repeat(50)}`);
-    console.log(`🌐 Taranıyor: ${baseUrl} [${deptLabel}]`);
+    console.log(`🌐 Taranıyor: ${baseUrl} [${deptLabel}]${isSPA ? ' 🔧 SPA/Puppeteer' : ''}`);
     console.log('─'.repeat(50));
+
+    // SPA siteler için Puppeteer ile özel crawl
+    if (isSPA) {
+        return await crawlSPA(baseUrl, hostname, deptLabel);
+    }
 
     const sourceId = await ensureRagSource(baseUrl);
     if (!sourceId) return { pages: 0, chunks: 0 };
@@ -1150,4 +1348,7 @@ async function crawlSubdomain(baseUrl) {
             console.log(`   - ${f.hostname}: ${f.status}${f.error ? ' (' + f.error + ')' : ''}`);
         }
     }
+
+    // Puppeteer browser'ı kapat
+    await closePuppeteerBrowser();
 })();
