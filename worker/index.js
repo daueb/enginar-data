@@ -309,8 +309,25 @@ Cümle: ${localNormalized}`;
   }
 }
 
-// ─── Gemini Embedding ───
-async function getQueryEmbedding(text, apiKey) {
+// ─── Gemini Embedding (KV cache destekli) ───
+// Aynı soru tekrar sorulursa API'ye gitmez, KV cache'ten döner.
+// 2000 kişi/gün bile olsa popüler sorular cache'ten gelir → API kotası korunur.
+async function getQueryEmbedding(text, apiKey, kvStore) {
+  // Cache key: sorunun hash'i (küçük harf, trim)
+  const normalizedText = text.toLowerCase().trim().substring(0, 500);
+  const cacheKey = `emb:${await hashText(normalizedText)}`;
+
+  // 1. KV cache'te var mı?
+  if (kvStore) {
+    try {
+      const cached = await kvStore.get(cacheKey);
+      if (cached) {
+        return JSON.parse(cached);
+      }
+    } catch (_) {} // Cache hatası olursa API'ye devam et
+  }
+
+  // 2. Gemini API'den al
   try {
     const res = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${apiKey}`,
@@ -331,11 +348,29 @@ async function getQueryEmbedding(text, apiKey) {
     }
 
     const data = await res.json();
-    return data.embedding.values;
+    const embedding = data.embedding.values;
+
+    // 3. Cache'e kaydet (7 gün TTL — sorular genelde haftalık döngüsel)
+    if (kvStore && embedding) {
+      try {
+        await kvStore.put(cacheKey, JSON.stringify(embedding), { expirationTtl: 604800 });
+      } catch (_) {} // Cache yazma hatası önemli değil
+    }
+
+    return embedding;
   } catch (e) {
     console.error('Gemini embedding error:', e.message);
     return null; // Fallback to text search
   }
+}
+
+// Basit hash fonksiyonu (KV key için)
+async function hashText(text) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(text);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.slice(0, 12).map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
 // ─── Supabase Vektör Araması ───
@@ -909,7 +944,7 @@ async function smartSearch(question, embedding, env) {
   // 2. Topic (konu) ayrı arama — ders kodu çıkarılmış soru
   if (topicQuery && topicQuery.length > 3 && topicQuery !== question) {
     console.log(`Smart search - topic query: "${topicQuery}"`);
-    const topicEmbedding = await getQueryEmbedding(topicQuery, GEMINI_API_KEY);
+    const topicEmbedding = await getQueryEmbedding(topicQuery, GEMINI_API_KEY, env.RATE_LIMIT);
     if (topicEmbedding) {
       const topicChunks = await searchChunks(topicEmbedding, SUPABASE_URL, SUPABASE_SERVICE_KEY, 5);
       addChunks(topicChunks);
@@ -975,7 +1010,7 @@ async function handleChat(request, env) {
     const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY);
 
     // 1. Normalize edilmiş soruyu embed et (Gemini çökerse null döner)
-    const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY);
+    const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY, env.RATE_LIMIT);
 
     // 2. Akıllı arama: soruyu parçalara ayır + çoklu vektör araması
     const chunks = await smartSearch(normalizedQuestion, embedding, env);
@@ -1078,7 +1113,7 @@ export default {
       try {
         const { question } = await request.json();
         const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY);
-        const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY);
+        const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY, env.RATE_LIMIT);
 
         // Hybrid search — chat endpoint ile aynı mantık
         const chunks = await smartSearch(normalizedQuestion, embedding, env);
