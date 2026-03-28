@@ -44,6 +44,14 @@ async function throttle() {
     }
 }
 
+// Türkçe sayısal format düzeltme: "5,00" → 5.0, "3" → 3.0
+function parseNumSafe(v) {
+    if (v == null || v === '') return null;
+    const s = String(v).replace(',', '.');
+    const n = parseFloat(s);
+    return isNaN(n) ? null : n;
+}
+
 const API_BASE = 'https://ogbs.cankaya.edu.tr/Api/InformationPack';
 const API_HEADERS = {
     'Authorization': `Bearer ${BEARER_TOKEN}`,
@@ -439,6 +447,7 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
                 courseId = courseMatch?.id || null;
             }
 
+            // API'den gelen sayısal değerler Türkçe format olabilir: "5,00" → 5.0
             await supabase.from('curriculum_courses').insert({
                 curriculum_id: curriculumId,
                 course_id: courseId,
@@ -448,10 +457,10 @@ async function syncCurricula(programId, programName, programNameEN, deptId, allB
                 course_code: courseCode,
                 course_name: courseName,
                 course_name_en: courseNameEN,
-                theory_hours: teorik || null,
-                lab_hours: uygulama || null,
-                credit: kredi || null,
-                ects: akts || null,
+                theory_hours: parseNumSafe(teorik),
+                lab_hours: parseNumSafe(uygulama),
+                credit: parseNumSafe(kredi),
+                ects: parseNumSafe(akts),
                 is_elective: !!secmeli
             });
 
@@ -486,10 +495,10 @@ async function syncCourseDetail(bimKodu, mufNo, bolumKodu) {
         level: data.DersSeviyesi || data.DersDuzeyi || data.dersDuzeyi || '',
         type: data.DersTuru || data.dersTuru || data.DersTipAd || '',
         delivery: data.DersVerilisBicimi || data.DersVerilis || data.dersVerilis || '',
-        theory_hours: data.Teori || data.Teorik || data.teorik || null,
-        lab_hours: data.Pratik || data.Uygulama || data.uygulama || null,
-        credit: data.Kredi || data.kredi || null,
-        ects: data.ECTSKredi || data.AKTS || data.akts || null,
+        theory_hours: parseNumSafe(data.Teori || data.Teorik || data.teorik),
+        lab_hours: parseNumSafe(data.Pratik || data.Uygulama || data.uygulama),
+        credit: parseNumSafe(data.Kredi || data.kredi),
+        ects: parseNumSafe(data.ECTSKredi || data.AKTS || data.akts),
         description: stripHtml(data.DersTanimi || data.dersTanimi || data.Tanim || ''),
         teaching_methods: stripHtml(data.OgretmeYontemleri || data.ogretmeYontemleri || ''),
         textbook: stripHtml(data.DersKaynaklar || data.dersKaynaklar || data.Textbook || ''),

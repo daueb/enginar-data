@@ -988,14 +988,18 @@ function getDepartmentLabel(hostname) {
         const trHost = hostname.replace('en.', '');
         if (HOSTNAME_TO_DEPARTMENT[trHost]) return HOSTNAME_TO_DEPARTMENT[trHost] + ' (EN)';
     }
-    // Ders sitelerini yakala (ör: ce102.cankaya.edu.tr -> İnşaat Mühendisliği Dersi)
-    const dersMatch = hostname.match(/^([a-z]+)\d+\.cankaya\.edu\.tr$/);
+    // Ders sitelerini yakala (ör: ce102.cankaya.edu.tr -> CE 102 Dersi (İnşaat Müh.))
+    const dersMatch = hostname.match(/^([a-z]+)(\d+)\.cankaya\.edu\.tr$/);
     if (dersMatch) {
         const prefix = dersMatch[1];
+        const courseNo = dersMatch[2];
         const deptMap = { ce: 'İnşaat Müh.', me: 'Makine Müh.', ee: 'Elektrik-Elektronik Müh.', ece: 'Elektronik ve Haberleşme Müh.',
             mse: 'Malzeme Bilimi', math: 'Matematik', psi: 'Psikoloji', ell: 'İngiliz Dili', inar: 'İç Mimarlık',
-            ceng: 'Bilgisayar Müh.', mece: 'Mekatronik Müh.' };
-        if (deptMap[prefix]) return `${deptMap[prefix]} Ders Sayfası`;
+            ceng: 'Bilgisayar Müh.', mece: 'Mekatronik Müh.', ada: 'Mimarlık', hist: 'Tarih',
+            turk: 'Türk Dili', phys: 'Fizik', chem: 'Kimya', econ: 'İktisat', law: 'Hukuk' };
+        const courseCode = `${prefix.toUpperCase()} ${courseNo}`;
+        if (deptMap[prefix]) return `${courseCode} Dersi (${deptMap[prefix]})`;
+        return `${courseCode} Ders Sayfası`;
     }
     return hostname; // fallback: hostname'i döndür
 }

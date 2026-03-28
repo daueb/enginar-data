@@ -3,12 +3,17 @@
  *
  * Akış:
  * 1. Kullanıcı sorusu gelir
- * 2. Rate limit kontrol (kişi başı 20 soru/gün)
- * 3. Soruyu Gemini Embedding ile vektöre çevir
- * 4. Supabase pgvector ile en yakın 5 chunk bul
- * 5. Chunk'ları Groq Llama 3.3 70B'ye gönder (temperature: 0.1)
- * 6. Groq çökerse → Gemini Flash fallback
+ * 2. Rate limit kontrol (kişi başı 50 soru/gün)
+ * 3. Soruyu embedding'e çevir (Gemini → Jina fallback, KV cache)
+ * 4. Supabase pgvector ile en yakın chunk'ları bul
+ * 5. LLM zinciri: Groq → Cerebras → SambaNova → Together AI → Gemini
+ * 6. Query fix: Gemini Flash Lite → Cohere Command R fallback
  * 7. Cevap + kaynak linkler → kullanıcıya
+ *
+ * Günlük kapasite (~2000+ DAU):
+ * - LLM: Groq 14.4k + Cerebras 12k + SambaNova 8k + Together 6k + Gemini ∞ = ~40k+
+ * - Embedding: Gemini 1500/gün (cache ile ~3500 efektif) + Jina 1M token/ay yedek
+ * - Query fix: Gemini ∞ + Cohere 1000/dakika yedek
  */
 
 const SYSTEM_PROMPT = `Sen **Enginar** — Çankaya Üniversitesi kampüsünün içinden biri gibi konuşan, öğrencilerin güvendiği bir kampüs asistanısın. Dışarıdan bakan bir yapay zeka değilsin; koridorları bilen, yemekhane sırasında ders anlatan, sınav haftası stresi yaşamış bir kampüs arkadaşısın.
@@ -249,7 +254,7 @@ function normalizeQueryLocal(question) {
   return normalized.join(' ');
 }
 
-async function normalizeQuery(question, apiKey) {
+async function normalizeQuery(question, apiKey, cohereKey = null) {
   // 1. Önce lokal sözlük ile hızlı düzeltme
   const localNormalized = normalizeQueryLocal(question);
 
@@ -303,16 +308,62 @@ Cümle: ${localNormalized}`;
     console.log(`Query normalized (local only): "${question}" → "${localNormalized}"`);
     return localNormalized;
   } catch (e) {
-    console.error('Query normalize error:', e.message);
-    console.log(`Query normalized (local only): "${question}" → "${localNormalized}"`);
-    return localNormalized;
+    console.error('Gemini query normalize error:', e.message);
   }
+
+  // 3. Gemini başarısız olduysa Cohere'ı dene
+  try {
+    if (cohereKey) {
+      const cohereResult = await normalizeQueryCohere(localNormalized, cohereKey);
+      if (cohereResult) {
+        console.log(`Query normalized (Cohere): "${question}" → "${cohereResult}"`);
+        return cohereResult;
+      }
+    }
+  } catch (e) {
+    console.error('Cohere query normalize error:', e.message);
+  }
+
+  console.log(`Query normalized (local only): "${question}" → "${localNormalized}"`);
+  return localNormalized;
 }
 
-// ─── Gemini Embedding (KV cache destekli) ───
+// ─── Cohere Command R — Query Normalize Fallback ───
+async function normalizeQueryCohere(text, apiKey) {
+  const res = await fetch('https://api.cohere.com/v2/chat', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model: 'command-r',
+      messages: [
+        {
+          role: 'user',
+          content: `Bu Türkçe cümledeki yazım hatalarını ve eksik Türkçe karakterleri düzelt. ASCII karakterleri bağlama göre Türkçe karşılıklarına çevir (u→ü, o→ö, c→ç, s→ş, i→ı, g→ğ). Kelimeleri DEĞİŞTİRME. SADECE düzeltilmiş cümleyi yaz:\n\n${text}`
+        }
+      ],
+      temperature: 0,
+      max_tokens: 200,
+    })
+  });
+
+  if (!res.ok) return null;
+
+  const data = await res.json();
+  const result = data.message?.content?.[0]?.text?.trim();
+  if (result && result.length > 0 && result.length < text.length * 3) {
+    return result;
+  }
+  return null;
+}
+
+// ─── Embedding (KV cache + multi-provider) ───
+// Zincir: KV cache → Gemini Embedding 001 → Jina Embedding v2 (768d)
 // Aynı soru tekrar sorulursa API'ye gitmez, KV cache'ten döner.
 // 2000 kişi/gün bile olsa popüler sorular cache'ten gelir → API kotası korunur.
-async function getQueryEmbedding(text, apiKey, kvStore) {
+async function getQueryEmbedding(text, geminiKey, kvStore, jinaKey = null) {
   // Cache key: sorunun hash'i (küçük harf, trim)
   const normalizedText = text.toLowerCase().trim().substring(0, 500);
   const cacheKey = `emb:${await hashText(normalizedText)}`;
@@ -322,15 +373,17 @@ async function getQueryEmbedding(text, apiKey, kvStore) {
     try {
       const cached = await kvStore.get(cacheKey);
       if (cached) {
+        console.log('Embedding cache HIT');
         return JSON.parse(cached);
       }
     } catch (_) {} // Cache hatası olursa API'ye devam et
   }
 
-  // 2. Gemini API'den al
+  // 2. Gemini Embedding API
+  let embedding = null;
   try {
     const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${geminiKey}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -341,27 +394,53 @@ async function getQueryEmbedding(text, apiKey, kvStore) {
       }
     );
 
-    if (!res.ok) {
-      const err = await res.text();
-      console.error('Gemini embedding failed:', res.status, err);
-      return null; // Fallback to text search
+    if (res.ok) {
+      const data = await res.json();
+      embedding = data.embedding.values;
+      console.log('Embedding: Gemini ✅');
+    } else {
+      console.error('Gemini embedding failed:', res.status, await res.text());
     }
-
-    const data = await res.json();
-    const embedding = data.embedding.values;
-
-    // 3. Cache'e kaydet (7 gün TTL — sorular genelde haftalık döngüsel)
-    if (kvStore && embedding) {
-      try {
-        await kvStore.put(cacheKey, JSON.stringify(embedding), { expirationTtl: 604800 });
-      } catch (_) {} // Cache yazma hatası önemli değil
-    }
-
-    return embedding;
   } catch (e) {
     console.error('Gemini embedding error:', e.message);
-    return null; // Fallback to text search
   }
+
+  // 3. Gemini başarısız → Jina Embedding v2 (768d, uyumlu)
+  if (!embedding && jinaKey) {
+    try {
+      const res = await fetch('https://api.jina.ai/v1/embeddings', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${jinaKey}`,
+        },
+        body: JSON.stringify({
+          model: 'jina-embeddings-v2-base-en',
+          input: [text.substring(0, 2000)],
+          dimensions: 768,
+        })
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        embedding = data.data?.[0]?.embedding;
+        console.log('Embedding: Jina v2 ✅ (fallback)');
+      } else {
+        console.error('Jina embedding failed:', res.status, await res.text());
+      }
+    } catch (e) {
+      console.error('Jina embedding error:', e.message);
+    }
+  }
+
+  // 4. Cache'e kaydet (7 gün TTL)
+  if (kvStore && embedding) {
+    try {
+      await kvStore.put(cacheKey, JSON.stringify(embedding), { expirationTtl: 604800 });
+    } catch (_) {} // Cache yazma hatası önemli değil
+  }
+
+  return embedding; // null olursa text search'e fallback
 }
 
 // Basit hash fonksiyonu (KV key için)
@@ -518,19 +597,18 @@ function formatTextResult(c, similarity) {
   };
 }
 
-// ─── Groq LLM ───
-async function askGroq(question, chunks, apiKey, appContext = '', history = []) {
+// ─── OpenAI-uyumlu LLM çağrısı (Groq, Cerebras, SambaNova, Together AI) ───
+// Tüm bu provider'lar aynı OpenAI API formatını kullanır
+async function askOpenAICompatible(question, chunks, apiKey, apiUrl, model, providerName, appContext = '', history = []) {
   const ragContext = chunks.map((c, i) => {
     let header = `[Kaynak ${i + 1}]`;
     if (c.metadata?.doc_year) header += ` (${c.metadata.doc_year})`;
     return `${header} ${c.chunk_text}\nURL: ${c.url || 'N/A'}`;
   }).join('\n\n---\n\n');
 
-  // Conversation history'yi mesaj listesine ekle
   const messages = [
     { role: 'system', content: SYSTEM_PROMPT },
   ];
-  // Son mesaj geçmişini ekle (bağlam için)
   if (history && history.length > 0) {
     for (const msg of history) {
       messages.push({ role: msg.role, content: msg.content });
@@ -538,14 +616,14 @@ async function askGroq(question, chunks, apiKey, appContext = '', history = []) 
   }
   messages.push({ role: 'user', content: `KAYNAKLAR:\n${ragContext}${appContext}\n\n---\n\nSORU: ${question}` });
 
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+  const res = await fetch(apiUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
+      model,
       temperature: 0.7,
       max_tokens: 1024,
       messages,
@@ -554,14 +632,62 @@ async function askGroq(question, chunks, apiKey, appContext = '', history = []) 
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`Groq hatası: ${res.status} - ${err}`);
+    throw new Error(`${providerName} hatası: ${res.status} - ${err}`);
   }
 
   const data = await res.json();
   return data.choices[0].message.content;
 }
 
-// ─── Gemini Flash Fallback ───
+// ─── LLM Provider Zinciri ───
+// Sırayla dener: Groq → Cerebras → SambaNova → Together AI → Gemini
+// Her provider çökerse/kota dolarsa otomatik sonrakine geçer
+async function askLLMChain(question, chunks, env, appContext = '', history = []) {
+  const providers = [
+    {
+      name: 'Groq',
+      key: env.GROQ_API_KEY,
+      url: 'https://api.groq.com/openai/v1/chat/completions',
+      model: 'llama-3.3-70b-versatile',
+    },
+    {
+      name: 'Cerebras',
+      key: env.CEREBRAS_API_KEY,
+      url: 'https://api.cerebras.ai/v1/chat/completions',
+      model: 'llama-3.3-70b',
+    },
+    {
+      name: 'SambaNova',
+      key: env.SAMBANOVA_API_KEY,
+      url: 'https://api.sambanova.ai/v1/chat/completions',
+      model: 'Meta-Llama-3.3-70B-Instruct',
+    },
+    {
+      name: 'Together',
+      key: env.TOGETHER_API_KEY,
+      url: 'https://api.together.xyz/v1/chat/completions',
+      model: 'meta-llama/Llama-3.3-70B-Instruct-Turbo',
+    },
+  ];
+
+  // OpenAI-uyumlu provider'ları sırayla dene
+  for (const p of providers) {
+    if (!p.key) continue; // Key yoksa atla
+    try {
+      const answer = await askOpenAICompatible(question, chunks, p.key, p.url, p.model, p.name, appContext, history);
+      console.log(`LLM provider: ${p.name} ✅`);
+      return answer;
+    } catch (err) {
+      console.log(`${p.name} failed: ${err.message}, trying next...`);
+    }
+  }
+
+  // Son çare: Gemini (Google, kota neredeyse sınırsız)
+  console.log('All OpenAI-compatible providers failed, falling back to Gemini');
+  return await askGemini(question, chunks, env.GEMINI_API_KEY, appContext, history);
+}
+
+// ─── Gemini Flash (son fallback LLM) ───
 async function askGemini(question, chunks, apiKey, appContext = '', history = []) {
   const ragContext = chunks.map((c, i) => {
     let header = `[Kaynak ${i + 1}]`;
@@ -569,7 +695,6 @@ async function askGemini(question, chunks, apiKey, appContext = '', history = []
     return `${header} ${c.chunk_text}\nURL: ${c.url || 'N/A'}`;
   }).join('\n\n---\n\n');
 
-  // Conversation history'yi Gemini formatına çevir
   const contents = [];
   if (history && history.length > 0) {
     for (const msg of history) {
@@ -944,7 +1069,7 @@ async function smartSearch(question, embedding, env) {
   // 2. Topic (konu) ayrı arama — ders kodu çıkarılmış soru
   if (topicQuery && topicQuery.length > 3 && topicQuery !== question) {
     console.log(`Smart search - topic query: "${topicQuery}"`);
-    const topicEmbedding = await getQueryEmbedding(topicQuery, GEMINI_API_KEY, env.RATE_LIMIT);
+    const topicEmbedding = await getQueryEmbedding(topicQuery, GEMINI_API_KEY, env.RATE_LIMIT, env.JINA_API_KEY);
     if (topicEmbedding) {
       const topicChunks = await searchChunks(topicEmbedding, SUPABASE_URL, SUPABASE_SERVICE_KEY, 5);
       addChunks(topicChunks);
@@ -1007,10 +1132,10 @@ async function handleChat(request, env) {
 
   try {
     // 0. Sorguyu Türkçe karakterlere normalize et
-    const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY);
+    const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY, env.COHERE_API_KEY);
 
     // 1. Normalize edilmiş soruyu embed et (Gemini çökerse null döner)
-    const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY, env.RATE_LIMIT);
+    const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY, env.RATE_LIMIT, env.JINA_API_KEY);
 
     // 2. Akıllı arama: soruyu parçalara ayır + çoklu vektör araması
     const chunks = await smartSearch(normalizedQuestion, embedding, env);
@@ -1025,12 +1150,7 @@ async function handleChat(request, env) {
         if (structCtx) {
           // Yapısal veri var — RAG chunk olmadan da cevaplayabiliriz
           const fullCtx = appCtx + structCtx;
-          let answer;
-          try {
-            answer = await askGroq(question, [], env.GROQ_API_KEY, fullCtx, history || []);
-          } catch (groqErr) {
-            answer = await askGemini(question, [], env.GEMINI_API_KEY, fullCtx, history || []);
-          }
+          const answer = await askLLMChain(question, [], env, fullCtx, history || []);
           return new Response(JSON.stringify({ answer, sources: [] }), {
             headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' }
           });
@@ -1060,15 +1180,9 @@ async function handleChat(request, env) {
       structuredContext = formatStructuredData(structuredData);
     }
 
-    // 6. LLM'e sor (Groq → Gemini fallback) — orijinal soruyu gönder
+    // 6. LLM zinciri: Groq → Cerebras → SambaNova → Together AI → Gemini
     const fullContext = appContext + structuredContext;
-    let answer;
-    try {
-      answer = await askGroq(question, chunks, env.GROQ_API_KEY, fullContext, history || []);
-    } catch (groqErr) {
-      console.log('Groq failed, falling back to Gemini:', groqErr.message);
-      answer = await askGemini(question, chunks, env.GEMINI_API_KEY, fullContext, history || []);
-    }
+    const answer = await askLLMChain(question, chunks, env, fullContext, history || []);
 
     return new Response(JSON.stringify({ answer, sources }), {
       headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' }
@@ -1112,8 +1226,8 @@ export default {
     if (url.pathname === '/debug' && request.method === 'POST') {
       try {
         const { question } = await request.json();
-        const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY);
-        const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY, env.RATE_LIMIT);
+        const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY, env.COHERE_API_KEY);
+        const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY, env.RATE_LIMIT, env.JINA_API_KEY);
 
         // Hybrid search — chat endpoint ile aynı mantık
         const chunks = await smartSearch(normalizedQuestion, embedding, env);
