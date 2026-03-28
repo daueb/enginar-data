@@ -511,7 +511,7 @@ async function askGroq(question, chunks, apiKey, appContext = '', history = []) 
     },
     body: JSON.stringify({
       model: 'llama-3.3-70b-versatile',
-      temperature: 1.0,
+      temperature: 0.7,
       max_tokens: 1024,
       messages,
     })
@@ -558,7 +558,7 @@ async function askGemini(question, chunks, apiKey, appContext = '', history = []
         systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
         contents,
         generationConfig: {
-          temperature: 1.0,
+          temperature: 0.7,
           maxOutputTokens: 1024,
         }
       })
@@ -733,12 +733,16 @@ function formatStructuredData(data) {
     });
   }
 
-  if (data.foods?.length > 0) {
-    parts.push('\n🍽️ YEMEK MENÜSÜ (veritabanından):');
-    data.foods.forEach(f => {
-      const items = [f.soup, f.main, f.side, f.salad, f.extra].filter(Boolean).join(', ');
-      parts.push(`- ${f.day || f.date}: ${items}`);
-    });
+  if (data.foods !== undefined) {
+    if (data.foods?.length > 0) {
+      parts.push('\n🍽️ YEMEK MENÜSÜ (veritabanından):');
+      data.foods.forEach(f => {
+        const items = [f.soup, f.main, f.side, f.salad, f.extra].filter(Boolean).join(', ');
+        parts.push(`- ${f.day || f.date}: ${items}`);
+      });
+    } else {
+      parts.push('\n🍽️ YEMEK MENÜSÜ: Şu an için yemekhane menü verisi bulunmuyor. Menü bilgisi uydurmayın, kullanıcıyı yemekhane veya üniversite web sitesine yönlendirin.');
+    }
   }
 
   if (data.exams?.length > 0) {

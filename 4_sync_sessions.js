@@ -40,6 +40,9 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
 
     if (classroomId) {
         await supabase.from('course_sessions').delete().eq('classroom_id', classroomId);
+    } else {
+        // Belirsiz/online sınıf: bu sefer taranacak derslerin eski null-classroom kayıtlarını
+        // session ekleme sırasında tek tek temizleyeceğiz (aşağıda)
     }
 
     try {
@@ -147,6 +150,16 @@ const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
 
             // Ders varsa kaydet (eğitmen opsiyonel)
             if (courseData) {
+                // Belirsiz/online sınıf: önce aynı course+section+day+time duplicate kontrolü
+                if (!classroomId) {
+                    await supabase.from('course_sessions').delete()
+                        .eq('course_id', courseData.id)
+                        .eq('section', section)
+                        .eq('day_of_week', session.day)
+                        .eq('time', session.time)
+                        .is('classroom_id', null);
+                }
+
                 const { error: insertError } = await supabase.from('course_sessions').insert({
                     course_id: courseData.id,
                     classroom_id: classroomId,

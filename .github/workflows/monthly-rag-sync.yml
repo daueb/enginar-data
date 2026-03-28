@@ -144,7 +144,46 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node 8_fill_embeddings.js
 
-  # --- JOB 4: SADECE Script 8 (Eksik embedding doldur) ---
+  # --- JOB 4: JSON Export + R2 Upload (Bilgipaketi sonrası) ---
+  export-json:
+    needs: [vectorize]
+    if: always() && (github.event_name == 'schedule' || inputs.run_bilgipaketi == true || inputs.run_vectorize == true)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - name: Supabase → JSON Export
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: node sync_supabase.js
+      - name: Git Commit JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git diff --staged --quiet || git commit -m "🔄 Monthly sync: JSON export after bilgipaketi"
+          git push
+      - name: Upload to Cloudflare R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          for f in data/*.json; do
+            filename=$(basename "$f")
+            aws s3 cp "$f" "s3://${R2_BUCKET}/data/${filename}" \
+              --endpoint-url "${R2_ENDPOINT}" \
+              --content-type "application/json" 2>/dev/null || echo "⚠️ R2 upload skipped: $filename"
+          done
+
+  # --- JOB 5: SADECE Script 8 (Eksik embedding doldur) ---
   fill-embeddings-only:
     if: ${{ inputs.run_fill_only == true }}
     runs-on: ubuntu-latest
