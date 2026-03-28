@@ -254,9 +254,21 @@ function normalizeQueryLocal(question) {
   return normalized.join(' ');
 }
 
-async function normalizeQuery(question, apiKey, cohereKey = null) {
+async function normalizeQuery(question, apiKey, cohereKey = null, kvStore = null) {
   // 1. Önce lokal sözlük ile hızlı düzeltme
   const localNormalized = normalizeQueryLocal(question);
+
+  // 1.5. KV cache kontrol — aynı soru daha önce düzeltildiyse API'ye gitme
+  if (kvStore) {
+    try {
+      const cacheKey = `qf:${await hashText(localNormalized.toLowerCase().trim())}`;
+      const cached = await kvStore.get(cacheKey);
+      if (cached) {
+        console.log(`Query fix cache HIT: "${question}" → "${cached}"`);
+        return cached;
+      }
+    } catch (_) {}
+  }
 
   // 2. Sonra Gemini ile akıllı düzeltme (typo fix, context-aware)
   try {
@@ -303,6 +315,13 @@ Cümle: ${localNormalized}`;
 
     if (geminiResult && geminiResult.length > 0 && geminiResult.length < question.length * 3) {
       console.log(`Query normalized: "${question}" → local: "${localNormalized}" → gemini: "${geminiResult}"`);
+      // Cache'e kaydet (3 gün TTL)
+      if (kvStore) {
+        try {
+          const ck = `qf:${await hashText(localNormalized.toLowerCase().trim())}`;
+          await kvStore.put(ck, geminiResult, { expirationTtl: 259200 });
+        } catch (_) {}
+      }
       return geminiResult;
     }
     console.log(`Query normalized (local only): "${question}" → "${localNormalized}"`);
@@ -317,6 +336,13 @@ Cümle: ${localNormalized}`;
       const cohereResult = await normalizeQueryCohere(localNormalized, cohereKey);
       if (cohereResult) {
         console.log(`Query normalized (Cohere): "${question}" → "${cohereResult}"`);
+        // Cache'e kaydet (3 gün TTL)
+        if (kvStore) {
+          try {
+            const ck = `qf:${await hashText(localNormalized.toLowerCase().trim())}`;
+            await kvStore.put(ck, cohereResult, { expirationTtl: 259200 });
+          } catch (_) {}
+        }
         return cohereResult;
       }
     }
@@ -602,6 +628,7 @@ function formatTextResult(c, similarity) {
 async function askOpenAICompatible(question, chunks, apiKey, apiUrl, model, providerName, appContext = '', history = []) {
   const ragContext = chunks.map((c, i) => {
     let header = `[Kaynak ${i + 1}]`;
+    if (c.department) header += ` [${c.department}]`;
     if (c.metadata?.doc_year) header += ` (${c.metadata.doc_year})`;
     return `${header} ${c.chunk_text}\nURL: ${c.url || 'N/A'}`;
   }).join('\n\n---\n\n');
@@ -691,6 +718,7 @@ async function askLLMChain(question, chunks, env, appContext = '', history = [])
 async function askGemini(question, chunks, apiKey, appContext = '', history = []) {
   const ragContext = chunks.map((c, i) => {
     let header = `[Kaynak ${i + 1}]`;
+    if (c.department) header += ` [${c.department}]`;
     if (c.metadata?.doc_year) header += ` (${c.metadata.doc_year})`;
     return `${header} ${c.chunk_text}\nURL: ${c.url || 'N/A'}`;
   }).join('\n\n---\n\n');
@@ -1132,7 +1160,7 @@ async function handleChat(request, env) {
 
   try {
     // 0. Sorguyu Türkçe karakterlere normalize et
-    const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY, env.COHERE_API_KEY);
+    const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY, env.COHERE_API_KEY, env.RATE_LIMIT);
 
     // 1. Normalize edilmiş soruyu embed et (Gemini çökerse null döner)
     const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY, env.RATE_LIMIT, env.JINA_API_KEY);
@@ -1226,7 +1254,7 @@ export default {
     if (url.pathname === '/debug' && request.method === 'POST') {
       try {
         const { question } = await request.json();
-        const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY, env.COHERE_API_KEY);
+        const normalizedQuestion = await normalizeQuery(question, env.GEMINI_API_KEY, env.COHERE_API_KEY, env.RATE_LIMIT);
         const embedding = await getQueryEmbedding(normalizedQuestion, env.GEMINI_API_KEY, env.RATE_LIMIT, env.JINA_API_KEY);
 
         // Hybrid search — chat endpoint ile aynı mantık
