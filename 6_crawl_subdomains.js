@@ -990,7 +990,7 @@ async function crawlSubdomain(baseUrl) {
 
             totalPdfs++;
             totalChunks += chunkCount;
-            console.log(`   📎 [PDF ${totalPdfs}] ${pdfName.substring(0, 50)} (${pdfResult.pages}p, ${chunkCount} chunk)`);
+            console.log(`   📎 [PDF ${totalPdfs}] ${pdfName.substring(0, 50)} (${pdfResult?.pages || 0}p, ${chunkCount} chunk)`);
             await smartDelay(chunkCount === 0 ? 200 : 600);
         }
     }
@@ -1071,16 +1071,15 @@ async function crawlSubdomain(baseUrl) {
     console.log(`⭐ ${priorityHostnames.length} öncelikli subdomain ilk sırada taranacak\n`);
 
     // Parça bazlı çalıştırma desteği (CRAWL_PART=1, CRAWL_TOTAL=3 gibi)
+    // Round-robin dağıtım: ağır ve hafif siteler tüm part'lara eşit dağılır
     const crawlPart = parseInt(process.env.CRAWL_PART) || 0;   // 0 = hepsini çalıştır
     const crawlTotal = parseInt(process.env.CRAWL_TOTAL) || 1;
     let finalList = orderedList;
 
     if (crawlPart > 0 && crawlTotal > 1) {
-        const chunkSize = Math.ceil(finalList.length / crawlTotal);
-        const start = (crawlPart - 1) * chunkSize;
-        const end = Math.min(start + chunkSize, finalList.length);
-        finalList = orderedList.slice(start, end);
-        console.log(`🔀 Parça ${crawlPart}/${crawlTotal}: subdomain ${start + 1}-${end} arası (${finalList.length} adet)\n`);
+        // Round-robin: index % total == (part-1) olan subdomain'leri al
+        finalList = orderedList.filter((_, idx) => idx % crawlTotal === (crawlPart - 1));
+        console.log(`🔀 Parça ${crawlPart}/${crawlTotal}: ${finalList.length} subdomain (round-robin dağıtım)\n`);
     }
 
     for (let i = 0; i < finalList.length; i++) {
